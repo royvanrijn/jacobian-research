@@ -2,7 +2,7 @@
   "schema_version": 1,
   "checked_utc_date": "2026-11-27",
   "result_document": "research/arithmetic/TERMINAL_MASS_HURWITZ_DESCENT.md",
-  "assurance": "Internal written terminal-mass descent, exact phase and pair re-minimization proofs, and the singleton equal-middle path/capture exclusion, with bounded exact controls. For N>=15 equal terminals require odd ell dividing s; singleton terminals require ell=2t with even t. Complete full-alternating positive-minimum exclusion remains open.",
+  "assurance": "Internal written terminal-mass, exact-phase and pair re-minimization proofs, singleton equal-middle capture, terminal-bridge exclusion and antipodal equality-singleton structure, with bounded exact controls. For N>=15 a positive minimum requires (1,t;2t), even t, N=3t+1 and m=(N-4)/3. Extraction is proved for N not congruent to 1 modulo 6; the remaining singleton family and mixed connectivity are open.",
   "declarations": [
     {
       "name": "Lemma 1. Terminal mass detects exactly the removable locus",
@@ -67,6 +67,14 @@
     {
       "name": "Corollary 16. The remaining positive-minimum cuts",
       "scope": "For N>=15 every minimizing factor at a positive global polynomial DT orbit minimum has equal terminal sizes s>1 and odd middle size ell dividing s, or terminal sizes (1,t) with middle size 2t and even t. These are necessary conditions; full-alternating exclusion remains open."
+    },
+    {
+      "name": "Theorem 17. Only the equality singleton family can remain",
+      "scope": "At a tuple-minimizing factor A no other factor has one edge in each terminal component: its middle would be M_A plus two nonempty root sides, and lambda(B)<=lambda(A)-2. For positive global minima with N>=15, Corollary 16 therefore leaves only (1,t;2t), even t, N=3t+1 and m=(N-4)/3. Every polynomial DT orbit with N>=15 and N not congruent to 1 modulo 6 has a removable factor. No monodromy hypothesis is used."
+    },
+    {
+      "name": "Lemma 18. Saturated singleton covers force antipodal roots",
+      "scope": "In the equality singleton family, for even t>=4 the middle roots differ by t in the complementary 2t-cycle. Saturated phase covers and the elementary noncrossing property of a reduced cycle factorization prove this. Every terminal-middle edge projects modulo t to its terminal partner, giving exactly the terminal tree. Its support intersection with the minimizer is zero or two at every phase; odd contacts with the minimizer can occur only at one middle label of a middle-middle factor. The natural antipodal matching is broken by terminal-middle generators; no global invariant code is established."
     }
   ],
   "primary_source_comparison": [
@@ -127,7 +135,7 @@
     "software": "Python 3.12.3; standard library only",
     "scope": "Existing 392-tuple degree-seven domain: 42 strict pruning controls in both bringing orders, 56 two-contact captures in both pair orders and 6720 weighted quotient comparisons. Additional period-two control, cyclic r=4,7,12,25 controls and literal degree-fifteen one-move capture. A second full-A15 witness has mass one in all24 pair/power cases covering every power of each initially adjacent pair, yet [-3,-4] gives1,1,0 and two new leaves. Invalid controls rejected."
   },
-  "remaining_frontier": "For N>=15 exclude positive global minima in the two cases of Corollary 16: equal terminals with odd ell dividing s, or singleton terminals with ell=2t and even t. Establish compatibility for every factor pair and middle-middle attachment sufficient for the proper-code contradiction, or force an endpoint decrease. One-cut covers alone do not imply code invariance. The 180 isolated witnesses are not global completions. Mixed connectivity and the stronger monotone strategy remain separate.",
+  "remaining_frontier": "For N>=15 exclude the equality singleton family (1,t;2t), even t>=6, under full alternating monodromy. N=3t+1, m=t-1=(N-4)/3. The middle roots are antipodal and terminal-middle edges project to exactly the terminal tree, so their contacts with the minimizer are even in every complementary twist. Control middle-middle one-contacts and overlaps between complementary factors, enough for the proper-code contradiction or an endpoint decrease. The natural antipodal matching is broken by terminal-middle generators; a nonempty invariant matching of all or part of the odd transitive sheet set is impossible. General extraction and mixed connectivity remain open.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,
@@ -135,30 +143,30 @@
     "checker": "research/arithmetic/verify_terminal_mass_three_factor.py",
     "checker_sha256": "265ecb6bb3565a89dce53d1374743f68135682fd99bcc2009038b5b486c45663",
     "receipt": "research/arithmetic/terminal_mass_three_factor_verification.json",
-    "receipt_sha256": "f95df9481adcabf34cec4cd14eeaa9d9b9a1121d6429bddb328a1660f763f073",
+    "receipt_sha256": "4816dc11399328929e59a807767064b6c20312a013af0b0100ef1d3b82ca4462",
     "command": "python3 research/arithmetic/verify_terminal_mass_three_factor.py",
     "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
     "software": "Python 3.12.3; standard library only",
     "deterministic_input": "Literal nine-label triple and owner map in symbolic_path_control; all seven-block owner partitions generated by two pair identifications in owner_partition_controls; existing degree-fifteen plateau certificate supplies all five initial windows.",
     "scope": "Complete local generator closure with every transition checked against a separate permutation implementation. All 189 owners for the specified forest, exact minimal masks and constructive positive isolated-system witnesses. 1245 comparisons with full-tree factor cuts; a twelve-label support control, proper order-168 positive local minimum, and four invalid controls. Internal replay only."
   },
-  "primary_source_comparison_reinspection": "Reinspected the actual primary HTML statements of Ripoll Definition 0.3 and Theorems 0.4 and 5.5, and Liu--Osserman Proposition 1.1 and Theorem 1.2. The same reflection/single-cycle hypothesis gaps remain. The exact phase and re-minimization arguments import no connectivity theorem and make no novelty claim. For Lemma 15 the actual same primary theorem statements were reinspected; the reflection/single-cycle hypothesis gaps persist. Its tree and commuting-swap proof is self-contained relative to the named earlier lemmas; no novelty assertion is made.",
+  "primary_source_comparison_reinspection": "Reinspected the actual primary HTML statements of Ripoll Definition 0.3 and Theorems 0.4 and 5.5, and Liu--Osserman Proposition 1.1 and Theorem 1.2. The same reflection/single-cycle hypothesis gaps remain. The exact phase and re-minimization arguments import no connectivity theorem and make no novelty claim. For Lemma 15 the actual same primary theorem statements were reinspected; the reflection/single-cycle hypothesis gaps persist. Its tree and commuting-swap proof is self-contained relative to the named earlier lemmas; no novelty assertion is made. For Theorem 17 and Lemma 18 the actual Ripoll Definition 0.3/Theorem 0.4 and Liu--Osserman Proposition 1.1/Theorem 1.2 were reinspected; the same reflection/single-cycle hypothesis gaps persist. The new terminal-cut, saturated-cover and noncrossing arguments are supplied in full and import no connectivity or classification theorem; no priority claim is made.",
   "global_compatibility_evidence": {
     "checker": "research/arithmetic/verify_terminal_mass_global_compatibility.py",
-    "checker_sha256": "267080274616f9c8c6ffc87bbd7c6cee1a0bd243f2016cb8e736760a0473ddcf",
+    "checker_sha256": "a7d5ecec7195a64f2647ef6d1c119896e3a48f03133a96353ce924e4759a63d3",
     "receipt": "research/arithmetic/terminal_mass_global_compatibility_verification.json",
-    "receipt_sha256": "29148f4eb6d69915b2e2c3727b882dec3f0739afead5464baf13a5cc0af6b1b2",
+    "receipt_sha256": "2cedeafe0d12f69451010e1dd533ceec8fb9258166e6b82432f437e86061c9a9",
     "command": "python3 research/arithmetic/verify_terminal_mass_global_compatibility.py",
     "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
     "software": "Python 3.12.3; standard library only",
-    "deterministic_input": "Existing fixed-product degree-seven domain generated from the DT class; retained degree-fifteen plateau certificate; four literal synchronized-tree controls and two negative controls in checker source. Translation-normalized exact coset patterns for g=1..12 and coprime terminal multipliers 1..8; literal five-label pair; odd g=3..31 positive weighting controls; a literal paired-path degree-fifteen control.",
-    "scope": "Internal replay: existing four degree-seven orbits and former controls; 15182 normalized modular patterns, 2064 covered endpoint lifts, all ten literal middle/terminal pair masks, 270 pair-feasible weightings rejected by the new-minimizer dichotomy, corrupted-mask rejection, exact support-code criterion on 392 retained tuples (98 invariant, 294 noninvariant), and a phase-compatible but nonminimal degree-fifteen tuple with noninvariant code. Universal results have complete written proofs; no higher-degree census or complete extraction."
+    "deterministic_input": "Existing fixed-product degree-seven domain generated from the DT class; retained degree-fifteen plateau certificate; four literal synchronized-tree controls and two negative controls in checker source. Translation-normalized exact coset patterns for g=1..12 and coprime terminal multipliers 1..8; literal five-label pair; odd g=3..31 positive weighting controls; a literal paired-path degree-fifteen control. All terminal-bridge cuts and all disjoint middle/terminal component-edge pairs in the same 392-tuple domain; all normalized (h,q) patterns in Z/(2t) for even t=2..40; literal terminal-middle permutations breaking the antipodal matching.",
+    "scope": "Internal replay: existing four degree-seven orbits and former controls; 15182 normalized modular patterns, 2064 covered endpoint lifts, all ten literal middle/terminal pair masks, 270 pair-feasible weightings rejected by the new-minimizer dichotomy, corrupted-mask rejection, exact support-code criterion on 392 retained tuples (98 invariant, 294 noninvariant), and a phase-compatible but nonminimal degree-fifteen tuple with noninvariant code. Universal results have complete written proofs; no higher-degree census or complete extraction. New internal controls: 126 exact terminal-bridge comparisons and 966 complementary-component noncrossing comparisons on the retained domain, and bounded saturated order-two phase and pairing-break controls. These support the written equal-terminal exclusion, degree-congruence extraction and antipodal singleton structure; the equality singleton exclusion remains open."
   },
   "singleton_equal_cut_evidence": {
     "checker": "research/arithmetic/verify_terminal_mass_singleton_equal_cut.py",
     "checker_sha256": "d82814f5a9b55a86d391de91b7edd38814c98e2e897537a7a6c66131678c3f52",
     "receipt": "research/arithmetic/terminal_mass_singleton_equal_cut_verification.json",
-    "receipt_sha256": "2c061ce797ceeb40d1eeefc568ff2fbf1bc7833838cf62ae3324984f221f5033",
+    "receipt_sha256": "d481449e59f0220320c00572a17be948a9f71f8f07acd1a69bee435d0bcceda9",
     "command": "python3 research/arithmetic/verify_terminal_mass_singleton_equal_cut.py",
     "working_directory": "repository root in canonical Ubuntu-24.04 WSL checkout",
     "software": "Python 3.12.3; standard library only",

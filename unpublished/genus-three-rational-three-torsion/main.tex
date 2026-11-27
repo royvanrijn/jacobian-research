@@ -35,6 +35,8 @@ give dual isogenies of degree \(2^9\). Consequently, for every quadratic
 twist and every \(n\geq1\), its \(3^n\)-Selmer group and
 \(3^n\)-torsion in the Tate--Shafarevich group identify with those of
 the product of the three elliptic twists, without a finiteness assumption.
+We also determine all eight rational points and the full Mordell--Weil
+group, which is finite with invariant factors \([3,6,12]\).
 \end{abstract}
 \maketitle
 
@@ -98,13 +100,14 @@ The same separation makes the off-diagonal push--pull maps vanish,
 and gives \eqref{eq:composites}.
 
 The assertion concerns \(J(\Q)[3]\), the subgroup killed by three.
-It does not determine the full rational torsion group. Also \(J\) is
-geometrically nonsimple because of its elliptic factors.
+Theorem~\ref{thm:arithmetic} below determines the full rational torsion.
+The Jacobian is geometrically nonsimple because of its elliptic factors.
 M\"uller and Reitsma \cite[Theorem~1.1 and Remark~1.2]{MR} distinguish
 the occurrence of an exact full torsion group from that of a subgroup,
 and study geometrically simple examples. Theorem~\ref{thm:main}
-addresses the existence question above; it does not give a
-geometrically simple example or assert an exact full torsion group.
+addresses the existence question above. The full torsion in our example
+has invariant factors \([3,6,12]\), so it does not realize their possible
+exception \([3,3,3]\), even without the geometric simplicity condition.
 
 The isogeny has a further consequence. For an abelian variety \(B/\Q\)
 and a squareclass \(d\in\Q^\times/\Q^{\times2}\), let \(B^d\) denote
@@ -124,6 +127,17 @@ isomorphisms
 \end{align*}
 They also identify the full three-primary Tate--Shafarevich groups.
 No finiteness assumption on these groups is required.
+\end{theorem}
+
+\begin{theorem}\label{thm:arithmetic}
+For the curve of Theorem~\ref{thm:main},
+\[
+ C(\Q)=\{(-1,\pm9),(0,\pm4),(2,\pm36),\infty_+,\infty_-\},
+ \qquad J(\Q)\simeq\Z/3\Z\oplus\Z/6\Z\oplus\Z/12\Z.
+\]
+Here \(R/t^4\) has value \(\pm1\) at \(\infty_\pm\).
+In particular \(J\) has rank zero and 216 rational points.
+Its conductor is \(243000\).
 \end{theorem}
 
 \section{The conic and its three elliptic quotients}
@@ -360,6 +374,122 @@ modulo that order. Thus the full three-primary groups are also
 isomorphic. The argument uses no finiteness assumption.
 \end{proof}
 
+\section{Rational points and full rational torsion}
+
+\begin{proof}[Proof of Theorem~\ref{thm:arithmetic}]
+Exact elliptic two-descent gives proved rank bounds \((0,0)\) for each
+of the three curves \eqref{eq:elliptic}; these computations, with the
+rank database disabled, are included in the accompanying SageMath code.
+The respective Cremona labels are \(90a1,90b1,30a2\), with conductors
+\(90,90,30\). Thus the isogeny gives rank zero and conductor
+\(90\cdot90\cdot30=243000\) for \(J\).
+
+First determine the rational points. In the coordinates of
+\eqref{eq:elliptic}, the six points of \(E_1(\Q)\) are
+\[
+ O,\quad(-1,0),\quad(0,\pm5/2),\quad(5,\pm15).
+\]
+There is no rational point at infinity on the conic
+\(6x^2+3y^2=2\), and \(y=0\) would require \(x^2=1/3\).
+Consequently \(U=w^2/(4y^2)=X+1\) is finite and belongs to
+\(\{0,1,6\}\). Its fibre satisfies
+\[
+ -\frac{135}{16}y^4+\left(\frac32-4U\right)y^2+\frac{25}{9}=0.
+\]
+For \(U=0,6\), the discriminants of these quadratics in \(y^2\)
+are 96 and 600 respectively, both nonsquares in \(\Q\).
+For \(U=1\) the polynomial factors as
+\[
+ -\frac{135}{16}(y-2/3)(y+2/3)(y^2+20/27).
+\]
+It follows that \(y=\pm2/3\), then \(x=\pm1/3\) and
+\(w=\pm4/3\). The parametrization \eqref{eq:parameter} gives
+\(t=-1,0,2,\infty\). Substitution into \eqref{eq:octic} gives
+exactly the eight stated points, including both branches at infinity.
+
+To determine torsion, good reduction and the elliptic decomposition give
+\[
+\begin{array}{c|rrrrr}
+ p&7&11&13&17&19\\ \hline
+ \#J(\F_p)&432&1296&3888&3456&13824.
+\end{array}
+\]
+The gcd is \(432=16\cdot27\). Thus Theorem~\ref{thm:main}
+already determines the full three-primary subgroup, and it remains
+to determine the two-primary subgroup \(H\).
+
+We use the following small finite divisor-class computation at seven.
+Over \(\F_7\), put
+\[
+ I=[\infty_- -\infty_+],\quad P=[(0,4)-\infty_+],\quad
+ Q=[D-2\infty_+],\quad D:\ (t^2+1,R-t+2)=0.
+\]
+Here \(D\) is a closed point of degree two. The three classes
+\(27I,27P,27Q\) are killed by four and generate groups of orders
+4, 8, 16 successively; precisely four of the resulting sixteen classes
+are killed by two. This is an exact finite certificate, verified by
+divisor arithmetic in the supplied code. Since the two-part of
+\(\#J(\F_7)\) is 16, it proves
+\[
+ J(\F_7)[2^\infty]\simeq(\Z/4\Z)^2,
+ \qquad H\ \lhook\joinrel\longrightarrow\ (\Z/4\Z)^2.
+\]
+The same certificate shows that the reduction of \(3I\) has order four.
+
+We next exhibit a rational point of order two that is not a double.
+Let \(T=3[(0,4)-\infty_+]\), and set
+\[
+ g=t^6-3t^5-3t^4-12t^3+6t^2-12t-8.
+\]
+The identity \(g^2-F(t)(t^2+2)^2=-200t^6\) gives
+\[
+ \divisor\bigl(g+(t^2+2)R\bigr)=6(0,4)-6\infty_+,
+\]
+so \(2T=0\). To show that \(T\) is not a double, work on the good
+reduction at 17. For \(L=\F_{17}[\theta]/(F(\theta))\), the
+even-degree descent homomorphism
+\[
+ J(\F_{17})/2J(\F_{17})\longrightarrow
+                  L^\times/(L^{\times2}\F_{17}^\times)
+\]
+sends \([(a,b)-\infty_+]\) to \(a-\theta\).
+The rational infinity has trivial image; see
+Poonen--Schaefer \cite[Section~5, Proposition~5.1 and (8)]{PS}.
+The rational point identifies degree-zero rational divisor classes with
+the Jacobian points, as required here. We use only that doubles have
+trivial image, not injectivity of the fake descent map.
+The image of \(T\) is \(-\theta\). The polynomial \(t^2+5\) is an
+irreducible factor of \(F\bmod17\); in the corresponding factor
+\(\F_{17^2}\), the norm of \(-\theta\) is 5. This is a nonsquare in
+\(\F_{17}\), and multiplying by a scalar \(c\ne0\) changes the norm
+to \(5c^2\). Hence the image is nontrivial, even modulo scalars.
+Thus \(T\ne0\) and \(T\notin2J(\Q)\).
+
+Finally an explicit Pell identity supplies rational four-torsion.
+Put
+\[
+\begin{split}
+ A={}&-t^8+8t^7-4t^6-52t^5-115t^4\\
+     &{}+296t^3+746t^2+764t-139.
+\end{split}
+\]
+Let \(B\) be the polynomial part of \(A\sqrt F\) at infinity, with
+\(\sqrt F=t^4-3t^3-5t^2+\cdots\). Exact multiplication gives
+\(B^2-FA^2=19440000\); the code includes both expanded polynomials.
+The leading terms give
+\[
+ \divisor(B+AR)=12\infty_- -12\infty_+.
+\]
+Thus \(3I\) is killed by four, and its reduction at seven shows its
+order is exactly four. Its nonzero double cannot equal \(T\), since
+\(T\) is not divisible by two. Consequently
+\(\Z/4\Z\oplus\Z/2\Z\subseteq H\).
+A larger subgroup of \((\Z/4\Z)^2\) would be that whole group,
+in which every element of order two is a double, contradicting the
+property of \(T\). Therefore \(H\simeq\Z/4\Z\oplus\Z/2\Z\).
+Combining the two primary parts proves the asserted invariant factors.
+\end{proof}
+
 \paragraph{Verification.}
 All defining identities and maps are given above over \(\Q\).
 An accompanying SageMath checker verifies squarefreeness modulo seven,
@@ -369,6 +499,12 @@ These exact algebraic checks support the displayed construction.
 The independence, Weil-pairing bound, duality and compatibility with
 all local Kummer conditions are the written arguments above;
 the checker does not compute Selmer or Tate--Shafarevich groups.
+The arithmetic checker also computes proved elliptic rank bounds,
+the target torsion points, all rational fibres, the two principal-divisor
+certificates, the complete sixteen-element Sylow subgroup at seven and
+the square-class obstruction at 17. These calculations use exact
+rational and finite-field arithmetic in SageMath 10.9, with no height
+search or random input.
 
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
@@ -390,5 +526,11 @@ A.~Levin, S.~Yan and L.~Wiljanen,
 J.~S.~M\"uller and B.~Reitsma,
 \emph{Computing torsion subgroups of Jacobians of hyperelliptic curves of genus \(3\)},
 \href{https://arxiv.org/abs/2211.03372v4}{arXiv:2211.03372v4} (2023).
+
+\bibitem{PS}
+B.~Poonen and E.~F.~Schaefer,
+\emph{Explicit descent for Jacobians of cyclic covers of the projective line},
+J. reine angew. Math. \textbf{488} (1997), 141--188.
+\href{https://math.mit.edu/~poonen/papers/descent.pdf}{Author's version}.
 \end{thebibliography}
 \end{document}

@@ -423,8 +423,10 @@ The [external first-Hermite endpoint and quantitative stability
 estimate](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md) give
 $F_4-W_1(A)<3\rho/4$ and distance at most $K_4\sqrt{3\rho/4}$ for any
 improving competitor. Heilman--Tarter reduces a maximizing competitor to
-three dimensions. The remaining theorem is a uniform nearby full-kernel
-comparison, including tails and asymmetric cycles. A fixed-partition
+three dimensions. The preferred remaining theorem is
+[uniform rigidity of nearby actual maximizers](MAXIMIZER_PERTURBATIVE_RIGIDITY.md).
+The uniform nearby full-kernel comparison for all competitors remains an
+alternative, including tails and asymmetric cycles. A fixed-partition
 Hermite expansion does not give such an interval.
 The affine replacement used for $W_1$ preserves neither $W_2$ nor noise
 stability, so an affine-only test cannot remove this obstruction.

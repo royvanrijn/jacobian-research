@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YG9NQFLT3B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YG9NQFLT3B');
+</script>
+<title>Exposé IX · 2. Partie fixe et partie torique de T_\ell(A_K). Critères de bonne réduction. Théorème d&#x27;orthogonalité pour \ell\ne p — SGA 7</title>
+<meta name="description" content="SGA 7 — Groupes de Monodromie en Géométrie Algébrique, Exposé IX, 2. Partie fixe et partie torique de T_\ell(A_K). Critères de bonne réduction. Théorème d&#x27;orthogonalité pour \ell\ne p. 2.1. Comme tout groupe algébrique commutatif sur k, A_o^o admet…">
+<link rel="canonical" href="https://grothendiecksga.com/read/sga7/fr/9-2.html">
+<link rel="alternate" hreflang="fr" href="https://grothendiecksga.com/read/sga7/fr/9-2.html">
+<link rel="alternate" hreflang="en" href="https://grothendiecksga.com/read/sga7/en/9-2.html">
+<link rel="alternate" hreflang="x-default" href="https://grothendiecksga.com/read/sga7/fr/9-2.html">
+<meta property="og:site_name" content="Séminaire de Géométrie Algébrique du Bois-Marie">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Exposé IX · 2. Partie fixe et partie torique de T_\ell(A_K). Critères de bonne réduction. Théorème d&#x27;orthogonalité pour \ell\ne p — SGA 7">
+<meta property="og:description" content="SGA 7 — Groupes de Monodromie en Géométrie Algébrique, Exposé IX, 2. Partie fixe et partie torique de T_\ell(A_K). Critères de bonne réduction. Théorème d&#x27;orthogonalité pour \ell\ne p. 2.1. Comme tout groupe algébrique commutatif sur k, A_o^o admet…">
+<meta property="og:url" content="https://grothendiecksga.com/read/sga7/fr/9-2.html">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="../../../assets/favicon.ico" sizes="32x32">
+<link rel="icon" href="../../../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../../assets/apple-touch-icon.png">
+<style>
+  :root { --accent:#7a1f1f; --bg:#fbfaf7; --border:#ddd9cf; --text:#1d1d1b; --muted:#6b675e; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; }
+  body { font-family:"Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
+         background:var(--bg); color:var(--text); line-height:1.55; }
+  .crumbs { font-size:.85rem; color:var(--muted); padding:1rem 1.2rem; }
+  .crumbs a { color:var(--accent); text-decoration:none; }
+  main { max-width:46rem; margin:0 auto; padding:0 1.2rem 3rem; }
+  h1 { font-size:1.5rem; line-height:1.3; }
+  h1 .author, h2 .author { display:block; font-size:.85rem; font-weight:400;
+    font-style:italic; color:var(--muted); margin-top:.4rem; }
+  a { color:var(--accent); }
+  .thm { margin:1.1rem 0; padding:.1rem 0; }
+  .thm-head { font-variant:small-caps; }
+  .thm-name, .thm-num { font-weight:700; }
+  .thm-title { font-weight:400; font-style:italic; }
+  .thm-plain .thm-body { font-style:italic; }
+  .thm-plain { border-left:3px solid var(--accent); padding-left:.9rem; }
+  .thm-remark { border-left:3px solid #b9b3a3; padding-left:.9rem; }
+  .thm-body { margin-top:.15rem; }
+  .thm-body p:first-child { display:inline; }
+  .proof { margin:.9rem 0; }
+  .proof-head { color:var(--muted); font-style:italic; }
+  .proof-name { font-style:italic; }
+  .proof-toggle { display:none; }
+  .proof-body { margin:.3rem 0 .3rem .5rem; padding-left:.7rem; border-left:1px dotted #c9c4b6; }
+  ol.enumerate, ol.enumerate-i, ol.enumerate-a, ul.itemize { margin:.5rem 0 .5rem 1.2rem; }
+  .item-label { font-weight:600; margin-right:.3rem; }
+  .footnote-ref sup { color:var(--accent); }
+  #footnotes { margin-top:3rem; border-top:1px solid var(--border); padding-top:.6rem;
+    font-size:.85rem; color:#333; }
+  #footnotes ol { margin:0; padding-left:1.4rem; }
+  #footnotes li { margin:.25rem 0; }
+  #footnotes .backref { margin-left:.3rem; text-decoration:none; }
+  dl.bibliography dt { float:left; clear:left; margin-right:.5rem; font-weight:600; }
+  dl.bibliography dd { margin:0 0 .4rem 2.6rem; }
+  .smallcaps { font-variant:small-caps; }
+  table { border-collapse:collapse; }
+  td, th { padding:.15rem .5rem; }
+  mjx-container[display="true"], mjx-container[jax="SVG"][display="true"] {
+    display:block; overflow-x:auto; overflow-y:hidden; max-width:100%; }
+  .pager { display:flex; justify-content:space-between; gap:1rem; margin:2.5rem 0 0;
+    padding-top:1rem; border-top:1px solid var(--border); font-size:.9rem; }
+  .viewer-link { margin-top:1.2rem; font-size:.85rem; color:var(--muted); }
+  ol.toc-chapters { padding-left:1.2rem; }
+  ol.toc-chapters > li { margin:.8rem 0; }
+  ol.toc-sections { list-style:none; padding-left:1rem; font-size:.95rem; }
+  ol.toc-sections li { margin:.2rem 0; }
+  .toc-author { font-size:.85rem; font-style:italic; color:var(--muted); }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Chapter","name":"Exposé IX · 2. Partie fixe et partie torique de T_\\ell(A_K). Critères de bonne réduction. Théorème d'orthogonalité pour \\ell\\ne p — SGA 7","url":"https://grothendiecksga.com/read/sga7/fr/9-2.html","inLanguage":"fr","isPartOf":{"@type":"Book","name":"SGA 7 — Groupes de Monodromie en Géométrie Algébrique","url":"https://grothendiecksga.com/read/sga7/fr/","author":"A. Grothendieck et al."},"author":"A. Grothendieck (avec un appendice par M. Raynaud)"}</script>
+<script>window.MathJax = {"loader": {"load": ["[custom]/xypic.js"], "paths": {"custom": "../../../viewer/vendor/xyjax"}}, "tex": {"packages": {"[+]": ["xypic", "ams", "color", "mathtools", "amscd"]}, "inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "tags": "none", "macros": {}}, "options": {"enableMenu": false}};</script>
+<script src="../../../viewer/vendor/mathjax/tex-svg-full.js" async id="MathJax-script"></script>
+</head>
+<body>
+<nav class="crumbs"><a href="../../../index.html">Accueil</a> › <a href="../../../read/">Édition texte</a> › <a href="./">SGA 7</a> › Exposé IX</nav>
+<main>
+<h2 id="9.2">2. <u>Partie fixe et partie torique de \(T_\ell(A_K)\). Critères de bonne réduction.<br>
+Théorème d'orthogonalité pour \(\ell\ne p\)</u></h2>
+<p id="9.2.1"><strong>2.1.</strong>   Comme tout groupe algébrique commutatif sur \(k\), \(A_o^o\) admet un plus
+grand sous-tore, dont la formation commute à toute extension du corps
+de base [SGA 3 XVII 7.2.1, XII 1.12] :</p>
+<p id="9.2.1.1"><strong>(2.1.1)</strong>
+\[T_o\subset A_o^o.\]</p>
+<p>Lorsque \(k\) est parfait, \(T_o\) est caractérisé par la condition que \(A_o^o/T_o\)
+soit extension d'un schéma abélien \(B_o\) sur \(k\) par un groupe unipotent
+(lisse et connexe) [25], qui admet nécessairement une suite de composition à quotients tous isomorphes à \(G_{ak}\) (SGA 3 XVII 4.1.3)</p>
+<p id="9.2.1.2"><strong>(2.1.2)</strong>
+\[0\longrightarrow U_o\longrightarrow A_o^o/T_o\longrightarrow B_o\longrightarrow0.\]</p>
+<p>En tous cas, \(k\) parfait ou non, <u>si \(A_o^o\) est extension d'un schéma abélien
+\(B_o\) par un schéma affine lisse et connexe \(L_o\)</u> :</p>
+<p id="9.2.1.3"><strong>(2.1.3)</strong>
+\[0\longrightarrow L_o\longrightarrow A_o^o\longrightarrow B_o\longrightarrow0,\]</p>
+<p>on sait que cette structure d'extension est unique [25], et que \(T_o\) est
+alors \(\subset L_o\), donc \(T_o\) est le plus grand sous-tore de \(L_o\), de sorte qu'on
+a une suite exacte (2.1.2), avec</p>
+<p id="9.2.1.4"><strong>(2.1.4)</strong>
+\[U_o=L_o/T_o.\]</p>
+<p id="9.2.1.5"><strong>2.1.5.</strong>   Signalons que \(A_o^o\) est de <u>rang unipotent nul</u> (i.e. que, sur
+une clôture algébrique de \(k\), il n'admet aucun sous-groupe isomorphe
+à \(G_a\)) si et seulement si \(A_o^o/T_o\) est un schéma abélien \(B_o\), de sorte
+qu'on sera alors sous les conditions précédentes, avec \(U_o=0\).</p>
+<p>Si \(\ell\) est un nombre premier distinct de la caractéristique
+de \(k\), de sorte que \(A_o^o\) est \(\ell\)-divisible, l'inclusion (2.1.1) donne lieu
+à une suite exacte de pro-schémas en groupes :</p>
+<p id="9.2.1.6"><strong>(2.1.6)</strong>
+\[
+\xymatrix{
+0\ar[r]&amp;T_\ell(T_o)\ar[r]&amp;T_\ell(A_o^o)\ar[r]&amp;T_\ell(A_o^o/T_o)\ar[r]&amp;0\\
+&amp;&amp;T_\ell(A_o)\ar[u]^{?}&amp;T_\ell(A_o/T_o)\ar[u]_{?}
+}
+\]</p>
+<p>dont les termes peuvent aussi s'interpréter comme des faisceaux \(\ell\)-adiques
+libres constants tordus ; lorsque l'on dispose d'une suite exacte (2.1.2),
+par exemple \(k\) parfait ou \(A_o^o\) de rang unipotent nul, on aura</p>
+<p id="9.2.1.7"><strong>(2.1.7)</strong>
+\[T_\ell(A_o^o/T_o)\xrightarrow{\sim}T_\ell(B_o),\]</p>
+<p>de sorte que la suite exacte (2.1.5) s'écrit alors</p>
+<p id="9.2.1.8"><strong>(2.1.8)</strong>
+\[0\longrightarrow T_\ell(T_o)\longrightarrow T_\ell(A_o^o)\longrightarrow T_\ell(B_o)\longrightarrow0.\]</p>
+<p>Posons</p>
+<p id="9.2.1.9"><strong>(2.1.9)</strong>
+\[n=\dim A_K=\dim A_o,\quad \mu=\dim T_o,\quad \lambda=\dim U_o,\quad \alpha=\dim B_o,\]</p>
+<p>de sorte qu'on a</p>
+<p id="9.2.1.10"><strong>(2.1.10)</strong>
+\[n=\mu+\lambda+\alpha,\]</p>
+<p id="9.2.1.11"><strong>(2.1.11)</strong>
+\[
+\left\{
+\begin{aligned}
+\operatorname{rang}T_\ell(T_o)&amp;=\mu,\quad
+\operatorname{rang}T_\ell(A_o^o/T_o)=\operatorname{rang}T_\ell(B_o)=2\alpha,\\
+\operatorname{rang}T_\ell(A_o^o)&amp;=\mu+2\alpha,
+\end{aligned}
+\right.
+\]</p>
+<p>La deuxième relation étant un théorème bien connu de Weil [5] [15].</p>
+<p id="9.2.1.12"><strong>2.1.12.</strong>   Les entiers \(n\), \(\mu\), \(\lambda\), \(\alpha\) sont définis manifestement sans même supposer
+qu'on dispose d'une suite exacte (2.1.2), en passant à une clôture
+algébrique de \(k\) ; ils sont connus respectivement sous le nom de dimension
+de \(A_o\), <u>rang réductif de \(A_o\)</u> = dimension de \(T_o\), <u>rang unipotent de \(A_o\)</u>,
+<u>rang abélien de \(A_o\)</u>. Ils sont encore reliés par les relations (2.1.10)
+et (2.1.11) (en omettant dans ces dernières le terme rang \(T_\ell(B_o)\),...).</p>
+<p id="9.2.1.13"><strong>2.1.13.</strong>   Lorsque \(k\) est de caractéristique \(p&gt;0\), et que \(A_o^o\) est
+\(p\)-divisible, ou ce qui revient au même, de rang unipotent nul (cf. 2.1.5),
+alors il y a lieu également de considérer le pro-groupe \(T_p(A_o^o)\), qui
+sera un <u>groupe de Barsotti-Tate</u> (ou <u>groupe \(p\)-divisible</u> dans la terminologie de [33]). Alors la suite exacte (2.1.8) reste valable pour \(\ell=p\)
+et c'est une suite exacte de groupes de Barsotti-Tate. Ici on aura \(\lambda=0\),
+donc</p>
+<p id="9.2.1.13.1"><strong>(2.1.13.1)</strong>
+\[n=\mu+\alpha,\]</p>
+<p>et les formules (2.1.11) restent valables, en y interprétant le rang
+comme le <u>rang</u> (ou "hauteur") des groupes de Barsotti-Tate envisagés.</p>
+<p id="9.2.1.14"><strong>2.1.14.</strong>   On introduit également pour \(A'{}^o_o\) des invariants</p>
+<p>
+
+\[T'_o\subset A'{}^o_o,\qquad U'_o,\qquad B'_o,\]
+
+</p>
+<p>où \(T'_o\) est la partie torique de \(A'{}^o_o\), \(B'_o\) sa partie abélienne (définie
+notamment si \(k\) est parfait ou si \(A'{}^o_o\) est de rang unipotent nul), \(U'_o\)
+sa partie unipotente (définie par exemple si \(k\) est parfait, ou, trivialement si \(A'{}^o_o\) est de rang unipotent nul). On trouve une suite
+exacte correspondant à (2.1.6) ou (2.1.8), que nous ne réécrirons pas.
+On pourrait introduire pour \(A'{}^o_o\) des entiers \(\mu'\), \(\lambda'\), \(\alpha'\) comme dans
+(2.1.9), mais on verra plus bas (2.2.7) que ce sont les mêmes que
+pour \(A_o^o\), ce qui nous dispense d'introduire une nouvelle notation pour eux.</p>
+<p id="9.2.2"><strong>2.2.</strong>   Nous nous proposons de préciser les relations entre \(T_\ell(A_K)\) et
+\(T_\ell(A_o)=T_\ell(A_o^o)\), en faisant intervenir \(T_\ell(A^o)\). Rappelons d'abord le</p>
+<div class="thm thm-plain lemme" id="9.2.2.1">
+  <div class="thm-head"><span class="thm-name">Lemme 2.2.1.</span></div>
+  <div class="thm-body"><p>Soit \(m&gt;0\) un entier. Alors les conditions suivantes sont
+équivalentes :</p>
+<ol class="enumerate">
+<li><span class="item-label">(i)</span> \(m\,\operatorname{id}_{A^o}\) <u>est plat</u>.</li>
+<li><span class="item-label">(ii)</span> \(m\,\operatorname{id}_{A^o}\) <u>est surjectif</u>.</li>
+<li><span class="item-label">(iii)</span> \(m\,\operatorname{id}_{A^o}\) <u>est quasi-fini</u>.</li>
+<li><span class="item-label">(iv)</span> \(m\) <u>est premier à la caractéristique de \(k\)</u>, ou \(A_o^o\) est de
+<u>rang unipotent nul</u> (cf. 1.5.5).</li>
+</ol>
+<p>De plus, si les conditions envisagées sont vérifiées pour \(m\),
+elles le sont pour \(m^\nu\) pour tout \(\nu&gt;0\), les groupes</p>
+\[{}_{m^\nu}A^o\mathrel{\mathop=^{\mathrm{dfn}}}\operatorname{Ker}(m^\nu\operatorname{id}_{A^o})\]
+<p>sont quasi-finis, séparés et plats sur \(S\), et ils forment pour \(\nu\) variable
+un système projectif de schémas en groupes, à morphismes de transition
+fidèlement plats \(x\longmapsto m^{\nu'-\nu}x:{}_{m^{\nu'}}A^o\longrightarrow{}_{m^\nu}A^o\).</p></div>
+</div>
+<p>En effet, le critère de platitude par fibres (EGA IV 11.3.5)
+nous montre que (i) tout comme (ii), (iii) sont des conditions <u>sur les
+fibres</u>, et elles sont équivalentes par (SGA 3 VI<sub>A</sub> 5.6), parce que les
+fibres envisagées sont lisses et connexes. D'ailleurs on voit sur la
+forme (ii) et par un théorème classique de Weil [5] [15] qu'elles
+sont vérifiées sur la fibre générique, qui est un schéma abélien, il
+suffit donc de l'exprimer sur la fibre spéciale. L'équivalence avec
+(iv) est alors également bien connue, grâce à la théorie de structure.
+Sous n'importe quelle forme, la stabilité de la condition envisagée
+par \(m\mapsto m^\nu\) est triviale, d'où le fait que ces conditions impliquent
+que les \({}_{m^\nu}A^o\) sont des schémas en groupes plats quasi-finis sur \(S\),
+évidemment séparés sur \(S\) puisque \(A^o\) l'est. La dernière assertion sur
+la fidèle platitude des morphismes de transition envisagés, qui revient
+à dire que ce sont des épimorphismes pour la topologie fppf, résulte
+formellement du fait que \(m\,\operatorname{id}_{A^o}\) est fidèlement plat, donc un épimorphisme pour la topologie envisagée.</p>
+<p id="9.2.2.2"><strong>2.2.2.</strong>   Par suite, nous prendrons pour \(m\) un nombre premier \(\ell\) satisfaisant
+les conditions de 2.2.1. On désigne alors par</p>
+<p id="9.2.2.2.1"><strong>(2.2.2.1)</strong>
+\[T_\ell(A^o)=({}_{\ell^\nu}A^o)_{\nu&gt;0}\]</p>
+<p>le système projectif décrit dans 2.2.1. On notera que par les deux
+changements de base \(\eta\longrightarrow S\) et \(s\longrightarrow S\), il redonne les systèmes projectifs
+\(T_\ell(A_K)\) et \(T_\ell(A_o^o)=T_\ell(A_o)\) envisagés dans 1.0 et 2.1 respectivement.</p>
+<p id="9.2.2.3"><strong>2.2.3.</strong>   Supposons maintenant \(S\) hensélien. On sait alors que tout schéma
+quasi-fini et séparé \(X\) sur \(S\) se décompose canoniquement en une somme</p>
+<p id="9.2.2.3.1"><strong>(2.2.3.1)</strong>
+\[X=X^f\amalg X',\]</p>
+<p>où \(X^f\) est <u>fini</u> sur \(S\), et où \(X'_o=\varnothing\) i.e. \(X'\) est réduit à sa fibre générique \(X'_\eta\) ; donc \(X^f\) a même fibre spéciale que \(X\). Cette décomposition
+est évidemment fonctorielle en \(X\). On en conclut en particulier que si
+\(X\) est un schéma en groupes sur \(S\), alors \(X^f\) en est un <u>sous</u>-schéma en
+groupes. Si \(X\) est plat resp. étale sur \(S\), il en est évidemment de
+même de \(X^f\).</p>
+<p>Nous appliquerons ceci aux composants \({}_{\ell^\nu}A^{o,f}\) de \(T_\ell(A^o)\), d'où
+un sous-système projectif de groupes</p>
+<p id="9.2.2.3.2"><strong>(2.2.3.2)</strong>
+\[(({}_{\ell^\nu}A^o)^f)_{\nu&gt;0}\mathrel{\mathop=^{\mathrm{dfn}}}T_\ell(A^o)^f\subset T_\ell(A^o),\]</p>
+<p>qu'on appellera <u>la partie fixe</u> du module de Tate \(T_\ell(A^o)\). On a évidemment,
+par construction, des isomorphismes canoniques, fonctoriels en \(A\) :</p>
+<p id="9.2.2.3.3"><strong>(2.2.3.3)</strong>
+\[T_\ell(A^o)^f\times_S s\xrightarrow{\sim}T_\ell(A^o)\times_S s\xrightarrow{\sim}T_\ell(A_o^o).\]</p>
+<p>D'autre part, la fibre générique de \(T_\ell(A^o)^f\) définit un sous-pro-groupe
+canonique de \(T_\ell(A_K)\), appelée encore "partie fixe" de ce module de Tate, soit</p>
+<p id="9.2.2.3.4"><strong>(2.2.3.4)</strong>
+\[T_\ell(A_K)^f\subset T_\ell(A_K).\]</p>
+<p id="9.2.2.4"><strong>2.2.4.</strong>   Lorsque \(\ell\ne p=\operatorname{car}.k\), alors \(T_\ell(A^o)^f\) s'interprète comme un
+faisceau \(\ell\)-adique constant tordu sur \(S\) (les \({}_{\ell^\nu}A^o\) étant <u>finis étales</u>
+sur \(S\)). Comme le foncteur</p>
+<p>
+
+\[X\longmapsto X_o\mathbin{\mathop\times_{s}}S\]
+
+</p>
+<p>de la catégorie des schémas finis étales sur \(S\) dans celle des schémas
+finis étales sur \(k\) est une équivalence de catégories, \(S\) étant hensélien,
+et qu'on a donc une équivalence analogue pour les catégories de faisceaux
+\(\ell\)-adiques constants tordus sur \(S\) resp. sur \(k\), la relation (2.2.3.3)
+donnant la fibre spéciale de \(T_\ell(A^o)^f\) caractérise donc cette partie
+fixe à isomorphisme unique près. D'autre part, en tant que sous-faisceau
+\(\ell\)-adique de \(T_\ell(A^o)\), elle est évidemment caractérisée par sa fibre
+générique (2.2.3.4), ou ce qui revient au même, par le sous \(\mathbb Z_\ell\)-module
+correspondant, stable par \(\pi=\operatorname{Gal}(\overline K/K)\) :</p>
+<p id="9.2.2.4.1"><strong>(2.2.4.1)</strong>
+\[T_\ell(A_K)^f(\overline K)\mathrel{\mathop=^{\mathrm{dfn}}}T_\ell(A(\overline K))^f\subset T_\ell(A(\overline K)).\]</p>
+<p>En fait, on a le résultat suivant :</p>
+<div class="thm thm-plain proposition" id="9.2.2.5">
+  <div class="thm-head"><span class="thm-name">Proposition 2.2.5.</span></div>
+  <div class="thm-body"><p>Supposons comme ci-dessus \(\ell\ne p\), et \(S\) hensélien.
+Alors le sous-module (2.2.4.1) de \(T_\ell(A(\overline K))=T_\ell(A_K)(\overline K)\) correspondant
+à la partie fixe \(T_\ell(A_K)^f\) (2.2.3.4) de \(T_\ell(A_K)\) est le sous-module \(T_\ell(A(\overline K))^I\)
+des invariants sous le groupe d'inertie \(I\subset\pi\).</p></div>
+</div>
+<p>Ceci résultera, par passage à la limite projective, de la
+relation analogue, valable pour tout entier \(m&gt;0\) premier à \(p=\operatorname{car}.k\) :</p>
+<p id="9.2.2.5.1"><strong>(2.2.5.1)</strong>
+\[({}_mA)^f(\overline K)=({}_mA(\overline K))^I.\]</p>
+<p>Pour prouver cette relation, introduisons le localisé strict \(\widetilde S\) de \(S\),
+de corps des fractions \(\widetilde K\) la sous-extension non ramifiée maximale de \(\overline K\)
+sur \(K\). Comme \(({}_mA)^f\) est fini étale sur \(S\), ses points à valeurs dans \(\overline K\)
+sont déjà à valeurs dans \(\widetilde K\), donc le premier membre de (2.2.5.1) n'est
+autre que \(\operatorname{Hom}_S(\widetilde S,({}_mA)^f)\), tandis que le deuxième est, par définition
+de \(\widetilde K\), égal à \({}_mA(\widetilde K)\). Or le premier membre, par définition de \(({}_mA)^f\), compte
+tenu que \(\widetilde S\) est une limite projective de schémas \(S_i\) étales finis sur \(S\),
+est aussi égal à \(\operatorname{Hom}_S(\widetilde S,{}_mA)= {}_m\operatorname{Hom}_S(\widetilde S,A)\), et par définition du modèle
+de Néron on a \(\operatorname{Hom}_S(\widetilde S,A)=A(\widetilde K)\), ce qui donne bien l'égalité annoncée
+(6.2.5.1).</p>
+<p>Pour en déduire 2.2.5, on note qu'on déduit de (2.2.5.1) que</p>
+<p>\[(*)\qquad T_\ell(A(\overline K))^I=\varprojlim_\nu({}_{\ell^\nu}A)^f(\overline K)
+\supset\varprojlim_\nu({}_{\ell^\nu}A^o)^f(\overline K)\ ;\]</p>
+<p>mais si \((x_\nu)\) est un élément du deuxième membre, alors pour tout entier
+\(\nu\geq0\), \(x_\nu\) est une section de \(A\) qui est infiniment divisible par \(\ell\), donc
+sa valeur en \(s\) est un élément de \(A_o(k)\) infiniment divisible par \(\ell\), donc
+il est dans \(A_o^o(k)\), ce qui prouve l'égalité des deux derniers membres
+de (*) et achève de prouver 2.2.5.</p>
+<div class="thm thm-plain proposition" id="9.2.2.6">
+  <div class="thm-head"><span class="thm-name">Proposition 2.2.6.</span></div>
+  <div class="thm-body"><p>Soient \(C_K\) un deuxième schéma abélien sur \(K\), de modèle
+de Néron \(C\), et considérons un homomorphisme \(u_K:C_K\longrightarrow A_K\), se prolongeant
+donc en un homomorphisme \(u:C\longrightarrow A\). Supposons que \(u_K\) soit une isogénie.
+Alors pour tout nombre premier \(\ell\), \(T_\ell(u_K):T_\ell(C_K)\longrightarrow T_\ell(A_K)\) induit une
+isogénie des parties fixes</p>
+
+<p id="9.2.2.6.1"><strong>(2.2.6.1)</strong>
+\[T_\ell(C_K)^f\longrightarrow T_\ell(A_K)^f,\]</p>
+
+<p>et de même le morphisme induit par \(u_o:C_o\longrightarrow A_o\)</p>
+
+<p id="9.2.2.6.2"><strong>(2.2.6.2)</strong>
+\[T_\ell(u_o^o):T_\ell(C_o^o)\longrightarrow T_\ell(A_o^o)\]</p>
+
+<p>est une isogénie. Enfin, \(u_o:C_o\longrightarrow A_o\) induit une isogénie du plus
+grand sous-tore de \(C_o\) dans le plus grand sous-tore \(T_o\) de \(A_o\), et au-dessus
+d'une extension \(k'\) de \(k\) sur laquelle les "parties abéliennes" de \(C_o\) et
+de \(A_o\) sont définies (par exemple sur la clôture parfaite de \(k\)), \(u_o\)
+induit une isogénie entre les parties abéliennes de \(C_{ok'}\) et de \(A_{ok'}\).</p></div>
+</div>
+<p>Cet énoncé est conséquence formelle du fait que \(T_\ell(A_K)^f\), \(T_\ell(A_o^o)\),
+le plus grand sous-tore de \(A_o\), enfin la "partie abélienne" de \(A_{ok'}\),
+sont pour \(A_K\) variable des <u>foncteurs additifs</u> en \(A_K\), et que le fait
+que \(u_K\) soit une isogénie s'exprime par la condition qu'il existe un
+morphisme \(v_K:A_K\longrightarrow C_K\) tel que l'on ait \(u_Kv_K=n.\operatorname{id}\), \(v_Ku_K=n.\operatorname{id}\), avec
+\(n\) un entier \(&gt;0\).</p>
+<p>Notons en particulier :</p>
+<div class="thm thm-plain corollaire" id="9.2.2.7">
+  <div class="thm-head"><span class="thm-name">Corollaire 2.2.7.</span></div>
+  <div class="thm-body"><p>Si \(A_K\) et \(C_K\) sont des schémas abéliens isogènes sur \(K\),
+alors les invariants correspondants \(\mu,\lambda,\alpha\) (2.1.11) sont les mêmes
+pour \(A_K\) et pour \(C_K\). En particulier, ils sont les mêmes pour \(A_K\) et
+son dual \(A'_K\).</p></div>
+</div>
+<div class="thm thm-remark remarque" id="9.2.2.8">
+  <div class="thm-head"><span class="thm-name">Remarques</span> <span class="thm-num">2.2.8.</span></div>
+  <div class="thm-body"><p>Dans les deux énoncés précédents 2.2.6 et 2.2.7, on
+a supposé \(S\) hensélien. Il est d'autre part immédiat que 2.2.7, ainsi
+que les assertions de 2.2.6 concernant les propriétés de l'homomorphisme
+induit \(u_o:C_o\longrightarrow A_o\), sont valables sans cette hypothèse. On se
+ramène en effet au cas traité par le changement de base \(S^h\longrightarrow S\), où
+\(S^h\) est le hensélisé de \(S\), compte tenu du fait (immédiat en vertu des
+définitions) que la formation des modèles de Néron commute à ce changement de base.</p></div>
+</div>
+<div class="thm thm-plain corollaire" id="9.2.2.9">
+  <div class="thm-head"><span class="thm-name">Corollaire 2.2.9. (Cas de bonne réduction.)</span></div>
+  <div class="thm-body"><p>Soient \(S\) un trait, \(A_K\) un
+schéma abélien sur le corps des fractions \(K\) de \(S\), \(A\) le modèle de Néron
+de \(A_K\), \(\ell\) un nombre premier \(\ne\operatorname{car}.k\). Les conditions suivantes sont
+équivalentes :</p>
+
+<ol class="enumerate">
+<li><span class="item-label">(i)</span> <u>Il existe un schéma abélien sur \(S\) dont la fibre générique est isomorphe à \(A_K\).</u></li>
+<li><span class="item-label">(ii)</span> <u>\(A\) est un schéma abélien.</u></li>
+<li><span class="item-label">(ii<sup>o</sup>)</span> <u>\(A^o\) est un schéma abélien.</u></li>
+<li><span class="item-label">(iii)</span> <u>\(A_o\) est un schéma abélien.</u></li>
+<li><span class="item-label">(iii<sup>o</sup>)</span> <u>\(A_o^o\) est un schéma abélien, i.e. (avec les notations de (2.1.11) on a \(\lambda=\mu=0\).</u></li>
+<li><span class="item-label">(iv)</span> <u>\(A\) est propre sur \(S\).</u></li>
+<li><span class="item-label">(iv<sup>o</sup>)</span> <u>\(A^o\) est propre sur \(S\).</u></li>
+<li><span class="item-label">\(v\)</span> <u>\(T_\ell(A_K)\) est "non ramifié sur \(S\)" i.e. se prolonge en un
+faisceau \(\ell\)-adique constant tordu sur \(S\), i.e. le groupe d'inertie \(I\)
+opère trivialement sur \(T_\ell(A_K(\overline K))\).</u></li>
+<li><span class="item-label">(v bis)</span> <u>Pour tout entier \(\nu&gt;0\), \({}_{\ell^\nu}A_K\) est "non ramifié sur \(S\)"
+i.e. se prolonge en un revêtement étale sur \(S\), i.e. le groupe d'inertie \(I\)
+opère trivialement sur \({}_{\ell^\nu}A_K(\overline K)\).</u></li>
+</ol>
+
+<p>Enfin, un schéma abélien sur \(S\) comme dans (i) est un modèle
+de Néron de \(A_K\), et en particulier est déterminé à isomorphisme
+unique près.</p></div>
+</div>
+<p id="9.2.2.9.1"><strong>2.2.9.1.</strong>   On dit que \(A_K\) a <u>bonne réduction</u> sur \(S\) s'il satisfait la
+condition (i) ci-dessus. Le critère \(v\) (ou (v bis)) est connu sous le
+nom de <u>critère de NERON-OGG-CHAFAREVITCH</u> de bonne réduction.</p>
+<p>Prouvons 2.2.9. Le fait qu'un schéma abélien sur \(S\) satisfait
+à la propriété universelle d'un modèle de Néron, qui se réduit au fait
+qu'une section rationnelle d'un schéma abélien sur une base régulière
+est partout définie, est bien connu (cf. p.ex. [5]). Cela prouve
+l'équivalence (i) \(\Longleftrightarrow\) (ii) \(\Longleftrightarrow\) (ii<sup>o</sup>), ainsi que la dernière assertion
+de 2.2.9. Les conditions envisagées impliquent évidemment (iii), (iv)
+(iv<sup>o</sup>), qui impliquent chacun (iii<sup>o</sup>), prouvons que (iii<sup>o</sup>) \(\Longrightarrow\) (ii<sup>o</sup>)
+(ce qui prouvera l'équivalence des conditions (i) à (iv<sup>o</sup>)). Or cela
+résulte du fait qu'un schéma en groupes lisse sur un schéma \(S\), à fibres
+des schémas abéliens, est propre sur \(S\) (donc est un schéma abélien)
+en vertu de (EGA IV 15.7.10). D'autre part, compte tenu de 2.2.5 et
+du fait que \(T_\ell(A_K(\overline K))/T_\ell(A_K(\overline K))^I\) est manifestement un \(\mathbb Z_\ell\)-module sans
+torsion, la condition \(v\) s'exprime par l'égalité des rangs de
+\(T_\ell(A_K(\overline K))\) et de sa "partie fixe", i.e. (par (2.1.11) et (2.2.3.3))
+par la condition</p>
+<p>\[\mu+2\alpha=2(\lambda+\mu+\alpha),\]</p>
+<p>i.e. \(2\lambda+\mu=0\), i.e. \(\lambda=\mu=0\), qui n'est autre que (iii<sup>o</sup>). Enfin
+l'équivalence de \(v\) et (v bis) est claire par définition. Cela achève
+la démonstration de 2.2.9.</p>
+<p id="9.2.3"><strong>2.3.</strong>   Nous supposons à nouveau \(S\) hensélien, et \(\ell\ne p=\operatorname{car}.k\). Utilisons
+maintenant l'inclusion</p>
+<p id="9.2.3.1"><strong>(2.3.1)</strong>
+\[T_\ell(T_o)\xhookrightarrow{\ \ } T_\ell(A_o^o)\]</p>
+<p>de (2.1.6), et l'équivalence de catégories rappelée dans 2.2.4. On
+trouve un sous-faisceau \(\ell\)-adique constant tordu canonique de \(T_\ell(A^o)^f\),</p>
+<p>appelée <u>la partie torique</u> de \(T_\ell(A^o)\),</p>
+<p id="9.2.3.2"><strong>(2.3.2)</strong>
+\[T_\ell(A^o)^t\xhookrightarrow{\ \ } T_\ell(A^o)^f\xhookrightarrow{\ \ } T_\ell(A^o),\]</p>
+<p>caractérisé par la condition que sa fibre spéciale soit donnée par
+l'inclusion (2.3.1) :</p>
+<p id="9.2.3.3"><strong>(2.3.3)</strong>
+\[T_\ell(A^o)^t\mathbin{\times_S}s=T_\ell(T_o)\xhookrightarrow{\ \ } T_\ell(A_o^o).\]</p>
+<p>Nous donnerons d'ailleurs plus loin une interprétation de la partie
+torique de \(T_\ell(A^o)\) comme le module de Tate \(T_\ell(T)\) d'un tore \(T\) sur \(S\) qui
+relève le tore \(T_o\) sur \(k\), interprétation qui permettra d'étendre la
+définition de la partie torique au cas \(\ell=p\). Pour l'instant, et
+pour fixer les idées, nous nous bornons à examiner le cas \(\ell\ne p\),
+auquel cas la partie torique de \(T_\ell(A^o)\) peut donc se décrire par le
+sous-\(\mathbb Z_\ell\)-module correspondant de \(T_\ell(A(\overline K))\) :</p>
+<p id="9.2.3.4"><strong>(2.3.4)</strong>
+\[T_\ell(A(\overline K))^t\xhookrightarrow{\ \ } T_\ell(A(\overline K))^f\xhookrightarrow{\ \ } T_\ell(A(\overline K)),\]</p>
+<p>stable par l'action de \(\pi\), où le premier terme est défini comme \(T_\ell(A^o)^t(\overline K)\),
+et est appelé encore comme de juste le <u>sous-module torique</u> du module
+de Tate \(T_\ell(A(\overline K))\). Ce dernier apparaît donc comme muni d'une filtration
+canonique à trois crans (2.3.4). Appliquant ces réflexions au schéma
+abélien dual \(A'_K\), on trouve de même une filtration à trois crans</p>
+<p id="9.2.3.5"><strong>(2.3.5)</strong>
+\[T_\ell(A'(\overline K))^t\xhookrightarrow{\ \ } T_\ell(A'(\overline K))^f\xhookrightarrow{\ \ } T_\ell(A'(\overline K)).\]</p>
+<p>Les termes médians dans (2.3.4) et (2.3.5) ("parties fixes") étant décrits
+en termes des structures de \(\pi\)-modules des modules de Tate de \(A(\overline K)\), \(A'(\overline K)\)
+comme les modules d'invariants sous le groupe d'inertie \(I\) (1.6.5), les
+parties toriques sont complètement décrites en termes des parties fixes
+et de l'accouplement \(\varphi\) de (1.0.2), grâce au théorème suivant (dont
+un cas particulier se trouve déjà dans [11]).</p>
+<div class="thm thm-plain theoreme" id="9.2.4">
+  <div class="thm-head"><span class="thm-name">Théorème</span> <span class="thm-num">2.4.</span> (Théorème d'orthogonalité)</div>
+  <div class="thm-body"><p>Soient \(S\) un trait hensélien, \(A_K\) un schéma abélien sur son corps des fractions \(K\),
+\(A'_K\) le schéma abélien dual, \(\ell\) un nombre premier distinct de la caractéristique résiduelle de \(S\),
+d'où sur les modules de Tate \(T_\ell(A(\overline K))\) et \(T_\ell(A'(\overline K))\) la filtration canonique
+(2.3.4) resp. (2.3.5) par la "partie fixe" et par la "partie torique".
+Alors la partie torique \(T_\ell(A(\overline K))^t\) est l'intersection de la partie fixe
+\(T_\ell(A(\overline K))^f\) avec l'orthogonal de la partie fixe
+\(T_\ell(A'(\overline K))^f=T_\ell(A'(\overline K))^I\) pour l'accouplement canonique
+\(\varphi\) (1.0.3), donc symétriquement, la partie torique \(T_\ell(A'(\overline K))^t\)
+est l'intersection de \(T_\ell(A'(\overline K))^f\) avec l'orthogonal de la partie fixe
+\(T_\ell(A(\overline K))^f=T_\ell(A(\overline K))^I\). (NB l'exposant I dénote
+le sous-module des invariants sous l'action du groupe d'inertie I.)</p></div>
+</div>
+<div class="proof proof-part proof-first" id="proof-9-2-b79" data-proof-group="proof-9-2-b79">
+  <div class="proof-head"><span class="proof-name">Démonstration</span><span class="proof-toggle">▾</span></div>
+  <div class="proof-body"><p>a) Prouvons que \(T_\ell(A(\overline K))^t\) est orthogonal à
+\(T_\ell(A'(\overline K))^f\). Pour ceci, nous allons interpréter la restriction de la forme
+\(\varphi\) aux parties fixes des modules de Tate, à l'aide de la biextension canonique
+\(W^o=W\) de (1.4.4), prolongement canonique de la biextension \(W_K\) de
+\((A_K,A'_K)\) par \(G_{mK}\) en une biextension de \((A^o,A'{}^o)\) par \(G_{mS}\).
+En vertu de VIII 2.2, à \(W\) est associé un accouplement</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.4.1"><strong>(2.4.1)</strong>
+\[\varphi_W:T_\ell(A^o)\times T_\ell(A'{}^o)\longrightarrow T_\ell(G_{mS}),\]</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>dont l'accouplement \(\varphi\) de (1.0.3) est déduit en passant aux points à
+valeurs dans \(\overline K\). Il en résulte que la restriction de \(\varphi\) aux parties
+fixes envisagées dans 2.4 s'obtient à partir de l'accouplement</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.4.2"><strong>(2.4.2)</strong>
+\[T_\ell(A^o)^f\times T_\ell(A'{}^o)^f\longrightarrow T_\ell(G_{mS})\]</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>restriction de (2.4.1), en passant aux points à valeurs dans \(\overline K\).
+Comme les deux termes qui interviennent dans le premier membre de (2.4.2) sont
+maintenant des faisceaux \(\ell\)-adiques constants tordus, pour étudier ce dernier
+accouplement, on peut se borner à étudier l'accouplement induit sur les fibres spéciales.
+Or les fibres des deux termes envisagés ne sont autres que les modules de Tate
+\(T_\ell(A_o^o),T_\ell(A'{}_o^o)\) (2.2.3.3), et l'accouplement déduit de (2.4.2)
+par passage aux fibres spéciales n'est autre que l'accouplement</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.4.3"><strong>(2.4.3)</strong>
+\[T_\ell(A_o^o)\times T_\ell(A'{}_o^o)\longrightarrow T_\ell(G_{mk})\]</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>déduit de la biextension \(W_o\) de \((A_o^o,A'{}_o^o)\) par \(G_{mk}\), restriction
+de \(W\) aux fibres spéciales.</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>Rappelons maintenant (2.3) que la partie torique de \(T_\ell(A(\overline K))\)
+s'obtient en passant aux points à valeurs dans \(\overline K\) dans le sous-faisceau
+\(\ell\)-adique constant tordu \(T_\ell(A^o)^t\) de \(T_\ell(A^o)^f\), donc la relation
+d'orthogonalité à prouver s'exprime en disant que l'accouplement induit par (2.4.2)</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.4.4"><strong>(2.4.4)</strong>
+\[T_\ell(A^o)^t\times T_\ell(A'{}^o)^f\longrightarrow T_\ell(G_{mS})\]</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>est identiquement nul. Or il suffit de le voir pour l'accouplement correspondant
+sur les fibres spéciales, qui par la définition de la partie torique n'est autre que
+l'accouplement</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.4.5"><strong>(2.4.5)</strong>
+\[T_\ell(T_o)\times T_\ell(A_o^o)\longrightarrow T_\ell(G_{mk})\]</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>induit par (2.4.3). Or en vertu de VIII 4.10 cet accouplement est nécessairement nul,
+ce qui prouve l'orthogonalité annoncée.</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>b) Prouvons que l'inclusion</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.4.6"><strong>(2.4.6)</strong>
+\[T_\ell(A(\overline K))^t\subset T_\ell(A(\overline K))^f\cap
+\bigl(T_\ell(A'(\overline K))^f\bigr)^\perp\]</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>est une égalité, où le signe \(\perp\) désigne l'orthogonal. Il revient au même de dire
+que dans l'accouplement (2.4.2), l'annulateur du deuxième facteur, qui contient la partie
+torique \(T_\ell(A^o)^t\) comme on vient de voir, est <u>égale</u> à cette dernière. Comme
+il s'agit encore de relations entre faisceaux \(\ell\)-adiques constants tordus, il suffit
+de vérifier cette assertion sur les fibres spéciales, i.e. que l'inclusion déjà obtenue (1.10)</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.4.7"><strong>(2.4.7)</strong>
+\[T_\ell(T_o)\subset T_\ell(A_o'{}^o)^\perp\]</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>est une égalité ; en d'autres termes, il faut vérifier que la biextension \(W_o\) de
+\((A_o^o,A_o'{}^o)\) est <u>non dégénérée à gauche</u> (VIII 4.11). Or c'est ce que nous
+avons déjà noté dans 1.5, comme conséquence d'un résultat de la thèse de RAYNAUD.</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.5"><strong>2.5.</strong>   On peut donner une forme équivalente au théorème d'orthogonalité,
+en utilisant une polarisation \(\xi\) de \(A_K\), et la forme bilinéaire alternée (1.0.8),
+compatible aux opérations de \(\pi\),</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.5.1"><strong>(2.5.1)</strong>
+\[\varphi_\xi:T_\ell(A(\overline K))\times T_\ell(A(\overline K))
+\longrightarrow T_\ell(\overline K^*),\]</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>déduite de la forme \(\varphi\) (1.0.3) par transport de structure sur le deuxième
+argument à l'aide de l'isogénie de \(\mathbb Z_\ell\)-modules</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>
+
+\[T_\ell(A(\overline K))\longrightarrow T_\ell(A'(\overline K))\]
+
+</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>induite par l'isogénie \(\psi_\xi:A_K\longrightarrow A'_K\) définie par \(\xi\).
+L'égalité dans (2.4.6) prend alors la forme simple</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.5.2"><strong>(2.5.2)</strong>
+\[W=V\cap V^\perp,\]</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>où on a posé</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.5.3"><strong>(2.5.3)</strong>
+\[\left\{\begin{aligned}
+U&amp;=T_\ell(A(\overline K)),\qquad V=U^I=\text{« partie fixe » de }T_\ell(A(\overline K)),\\
+W&amp;=\text{partie torique de }T_\ell(A(\overline K)),
+\end{aligned}\right.\]</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>et où \(\perp\) désigne l'orthogonal par rapport à la forme de polarisation (2.5.1).
+Les modules précédents donnent alors lieu au diagramme d'inclusions</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.5.4"><strong>(2.5.4)</strong>
+\[\xymatrix@C=3.8em@R=2.2em{
+&amp;&amp;V\ar[dr]^{2\alpha}&amp;&amp;\\
+U&amp;W^\perp=V+V^\perp\ar[l]_{\mu}\ar[ur]^{2\lambda}\ar[dr]_{2\alpha}
+&amp;&amp;W=V\cap V^\perp\ar[r]^{\mu}&amp;0\\
+&amp;&amp;V^\perp\ar[ur]_{2\lambda}&amp;&amp;
+}\]</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>où les entiers \(2\alpha,2\lambda,\mu\) désignent les rangs des quotients de deux
+modules consécutifs dans le diagramme, les notations étant celles de (2.1.9). (Le fait
+que \(W\) soit de rang \(\mu\) est la définition de \(\mu\), que \(V/W\) soit de rang
+\(2\alpha\) est la deuxième relation (2.1.11) jointe à la suite exacte (2.1.6), d'où par
+orthogonalité rang \(U/W^\perp=\mu\) et rang \(W^\perp/V^\perp=2\alpha\) ; enfin les formules</p></div>
+</div>
+<div class="proof proof-part proof-cont" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p id="9.2.5.5"><strong>(2.5.5)</strong>
+\[\operatorname{rang} V/V\cap V^\perp=\operatorname{rang} V/W=2\lambda,\]</p></div>
+</div>
+<div class="proof proof-part proof-cont proof-last" data-proof-group="proof-9-2-b79">
+  <div class="proof-body"><p>et la formule duale, résultent des précédentes, compte tenu de (2.1.10) et de
+rang \(U=n\).</p></div>
+</div>
+<div class="thm thm-remark remarque" id="9.2.6">
+  <div class="thm-head"><span class="thm-name">Remarques</span> <span class="thm-num">2.6.</span></div>
+  <div class="thm-body"><p>a) Nous avons obtenu ici le théorème
+d'orthogonalité 2.4 comme conséquence facile de la théorie des biextensions développée
+dans les numéros précédents. On peut démontrer l'<u>inclusion</u> (2.4.6) sans utiliser
+la théorie des biextensions, par un argument arithmétique dans le style de la démonstration
+du "théorème de monodromie" donnée dans I, en se ramenant à une situation où \(S\) est
+de corps résiduel fini, et où le résultat d'orthogonalité résulte d'une simple considération
+de <u>poids</u> pour l'opération de Frobenius (utilisant le résultat de A. WEIL sur les
+valeurs propres dudit Frobenius). (Il est inutile d'invoquer ici la résolution des
+singularités, en énonçant le résultat voulu pour des schémas en groupes \(A\) sur des
+schémas \(S\), sous des conditions suffisamment générales.) Il ne semble pas malheureusement
+qu'on puisse obtenir par cette méthode l'égalité dans l'inclusion précédente, qui sera
+utilisée, de façon essentielle semble-t-il, dans la démonstration du "théorème de réduction
+semi-stable" au n° suivant.</p>
+  <p>b) Le théorème d'orthogonalité 2.4 permet d'expliciter les propriétés les plus importantes
+du modèle de Néron d'une variété abélienne \(A_K\) en termes de la représentation du groupe
+d'inertie \(I\) sur le module de Tate \(T_\ell(A(\overline K))\), \(\ell\) étant un nombre
+premier fixé distinct de la caractéristique résiduelle. (Le cas \(\ell=p\) sera examiné à
+part plus loin (n° 5)). Comme premier énoncé de ce type, mais n'utilisant pas le théorème
+d'orthogonalité, rappelons le critère de bonne réduction 2.2.9. Nous allons donner de
+nombreux autres exemples par la suite, en commençant au n° suivant (3.5).</p></div>
+</div>
+<nav class="pager"><span><a href="9-1.html" rel="prev">← Précédent</a></span><span><a href="./">Table des matières</a></span><span><a href="9-3.html" rel="next">Suivant →</a></span></nav>
+<p class="viewer-link"><a href="../../../volumes/sga7.html#9-2">Lire dans le visualiseur bilingue (fr · en)</a></p>
+</main>
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var id = decodeURIComponent(a.getAttribute('href').slice(1));
+  if (id && !document.getElementById(id)) {
+    e.preventDefault();
+    location.href = '../../../volumes/sga7.html#' + id;
+  }
+});
+</script>
+</body>
+</html>

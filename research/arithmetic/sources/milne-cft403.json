@@ -21,11 +21,18 @@
       "printed_pages": "9",
       "pdf_pages": "18",
       "scope": "Canonical prime-ideal-to-Frobenius Artin map and ray-class factorization with ramified support. Empty ramification gives the ordinary class-group surjection, with conjugation compatibility on prime ideals."
+    },
+    {
+      "locator": "Chapter V, Theorem 3.27",
+      "printed_pages": "165",
+      "pdf_pages": "174",
+      "scope": "For a finite abelian extension, the relative discriminant is the product of the finite conductors of all its characters. Applied in IG3 with multiplicity 3^s under restriction to the smaller local translation subgroup. The theorem statement and conductor definition were inspected; this page omits the proof of the product formula."
     }
   ],
   "rendered_pages_visually_inspected": [
     13,
-    18
+    18,
+    174
   ],
   "role": "Primary external theorem interface or explicitly scoped comparison context."
 }

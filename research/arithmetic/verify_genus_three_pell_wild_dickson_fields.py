@@ -1,6 +1,6 @@
-"""Exact finite algebra, local residues, and conductors for WD1–WD4."""
+"""Exact finite algebra, local residues, and conductors for WD1–WD5."""
 
-from sage.all import GF, QQ, PolynomialRing, valuation
+from sage.all import GF, QQ, EllipticCurve, PolynomialRing, valuation
 
 
 ring = PolynomialRing(QQ, "z")
@@ -70,7 +70,31 @@ def verify_wild_polynomials_and_conductors():
         assert valuation(at_zero, 3) == valuation(at_infinity, 3) == -5
 
 
+def verify_pell_fiber_transport():
+    g0 = z**6 - 3*z**5 - 3*z**4 - 12*z**3 + 6*z**2 - 12*z - 8
+    ell0 = z**2 + 2
+    assert g0**2 - octic*ell0**2 == -200*z**6
+    assert g0(0) + 4*ell0(0) == 0 and g0(0) - 4*ell0(0) != 0
+    assert valuation(7776, 2) == 5
+    assert 7776 == 6*36**2
+
+    h = QQ(3)/2
+    first_curve = EllipticCurve([0, h*h, 0, 2*h*(h+1), (h+1)**2])
+    for t, R in ((None, 1), (-1, 9), (0, 4), (2, 36)):
+        if t is None:
+            y, v = -QQ(2)/3, QQ(4)/3
+        else:
+            denominator = 3*(t*t + 2)
+            y = QQ(-2*t*t - 4*t + 4)/denominator
+            v = QQ(12*R)/denominator**2
+        U = v*v/(4*y*y)
+        V = v/(8*y)*(-QQ(135)/16*y*y - QQ(25)/(9*y*y))
+        point = first_curve(U-1, V)
+        assert point[0] == 0 and (2*point).order() == 3
+
+
 if __name__ == "__main__":
     verify_quotient_pell_and_residues()
     verify_wild_polynomials_and_conductors()
-    print("WD1–WD4 Pell, wild discriminant, conductor, and prime-ratio data verified.")
+    verify_pell_fiber_transport()
+    print("WD1–WD5 Pell data, wild conductors, prime ratios and rational fibers verified.")

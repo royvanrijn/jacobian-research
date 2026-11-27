@@ -596,13 +596,205 @@ unit group might be divisible by three. The checker demonstrates this
 failure mode with \(3+\sqrt{10}\), which is a local noncube, and its
 cube \(117+37\sqrt{10}\), which is locally cubic.
 
-The next useful step is a source of certified units on a thinner
-LY4 subfamily, or a parameter model with substantially smaller field
-discriminants that preserves all five virtual classes. Merely extending
-these prefixes does not provide a mechanism for infinitude. Any
-explicit unit construction must establish integrality, its norm and
-the noncube residue in the same fibres, and then prove distinct-field
-infinitude; congruences on the parameter alone do not do this.
+Merely extending these prefixes does not provide a mechanism for
+infinitude. LY8 below excludes polynomial Pell units on the existing
+curve and its polynomial substitutions. Individual number-field
+fibres could still have useful units. A uniform polynomial Pell
+construction requires a different curve, integral specialization,
+the noncube residue and distinct-field infinitude on the same slice.
+
+## Polynomial Pell obstruction on the existing curves
+
+The closest geometric criterion is
+[Barroero–Capuano–Zannier, Proposition 1.2](https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/betti-maps-pell-equations-in-polynomials-and-almostbelyi-maps/999A05A799D0BC64A35C64D4AA955166):
+for a squarefree polynomial of degree at least four, polynomial Pell
+solvability over the algebraic closure is equivalent to torsion of
+the difference of the two infinities. Its order is the minimum
+numerator degree of a norm-one solution over that closure. This
+inspected classical bridge was already used for comparison in
+[WD1](GENUS_THREE_PELL_WILD_DICKSON_FIELDS.md). It does not supply
+rational coefficients, integral specializations, five rational
+torsion directions or unit separation. Their complex-density
+Theorem 1.3 supplies none of these arithmetic conclusions either.
+The arguments required here are given below.
+
+**Proposition LY8 (no polynomial Pell unit on the LY curves).** For
+the exact polynomial \(f\) in (1), the class
+\(\delta=[\infty_+-\infty_-]\) has infinite order. Consequently
+\(A^2-fB^2\in\mathbb Q^\times\) has no solution with
+\(A,B\in\mathbb Q[t]\) and \(B\ne0\). These conclusions also
+hold for \(f(h(u))\), whenever \(h\in\mathbb Q[u]\) is
+nonconstant and \(f(h(u))\) is squarefree, including LY4.
+
+The [polynomial Pell checker](verify_lyw_polynomial_pell.py) gives
+the following finite exact certificate. At the good primes 59 and
+71, the Frobenius characteristic polynomials are
+\[
+\begin{split}
+ L_{59}(X)={}&X^8+47X^6+594X^5+528X^4+35046X^3
+                    +163607X^2+12117361,\\
+ L_{71}(X)={}&X^8-12X^7+131X^6-585X^5+5847X^4
+                    -41535X^3+660371X^2-4294932X+25411681.
+\end{split}
+\]
+In particular
+\[
+ \#J(\mathbb F_{59})=12317184,\quad
+ \#J(\mathbb F_{71})=21740967,\quad
+ \gcd(12317184,21740967)=2187.
+ \tag{20}
+\]
+Good reduction is checked by polynomial gcds. PARI/GP computes the
+characteristic polynomials; reciprocal coordinates reproduce them.
+Direct counts of \(C(\mathbb F_p)\) also check their first traces,
+but do not independently verify all coefficients.
+
+Suppose \(\delta\) had order \(n\). Its prime-to-\(p\) part
+injects under good reduction, since multiplication by an integer
+prime to \(p\) is invertible on the formal kernel of reduction.
+The first order in (20) is prime to 71, and the second prime to 59.
+Thus \(n\) is prime to both and divides 2187. Its reduction at
+59 would have order at most 2187.
+
+To exclude this, take one Laurent square root of \(f\) over
+\(\mathbb F_{59}((t^{-1}))\), and let \(a_0\) be its polynomial
+part. Polynomial continued fractions use
+\[
+ P_0=0,\ Q_0=1,\quad P_{j+1}=a_jQ_j-P_j,\quad
+ Q_{j+1}=(f-P_{j+1}^2)/Q_j,\quad
+ a_{j+1}=\operatorname{quo}(a_0+P_{j+1},Q_{j+1}).
+ \tag{21}
+\]
+For convergents \(A_j/B_j\), the determinant recurrence gives
+\(A_j^2-fB_j^2=(-1)^{j+1}Q_{j+1}\). Every polynomial unit of
+constant nonzero norm occurs among them: its coefficients are
+coprime, \(\deg A=\deg B+5\), and, after choosing a sign,
+\(v_\infty(\sqrt f-A/B)=2\deg B+5>2\deg B\).
+The Euclidean continued-fraction criterion then makes \(A/B\)
+a convergent. This criterion has the same determinant proof over
+any coefficient field: two distinct reduced fractions have
+difference of degree at least minus the sum of the denominator
+degrees, ruling out such an approximation between convergents.
+
+A constant next denominator detects a polynomial unit of **any**
+constant norm; nonsquare finite-field norms are included. The first
+2146 convergents have no constant next denominator. The next has
+numerator degree 2188 and next denominator degree four. Numerator
+degrees strictly increase. Hence no nonconstant polynomial unit
+has pole order at most 2187. A principal divisor
+\(n(\infty_+-\infty_-)\) would supply just such a regular affine
+unit \(A+B y\), with numerator degree \(n\). The corresponding
+Riemann–Roch equations are defined over \(\mathbb F_{59}\), so
+principality over its algebraic closure also supplies a solution
+over \(\mathbb F_{59}\). This contradicts (21), proving nontorsion.
+
+Finally the map \((u,y)\mapsto(h(u),y)\) sends the two infinities
+to the corresponding infinities of the original curve. Pushforward
+sends their difference to \(\delta\), with no ramification factor:
+the residue degrees are one. A torsion difference upstairs would
+have torsion image. This proves the assertion about polynomial
+substitutions. It excludes a uniform polynomial Pell mechanism,
+not units in individual quadratic fields, rational substitutions
+with several poles, or constructions on a different curve.
+
+## A unit built into the replacement model
+
+**Proposition LY9 (an explicit unit and its infinity direction).**
+Let \(P\in\mathbb Z[t]\) have degree \(m\ge2\), with
+\(F=P^2+1\) squarefree. On \(C_P:y^2=F(t)\), the difference
+\(\delta_P\) of the two rational infinities has exact order \(m\).
+For every integer \(n\) with \(P(n)\equiv3\) or \(6\pmod9\),
+\[
+ K_n=\mathbb Q(\sqrt{P(n)^2+1}),\qquad
+ \eta_n=P(n)+\sqrt{P(n)^2+1}
+ \tag{22}
+\]
+give a real quadratic field split at three and an integral unit
+of norm \(-1\), noncubic in both completions above three. Also
+\[
+ R_{K_n}\le\log\bigl(|P(n)|+\sqrt{P(n)^2+1}\bigr).
+ \tag{23}
+\]
+
+The identity \((y+P)(y-P)=1\) gives a divisor
+\(\pm m(\infty_+-\infty_-)\). Any function supported at the
+infinities is an affine unit \(A+B y\). Its constant norm forces
+\(\deg A=\deg B+m\ge m\), with pole order \(\deg A\), unless
+it is constant. This proves exact order, also over the algebraic
+closure. In (22) the radicand lies strictly between consecutive
+squares and is \(1\bmod3\). Both the element and its inverse
+are integral. Its trace \(2P(n)\) is nonzero modulo nine, so LY7
+proves noncubeness without a squarefree factorization or a
+fundamental unit. Taking the embedding or inverse of absolute
+value greater than one proves (23). This bound uses the parameter
+value; no discriminant bound after removal of square factors is
+asserted.
+
+If \(3\mid m\), the nonzero rational three-torsion class
+\((m/3)\delta_P\) is represented by the divided divisor of
+\(y+P\). Its specialized ideal class is zero on integral fibres:
+this direction is already a unit and must not be counted as an
+additional class-group direction. Taking \(3\nmid m\) avoids
+this particular loss. Rational three-torsion over \(\mathbb Q\)
+is isotropic for the Weil pairing, since \(\mu_3(\mathbb Q)=1\).
+Five independent rational directions therefore require genus at
+least five. For \(P^2+1\), the first degree meeting this bound
+and \(3\nmid m\) is \(m=7\), giving genus six.
+
+Here is an explicit simultaneous construction problem. Seek one
+\(P\) and five pairs \(Z_i,H_i\in\mathbb Q[t]\) with
+\[
+ 2PZ_i+Z_i^2-1=H_i^3,\qquad G_i=P+Z_i,\qquad
+ \alpha_i=\frac{y-G_i}{y-P},
+ \quad \deg Z_i<m,\quad H_i\ne0.
+ \tag{24}
+\]
+Then \(G_i^2-F=H_i^3\) and \(N(\alpha_i)=-H_i^3\) is a cube.
+At infinity \(y-P\) has orders \(m,-m\); the corresponding
+orders of the numerator are \(m-3\deg H_i,-m\). Thus the
+orders of \(\alpha_i\) are \(-3\deg H_i,0\).
+At a common finite zero of \(y-G_i\) and \(y+G_i\), their norm
+identity and its derivative would force a multiple root of \(F\).
+These factors are therefore coprime on the smooth affine curve,
+so every finite divisor order is divisible by three too. Hence
+(24) supplies rational Jacobian three-torsion, but not automatically
+five independent classes. For degree seven one can use
+\(\deg Z_i\le5,\deg H_i\le4\) in the coefficient system.
+The trivial solution \(Z_i=0,H_i=-1\) gives \(\alpha_i=1\)
+and must be discarded.
+
+There is an explicit sufficient local slice if all coefficients in
+(24) are integral. Impose \(P(n)\equiv3\) or \(6\pmod9\) and
+\(Z_i(n)\equiv0\pmod9\). Since \(y-P(n)\) is an integral
+unit, \(\alpha_i=1-Z_i(n)/(y-P(n))\) is \(1\bmod9\) at
+both split places over three. Let \(T\) be the primes dividing
+\(6\operatorname{disc}(F)\), and additionally require
+\(H_i(n)\) to be a unit at every prime in \(T\). Then all five
+\(\alpha_i\) are virtual: they are integral, with norm
+\(-H_i(n)^3\), and at \(T\) that norm is a unit. Outside
+\(T\), two nonunit conjugate numerators would force
+\(F(n)=G_i(n)=H_i(n)=F'(n)=0\bmod p\), contradicting good
+reduction. Thus each numerator valuation is a multiple of three,
+as its conjugate product is a cube and one factor is a unit.
+This supplies a conditional all-prime proof; existence of such
+simultaneous coefficient data and a nonempty slice is not asserted.
+
+Still required are five independent nontrivial classes in (24),
+a nonempty integral congruence slice on which all five are virtual
+and locally cubic at three while \(P(n)\equiv3\) or \(6\pmod9\),
+and infinitely many distinct fields on that same slice. Finite bad
+primes and specialized independence need explicit proofs as in LY4.
+All these simultaneous requirements remain open. This replacement
+is not a subfamily of LY4, so its success would not itself resolve
+the LY4-specific endpoints or inherit (16).
+
+The simplest candidate \(P=t^7+3\) supplies (22) on
+\(n\equiv0\pmod9\), but its good reduction at eleven has
+characteristic polynomial \(X^{12}-394X^6+1771561\) and Jacobian
+order \(1771168\), prime to three. It has no rational
+three-torsion. This exact rejection concerns this candidate only;
+other degree-seven polynomials, higher degrees and other Pellian
+models are not excluded.
 
 ## Replay and limits
 
@@ -611,6 +803,7 @@ From the repository root in its existing Linux environment:
 ```sh
 .venv/bin/python research/arithmetic/verify_lyw_degree_ten_mirror_slice.py
 .venv/bin/python research/arithmetic/verify_lyw_degree_ten_mirror_slice.py --unit-probe --steps 2000 --fibres 3
+.venv/bin/python research/arithmetic/verify_lyw_polynomial_pell.py
 ```
 
 Internally replayed with Python 3.12.3 and SymPy 1.14.0. The checker
@@ -628,6 +821,15 @@ and a half-integral unit, and rejects invalid local-unit data. The
 separate bounded probe has exactly the scope recorded above. The universal local argument,
 Kummer descent, tower cuts and application of the counting theorem are written proofs
 above, not conclusions established merely by this finite replay.
+The polynomial Pell checker was internally executed with the same
+Python/SymPy versions and PARI/GP 2.15.4. It verifies (20), the
+complete bounded finite-field obstruction (21), positive controls
+of primitive degree two and three, all modulo-nine unit cases in
+LY9, and the rejection of \(P=t^7+3\). A deliberately altered
+Frobenius certificate is rejected. Its 2147-step trace digest is
+`3843780d9e18340a1f92137d59941d056002655242c2f080ce7e23c01c0e318d`.
+These exact inputs support LY8's written universal obstruction;
+they are not a new integer-Pell search or a rank-five certificate.
 Independent replay, formal verification, external review and
 historical-priority review have not occurred. A specialist audit of
 the local inequalities, mirror descent and exact counting interface

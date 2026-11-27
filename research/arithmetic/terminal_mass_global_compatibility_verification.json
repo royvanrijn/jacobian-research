@@ -3,9 +3,9 @@
   "kind": "terminal_mass_global_compatibility_controls",
   "result": "PASS",
   "python": "3.12.3",
-  "checker_sha256": "267080274616f9c8c6ffc87bbd7c6cee1a0bd243f2016cb8e736760a0473ddcf",
+  "checker_sha256": "a7d5ecec7195a64f2647ef6d1c119896e3a48f03133a96353ce924e4759a63d3",
   "input_sha256": {
-    "TERMINAL_MASS_HURWITZ_DESCENT.md": "a14f07f9ed293f23f9f4f67db1446e39d8a20278aeab32588627788e66d90fef",
+    "TERMINAL_MASS_HURWITZ_DESCENT.md": "1cd6f80707961c45a7372cde0921034868df2375ad0fdac8b2c963c598dc2312",
     "terminal_mass_hurwitz_descent_certificate.json": "d2f2ba4d9c9d7cbb665183bf33fe3cbc195401ff37fd0dd9a339138a961257d0",
     "verify_terminal_mass_hurwitz_descent.py": "0718f36bc5814aec06d6746934619353fe4545f9d37ae956ce7782d24cba5a1f",
     "verify_paired_hurwitz_leaf_extraction.py": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
@@ -366,7 +366,24 @@
       "positive_orbit_minimum_counterexample": false
     }
   },
-  "scope": "Exact controls of complementary twists, contact covers, common terminal matching and cut-size restrictions; bounded modular controls for exact order-three/four coset alignment; literal pair-rotation masks and the new-minimizer contradiction; tree support-code invariance criterion. The universal proofs exclude equal-terminal ratio three for N>=15 and singleton ratios 3/2 and 4/3. No higher-degree census or exclusion of all positive full-alternating orbit minima.",
+  "terminal_comparison_and_noncrossing_controls": {
+    "retained_domain_size": 392,
+    "exact_terminal_bridge_comparisons": 126,
+    "disjoint_edge_noncrossing_comparisons": 966
+  },
+  "saturated_singleton_controls": {
+    "even_t_range_inclusive": [
+      2,
+      40
+    ],
+    "normalized_patterns": 44260,
+    "saturated_covers": 1600,
+    "covers_with_nonantipodal_roots_and_one_diameter": 800,
+    "natural_antipodal_pairing_break_controls": 800,
+    "two_diameters_rejected_by_alternation": true,
+    "scope": "Finite algebraic controls of Lemma 18; nonantipodal single-diameter covers are retained positive controls, not global completions."
+  },
+  "scope": "Exact controls of complementary twists, phase alignment, pair re-minimization and the tree support-code criterion, augmented by exact terminal-bridge mass comparisons and disjoint-edge noncrossing on the retained degree-seven domain and bounded saturated order-two covers. The written Theorem 17 excludes equal-terminal minima for N>=15 and gives extraction for N not congruent to 1 modulo 6; Lemma 18 forces antipodal middle roots in the remaining singleton family. No higher-degree census or exclusion of that remaining family.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false

@@ -267,12 +267,13 @@ algebraic polynomial with a particular tuple. Connectivity in degree
 sixteen and uniform connectivity remain open.
 
 For the residual pure-DT polynomial problem on \(N\ge15\) sheets,
-the [global compatibility restrictions](TERMINAL_MASS_HURWITZ_DESCENT.md#corollary-11-positive-minima-have-restricted-mass-and-terminal-sizes)
-force a hypothetical positive orbit minimum to satisfy \(3m\ge N-4\),
-with equal terminal sizes or a singleton at a minimizing factor.
-Full alternating monodromy has not yet been shown to contradict these
-remaining cases. These restrictions neither extend the finite census above
-nor resolve the separate mixed polynomial problem needed for degree sixteen.
+[Theorem 17 and Lemma 18](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-17-only-the-equality-singleton-family-can-remain)
+leave only singleton cuts \((1,t;2t)\), even \(t\), with \(N=3t+1\),
+\(m=(N-4)/3\) and antipodal middle roots. Extraction follows for
+\(N\not\equiv1\pmod6\). Full alternating monodromy has not yet been
+shown to exclude the remaining singleton family. This structural result
+does not extend the finite census above or resolve the separate mixed
+polynomial problem needed for degree sixteen.
 
 ## Evidence
 

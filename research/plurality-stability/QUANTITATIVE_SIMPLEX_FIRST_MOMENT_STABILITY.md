@@ -381,6 +381,19 @@ relative Hermite control remain valid arbitrarily close to a tetrahedron.
 Metric localization supplies no repair of that retired estimate, and
 pair comparisons cannot be iterated on already changed cells.
 
+The preferred remaining route is now the weaker-domain
+[maximizer-rigidity programme](MAXIMIZER_PERTURBATIVE_RIGIDITY.md): retain
+global maximality and prove uniform local uniqueness modulo rotations.
+Its implication (R1) uses the same localization and dimension reduction.
+The new note proves the nonlinear assignment condition, normalized-price
+and bounded-interface estimates, an expanding-ball kernel estimate, and a
+spectral gap for the limiting first-moment interface form modulo rotations.
+Combining those inputs sharpens actual-maximizer localization to
+$d_4(A)=O(\rho)$ and $F_4-W_1(A)=O(\rho^2)$ in its (S1)--(S5).
+The uniform full-noise tail and nonlinear rigidity step remains open.
+The nearby comparison above remains an alternative sufficient obligation;
+its inequality alone would not classify possible tied maximizers.
+
 ## Literature and assurance limits
 
 The source review inspected Zhang's frozen Sections 1–5, the exact
@@ -395,6 +408,7 @@ The proofs (C1)–(G2), (H1) and (N1)–(N2) are analytic written deductions.
 No finite sample, floating computation, repository consistency check or
 partial upstream Lean replay proves them. Independent mathematical
 review, full formal verification and external review remain unperformed.
-The next research task is the nearby full-kernel obligation, with the
-existing asymmetric-cycle identities retained as tests of any proposed
-comparison.
+The preferred next research task is uniform rigidity of nearby actual
+maximizers, with the all-competitor nearby comparison retained as an
+alternative. The existing asymmetric-cycle identities remain tests of
+proposed kernel arguments; none supplies the missing rigidity theorem.

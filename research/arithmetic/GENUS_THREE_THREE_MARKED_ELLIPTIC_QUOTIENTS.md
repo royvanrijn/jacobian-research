@@ -133,7 +133,8 @@ simple Jacobians and exact full torsion groups from
 subgroups of rational torsion. HG1 has a split Jacobian
 and determines its rational \(3\)-torsion subgroup; it
 does not assert geometric simplicity or that the entire
-torsion group is \((\mathbb Z/3)^3\).
+torsion group is \((\mathbb Z/3)^3\). HG6 below determines the full
+group as \(\mathbb Z/3\oplus\mathbb Z/6\oplus\mathbb Z/12\).
 These inspected statements support a separate existence
 result, but do not settle historical priority or exclude
 later constructions. Specialist novelty and proof review
@@ -160,7 +161,7 @@ elliptic data. The sign-character and Weil-pairing arguments remain
 written proof inputs. Specialist proof review and comparison with
 later models are the open obligations for this standalone existence
 result. Neither the full torsion group nor geometric simplicity is
-part of its assertion.
+part of HG1's assertion; HG6 supplies the former separately.
 
 ## Three specialized Kummer directions and a common conductor
 
@@ -424,3 +425,124 @@ conductor fixture at \(D=129\); the second checks the MO
 norm identities, local data and conductor inputs. These
 are internal exact computations, not independent review
 or a computation of every Selmer group.
+
+## Rational points and the full Mordell–Weil group
+
+**Theorem HG6.** For the curve (1),
+\[
+ C(\mathbb Q)=\{(-1,\pm9),(0,\pm4),(2,\pm36),\infty_+,\infty_-\},
+ \qquad
+ J(\mathbb Q)\simeq\mathbb Z/3\oplus\mathbb Z/6\oplus\mathbb Z/12.
+\]
+In particular \(\operatorname{rank}J(\mathbb Q)=0\),
+\(\#J(\mathbb Q)=216\), and its full three-primary subgroup is
+\((\mathbb Z/3)^3\). The conductor of \(J\) is
+\(90\cdot90\cdot30=243000\). Here \(R/t^4\) has value
+\(\pm1\) at \(\infty_\pm\).
+
+**Rank and reduction.** Exact elliptic descent, with the rank database
+disabled, gives rank bounds \((0,0)\) for all three factors (2).
+Their Cremona labels are respectively \(90a1,90b1,30a2\), and their
+rational torsion orders are \(6,6,12\). The isogeny in HG1 gives rank
+zero; the conductor is isogeny invariant. At good primes the orders are
+
+| \(p\) | 7 | 11 | 13 | 17 | 19 |
+|---|---:|---:|---:|---:|---:|
+| \(\#J(\mathbb F_p)\) | 432 | 1296 | 3888 | 3456 | 13824 |
+
+The gcd is 432, so rational torsion has order dividing
+\(16\cdot27\). HG1 therefore determines the full three-primary part,
+including the absence of rational nine-torsion. The following argument
+determines the remaining two-primary part; the gcd alone is not its order.
+
+**Rational points.** The first factor is \(90a1\), equivalently LMFDB
+\(90.a4\), and its six rational points in coordinates (2) are
+\[
+ O,\quad(-1,0),\quad(0,\pm5/2),\quad(5,\pm15).
+\]
+The proof uses exact elliptic descent and torsion enumeration, rather
+than assuming that a database rank or numerical analytic rank is proved.
+For a rational point of the conic, \(y=0\) would force \(x^2=1/3\),
+and the projective conic has no rational point at infinity. Thus (5)
+has finite abscissa \(U=X+1\), necessarily \(0,1\), or \(6\).
+Substitute these into
+\[
+ -\frac{135}{16}y^4+\left(\frac32-4U\right)y^2+\frac{25}{9}=0.
+\]
+Only \(U=1\) has rational roots, namely \(y=\pm2/3\): its factorization
+is \(-135(y-2/3)(y+2/3)(y^2+20/27)/16\).
+The other two quartics have no rational roots, as exact factorization
+over \(\mathbb Q\) certifies. Then \(x=\pm1/3\) and \(w=\pm4/3\).
+The conic parametrization gives \(t=-1,0,2,\infty\); substitution into
+(1), including both leading-coefficient branches, gives precisely the
+eight stated points. This is an exhaustive elliptic-fibre argument.
+
+**The two-primary upper bound.** At 7 the whole Sylow two-subgroup is
+\((\mathbb Z/4)^2\). A short exact certificate in the
+[arithmetic checker](../../unpublished/genus-three-rational-three-torsion/verify_arithmetic.py)
+uses the reductions of
+\[
+ I=[\infty_- -\infty_+],\quad P=[(0,4)-\infty_+],\quad
+ Q=[D-2\infty_+],\quad
+ D:\ (t^2+1,R-t+2)=0\quad\text{over }\mathbb F_7.
+\]
+The classes \(27I,27P,27Q\) are killed by four and generate subgroups
+of orders 4, 8, 16 successively. Exactly four of these sixteen elements
+are killed by two. As \(v_2(432)=4\), this exhausts the Sylow group.
+Good reduction injects rational two-primary torsion into this group.
+
+**A nondivisible rational point of order two.** Put
+\(T=3[(0,4)-\infty_+]\). The polynomial identity
+\[
+ \begin{split}
+ g_0&=t^6-3t^5-3t^4-12t^3+6t^2-12t-8,\\
+ g_0^2-F(t)(t^2+2)^2&=-200t^6
+ \end{split}
+\]
+gives
+\(\operatorname{div}(g_0+(t^2+2)R)=6(0,4)-6\infty_+\);
+hence \(2T=0\). On the good reduction at 17, the usual even-degree
+\(t-\theta\) homomorphism kills doubles and sends a rational infinity
+to the trivial class. This is precisely
+[Poonen–Schaefer, Section 5, Proposition 5.1 and (8)](sources/poonen-schaefer-explicit-descent.pdf),
+with exponent two; the rational point ensures
+\(\operatorname{Pic}^0(C)=J(\mathbb Q)\), and likewise over
+\(\mathbb F_{17}\). No assertion that the fake descent map is injective
+is used. The image of \(T\) is \(-\theta\), modulo squares and scalars.
+The factor \(t^2+5\) of \(F\bmod17\) is irreducible. In its residue
+field \(\mathbb F_{17^2}\), the norm of \(-\theta\) is 5, a nonsquare
+in \(\mathbb F_{17}\). Multiplication by any nonzero scalar \(c\) changes
+this norm to \(5c^2\), still a nonsquare. Thus \(T\) is nonzero and
+is not twice a rational Jacobian point, already after reduction at 17.
+
+**A point of order four and completion.** The following Pell certificate
+gives \(12I=0\):
+\[
+ \begin{split}
+ A={}&-t^8+8t^7-4t^6-52t^5-115t^4+296t^3+746t^2+764t-139,\\
+ B={}&-t^{12}+11t^{11}-23t^{10}-74t^9-3t^8+1053t^7+621t^6\\
+     &{}-2916t^5-8697t^4-3923t^3+487t^2+278t-4444,\\
+ B^2-FA^2={}&19440000.
+ \end{split}
+\]
+The leading terms show
+\(\operatorname{div}(B+AR)=12\infty_- -12\infty_+\).
+The reduction of \(3I\) has order four at 7, so \(3I\) has order four
+over \(\mathbb Q\). Its unique nonzero double cannot equal \(T\), since
+\(T\notin2J(\mathbb Q)\). Hence the rational two-primary group contains
+\(\mathbb Z/4\oplus\mathbb Z/2\). A larger subgroup of
+\((\mathbb Z/4)^2\) must be the entire group, in which every element of
+order two is a double. The obstruction for \(T\) excludes this case.
+Thus its order is eight and the claimed invariant factors follow.
+
+The exact replay is
+```sh
+sage -python unpublished/genus-three-rational-three-torsion/verify_arithmetic.py
+```
+from the repository root. SageMath 10.9 internally replayed the proved
+elliptic rank bounds, torsion enumeration, fibres, principal divisors,
+the sixteen-element finite Sylow certificate and the residue obstruction.
+This is not an independent replay or a computation of the full Sha group.
+The [marked-norm deformation calculation](GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md)
+uses the same three cubic norm certificates and records the still-open
+geometrically simple, infinite-family, virtual-unit and large-Sha targets.

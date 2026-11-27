@@ -252,6 +252,98 @@ def synchronized_controls():
     return rows
 
 
+def terminal_comparison_and_noncrossing_controls():
+    """Exact graph comparisons on the existing degree-seven domain only."""
+    ds = h.dt_class(7)
+    D = set(ds)
+    P = m.perm(7, [tuple(range(7))])
+    domain = {(a, b, c) for a in ds for b in ds
+              if (c := m.compose(m.inverse(m.compose(a, b)), P)) in D}
+    assert len(domain) == 392
+    bridge_tests = noncrossing_tests = 0
+    for t in sorted(domain):
+        for at, A in enumerate(t):
+            mass, middle, terminal, outer = v.factor_cut(t, at)
+            S, U = terminal
+            for j, B in enumerate(t):
+                edges = [set(e) for e in h.edges(B)]
+                if not (any(e <= S for e in edges) and any(e <= U for e in edges)):
+                    continue
+                bmass, bmiddle, bterminal, _ = v.factor_cut(t, j)
+                # Direct cuts supply the root-side sets; no phase hypothesis.
+                S0, U0 = S & bmiddle, U & bmiddle
+                assert S0 & outer and U0 & outer
+                assert bmiddle == middle | S0 | U0 and middle < bmiddle
+                assert frozenset(bterminal) == frozenset((S - S0, U - U0))
+                assert bmass == mass - len(S0) - len(U0) <= mass - 2
+                assert mass != v.mu(t)
+                bridge_tests += 1
+            rest = t[:at] + t[at + 1:]
+            R = m.product(rest)
+            for V in (middle,) + terminal:
+                coordinates = cycle_coordinates(R, min(V), V)
+                edges = [tuple(e) for B in rest for e in h.edges(B) if set(e) <= V]
+                for e, f in combinations(edges, 2):
+                    if len(set(e + f)) != 4:
+                        continue
+                    a, b = sorted(coordinates[x] for x in e)
+                    c, d = sorted(coordinates[x] for x in f)
+                    assert not ((a < c < b) != (a < d < b))
+                    noncrossing_tests += 1
+    assert bridge_tests == 126 and noncrossing_tests == 966
+    return {"retained_domain_size": len(domain), "exact_terminal_bridge_comparisons": bridge_tests,
+            "disjoint_edge_noncrossing_comparisons": noncrossing_tests}
+
+
+def saturated_singleton_controls():
+    """Translation-normalized exact order-two covers; no tuple census."""
+    patterns = covers = nonantipodal_root_covers = pairing_breaks = 0
+    for size in range(2, 41, 2):
+        period = 2 * size
+        for hcoord in range(1, period):
+            for q in range(1, period):
+                patterns += 1
+                E = {0, q, -hcoord % period, (q - hcoord) % period}
+                if len(E) != 4 or {(x + size) % period for x in E} != E:
+                    continue
+                covers += 1
+                terminal = {x % size for x in E}
+                assert len(terminal) == 2
+                lifted = {x + k * size for x in terminal for k in (0, 1)}
+                assert E == lifted
+                assert hcoord == size or q == size
+                for phase in range(period):
+                    middle_hits = sum(x in {0, q} for x in (phase, (phase + hcoord) % period))
+                    terminal_hits = int(phase % size in terminal)
+                    assert middle_hits == terminal_hits
+                    assert middle_hits + terminal_hits in (0, 2)
+                if hcoord != size:
+                    nonantipodal_root_covers += 1
+                    assert q == size
+                else:
+                    assert terminal == {0, q % size} and q % size != 0
+        # A single middle transposition in a terminal-middle DT breaks the
+        # natural antipodal matching, despite the even contact with A.
+        for q in range(1, period):
+            if q == size:
+                continue
+            n = 3 * size + 1
+            B = m.perm(n, [(0, q), (period, period + q % size)])
+            matching = {frozenset((x, x + size)) for x in range(size)}
+            assert frozenset((B[0], B[size])) not in matching
+            pairing_breaks += 1
+    # Two distinct diameters alternate: the reflected-factorization argument
+    # excludes them in one complementary tree. One diameter alone is allowed.
+    for size in range(4, 41, 2):
+        assert (0 < 1 < size) != (0 < size + 1 < size)
+    assert nonantipodal_root_covers > 0
+    return {"even_t_range_inclusive": [2, 40], "normalized_patterns": patterns,
+            "saturated_covers": covers, "covers_with_nonantipodal_roots_and_one_diameter": nonantipodal_root_covers,
+            "natural_antipodal_pairing_break_controls": pairing_breaks,
+            "two_diameters_rejected_by_alternation": True,
+            "scope": "Finite algebraic controls of Lemma 18; nonantipodal single-diameter covers are retained positive controls, not global completions."}
+
+
 def exact_phase_controls():
     """Translation-normalized exhaustive modular controls; proofs are unbounded."""
     tested = covered_three = covered_four = lifts = 0
@@ -437,6 +529,8 @@ def main():
     exact_phases = exact_phase_controls()
     pair_reminimization = pair_reminimization_controls()
     code_interface = code_interface_controls()
+    terminal_comparison = terminal_comparison_and_noncrossing_controls()
+    saturated_singleton = saturated_singleton_controls()
     inputs = ["TERMINAL_MASS_HURWITZ_DESCENT.md",
               "terminal_mass_hurwitz_descent_certificate.json",
               "verify_terminal_mass_hurwitz_descent.py",
@@ -453,7 +547,9 @@ def main():
         "exact_phase_controls": exact_phases,
         "pair_reminimization_controls": pair_reminimization,
         "support_code_interface_controls": code_interface,
-        "scope": "Exact controls of complementary twists, contact covers, common terminal matching and cut-size restrictions; bounded modular controls for exact order-three/four coset alignment; literal pair-rotation masks and the new-minimizer contradiction; tree support-code invariance criterion. The universal proofs exclude equal-terminal ratio three for N>=15 and singleton ratios 3/2 and 4/3. No higher-degree census or exclusion of all positive full-alternating orbit minima.",
+        "terminal_comparison_and_noncrossing_controls": terminal_comparison,
+        "saturated_singleton_controls": saturated_singleton,
+        "scope": "Exact controls of complementary twists, phase alignment, pair re-minimization and the tree support-code criterion, augmented by exact terminal-bridge mass comparisons and disjoint-edge noncrossing on the retained degree-seven domain and bounded saturated order-two covers. The written Theorem 17 excludes equal-terminal minima for N>=15 and gives extraction for N not congruent to 1 modulo 6; Lemma 18 forces antipodal middle roots in the remaining singleton family. No higher-degree census or exclusion of that remaining family.",
         "independent_replay": False, "formal_verification": False, "external_review": False,
     }
     args.output.write_text(json.dumps(receipt, indent=2) + "\n")

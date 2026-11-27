@@ -255,13 +255,14 @@ sixteen, with polynomial degree fifteen and r=7.
 For the pure space X_D, the
 [orbit-minimum criterion](TERMINAL_MASS_HURWITZ_DESCENT.md#proposition-8-orbit-minima-replace-monotone-descent)
 replaces a monotone extraction algorithm by exclusion of every positive
-global terminal-mass minimum. Complementary-twist compatibility forces
-\(3m\ge N-4\) and, for \(N\ge15\), equal terminal sizes or a singleton
-at each minimizing factor. The common cyclic covers and the exact remaining
-size restrictions are in
-[Theorem 10 and Corollary 11](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-10-cyclic-compatibility-excludes-closed-terminal-trees).
-Their contradiction under full alternating monodromy remains open. They
-do not establish either X_D transitivity or the separate X_T assertion.
+global terminal-mass minimum. For \(N\ge15\),
+[Theorem 17 and Lemma 18](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-17-only-the-equality-singleton-family-can-remain)
+leave only singleton cuts \((1,t;2t)\), even \(t\), with
+\(N=3t+1\) and \(m=(N-4)/3\). The middle roots are antipodal
+and terminal-middle edges project to the terminal tree. Extraction follows
+for \(N\not\equiv1\pmod6\). Excluding the remaining singleton family
+under full alternating monodromy remains open, as does the separate X_T
+assertion; all-degree X_D transitivity is not yet established.
 
 ## Exact evidence and scope
 

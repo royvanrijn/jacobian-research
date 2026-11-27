@@ -89,16 +89,28 @@ class RetainedDependencyTests(unittest.TestCase):
         global_bound = "GAP-PIS-FOUR-CELL-GLOBAL-FIRST-HERMITE"
         planar = "GAP-PIS-PLANAR-BALANCED-AFFINE-VALUE"
         boundary = "PIS-RANK-DEFICIENT-GLOBAL-MAXIMUM-EXCLUSION"
+        external = "EXT-PIS-ZHANG-ALL-CELL-COVARIANCE-ARGUMENT"
         # Lower-valued stationary tuples are not an obligation of the global route.
-        restricted = self.graph.evaluate({stronger: "stale", high_value: "proved"})
+        # Withdraw the new independent external route when testing this fallback.
+        restricted = self.graph.evaluate({
+            external: "stale", stronger: "stale", high_value: "proved"})
         self.assertEqual(restricted[global_bound]["state"], "conditional")
         self.assertEqual(restricted[planar]["state"], "conditional")
         self.assertNotIn(stronger, restricted[global_bound]["assumptions"])
         # A planar equality would become a forbidden rank-deficient maximizer.
-        reverse = self.graph.evaluate({global_bound: "proved", high_value: "stale"})
+        reverse = self.graph.evaluate({
+            external: "stale", global_bound: "proved", high_value: "stale"})
         self.assertEqual(reverse[planar]["state"], "conditional")
-        withdrawn = self.graph.evaluate({global_bound: "proved", boundary: "stale"})
+        withdrawn = self.graph.evaluate({
+            external: "stale", global_bound: "proved", boundary: "stale"})
         self.assertEqual(withdrawn[planar]["state"], "stale")
+        # The preprint also proves strict lower-dimensional comparison directly.
+        # With it available, neither the optional classification nor the old
+        # boundary argument is required for the global or planar endpoint.
+        imported = self.graph.evaluate({
+            stronger: "stale", high_value: "stale", boundary: "stale"})
+        self.assertEqual(imported[global_bound]["state"], "proved")
+        self.assertEqual(imported[planar]["state"], "proved")
 
     def test_terminal_mass_tree_proof_does_not_require_its_finite_example(self):
         controls = "SRC-HURWITZ-TERMINAL-MASS-DESCENT"

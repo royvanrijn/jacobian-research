@@ -1,7 +1,7 @@
-"""Verify norm, reduction-chart, relation-lattice and elliptic fixtures for TP1–TP5."""
+"""Verify norm, prime-ratio, reduction and Selmer fixtures for TP1–TP7."""
 
 from sage.all import (
-    GF, QQ, ZZ, EllipticCurve, PolynomialRing, inverse_mod, matrix, power_mod, valuation,
+    GF, QQ, ZZ, EllipticCurve, PolynomialRing, inverse_mod, matrix, pari, power_mod, valuation,
 )
 
 
@@ -108,6 +108,81 @@ def check_reciprocal_seed(level, a, p, q):
         assert all(curve.conductor() == 36*p*q for curve in curves)
         assert partner.j_invariant() in [isogeny.codomain().j_invariant()
                                          for isogeny in curves[0].isogenies_prime_degree(3)]
+        check_dyadic_twists(p, q, curves)
+
+
+def check_genuine_ratios():
+    a, p, q = 486, 459167617, 2593
+    A, B = a**3, -(p + q)//2
+    Q = ZZ(1000000374033487612847617)
+    assert Q.is_prime(proof=True)
+
+    def cubic_residue(element, prime):
+        return power_mod(element.numerator()*inverse_mod(element.denominator(), prime),
+                         (prime - 1)//3, prime)
+
+    assert cubic_residue(QQ(4*A*A)/p, Q) == 1
+    assert cubic_residue(QQ(4*A*A)/q, Q) != 1
+    for dyadic, P in ((4, ZZ(2058091146572215809781)), (20, ZZ(2057901351959280331333))):
+        assert P.is_prime(proof=True) and P != Q
+        assert P % 243 == Q % 243 == 1
+        assert cubic_residue(QQ(4)/p, P) != 1
+        assert cubic_residue(QQ(q)/4, P) == 1
+        value = A*A*P**6 + B*P**3*Q**3 + Q**6
+        assert value < 0 and value % 32 == dyadic
+        assert value % 243 == 81
+        assert value.valuation(p) == value.valuation(q) == 1
+
+
+def check_dyadic_twists(p, q, curves):
+    for sign, split, auxiliary_prime in ((-1, True, 23), (-1, False, 11),
+                                         (1, True, 73), (1, False, 13)):
+        D = ZZ(sign*p*q*auxiliary_prime)
+        assert D.is_squarefree() and D % 3 == 1
+        assert D % 8 == (1 if split else 5)
+        for index, base in enumerate(curves):
+            E = base.quadratic_twist(D)
+            partner = curves[1 - index].quadratic_twist(-3*D)
+            assert E.conductor() == partner.conductor() == 36*D*D
+            assert (E.tamagawa_number(2), partner.tamagawa_number(2)) == (
+                (3, 1) if split else (1, 3)
+            )
+            assert E.tamagawa_number(3) == partner.tamagawa_number(3) == 2
+            assert E.root_number() == partner.root_number() == sign
+
+
+def ray_dimension(discriminant, modulus, kill_two):
+    variable = pari("x")
+    polynomial = variable**2 - variable + (1 - discriminant)//4
+    group = polynomial.bnfinit(1)
+    assert group.bnfcertify() == 1
+    ray = group.bnrinit(modulus, 1)
+    invariants = tuple(map(int, pari("r->r.cyc")(ray)))
+    dimension = sum(factor % 3 == 0 for factor in invariants)
+    if kill_two:
+        primes = group.idealprimedec(2)
+        assert len(primes) == 2
+        coordinates = tuple(map(int, ray.bnrisprincipal(primes[0], 0)))
+        dimension -= any(factor % 3 == 0 and coord % 3 != 0
+                         for factor, coord in zip(invariants, coordinates))
+    return dimension
+
+
+def check_ray_and_inertia_controls():
+    for D, expected in ((-23, (1, 0)), (-11, (0, 1)), (73, (2, 0)), (13, (0, 0))):
+        if D % 8 == 1:
+            dimensions = ray_dimension(-3*D, 6, False), ray_dimension(D, 1, True)
+        else:
+            dimensions = ray_dimension(-3*D, 3, True), ray_dimension(D, 2, False)
+        assert dimensions == expected
+        assert dimensions[0] - dimensions[1] == (D > 0) + (1 if D % 8 == 1 else -1)
+
+    residue_ring = PolynomialRing(GF(3), "z")
+    z = residue_ring.gen()
+    for c0 in (1, 2):
+        assert (z**3 - z - c0).is_irreducible()
+    rotation = matrix(QQ, [[0, -1], [1, -1]])
+    assert rotation**3 == 1 and rotation.minimal_polynomial().is_irreducible()
 
 
 if __name__ == "__main__":
@@ -119,4 +194,6 @@ if __name__ == "__main__":
         assert (u**(2*3**level) + u**(3**level) + 1).is_irreducible()
     check_reciprocal_seed(1, 486, 459167617, 2593)
     check_reciprocal_seed(2, 4374, 2344061487986355189526424978686363, 403867)
-    print("TP1–TP5 coefficient, reduction chart, class relation and elliptic fixtures verified.")
+    check_genuine_ratios()
+    check_ray_and_inertia_controls()
+    print("TP1–TP7 coefficients, charts, prime ratios, conductors and class-group fixtures verified.")

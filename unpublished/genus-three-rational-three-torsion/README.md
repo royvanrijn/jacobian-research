@@ -8,6 +8,10 @@ precise existence question following Levin–Yan–Wiljanen Theorem 9.
 Its second theorem transfers multiplication-by-\(3^n\) Selmer groups and
 three-primary Tate–Shafarevich groups for every quadratic twist through
 dual degree-\(2^9\) isogenies. No finiteness assumption on Sha is used.
+Theorem 3 determines all eight rational points and the full finite group
+\(J(\mathbb Q)=\mathbb Z/3\oplus\mathbb Z/6\oplus\mathbb Z/12\),
+of order 216, together with conductor 243000. It is the manuscript
+version of HG6.
 
 [Manuscript PDF](genus-three-rational-three-torsion.pdf) ·
 [LaTeX source](main.tex) · [Source and checker bundle](genus-three-rational-three-torsion-source.zip) ·
@@ -24,9 +28,10 @@ This extraction is the current presentation priority for HG1/HG5.
 Further class-group counts, conductor refinements, cubic covers or
 higher-rank constructions are not prerequisites for reviewing it.
 The current research proof remains the source of the broader HG1–HG5
-results; this manuscript presents the existence result and the transfer
-for this one curve. It makes no claim about the full rational torsion
-group or geometric simplicity.
+results; this manuscript presents the existence result, the transfer
+and the full rational arithmetic theorem for this one curve. It makes
+no geometric simplicity claim. The broader Sha group and quadratic-twist
+rational points are not computed.
 
 ## Build and replay
 
@@ -35,6 +40,7 @@ From this directory, or the root of the extracted source ZIP:
 ```sh
 SOURCE_DATE_EPOCH=1795737600 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=genus-three-rational-three-torsion main.tex
 sage -python verify_construction.py
+sage -python verify_arithmetic.py
 sha256sum -c SHA256SUMS.txt
 ```
 
@@ -45,6 +51,16 @@ fields over \(\mathbb Q\), checks squarefreeness over \(\mathbb F_7\),
 and verifies the marked points using exact elliptic-curve arithmetic.
 It includes a repeated-root negative control. No new number-field
 search or extension calculation is part of this extraction.
+
+The arithmetic checker obtains proved elliptic rank bounds with the rank
+database disabled, enumerates the first elliptic target and its fibres,
+checks the principal-divisor certificates, exhausts the sixteen-element
+Sylow group at seven, and checks the square-class obstruction at 17.
+Its final block also checks the marked-norm coefficient and involution
+tangent matrices in the separate
+[deformation note](../../research/arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md).
+Those local deformation calculations are outside the manuscript's theorems.
+They produce no rational geometrically simple example or infinite family.
 
 The existing broader replay also passed:
 
@@ -84,6 +100,12 @@ orthogonality, duality and local Kummer functoriality.
    later literature before any historical-priority claim. Distinguish
    rational three-torsion from full torsion and geometrically simple
    Jacobians. The classical gluing mechanism is credited to HLP.
+6. Audit Theorem 3 separately: proved elliptic rank bounds, the complete
+   rational fibres including the pole exclusions, the finite Sylow group
+   at seven, the rational Pell certificate, and Poonen–Schaefer's descent
+   map at 17. In particular, its nontrivial image is an obstruction to
+   halving; no injectivity of fake descent is assumed. The order bound
+   432 is strict: the full rational order is 216.
 
 The inspected primary comparison is narrow and explicit:
 
@@ -92,6 +114,7 @@ The inspected primary comparison is narrow and explicit:
 | [Levin–Yan–Wiljanen, arXiv:1910.12276v1](../../research/arithmetic/sources/levin-yan-wiljanen-large-three-rank.pdf) | Theorem 9, printed pp. 12–14; question on printed p. 13 | Gives rank three in genus four and asks for hyperelliptic genus three with rational three-rank three. |
 | [Howe–Leprévost–Poonen](../../research/arithmetic/sources/howe-leprevost-poonen-split-jacobians.pdf) | Proposition 14 and quotient calculation in its proof, PDF pp. 21–24 | Classical hyperelliptic genus-three gluing at vanishing twisting factor. The manuscript verifies its particular model directly. |
 | [Müller–Reitsma, arXiv:2211.03372v4](../../research/arithmetic/sources/muller-reitsma-genus-three-torsion-2211.03372v4.pdf) | Theorem 1.1 and Remark 1.2, pp. 1–2 | Exact full torsion and geometric simplicity are stronger, separate questions. |
+| [Poonen–Schaefer](../../research/arithmetic/sources/poonen-schaefer-explicit-descent.pdf) | Section 5, Proposition 5.1 and (8), printed pp. 8–9 | The even-degree descent homomorphism kills doubles and rational infinities; its image obstructs halving at 17. |
 
 These sources and their digests are also indexed in the existing
 [research reference catalogue](../../research/REFERENCES.md).

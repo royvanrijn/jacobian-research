@@ -403,12 +403,14 @@ questions first unresolved in degree fifteen.
 For the pure-DT extraction input, the
 [terminal-mass argument](TERMINAL_MASS_HURWITZ_DESCENT.md#proposition-8-orbit-minima-replace-monotone-descent)
 uses a minimum over an entire braid orbit, without monotonicity along
-intermediate braids. Its complementary-twist compatibility theorem forces
-\(3m\ge N-4\) and, for \(N\ge15\), equal terminal sizes or a singleton
-at a minimizer. Full alternating monodromy supplies an odd overlap here,
-but no argument yet forces that overlap to violate the common cyclic
-covers or a three-factor endpoint inequality. The two residual cut shapes
-and mixed connectivity remain open.
+intermediate braids. For \(N\ge15\),
+[Theorem 17 and Lemma 18](TERMINAL_MASS_HURWITZ_DESCENT.md#theorem-17-only-the-equality-singleton-family-can-remain)
+leave only singleton cuts \((1,t;2t)\), even \(t\), with
+\(N=3t+1\), \(m=(N-4)/3\), and antipodal middle roots. Extraction
+holds for \(N\not\equiv1\pmod6\). Terminal-middle factors meet the
+minimizer evenly, but middle-middle one-contacts and overlaps between
+complementary factors remain uncontrolled. The remaining singleton family
+and mixed connectivity are open.
 
 The [checker](verify_paired_hurwitz_leaf_extraction.py) verifies the
 literal identity, its pure strand action, every recursive step in

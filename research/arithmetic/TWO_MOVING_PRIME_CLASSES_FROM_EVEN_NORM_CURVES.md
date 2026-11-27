@@ -313,7 +313,8 @@ The constants and auxiliary primes vary with the fixed
 exponent. No uniform summation over \(n,p,q\) is asserted.
 The [exact checker](verify_two_moving_prime_classes_even_norm_curves.py)
 replays norm identities, local coefficient fixtures, the two moving
-residue frames, dyadic chart identities and the elliptic formulas.
+residue frames, dyadic chart identities, genuine prime pairs,
+and elliptic and ray class fixtures.
 
 ## Dyadic compact-type reduction and exact generic torsion
 
@@ -610,3 +611,330 @@ not rationally isogenous, and common twisting
 preserves that distinction. On each sign the
 distinct common conductors up to \(Z\) number
 \(\gg_m Z^{1/(2m)}/(\log Z)^{C_m}\).
+
+## The two isogeny Selmer groups and an inert dyadic slice
+
+**Theorem TP6.** Keep the curves of TP5. Let \(D\)
+be a nontrivial fundamental discriminant of either
+sign, with \(2\) unramified, \(3\) split, and \(p,q\)
+ramified in \(K=\mathbb Q(\sqrt D)\). Put
+\(M=\mathbb Q(\sqrt{-3D})\). For
+\(E=E_\pm^{(D)}\), let
+\(\phi:E\to\widehat E\simeq E_\mp^{(-3D)}\)
+be the three-isogeny marked by \(X=0\).
+Both choices of \(E\) have exactly the same two
+isogeny Selmer groups under their respective
+Kummer identifications. Write
+\(S_K=\operatorname{Sel}_{\widehat\phi}(\widehat E)\)
+and \(S_M=\operatorname{Sel}_{\phi}(E)\).
+Each group is the cubic character group of the
+group in the corresponding entry:
+\[
+\begin{array}{c|cc}
+ &S_K&S_M\\ \hline
+ D\equiv1\pmod8&
+ \mathrm{Cl}_{(6)}(M)&
+ \mathrm{Cl}(K)/\langle[\mathfrak t_K]\rangle\\
+ D\equiv5\pmod8&
+ \mathrm{Cl}_{(3)}(M)/\langle[\mathfrak t_M]\rangle&
+ \mathrm{Cl}_{(2)}(K).
+\end{array}
+\tag{12}
+\]
+The ray class groups are ordinary and \((b)\)
+denotes the integer modulus \(b\) in that field.
+The ideal \(\mathfrak t_F\) denotes either prime
+above two in the indicated split field, with its
+class in the appropriate ordinary or ray group.
+Their cube-quotient dimensions satisfy
+\[
+             \dim S_K-\dim S_M
+                  =\mathbf1_{D>0}+
+                     \begin{cases}
+                       1 & D\equiv1\bmod8,\\
+                      -1 & D\equiv5\bmod8 .
+                     \end{cases}
+\tag{13}
+\]
+In particular the finite \(3\)-Selmer dimensions
+of both curves and both isogenous partners are
+odd for negative \(D\) and even for positive
+\(D\).
+
+There is a genuine prime-ratio slice of TP5 with
+\(D\equiv5\bmod8\). It has the same field and
+common-conductor counts, higher mirror quotient
+and moving prime relations as in TP5. On its
+imaginary side all four positive-rank curves
+\(E_\pm^{(D)},E_\pm^{(-3D)}\) have conductor \(36D^2\)
+and finite \(3\)-Selmer dimension at least three.
+On the real side all four dimensions are at
+least two. The four curves have distinct
+\(\mathbb Q\)-isomorphism classes.
+
+To construct this slice impose \(F(u)\equiv20\)
+modulo \(32\) instead of \(4\). The same bijection on
+odd residues proves existence. Then \(K_2\) is the
+unramified quadratic extension of \(\mathbb Q_2\).
+The ratios \(\gamma_\pm\) are units reducing to
+one there: \(R\) has valuation one and \(Au^m\)
+is even. They are local cubes, since cube
+exponentiation is bijective on principal units
+at two. In the split slice they are local
+cubes as well. The valuation, class and field
+arguments of TP2–TP3 use virtuality at two and
+complete splitting at \(3\). The two special
+residue frames at \(P,Q\) stay the same. An
+unramified quadratic twist at two preserves the
+conductor exponent in TP5. This proves all the
+previous conclusions on the new slice.
+
+For (12), use the Kummer models from
+Cohen–Pazuki. At every odd prime \(\ell\ge5\)
+dividing \(D\), both local quadratic algebras
+are ramified and their anti-invariant cube
+quotients vanish: conjugation fixes the
+valuation and the residue field, and the
+principal units are cubes. This includes
+the multiplicative coefficient primes \(p,q\).
+Elsewhere at \(\ell\ge5\) both elliptic models
+have good reduction, so the prime-to-\(\ell\)
+local images are the unramified groups.
+At infinity both local cohomology groups
+vanish.
+
+At two, when the marking algebra is split,
+the model is \(Y^2=X^3+(hX+b)^2\) with \(h\)
+even and \(b\) odd, up to local square
+coordinate changes. The marked point has
+Kummer class \(2b\) or its inverse. It
+generates the full valuation line of
+\(\mathbb Q_2^\times/\mathbb Q_2^{\times3}\).
+In the nonsplit algebra the local model is
+\(Y^2=X^3-3(hX+3b)^2\) for an odd \(b\).
+An even integral \(X\) would give \(Y^2\equiv5\)
+modulo \(8\), and odd integral \(X\) gives
+even \(Y\). The Kummer argument
+\(Y-\sqrt{-3}(hX+3b)\) in that case is a unit
+with residue one. For nonintegral \(X\), the
+ordinate dominates the irrational term and
+its valuation is a multiple of three, so
+the normalized residue is again rational.
+This gives the zero image on the
+unramified quadratic side.
+
+At three the split model has Kummer image
+the unit line. For integral \(X,Y\), the
+factors \(Y\pm(hX+b)\) of \(X^3\) cannot both
+be divisible by three. For nonintegral \(X\),
+the ordinate dominates \(hX+b\) and its
+valuation is divisible by three. At the
+marked point \(2b\) is a noncube unit since
+\(b\equiv\pm1\bmod9\).
+
+For the ramified model at three, put
+\(\pi=\sqrt{-3}\) and \(L_X=hX+3b\), where
+\(b\equiv\pm1\bmod9\). The Kummer class has
+norm a cube, so its square is represented
+by \((Y-\pi L_X)/(Y+\pi L_X)\).
+For \(v_3(X)\le0\), the valuation of
+\(\pi L_X/Y\) in the \(\pi\)-scale is at
+least three, with equality for unit \(X\).
+Valuation \(v_3(X)\ge2\) is impossible,
+since \(Y^2\) would have valuation three.
+If \(X=3t\) with \(t\) a unit, then
+\[
+         Y^2=27\bigl(t^3-(b+ht)^2\bigr).
+\]
+The residue modulo three requires \(t\equiv1\)
+modulo three. The difference is then zero
+modulo nine, so \(v_3(Y)\ge3\), allowing
+\(Y=0\). Now \(Y/(\pi L_X)\) has valuation
+at least three, and one may discard the
+rational sign in the ratio. Thus the image
+is contained in the line of \(1+\pi^3\mathcal O\).
+This line is unramified and nonzero. Indeed,
+taking a cube root of \(1+\pi^3 c_0\) reduces
+after the substitution \(1+\pi z\) to the
+separable equation \(z^3-z-\bar c_0=0\).
+For \(c_0\) a unit this cubic is irreducible
+over \(\mathbb F_3\), and if \(c_0\) is in the
+maximal ideal Hensel's lemma supplies a cube
+root. The unit \(X=1\) supplies a point with
+valuation exactly three in the ratio, since
+\(1-3(h+3b)^2\) is a square in \(\mathbb Q_3\).
+This proves equality with the unramified line.
+
+Reflect the two Kummer spaces through
+\(K(\zeta_3)=M(\zeta_3)\) as in
+[CD3](ABC_CUBIC_TANGENT_COMPANION_DESCENT.md).
+The split unit line at three reflects to the
+anti-invariant character line of conductor
+dividing \((3)\) in \(M\), and the unramified
+line in \(M_3\) reflects to unramified
+characters in \(K\). At two, the split
+valuation line reflects to the tame
+anti-invariant characters of conductor
+dividing \((2)\) in the unramified quadratic
+field. The zero line in that quadratic
+algebra reflects to complete splitting
+in the split marking field. At all other
+finite primes the conditions are unramified.
+The cubic characters of the listed ray
+groups are anti-invariant since a rational
+norm prime to \(6\) can be signed to be
+\(1\) modulo the rational modulus. This
+gives the full groups (12), with no
+additional conditions at real places.
+
+The size ratio for \(\phi\) at three is one:
+its local Kummer image has order three and
+its kernel has three rational points.
+At two these sizes are \(1,3\) on the split
+\(K\) side and \(3,1\) on the inert \(K\)
+side. All other finite ratios are one by
+the local-image description. At infinity
+the ratio is \(1/3\) for real \(K\) and one
+for imaginary \(K\). Neither isogeny kernel
+has a nonzero global rational point, and
+neither curve has rational three-torsion,
+by the division polynomial argument in
+TP5 applied to both nonsquare marking
+fields. Cassels' ratio formula gives
+(13), and the three-isogeny parity theorem
+gives the finite Selmer parities for the
+curves and their partners.
+[Bhargava–Klagsbrun–Lemke Oliver–Shnidman, §9](sources/bhargava-klagsbrun-lemke-oliver-shnidman-three-isogeny.pdf).
+
+Both independent \(\gamma\) classes are in
+\(S_K\) on the genuine slices: they have
+unramified Kummer images away from two and
+three and are local cubes at two and three.
+For imaginary \(K\) with \(2\) inert, (13)
+then gives \(\dim S_M\ge3\), which injects
+into \(\operatorname{Sel}_3(E)\). On the
+partners, \(S_K\) injects into their
+finite three-Selmer groups, so dimension
+at least two and odd parity give dimension
+at least three. For real \(K\) with \(2\)
+inert, both isogeny dimensions are at least
+two and give the two finite Selmer bounds.
+Positive ranks and conductor are preserved
+by isogeny. Within either isogeny class,
+the two curves are nonisomorphic since a
+degree-three self-isogeny of a non-CM
+elliptic curve is impossible. Across the two
+isogeny classes, use nonisogeny in TP5.
+
+## The exact rational elliptic part of the Jacobian
+
+**Theorem TP7.** Keep \(p=2A-B\) and \(q=-2A-B\)
+distinct primes at least five, with the dyadic
+hypotheses of TP4. For \(m=3^n\), every rational
+elliptic quotient of the Jacobian factors up
+to isogeny through the genus-two quotient
+\[
+             R^2=A^2 v^6+Bv^3+1,\qquad
+             v=u^{m/3}.
+\tag{14}
+\]
+If \(A\) is a rational cube, this quotient
+accounts for exactly the two rational elliptic
+isogeny factors \(E_+,E_-\) of (10), each with
+multiplicity one. If \(A\) is a noncube, the
+genus-two Jacobian is simple over
+\(\mathbb Q(\zeta_3)\), and there is no rational
+elliptic quotient. In particular, passing to
+higher \(n\) in TP5 supplies no further
+elliptic direction from a rational morphism of
+the fixed norm curve.
+
+Use the two components of the compact-type
+model in TP4. On each, the subgroup generated
+by the third power of the inertia generator
+has order \(m/3\). Its quotient curve is
+\(U_1^3=x(1-x)\), or its counterpart on
+the other component, and has genus one.
+On the rational Tate module for an auxiliary
+prime ℓ different from two, the invariants of
+the subgroup are exactly
+the Tate module of the quotient Jacobian:
+pullback and norm compose to multiplication
+by the subgroup order on the quotient,
+and to the sum of the automorphisms upstairs.
+Consequently the inertia subgroup of order
+\(m/3\) has a fixed space of dimension exactly
+four in the Tate module of the whole Jacobian.
+The genus-two quotient (14) supplies four
+such dimensions, since its own dyadic
+inertia has order three by the same charts.
+The complementary rational isogeny factor
+therefore has no such invariants.
+[Milne, Proposition 10.1](https://jmilne.org/math/CourseNotes/AV.pdf).
+
+For an elliptic isogeny factor, dyadic
+inertia acts on its potentially good
+reduction through automorphisms preserving
+the origin, of order dividing \(m\). Good
+reduction after the same tame extension follows
+from the Tate-module criterion.
+[Serre–Tate, Theorem 1](https://annals.math.princeton.edu/1968/88-3/p05).
+Such an
+automorphism \(\tau\) satisfies a monic
+integral quadratic: from the endomorphism
+degree formula,
+\(\tau+\tau^{-1}=[2-\deg(1-\tau)]\).
+The formula also holds when \(\tau=1\).
+Thus an automorphism of odd three-power
+order has order dividing three. Its Tate
+module lies in the four-dimensional space
+already supplied by (14). This proves
+the first assertion via the rational
+isogeny decomposition.
+
+For the genus-two analysis put
+\(C^0:R^2=w^6+(B/A)w^3+1\).
+Its two elliptic quotients are defined over
+\(\mathbb Q\), with equations (10) after
+replacing \(h,p,q\) by \(3,p/A,q/A\).
+The two reciprocal involutions act by
+opposite signs on each of the two
+differential eigenspaces. In the basis
+\(dw/R,w\,dw/R\), the first involution
+interchanges the basis elements and
+negates both, and the second acts as
+its negative. Thus the Jacobian of
+\(C^0\) is isogenous over \(\mathbb Q\)
+to the product of the two quotients.
+At \(p\) and \(q\) both have multiplicative
+reduction by the elementary \(c_4,\Delta\)
+calculation in TP5. The isogeny computation
+of TP5 gives two non-CM curves which are
+nonisogenous over \(\mathbb Q\) and
+isogenous over \(F=\mathbb Q(\zeta_3)\).
+Over \(F\) this Jacobian is isogenous to the
+square of a non-CM elliptic curve. All elements
+of its geometric endomorphism algebra
+\(M_2(\mathbb Q)\) are therefore defined over \(F\).
+
+The isomorphism from (14) to \(C^0\)
+takes \(w=cv\) with \(c^3=A\).
+For \(A\in\mathbb Q^{\times3}\) it is rational
+and gives the stated two factors. Otherwise
+\(F(c)/F\) has degree three, since adjoining a
+root of a rational noncube first has degree
+three. A generator acts on the isomorphism
+by the automorphism \(\rho:w\mapsto\zeta_3w\)
+of \(C^0\). Hence its action on geometric
+endomorphisms of (14) is conjugation by
+the order-three matrix of \(\rho\).
+This matrix is nonidentity, since
+\(C^0/\rho\) is a conic and its invariant
+Tate module is zero. Its polynomial
+over \(\mathbb Q\) is \(t^2+t+1\) and its
+centralizer in \(M_2(\mathbb Q)\) is the
+field \(\mathbb Q(\zeta_3)\), which has no
+nontrivial idempotent. The genus-two
+Jacobian of (14) is therefore simple over
+\(F\). This excludes all rational
+elliptic quotients in the noncube case.

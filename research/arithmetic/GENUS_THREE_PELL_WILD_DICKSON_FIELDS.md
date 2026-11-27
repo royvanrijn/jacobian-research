@@ -405,3 +405,155 @@ the asserted orders in the ordinary imaginary class
 group. At each fixed \(n\) the family has a common choice
 of local conditions. The construction does not assert
 one fixed quadratic field with unbounded \(n\).
+
+## Every rational Pell coordinate has the same dyadic obstruction
+
+**Theorem WD5.** On the HG1 genus-three curve,
+the conjugate difference at each of its four
+rational split fibers has exact order twelve.
+A function with divisor twelve times that
+difference has constant norm of squareclass
+\(6\). Every nonconstant norm-one function
+supported on one rational split fiber has
+nonzero dyadic valuation at both points of
+every quadratic specialization.
+Thus no rational change of the degree-two
+coordinate on this curve supplies an
+integral Pell unit of norm \(1\) or \(-1\)
+on a quadratic specialization.
+
+The transport between fibers is a general
+parity constraint. On a hyperelliptic curve
+write \(\Delta_P=P-\iota P\).
+If \(P,Q\) are rational and
+\(N(P-Q)\) is principal, take
+\(f\) with \(\operatorname{div}(f)=N(P-Q)\).
+Then \(f/\iota(f)\) has norm one and divisor
+\(N(\Delta_P-\Delta_Q)\). Consequently
+the functions with divisors \(N\Delta_P\)
+and \(N\Delta_Q\), if they exist, can be
+chosen with the very same constant norm.
+For norm-one functions with divisors
+\(2N\Delta_P\) and \(2N\Delta_Q\), this
+transport multiplies by a square.
+It therefore preserves the parity of
+any split local valuation at a specialization
+where the functions are defined.
+
+For the present curve, write
+\(G_0=g_0+\ell_0 R\), where
+\[
+ g_0=t^6-3t^5-3t^4-12t^3+6t^2-12t-8,
+                   \qquad \ell_0=t^2+2 .
+\]
+The identity \(g_0^2-F\ell_0^2=-200t^6\)
+and the leading terms give
+\(\operatorname{div}(G_0)=6((0,4)-\infty_+)\).
+Thus \(\gamma_0=G_0/\bar G_0\) has
+divisor \(6\Delta_{(0,4)}-6\Delta_{\infty_+}\).
+[The marked norm identities](GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md)
+give this as their \(a=0\) row.
+The function \(A+B\rho\) in (1) of
+this note has divisor
+\(-6\Delta_{(0,4)}-6\Delta_{\infty_+}\).
+Indeed \(z=t-2/t\) has a simple pole
+both at zero and at infinity, and
+\(\rho/z^2\) tends to \(+1\) on the
+branches \(R\to4\) and \(R/t^4\to1\),
+respectively. The leading terms there
+give poles of order six. Its constant
+norm \(7776\) gives the opposite zeros,
+and there are no other poles.
+It follows that
+\[
+ V_\infty=\frac{7776}{(A+B\rho)\gamma_0},
+ \qquad
+ U_\infty=\frac{V_\infty^2}{7776}
+                     =\gamma^{-1}\gamma_0^{-2}
+\]
+have divisors \(12\Delta_{\infty_+}\)
+and \(24\Delta_{\infty_+}\), respectively.
+The first has norm \(7776\) of squareclass
+\(6\). The second has norm one.
+
+By WD1, every quadratic specialization
+of the curve splits at two, and the
+two values of \(\gamma\) have opposite
+odd dyadic valuations. The square
+factor \(\gamma_0^{-2}\) implies both
+valuations of \(U_\infty\) are odd.
+All rational fibers consist of the
+pairs at \(t=-1,0,2,\infty\), by
+[HG6](GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md).
+HG6 also gives exponent twelve
+for the rational Jacobian.
+The transport lemma applies with
+\(N=12\). At each of the rational
+split fibers it gives a function
+of divisor \(12\Delta_P\) with
+constant norm \(7776\), and a
+norm-one function of divisor
+\(24\Delta_P\) with odd valuations
+at two on every quadratic
+specialization. The functions
+are defined and nonzero at these
+specializations because their
+supports are rational split
+fibers.
+
+The order of \(\Delta_P\) is
+divisible by four. Otherwise a
+function of divisor \(12\Delta_P\)
+would be an even power of one
+with divisor the exact order
+times \(\Delta_P\), up to
+multiplication by a rational
+constant. Its norm would then
+have squareclass one.
+The order is divisible by
+three as well: at each of the
+four positive branches, the
+first elliptic map in HG1
+gives \((0,5/2)\) or \((0,-5/2)\),
+and the conjugate branch maps
+to its negative. The
+difference has order three.
+Hence the exact order is twelve.
+Both the rational primitive
+divisor function and its
+norm squareclass are thereby
+determined up to constants, with
+norm squareclass \(6\). The
+least positive order of an
+infinity divisor of a norm-one
+function is twenty-four.
+All nonconstant norm-one
+functions supported at that
+fiber are powers of the
+indicated norm-one function,
+up to rational constants of
+norm one. None can have zero
+dyadic valuations there after
+quadratic specialization. A
+norm-minus-one unit would
+have a norm-one square and
+is excluded too.
+
+For a degree-two coordinate
+of the same hyperelliptic
+curve the fiber at infinity
+is a fiber of the original
+map. A ramified or nonsplit
+rational fiber cannot support
+a nonzero rational degree-zero
+divisor, and all split
+rational fibers have just
+been treated. The argument
+therefore excludes changing
+the rational point sent to
+infinity as a way to obtain
+an integral Pell unit on
+this fixed curve. The
+obstruction is the same
+dyadic squareclass throughout
+the rational torsion packet.

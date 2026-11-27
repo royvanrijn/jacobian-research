@@ -18,10 +18,18 @@ minimality forces two paths and their ordered edge pairing. Commuting
 swaps then expose a two-contact leaf capture, excluding this cut for
 every size at least three.
 
+An elementary comparison with all the other factor masses excludes every
+terminal-to-terminal pair at a minimizing cut. In particular the equal-terminal
+family in Corollary 16 is impossible in the residual degree range. Theorem 17
+leaves only singleton cuts of sizes \((1,t;2t)\), with even \(t\), so a
+positive minimum requires \(N\equiv1\pmod6\) and equality in \(3m\ge N-4\).
+Lemma 18 identifies the antipodal middle coordinates and the exact projected
+terminal tree in this last family.
+
 These statements do **not** yet prove extraction from every full-alternating
 tuple. The principal remaining objective is to exclude a positive minimum
 over an entire braid orbit. This needs no monotonicity along a braid.
-Theorem 10 and Corollaries 11, 13 and 16 below give necessary global compatibility
+Theorem 10, Theorem 17 and Lemma 18 below give necessary global compatibility
 conditions, not that complete exclusion.
 The [overlap-one theorem](PAIRED_HURWITZ_LEAF_EXTRACTION.md#theorem-5-every-full-alternating-dt-tree-reaches-overlap-one)
 does not locate its overlap at the required outer endpoint, or control this
@@ -913,7 +921,8 @@ Exact ratio-three covers actually produce an odd three-label contact;
 they do not by themselves establish code invariance. Corollary 13
 resolves that case through new minimizers instead.
 
-The remaining full-alternating problem is to exclude (38) below, by forcing
+The remaining full-alternating problem is to exclude the singleton family
+in Theorem 17 below, by forcing
 even intersections for **all** factor pairs or an endpoint decrease.
 The one-cut covers (24) constrain contacts with the minimizer, but do
 not constrain every middle-middle attachment or the overlaps between
@@ -929,7 +938,7 @@ terminal hit is accompanied by a middle hit in every complementary
 twist. Nevertheless \(A,B_0\) overlap in three labels. The last
 factor is removable, so this is not a positive global minimum and
 does not refute the proposed global bridge. Compatibility of all
-minimizing cuts and middle-middle attachments in (38) remains open;
+minimizing cuts and middle-middle attachments in that singleton family remains open;
 arbitrary extraction and mixed connectivity are not established.
 
 ## Lemma 15. Equal-middle singleton cuts force a removable factor
@@ -1028,6 +1037,136 @@ At a positive global orbit minimum, every minimizing factor with
 last case \(N=2t+1\ge15\) implies \(t\ge7\), so Lemma 15 excludes
 it. \(\square\)
 
+## Theorem 17. Only the equality singleton family can remain
+
+At a minimizing factor \(A\) of **any** polynomial DT tuple, no other
+factor pairs an edge of \(S_A\) with an edge of \(U_A\). This assertion
+requires neither a global orbit minimum nor any monodromy hypothesis.
+
+Consequently, at a positive global orbit minimum with \(N\ge15\), every
+minimizing factor has
+\[
+ (|S_A|,|U_A|;|M_A|)=(1,t;2t),\qquad 2\mid t,\qquad
+ N=3t+1,\qquad m=t-1=\frac{N-4}{3}.                 \tag{39}
+\]
+In particular every polynomial DT orbit on \(N\ge15\) sheets with
+\(N\not\equiv1\pmod6\) contains a removable factor. This is extraction
+in those degrees, not an assertion of mixed or all-degree connectivity.
+
+**Proof.** Suppose a factor \(B\) pairs an edge in \(S_A\) with an
+edge in \(U_A\). Let \(S_0\) and \(U_0\) be the sides of these
+edges containing the attachment roots \(a\) and \(d\) of \(A\).
+Deleting \(B\) leaves middle component
+\[
+ M_B=M_A\cup S_0\cup U_0.
+\]
+Its terminal components are \(S_A\setminus S_0\) and
+\(U_A\setminus U_0\). Both root sides are nonempty. Hence
+\[
+ \lambda(B)=\lambda(A)-|S_0|-|U_0|
+             \le\lambda(A)-2,                       \tag{40}
+\]
+contradicting that \(A\) minimizes the tuple's factor masses.
+Thus \(x=0\) in (28).
+
+For the equal-terminal family of Corollary 16 this gives
+\(y=z=s-1\), so \(\ell-1=2s-2+2q\ge2s-2\).
+But \(\ell\mid s\) gives \(\ell\le s<2s-1\) for \(s>1\),
+a contradiction. Corollary 16 leaves exactly (39). The degree congruence
+and the value of \(m\) follow immediately. If the degree congruence
+fails, Proposition 8 forces the attained orbit minimum to be zero,
+and Lemma 1 supplies a removable factor. \(\square\)
+
+The ordinary all-factor comparison (40) is stronger here than attempting
+to construct an invariant from the synchronized terminal forests. The
+earlier two-family statement remains a valid intermediate reduction.
+
+## Lemma 18. Saturated singleton covers force antipodal roots
+
+In the remaining family (39), front-place the minimizer as in (20).
+There are exactly \(t-1\) terminal-middle factors and \(t/2\)
+middle-middle factors. For even \(t\ge4\), use the fixed cyclic coordinates
+\[
+ R_M^k b\leftrightarrow k\pmod{2t},\qquad
+ R_U^k d\leftrightarrow k\pmod t.
+\]
+Then \(c=R_M^t b\). The projection
+\[
+ \pi:M\longrightarrow U,\qquad
+ \pi(R_M^k b)=R_U^k d                              \tag{41}
+\]
+has precisely the antipodal pairs as fibres. Every terminal-middle
+factor pairs a middle edge \(pq\), with \(\pi(p)\ne\pi(q)\),
+with the terminal edge \(\pi(p)\pi(q)\). These \(t-1\) projected
+edges are exactly the terminal tree, each used once.
+At every complementary twist phase such a factor has support
+intersection zero or two with the minimizer. An odd intersection with
+the minimizer can therefore only be a single middle contact from a
+middle-middle factor.
+
+**Proof.** The counts follow from (28), with \(s=1,u=t,\ell=2t\).
+Put \(c=h\ne0\) and let \(p,q\) be the middle endpoints of a
+terminal-middle factor. The two distinct terminal endpoint residues
+develop to four distinct phases modulo \(2t\). Their union is contained
+in
+\[
+ E=\{p,q,p-h,q-h\}.
+\]
+Thus \(E\) has four elements and equals that union. In particular it is
+invariant under addition of \(t\). The two sets \(\{p,q\}\) and
+\(\{p-h,q-h\}\) are disjoint. At a covered phase exactly one middle
+root and one terminal root meet this factor; at every other phase
+neither does. This proves the even-intersection assertion already,
+without assuming \(h=t\).
+
+If \(h\ne t\), translate to \(p=0\) and write \(q=e\).
+The antipode of zero in \(E=\{0,e,-h,e-h\}\) is \(t\).
+It cannot be \(-h\), so either \(e=t\) or \(e-h=t\).
+In the second case \(e=h+t\), and the antipode \(e+t=h\)
+must also belong to \(E\). It cannot be \(0,e,e-h=t\);
+equality with \(-h\) forces \(h=t\), contrary to assumption.
+Consequently \(e=t\): every terminal-middle edge would be a diameter
+of this same \(2t\)-cycle.
+
+There cannot be two such edges in the complementary middle tree.
+Here is the needed elementary noncrossing fact, with its factor-order
+justification. Expand the complementary middle permutations into their
+individual transpositions. They form a reduced factorization of \(R_M\).
+Two selected disjoint transpositions can be brought unchanged to the
+first two positions by ordinary transposition Hurwitz moves. If their
+four endpoints alternated on \(R_M\), left multiplication of \(R_M\)
+by their product would still be a full cycle: the first transposition
+splits the cycle and the second rejoins the two pieces. That full cycle
+cannot be a product of the remaining \(2t-3\) transpositions, since a
+\(2t\)-cycle requires at least \(2t-1\). Thus their endpoints do not
+alternate. Distinct diameters have four alternating endpoints and are
+excluded. There are \(t-1\ge2\) terminal-middle edges, so \(h\ne t\)
+is impossible.
+
+With \(h=t\), equality of the phase sets says exactly that the two
+terminal endpoint coordinates are \(p,q\pmod t\), and they are
+distinct. Every terminal edge has exactly one middle partner, proving
+(41) and the tree assertion. A middle-middle factor can meet the support
+of \(A\) only at \(b,c\), so an odd intersection is exactly one label.
+\(\square\)
+
+The antipodal pairing in (41) is **not** an invariant pairing for the
+generators: a terminal-middle factor swaps only one endpoint from each
+of two distinct antipodal pairs in \(M\), while their mates are fixed.
+It therefore breaks that pairing. More generally no nonempty collection
+of disjoint sheet pairs can be invariant under this transitive odd-degree
+group. The paired vertices would be an invariant nonempty subset and
+hence all sheets, which is impossible in odd degree. Allowing one
+unpaired fixed sheet does not avoid this transitivity obstruction.
+
+The remaining code obligation is still to force even intersections for
+**all** factor pairs, or an endpoint decrease. Lemma 18 controls the
+minimizer against terminal-middle factors; it does not control contacts
+between complementary factors or the middle-middle one-contacts. No
+imprimitivity system or invariant proper code is established for this
+last family. The \(t=2\), degree-seven order-168 controls show why a
+monodromy-free exclusion of every equality case would be false.
+
 ## The remaining plateau-escape obligation
 
 A stronger monotone strategy is the following, still **open** and no
@@ -1117,12 +1256,23 @@ checks. The positive degree-five dihedral orbit checks the necessary
 exception. The receipt gives the exact larger path-only ranges and
 negative controls. These finite controls supplement the universal
 proof; they do not prove it by extrapolation or settle the remaining
-cuts (38).
+singleton family (39).
+
+The global compatibility checker also tests (40) by direct tree cuts
+in all 126 terminal-bridge instances in the retained degree-seven
+domain. It checks 966 disjoint-edge noncrossing comparisons in the
+complementary component cycles, and exhausts translation-normalized
+saturated two-coset covers for even \(2\le t\le40\). The controls
+retain valid single-diameter covers with nonantipodal roots; the written
+noncrossing argument is what excludes multiple such edges in a tree.
+They also verify that a terminal-middle generator breaks the natural
+antipodal pairing. These bounded tests support Theorem 17 and Lemma 18;
+the universal statements follow from their written arguments.
 
 The [receipt](terminal_mass_hurwitz_descent_verification.json) and
 [source ledger](terminal_mass_hurwitz_descent_source_ledger.json) record
 the replays and exact inputs. No new degree census, exclusion of every
 positive global orbit minimum, universal plateau escape,
-arbitrary-input extraction, mixed connectivity, formal
+extraction in the remaining degrees \(N\equiv1\pmod6\), mixed connectivity, formal
 verification, independent replay, external review or priority claim is
 asserted.

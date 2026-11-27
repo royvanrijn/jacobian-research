@@ -2733,3 +2733,1935 @@ of pole five. Thus the form cannot have a rational
 primitive, contradicting the leading-pair slice for
 the Veronese outputs. This excludes the constant-ratio
 case and completes the proof.
+
+## The lower \(x\)-weights of the mixed doubled frame
+
+**Theorem SexticKellerDoubledSquareMixedLowXWeights.**
+Under the mixed binary refinement, suppose \(j\ne0\) and
+the highest tuple at weights \((4,5,6)\) is
+\((x^2P^2,x^4P,x^6+jxP^2)\). After a constant target shear
+of the second output by the third, the highest tuple in
+weights \((s,5,6)\), for every \(0<s<4\), is
+\[
+                        (x^2y^4,x^4y^2,jxy^4).
+\]
+In particular the second output has the form
+\[
+                             q(x)y^2+u(x)y+v(x)z+w(x)
+\]
+with \(q,v\) monic of degrees four and five.
+
+For \(s<4\) just below four the displayed tuple is highest.
+Write \(A,B,C\) for its three entries, and retain the notation
+for the entries at any tie. The other monomials of ordinary
+degree six are below the reference weights for \(0<s<4\).
+For the terms of degree at most five, use the strict weight
+bounds from the binary \((1,1,3/2)\) tuple and the mixed
+\((4,5,6)\) tuple, except for the explicitly retained terms
+of those tuples. A monomial \(x^i y^h z^k\) can tie a
+reference \(x^p y^q\) from below only if \(i<p\), at
+\(s=(5h+6k-5q)/(p-i)\). The positive candidates are
+\[
+\begin{array}{c|l|l|l}
+s&A&B&C\\ \hline
+15/4&&y^5&\\
+11/3&&xy^3z&\\
+7/2&y^3z^2&z^4,\ x^2 y z^2&\\
+10/3&&xy^4&\\
+13/4&&yz^3&\\
+3&y^4z,\ xyz^3&y^2z^2,\ x^2y^2z&yz^3\\
+11/4&&y^3z&\\
+8/3&&xz^3&\\
+5/2&y^5&y^4,\ x^2y^3&\\
+7/3&&xyz^2&\\
+2&z^4,\ xy^2z^2&z^3,\ xy^2z,\ x^3z^2&y^2z^2\\
+7/4&&yz^2&\\
+5/3&&xy^3&\\
+3/2&yz^3&y^2z&\\
+5/4&&y^3&\\
+1&y^2z^2,\ xy^3z&x^2z^2,\ x^3yz&y^3z\\
+2/3&&xz^2&\\
+1/2&y^3z&z^2,\ x^2yz&\\
+1/3&&xyz&\\
+1/4&&yz&
+\end{array}
+\]
+The \(j xP^2\) terms with more than one power of \(x\)
+are below \(jxy^4\) at all these weights.
+The expected determinant weight is \(6s+39>0\) at
+each tie, so each leading tuple has rank at most two.
+
+An isolated \(z\)-dependent term in the second component
+cannot tie: the first and third unchanged entries fix
+\(x,y\) algebraically, leaving \(z\) free. At \(10/3\)
+the second component can tie by a multiple of \(xy^4\);
+remove it by subtracting the corresponding multiple of
+the third output. This does not change the tuple at any
+greater weight, since the third weight is then strictly
+smaller than the second. The prior strict weight bounds
+for the second component's unlisted terms still hold,
+since the third component has smaller weights in both
+prior frames. The introduced ordinary \(x^6\) term in
+the second component is below its reference for \(s<4\).
+In the rest of the proof we use this sheared second
+component.
+
+### Simultaneous ties involving \(z\)
+
+At \(7/2\) and \(1/2\), fix the generic value \(D=C/j\)
+and set \(x=D/y^4\). At \(7/2\) the first two outputs are
+\[
+        A=D^2/y^4+a y^3 z^2,\qquad
+        B=D^4/y^{14}+b z^4+dD^2 z^2/y^7.
+\]
+At \(1/2\) they have the same expressions with \(z^2\)
+replaced by \(z\). If \(a=0\), existing independence
+in \(y\) forces \(b=d=0\). Otherwise solve for \(z^2\)
+or \(z\), and substitute into \(B\):
+\[
+ B=\frac{b A^2}{a^2 y^6}
+      +\left(\frac{d}{a}-\frac{2b}{a^2}\right)
+                  \frac{A D^2}{y^{10}}
+      +\left(1-\frac{d}{a}+\frac{b}{a^2}\right)
+                  \frac{D^4}{y^{14}}.
+\]
+This cannot be independent of \(y\), as comparison of the
+three distinct powers forces \(b=d=0\) and then leaves
+a nonzero last term.
+
+At \(s=3\) write the corrections as
+\((a y^4z+b xyz^3,\ c y^2z^2+d x^2 y^2z,\ e yz^3)\).
+In order, the coefficients of
+\(x^5y^6z^2,x^4y^3z^5,x^4y^9,x^2y^9z,y^9z^2\)
+in the determinant are
+\[
+            42bj-36e,\quad 6be,\quad
+            14aj-4dj,\quad 10adj-8cj,\quad 6acj.
+\]
+Since \(j\ne0\) these force all five coefficients to vanish.
+
+At \(s=2\) write the corrections as
+\((a z^4+b x y^2 z^2,\ c z^3+dxy^2z+e x^3z^2,\
+f y^2z^2)\).
+The coefficients of \(x^3y^9\) and \(x^2y^7z^2\)
+give \(d=c=0\). Put \(F=f/j\). Four more coefficients
+give
+\[
+       7b-2e-6F=0,\quad
+       56a+20be+4bF-32eF=0,\quad
+       48ae+32aF-4beF=0,\quad aeF=0 .
+\]
+If \(a\ne0\), the last two give \(e=F=0\), a contradiction
+from the first two. If \(a=0\), then \(beF=0\);
+substituting each possibility in the first two again gives
+\(b=e=F=0\).
+
+At \(s=3/2\), the first two outputs on \(D=C/j\) are
+\(D^2/y^4+a y z^3\), \(D^4/y^{14}+b y^2z\).
+For \(b\ne0\) elimination of \(z\) makes the first
+vary with \(y\) at fixed \(B\): the coefficient of
+\(B^3\) is \(a/(b^3 y^5)\), forcing \(a=0\) and then
+leaving \(D^2/y^4\). For \(b=0\) the second fixes \(y\),
+so \(a=0\) directly.
+
+At \(s=1\) put \(u=xy,\ t=z/u\).
+The three outputs can be written
+\(y^2u^2 M(t),\ u^4 N(t)/y^2,\ y^3 u L(t)\)
+where \(M,N\) are quadratics or lower with constant
+term one, and \(L\) is affine linear with constant term
+\(j\). At fixed \(C\), the ratio \(C^6B^2/A^7\)
+equals \(N^2 L^6/M^7\). It must be constant in \(t\),
+since otherwise it recovers \(t\) algebraically, and
+\(A\) then recovers \(y\) algebraically, giving rank
+three. But this ratio being constant forces
+\(\deg M\le1\) by degree comparison, and then \(M=1\)
+by parity of root multiplicities. Thus \(N=1,L=j\).
+
+### Binary ties
+
+For each binary tie in this proof, the first further tie
+on raising the unused \(z\)-weight has leading image
+specializing isomorphically to that of the binary tuple.
+Indeed the expected determinant weight remains positive:
+the two fixed source weights sum to less than the sum of
+any two output weights, and the first moving weight is
+at most the largest output weight. Thus one can use the
+same normalized integral lifts as in the preceding
+axial weight arguments. For these binary ties the
+initial \(z\)-weight is larger than either fixed-variable
+weight, so a recovered polynomial lift of \(x\) or \(y\)
+cannot involve \(z\).
+
+At \(s=15/4\) or \(5/4\), the binary second entry would
+be \(x^4 y^2+b y^m\) with \(b\ne0\) and \(m=5\) or \(3\),
+respectively. The first and third entries give \(x,y^4\)
+rationally. Over this field the second recovers \(y\),
+since in the fourth-root extension with \(y^4\) fixed
+the expression \(x^4 y^2+b y^m\) has trivial stabilizer.
+Write \(D=C/j\). The equation \(B y^{14}=D^4+b y^{m+14}\)
+makes \(y\) integral, so it lifts unchanged. The rational
+lift of \(x=D/y^4\) cannot have a pole on \(y=0\), since
+\(x^4y^2=B-b y^m\) is polynomial. Thus both lifts are
+polynomial, contradicting the further tie.
+
+At \(s=5/2\) the binary tuple is
+\[
+              (x^2 y^4+a y^5,\ x^4 y^2+d x^2 y^3+b y^4,\
+                 j x y^4).
+\]
+Put \(t=x^2/y,\ \rho=y/x\). The output weights in
+binary weights \(1,2\) are \(10,8,9\), and the
+zero-weight ratios \(AB/C^2,\ C^{10}/A^9\) are
+\[
+       \frac{(t+a)(t^2+dt+b)}{j^2 t},
+                      \qquad \frac{j^{10}t^5}{(t+a)^9}.
+\]
+For \(a\ne0\) they recover \(t\). A proper index
+would be three, by the two degrees, hence the second
+ratio would be a function of the first. The only pole
+of the second ratio is at \(-a\), where the first
+ratio is zero. The fibre of the first ratio there
+would have to be a triple point, forcing
+\(t^2+dt+b=(t+a)^2\). But then the poles of the
+first ratio at zero and infinity have orders one
+and two, whereas the second ratio has zeros there
+of orders five and four. These orders cannot
+come from a function of the first ratio.
+If \(a=0\), the two ratios become a quadratic
+and a nonzero constant times \(t^{-4}\). Their
+field can have a proper index only when \(d=0\),
+by the involution \(t\mapsto-t\).
+Once \(t\) is recovered, \(A/C\) recovers \(\rho\),
+so the binary field is full except possibly for
+\(a=d=0\).
+
+For \(a\ne0\) or \(b\ne0\) in the full-field case, \(y\)
+is integral. Indeed with \(D=C/j\) the corresponding
+identities are \(A y^4=D^2+a y^9\) if \(a\ne0\), or
+\(B y^6=A^2+dA y^5+b y^{10}\) if \(a=0,b\ne0\).
+Then the lift of \(y\) stays \(y\).
+From \(A\) the rational lift of \(x\) can have poles
+only at \(y=0\), and \(B\) precludes them: if \(x\)
+has a pole, the \(x^4y^2\) term gives a strictly
+lower, negative order than either correction.
+Thus there is no tie.
+
+The full-field case with \(a=b=0,d\ne0\) and the
+tie at \(s=5/3\) can both use \(W=xy^2,V=xy\).
+In both cases the field is full: when \(a=0\) the
+ratio \(A/C\) gives \(x\), then \(C\) gives \(y^4\),
+and \(B\) has a nonzero odd power of \(y\) in addition
+to its even term, with trivial stabilizer under
+the fourth roots of unity. In both cases \(W^2=A\)
+and \(C V^2=jW^3\). For \(s=5/2\) the identity is
+\(V^6+d W^3 V-BW^2=0\); for \(s=5/3\), where
+\(B=x^4 y^2+dxy^3\), it is
+\(V^6+dW^4-BW^2=0\). Thus \(V,W\) lift integrally.
+They have equal prime support by these identities.
+The lift of \(V\) cannot be prime, since the weights
+of \(W,V\) are \(5,3\) or \(7,4\) after scaling the
+\(x\)-weight to one. Its factors restrict to \(x,y\),
+each of which has weight below the moving \(z\)-weight.
+So \(V=xy\) and \(W=xy^2\) still, precluding a tie.
+
+The only remaining case is \(a=d=0,\ b\ne0\) at
+\(5/2\). Its image field is \(k(x,y^2)\) by the
+involution above, or directly from \(A,C,B\).
+Put \(H=y^2\), so \(A=x^2H^2,\ B=x^4H+bH^2,\ C=jxH^2\).
+The identity \(B H^3=A^2+bH^5\) makes \(H\) integral.
+In a lift the second identity for \(B\) forces the
+rational \(x=A/(C/j)\) to be polynomial: the possible
+lift of \(H\) is \(y^2\), \(y^2+\eta z\) at \(z\)-weight
+four, or \(y^2+\eta xz\) at \(z\)-weight three.
+At a root of \(H\) it has multiplicity at most two
+and \(x^4 H\) cannot have a pole. Elsewhere the same
+identity precludes a pole as well. The weights force
+\(x\) to lift as \(x\). If \(H=y^2\), there is no tie.
+If \(H=y^2+\eta z\), it is a coordinate and one can
+raise the now unused \(y\)-weight. Each possible lift
+of \(H\), of weight four, adds a term linear in \(y\),
+either \(xy\) at weight three or \(y\) at weight four.
+Take it again as the coordinate and continue. Beyond
+four no lift can depend on \(y\), a contradiction.
+
+Finally suppose \(H=y^2+\eta xz\), \(\eta\ne0\).
+In parameters \(x,H\),
+\[
+               \det\frac{\partial(B,C)}{\partial(x,H)}
+                          =j H^2(7x^4-2bH)=\sigma.
+\]
+At generic \(x=0\) the two differentials of \(B,C\)
+are independent, since \(\sigma\) is a unit there
+and \(x,H\) have independent differentials there.
+A rational primitive for their Jacobian derivation
+is \(-y/(\eta x\sigma)\). Every correction belongs
+to \(k(x,H)\), since the source field is \(k(x,H)(y)\).
+At \(x=0\) the pole order is one and its residue
+contains \(y\) over the residue field \(k(H)=k(y^2)\).
+It cannot be cancelled by an invariant. This
+contradicts the divisor-regular leading-pair slice.
+
+These exclusions leave the reference tuple for every
+\(0<s<4\). Taking \(s=0\) shows the support of the
+second output has \(5\deg_y+6\deg_z\le10\):
+for every monomial, pass to the limit of the
+weight bound \(4s+10\). Thus it is quadratic in \(y\)
+and affine in \(z\), with no \(yz\)-term. Its
+original ordinary coefficients of \(y^2,z\) were
+\(x^4,x^5\) in degree six, respectively, and the
+target shear changed the ordinary sextic only by
+a multiple of \(x^6\). This proves the assertion.
+
+## Residues and coordinate completion for the affine transverse output
+
+**Lemma KellerQuadraticAffineOutputRootRestriction.**
+Let a three-variable Keller map in characteristic zero have
+an output \(S=v(x)z+q(x)y^2+u(x)y+w(x)\) with \(v,q\)
+nonzero. Over the algebraic closure every root of \(v\)
+is a root of \(q\). If \(v,u\) have a common root \(r\),
+then \(v'(r)=q'(r)=u'(r)=0\) and \(w'(r)\ne0\).
+
+**Corollary SexticKellerDoubledMixedCoprimeAffineOutputInversion.**
+In the lower \(x\)-weight theorem the map is invertible
+if \(\gcd(v,u)=1\). Consequently any noninvertible map
+in that branch has a root \(r\) of \(v,u,q\) at which
+\(v,q,u\) all vanish to order at least two and \(w'(r)\ne0\).
+
+### The two branches over a root of the transverse coefficient
+
+Work on a generic level \(S=t\), extending constants
+to the algebraic closure of \(k(t)\) as needed.
+The Keller identity gives a regular one-form on this level
+whose exterior derivative equals the relative area form.
+Indeed the other two outputs give a pair \(G_1,G_2\)
+with \(dG_1\wedge dG_2\) a nonzero constant multiple of
+that area form; take the same multiple of \(G_1\,dG_2\)
+with the inverse normalization. This is the residue
+argument used in
+[Wang–Yan, Lemma 3.14](https://arxiv.org/pdf/2610.36495)
+for an affine-variable component.
+
+On \(v\ne0\) the level ring is \(K[x,v^{-1},y]\), with
+\(K\) the extended constant field. Up to the choice of
+sign, its area form is \(dx\wedge dy/v(x)\), with primitive
+\(-y\,dx/v(x)\). Every closed regular one-form on this
+open set is an exact form plus \(h(x)dx\), with
+\(h\in K[x,v^{-1}]\). This follows by integrating the
+\(dy\) coefficient in the polynomial variable \(y\),
+and using closedness to see that the remaining
+\(dx\) coefficient is independent of \(y\).
+
+Suppose \(v(r)=0\) but \(q(r)\ne0\), and let \(k\) be
+the multiplicity of \(r\) in \(v\). With \(z\) fixed
+constant the equation of the generic level gives
+two regular formal branches \(y_\pm(x)\) over \(x=r\),
+since the generic quadratic has distinct roots there.
+Regularity of the global primitive implies that the
+residues of \(y_\pm(x)dx/v\) on these branches are equal:
+the exact term has zero residue, and \(h(x)dx\) has
+the same residue on both. Write
+\(G=w-u^2/(4q)\). The difference \(y_+-y_-\) is
+\[
+             2q^{-1/2}\bigl(t-G(x)-v(x)z\bigr)^{1/2}.
+\]
+The residue uses only its terms through order \(k-1\)
+in \(x-r\), so the \(vz\) term does not contribute.
+For \(k=1\) the residue difference is nonzero.
+For \(k\ge2\), if \(G'(r)\ne0\), the coefficient
+of the lowest power of \(t-G(r)\) in the residue
+difference, namely its power \(1/2-(k-1)\), is nonzero.
+It is contributed only by taking the linear term
+\(-G'(r)(x-r)\) a total of \(k-1\) times in the
+binomial expansion and multiplying by the nonzero
+constant term of \(2q^{-1/2}(x-r)^k/v\).
+All higher powers of \(t-G(r)\) cannot cancel this
+one. Therefore equal residues force \(G'(r)=0\).
+But then \(x=r,\ y=-u(r)/(2q(r))\) is a critical point
+of \(S\), since \(v'(r)=0\) and \(S_x=G'(r)\) there.
+Both cases are impossible in a Keller map.
+
+If \(r\) is also a root of \(u\), then \(S_y=S_z=0\)
+on all of \(x=r\). The polynomial
+\(S_x=q'(r)y^2+u'(r)y+v'(r)z+w'(r)\) must have no
+zero there over the algebraic closure. Its nonconstant
+coefficients must therefore vanish and its constant
+coefficient must be nonzero, as asserted.
+
+### The coprime coordinate completion
+
+If \(\gcd(v,u)=1\), the substitution \(y\mapsto
+q y^2+u y+w\) is invertible over \(k[x]/(v)\).
+The coefficient \(u\) is a unit there and \(q^5=0\)
+since every root of the degree-five polynomial \(v\)
+is a root of \(q\). The inverse is polynomial of
+degree at most five in its argument \(t\). For example
+solve \(y=u^{-1}(t-w)-u^{-1}q y^2\) as a formal
+series in the nilpotent \(q\); the coefficient of
+\(q^i\) has degree at most \(i+1\) in \(t\), and
+the series stops after \(i=4\). Uniqueness follows
+by subtracting two solutions, since the multiplier
+\(u+q(y_1+y_2)\) is a unit.
+Lift the coefficients of this inverse to degree at
+most four in \(x\), obtaining \(L(x,t)\) of total
+degree at most nine.
+
+Then
+\[
+              (x,y,z)\longmapsto
+                    \left(x,S,\frac{y-L(x,S)}{v(x)}\right)
+\]
+is a coordinate completion. The last entry is polynomial
+by the inverse modulo \(v\). With output coordinates
+\((x,t,h)\) it has inverse
+\[
+           y=L(x,t)+v(x)h,\qquad
+           z=\frac{t-q(x)y^2-u(x)y-w(x)}{v(x)}.
+\]
+The numerator is divisible by \(v\) by the same inverse
+identity. The inverse degrees in \(y,z\) are at most
+nine and seventeen, respectively: before dividing
+by the degree-five \(v\), the bounds are
+\(4+2\cdot9,\ 5+9,\ 6,\ 1\) in the numerator of the
+third coordinate.
+
+By the lower \(x\)-weight theorem every monomial
+\(x^i y^h z^k\) of either remaining output has
+\(5h+6k\le20\) and \(i+h+k\le6\). Under the completion
+its degree is at most \(i+9h+17k\le54\).
+The new map fixes the coordinate \(t\) and is still
+Keller. On each fixed \(t\)-plane the remaining two
+outputs are invertible by the retained planar
+degree-100 theorem of Moh. The
+[planar specialization and descent argument](LOW_DEGREE_COORDINATE_KELLER_MAPS_IN_THREE_VARIABLES.md)
+then proves invertibility over the original field
+using this actual composed degree bound.
+
+## Exclusion of the mixed doubled frame
+
+**Theorem SexticKellerDoubledSquareMixedExclusion.**
+In characteristic zero, no three-variable Keller map of
+ordinary degree at most six in the mixed doubled square-member
+frame of the lower \(x\)-weight theorem has the highest tuple
+\[
+             (x^2P^2,\ x^4P,\ x^6+jxP^2),
+             \qquad P=xz+y^2,\quad j\ne0
+\]
+in weights \((4,5,6)\).
+
+Work over the algebraic closure. After the shear of the lower
+\(x\)-weight theorem, write \(F_2=qy^2+uy+vz+w\), with \(q,v\)
+monic of degrees four and five. The same theorem, by taking
+the limit in weights \((s,5,6)\) as \(s\) decreases to zero,
+bounds each of \(F_1,F_3\) by weight 20 in \((0,5,6)\).
+Their parts of weight 20 are \(p(x)y^4,r(x)y^4\), with \(p\)
+monic quadratic and \(r\) linear with leading coefficient \(j\).
+
+### Increasing the transverse weight
+
+Increase the weight of \(z\) from six to ten, keeping the other
+two weights fixed. The only possible ties for \(F_1,F_3\)
+before ten are \(z^3\) at \(20/3\) and \(yz^2\) at \(15/2\),
+with coefficients in \(k[x]\). This follows by solving
+\(5h+Wl=20\) for \(6<W<10\) with \(5h+6l\le20\) and \(l>0\).
+At each of these weights the expected determinant weight is
+\(45-W>0\), so the highest tuple has rank at most two.
+On the generic level \(q y^2=s\) the two other highest
+outputs are
+\[
+             s^2p/q^2+a(x)\zeta,\qquad
+             s^2r/q^2+b(x)\zeta ,
+\]
+with \(\zeta=z^3\) or \(yz^2\), respectively. Here \(x,\zeta\)
+are algebraically independent over \(k(s)\), and the
+Jacobian in them must vanish. Its \(\zeta\) coefficient
+would force \(a/b\) constant if both were nonzero. Subtracting
+that constant multiple would then make a nontrivial constant
+linear combination of \(p/q^2,r/q^2\) constant in \(x\).
+If just one of \(a,b\) is nonzero, the same Jacobian forces
+the corresponding other rational function constant. Both
+possibilities contradict their distinct positive orders at
+infinity, six and seven. This eliminates both ties.
+
+At weight ten put \(U=y^2,V=z\). The highest first and third
+outputs are binary quadratics in \(U,V\), and the second is
+\(qU+vV\). On \(qU+vV=s\) put \(H=U/s\) and substitute
+\(V=s(1-qH)/v\). Dividing the other two outputs by \(s^2\)
+gives a pair of polynomials in \(H\) of degree at most two
+over \(k(x)\). Their joint image over \(k(s)\) has dimension
+at most one by the rank condition. If either depends on
+\(H\), the image is a curve, defined by a single irreducible
+polynomial over \(k(s)\). That polynomial remains irreducible
+over the purely transcendental extension \(k(s,x)\) and
+defines the image there as well. In fact the image there
+still has dimension one, and the extended relation ideal
+is a prime of height one contained in its relation ideal.
+The six monomials of total degree at most two in the two
+outputs give polynomials in \(H\) of degree at most four.
+They are linearly dependent over \(k(s,x)\), so the defining
+equation has degree at most two.
+
+At \(H=1/q\) the two outputs are \(p/q^2,r/q^2\).
+Their six monomials of degree at most two have distinct
+orders \(0,6,7,12,13,14\) at \(x=\infty\). They are
+linearly independent over \(k(s)\), a contradiction.
+Thus both polynomials are independent of \(H\). Undoing
+the substitution gives highest polynomials
+\[
+              p(y^2+(v/q)z)^2,\qquad
+              r(y^2+(v/q)z)^2 .
+\]
+In particular \(r(v/q)^2\in k[x]\). A pole of \(v/q\) at
+a finite point would require \(r\) to vanish there to order
+at least two, which it cannot. Thus \(v=qT\) with \(T\)
+monic linear. Write \(P_T=y^2+Tz\). The terms of \(F_1-pP_T^2\)
+and \(F_3-rP_T^2\) have weight at most three in \((0,1,2)\).
+
+### The bracket on \(F_2=s\)
+
+On \(v\ne0\) the level \(F_2=s\) has coordinates \(x,y\)
+with \(z=(s-w-uy-qy^2)/v\). Write \(A,C\) for the
+restrictions of \(F_1,F_3\). The chain rule gives
+\[
+                A_x C_y-A_y C_x=\kappa/v(x)
+\]
+for some \(\kappa\in k^\times\), with derivatives at fixed
+\(s\). Since \(P_T=(s-w-uy)/q\), each restriction is of the
+form
+\[
+       a_3(x)y^3+a_2(x)y^2+
+       (b_0(x)+b_1(x)s)y+d_0(x)+d_1(x)s+d_2(x)s^2.
+\]
+Indeed the possible remainder monomials in \(y,z\) are
+\(y^3,yz,y^2,z,y,1\). The cubic coefficient can have a
+finite pole only at \(T=0\), and at most a simple pole.
+Only \(yz\) contributes such a pole, through
+\(z=(s-w-uy)/v-y^2/T\).
+The coefficients \(d_2\) of \(A,C\) are \(p/q^2,r/q^2\),
+respectively. Each \(b_1\) tends to zero at \(x=\infty\):
+for \(A\) it is \(-2pu/q^2\) plus the coefficient of
+\(yz\) divided by \(v\), and for \(C\) use \(r\) in place
+of \(p\). The degree bounds \(\deg u\le5\) and
+\(\deg [yz]F_i\le4\) give the assertion.
+
+These properties persist under constant invertible
+linear combinations of the pair. For each nonzero
+combination \(d_2\) is nonzero and tends to zero at
+infinity. If both outputs have the same \(y\)-degree
+\(m\ge2\), the coefficient of \(y^{2m-1}\) in the bracket
+makes their leading coefficients proportional over \(k\).
+They belong to \(k(x)\), and the vanishing coefficient is
+\(m\) times their derivative determinant. A constant shear
+therefore lowers one of the degrees. If one degree is zero,
+the bracket forces the other to be one. It remains to
+consider degrees \((3,2)\), degrees \((m,1)\) for
+\(m=2,3\), and the case of both degrees at most one.
+
+### Degrees three and two
+
+Call the cubic output \(G\) and the quadratic \(D\), with
+leading coefficients \(a,b\in k(x)^\times\). The coefficient
+of \(y^4\) in their bracket gives \(2a'b-3ab'=0\), so
+\(a^2/b^3\in k^\times\). Since \(k\) is algebraically closed,
+write \(b=h^2,a=\eta h^3\) with \(h\in k(x)^\times\)
+and \(\eta\in k^\times\). The pole bound on \(a\) forces
+\(h\in k[x]\), since any finite pole of \(h^3\) would have
+order at least three. Set
+\[
+        Y=hy+(b_0+b_1s)/(2h),\qquad D=Y^2+d(x,s).
+\]
+In \(x,Y\) coordinates write
+\[
+                 G=\eta Y^3+c(x,s)Y^2+e(x,s)Y+f(x,s).
+\]
+All four coefficients \(c,d,e,f\) are polynomial in \(s\)
+over \(k(x)\). The new bracket is a nonzero constant
+divided by \(vh\). Its coefficients at \(Y^3,Y^2,Y\)
+give \(c_x=0,\ 2e_x=3\eta d_x,\ f_x=c d_x\).
+Consequently \(c\in k[s]\), \(e-(3\eta/2)d\in k[s]\)
+and \(f-cd\in k[s]\). The constant term of the bracket,
+\(-e d_x\), is independent of \(s\) and nonzero. Thus
+\((e^2)_x=3\eta e d_x\) is independent of \(s\) and nonzero.
+If \(e\) had positive degree \(n\) in \(s\), comparing the
+coefficients of \(e^2\) from \(s^{2n}\) down through \(s^n\)
+would force all coefficients of \(e\) into \(k\). Indeed
+the leading coefficient has constant square, and each
+successive coefficient occurs linearly times twice the
+leading coefficient, with all other summands already
+constant. This would give \((e^2)_x=0\). Hence \(e\)
+is independent of \(s\), and the \(s^2\) coefficient of
+\(d\) is constant in \(x\).
+
+Put \(L=b_1/(2h)\) for the quadratic output. This tends to
+zero at \(x=\infty\). The coefficient of \(sy^2\) in
+\[
+                  G=\eta Y^3+c(s)D+e(x)Y+(f-cd)(s)
+\]
+is \(h^2(3\eta L+[s]c)\). It vanishes by the form of \(G\)
+before the change of variable. Therefore \(L\) is constant
+and is zero. But the \(s^2\) coefficient of \(d\) is
+\(d_2-L^2\), which would now make the nonconstant \(d_2\)
+of \(D\) constant. This is impossible.
+
+### One degree at least two and one degree one
+
+Write the linear output as \(D=b(x,s)y+d(x,s)\) and the
+other as \(G\) of degree \(m=2\) or \(3\). Use \(x,D\) as
+coordinates in the function field over \(k(s)\). The
+bracket gives \(b\,\partial_x G|_D=\text{constant}/v\).
+In particular the constant coefficient of \(G\) as a
+polynomial in \(D\) is a rational primitive in \(x\)
+of a nonzero constant divided by \(vb\).
+
+Write \(b=b_0+b_1s\). If \(b_1\ne0\) and \(b_0/b_1\)
+is nonconstant, the generic equation \(b_0/b_1=-s\)
+has simple finite solutions away from all fixed zeros
+and poles of \(v,b_0,b_1\). This follows from separability
+in characteristic zero and the transcendence of \(s\).
+The differential \(dx/(vb)\) has a nonzero residue at
+each such point in the algebraic closure of \(k(s)\), so
+it cannot have a rational primitive. If \(b_1\ne0\) and
+\(b_0/b_1\) is constant, specialize \(s\) to its negative.
+On this level \(D\) is independent of \(y\), while \(G\)
+still has degree \(m\), since its leading coefficient
+is independent of \(s\). The bracket cannot be a nonzero
+constant in \(y\) on that level. The specialized identity
+is valid because the original restrictions only use
+denominators in \(x\). Thus \(b=b_0(x)\ne0\).
+
+In \(x,D\) coordinates the positive-degree coefficients of
+\(G\) are now independent of \(x\), by the bracket. They
+are polynomial in \(s\), since the substitution for \(y\)
+only divides by \(b(x)\). The coefficient \(H_m\) of
+\(D^m\) is a nonzero constant in \(k\) by the form of \(G\)
+before substitution. The coefficient of \(y^{m-1}\) in
+\(G\) is
+\[
+                    b^{m-1}\bigl(mH_m d+H_{m-1}(s)\bigr).
+\]
+It has degree at most one in \(s\) in the original form.
+Comparing the \(s^2\) coefficient again forces the
+nonconstant \(d_2\) of \(D\) to be constant.
+
+### Both degrees at most one
+
+Use the original \(A,C\), since the constant linear changes
+do not alter the condition that both degrees are at most one.
+Let their \(y\) coefficients be \(\rho_0+\rho_1s\) and
+\(\sigma_0+\sigma_1s\). The coefficient of \(ys^2\) in
+the bracket gives \(\rho_1'\sigma_1-\rho_1\sigma_1'=0\).
+A nonzero pair \((\rho_1,\sigma_1)\) would therefore be
+a rational multiple of a nonzero constant vector. But the
+coefficient of \(s^3\) independent of \(y\) gives
+\(\sigma_1(p/q^2)'-\rho_1(r/q^2)'=0\). The two derivatives
+are linearly independent over \(k\) by their distinct
+orders at infinity. Thus \(\rho_1=\sigma_1=0\).
+Repeating the same comparison at \(y\) and \(s^2\) gives
+\(\rho_0=\sigma_0=0\), contradicting the nonzero bracket.
+This completes the exclusion.
+
+## Exclusion of the binary tie in the smooth-common-factor frame
+
+**Theorem SexticKellerTangentConicSmoothSquareMemberBinaryExclusion.**
+Suppose a three-variable characteristic-zero Keller map of
+ordinary degree at most six has ordinary highest tuple
+\((P^3,P^2x^2,Px^4)\), where \(P=xz+y^2\). If the highest
+tuple in weights \((1,1,2)\) is binary in \(x,z\), it is
+\[
+                         (x^3z^3,\ x^4z^2,\ x^5z).
+\]
+In this case the highest tuple at weights \((2,3,4)\)
+is \((P^3,P^2x^2,Px^4)\).
+
+Work over the algebraic closure. With \(x,z\) held at
+weights one and two, the binary tuple from the weight-two
+theorem is
+\[
+  A_0=x^3z^3+b_0xz^4,\quad
+  B_0=x^4z^2+e_0x^2z^3+f_0z^4,\quad
+  C_0=x^5z+j_0x^3z^2+\ell_0xz^3.
+\]
+Increase the weight \(w\) of \(y\) from one to \(3/2\).
+The possible ties strictly before \(3/2\) are
+\[
+ \begin{array}{c|c|c}
+ w&B&C\\ \hline
+ 5/4&& y^4z\\
+ 4/3&y^3z^2&xy^3z\\
+ 7/5&&y^5 .
+ \end{array}
+\]
+For the table, test \(i+w h+2l=d\) at \(h>0\)
+for \(d=9,8,7\), using the ordinary degree bound and
+the specified terms in degree six. At each tie the
+leading determinant vanishes since \(9+8+7-(3+w)>0\).
+
+The three binary entries are pairwise algebraically
+independent. In the variables \(x,t=z/x^2\) their weights
+are \(9,8,7\), and the orders at \(t=0\) of their coefficient
+functions are \(3,2,1\). For each pair the ratio with
+the powers of \(x\) cancelled thus has nonzero \(t\)-order.
+The isolated ties in \(C\) are impossible by independence of
+\(A_0,B_0\). At \(4/3\), fix \(A_0\) at a generic value
+and use \(y^3\) as a transcendental variable over the
+function field of the binary level. The two other entries
+are affine in \(y^3\). If both coefficients are nonzero,
+the coefficient of \(y^3\) in their relative determinant
+forces the ratio of the two coefficients to be constant
+along the binary level. This ratio is proportional to
+\(z/x\), which is algebraically independent of \(A_0\).
+Indeed at fixed \(z/x\) the polynomial \(A_0\) has
+nonzero terms of distinct \(x\)-degrees six and possibly
+five. If only one coefficient is nonzero, the unchanged
+entry would be constant along the level of \(A_0\), again
+impossible. This eliminates every tie before \(3/2\).
+
+### The highest tuple at weights \((2,3,4)\)
+
+At \(w=3/2\) all the tying terms have even \(y\)-degree.
+Use \(x,P,z\) as polynomial generators of \(k[x,y^2,z]\).
+In these variables the general tuple is
+\[
+ \begin{aligned}
+ A&=P^3+aPz^3+b xz^4,\\
+ B&=x^2P^2+cP^2z+d xPz^2+e x^2z^3+f z^4,\\
+ C&=x^4P+i xP^2+h x^2Pz+g Pz^2+j x^3z^2+\ell xz^3 .
+ \end{aligned}
+\]
+This support follows by the same exponent test at
+\(w=3/2\) and the substitution \(y^2=P-xz\). The
+determinant in \(x,P,z\) vanishes because the determinant
+in \(x,y,z\) is its product with \(2y\).
+The following coefficients determine the tuple:
+\[
+\begin{array}{c|r}
+ x^3P^5 & 6(2c-h)\\
+ P^6 &3ci\\
+ x^4P^4 z &12(2d-j)\\
+ xP^5 z &6(ch+di-2g)\\
+ x^5P^3 z^2 &-18(a-2e)\\
+ x^6P^2 z^3 &-24b\\
+ x^5P z^5 &2(9ae-7bd-10bj).
+\end{array}
+\]
+In particular \(b=0\), \(a=2e\), and \(ae=0\), giving
+\(a=b=e=0\). At these values the coefficient of \(x^3P^3 z^3\)
+is \(12(dj+4f)\) and that of \(x^2P^2 z^5\) is \(36fj\).
+Together with \(j=2d\) these give \(d=f=j=0\).
+The coefficient of \(x^2P^4 z^2\) is now \(-18\ell\),
+giving \(\ell=0\). The remaining relations give
+\(h=2c,\ g=c^2,\ ci=0\). Thus, with \(Q=x^2+cz\),
+the tuple is
+\[
+                       (P^3,\ P^2 Q,\ P Q^2+i xP^2),
+                       \qquad ci=0.
+\]
+
+### The two relative differentials
+
+If \(c\ne0\), apply the weighted leading-pair slice to
+\(P^3,P^2Q\). Their differential wedge is \(3P^4\)
+times \(dP\wedge dQ\), so on generic \(P=S,Q=T\) this
+would give a rational primitive of the relative form
+for \(P,Q\). Eliminating \(z\) gives
+\[
+                          y^2=S+(x^3-Tx)/c .
+\]
+The cubic is squarefree for generic \(S,T\).
+As \(dP\wedge dQ\wedge dx=2cy\,dx\wedge dy\wedge dz\),
+the relative form is proportional to \(dx/y\).
+It is nonzero and regular on the complete normalization.
+At a finite ramification point \(y\) is a parameter;
+at infinity \(x,y\) have pole orders two and three.
+Hence this form has no rational primitive, a contradiction.
+
+Suppose \(c=0\) and \(i\ne0\). Use the first and third
+highest entries \(P^3,G=x^4P+i xP^2\). At the generic
+point of \(x=0\) their differentials are independent,
+as \(P=y^2\) there and \(G_x\) at fixed \(P\) is
+\(iP^2\) there. The weighted leading-pair slice now
+gives a rational slice regular at that divisor.
+But in the source field \(k(x,P)(y)\),
+\[
+                    J(P^3,G,y)=3P^3x(4x^3+iP).
+\]
+The derivation \(J(P^3,G,\cdot)\) annihilates \(k(x,P)\)
+and is a nonzero constant multiple of \(\partial_y\)
+over that field. Any slice with nonzero scalar value
+\(\kappa\) is consequently of the form
+\[
+               \frac{\kappa y}{3P^3x(4x^3+iP)}+H(x,P),
+                         \qquad H\in k(x,P).
+\]
+The first term has a simple pole at \(x=0\), with
+coefficient \(\kappa y/(3iP^4)\) relative to the
+parameter \(x\). This coefficient is outside \(k(P)\)
+in the residue field, since \(P=y^2\) there.
+The divisor valuation on \(k(x,P)\) is the \(x\)-adic
+valuation with residue field \(k(P)\). Thus \(H\) cannot
+cancel the pole. This contradicts the regular slice.
+
+It follows that \(c=i=0\). Specializing the resulting
+highest tuple to \(y=0\) gives the three uncorrected binary
+entries at \(w=1\), proving the assertion.
+
+## The axial weights five-halves and three in the smooth frame
+
+**Theorem SexticKellerTangentConicSmoothSquareMemberWeightThreeReduction.**
+In the binary case of the smooth-common-factor weight-two
+theorem, the highest tuple in \((1,1,w)\) stays
+\((x^3z^3,x^4z^2,x^5z)\) for \(2<w<3\).
+At \(w=3\) it is
+\[
+                          (x^3z^3,\ x^4z^2,\ x^5z+i x^2z^2).
+\]
+In weights \((1,2,3)\) the highest tuple is
+\((P^3,P^2x^2,Px^4+iP^2)\), with the same \(i\).
+
+By the binary exclusion at weight two, all lower ordinary
+terms have weights strictly below \(18,16,14\), respectively,
+in \((2,3,4)\). As \(w\) increases above two, a lower ordinary
+monomial \(x^r y^s z^l\) ties the reference monomial
+\(x^{r_0}z^{l_0}\) only for \(l>l_0\) and
+\(w=(r_0-r-s)/(l-l_0)\). The bounds \(r+s+l\le5\) and
+\(2<w\le3\) give a single tie before three, namely \(z^3\)
+in the third entry at \(5/2\).
+
+### Excluding the tie at five-halves
+
+Hold \(x,z\) at weights \(1,5/2\) and increase the weight of
+\(y\) from one to \(7/4\). Test \(r+w_y s+5l/2=d\) for
+\(d=21/2,9,15/2\), using the strict lower-term bounds at
+\((2,3,4)\). The possible terms before \(7/4\) are \(yz^3\)
+in the second entry and \(xyz^2\) in the third at \(3/2\),
+and \(y^3z\) in the third at \(5/3\). At \(7/4\) the only
+tying \(y\)-terms are the ordinary terms completing \(P^3\),
+\(P^2x^2\) and \(Px^4\). Both lists are checked by the
+[retained script](verify_sextic_smooth_square_weight_three.py).
+
+At the first tie, on a geometric generic level of
+\(A_0=(xz)^3\) the function \(xz\) is a nonzero scalar.
+The two binary entries \(x^4z^2\) and \(x^5z+\delta z^3\)
+are both nonconstant in \(x\) there. The ratio of the two
+potential \(y\)-coefficients is proportional to \(z/x\),
+also nonconstant. The coefficients of the relative
+determinant in \(y\) therefore exclude both terms, by the
+same affine calculation as for the weight-two binary tie.
+Independence of the first two entries eliminates the
+isolated tie at \(5/3\). The highest tuple at \(7/4\)
+is consequently \((P^3,P^2x^2,Px^4+\delta z^3)\).
+Its determinant is nonzero unless \(\delta=0\), since the
+first two entries are independent in \(x,P\) and \(z\)
+is independent of \(x,P\). This excludes the tie at \(5/2\).
+
+### The highest tuple at axial weight three
+
+The axial exponent test gives the possible corrections to
+\((x^3z^3,x^4z^2,x^5z)\) at \(w=3\) as
+\[
+                    (a z^4,\ (d x+u y)z^3,\
+                                 (i x^2+v xy+\lambda y^2)z^2).
+\]
+In their determinant the coefficients at \(x^7z^6\),
+\(x^6yz^6\), and \(x^3yz^7\) are
+\(6(v-2u),12\lambda,2(16a\lambda-6d\lambda-3uv)\).
+Thus \(u=v=\lambda=0\).
+
+Now increase the weight of \(y\) to two, keeping \(x,z\)
+at weights one and three. The same test gives only one
+intermediate tie, \(y^3z\) in the third entry at \(5/3\).
+The first two binary entries are algebraically independent:
+with \(t=z/x^3\) the ratio cancelling their powers of \(x\)
+has nonzero order at \(t=0\), since \(3/12\ne2/10\).
+The isolated tie is therefore impossible. At \(w_y=2\)
+the allowed polynomials are exactly
+\[
+ \begin{aligned}
+ A&=P^3+a z^4+b y^3z^2+c xy z^3,\\
+ B&=x^2P^2+d xz^3+e y^2z^2+f y^5+g xy^3z+h x^2y z^2,\\
+ C&=x^4P+i x^2z^2+j y z^2+k y^4+\ell xy^2z
+                  +m x^2y^3+n x^3yz.
+ \end{aligned}
+\]
+Their determinant must vanish as its expected weight is
+\(12+10+8-6=24>0\).
+
+### The coefficient calculation over the rationals
+
+Let \(I\subset\mathbb Q[a,b,c,d,e,f,g,h,i,j,k,\ell,m,n]\)
+be the ideal of all coefficients of this determinant in
+\(x,y,z\). The following entries or powers are in \(I\):
+\[
+ \begin{gathered}
+ b-2h+n,\quad c-2h+n,\quad 2f-m,\quad 2g-m-n,\\
+ (m-n)^4,\quad j^3,\quad (i+k-\ell)^3,\quad (2h-n)^2,\quad
+ e^3,\quad d^3,\quad a^2,\quad (n^2-8k+4\ell)^3 .
+ \end{gathered}
+\]
+The retained script constructs the determinant and its
+coefficient ideal over \(\mathbb Q\), computes polynomial
+witnesses for these memberships, and verifies the matrix
+product recovering all twelve expressions from the ideal
+generators. Consequently each displayed expression
+vanishes at every solution over a field of characteristic
+zero, and the same is true of the bases of the powers.
+The script requires Python 3 and Singular on the path.
+With Singular 4.3.2, run
+\[
+ \texttt{python3 research/jacobian/monodromy-theory/verify\_sextic\_smooth\_square\_weight\_three.py}
+\]
+from the repository root. The success line records both
+tie tables and the twelve coefficient identities.
+
+Taking \(Q=x^2+h y\), the relations give
+\[
+                              (A,B,C)=(P^3,P^2Q,PQ^2+iP^2).
+\]
+For example \(m=n=2h\), \(k=h^2+i\) and
+\(\ell=h^2+2i\); all of \(a,b,c,d,e,j\) vanish.
+This also verifies that the resulting family satisfies
+the highest determinant equation.
+
+If \(h\ne0\), the first two outputs again give the
+relative differential for \(P,Q\) up to a nonzero scalar
+on each geometric generic component. On the level
+\(P=S,Q=T\), solve \(y=(T-x^2)/h\) and \(z=(S-y^2)/x\).
+Since \(dP\wedge dQ\wedge dx=-hx\,dx\wedge dy\wedge dz\),
+the relative differential is proportional to \(dx/x\)
+on this rational curve. Its nonzero residue at \(x=0\)
+contradicts the leading-pair slice. Thus \(h=0\), giving
+the asserted tuple at \((1,2,3)\). Specialization at \(y=0\)
+gives the asserted weight-three axial tuple.
+
+## Complete axial degrees when the remaining coefficient is nonzero
+
+**Corollary SexticKellerTangentConicSmoothSquareMemberNonzeroAxialCoefficient.**
+Under the weight-three reduction, if \(i\ne0\), the
+highest tuple in weights \((1,1,w)\) for every \(w>3\)
+is \((x^3z^3,x^4z^2,i x^2z^2)\). In particular the
+three degrees in \(z\) are \(3,2,2\).
+
+The weight-three conclusion bounds the degree in \(z\) of
+the first and third entries by three and two, respectively.
+Indeed any term of higher \(z\)-degree already exceeded
+their bounds at weight three or had a coefficient forced
+to zero there. In the second entry the only possible term
+of higher \(z\)-degree is \(\delta z^3\). It ties at \(w=4\).
+
+To exclude this coefficient, hold \(x,z\) at weights one
+and four, and raise the weight of \(y\) to \(5/2\). The
+reference weights are \(15,12,10\). In the first two
+entries, a monomial of ordinary degree at most five has
+weight in \((1,2,3)\) strictly below \(12,10\), respectively.
+In the third entry the bound is strictly below eight
+apart from \(iP^2\). If a lower ordinary monomial
+\(x^r y^s z^l\) with \(s>0\) ties for \(1<w_y\le5/2\),
+its weight at \((1,5/2,4)\) must reach the corresponding
+reference weight. No such monomial does. For example,
+writing \(b=r+2s+3l\), its weight at \((1,5/2,4)\) is
+\(b+s/2+l\). The integer bounds \(b\le11,9,7\) give \(s/2+l\le b/3\) from \(2s+3l\le b\).
+Thus \(b+b/3\) is strictly below \(15,12,10\) for
+\(b\le11,8,7\), respectively. For
+the second entry at \(b=9\), equality requires \(s=0\),
+which accounts only for the already included \(z^3\).
+The ordinary terms completing \(P^3,P^2x^2\) and the
+correction \(iP^2\) tie exactly at \(w_y=5/2\). Thus
+the highest tuple in weights \((2,5,8)\) is
+\((P^3,P^2x^2+\delta z^3,iP^2)\).
+
+Suppose \(\delta\ne0\). Fix generic \(P=S\) and
+\(P^2x^2+\delta z^3=T\). On this level put \(U=Sx\);
+the curve tower is
+\[
+                       U^2=T-\delta z^3,\qquad
+                       y^2=(S^2-Uz)/S .
+\]
+The second component and \(P^3\) are independent.
+Their relative differential on the generic curve is
+a nonzero scalar multiple of \(dz/(xy)\), by the minor in
+\(x,y\) of \(P\) and \(P^2x^2+\delta z^3\).
+The first double cover is the smooth model of
+\(U^2=T-\delta z^3\). The function \(Uz\) has a single pole
+of order five there, so the second cover is branched at
+infinity. Its finite branch points are simple since
+\(S^2\) is a generic value of \(Uz\) on the first curve.
+At these finite branch points \(x\) is nonzero, and the
+ramification cancels the factor \(y\) in the denominator.
+At \(x=0\), the first ramification cancels \(x\), and
+\(y\) is a unit. At infinity on the final curve the pole
+orders of \(z,x,y\) are \(4,6,5\), respectively. Thus the
+form is nonzero and regular on the complete normalization.
+It cannot have a rational primitive, contrary to the
+weighted leading-pair slice. Hence \(\delta=0\), and the
+three complete highest \(z\)-terms follow.
+
+## Relative differentials at the next transverse weight
+
+**Lemma KellerConicQuadraticFibreDifferential.**
+Let \(k\) have characteristic zero, let \(p,q,r\in k[x]\)
+have degrees \(2,\le2,\le3\), respectively, with zero
+polynomials permitted for \(q,r\), and suppose \(p\) is monic.
+Put \(U=y^2+xz\) and \(B=pU^2+qUz+rz^2\).
+If \(q,r\) are not both zero, the relative Jacobian
+differential of \(U,B\) has no rational primitive on at
+least one geometric component of its generic fibre.
+
+Work over the algebraic closure of the function field of
+the generic values \(U=S,B=T\). Write \(D=pS^2-T\).
+Eliminating \(U\) leaves
+\[
+                         rz^2+qSz+D=0,\qquad y^2=S-xz .
+\]
+The relative form, up to sign, is
+\(\omega=dx/(2y(2rz+qS))\). This follows by taking the
+minor in \(y,z\) at fixed \(x\). The expressions below
+are in the function fields of the components and the
+orders refer to their smooth projective models. The
+parameters \(S,T\) are independent, so they avoid all
+fixed critical values of the rational functions used
+in the argument.
+
+### The case \(r=0\)
+
+Here \(q\ne0\). With \(W=qy\) the model is
+\[
+                  W^2=qN/S,\qquad N=S^2(q+xp)-Tx ,
+                  \qquad \omega=dx/(2S W).
+\]
+The cubic \(N\) has simple roots: outside zero they
+come from a generic level of the nonconstant rational
+function \((q+xp)/x\), and at zero any root is simple
+by the coefficient of \(T\). A nonzero root of \(q\)
+is never a root of \(N\). If \(q\) has a double root
+outside zero, or a simple root at zero, then \(qN\)
+has a double root there and \(\omega\) has a simple
+pole of nonzero residue. If \(q\) is squarefree and
+prime to \(N\), the squarefree polynomial \(qN\)
+has degree at least three, and \(dx/W\) is nonzero
+and regular on the complete normalization. The only
+case left is \(q=\alpha x^2\) with \(\alpha\ne0\).
+Then \(N=xN_1\) and \(V=W/x\) satisfies a squarefree
+cubic equation \(V^2=\alpha xN_1/S\). The form
+\(dx/(xV)\) has a double pole at the single point over
+zero and is regular elsewhere. A primitive would
+have just one simple pole, which would give a degree-one
+map of this elliptic curve to the projective line.
+This is impossible.
+
+### Finite points when \(r\ne0\)
+
+Put \(W=2rz+qS\), so
+\[
+             W^2=\Delta=q^2S^2-4rD,\qquad
+             z=(W-qS)/(2r),\qquad \omega=dx/(2yW).
+\]
+Away from the zeros of \(r\), every zero of \(\Delta\)
+is simple because it comes from a generic level of
+\(p-q^2/(4r)\). A constant such function contributes
+no zeros. At a simple zero the ramification cancels
+\(W\) in the relative differential. If \(y^2\) also
+vanishes there, \(x/(2r)\) is a unit and the \(W\)-term
+in \(S-xz\) makes that zero simple on the first cover.
+The second ramification then cancels \(y\). At other
+finite points with \(rW\ne0\) a zero of \(y^2\) is
+simple since it comes from a generic level of
+\(p+q/x+r/x^2\). Indeed the condition \(z=S/x\)
+in the quadratic equation gives precisely that level,
+and the quadratic has nonzero derivative in \(z\)
+there. A constant rational function again gives
+no such zeros.
+
+At a root of \(r\) where \(q\) is nonzero, \(W\) is a
+unit. The two branches of \(z\) are one finite branch
+and one with a pole of order \(\operatorname{ord}r\).
+Outside zero these give a nonzero finite value or a
+pole of \(y^2\), respectively, for generic \(T\).
+At zero the finite branch gives \(y^2=S\) in the
+residue field. On the pole branch a zero of \(y^2\)
+can occur only when \(r\) has order one and
+\(q(0)=-r'(0)\). In that case write the pole branch
+as \(-qS/r-z_{\mathrm{fin}}\). The coefficient of
+\(x\) in \(S+xqS/r+xz_{\mathrm{fin}}\) depends
+nontrivially on \(T\) through
+\(z_{\mathrm{fin}}(0)=(T-p(0)S^2)/(q(0)S)\). The
+zero is simple and the differential is regular.
+
+At a common root \(a\) of \(r,q\), put
+\(d=\operatorname{ord}_a r\) and \(e=\operatorname{ord}_a q\),
+allowing \(e=\infty\). Measure orders relative to \(x-a\),
+so that fractional orders are allowed. The order of
+\(W\) is \(\min(d,2e)/2\), as \(D(a)\ne0\) generically.
+If \(d\le2e\), both roots \(z\) have order \(-d/2\).
+For \(d=2e\), the same holds since \(D(a)\ne0\)
+precludes cancellation in either leading root.
+If \(d>2e\), necessarily \(d=3,e=1\) and the two
+orders of \(z\) are \(-1,-2\), by balancing the linear
+and constant terms and then the quadratic and linear
+terms. For \(a\ne0\), \(y\) has half the order of \(z\).
+In every one of these cases the sum of the orders of
+\(y,W\) is strictly below one. If the ramification
+index of \(x-a\) is \(E\), the order of \(\omega\) is
+\(E(1-\operatorname{ord}_{x-a}(yW))-1\), hence is
+nonnegative.
+
+For \(a=0\) and \(d=1\), \(y\) is a unit and the
+differential is regular. For \(d=2\), \(xz\) is finite
+and its value cannot be \(S\) for generic \(T\), as
+the leading equation at \(z=S/x\) contains \(T\) with
+nonzero coefficient. Thus \(y\) is a unit, \(W\) has
+order one and there is a simple pole. For \(d=3,e=1\)
+the same reasoning gives a simple pole on the branch
+of order \(-1\) for \(z\) and regularity on the other
+branch. It remains to treat \(d=3,e\ge2\) at zero.
+Then \(r=\rho x^3\) and \(q=\gamma x^2\) with
+\(\rho\ne0\). The curve of \(W/x\) satisfies
+\[
+                   (W/x)^2=x\bigl(\gamma^2S^2x
+                                    -4\rho p S^2+4\rho T\bigr).
+\]
+This is a squarefree cubic, and \(x=0\) is a branch
+point. On that elliptic curve \(y^2=S-xz\) has a pole
+of order one there, so there is a single point over
+zero on the final curve, with ramification index four
+over \(x\). The orders of \(x,W,y\) at this point are
+\(4,6,-1\), respectively. Thus \(\omega\) has a
+double pole there. This final curve has positive genus
+because it covers the elliptic curve.
+
+### Infinity when \(r\ne0\)
+
+Write \(d=\deg r\), \(e=\deg q\), taking \(e=-\infty\)
+if \(q=0\), and \(D_\infty=\deg\Delta\).
+Let \(v\) be the growth exponent of a root \(z\)
+relative to \(x\) at infinity. If \(2e<d+2\), the
+quadratic and constant terms give \(v=(2-d)/2\) and
+\(D_\infty=d+2\). If \(2e>d+2\), the two possible
+values are \(2-e,e-d\) and \(D_\infty=2e\).
+If \(2e=d+2\), both roots have growth \((2-d)/2\)
+and \(D_\infty\ge d\) by the independent coefficient
+\(T\) of \(r\). These balances also follow directly
+from the product of the roots and the expression
+for \(W\). All values of \(v\) are strictly greater
+than \(-1\) since \(d\le3,e\le2\). Hence \(y\) grows
+as \(x^{(1+v)/2}\). The denominator \(yW\) grows
+as \(x^{(1+v+D_\infty)/2}\), and the displayed bounds
+give \(v+D_\infty\ge1\). Thus at infinity the form has
+at most simple poles, which are themselves obstructions
+if present. In the case \(d=3,e\ge2\) of the preceding
+paragraph with a double pole at zero, \(D_\infty=5\)
+and \(v=-1/2\), so there are no poles at infinity.
+
+These calculations leave either a simple pole of nonzero
+residue, a nonzero regular differential on a complete
+curve, or just one double pole on a positive-genus
+component. Each possibility rules out a rational
+primitive. This proves the lemma.
+
+## The highest tuple at transverse weights \((0,1,2)\)
+
+**Theorem SexticKellerTangentConicSmoothSquareMemberTransverseReduction.**
+Under the smooth-common-factor weight-three reduction with
+\(i\ne0\), divide the third output by \(i\). After a
+translation of \(x\), the highest tuple at weights
+\((0,1,2)\) is one of
+\[
+       \bigl(U^3,(x^2+c)U^2,U^2\bigr),
+       \qquad
+       \bigl(U^3,m y z^2,U^2\bigr)
+       \quad(m\ne0),\qquad U=y^2+xz.
+\]
+The second case requires a nonzero \(y\)-coefficient
+in the coefficient of \(z^2\) of the second output.
+
+We use the leading-pair slice also at nonnegative
+weights. Its formal proof applies unchanged: the
+rescaling by powers of the formal parameter is defined
+for weight zero and each rescaled output still has
+nonnegative parameter exponents. The same recursive
+rectification and determinant identity therefore
+produce the slice and its divisorial regularity.
+
+### The coefficient of highest \(z\)-degree
+
+By the complete axial degrees and the weight-\((1,2,3)\)
+tuple, the highest outputs in weights \((0,0,1)\) are
+\[
+               (a z^3,b z^2,c z^2),\qquad
+      a=a_0(x)+\alpha y,\quad b=b_0(x)+L(x)y,\quad c=c(x),
+\]
+where \(a_0,b_0,c\) are monic of degrees \(3,4,2\),
+respectively, and \(\deg L\le1\). The leading determinant
+vanishes, so \(a^2/c^3\) and \(b/c\) are algebraically
+dependent. Indeed the two ratios are independent of
+\(z\), and \(c z^2\) is transcendental over \(k(x,y)\).
+
+If \(\alpha\ne0\), use \(x,a\) as plane coordinates
+and write \(b=\lambda(x)a+D(x)\) with \(\lambda=L/\alpha\).
+The vanishing bracket of the two ratios forces
+\((D/c)'=0\) and \(2\lambda'c+\lambda c'=0\), by
+the two coefficients in \(a\). The latter forces
+\(\lambda=0\), since \(\lambda^2c\) is a polynomial
+and \(c\) is quadratic. Then \(D=b_0\) has degree
+four and \(D/c\) cannot be constant. Thus \(\alpha=0\).
+
+If \(L\ne0\), the ratio \(b/c\) depends on \(y\), so
+\(a_0^2/c^3\) must be constant. Monicity gives
+\(a_0^2=c^3\), whence \(a_0=\tau^3,c=\tau^2\) for a
+monic affine \(\tau\). Translate \(x\) so that \(\tau=x\).
+On the generic level of \(xz\) and \(b z^2\) one solves
+for \(z\) and then \(y\), and the relative form is
+proportional to \(x\,dx/L(x)\). This uses the minor
+of the two level equations in \(y,z\), which is
+\(-x L(x)z^2\). The same form, up to a nonzero scalar,
+comes from the leading pair \(((xz)^3,b z^2)\).
+If \(L\) has a nonzero root, this differential has a
+nonzero residue there. The leading slice excludes
+that possibility. Therefore \(L=m\ne0\) or
+\(L=\ell x\) with \(\ell\ne0\).
+
+### Raising the weight of \(y\) when \(L=0\)
+
+Give \(z\) weight two and increase the weight of \(y\)
+from zero to one, keeping \(x\) of weight zero.
+For \(L=0\), the only possible intermediate tie is
+\(\delta y^3z\) in the second entry at \(2/3\).
+This follows by testing \(ws+2l=6,4,4\) for the
+three entries, using their strict lower-term
+bounds in \((1,2,3)\). If \(a_0,c\) are independent
+in the sense \(a_0^2/c^3\) is nonconstant, the
+unchanged entries \(a_0 z^3,c z^2\) are independent
+in \(x,z\); hence \(\delta=0\). Otherwise translate
+\(x\) so that \(a_0=x^3,c=x^2\). On the generic level
+\(xz=S,\ b_0(x)z^2+\delta y^3z=T\), if \(\delta\ne0\)
+one obtains
+\[
+                    y^3=\frac{Tx^2-S^2b_0(x)}{\delta Sx}.
+\]
+The relative form is a nonzero scalar multiple of
+\(dx/y^2\), from the minor in \(y,z\). The rational
+function on the right has only simple finite zeros,
+since away \(x=0\) they are a generic level of
+\(b_0/x^2\). At zero it has a simple pole, is a unit,
+or has a simple zero, according to the order of
+\(b_0\). At infinity it has a pole of order three.
+Consequently the form is regular at the finite
+ramification points and at infinity, and is nonzero.
+This excludes \(\delta\ne0\).
+
+At weight one put \(t=y^2/z\). The three highest
+outputs are \(z^3 A(x,t),z^2 B(x,t),z^2 C(x,t)\),
+where \(A\) is monic cubic in \(t\), \(C\) is monic
+quadratic in \(t\), and \(B\) is quadratic in \(t\)
+with monic quadratic coefficient in \(x\) at \(t^2\).
+The respective highest ordinary forms of these
+polynomials in \(x,t\) are
+\((x+t)^3,\ x^2(x+t)^2,\ (x+t)^2\). These bounds again
+follow from the support at \((1,2,3)\).
+The two ratios \(A^2/C^3,\ B/C\) are dependent.
+At \(t=\infty\), the first tends to one and the second
+has nonconstant residue, the coefficient of \(t^2\)
+in \(B\). If \(A^2/C^3-1\) were nonzero, it would have
+positive valuation. A valuation on a function field
+of transcendence degree one that is nontrivial on a
+nonconstant function has residue field algebraic over
+the base field. Here this follows by restricting
+first to the rational function field of that function
+and using finiteness of the resulting extension.
+The nonconstant residue of \(B/C\) contradicts it.
+Thus \(A^2=C^3\). Monicity in \(t\) gives
+\(A=(t+\tau)^3,C=(t+\tau)^2\) with \(\tau=x+\text{constant}\).
+Translate \(x\) to absorb the constant.
+
+The resulting highest tuple is \((U^3,B_*,U^2)\) with
+\[
+                       B_*=p(x)U^2+q(x)Uz+r(x)z^2,
+\]
+where \(p\) is monic quadratic, \(\deg q\le2\) and
+\(\deg r\le3\). The two latter bounds follow by
+cancellation of the degree-four leading polynomial
+\(x^2(x+t)^2\). If \(q,r\) are not both zero, the
+preceding relative differential lemma contradicts
+the slice for \(U^3,B_*\).
+With \(q=r=0\), if \(p'(0)\ne0\), the latter leading
+pair has independent differentials at the generic point
+of \(x=0\), so has a regular slice there. In
+\(k(x,U)(y)\) its Jacobian derivation takes \(y\)
+to \(3U^4p'(x)x\). A primitive for any nonzero scalar
+therefore has the form of a nonzero scalar times
+\(y/(3U^4p'(x)x)\) plus a function of \(x,U\).
+Its simple pole at \(x=0\) cannot be cancelled by
+that function, since its coefficient contains \(y\)
+over the residue field \(k(U)=k(y^2)\).
+Thus \(p'(0)=0\), giving the first tuple in the theorem.
+
+### Raising the weight of \(y\) when \(L\ne0\)
+
+Here the second highest weight as \(y\) increases
+is \(4+w\), from \(L y z^2\). The same support test
+shows there are no ties for \(0<w<1\). At weight one,
+after the translation already made, put \(t=y^2/z\)
+and write the highest outputs as
+\[
+             z^3 A,\qquad y z^2(\ell x+m+n t),
+                        \qquad z^2 C,
+\]
+where
+\[
+ \begin{aligned}
+ A&=(x+t)^3+a t^2+bxt+ct,\\
+ C&=(x+t)^2+d t .
+ \end{aligned}
+\]
+Exactly one of \(\ell,m\) is nonzero.
+Put \(L_1=\ell x+m+n t\). The fractions
+\(A^2/C^3\) and \(t^2 L_1^4/C^5\) are dependent by
+the rank bound. After cancelling the common factors
+in their bracket, it is equivalent to the equation
+\[
+\begin{split}
+0={}&(2C A_x-3A C_x)
+          \bigl(2L_1C+t(4C(L_1)_t-5 L_1 C_t)\bigr)\\
+ &-(2C A_t-3A C_t)\,t(4C(L_1)_x-5 L_1 C_x).
+\end{split}
+\]
+The six coefficients needed below are
+\[
+\begin{array}{c|l}
+ x^5t &2\ell(2b-3d)\\
+ x^4t &6m(2b-3d)\\
+ x^4t^2 &2(6a\ell+6b\ell-2bn-18d\ell+3dn)\\
+ x^3t &8cm\\
+ x^3t^2 &2(14am+bd\ell+10bm+8c\ell-8cn-3d^2\ell-36dm)\\
+ x^2t^2 &2(3bdm+2cd\ell+12cm-9d^2m).
+\end{array}
+\]
+If \(m\ne0\), these give \(2b=3d,c=0,a=b,d=0\),
+hence \(a=b=c=d=0\). If \(\ell\ne0\), they give
+\(2b=3d,a=b,cd=0\).
+When \(c=0\) the coefficient of \(x^3t^2\) then gives
+\(d=0\). When \(c\ne0\), \(d=0\) and the same
+coefficient gives \(n=\ell\). This last tuple
+has the form \((U^3+cV^2,\ell UV,U^2)\) with \(V=yz\).
+The pair \(U^2,\ell UV\) has independent differentials
+at the generic point of \(z=0\). The source field is
+\(k(U,V)(y)\), since \(z=V/y\), \(x=(U-y^2)/z\).
+Its relative slice is a nonzero scalar times
+\(y/(U^2 V)\) plus a rational function of \(U,V\),
+since \(J(U,V,y)=-V\).
+At \(z=0\) the residue of that function after multiplication
+by \(V\) lies in \(k(U)\) whenever it has at most a simple
+pole. The coefficient from the first term contains \(y\)
+with \(y^2=U\), so this pole cannot be cancelled. The
+regular slice excludes \(c\ne0\).
+
+The remaining polynomials are \(A=U^3,C=U^2\) in source
+coordinates, with second entry \(B=y z(L z+n y^2)\).
+For \(L=\ell x\), on \(U=S\) this entry equals
+\[
+                         y(S-y^2)(\ell(S-y^2)+ny^2)/x.
+\]
+The source field is \(k(U,B)(y)\), and
+\(J(U^3,B,y)=-3U^2B\). The primitive proportional to
+\(y/(U^2B)\) has a simple pole at \(z=0\) if \(n\ne0\),
+or at \(x=0\) if \(n=0\), on which \(B\) has order
+one. In either case \(U^3,B\) have independent
+differentials there, and \(U=y^2\) in the residue field.
+The pole cannot be cancelled by an invariant, again
+contradicting regularity.
+
+Finally let \(L=m\ne0\). The generic curve on \(U=S,B=T\)
+is \(y z(mz+n y^2)=T\), with \(x=(S-y^2)/z\).
+If \(n\ne0\), put \(W=2mz+n y^2\) and \(V=yW\).
+Apart from a nonzero scalar, the relative form is
+\[
+ \frac{dy}{y z W}
+       =\frac{1}{2T}\left(dy+n\,\frac{y^3\,dy}{V}\right),
+                    \qquad V^2=n^2 y^6+4mTy .
+\]
+The polynomial defining the double cover is squarefree.
+The odd differential \(y^3\,dy/V\) is regular on the
+affine curve. Any rational primitive is regular there,
+and its odd part is \(Vh(y)\) with polynomial \(h\).
+Its differential has numerator
+\(f h'+f'h/2\) over \(V\), with \(f=n^2 y^6+4mTy\).
+For \(h\ne0\) the numerator has degree at least five,
+so it cannot equal \(y^3\). This excludes \(n\ne0\),
+leaving \(B=m y z^2\), as asserted.
+
+## Exclusion of the transverse cusp with a linear coefficient in \(y\)
+
+**Corollary SexticKellerTangentConicSmoothSquareMemberTransverseCuspExclusion.**
+A characteristic-zero Keller map has no highest tuple
+\((U^3,m y z^2,U^2)\) of weights \((0,1,2)\) with
+\(U=y^2+xz\) and \(m\ne0\). Thus only the first tuple
+of the transverse reduction survives.
+
+Apply the positive-weight correction part of the
+[squarefree cusp argument](SEXTIC_KELLER_ALIGNED_CUSP_EXCLUSION.md#divisibility-of-each-square-correction)
+with \(W=U\), \(H=m y z^2\), cusp outputs denoted
+\(P,Q\) of weights four and six, and third output
+denoted \(T\) of weight five. Here \(W\) is prime
+and coprime to \(H\), the pair \((W,H)\) is onto
+by taking \(z=1\), and \(k(W,H)\) is relatively
+closed because \(k(x,y,z)=k(W,H)(z)\).
+The rescaled determinant has order
+\(4+6+5-(0+1+2)=12>9\).
+
+For clarity, that part of the cusp argument only
+uses the weight bounds through loss \(r\le3\) and
+regularity of the chart along the generic point
+of \(W=0\) at fixed \(H\). They hold at these
+nonnegative weights. The formal rescalings still have
+nonnegative exponents. The divisor \(W=0\) is reduced
+and the restriction of \(H\) to it is onto by \(z=1\).
+In particular the regular fixed-level chart exists
+at its generic point. The rational and polynomial
+kernels are \(k(W,H)\) and \(k[W,H]\), respectively,
+by the field and surjectivity conditions. Although
+the weight-zero source ring is \(k[x]\), the weight-zero
+part of this polynomial kernel is \(k\). At any
+loss \(r\le3\) the kernel comparison gives the same
+leading tangent error as in that argument, and the
+square and cube pole comparisons are at orders \(2r\)
+and \(3r\), both strictly below twelve. Their scalar
+conclusion on \(W=0\) makes the square correction
+divisible by \(W\) because its weight is positive
+and less than five. Thus the correction of the root
+is polynomial, and iteration removes all
+positive-weight square errors.
+
+Consequently there is a polynomial \(V\) of weight
+two with highest form \(U\) such that \(P=V^2+A(x)\).
+The reference for \(Q\) at this point is a polynomial
+in \(V\) of degree three plus a scalar multiple of
+\(T\), with remaining weighted degree at most two.
+At loss four the linear contraction of the
+determinant gives
+\[
+                  2 E_{Q,2} - 3U A(x)\in k[U,H].
+\]
+Its weight is two, so it is a scalar multiple of \(U\).
+Subtract a scalar multiple of \(P\) and of \(T\) from
+\(Q\) to remove the quadratic reference term and
+the reference term in \(T\). The subtraction of
+the \(A(x)\) part of \(P\) is absorbed below weight
+two. We therefore have
+\[
+                 Q=V^3+\tfrac32 V A(x)+cV+E,
+                            \qquad \deg_{(0,1,2)} E\le1 .
+\]
+The exact differential wedge is
+\[
+ dP\wedge dQ=
+    A'(x)\bigl(\tfrac32 A(x)+c\bigr)\,dx\wedge dV
+      +2V\,dV\wedge dE+A'(x)\,dx\wedge dE .
+\]
+If the leading part of \(E\) has weight \(j\in\{0,1\}\),
+the only contribution at weight \(4+j+5\) of the
+three-form obtained by wedging with \(dT\) is
+\(2U\,dU\wedge dE_j\wedge dH\). The volume form has
+weight three, so this contribution is zero. Hence
+\(E_j\in k[U,H]\). For weight one this forces zero,
+and for weight zero it forces a constant. Removing
+that constant makes \(E=0\).
+
+The Keller determinant is now, up to sign,
+\[
+                 A'(x)\bigl(\tfrac32 A(x)+c\bigr)\,J(x,V,T).
+\]
+It is zero if \(A\) is constant. Otherwise the middle
+factor is nonconstant, so the product cannot be a
+nonzero scalar. Both cases are impossible.
+
+## Exclusion of the nonzero weight-three coefficient
+
+**Theorem SexticKellerTangentConicSmoothSquareMemberNonzeroCoefficientExclusion.**
+In the binary case of the smooth-common-factor weight-two
+theorem, the coefficient \(i\) in the weight-three reduction
+is zero.
+
+Suppose \(i\ne0\). Use the transverse reduction and its
+cusp exclusion, divide the third output by \(i\), and
+subtract the scalar multiple of the third output from
+the second that removes \(c\) in the transverse tuple.
+Denote the outputs in the order third, second, first by
+\(P,B,Q\). With \(U=y^2+xz\), the highest tuples in the
+two weight systems are then
+\[
+\begin{array}{c|ccc}
+ &P&B&Q\\ \hline
+ (0,1,2)&U^2&x^2U^2&U^3\\
+ (1,2,3)&U^2+x^4U/i&x^2U^2&U^3 .
+\end{array}
+\]
+The translation of \(x\) in the transverse reduction
+preserves the second row. The subtraction from \(B\)
+also preserves it, since the weight of \(P\) is lower
+than that of \(B\) in that row.
+
+### Completing the square in \(U\)
+
+Over \(k(x)\), replace \(z\) by \((U-y^2)/x\) and
+complete the square in \(U\). Put \(V=U+l(x)y+m(x)\)
+so that
+\[
+   P=V^2+A,\qquad B=x^2P+bV+c,\qquad
+   Q=V^3+dV^2+eV+f .
+\]
+Here all coefficients belong to \(k(x)[y]\). The
+bounds in \((0,1,2)\) give
+\(\deg_y A,\deg_y c\le3\), \(\deg_y b,\deg_y d\le1\).
+In the variables \(x,y,V\), the determinant is
+\(\kappa/x\) for a nonzero scalar \(\kappa\).
+
+The weights of \(x,y,U\) induced by the second row
+are \(1,2,4\) in the Laurent polynomial ring allowing
+\(x^{-1}\). Put \(M=x^4/(2i)\). The highest part of
+\(l y+m\) in these weights is \(M\) and that of \(A\)
+is \(-M^2\). The second row also gives highest
+coefficient \(-2x^2M\) for \(b\), by forming
+\(B-x^2P\), and highest coefficient \(-3M\) for \(d\)
+by expanding \((V-M)^3\). In particular at \(y=0\)
+the asymptotic highest powers of \(A,b,d\) in \(x\)
+are \(-M^2,-2x^2M,-3M\), respectively.
+
+Compare the coefficients of \(V^5\) and \(V^4\) in
+\(J_{x,y,V}(P,B,Q)\). The first is \(4x d_y\).
+With \(d_y=0\), the second is
+\(-2(3x A_y-2x e_y+b_y d')\), where a prime denotes
+\(d/dx\) for coefficients in \(k(x)\).
+It follows that \(d\in k(x)\) and
+\(e=3A/2+h b+E\) with \(h=d'/(2x)\) and
+\(E\in k(x)\). Thus
+\[
+         Q=dP+h(B-x^2P)+V(P+A/2+E)+G
+\]
+for some \(G\in k(x)[y]\). The highest power of \(h\)
+at \(x=\infty\) is \(-6M/x^2\). In particular \(h'\ne0\).
+
+In this form the coefficients of \(V^3,V^2\) in
+the determinant give
+\[
+\begin{split}
+  2xG_y&=(h'b+E')b_y,\\
+  0&=-x(3A+2E)A_y-2\partial_y((h'b+E')c)
+                            +2(b_xG_y-b_yG_x).
+\end{split}
+\tag{*}
+\]
+Both identities follow by differentiating the displayed
+expressions in \(x,y,V\), with \(V\) held fixed in the
+first two partial derivatives. In particular
+\(G=(h'b^2+2E'b)/(4x)+g_0(x)\). In the second
+identity, the terms other than \(-x(3A+2E)A_y\) have
+degree at most three in \(y\). Hence \(\deg_y A\le2\).
+
+### Excluding quadratic \(A\)
+
+If \(\deg_y A=2\), its leading coefficient \(A_2\)
+is nonzero. The second identity in \((*)\), at \(y^3\),
+forces both \(b_y\ne0\) and a nonzero cubic coefficient
+\(c_3\) of \(c\). Fix \(P=S\) at a generic scalar. On
+\(V^2=S-A\) there are two expansions at \(y=\infty\)
+with \(V\sim\pm\eta y\), where \(\eta^2=-A_2\).
+Expand over \(k(x,S,\eta)\), and differentiate in \(x,y\)
+at fixed \(S\), extending the derivations to \(V\).
+The relative bracket of \(B,Q\) is, up to sign,
+\(\kappa/(2xV)\), by the change from \(V\) to \(P\).
+Its coefficient at \(y^5\) is zero on each branch.
+The leading \(y^3\) coefficients of \(B,Q\) on the
+two branches are \(c_3,hc_3\pm A_2\eta/2\).
+The vanishing of the bracket coefficient says that
+both ratios \(h\pm A_2\eta/(2c_3)\) have zero
+\(x\)-derivative. Their sum contradicts \(h'\ne0\).
+
+### Excluding affine nonconstant \(A\)
+
+Assume \(A\) has degree one in \(y\). On the level
+\(P=S\), set \(u=A=S-V^2\). The change first from
+\(y\) to \(u\) and then from \(u\) to \(S\) gives a
+relative bracket in \(x,V\) equal up to sign to
+\(\kappa/(x A_y)\), independent of \(V,S\).
+
+If \(b_y=0\), then \(G_y=0\). The second identity
+in \((*)\) forces \(h'b+E'\ne0\) and makes \(c\)
+quadratic in \(u\) with nonzero quadratic coefficient
+\(-3x/(4(h'b+E'))\). On the level \(P=S\), \(B\)
+has degree four in \(V\) and \(Q-hB\) has degree
+three. In the relative bracket the term
+\(-h' B B_V\) has degree seven, while the bracket of
+\(B,Q-hB\) has degree at most six. This is impossible.
+
+Thus write \(b=\beta(x)u+\gamma(x)\) with \(\beta\ne0\).
+By integrating the second identity in \((*)\) in
+\(y\), its terms other than \(\partial_y((h'b+E')c)\)
+give a polynomial of degree at most three. Since
+\(h'b+E'\) is affine and nonconstant in \(y\), \(c\)
+has degree at most two. Use
+\(c=c_2 u^2+c_1 u+c_0\) and \(G=g_2u^2+g_1u+g_0\)
+with coefficients in \(k(x)\). The first identity
+in \((*)\) gives \(g_2=h'\beta^2/(4x)\ne0\).
+On \(P=S\) the two outputs are
+\[
+\begin{aligned}
+ B&=x^2S+(\beta u+\gamma)V+c,\\
+ Q&=dS+h(B-x^2S)+(S+u/2+E)V+G .
+\end{aligned}
+\]
+For their bracket assign weights two and one to
+\(S,V\), so \(u=S-V^2\) has weight two. The
+\(V\)-derivatives here are at fixed \(S\).
+
+If \(c_2\ne0\), the leading bracket of the weight-four
+parts \(c_2u^2,(h c_2+g_2)u^2\) forces the ratio of
+their coefficients to be constant, say \(\lambda\in k\).
+Subtract \(\lambda B\) from \(Q\) and put \(H=h-\lambda\).
+Then \(g_2=-H c_2\) and the weight-three part of the
+sheared \(Q\) is \((S+K u)V\), where \(K=1/2+H\beta\).
+The highest bracket with \(c_2u^2\), after dividing
+by \(u^2\), is
+\[
+                  c_2'(1+K)S+(4c_2K'-3c_2'K)V^2.
+\]
+If \(c_2'\ne0\) the first coefficient gives \(K=-1\),
+making the second nonzero. Thus \(c_2'=K'=0\).
+As \(H\beta\) is a nonzero scalar and \(g_2=H'\beta^2/(4x)\),
+the relation \(g_2=-H c_2\) gives \(H'/(xH^3)\)
+a nonzero constant value. This is impossible at
+infinity because \(H\) has growth \(x^2\).
+
+If \(c_2=0\), the highest bracket is between
+\(\beta uV\) and \(g_2u^2\). Dividing it by \(u^2\)
+gives \(-4\beta' g_2 V^2-\beta g_2'(S-3V^2)\).
+Thus \(\beta\) and \(g_2\) are nonzero constants and
+\(h'=4xg_2/\beta^2\). Set \(K=1/2+h\beta\).
+The next bracket, in weight five, between the parts
+of weights \((3,3)\) and \((2,4)\), after division by
+\(uV\), is
+\[
+                (2\beta K'-8xg_2)S
+                          +(-3\beta K'-4g_2c_1')u .
+\]
+It gives \(c_1'=-3x\). For weight four, write
+\(F=h c_1+g_1\). The relevant parts are
+\[
+\begin{array}{c|cc}
+ \text{weight}& B&Q\\ \hline
+ 4&0&g_2u^2\\
+ 3&\beta uV&(S+Ku)V\\
+ 2&x^2S+c_1u&dS+F u\\
+ 1&\gamma V&(h\gamma+E)V.
+\end{array}
+\]
+After taking the bracket and substituting \(S=u+V^2\),
+the coefficient of \(u^2\) in weight four is
+\(-3\beta xh-\beta F'-3x/2\).
+The coefficient of \(uV^2\), using the preceding
+one, is \(2c_1 K'-4g_2\gamma'\).
+Thus \(\gamma'=2xc_1/\beta\); since \(c_1'=-3x\),
+\(\gamma\in k[x]\) has degree at most four.
+But at \(y=0\), \(\gamma=b-\beta A\) has highest
+power \(\beta M^2\) in \(x\), of degree eight.
+This contradiction finishes the affine case.
+
+### Excluding \(A\) independent of \(y\)
+
+It remains to consider \(A\in k(x)\). On the generic
+level \(P=S\), one has \(V^2=S-A(x)\), with \(V\)
+constant for the \(y\)-derivative. If \(b_y=0\),
+then \(Q=hB+L\) with \(L\) independent of \(y\).
+The relative bracket in \(x,y\) is
+\(-B_y(h'B+L_x)\). If \(B_y=0\) this vanishes;
+otherwise it has positive \(y\)-degree since \(h'\ne0\).
+Both contradict the bracket \(\pm\kappa/(2xV)\).
+
+If \(b_y\ne0\), use \(b\) itself as the affine coordinate
+in place of \(y\) at fixed \(x\). The relative bracket
+is then \(\pm\kappa/(2xV b_y)\), independent of \(b\).
+As in the affine case, \((*)\) gives \(\deg_b c\le2\).
+Writing \(c=c_2 b^2+c_1 b+c_0\), the quadratic
+coefficient of \(G\) in \(b\) is \(g_2=h'/(4x)\ne0\).
+If \(c_2\ne0\), the leading bracket gives
+\((h c_2+g_2)/c_2=\lambda\in k\).
+After subtracting \(\lambda B\), the linear coefficient
+in \(b\) of \(Q\) is \(W=(h-\lambda)(V+c_1)+E'/(2x)\).
+Since \(h-\lambda\ne0\), this is nonzero as a function
+of the generic \(S\). Leading coefficients in the
+bracket now give \(2c_2 W_x-c_2'W=0\).
+Using \(V_x=-A'/(2V)\), comparison of \(V^{-1}\)
+forces \(A'=0\). If \(c_2=0\), the leading
+coefficients of the linear \(B\) and quadratic \(Q\)
+are \(V+c_1,g_2\), and their relation
+\(2g_2(V+c_1)_x-g_2'(V+c_1)=0\) gives the same
+conclusion. These comparisons are valid since \(V\)
+is transcendental over \(k(x)\) before specializing
+\(S\). Finally, \(A'=0\) makes \(P=V^2+A\) critical
+at \(V=0\) on the open set where the \(x\)-denominators
+are invertible. Such points exist since the coefficient
+of \(z\) in \(V\) is \(x\). This contradicts the
+Keller condition and proves \(i=0\).
+
+## The affine output in the binary smooth-common-factor frame
+
+**Theorem SexticKellerTangentConicSmoothSquareMemberAffineOutput.**
+In the binary case of the smooth-common-factor weight-two
+theorem, the highest tuple in \((1,1,w)\) is
+\((x^3z^3,x^4z^2,x^5z)\) for all \(w>3\).
+The three \(z\)-degrees are \((3,2,1)\), and the third
+output is
+\[
+                         S=v(x)z+q(x)y^2+u(x)y+w(x),
+\]
+where \(q,v\) are monic of degrees four and five.
+
+By the nonzero-coefficient exclusion, the highest tuple
+in \((1,2,3)\) is \((U^3,x^2U^2,x^4U)\), with
+\(U=y^2+xz\). For increasing axial weight the monomial
+test used above gives exactly the possible corrections
+\[
+              (0,\delta z^3,(a x+b y)z^2)
+\]
+at \(w=4\). The first two highest outputs are independent
+in \(x,z\), as is seen from the nonconstant ratio
+cancelling their \(x\)-powers in the parameters \(x,z/x^4\).
+Their leading determinant with the third entry forces
+\(b=0\).
+
+Hold \(x,z\) at weights one and four and raise the weight
+of \(y\) to \(5/2\). Testing \(r+ws+4l=15,12,9\) for
+\(s>0\) with the strict lower-term bounds of \((1,2,3)\)
+gives no earlier tie. At \(5/2\), the ordinary terms
+complete \(U^3,x^2U^2,x^4U\), and the only new \(y\)-term
+is \(j y^2z\) in the third output.
+In the variables \(x,U,z\) the tuple is
+\[
+         (U^3,\ x^2U^2+\delta z^3,\
+                         x^4 U+jUz+(a-j)xz^2).
+\]
+Its leading determinant is zero. After dividing the
+determinant in \(x,U,z\) by \(-3U^2\), the coefficient
+polynomial is
+\[
+              2j xU^3+4(a-j)x^2 U^2 z
+                   -12\delta x^3 U z^2-3\delta(a-j)z^4.
+\]
+Hence \(j=a=\delta=0\). This excludes the axial tie at
+four, and the ordinary tuple persists in \((2,5,8)\).
+
+Above four the only possible axial tie is \(c z^2\) in
+the third output at weight five. Hold \(x,z\) at weights
+one and five and raise the weight of \(y\) to three.
+The same test, now with \((2,5,8)\) and the bounds
+\(18,14,10\), gives no intermediate tie. At three the
+general tuple is
+\[
+ \begin{aligned}
+ A&=U^3+a y z^3,\\
+ B&=x^2U^2+b y^3z+d x y z^2,\\
+ C&=x^4U+c z^2+e x y^3+f x^2 y z.
+ \end{aligned}
+\]
+Its determinant is zero. The coefficients at
+\(x^8z^5,\ x^7y^2z^4,\ x^6y^4z^3,\ x^5y^6z^2,\
+x^4y^8z,\ x^3y^{10}\), up to nonzero rational factors,
+are the linear expressions
+\[
+ \begin{gathered}
+ a-2d+f,\quad 4a+6b-2d-3e-2f,\quad
+ 11a+14b-18d-12e+2f,\\
+ 3a+3b-11d-9e+4f,\quad
+ 6b+8d+12e-7f,\quad 4b+3e-2f.
+ \end{gathered}
+\]
+Their vanishing gives \(a=e=0,\ b=d=f/2\).
+Now the coefficients at \(x^5 y z^5\) and \(x^3z^6\)
+are \(-6(4c+2d^2)\) and \(6cd\), respectively.
+Thus \(c=d=0\), ruling out the last axial tie and
+recovering the ordinary tuple in weights \((1,3,5)\).
+
+The complete axial degrees and the bounds in
+\((1,3,5)\) give the highest tuple in \((0,0,1)\) as
+\[
+                    (a(x)z^3,\ b(x,y)z^2,\ c(x,y)z),
+\]
+where \(a,b_0,c_0\) are monic of degrees \(3,4,5\),
+and \(b=b_0(x)+\beta y,\ c=c_0(x)+L(x)y\) with
+\(\deg L\le1\). The two ratios \(a/c^3,b/c^2\) are
+algebraically dependent. If \(L\ne0\), the first
+has order three at \(y=\infty\). If \(\beta\ne0\),
+the second has order one, and the quotient of
+the first by the cube of the second has residue
+\(aL^3/\beta^3\). If \(\beta=0\), the second has
+order two, and the quotient of the square of the
+first by the cube of the second has residue
+\(a^2/b_0^3\). These are nonconstant in \(x\), which
+is impossible for a nontrivial valuation of a field
+of transcendence degree one over \(k\). Thus \(L=0\).
+Now \(a/c_0^3\) is a nonconstant function of \(x\),
+so dependence of the ratios forces \(\beta=0\).
+
+The third output is consequently \(v(x)z+q(x)y^2+
+\alpha y^3+u(x)y+w(x)\), by the weight-\((1,3,5)\)
+bounds. Keep \(x,z\) of weights zero and two and
+increase the \(y\)-weight from zero to one. The
+only possible tie before one is \(\alpha y^3\) in
+the third output at \(2/3\). The first two highest
+outputs \(a(x)z^3,b_0(x)z^2\) are independent since
+\(a^2/b_0^3\) is nonconstant. Hence \(\alpha=0\).
+The ordinary highest tuple gives the asserted degrees
+and monicity of \(q,v\).
+
+### The two highest quadratic parameters
+
+**Theorem SexticKellerTangentConicSmoothSquareMemberQuadraticParameters.**
+In the affine-output setting, \(q\mid v\).
+Write \(v=qT\) with \(T\) monic affine and put
+\(U_T=y^2+Tz\). In weights \((0,1,2)\) the
+highest tuple is of the form
+\[
+       (U_T U_D^2,\ p(x)U_T U_D,\ q(x)U_T),
+                      \qquad U_D=y^2+Dz ,
+\]
+where \(p\) is monic quadratic and \(D\) is monic
+affine. If \(D\ne T\), then \(q=p^2\).
+The map is invertible if \(\gcd(v,u)=1\). Any
+noninvertible completion in this branch requires
+a common root of \(v,u,q\), all vanishing to order
+at least two there, with \(w'\ne0\) at the root.
+
+By the preceding weight bounds, the highest outputs
+\(A,B,C\) in \((0,1,2)\) are homogeneous polynomials
+in \(Y=y^2,z\) over \(k[x]\) of degrees three, two,
+and one, respectively. At \(z=0\) they are
+\(Y^3,p(x)Y^2,q(x)Y\), with \(p\) monic quadratic by
+the ordinary highest tuple. Also \(C=qY+vz\).
+The highest determinant vanishes. On the symbolic
+level \(C=s\), use \(H=Y/s\) and \(z=s(1-qH)/v\);
+the polynomials \(A/s^3,B/s^2\) then have degrees at
+most three and two in \(H\), over \(k(x)\).
+Their image over \(k(s)\) has dimension at most one.
+
+If both polynomials are independent of \(H\), evaluate
+them at \(H=1/q\). This gives \(A=(Y+(v/q)z)^3\)
+and \(B=p(Y+(v/q)z)^2\). Polynomiality of the
+coefficient of \(z^3\) in \(A\) gives \(q\mid v\),
+and this is the case \(D=T\).
+
+Otherwise the image is a curve with an irreducible
+equation of total degree at most three over \(k(s)\).
+Indeed the equation stays irreducible over \(k(s,x)\)
+and still defines the image, since at least one
+polynomial depends on \(H\). Over this latter field,
+the polynomial parametrization has degree at most
+three in \(H\). A generic affine line therefore
+meets the curve at most three times. This follows by
+pulling it back to a polynomial of degree at most
+three in \(H\): the parametrization is finite onto
+the curve since \(H\) is integral over the algebra
+of the output polynomials, and a generic line
+has as many distinct intersections as the degree
+of the curve in characteristic zero.
+
+At \(H=1/q\) the coordinates of that image are
+\(a=1/q^3,\ b=p/q^2\). Their orders at \(x=\infty\)
+are twelve and six. If \(q\ne p^2\), then
+\(a-b^2=(q-p^2)/q^4\), of order \(12+n\) with
+\(1\le n\le4\). From the ten monomials in \(a,b\)
+of total degree at most three, replace \(a,ab,a^2\)
+by \(a-b^2,\ ab-b^3,\ a^2-ab^2\). The resulting
+orders are all distinct: the three replacements
+have orders \(12+n,18+n,24+n\), and the other seven
+have orders \(0,6,12,18,24,30,36\). This contradicts
+existence of the curve equation. Thus \(q=p^2\).
+Now \(a=b^2\) on \(H=1/q\). As \(b\) is nonconstant
+in \(x\), the image curve contains the parabola
+and is therefore that parabola. In source variables
+this says \(AC=B^2\).
+
+Over \(k(x)[Y,z]\), the linear form \(C\) divides
+\(B\). Writing \(B=CL\) gives \(A=CL^2\), where
+\(L=Y/p+\lambda z\) by the restriction at \(z=0\).
+Put \(T=v/q\) and \(D=p\lambda\). Then
+\[
+             C=q(Y+Tz),\quad B=p(Y+Tz)(Y+Dz),
+                         \quad A=(Y+Tz)(Y+Dz)^2.
+\]
+Let \(\alpha,\gamma\in k[x]\) be the coefficients of
+\(Y^2z,Yz^2\) in \(A\).
+They are \(\alpha=T+2D\) and \(\gamma=D^2+2TD\).
+Thus \(4\gamma=\alpha^2+2\alpha T-3T^2\).
+A finite pole of \(T\) would give a pole of this
+polynomial, since the highest pole order comes
+from \(-3T^2\). Consequently \(q\mid v\) and \(D\)
+is polynomial. Both are monic affine: \(T=v/q\) is
+monic affine, and \(\alpha\) has degree at most one
+with leading coefficient three by the ordinary
+coefficient of \(y^4z\) in \(U^3\). This proves the
+displayed form.
+
+The quadratic affine-output root restriction applies
+to \(S\). If \(\gcd(v,u)=1\), its coordinate completion
+argument gives the same bounds nine and seventeen
+for the inverse \(y,z\) coordinates. Indeed \(q,v\)
+have the same degrees and root restrictions as in
+that argument. For a monomial \(x^r y^s z^l\) of
+either other output, \(s+2l\le6\) and
+\(r+s+l\le6\). Its composed degree is at most
+\(r+9s+17l\le54\). The retained planar degree-100
+theorem and the same specialization and descent
+then give inversion. The remaining root assertion
+is the other conclusion of the quadratic affine-output
+root restriction.
+
+**Corollary SexticKellerTangentConicSmoothSquareMemberDistinctParameterInversion.**
+In the quadratic-parameter reduction, if \(D\ne T\) then
+the Keller map is invertible. Thus a noninvertible
+completion has \(D=T\) and \(u\) shares a root with \(v\).
+
+Suppose \(D\ne T\) and the map is noninvertible.
+By the affine-output root restriction and the coprime
+inversion argument, there is a common root \(r\) of
+\(q,u,v\) where each vanishes to order at least two
+and \(w'(r)\ne0\), over the algebraic closure.
+On \(x=r\), the third output is constant and has
+\(x\)-derivative \(w'(r)\), so the first two restricted
+outputs form a planar Keller pair. Since \(q=p^2\)
+in this case, \(p(r)=0\). In weights \((1,2)\) on
+\(y,z\) the first restricted output has weight-six
+highest form
+\[
+                     (y^2+T(r)z)(y^2+D(r)z)^2
+\]
+and the second restricted output has weight at most
+three. The difference \(D-T\) is a nonzero scalar,
+so \(D(r)\ne T(r)\).
+
+The second output cannot be constant. If its weight
+is one, it is affine in \(y\) and the planar Keller
+determinant forces the derivative of the first
+output in \(z\) to be constant. This is incompatible
+with its weight-six highest form, which depends on
+\(z\). For weight two or three, the highest bracket
+must vanish. Two independent variables and the
+weighted Euler relation then make the first highest
+form a scalar times the cube or square, respectively,
+of the second. In detail, contraction of the wedge
+of the two logarithmic differentials with the Euler
+derivation gives the zero differential of their ratio
+with the two weights cancelled.
+
+The displayed form cannot be a cube, since its two
+distinct factors have multiplicities one and two
+when neither parameter vanishes. If one parameter
+vanishes, its factor is \(y^2\), and the multiplicity
+of the other, irreducible factor is still one or two.
+The displayed form cannot be a square unless
+\(T(r)=0\). In that case \(D(r)\ne0\), and the
+second highest form would be a nonzero scalar times
+\(y(y^2+D(r)z)\). The second restricted output
+therefore has \(z\)-degree one with nonconstant
+affine coefficient in \(y\), since its weight is
+at most three. Such a polynomial has a critical
+point: take the root of its coefficient of \(z\)
+and solve for \(z\) to annul its \(y\)-derivative.
+This contradicts the planar Keller condition in
+the only remaining case.
