@@ -1,0 +1,460 @@
+{
+  "status": "PASS",
+  "python": "3.12.3",
+  "prime": 31,
+  "common_residue": 7,
+  "scope": "complete pure-array inventories below weight one at e=2,3; leading rows modulo 31^2 at e=2,...,6",
+  "cases": [
+    {
+      "exponent": 2,
+      "middle": 5766,
+      "cutoff": "relative weight < 1",
+      "inventories": [
+        {
+          "order": 5767,
+          "retained_coefficients": 52,
+          "leading_unit_groups": 0
+        },
+        {
+          "order": 5765,
+          "retained_coefficients": 1488,
+          "leading_unit_groups": 376
+        }
+      ],
+      "leading_unit_terms": 376,
+      "surviving_layers": [
+        {
+          "gap": "16/31",
+          "vector": [
+            5,
+            11
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "17/31",
+          "vector": [
+            21,
+            9
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "18/31",
+          "vector": [
+            18,
+            21
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "19/31",
+          "vector": [
+            23,
+            1
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "20/31",
+          "vector": [
+            30,
+            4
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "21/31",
+          "vector": [
+            10,
+            22
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "22/31",
+          "vector": [
+            13,
+            10
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "23/31",
+          "vector": [
+            24,
+            28
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "24/31",
+          "vector": [
+            6,
+            7
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "25/31",
+          "vector": [
+            16,
+            29
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "26/31",
+          "vector": [
+            17,
+            25
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "27/31",
+          "vector": [
+            18,
+            21
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "28/31",
+          "vector": [
+            19,
+            17
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "29/31",
+          "vector": [
+            25,
+            24
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "30/31",
+          "vector": [
+            14,
+            6
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "945/961",
+          "vector": [
+            3,
+            0
+          ],
+          "determinant": 9
+        }
+      ],
+      "formal_T_vectors": [
+        [
+          5,
+          11
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          30,
+          4
+        ],
+        [
+          21,
+          9
+        ],
+        [
+          2,
+          23
+        ],
+        [
+          22,
+          5
+        ],
+        [
+          30,
+          4
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          1,
+          27
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          8,
+          30
+        ],
+        [
+          28,
+          12
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          18,
+          21
+        ]
+      ]
+    },
+    {
+      "exponent": 3,
+      "middle": 178746,
+      "cutoff": "relative weight < 1",
+      "inventories": [
+        {
+          "order": 178747,
+          "retained_coefficients": 49,
+          "leading_unit_groups": 0
+        },
+        {
+          "order": 178745,
+          "retained_coefficients": 16368,
+          "leading_unit_groups": 4776
+        }
+      ],
+      "leading_unit_terms": 4776,
+      "surviving_layers": [
+        {
+          "gap": "16/31",
+          "vector": [
+            5,
+            11
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "17/31",
+          "vector": [
+            21,
+            9
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "18/31",
+          "vector": [
+            18,
+            21
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "19/31",
+          "vector": [
+            23,
+            1
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "20/31",
+          "vector": [
+            30,
+            4
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "21/31",
+          "vector": [
+            10,
+            22
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "22/31",
+          "vector": [
+            13,
+            10
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "23/31",
+          "vector": [
+            24,
+            28
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "24/31",
+          "vector": [
+            6,
+            7
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "25/31",
+          "vector": [
+            16,
+            29
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "26/31",
+          "vector": [
+            17,
+            25
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "27/31",
+          "vector": [
+            18,
+            21
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "28/31",
+          "vector": [
+            19,
+            17
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "29/31",
+          "vector": [
+            25,
+            24
+          ],
+          "determinant": 0
+        },
+        {
+          "gap": "30/31",
+          "vector": [
+            14,
+            6
+          ],
+          "determinant": 0
+        }
+      ],
+      "formal_T_vectors": null
+    }
+  ],
+  "leading_mod_square": [
+    {
+      "exponent": 2,
+      "leading_rows": [
+        [
+          1,
+          203,
+          628,
+          612
+        ],
+        [
+          1,
+          506,
+          542
+        ]
+      ],
+      "wronskian_at_7": 527
+    },
+    {
+      "exponent": 3,
+      "leading_rows": [
+        [
+          1,
+          203,
+          628,
+          612
+        ],
+        [
+          1,
+          506,
+          542
+        ]
+      ],
+      "wronskian_at_7": 527
+    },
+    {
+      "exponent": 4,
+      "leading_rows": [
+        [
+          1,
+          203,
+          628,
+          612
+        ],
+        [
+          1,
+          506,
+          542
+        ]
+      ],
+      "wronskian_at_7": 527
+    },
+    {
+      "exponent": 5,
+      "leading_rows": [
+        [
+          1,
+          203,
+          628,
+          612
+        ],
+        [
+          1,
+          506,
+          542
+        ]
+      ],
+      "wronskian_at_7": 527
+    },
+    {
+      "exponent": 6,
+      "leading_rows": [
+        [
+          1,
+          203,
+          628,
+          612
+        ],
+        [
+          1,
+          506,
+          542
+        ]
+      ],
+      "wronskian_at_7": 527
+    }
+  ],
+  "corruption_control": {
+    "omitted_first_secondary_child": {
+      "gap": "528/961",
+      "vector": [
+        0,
+        4
+      ],
+      "determinant": 3
+    },
+    "omitted_row_unit": "false second-layer determinant 23"
+  },
+  "remaining_obligation": "uniform all-exponent normalized-layer control and valuation-one compatibility",
+  "assurance": "internal exact replay; no independent review or formal verification"
+}

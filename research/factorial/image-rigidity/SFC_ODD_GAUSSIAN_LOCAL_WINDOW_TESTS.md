@@ -517,6 +517,149 @@ the latter gives \(24\cdot31/49\). Thus the theorem
 covers \(n=2p^e\) and \(4p^e\) under the displayed prime
 bound, and \(6p^e\) for \(p>12\) with \(p\ne31\).
 
+### The exceptional prime 31: normalized finite controls
+
+The family \(n=6\cdot31^e\) is not included in the preceding
+uniform theorem. Its common residue is \(Z=7\), where the
+derivatives of \(A=P_3\) and \(B=Q_3\) are \((7,3)\) modulo
+31. The following calculation determines the first transverse
+correction at \(e=2\); it does not settle the whole family.
+The individual window \(5765,5766,5767\) is already included in
+the finite coverage of Section 6.
+
+Put \(Y=x^2\), \(M=31^e\), \(a=(M-1)/2\),
+\(\ell=(M-1)/30\), and \(L=\ell/M\). Normalize the upper pure
+row by its constant term and the lower one by \(U^-_aY^a\).
+It is essential to divide the latter by its *entire* leading
+row unit \(D\), including all children of the leading terms.
+Here is a reproducible definition of that unit below relative
+weight one. For \(0\le b<M\), group the coefficients at
+\(b+jM\), and write
+\[
+ d_b=v(U^-_b)-v(U^-_a),\qquad
+ C_b(Z)=\sum_j
+   \overline{\operatorname{unit}(U^-_{b+jM}/U^-_a)}
+                   ((-1)^\ell2)^{-j}Z^j.
+\]
+The retained weight is \(d_b+(b-a)L\). At both tested exponents
+\(e=2,3\), every retained group with \(b\ge a\) satisfies
+\(C_b=C_b(0)\bar B\). Thus, choosing integral lifts of the
+displayed residue coefficients,
+\[
+ D=\sum_{\substack{a\le b<M\\d_b+(b-a)L<1}}
+                 C_b(0)31^{d_b}Y^{b-a},\qquad \bar D_0=1.
+\]
+The coefficient congruence errors have relative weight at least
+one. Formal division by this unit retains every child contribution
+below the cutoff; division by the first parent alone does not.
+
+For \(e=2\), use the fixed monomials
+\[
+ \epsilon=31^{16}Y^{-465},\quad T=Y^{31}/31,\quad
+ \theta=31^{-15}Y^{480}.
+\]
+Their valuations are \(16/31,1/31,945/961\), respectively.
+After division by \(D\) and specialization at the common residue,
+the correction vectors at \(\epsilon T^v\), \(0\le v\le14\),
+are exactly
+
+| \(v\) | upper row | lower row |
+|---|---:|---:|
+| 0 | 5 | 11 |
+| 1 | 6 | 7 |
+| 2 | 4 | 15 |
+| 3 | 30 | 4 |
+| 4 | 21 | 9 |
+| 5 | 2 | 23 |
+| 6 | 22 | 5 |
+| 7 | 30 | 4 |
+| 8 | 11 | 18 |
+| 9 | 1 | 27 |
+| 10 | 23 | 1 |
+| 11 | 8 | 30 |
+| 12 | 28 | 12 |
+| 13 | 4 | 15 |
+| 14 | 18 | 21 |
+
+Every vector \((c_+,c_-)\) in the table satisfies
+\(3c_+-7c_-=0\). The convention using the second lower parent
+as its correction parameter rescales the second vector by
+\(10^{-1}\), giving \((13,10)=15(5,11)\), as expected.
+Before division, that vector is \((6,17)\), with the misleading
+nonzero determinant 23. The term \(15T\) in \(D\) changes its
+lower entry to \(17-15\cdot11=7\).
+
+All intervening child layers cancel in the normalized value
+equations at \(Z=7\). The first surviving transverse term is
+\[
+       \theta(3,0),\qquad 3\cdot3-7\cdot0=9\ne0\pmod{31},
+                       \qquad v(\theta)=945/961.       \tag{5}
+\]
+It comes from the upper group \(r=480+j\cdot961\), whose
+shape is \(25+29Z+3Z^2\); its value at 7 is 3. The fully
+divided lower row has zero coefficient at this weight. This
+is the first transverse weight in the *complete* inventory
+below one, not merely in the list of parent terms.
+
+The calculation uses homogeneous weight classes: put formally
+\(31=t^M\) and \(Y=yt^\ell\), so
+\(Z=(-1)^\ell2y^M\). Since the common residue is rational,
+one may take \(y=7/((-1)^\ell2)\) in \(\mathbb F_{31}\).
+Different monomials of the same weight differ by an integral
+power of \(Z/((-1)^\ell2)\); this specialization computes their
+combined coefficient modulo \(Z-7\). It does not identify
+unequal weight classes. At a hypothetical common zero,
+\(v(Z-7)\ge16/31\), so a vanished compatibility coefficient
+at any retained secondary weight at least \(16/31\) contributes
+only above weight one. First-order quadratic perturbations can
+also be removed by the common coordinate
+\(u=x+(1+x^2)h\) from the
+[final-residue proof](SFC_ODD_GAUSSIAN_FINAL_RESIDUE_LIFTING.md#2-a-common-coordinate-removes-the-first-quadratic-perturbation).
+The remaining relative weight is at least
+\(2(v(h)-v(x))=e-2L>1\) for \(e=2,3\).
+
+At \(e=3\), complete division again leaves precisely fifteen
+tangent layers below one, at \(16/31,\ldots,30/31\), and
+*no* transverse term below one. Thus (5) cannot be extrapolated
+to all exponents. A possible next obstruction is at valuation
+one: for \(e=2,\ldots,6\), the exact leading rows, normalized
+at \(jM\) and \(a+jM\), reduce modulo \(31^2=961\) to
+\[
+ A_e=[1,203,628,612],\qquad B_e=[1,506,542],\qquad
+ (B'_eA_e-A'_eB_e)(7)=31\cdot17\pmod{961}.             \tag{6}
+\]
+These are finite checks. A uniform proof must establish the
+normalized compatibility through valuation one for every remaining
+exponent, including the coefficient congruence errors at that
+valuation. Neither (6) nor the tangent-layer controls establish
+that statement.
+
+The [checker](verify_sfc_odd_gaussian_middle_layer.py) enumerates
+every actual pure coefficient below relative weight one at
+\(e=2,3\), divides by all retained terms of \(D\), and checks
+the division by multiplication back. An independent coefficient
+recurrence checks the factorial tables. Omitting the first
+secondary child or the row unit produces a false earlier
+transverse term and is rejected. Wilson block recursion modulo
+\(31^2\) checks (6) through exponent six; at exponents two and
+three it is compared with the full coefficient recurrence.
+The [receipt](sfc_odd_gaussian_middle_layer_verification.json)
+records the internal exact replay with Python 3.12.3:
+
+```sh
+python3 research/factorial/image-rigidity/verify_sfc_odd_gaussian_middle_layer.py
+```
+
+The closest classical inputs are factorial-unit congruences as in
+[Granville, Theorem 1](https://www.cecm.sfu.ca/organics/papers/granville/paper/binomial/html/node2.html),
+and the terminating Kummer equation
+[DLMF 13.2.1](https://dlmf.nist.gov/13.2.E1), with
+\(P_3={}_1F_1(-3;1/2;-Z/4)\) and
+\(Q_3={}_1F_1(-2;3/2;Z/4)\). These supply arithmetic and
+special-function context, not an all-exponent nonlifting result
+at 31. The finite controls derive their coefficients directly;
+no independent mathematical review or formal verification is claimed.
+
 ## 6. Exact tests at prime divisors of the prescribed orders
 
 For fixed even \(n\) and \(p\ge5\) dividing \(n\),

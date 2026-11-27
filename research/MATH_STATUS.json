@@ -9211,6 +9211,40 @@
           "external_review": false,
           "review_status": "internal_only",
           "verification_note": "Written proof using discriminant orders, a low-degree bracket identity on the fixed first-output level, and compatibility along the two reduced-factor planes."
+        },
+        {
+          "id": "JAC-SEXTIC-KELLER-TANGENT-CONIC-REDUCED-COMMON-FACTOR-EXCLUSION",
+          "title": "No sextic Keller completion has the reduced in-pencil common factor",
+          "scope": "In characteristic zero there is no three-variable Keller map with ordinary highest tuple (P^2*Q,P*Q^2,Q^3) for P=xz+y^2 and Q=xy.",
+          "state": "proved",
+          "canonical_source": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written proof",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof by two transverse weight changes, explicit leading determinant coefficients, the weighted conic-relation and divisor-residue obstructions, and the collapsed affine line."
+        },
+        {
+          "id": "JAC-SEXTIC-KELLER-TANGENT-CONIC-SQUARE-COMMON-FACTOR-TRANSVERSE-FIRST-CORRECTION",
+          "title": "A square common factor with transverse lower member has a Veronese reference through degree five",
+          "scope": "For a characteristic-zero three-variable Keller map with highest tuple x^2*(P^2,PQ,Q^2), P=xz+y^2 and Q binary with Q(0,y) nonzero, the entire degree-five error is absorbed by the Veronese reference with generators xP+U_2 and xQ+V_2 for homogeneous quadratic corrections.",
+          "state": "proved",
+          "canonical_source": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written proof",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof by discriminant coefficients and the relative area form of the weighted pair on the first nontrivial divisor."
         }
       ],
       "open_questions": [
@@ -9287,7 +9321,7 @@
           "source": "jacobian/monodromy-theory/KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md"
         },
         {
-          "question": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections obey E_2=b*x*P^2 mod x^2 and E_3=c*x*P^2 mod x^3. For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The remaining normalized common factors are g=p with q=x^2, g=q=xy, or g=x^2 with binary q and p=xz+y^2. In the reduced in-pencil case g=q=xy, the entire degree-five error can be absorbed by a polynomial reference satisfying the conic relation. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
+          "question": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections obey E_2=b*x*P^2 mod x^2 and E_3=c*x*P^2 mod x^3. For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The remaining normalized common factors are g=p with q=x^2, or g=x^2 with binary q, with p=xz+y^2. In the latter case with q(0,y) nonzero, the degree-five error is absorbed by a Veronese reference. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
           "source": "jacobian/monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md",
           "kind": "mathematical",
           "node": "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION"
@@ -35276,8 +35310,8 @@
     {
       "id": "arithmetic",
       "title": "Arithmetic fibres, discriminants and restricted-prime sums",
-      "summary": "Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion preprints are published on Hexagon: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11. The specified diagonal Pade three-halves witness sequence, over all degrees selected per pair, has only O(T^(1+epsilon)) compatible unit kernel pairs at N comparable to T^5 and height<=4T^2. Actual bounded-degree rational witness families admit coefficient-uniform and fixed-family kernel counts, including prime and separated-coarse-modulus/cube-free refinements. Actual auxiliary Q-curves have an exact remainder-content/effective-modulus bridge; an economical full long-complement cover is still open. Every seventh-power prescribed targetN=M^7 has r(N)<<N^(2/7+epsilon), including noncoprime positive squarefull summands, via a coefficient-uniform cube-divisor estimate. Every actual cube divisor q^3|N controls all original square-full pairs by N^epsilon*(q+sqrt(N)/q^(3/4)). A common-kernel-gcd refined square-quotient weight gives another coefficient-uniform actual C6 tail, with an explicit reverse route to the previous quotient tail. Elementary real-quadratic norm recovery removes the kernel-gcd coefficient loop and yields stronger selected-cycle weighted tails, with an explicit chi coefficient gain. Fixed mixed powers2<=k<j,3|j,k∤j admit kernel-gcd recovery and chi-sensitive actual path/cycle weights, using casewise norm/Thue lifting; the square-cube case has a separate direct route. A conditional coarse-global-triple to actual-path transfer and exact majorant comparison identify a limited exponent-only barrier; they supply no prescribed-sum improvement. Dual graphs give uniform positive-coefficient counts for unrestricted products of two fixed powers; the squarefull3/10result has a separatefullscope alternate proof. Exact-five carriers give stronger restricted sectors for3-full sums. Coherent six-cycles give the unconditional all-target bound r3(N)<<N^(33/134+epsilon), resolving the positive-saving target; the stronger carrier support-capacity estimate remains open. The marked octic gives simultaneous real and imaginary-mirror class 3-rank bounds three and four, at least forty complex cubic fields of a common fundamental discriminant, three positive-rank elliptic twists and ≫ X^(1/12)/(log X)^2 distinct fields. Its admissible genus-eleven cubic covers have exactly four rational three-torsion directions; real class rank four remains open.",
-      "status": "The dependent shared-C12 system now has unconditional natural-scale lower counts on a positive proportion of targets, a uniform upper bound and target moments. The all-target joint comparison remains open; the candidate leading term is not proved. The unfiltered prime class 3 mod 10 now has a pointwise binary leading term with error exponent 1/32768 under the same explicit ZF/G inputs. Four complex Hankel branches, normalized logarithms and fourth-root prime-coset phases are proved in the application. The fixed prime-coset self-sum theorem separately handles every fixed coset; dependent three-factor correlations remain outside its scope. The specific unfiltered prime-3-mod-4 semigroup now has a pointwise binary leading term with error exponent 1/16384 under the same explicit ZF/G inputs; the two-branch density and prime-coset frame are proved. Arbitrary mixed or disjoint prime-coset pairs remain outside the common-prime-class comparison theorem. The full 1993 Iwaniec-Pomykala comparison is complete: the exact C12 semigroup already has a conditional coprime sum theorem and an unconditional difference theorem; leading constants, later deconditioning and broader priority are distinguished. Actual prime decompositions now have full-star leading constants and sharp-order power-window counts for fixed APs, all targets anddistinctprimes. The D23principal form has actualprime triples for everylargeoddN andcoupled5primeversions, viaexistingKane/FTChebotarevtheorems. Basis order13 follows from the subgroup binary theorem; the older prime-bank binary route remains a separate method question. A multiplicative Hardy-Littlewood theory now gives explicit finite-character Euler factors, nonuniform prime-power coset masses, a repaired Gamma/phase/progression interface, and an elementary dense-defect law without pairwise independence. Pure prime-residue semigroups need not be subgroups. An explicit positive-density five-form counterexample separates all-moduli solubility from positive local density. Coupled systems now have a finite joint-congruence criterion and classical positive-bulk correlation counts under the kernel independence condition, with Smith-normalized finite norm profiles. SharedprimitiveGaussiantriples have exactly45admissiblemod8targetpairs andfixed-rayleadingconstants; anexplicit17^t family refutes separate-marginal testing. Dependentone-parametertriple correlations remain outside the stated machinery. A Goldbach hierarchy is now explicit: strong binary subgroup counts, classical fixed-k>=3 leading asymptotics, exact eventual residue sumsets and finite-group formulae for minimal basis orders. The zero-augmented C12 core has exact asymptotic basis order13; all C_q have orderlcm(2,q)+1. Higher-fold o(1) is classical and independent of the binary G/ZF inputs. Macroscopic balanced FBS-G for every fixedq and its q12consequences S12/S12U nowfollow from the uniformintervalestimate. Power-shortFBS-U remainsopen. The quantitative abelian subgroup correlation theorem now has explicit logarithmic remainder delta=1/(8192phi(L0)), with the full C12+C12 leading constant and delta12=1/32768. Mobius inversion gives the coprime C12 count with the additional product_(p|N,p=1 mod 12)(1-1/p) and relative saving 1/65536. Its local-global criterion is joint solvability in all finite quotients; an exact p-adic-projection counterexample prevents a stronger primewise claim. Finite badprofiles and moving-interval discrepancy are proved, while unrestricted bad generators/nonabelian prescriptions stay outside scope. The odd primitive Gaussian core C4 now has an explicitly stated uniform leading asymptotic using the recorded recent analytic inputs. A separate classical circle-method deduction gives the same leading term outside O_A,epsilon(X/log^A X) targets; a precise weighted-cofactor condition and concentration example identify the additional work needed to avoid the zero-free import. Every imaginary quadratic order now has sharp unweighted primitive norm self-sum counts with arbitrary ringclassgroup and conductor, and a pointwise logarithmically smaller class error. The pointwise binary theorem supplies explicit leading constants for primitiveGaussian norms, all fixed orders and arbitrary abelian splitting subgroups, including C12+C12 at scaleN/log^(3/2)N, using the precisely inspected recent graph and PartI11/12 zero-free theorems. These are internal written proofs, with external review, numerical cutoffs and priority separate. The flagship opens with CK/Smilansky ordinary fixed-shift correlations, presents classical genus invariance and common-field primitive-form leading terms, and uses one shared arithmetic-model comparison for the splitting-semigroup applications. The exact companion independently gives the -3,-7,-8,-11 classifications and finite certificates. Baker/Waibel theory is supporting material. Every fixed order also has eventual primitive additive local-global existence, and every maximal order has a complete local congruence table. The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, the quantitative subgroup theorem now proves S12U, balanced S12 and macroscopic FBS-G. The original coordinate-weight natural lower count and fixed-prime marginals remain open method questions. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both coordinate-weight C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while coordinate-weight C12 pointwise inputs, power-short every-target goals, numerical effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. Unrestricted and macroscopic C12 counts are now proved. Coordinate-weight norm inputs, power-short windows, full-count power-saving variance, numerical onsets, exact small exceptions and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, remaining every-target C12 power windows, unweighted residual/full power-saving variance and priority remain open; unrestricted and macroscopic C12 counts are separately proved. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full unweighted C12+C12 count is now proved by the quantitative subgroup theorem. Its original coordinate-weight lower/marginal inputs remain open method questions. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative open weighted-method question, together with coordinate-weight H1/H2. Unrestricted C12+C12 itself is proved by the separate subgroup theorem. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root sieve distribution, coordinate-weight H1/H2 and priority remain open; the separate quantitative subgroup theorem now proves the full C12/Cq two-sided asymptotics and macroscopic balanced FBS-G. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case now has the complete exact sumset: the five admissible mod8 classes with only exceptions3,4, as well as pointwise logarithmic value counts. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions. Fixed odd-class prime pools also give pointwise logarithmic primitive norm sums for the stated prime-discriminant family, without new additive nonabelian distribution. The concrete C4 formx^2+14y^2 now has every-large-target logarithmiccounts for49-admissibleN; discriminant-23 has40exactexceptions through2^24, with unrestrictedcompleteness stillopen. The -56binarysumset also has118exactexceptions through2^24,max8876; completeness beyondthatbound remainsopen. A quantitative C4 class-error bound now gives a pointwise relative comparison with all local norm candidates; the prime-discriminant theorem needs no separate class-number hypothesis. The Connors-Keating fixed-shift indicator asymptotic now has a written application proof using the same explicitly recorded ZF and graph imports, with both principal character branches, exact dyadic factor and local finite checks; growing shifts, higher correlations and external review remain separate. The sixth zeta moment remains open. A complete unshifted exact-kernel averaged-remainder criterion and main-coefficient diagnostics are recorded, together with rigorous invariant-precision and fixed-probe power-bank obstructions; these do not prove the needed signed remainder. Classical nonmaximal-level Hecke transfer and a positive five-adic tree operator now prove an effective primitive x^2+5y^2 sum theorem for EVERY admissible N>=2^66, with ordered value count>=N^(2/3)/6000. Class-zero multiplier descent and atomic seed estimates reduce exact completion to reduced cores below2^29; the authenticated full2^29 scan closes that finite input. The exact global exception list is now proved to be3,4, with both reduction directions recorded. The abc exceptional-set programme now has a two-way graph and Fourier transfer. For fixed powerfulness offsets the height-averaged count saves at least (1/sqrt(2)-o(1))*sqrt(log r)*r^(-3/2) from the trivial exponent. The graph improves individual abc boxes with valuation-one factors. The repaired FullOC program has exact optimum 7/12 and yields an upper count O(X^(7/12+epsilon)) for all 0<lambda<=1. Grouped-root energy and grouped residue constraints give a 106,845-leaf upper certificate at 1747/3000, improving the uniform abc exceptional-set exponent by 1/1000. Two tall terms and residue energies give a budget-one bound of 29/50 and improve intermediate-budget counts. Adaptive degree release gives a strict analytic saving at every fixed radical budget and the small-budget order lambda^(3/2)*sqrt(log(1/lambda)). Higher multiplicative moments and partial-modulus rational reconstruction give an analytic uniform abc count at exponent 287/500 and exact intermediate bounds 2/5 at 7/10 and 9/20 at 4/5. For sufficiently small radical budgets, dominant-power boxes give an exponent lambda/2 plus an absolute O(lambda^(3/2)) correction. The exact combined overlay gives unit-budget exponent 1070000267/2000000686 and a strict improvement of the preceding unit tree throughout [991/1000,1]. A quartic determinant and graph codegrees cut the former joint half profile and give stronger small-budget estimates in the stated dominant-coordinate boxes. Complete written all-degree diagonal Pade family restriction; the full compatible-kernel problem remains separate. Restricted-family bounds and conditional auxiliary-cover implications proved; no new full K_N(T) saving. The genus-three degree-2^9 maps give exact three-primary Selmer and Sha transfer for every quadratic twist. HG2 has common conductor 10D². For the marked-octic rank-four refinement, the remaining routes are unit-line separation or an arithmetic fifth class beyond the exhausted generic directions; changing the admissible cubic scale supplies no new generic direction.",
+      "summary": "Constructive finite etale fibres, arithmetic failures and discriminant geometry. Two companion preprints are published on Hexagon: general pointwise quadratic-value and splitting-semigroup correlations, and independent exact primitive-norm sumset classifications at discriminants -3,-7,-8,-11. The specified diagonal Pade three-halves witness sequence, over all degrees selected per pair, has only O(T^(1+epsilon)) compatible unit kernel pairs at N comparable to T^5 and height<=4T^2. Actual bounded-degree rational witness families admit coefficient-uniform and fixed-family kernel counts, including prime and separated-coarse-modulus/cube-free refinements. Actual auxiliary Q-curves have an exact remainder-content/effective-modulus bridge; an economical full long-complement cover is still open. Every seventh-power prescribed targetN=M^7 has r(N)<<N^(2/7+epsilon), including noncoprime positive squarefull summands, via a coefficient-uniform cube-divisor estimate. Every actual cube divisor q^3|N controls all original square-full pairs by N^epsilon*(q+sqrt(N)/q^(3/4)). A common-kernel-gcd refined square-quotient weight gives another coefficient-uniform actual C6 tail, with an explicit reverse route to the previous quotient tail. Elementary real-quadratic norm recovery removes the kernel-gcd coefficient loop and yields stronger selected-cycle weighted tails, with an explicit chi coefficient gain. Fixed mixed powers2<=k<j,3|j,k∤j admit kernel-gcd recovery and chi-sensitive actual path/cycle weights, using casewise norm/Thue lifting; the square-cube case has a separate direct route. A conditional coarse-global-triple to actual-path transfer and exact majorant comparison identify a limited exponent-only barrier; they supply no prescribed-sum improvement. Dual graphs give uniform positive-coefficient counts for unrestricted products of two fixed powers; the squarefull3/10result has a separatefullscope alternate proof. Exact-five carriers give stronger restricted sectors for3-full sums. Coherent six-cycles give the unconditional all-target bound r3(N)<<N^(33/134+epsilon), resolving the positive-saving target; the stronger carrier support-capacity estimate remains open. The marked octic gives simultaneous real and imaginary-mirror class 3-rank bounds three and four, at least forty complex cubic fields of a common fundamental discriminant, three positive-rank elliptic twists and ≫ X^(1/12)/(log X)^2 distinct fields. Every nonzero rational scaling of its genus-eleven cubic cover has exactly four rational three-torsion directions; real class rank four remains open.",
+      "status": "The dependent shared-C12 system now has unconditional natural-scale lower counts on a positive proportion of targets, a uniform upper bound and target moments. The all-target joint comparison remains open; the candidate leading term is not proved. The unfiltered prime class 3 mod 10 now has a pointwise binary leading term with error exponent 1/32768 under the same explicit ZF/G inputs. Four complex Hankel branches, normalized logarithms and fourth-root prime-coset phases are proved in the application. The fixed prime-coset self-sum theorem separately handles every fixed coset; dependent three-factor correlations remain outside its scope. The specific unfiltered prime-3-mod-4 semigroup now has a pointwise binary leading term with error exponent 1/16384 under the same explicit ZF/G inputs; the two-branch density and prime-coset frame are proved. Arbitrary mixed or disjoint prime-coset pairs remain outside the common-prime-class comparison theorem. The full 1993 Iwaniec-Pomykala comparison is complete: the exact C12 semigroup already has a conditional coprime sum theorem and an unconditional difference theorem; leading constants, later deconditioning and broader priority are distinguished. Actual prime decompositions now have full-star leading constants and sharp-order power-window counts for fixed APs, all targets anddistinctprimes. The D23principal form has actualprime triples for everylargeoddN andcoupled5primeversions, viaexistingKane/FTChebotarevtheorems. Basis order13 follows from the subgroup binary theorem; the older prime-bank binary route remains a separate method question. A multiplicative Hardy-Littlewood theory now gives explicit finite-character Euler factors, nonuniform prime-power coset masses, a repaired Gamma/phase/progression interface, and an elementary dense-defect law without pairwise independence. Pure prime-residue semigroups need not be subgroups. An explicit positive-density five-form counterexample separates all-moduli solubility from positive local density. Coupled systems now have a finite joint-congruence criterion and classical positive-bulk correlation counts under the kernel independence condition, with Smith-normalized finite norm profiles. SharedprimitiveGaussiantriples have exactly45admissiblemod8targetpairs andfixed-rayleadingconstants; anexplicit17^t family refutes separate-marginal testing. Dependentone-parametertriple correlations remain outside the stated machinery. A Goldbach hierarchy is now explicit: strong binary subgroup counts, classical fixed-k>=3 leading asymptotics, exact eventual residue sumsets and finite-group formulae for minimal basis orders. The zero-augmented C12 core has exact asymptotic basis order13; all C_q have orderlcm(2,q)+1. Higher-fold o(1) is classical and independent of the binary G/ZF inputs. Macroscopic balanced FBS-G for every fixedq and its q12consequences S12/S12U nowfollow from the uniformintervalestimate. Power-shortFBS-U remainsopen. The quantitative abelian subgroup correlation theorem now has explicit logarithmic remainder delta=1/(8192phi(L0)), with the full C12+C12 leading constant and delta12=1/32768. Mobius inversion gives the coprime C12 count with the additional product_(p|N,p=1 mod 12)(1-1/p) and relative saving 1/65536. Its local-global criterion is joint solvability in all finite quotients; an exact p-adic-projection counterexample prevents a stronger primewise claim. Finite badprofiles and moving-interval discrepancy are proved, while unrestricted bad generators/nonabelian prescriptions stay outside scope. The odd primitive Gaussian core C4 now has an explicitly stated uniform leading asymptotic using the recorded recent analytic inputs. A separate classical circle-method deduction gives the same leading term outside O_A,epsilon(X/log^A X) targets; a precise weighted-cofactor condition and concentration example identify the additional work needed to avoid the zero-free import. Every imaginary quadratic order now has sharp unweighted primitive norm self-sum counts with arbitrary ringclassgroup and conductor, and a pointwise logarithmically smaller class error. The pointwise binary theorem supplies explicit leading constants for primitiveGaussian norms, all fixed orders and arbitrary abelian splitting subgroups, including C12+C12 at scaleN/log^(3/2)N, using the precisely inspected recent graph and PartI11/12 zero-free theorems. These are internal written proofs, with external review, numerical cutoffs and priority separate. The flagship opens with CK/Smilansky ordinary fixed-shift correlations, presents classical genus invariance and common-field primitive-form leading terms, and uses one shared arithmetic-model comparison for the splitting-semigroup applications. The exact companion independently gives the -3,-7,-8,-11 classifications and finite certificates. Baker/Waibel theory is supporting material. Every fixed order also has eventual primitive additive local-global existence, and every maximal order has a complete local congruence table. The exact elliptic six-prime coefficient is 2081912199403/9893175318390; the certified-field coefficient is 13361/114520. The proved two-primary Sha vanishing and all-prime Selmer parity make dim Sha[p] even without assuming Sha finite. Outside finite exceptions, the actual class-group multiplicity c_p recovers dim Sha[p]=2 floor((c_p-1)/2); a third copy occurs exactly when Sha[p] is nonzero. Serre and uniform Kummer theory give open adelic affine image. Every fixed good-order Fourier mode now has arithmetic factoring-density bounds, and projected averaged pole measures converge weakly to an equivalent-Haar measure with positive L2 density. Growing-order tails, recurrence and Hasse infinitude remain open. Eventual Eisenstein equal-thirds balance also has an independent finite-polynomial proof. The coordinate-tail counterexample shows why Ro, rather than n, is the required sieve normalization. EisPower now proves ordinary and mixed power-window existence with exponent99/100 above2^(2^411). For simultaneous C12 support, the quantitative subgroup theorem now proves S12U, balanced S12 and macroscopic FBS-G. The original coordinate-weight natural lower count and fixed-prime marginals remain open method questions. Full semigroup-scale FBS-U and sharp thin energy remain open. The renewed uniform-Hecke audit and self-contained triangle/annulus proof upgrade EisPower to every fixed2/3<theta<1 with explicit onsets; Jackson-Parseval independently gives the intermediate theta>6/7 range. The original99/100 full witness count is preserved. The central exponent endpoint, exact finite exceptions and both coordinate-weight C12 pointwise inputs remain open. EisValueCounts now gives every-target logarithmic unweighted Eisenstein counts at 2/3<theta<1. VqPower proves quantitative full-count variance and sharp energy for fixedtheta>5/6; the residual equivalent frontier is0<theta<=5/6. Divisor-truncation diagnostics are proved, while coordinate-weight C12 pointwise inputs, power-short every-target goals, numerical effectivity and priority remain open. D12Power now gives a power-saving lower-count exceptional set at q12,theta=.99. Unrestricted and macroscopic C12 counts are now proved. Coordinate-weight norm inputs, power-short windows, full-count power-saving variance, numerical onsets, exact small exceptions and priority remain open. EisSemigroupScale now proves expected q3 pointwise count comparability for wide powers and central macro windows. SimNormPower supplies full weighted raw/good correlations and actual marginals outside power exceptional sets, including complete moving fixed intervals. Smaller q3 powers, remaining every-target C12 power windows, unweighted residual/full power-saving variance and priority remain open; unrestricted and macroscopic C12 counts are separately proved. EisLocationWindows now gives uniform moving-position counts and every fixed macroscopic interval at the expected q3 scale; a designated small summand has the strict power range theta>1/2, while central powers still require theta > 2/3. Coprime subgroup-coset compression and an explicit nonmultiplicative Fourier-gap family are separately scoped. EisJointCosetDistribution now gives all-valuation joint finite/archimedean distribution with one tau factor and stronger summed cofactor levels. FixedPeriodicBoxes proves a bounded period-12 divisor-box transfer beyond square-root level. SimNormOddDilation and SimNormDeepDilation are equivalences assuming only the stated positivity. AsymPointwise proves a weighted every-target C12+A3 convolution and a one-sided N^(1-epsilon) value-count corollary. The full unweighted C12+C12 count is now proved by the quantitative subgroup theorem. Its original coordinate-weight lower/marginal inputs remain open method questions. AsymUniform now supplies the small-power coefficient/shift interface, and AsymSemigroupScale proves every-target C12+A3 comparability at N J_E(N)/(log N)^(5/4). The half-dimensional route has exact local mass, parity and kernel compression, but its beyond-half signed remainder remains open. Critical switching now gives an unconditional all-target upper bound for the two-large-prime bad survivors. Its critical-level conditional criterion lowers a sufficient distribution target to N^(1/2) times a negative logarithmic power; that absolute or signed remainder remains open. The earlier beyond-half remainder is retained as an alternative open weighted-method question, together with coordinate-weight H1/H2. Unrestricted C12+C12 itself is proved by the separate subgroup theorem. The fixed-modulus asymmetric theory now gives weighted and tiny-coefficient results and the unrestricted unweighted logarithmic count for each fixed q and quadratic chi. Its bounded-excluded-prime bridge reaches the full two-sided logarithmic scale without removing every excluded factor when phi(q) > 2. The auxiliary average now gives a full positive L1 divisor level below a fixed xi chosen before its smaller error saving. Critical square-root sieve distribution, coordinate-weight H1/H2 and priority remain open; the separate quantitative subgroup theorem now proves the full C12/Cq two-sided asymptotics and macroscopic balanced FBS-G. The subgroup theorem now treats nonnested abelian splitting sets, with exact finite residue admissibility and a target product only outside both allowed sets. Its C4+C3 specialization gives the mixed quadratic count, while two extra half-dimensional exclusions would be needed for C12+C12. Exact sign transfer retains the target main and a fixed-period replacement has full-order squared error; these obstructions do not settle the critical remainder. A quaternary deduction now gives eventual local-global existence for two separately primitive binary forms; both exact -8 and -11 self-sum classifications are proved. The class-number-two x^2+5y^2 case now has the complete exact sumset: the five admissible mod8 classes with only exceptions3,4, as well as pointwise logarithmic value counts. Class-number-three discriminant-23 also has pointwise logarithmic value counts via fixed exact-prime profiles, despite infinite individual class obstructions. Fixed odd-class prime pools also give pointwise logarithmic primitive norm sums for the stated prime-discriminant family, without new additive nonabelian distribution. The concrete C4 formx^2+14y^2 now has every-large-target logarithmiccounts for49-admissibleN; discriminant-23 has40exactexceptions through2^24, with unrestrictedcompleteness stillopen. The -56binarysumset also has118exactexceptions through2^24,max8876; completeness beyondthatbound remainsopen. A quantitative C4 class-error bound now gives a pointwise relative comparison with all local norm candidates; the prime-discriminant theorem needs no separate class-number hypothesis. The Connors-Keating fixed-shift indicator asymptotic now has a written application proof using the same explicitly recorded ZF and graph imports, with both principal character branches, exact dyadic factor and local finite checks; growing shifts, higher correlations and external review remain separate. The sixth zeta moment remains open. A complete unshifted exact-kernel averaged-remainder criterion and main-coefficient diagnostics are recorded, together with rigorous invariant-precision and fixed-probe power-bank obstructions; these do not prove the needed signed remainder. Classical nonmaximal-level Hecke transfer and a positive five-adic tree operator now prove an effective primitive x^2+5y^2 sum theorem for EVERY admissible N>=2^66, with ordered value count>=N^(2/3)/6000. Class-zero multiplier descent and atomic seed estimates reduce exact completion to reduced cores below2^29; the authenticated full2^29 scan closes that finite input. The exact global exception list is now proved to be3,4, with both reduction directions recorded. The abc exceptional-set programme now has a two-way graph and Fourier transfer. For fixed powerfulness offsets the height-averaged count saves at least (1/sqrt(2)-o(1))*sqrt(log r)*r^(-3/2) from the trivial exponent. The graph improves individual abc boxes with valuation-one factors. The repaired FullOC program has exact optimum 7/12 and yields an upper count O(X^(7/12+epsilon)) for all 0<lambda<=1. Grouped-root energy and grouped residue constraints give a 106,845-leaf upper certificate at 1747/3000, improving the uniform abc exceptional-set exponent by 1/1000. Two tall terms and residue energies give a budget-one bound of 29/50 and improve intermediate-budget counts. Adaptive degree release gives a strict analytic saving at every fixed radical budget and the small-budget order lambda^(3/2)*sqrt(log(1/lambda)). Higher multiplicative moments and partial-modulus rational reconstruction give an analytic uniform abc count at exponent 287/500 and exact intermediate bounds 2/5 at 7/10 and 9/20 at 4/5. For sufficiently small radical budgets, dominant-power boxes give an exponent lambda/2 plus an absolute O(lambda^(3/2)) correction. The exact combined overlay gives unit-budget exponent 1070000267/2000000686 and a strict improvement of the preceding unit tree throughout [991/1000,1]. A quartic determinant and graph codegrees cut the former joint half profile and give stronger small-budget estimates in the stated dominant-coordinate boxes. Complete written all-degree diagonal Pade family restriction; the full compatible-kernel problem remains separate. Restricted-family bounds and conditional auxiliary-cover implications proved; no new full K_N(T) saving. The genus-three degree-2^9 maps give exact three-primary Selmer and Sha transfer for every quadratic twist. HG2 has common conductor 10D². For the marked-octic rank-four refinement, the remaining routes are unit-line separation or an arithmetic fifth class beyond the exhausted generic directions; changing any nonzero rational cubic scale supplies no new generic direction, and unit-line separation is the priority for the existing family.",
       "readme": "arithmetic/README.md",
       "results": [
         {
@@ -75735,7 +75769,7 @@
           "id": "ARITH-MARKED-OCTIC-CUBIC-COVER-EXACT-RATIONAL-THREE-TORSION",
           "title": "The marked genus-eleven cubic cover has exactly the four known rational three-torsion directions",
           "state": "proved",
-          "scope": "The Prym above the marked octic for every c in Q× has rational three-torsion exactly the three inherited marked classes and the divided boundary divisor of β. For v83(c) and v137(c) divisible by three this is also the entire rational three-torsion of the genus-eleven Jacobian, including c=3/7.",
+          "scope": "For every c in Q×, the full Jacobian of R²=F(cu³) and its Prym have rational three-torsion exactly (Z/3)^4, generated by the three inherited marked classes and the divided boundary divisor of β. No valuation restriction on c remains: the two checked mod-three Frobenius actions repeat by Chebotarev at primes 2 mod 3 avoiding any fixed c.",
           "canonical_source": "arithmetic/MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md",
           "evidence": [],
           "proof_type": "written+exact_certificate",
@@ -75744,8 +75778,8 @@
           "external_review": false,
           "review_status": "internal_only",
           "dependency_coverage": "partial",
-          "graph_scope_note": "The Prym above the marked octic for every c in Q× has rational three-torsion exactly the three inherited marked classes and the divided boundary divisor of β. For v83(c) and v137(c) divisible by three this is also the entire rational three-torsion of the genus-eleven Jacobian, including c=3/7.",
-          "verification_note": "Written ramification pushforward proof and sign-involution splitting. Exact finite-field quotient orders and order-nine Mumford divisor certificates give the sharp rank bounds. The elliptic boundary reduction at 17 detects nondivisibility by three.",
+          "graph_scope_note": "For every c in Q×, the full Jacobian of R²=F(cu³) and its Prym have rational three-torsion exactly (Z/3)^4, generated by the three inherited marked classes and the divided boundary divisor of β. No valuation restriction on c remains: the two checked mod-three Frobenius actions repeat by Chebotarev at primes 2 mod 3 avoiding any fixed c.",
+          "verification_note": "Written ramification pushforward proof, sign-involution splitting, and Chebotarev transport in Q(J0[3], μ3) for each quotient separately. SageMath 10.9 internally replayed the unchanged quotient Frobenius polynomials, order-nine Mumford divisors and elliptic boundary reduction at 17 for this deduction. No torsion-field computation, independent replay or external review is claimed.",
           "checker": "arithmetic/verify_marked_cubic_base_change_rational_torsion.py",
           "artifact_hash": "sha256:cedbe34a8ec26e33ee70ac8584068b79a012c0b44250661e4a832b9289279dd6"
         },
@@ -75753,7 +75787,7 @@
           "id": "ARITH-MARKED-OCTIC-CUBIC-COVER-NORM-FUNCTIONS-EXHAUSTED",
           "title": "All globally cube-divisible cubic norm functions on the marked cover lie in the four marked directions",
           "state": "proved",
-          "scope": "For the CK2 local range of c, a rational function on the cubic cover with divisor divisible by three and quadratic norm a rational-function cube lies in the span of α₁, α₂, α₃ and β modulo cubes. The identity specializes wherever the terms are defined and nonzero.",
+          "scope": "For every c in Q×, a rational function on R²=F(cu³) with divisor divisible by three and quadratic norm a rational-function cube lies in the span of α₁, α₂, α₃ and β modulo cubes. The identity specializes wherever the terms are defined and nonzero.",
           "canonical_source": "arithmetic/MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md",
           "evidence": [],
           "proof_type": "written",
@@ -75762,7 +75796,7 @@
           "external_review": false,
           "review_status": "internal_only",
           "dependency_coverage": "partial",
-          "graph_scope_note": "For the CK2 local range of c, a rational function on the cubic cover with divisor divisible by three and quadratic norm a rational-function cube lies in the span of α₁, α₂, α₃ and β modulo cubes. The identity specializes wherever the terms are defined and nonzero.",
+          "graph_scope_note": "For every c in Q×, a rational function on R²=F(cu³) with divisor divisible by three and quadratic norm a rational-function cube lies in the span of α₁, α₂, α₃ and β modulo cubes. The identity specializes wherever the terms are defined and nonzero.",
           "verification_note": "Written injectivity of the divided-divisor map on norm-cube function classes and exact basis input CK2.",
           "checker": null,
           "artifact_hash": null
@@ -75789,7 +75823,7 @@
           "id": "ARITH-MARKED-OCTIC-NO-DENSE-FIFTH-FIXED-VIRTUAL-FUNCTION",
           "title": "A fixed rational function on the marked cubic cover cannot give a fifth virtual class on a positive proportion",
           "state": "proved",
-          "scope": "In the CK2 local range of c, each fixed rational function yields a fifth independent virtual class at only o(H²) parameters of height at most H. No finite list can provide a uniform fifth class on a nonempty slice defined by finitely many local open conditions. This parameter-height statement imposes no density or upper count after changing to discriminant order.",
+          "scope": "For every fixed c in Q×, each fixed rational function on R²=F(cu³) yields a fifth independent virtual class at only o(H²) parameters of height at most H. No finite list can provide a uniform fifth class on a nonempty slice defined by finitely many local open conditions. VB2 gives the sharper O_c(H^(3/2) log H) bound; no uniformity over moving scales or functions, or upper count at unrestricted witness height, is asserted.",
           "canonical_source": "arithmetic/MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md",
           "evidence": [],
           "proof_type": "written",
@@ -75798,7 +75832,7 @@
           "external_review": false,
           "review_status": "internal_only",
           "dependency_coverage": "partial",
-          "graph_scope_note": "In the CK2 local range of c, each fixed rational function yields a fifth independent virtual class at only o(H²) parameters of height at most H. No finite list can provide a uniform fifth class on a nonempty slice defined by finitely many local open conditions. This parameter-height statement imposes no density or upper count after changing to discriminant order.",
+          "graph_scope_note": "For every fixed c in Q×, each fixed rational function on R²=F(cu³) yields a fifth independent virtual class at only o(H²) parameters of height at most H. No finite list can provide a uniform fifth class on a nonempty slice defined by finitely many local open conditions. VB2 gives the sharper O_c(H^(3/2) log H) bound; no uniformity over moving scales or functions, or upper count at unrestricted witness height, is asserted.",
           "verification_note": "Written application of the exact norm-function span, divisor virtuality obstruction and finite-place lattice density.",
           "checker": null,
           "artifact_hash": null
@@ -75861,7 +75895,7 @@
           "id": "ARITH-FIXED-QUADRATIC-MARKED-FUNCTION-OBSTRUCTION-FIELD-COUNT-SCALES",
           "title": "Fixed rational functions cannot add cubic directions at the established construction densities",
           "state": "proved",
-          "scope": "The four, two, and one marked classes exhaust the generic cube-divisor norm-cube functions on the marked genus-eleven cover, each fixed symmetric prime line, and the cubic tangent-square progression respectively. A fixed finite list adds independent virtual cubic classes at only O(H^(3/2) log H) parameters of height H. At the respective existing field-count heights the exceptional field counts are O(X^(1/16) log X), O_r(X^(1/4) log X), and O(X^(3/8) log X), below their lower exponents. No count at unrestricted height or uniformity over moving r or functions.",
+          "scope": "The four, two, and one marked classes exhaust the generic cube-divisor norm-cube functions on every fixed nonzero rational scaling of the marked genus-eleven cover, each fixed symmetric prime line, and the cubic tangent-square progression respectively. A fixed finite list adds independent virtual cubic classes at only O(H^(3/2) log H) parameters of height H. At the respective existing field-count heights the exceptional field counts are O(X^(1/16) log X), O_r(X^(1/4) log X), and O(X^(3/8) log X), below their lower exponents. No count at unrestricted height or uniformity over moving scales, r or functions.",
           "canonical_source": "arithmetic/QUADRATIC_VIRTUALITY_BINARY_FORM_POWER_OBSTRUCTIONS.md",
           "evidence": [],
           "checker": null,
@@ -75872,7 +75906,7 @@
           "external_review": false,
           "review_status": "internal_only",
           "dependency_coverage": "partial",
-          "graph_scope_note": "The four, two, and one marked classes exhaust the generic cube-divisor norm-cube functions on the marked genus-eleven cover, each fixed symmetric prime line, and the cubic tangent-square progression respectively. A fixed finite list adds independent virtual cubic classes at only O(H^(3/2) log H) parameters of height H. At the respective existing field-count heights the exceptional field counts are O(X^(1/16) log X), O_r(X^(1/4) log X), and O(X^(3/8) log X), below their lower exponents. No count at unrestricted height or uniformity over moving r or functions.",
+          "graph_scope_note": "The four, two, and one marked classes exhaust the generic cube-divisor norm-cube functions on every fixed nonzero rational scaling of the marked genus-eleven cover, each fixed symmetric prime line, and the cubic tangent-square progression respectively. A fixed finite list adds independent virtual cubic classes at only O(H^(3/2) log H) parameters of height H. At the respective existing field-count heights the exceptional field counts are O(X^(1/16) log X), O_r(X^(1/4) log X), and O(X^(3/8) log X), below their lower exponents. No count at unrestricted height or uniformity over moving scales, r or functions.",
           "verification_note": "Written prime-to-three quotient and divided-divisor arguments, followed by direct construction-height comparison with the known field lower counts."
         },
         {
@@ -75974,6 +76008,78 @@
               "locator": "Original elliptic maps, marked functions, and conductor inputs imported by the scale checker"
             }
           ]
+        },
+        {
+          "id": "ARITH-TATE-FOUR-AND-THREE-TORSION-MIXED-CUBIC-BOUNDARY-CLASSES",
+          "title": "Two boundary order-three-power marks and one inherited cubic mark coexist on a Tate cover",
+          "state": "proved",
+          "scope": "For every m=3^n, n≥1, the explicit Tate curve and t=−1664u^m give three independent geometric cube classes with divisor divisibilities m,m,3. The genus-(2m−1) Jacobian has a rational subgroup (Z/m)^2×Z/3.",
+          "canonical_source": "arithmetic/MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_mixed_three_power_boundary_torsion.py",
+          "artifact_hash": "sha256:2bacf6eec0376036d16d3a23111467eb364264e951dfe17c3e8a39fcf8b8c6bc",
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For every m=3^n, n≥1, the explicit Tate curve and t=−1664u^m give three independent geometric cube classes with divisor divisibilities m,m,3. The genus-(2m−1) Jacobian has a rational subgroup (Z/m)^2×Z/3.",
+          "verification_note": "Written torsion, tangent and boundary-divisor argument and Kummer independence, with exact elliptic torsion, quadratic formulas and norm-one checks."
+        },
+        {
+          "id": "ARITH-MIXED-THREE-POWER-MARKS-FIXED-LOCAL-PRIMES-ALL-EXPONENTS",
+          "title": "One set of local rows certifies three virtual marks for every fixed three-power exponent",
+          "state": "proved",
+          "scope": "For every m=3^n the three MP1 functions admit a nonempty fixed finite-place open unit parameter slice of virtual exponents m,m,3 and three independent residues modulo cubes. The same table of centers and characters works for all n. The primes 2,3,5,11,13,181 ramify and 157,173 split.",
+          "canonical_source": "arithmetic/MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_mixed_three_power_boundary_torsion.py",
+          "artifact_hash": "sha256:2bacf6eec0376036d16d3a23111467eb364264e951dfe17c3e8a39fcf8b8c6bc",
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For every m=3^n the three MP1 functions admit a nonempty fixed finite-place open unit parameter slice of virtual exponents m,m,3 and three independent residues modulo cubes. The same table of centers and characters works for all n. The primes 2,3,5,11,13,181 ramify and 157,173 split.",
+          "verification_note": "Exact rational squareclass valuations, unit image checks and finite-field rows, with a written proof covering all remaining primes."
+        },
+        {
+          "id": "ARITH-MIXED-THREE-POWER-QUADRATIC-CLASS-GROUPS-TWO-MOVING-PRIMES",
+          "title": "Both quadratic signs have mixed three-power class groups with two actual moving prime witnesses",
+          "state": "proved",
+          "scope": "For each fixed m=3^n there are ≫_m X^(1/(2m))/(log X)^2 fields of either sign in MP2. The imaginary class groups contain (Z/m)^2×Z/3 and the real groups contain Z/m×Z/3. Restricting to signed ratios of two genuine distinct rational primes preserves exponent 1/(2m) with a log-power loss. Both split. In the imaginary case their three-primary classes have exact order m and are independent of the inherited cubic class. In the real case at least one prime class retains exact three-primary order m.",
+          "canonical_source": "arithmetic/MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_mixed_three_power_boundary_torsion.py",
+          "artifact_hash": "sha256:2bacf6eec0376036d16d3a23111467eb364264e951dfe17c3e8a39fcf8b8c6bc",
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "For each fixed m=3^n there are ≫_m X^(1/(2m))/(log X)^2 fields of either sign in MP2. The imaginary class groups contain (Z/m)^2×Z/3 and the real groups contain Z/m×Z/3. Restricting to signed ratios of two genuine distinct rational primes preserves exponent 1/(2m) with a log-power loss. Both split. In the imaginary case their three-primary classes have exact order m and are independent of the inherited cubic class. In the real case at least one prime class retains exact three-primary order m.",
+          "verification_note": "Written norm-one valuations and unit quotient argument, fixed local quadratic specialization count and prime count with bounded discriminant-dependent multiplicity. The local certificates are reused from MP2."
+        },
+        {
+          "id": "ARITH-MIXED-THREE-POWER-POSITIVE-RANK-TWISTS-EXACT-CONDUCTOR",
+          "title": "The mixed three-power fields give positive-rank twists of conductor 27161D²",
+          "state": "proved",
+          "scope": "Apart from finitely many parameters in MP3, the quadratic twist of the explicit Tate curve by fundamental D has positive rank and exact conductor 27161D². For each sign the conductor count has exponent 1/(4m) with the respective unrestricted and prime-ratio logarithmic losses.",
+          "canonical_source": "arithmetic/MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md",
+          "evidence": [],
+          "checker": "arithmetic/verify_mixed_three_power_boundary_torsion.py",
+          "artifact_hash": "sha256:2bacf6eec0376036d16d3a23111467eb364264e951dfe17c3e8a39fcf8b8c6bc",
+          "proof_type": "written+exact_certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "graph_scope_note": "Apart from finitely many parameters in MP3, the quadratic twist of the explicit Tate curve by fundamental D has positive rank and exact conductor 27161D². For each sign the conductor count has exponent 1/(4m) with the respective unrestricted and prime-ratio logarithmic losses.",
+          "verification_note": "Written anti-invariant point argument, and exact base conductor, local squareclasses and conductor exponents checked in SageMath."
         }
       ],
       "open_questions": [
@@ -76784,7 +76890,7 @@
         {
           "node": "GAP-ARITH-MARKED-OCTIC-FIFTH-INDEPENDENT-VIRTUAL-CLASS",
           "kind": "mathematical",
-          "question": "On infinitely many distinct MO3 fields produce a virtual cubic class outside the four marked classes. To enlarge the split-at-three mirror extension also require a local cube above 3. CK2–CK3 and BS2–BS4 exclude a fifth generic cube-divisor norm function on every admissible cubic scale, while CK5 and VB4 give O(H^(3/2) log H) parameters for any fixed finite list of other functions. This leaves thinner families, field-dependent classes and different covers open; no bound for witnesses of unrestricted height is asserted.",
+          "question": "On infinitely many distinct MO3 fields produce a virtual cubic class outside the four marked classes. To enlarge the split-at-three mirror extension also require a local cube above 3. CK2–CK3 exclude a fifth generic cube-divisor norm function on every nonzero rational cubic scale, while CK5 and VB4 give O(H^(3/2) log H) parameters for any fixed finite list of other functions. This leaves thinner families, field-dependent classes and different covers open; no bound for witnesses of unrestricted height is asserted.",
           "source": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md"
         },
         {
@@ -76955,7 +77061,7 @@
         "Erdős #675: compatible safe assignments of square witnesses at all negative sites have joint modulus at least exp((2+o(1))*sqrt(N)). Their least positive CRT representatives remain uncontrolled; the actual return 2376 through 49 has modulus 44100. No lower exponent beyond Ho's c<25/72 is obtained.",
         "MO3–MO4 simultaneously give real class 3-rank at least three, imaginary mirror rank at least four, at least forty complex cubic fields of fundamental discriminant -3D, three positive-rank twists of conductors 28D²,252D²,126D², and ≫ X^(1/12)/(log X)^2 distinct real discriminants. Real rank four is not proved. BS4 has the same class-rank and field-count lower bounds on slices where all elliptic bad primes split, with conductors 1540D²,13860D²,6930D². Those slices are disjoint from MO3 by splitting at 5 and 11; the field sets of the two inequivalent covers are not proved disjoint.",
         "HG1 answers the stated Levin–Yan–Wiljanen genus-three existence question, with specialist proof and historical-priority review still open; geometric simplicity and full torsion are separate scopes. HG2 has common conductor 10D², with unchanged counting exponents. HG5 identifies all 3^n-Selmer and 3^n-Sha groups for every quadratic twist of either genus-three gluing through a degree-2^9 isogeny, without assuming Sha finite. The genus-eleven Prym addition isogeny has degree 3^6 and does not give this prime-to-three transfer.",
-        "CK2–CK3 exhaust rational three-torsion and cube-divisor norm functions on the MO3 cover. BS2–BS4 show that all twelve virtual cubic scales meet the full-Jacobian torsion bound, and the four locally cubic scales give two inequivalent covers; changing scale cannot add a generic fifth direction. CK5 and VB4 bound extra virtual classes from any fixed finite list of functions by O(H^(3/2) log H) parameters, hence O(X^(1/16) log X) fields through MO4 construction-height witnesses. No upper count at unrestricted height follows. Unit-line separation and a fifth arithmetic class from thinner families, field-dependent input or another cover remain open; obtaining independent markings in common fields of the two inequivalent covers requires a new infinitude and independence argument."
+        "CK2–CK3 exhaust rational three-torsion and cube-divisor norm functions on R²=F(cu³) for every c in Q×, by Chebotarev transport of the two quotient certificates. BS2–BS4 classify twelve virtual scales and two inequivalent locally cubic covers; these arithmetic restrictions do not restrict the torsion theorem. For every fixed scale and finite list of fixed functions, VB2 gives O_c(H^(3/2) log H) exceptional parameters. VB4 gives O(X^(1/16) log X) exceptional fields through MO4 construction-height witnesses, below the established lower count; no upper count at unrestricted witness height follows. Prioritize W intersect U=0 via fundamental units and three-adic regulators. Thinner families, field-dependent elements, different covers and independent markings in common fields remain possible, with their infinitude and independence obligations open."
       ],
       "gap_ids": [
         "GAP-ARITHMETIC-1",
@@ -289412,7 +289518,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-            "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+            "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
             "locator": "Section 1, odd Gaussian implicit root expansions and Bezout"
           }
         ]
@@ -289430,7 +289536,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-            "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+            "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
             "locator": "Sections 2–3, two successive residue conditions and the constant-zero chart"
           }
         ]
@@ -289448,7 +289554,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-            "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+            "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
             "locator": "Section 5, middle-order valuation and the two compressed Hermite polynomials"
           }
         ]
@@ -289466,7 +289572,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-            "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+            "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
             "locator": "Section 7, dominant initial prime powers and compressed residual coefficients"
           },
           {
@@ -289494,7 +289600,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-            "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+            "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
             "locator": "Section 6, coefficient valuation bounds and initial forms at primes dividing any of the three orders"
           }
         ]
@@ -289512,7 +289618,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-            "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+            "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
             "locator": "Section 6, Exact coverage of odd starts"
           },
           {
@@ -289542,16 +289648,26 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-            "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+            "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
             "locator": "Sections 2–7, intermediate-prime lifting, dominant prime-power families and remaining initial-form collisions"
           },
           {
             "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_FINAL_RESIDUE_LIFTING.md",
             "sha256": "22564f593daec6e21ea6778af962e3aab6d8c674b0e8a58518761f330591dcc9",
             "locator": "Section 6: resolved dominant initial-prime family and separate unrestricted odd-start obligation"
+          },
+          {
+            "path": "factorial/image-rigidity/verify_sfc_odd_gaussian_middle_layer.py",
+            "sha256": "75d59283f413de454790cd5f0f0a3d6d5a268f7706a28cec85cc85c0cdcf83dc",
+            "locator": "check_layers: complete e=2,3 inventories and full leading-row division; leading_rows_mod_square at e=2,...,6"
+          },
+          {
+            "path": "factorial/image-rigidity/sfc_odd_gaussian_middle_layer_verification.json",
+            "sha256": "5f1d63e8e6f8d3ad1cb8f55426a8d633d7c448ca37a868fa6e62be8e8fc22375",
+            "locator": "Internal finite normalized-layer replay, including child and row-unit corruption controls; no all-exponent inference"
           }
         ],
-        "next_action": "The entire dominant initial-prime family q=(2k+1)p^e,p>4k+2 is now closed, including every q=9*89^e. Study odd starts without such a dominant divisor and outside the other verified prime-local families. Retain the same-point coefficient and physical-lift conditions; a longer finite prefix does not settle the unrestricted endpoint.",
+        "next_action": "For the exceptional middle-order family n=6*31^e, establish normalized compatibility through valuation one uniformly in e>=3, including coefficient congruence errors. The complete e=2 inventory first separates at 945/961 after fifteen tangent layers; e=3 has no transverse term below one. Exact leading-row W(7)=31*17 mod 31^2 at e=2,...,6 suggests a valuation-one route but is only finite evidence. The wider odd-start obligation remains open.",
         "context_references": [
           {
             "path": "factorial/image-rigidity/SFC_BIVARIATE_TRANSLATION_GAUSSIAN_JETS.md",
@@ -290076,7 +290192,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-            "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+            "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
             "locator": "Sections 3–4, projective reduction and exact prefix"
           },
           {
@@ -290600,7 +290716,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-            "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+            "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
             "locator": "Section 3, equation (3) and the prime 109 example"
           },
           {
@@ -290630,7 +290746,7 @@
       {
         "id": "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION",
         "title": "Three-variable sextic Keller inversion",
-        "scope": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections obey E_2=b*x*P^2 mod x^2 and E_3=c*x*P^2 mod x^3. For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The remaining normalized common factors are g=p with q=x^2, g=q=xy, or g=x^2 with binary q and p=xz+y^2. In the reduced in-pencil case g=q=xy, the entire degree-five error can be absorbed by a polynomial reference satisfying the conic relation. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
+        "scope": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections obey E_2=b*x*P^2 mod x^2 and E_3=c*x*P^2 mod x^3. For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The remaining normalized common factors are g=p with q=x^2, or g=x^2 with binary q, with p=xz+y^2. In the latter case with q(0,y) nonzero, the degree-five error is absorbed by a Veronese reference. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
         "kind": "gap",
         "status": "open",
         "origin": "internal",
@@ -290638,7 +290754,7 @@
         "gap_kind": "mathematical",
         "evidence_type": "mathematical_obligation",
         "dependency_coverage": "partial",
-        "next_action": "Handle the cubic outer map cuspidal at the square member and the three remaining common-factor frames for quadratic outer maps on tangent-conic pencils. Study the weight thresholds for transverse degree one. For lower leading rank, study the nonbinary square-member case of the reduced (6,4,4) profile, (6,5,4) with a repeated lower leading factor, and the non-ordinary-cusp derivative lines in binary mixed profiles with lower forms sharing a factor.",
+        "next_action": "Handle the cubic outer map cuspidal at the square member and the two remaining common-factor frames for quadratic outer maps on tangent-conic pencils. Study the weight thresholds for transverse degree one. For lower leading rank, study the nonbinary square-member case of the reduced (6,4,4) profile, (6,5,4) with a repeated lower leading factor, and the non-ordinary-cusp derivative lines in binary mixed profiles with lower forms sharing a factor.",
         "sources": [
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md",
@@ -291077,18 +291193,28 @@
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "a4d5b56668e9704ada21d6d36634c132eb68c7eb7322e00362ac859d3f655dc7",
+            "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
             "locator": "KellerSexticConicLeadingDiscriminantExclusion"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "a4d5b56668e9704ada21d6d36634c132eb68c7eb7322e00362ac859d3f655dc7",
+            "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
             "locator": "SexticKellerTangentConicQuadraticOuterNonpencilSquarefreeExclusion"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "a4d5b56668e9704ada21d6d36634c132eb68c7eb7322e00362ac859d3f655dc7",
+            "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
             "locator": "SexticKellerTangentConicReducedCommonFactorFirstCorrection"
+          },
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+            "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
+            "locator": "SexticKellerTangentConicReducedCommonFactorExclusion"
+          },
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+            "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
+            "locator": "SexticKellerTangentConicSquareCommonFactorTransverseFirstCorrection"
           }
         ]
       },
@@ -295668,7 +295794,7 @@
         "sources": [
           {
             "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-            "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+            "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
             "locator": "Section 7, projective chart, lower bound for h, pure Hermite Newton polygons and final S_k(Z),S_k(2Z) test; excludes the new shared-edge proof"
           }
         ]
@@ -296839,7 +296965,7 @@
         "sources": [
           {
             "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-            "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+            "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
             "locator": "Proposition MO8"
           }
         ]
@@ -296859,18 +296985,18 @@
         "sources": [
           {
             "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-            "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+            "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
             "locator": "Proposition MO7 and the remaining real-unit loss"
           }
         ],
-        "next_action": "Establish marked-space separation from the real unit line, or construct a fifth arithmetic virtual class on infinitely many MO3 fields. CK2–CK5, VB4 and BS2–BS4 close the generic fixed-cover and admissible-scale searches; an MO4-strength count needs a uniform slice or a separate quantitative argument."
+        "next_action": "Prioritize W intersect U=0 via the sufficient fundamental-unit noncube condition above 3, studying units and three-adic regulators. CK2–CK3 exclude a fifth generic cube-divisor norm function on every nonzero rational scale, and VB4 rules out a fixed finite list at the existing construction density. Thinner or field-dependent alternatives remain open; an MO4-strength count still needs a uniform admissible slice or a separate quantitative argument."
       },
       {
         "id": "GAP-ARITH-MARKED-OCTIC-FIFTH-INDEPENDENT-VIRTUAL-CLASS",
         "title": "Find a fifth arithmetic virtual class beyond the exhausted generic directions",
         "kind": "gap",
         "status": "open",
-        "scope": "On infinitely many distinct MO3 fields produce a virtual cubic class outside the four marked classes. To enlarge the split-at-three mirror extension also require a local cube above 3. CK2–CK3 and BS2–BS4 exclude a fifth generic cube-divisor norm function on every admissible cubic scale, while CK5 and VB4 give O(H^(3/2) log H) parameters for any fixed finite list of other functions. This leaves thinner families, field-dependent classes and different covers open; no bound for witnesses of unrestricted height is asserted.",
+        "scope": "On infinitely many distinct MO3 fields produce a virtual cubic class outside the four marked classes. To enlarge the split-at-three mirror extension also require a local cube above 3. CK2–CK3 exclude a fifth generic cube-divisor norm function on every nonzero rational cubic scale, while CK5 and VB4 give O(H^(3/2) log H) parameters for any fixed finite list of other functions. This leaves thinner families, field-dependent classes and different covers open; no bound for witnesses of unrestricted height is asserted.",
         "topic": "arithmetic",
         "gap_kind": "mathematical",
         "endpoint_role": "alternative_method",
@@ -296880,22 +297006,22 @@
         "sources": [
           {
             "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-            "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+            "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
             "locator": "Propositions MO6–MO7"
           },
           {
             "path": "arithmetic/MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md",
-            "sha256": "34c96f1388aa1f9f7c3d27d8be7ee011b7ccfae64c18332749dcfc6178d8b6a2",
+            "sha256": "5c5d5abecffe6b5d7552a27b9f2b7f3686a5172e2181b63bf0c785bfe8b23aed",
             "locator": "Theorem CK2 and Corollary CK5, excluded mechanisms"
           },
           {
             "path": "arithmetic/QUADRATIC_VIRTUALITY_BINARY_FORM_POWER_OBSTRUCTIONS.md",
-            "sha256": "2d1df8c0d961055bba5cc6808759afd1d08ff1ab09bc5a0a03525aaa54890bcf",
+            "sha256": "096d4315ec2fe8ea639ad3dae0ff674bb037711a58083f7c90d06c81e9a39e07",
             "locator": "Corollary VB4, power-saving obstruction at the construction heights"
           },
           {
             "path": "arithmetic/MARKED_OCTIC_BETA_CUBIC_SCALE_CLASSIFICATION.md",
-            "sha256": "e96512a6c0763cae6fc73d996bf0732a33df177d423bf8d4c7742b2c064fb894",
+            "sha256": "d0f6cf6ee814f95bc16ad62bc0e949ef4e92fb5bda7d80369cd8c0173362a9d2",
             "locator": "BS4, two inequivalent scales and the common-field route"
           }
         ],
@@ -296916,11 +297042,11 @@
         "sources": [
           {
             "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-            "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+            "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
             "locator": "Proposition MO7"
           }
         ],
-        "next_action": "Test a structural unit-line separation proof or the sufficient fundamental-unit noncube condition at 3."
+        "next_action": "Prioritize a structural unit-line separation proof or the sufficient fundamental-unit noncube condition at 3; the fixed-function and all-scale torsion obstructions leave this arithmetic condition open."
       },
       {
         "id": "GAP-ARITH-MARKED-OCTIC-FUNDAMENTAL-UNIT-NONCUBE-AT-THREE",
@@ -296937,11 +297063,11 @@
         "sources": [
           {
             "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-            "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+            "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
             "locator": "Proposition MO7, localization on the real unit line"
           }
         ],
-        "next_action": "Relate the MO3 local parameter conditions to the fundamental unit or regulator; finite unit computations alone prove no infinite family or count."
+        "next_action": "Relate the MO3 local parameter conditions to fundamental units and three-adic regulators, seeking noncube localization above 3 on infinitely many fields. Finite unit computations alone prove no infinite family or construction-scale count."
       },
       {
         "id": "VERIFY-ARITH-GENUS-THREE-RATIONAL-THREE-RANK-THREE-PRIORITY",
@@ -297149,7 +297275,7 @@
         "sources": [
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "a4d5b56668e9704ada21d6d36634c132eb68c7eb7322e00362ac859d3f655dc7",
+            "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
             "locator": "KellerSexticConicLeadingDiscriminantExclusion"
           }
         ],
@@ -297158,6 +297284,24 @@
         "kind": "source",
         "status": "proved",
         "dependency_coverage": "complete"
+      },
+      {
+        "id": "EXT-ARITH-KULKARNI-LEVIN-QUADRATIC-LOCAL-SPECIALIZATION-COUNT",
+        "title": "Kulkarni–Levin quantitative quadratic specializations with local constraints",
+        "scope": "For a fixed degree-two map from a smooth curve to the rational parameter line, a fixed thin exceptional set, fixed local balls at finitely many places, and rational height H, there are ≫ H²/(log H)² different quadratic fields from the remaining preimages meeting the local bounds. Arbitrary nonempty fixed local neighborhoods can be reduced to the stated balls by a rational translation chosen by weak approximation.",
+        "topic": "arithmetic",
+        "kind": "claim",
+        "status": "proved",
+        "origin": "external",
+        "dependency_coverage": "partial",
+        "evidence_type": "external_theorem",
+        "sources": [
+          {
+            "path": "arithmetic/sources/kulkarni-levin-hilbert-irreducibility-2111.15582.pdf",
+            "sha256": "26a9e645b55d70a253be2017cc8d656be188ed9c02350c21884286c60b015aae",
+            "locator": "Theorem 1.2 and Section 3, author copy pp. 2, 6–7"
+          }
+        ]
       }
     ],
     "implications": [
@@ -470458,7 +470602,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-          "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+          "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
           "locator": "Section 1, isolation at h=0 and distinct cubic terms"
         }
       },
@@ -471074,7 +471218,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-          "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+          "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
           "locator": "Sections 2–7, local exclusions, exact coverage and prime-power families"
         }
       },
@@ -477955,7 +478099,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-          "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+          "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
           "locator": "Section 7, complete dominant initial-prime theorem combining the internal-edge and both final secondary layers"
         }
       },
@@ -478866,7 +479010,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-          "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+          "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
           "locator": "Theorem MO1"
         }
       },
@@ -478885,7 +479029,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-          "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+          "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
           "locator": "Theorem MO2"
         }
       },
@@ -478902,7 +479046,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-          "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+          "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
           "locator": "Theorem MO3"
         }
       },
@@ -478917,7 +479061,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-          "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+          "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
           "locator": "Corollary MO4"
         }
       },
@@ -478931,7 +479075,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-          "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+          "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
           "locator": "Theorem MO5"
         }
       },
@@ -479558,7 +479702,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-          "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+          "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
           "locator": "Proposition MO6"
         }
       },
@@ -479572,7 +479716,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-          "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+          "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
           "locator": "Proposition MO7"
         }
       },
@@ -479586,7 +479730,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-          "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+          "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
           "locator": "Proposition MO8"
         }
       },
@@ -479602,7 +479746,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-          "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+          "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
           "locator": "Proposition MO7, five virtual classes lose at most one unit direction"
         }
       },
@@ -479618,7 +479762,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-          "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+          "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
           "locator": "Proposition MO7, dimension of the marked class-group image"
         }
       },
@@ -479634,7 +479778,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-          "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+          "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
           "locator": "Proposition MO7, injective localization on the unit line"
         }
       },
@@ -479750,15 +479894,16 @@
           "ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL",
           "ARITH-MARKED-OCTIC-BOUNDARY-DIVISOR-EXACT-ODD-PRIME-ORDER",
           "ARITH-MARKED-OCTIC-GENUS-ELEVEN-PRYM-AND-THREE-POWER-ISOGENY",
-          "ARITH-GENUS-THREE-EXACT-THREE-PRIMARY-SELMER-TRANSFER"
+          "ARITH-GENUS-THREE-EXACT-THREE-PRIMARY-SELMER-TRANSFER",
+          "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY"
         ],
         "conclusion": "ARITH-MARKED-OCTIC-CUBIC-COVER-EXACT-RATIONAL-THREE-TORSION",
         "status": "proved",
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md",
-          "sha256": "34c96f1388aa1f9f7c3d27d8be7ee011b7ccfae64c18332749dcfc6178d8b6a2",
-          "locator": "Theorem CK2"
+          "sha256": "5c5d5abecffe6b5d7552a27b9f2b7f3686a5172e2181b63bf0c785bfe8b23aed",
+          "locator": "Theorem CK2, quotient certificates and Chebotarev transport of mod-three Frobenius on each quotient with μ3"
         }
       },
       {
@@ -479773,7 +479918,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md",
-          "sha256": "34c96f1388aa1f9f7c3d27d8be7ee011b7ccfae64c18332749dcfc6178d8b6a2",
+          "sha256": "5c5d5abecffe6b5d7552a27b9f2b7f3686a5172e2181b63bf0c785bfe8b23aed",
           "locator": "Corollary CK3"
         }
       },
@@ -479787,7 +479932,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md",
-          "sha256": "34c96f1388aa1f9f7c3d27d8be7ee011b7ccfae64c18332749dcfc6178d8b6a2",
+          "sha256": "5c5d5abecffe6b5d7552a27b9f2b7f3686a5172e2181b63bf0c785bfe8b23aed",
           "locator": "Proposition CK4"
         }
       },
@@ -479802,7 +479947,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md",
-          "sha256": "34c96f1388aa1f9f7c3d27d8be7ee011b7ccfae64c18332749dcfc6178d8b6a2",
+          "sha256": "5c5d5abecffe6b5d7552a27b9f2b7f3686a5172e2181b63bf0c785bfe8b23aed",
           "locator": "Corollary CK5"
         }
       },
@@ -479865,7 +480010,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/QUADRATIC_VIRTUALITY_BINARY_FORM_POWER_OBSTRUCTIONS.md",
-          "sha256": "2d1df8c0d961055bba5cc6808759afd1d08ff1ab09bc5a0a03525aaa54890bcf",
+          "sha256": "096d4315ec2fe8ea639ad3dae0ff674bb037711a58083f7c90d06c81e9a39e07",
           "locator": "Corollary VB2"
         }
       },
@@ -479881,7 +480026,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/QUADRATIC_VIRTUALITY_BINARY_FORM_POWER_OBSTRUCTIONS.md",
-          "sha256": "2d1df8c0d961055bba5cc6808759afd1d08ff1ab09bc5a0a03525aaa54890bcf",
+          "sha256": "096d4315ec2fe8ea639ad3dae0ff674bb037711a58083f7c90d06c81e9a39e07",
           "locator": "Corollary VB3"
         }
       },
@@ -479903,7 +480048,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/QUADRATIC_VIRTUALITY_BINARY_FORM_POWER_OBSTRUCTIONS.md",
-          "sha256": "2d1df8c0d961055bba5cc6808759afd1d08ff1ab09bc5a0a03525aaa54890bcf",
+          "sha256": "096d4315ec2fe8ea639ad3dae0ff674bb037711a58083f7c90d06c81e9a39e07",
           "locator": "Corollary VB4"
         }
       },
@@ -479917,7 +480062,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md",
-          "sha256": "34c96f1388aa1f9f7c3d27d8be7ee011b7ccfae64c18332749dcfc6178d8b6a2",
+          "sha256": "5c5d5abecffe6b5d7552a27b9f2b7f3686a5172e2181b63bf0c785bfe8b23aed",
           "locator": "Proposition CK1"
         }
       },
@@ -479931,7 +480076,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/QUADRATIC_VIRTUALITY_BINARY_FORM_POWER_OBSTRUCTIONS.md",
-          "sha256": "2d1df8c0d961055bba5cc6808759afd1d08ff1ab09bc5a0a03525aaa54890bcf",
+          "sha256": "096d4315ec2fe8ea639ad3dae0ff674bb037711a58083f7c90d06c81e9a39e07",
           "locator": "Proposition VB1"
         }
       },
@@ -479946,7 +480091,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "a4d5b56668e9704ada21d6d36634c132eb68c7eb7322e00362ac859d3f655dc7",
+          "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
           "locator": "SexticKellerTangentConicQuadraticOuterNonpencilSquarefreeExclusion"
         }
       },
@@ -479960,7 +480105,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/MARKED_OCTIC_BETA_CUBIC_SCALE_CLASSIFICATION.md",
-          "sha256": "e96512a6c0763cae6fc73d996bf0732a33df177d423bf8d4c7742b2c064fb894",
+          "sha256": "d0f6cf6ee814f95bc16ad62bc0e949ef4e92fb5bda7d80369cd8c0173362a9d2",
           "locator": "Proposition BS1"
         }
       },
@@ -479975,7 +480120,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/MARKED_OCTIC_BETA_CUBIC_SCALE_CLASSIFICATION.md",
-          "sha256": "e96512a6c0763cae6fc73d996bf0732a33df177d423bf8d4c7742b2c064fb894",
+          "sha256": "d0f6cf6ee814f95bc16ad62bc0e949ef4e92fb5bda7d80369cd8c0173362a9d2",
           "locator": "Corollary BS2"
         }
       },
@@ -479992,7 +480137,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/MARKED_OCTIC_BETA_CUBIC_SCALE_CLASSIFICATION.md",
-          "sha256": "e96512a6c0763cae6fc73d996bf0732a33df177d423bf8d4c7742b2c064fb894",
+          "sha256": "d0f6cf6ee814f95bc16ad62bc0e949ef4e92fb5bda7d80369cd8c0173362a9d2",
           "locator": "Proposition BS3"
         }
       },
@@ -480013,7 +480158,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/MARKED_OCTIC_BETA_CUBIC_SCALE_CLASSIFICATION.md",
-          "sha256": "e96512a6c0763cae6fc73d996bf0732a33df177d423bf8d4c7742b2c064fb894",
+          "sha256": "d0f6cf6ee814f95bc16ad62bc0e949ef4e92fb5bda7d80369cd8c0173362a9d2",
           "locator": "Theorem BS4"
         }
       },
@@ -480028,8 +480173,102 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "a4d5b56668e9704ada21d6d36634c132eb68c7eb7322e00362ac859d3f655dc7",
+          "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
           "locator": "SexticKellerTangentConicReducedCommonFactorFirstCorrection"
+        }
+      },
+      {
+        "id": "DERIVE-JAC-SEXTIC-KELLER-TANGENT-CONIC-REDUCED-COMMON-FACTOR-EXCLUSION",
+        "premises": [
+          "JAC-SEXTIC-KELLER-TANGENT-CONIC-REDUCED-COMMON-FACTOR-FIRST-CORRECTION",
+          "JAC-KELLER-LEADING-PAIR-RATIONAL-SLICE",
+          "JAC-SEXTIC-KELLER-HIGH-TRANSVERSE-QUARTIC-FACTOR-REDUCTION"
+        ],
+        "conclusion": "JAC-SEXTIC-KELLER-TANGENT-CONIC-REDUCED-COMMON-FACTOR-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+          "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
+          "locator": "SexticKellerTangentConicReducedCommonFactorExclusion"
+        }
+      },
+      {
+        "id": "TWO-BOUNDARY-FIBRE-KUMMER-TEST-TO-TATE-MIXED-THREE-POWER-TORSION",
+        "premises": [
+          "ARITH-MARKED-OCTIC-BOUNDARY-DIVISOR-EXACT-ODD-PRIME-ORDER"
+        ],
+        "conclusion": "ARITH-TATE-FOUR-AND-THREE-TORSION-MIXED-CUBIC-BOUNDARY-CLASSES",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md",
+          "sha256": "401f10135aaee37b0d63b99a87cd90410a9cb3007243de14b76b36399a264f0d",
+          "locator": "Proposition MP1"
+        }
+      },
+      {
+        "id": "TATE-MIXED-TORSION-FUNCTIONS-TO-FIXED-LOCAL-ROWS-FOR-ALL-THREE-POWERS",
+        "premises": [
+          "ARITH-TATE-FOUR-AND-THREE-TORSION-MIXED-CUBIC-BOUNDARY-CLASSES",
+          "ARITH-QUADRATIC-VIRTUALITY-EXACT-BINARY-FORM-POWER-VALUATIONS"
+        ],
+        "conclusion": "ARITH-MIXED-THREE-POWER-MARKS-FIXED-LOCAL-PRIMES-ALL-EXPONENTS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md",
+          "sha256": "401f10135aaee37b0d63b99a87cd90410a9cb3007243de14b76b36399a264f0d",
+          "locator": "Proposition MP2"
+        }
+      },
+      {
+        "id": "MIXED-THREE-POWER-LOCAL-ROWS-TO-QUADRATIC-CLASS-GROUPS-AND-MOVING-PRIMES",
+        "premises": [
+          "ARITH-MIXED-THREE-POWER-MARKS-FIXED-LOCAL-PRIMES-ALL-EXPONENTS",
+          "EXT-ARITH-KULKARNI-LEVIN-QUADRATIC-LOCAL-SPECIALIZATION-COUNT",
+          "ARITH-ABC-PRIME-PROGRESSION-GENUS-TWO-TWIST-MULTIPLICITY",
+          "ARITH-ABC-PRIME-PROGRESSION-COHERENT-NORM-FIELD-COUNT",
+          "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+          "EXT-GAO-GE-KUEHNE-UNIFORM-MORDELL-LANG"
+        ],
+        "conclusion": "ARITH-MIXED-THREE-POWER-QUADRATIC-CLASS-GROUPS-TWO-MOVING-PRIMES",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md",
+          "sha256": "401f10135aaee37b0d63b99a87cd90410a9cb3007243de14b76b36399a264f0d",
+          "locator": "Theorem MP3"
+        }
+      },
+      {
+        "id": "MIXED-THREE-POWER-FIELDS-TO-POSITIVE-RANK-TWISTS-AND-CONDUCTOR-COUNT",
+        "premises": [
+          "ARITH-MIXED-THREE-POWER-QUADRATIC-CLASS-GROUPS-TWO-MOVING-PRIMES"
+        ],
+        "conclusion": "ARITH-MIXED-THREE-POWER-POSITIVE-RANK-TWISTS-EXACT-CONDUCTOR",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "arithmetic/MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md",
+          "sha256": "401f10135aaee37b0d63b99a87cd90410a9cb3007243de14b76b36399a264f0d",
+          "locator": "Corollary MP4"
+        }
+      },
+      {
+        "id": "DERIVE-JAC-SEXTIC-KELLER-TANGENT-CONIC-SQUARE-COMMON-FACTOR-TRANSVERSE-FIRST-CORRECTION",
+        "premises": [
+          "JAC-SEXTIC-KELLER-TANGENT-CONIC-QUADRATIC-OUTER-NONPENCIL-SQUAREFREE-EXCLUSION",
+          "JAC-KELLER-SEXTIC-CONIC-LEADING-DISCRIMINANT-EXCLUSION",
+          "JAC-KELLER-LEADING-PAIR-RATIONAL-SLICE"
+        ],
+        "conclusion": "JAC-SEXTIC-KELLER-TANGENT-CONIC-SQUARE-COMMON-FACTOR-TRANSVERSE-FIRST-CORRECTION",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+          "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
+          "locator": "SexticKellerTangentConicSquareCommonFactorTransverseFirstCorrection"
         }
       }
     ],
@@ -512243,6 +512482,15 @@
               "nodes": [
                 "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY",
                 "ARITH-QUADRATIC-PARAMETER-VIRTUALITY-NECESSARY-DIVISOR-POWER"
+              ]
+            },
+            {
+              "path": "arithmetic/MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md",
+              "locator": "CK2; Theorem 3.1, page 3, applied separately to Q(J0[3], μ3); the repeated class is nontrivial on μ3 and avoids any fixed finite set of primes",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-CHEBOTAREV-NATURAL-FROBENIUS-DENSITY",
+                "ARITH-MARKED-OCTIC-CUBIC-COVER-EXACT-RATIONAL-THREE-TORSION"
               ]
             }
           ],
@@ -562439,6 +562687,48 @@
           ],
           "verification": "source_read",
           "verification_basis": "Inspected the exact locally cyclic hypothesis, injectivity and dual connectedness statement and the proof by ruling out an étale factor."
+        },
+        {
+          "id": "REF-ARITH-KULKARNI-LEVIN-QUADRATIC-HILBERT-IRREDUCIBILITY-2022",
+          "title": "Hilbert’s Irreducibility Theorem and ideal class groups of quadratic fields",
+          "citation": "Kaivalya R. Kulkarni and Aaron Levin, Acta Arithmetica 205 (2022), 371–380.",
+          "identifiers": {
+            "arxiv": "2111.15582",
+            "doi": "10.4064/aa211224-22-9"
+          },
+          "urls": [
+            "https://arxiv.org/pdf/2111.15582",
+            "https://doi.org/10.4064/aa211224-22-9"
+          ],
+          "local_sources": [
+            {
+              "path": "arithmetic/sources/kulkarni-levin-hilbert-irreducibility-2111.15582.pdf",
+              "sha256": "26a9e645b55d70a253be2017cc8d656be188ed9c02350c21884286c60b015aae",
+              "locator": "Theorem 1.2, Corollary 1.4, Theorem 1.5 and Section 3"
+            }
+          ],
+          "resource_type": "paper",
+          "uses": [
+            {
+              "path": "arithmetic/MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md",
+              "locator": "MP3, fixed degree-two map with finitely many local balls",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-ARITH-KULKARNI-LEVIN-QUADRATIC-LOCAL-SPECIALIZATION-COUNT",
+                "ARITH-MIXED-THREE-POWER-QUADRATIC-CLASS-GROUPS-TWO-MOVING-PRIMES"
+              ]
+            },
+            {
+              "path": "arithmetic/MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md",
+              "locator": "MP3, comparison with two equal high orders and with elementary cubic rank three",
+              "role": "context",
+              "nodes": [
+                "ARITH-MIXED-THREE-POWER-QUADRATIC-CLASS-GROUPS-TWO-MOVING-PRIMES"
+              ]
+            }
+          ],
+          "verification": "source_read",
+          "verification_basis": "Theorem 1.2 and its proof setup checked directly, including quadratic degree, fixed thin exclusion, local and height conditions. Corollary 1.4 and Theorem 1.5 give the stated comparison scopes."
         }
       ],
       "internal_citations": [
@@ -647856,7 +648146,7 @@
         },
         {
           "path": "factorial/image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md",
-          "sha256": "b795bd8087b3b73c26d525731c8cd57824b7a2b03e577cdeece5d03dc749b9ef",
+          "sha256": "24611ce82e62552b192157b7b9f81288591cafcecaf261fe20bd0a4812649697",
           "role": "proof",
           "claims": [
             "FACTORIAL-SFC-ODD-GAUSSIAN-LOCAL-WINDOW-TESTS-ODD-PAIR",
@@ -647911,7 +648201,7 @@
               ]
             }
           ],
-          "explanation": "Odd-pair degree and odd-start intermediate-prime lifting obstructions, with the extended exact coverage and prime-power families. The initial prime-power theorem now uses the linked shared-edge proof and has no character restriction. The linked final-residue proof removes the resultant condition at exponent one and nonresidue primes."
+          "explanation": "Odd-pair degree and odd-start intermediate-prime lifting obstructions, with the extended exact coverage and prime-power families. The initial prime-power theorem now uses the linked shared-edge proof and has no character restriction. The linked final-residue proof removes the resultant condition at exponent one and nonresidue primes. The exceptional middle prime 31 now has complete normalized finite controls at e=2,3 and a separate valuation-one obligation; this does not remove the middle-resultant exception."
         },
         {
           "path": "factorial/image-rigidity/SFC_ORDINARY_SEARCH_NEAR_PHYSICAL_COLLISION.md",
@@ -777700,7 +777990,7 @@
         },
         {
           "path": "arithmetic/QUADRATIC_MIRROR_CLASS_RANK_FOUR_FROM_MARKED_OCTIC.md",
-          "sha256": "62827e3e79088f34fffec558aede28444053375359d4e1bce2371191276d19fd",
+          "sha256": "f829b756096b6ab20bb3fa8a76524dd0ae940dc4cc5be8933d40f965ad9fcde9",
           "role": "proof",
           "claims": [
             "ARITH-MARKED-OCTIC-SECOND-THREE-ELLIPTIC-QUOTIENT-MODEL",
@@ -777799,7 +778089,7 @@
             {
               "locator": "Proposition MO7.** For a real field \\(K\\) in MO3, put",
               "kind": "proposition",
-              "line": 499,
+              "line": 502,
               "title": "Proposition MO7.** For a real field \\(K\\) in MO3, put",
               "nodes": [
                 "ARITH-MARKED-OCTIC-REAL-UNIT-LINE-AND-FIFTH-CLASS-CRITERIA"
@@ -777809,7 +778099,7 @@
             {
               "locator": "Proposition MO8.** In characteristic zero there is no",
               "kind": "proposition",
-              "line": 541,
+              "line": 549,
               "title": "Proposition MO8.** In characteristic zero there is no",
               "nodes": [
                 "ARITH-P1-THREE-FULLY-CUBICIZED-FIBRES-OBSTRUCTION"
@@ -778656,7 +778946,7 @@
         },
         {
           "path": "arithmetic/MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md",
-          "sha256": "34c96f1388aa1f9f7c3d27d8be7ee011b7ccfae64c18332749dcfc6178d8b6a2",
+          "sha256": "5c5d5abecffe6b5d7552a27b9f2b7f3686a5172e2181b63bf0c785bfe8b23aed",
           "role": "proof",
           "claims": [
             "ARITH-CUBIC-PRYM-RATIONAL-THREE-TORSION-RAMIFICATION-DIVISOR-CRITERION",
@@ -778686,7 +778976,7 @@
             {
               "locator": "Proposition CK1.** Let \\(C\\) be a smooth projective",
               "kind": "proposition",
-              "line": 25,
+              "line": 26,
               "title": "Proposition CK1.** Let \\(C\\) be a smooth projective",
               "nodes": [
                 "ARITH-CUBIC-PRYM-RATIONAL-THREE-TORSION-RAMIFICATION-DIVISOR-CRITERION"
@@ -778696,7 +778986,7 @@
             {
               "locator": "Theorem CK2.** Put",
               "kind": "theorem",
-              "line": 118,
+              "line": 119,
               "title": "Theorem CK2.** Put",
               "nodes": [
                 "ARITH-MARKED-OCTIC-CUBIC-COVER-EXACT-RATIONAL-THREE-TORSION"
@@ -778704,10 +778994,10 @@
               "mapping_kind": "exact-statement"
             },
             {
-              "locator": "Corollary CK3.** Under the two local conditions on \\(c\\)",
+              "locator": "Corollary CK3.** For every \\(c\\in\\mathbb Q^\\times\\),",
               "kind": "corollary",
-              "line": 223,
-              "title": "Corollary CK3.** Under the two local conditions on \\(c\\)",
+              "line": 269,
+              "title": "Corollary CK3.** For every \\(c\\in\\mathbb Q^\\times\\),",
               "nodes": [
                 "ARITH-MARKED-OCTIC-CUBIC-COVER-NORM-FUNCTIONS-EXHAUSTED"
               ],
@@ -778716,7 +779006,7 @@
             {
               "locator": "Proposition CK4.** Let \\(C/\\mathbb Q\\) be the smooth",
               "kind": "proposition",
-              "line": 254,
+              "line": 300,
               "title": "Proposition CK4.** Let \\(C/\\mathbb Q\\) be the smooth",
               "nodes": [
                 "ARITH-QUADRATIC-PARAMETER-VIRTUALITY-NECESSARY-DIVISOR-POWER"
@@ -778724,10 +779014,10 @@
               "mapping_kind": "exact-statement"
             },
             {
-              "locator": "Corollary CK5.** For the values of \\(c\\) in CK2,",
+              "locator": "Corollary CK5.** For every fixed \\(c\\in\\mathbb Q^\\times\\),",
               "kind": "corollary",
-              "line": 353,
-              "title": "Corollary CK5.** For the values of \\(c\\) in CK2,",
+              "line": 399,
+              "title": "Corollary CK5.** For every fixed \\(c\\in\\mathbb Q^\\times\\),",
               "nodes": [
                 "ARITH-MARKED-OCTIC-NO-DENSE-FIFTH-FIXED-VIRTUAL-FUNCTION"
               ],
@@ -778762,7 +779052,7 @@
         },
         {
           "path": "arithmetic/QUADRATIC_VIRTUALITY_BINARY_FORM_POWER_OBSTRUCTIONS.md",
-          "sha256": "2d1df8c0d961055bba5cc6808759afd1d08ff1ab09bc5a0a03525aaa54890bcf",
+          "sha256": "096d4315ec2fe8ea639ad3dae0ff674bb037711a58083f7c90d06c81e9a39e07",
           "role": "proof",
           "claims": [
             "ARITH-QUADRATIC-VIRTUALITY-EXACT-BINARY-FORM-POWER-VALUATIONS",
@@ -778833,14 +779123,18 @@
         },
         {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "a4d5b56668e9704ada21d6d36634c132eb68c7eb7322e00362ac859d3f655dc7",
+          "sha256": "0a80162e7249ef5676c6a861a6bd2c12ecfa9ba92a7a06c75ba50f0d879feb76",
           "role": "proof",
           "claims": [
             "JAC-KELLER-SEXTIC-CONIC-LEADING-DISCRIMINANT-EXCLUSION",
             "JAC-SEXTIC-KELLER-TANGENT-CONIC-QUADRATIC-OUTER-NONPENCIL-SQUAREFREE-EXCLUSION",
-            "JAC-SEXTIC-KELLER-TANGENT-CONIC-REDUCED-COMMON-FACTOR-FIRST-CORRECTION"
+            "JAC-SEXTIC-KELLER-TANGENT-CONIC-REDUCED-COMMON-FACTOR-FIRST-CORRECTION",
+            "JAC-SEXTIC-KELLER-TANGENT-CONIC-REDUCED-COMMON-FACTOR-EXCLUSION",
+            "JAC-SEXTIC-KELLER-TANGENT-CONIC-SQUARE-COMMON-FACTOR-TRANSVERSE-FIRST-CORRECTION"
           ],
           "dependencies": [
+            "JAC-KELLER-LEADING-PAIR-RATIONAL-SLICE",
+            "JAC-SEXTIC-KELLER-HIGH-TRANSVERSE-QUARTIC-FACTOR-REDUCTION",
             "JAC-SEXTIC-KELLER-INDEPENDENT-LEADING-PENCIL-RESTRICTIONS"
           ],
           "gaps": [
@@ -778876,13 +779170,33 @@
                 "JAC-SEXTIC-KELLER-TANGENT-CONIC-REDUCED-COMMON-FACTOR-FIRST-CORRECTION"
               ],
               "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem SexticKellerTangentConicReducedCommonFactorExclusion.",
+              "kind": "theorem",
+              "line": 444,
+              "title": "Theorem SexticKellerTangentConicReducedCommonFactorExclusion.",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-TANGENT-CONIC-REDUCED-COMMON-FACTOR-EXCLUSION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem SexticKellerTangentConicSquareCommonFactorTransverseFirstCorrection.",
+              "kind": "theorem",
+              "line": 656,
+              "title": "Theorem SexticKellerTangentConicSquareCommonFactorTransverseFirstCorrection.",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-TANGENT-CONIC-SQUARE-COMMON-FACTOR-TRANSVERSE-FIRST-CORRECTION"
+              ],
+              "mapping_kind": "exact-statement"
             }
           ],
-          "explanation": "Excludes squarefree factors outside the pencil by the conic relation and bounds the first correction in the reduced in-pencil frame by a conic reference."
+          "explanation": "Excludes squarefree factors outside the pencil and the reduced in-pencil factor, and lifts degree-five terms with square common factor and a transverse lower quadratic into a Veronese reference."
         },
         {
           "path": "arithmetic/MARKED_OCTIC_BETA_CUBIC_SCALE_CLASSIFICATION.md",
-          "sha256": "e96512a6c0763cae6fc73d996bf0732a33df177d423bf8d4c7742b2c064fb894",
+          "sha256": "d0f6cf6ee814f95bc16ad62bc0e949ef4e92fb5bda7d80369cd8c0173362a9d2",
           "role": "proof",
           "claims": [
             "ARITH-MARKED-OCTIC-BETA-EXACT-LOCAL-TRACE-CRITERION",
@@ -778961,6 +779275,121 @@
           "gaps": [],
           "statements": [],
           "explanation": "Exact beta trace and reciprocity identities, all local split centers, normalized three-adic unit residues and two character matrices."
+        },
+        {
+          "path": "arithmetic/MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md",
+          "sha256": "401f10135aaee37b0d63b99a87cd90410a9cb3007243de14b76b36399a264f0d",
+          "role": "proof",
+          "claims": [
+            "ARITH-TATE-FOUR-AND-THREE-TORSION-MIXED-CUBIC-BOUNDARY-CLASSES",
+            "ARITH-MIXED-THREE-POWER-MARKS-FIXED-LOCAL-PRIMES-ALL-EXPONENTS",
+            "ARITH-MIXED-THREE-POWER-QUADRATIC-CLASS-GROUPS-TWO-MOVING-PRIMES",
+            "ARITH-MIXED-THREE-POWER-POSITIVE-RANK-TWISTS-EXACT-CONDUCTOR"
+          ],
+          "dependencies": [
+            "ARITH-MARKED-OCTIC-BOUNDARY-DIVISOR-EXACT-ODD-PRIME-ORDER",
+            "ARITH-QUADRATIC-VIRTUALITY-EXACT-BINARY-FORM-POWER-VALUATIONS",
+            "ARITH-ABC-PRIME-PROGRESSION-GENUS-TWO-TWIST-MULTIPLICITY",
+            "ARITH-ABC-PRIME-PROGRESSION-COHERENT-NORM-FIELD-COUNT",
+            "EXT-CLASSICAL-FIXED-MODULUS-PNT-AP",
+            "EXT-GAO-GE-KUEHNE-UNIFORM-MORDELL-LANG",
+            "EXT-ARITH-KULKARNI-LEVIN-QUADRATIC-LOCAL-SPECIALIZATION-COUNT"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Proposition MP1.** Let",
+              "kind": "proposition",
+              "line": 18,
+              "title": "Proposition MP1.** Let",
+              "nodes": [
+                "ARITH-TATE-FOUR-AND-THREE-TORSION-MIXED-CUBIC-BOUNDARY-CLASSES"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Proposition MP2.** For every \\(m=3^n\\), there is a",
+              "kind": "proposition",
+              "line": 99,
+              "title": "Proposition MP2.** For every \\(m=3^n\\), there is a",
+              "nodes": [
+                "ARITH-MIXED-THREE-POWER-MARKS-FIXED-LOCAL-PRIMES-ALL-EXPONENTS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem MP3.** Fix \\(m=3^n\\), \\(n\\ge1\\).",
+              "kind": "theorem",
+              "line": 194,
+              "title": "Theorem MP3.** Fix \\(m=3^n\\), \\(n\\ge1\\).",
+              "nodes": [
+                "ARITH-MIXED-THREE-POWER-QUADRATIC-CLASS-GROUPS-TWO-MOVING-PRIMES"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Corollary MP4.** Apart from finitely many parameters,",
+              "kind": "corollary",
+              "line": 320,
+              "title": "Corollary MP4.** Apart from finitely many parameters,",
+              "nodes": [
+                "ARITH-MIXED-THREE-POWER-POSITIVE-RANK-TWISTS-EXACT-CONDUCTOR"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ],
+          "explanation": "Mixed high-order and cubic torsion from a Tate curve, finite local slices for both signs, moving prime classes, and positive rank with an exact conductor."
+        },
+        {
+          "path": "arithmetic/verify_mixed_three_power_boundary_torsion.py",
+          "sha256": "2bacf6eec0376036d16d3a23111467eb364264e951dfe17c3e8a39fcf8b8c6bc",
+          "role": "evidence",
+          "claims": [
+            "ARITH-TATE-FOUR-AND-THREE-TORSION-MIXED-CUBIC-BOUNDARY-CLASSES",
+            "ARITH-MIXED-THREE-POWER-MARKS-FIXED-LOCAL-PRIMES-ALL-EXPONENTS",
+            "ARITH-MIXED-THREE-POWER-QUADRATIC-CLASS-GROUPS-TWO-MOVING-PRIMES",
+            "ARITH-MIXED-THREE-POWER-POSITIVE-RANK-TWISTS-EXACT-CONDUCTOR"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Exact symbolic norm identities, local centers, finite-field character tests and elliptic conductor data."
+        },
+        {
+          "path": "arithmetic/sources/kulkarni-levin-hilbert-irreducibility-2111.15582.pdf",
+          "sha256": "26a9e645b55d70a253be2017cc8d656be188ed9c02350c21884286c60b015aae",
+          "role": "imported-source",
+          "claims": [
+            "EXT-ARITH-KULKARNI-LEVIN-QUADRATIC-LOCAL-SPECIALIZATION-COUNT"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Primary author copy for the degree-two fixed-local-neighborhood field count and comparison torsion counts."
+        },
+        {
+          "path": "factorial/image-rigidity/verify_sfc_odd_gaussian_middle_layer.py",
+          "sha256": "75d59283f413de454790cd5f0f0a3d6d5a268f7706a28cec85cc85c0cdcf83dc",
+          "role": "evidence",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [
+            "GAP-SFC-ODD-QUADRATIC-GAUSSIAN-WINDOW"
+          ],
+          "statements": [],
+          "explanation": "Finite exact normalized controls for the exceptional middle prime 31: first transverse layer 945/961 at e=2, none below one at e=3, and leading-row Wronskian 31*17 modulo 31^2 at e=2,...,6. No uniform closure is claimed."
+        },
+        {
+          "path": "factorial/image-rigidity/sfc_odd_gaussian_middle_layer_verification.json",
+          "sha256": "5f1d63e8e6f8d3ad1cb8f55426a8d633d7c448ca37a868fa6e62be8e8fc22375",
+          "role": "evidence",
+          "claims": [],
+          "dependencies": [],
+          "gaps": [
+            "GAP-SFC-ODD-QUADRATIC-GAUSSIAN-WINDOW"
+          ],
+          "statements": [],
+          "explanation": "Finite exact normalized controls for the exceptional middle prime 31: first transverse layer 945/961 at e=2, none below one at e=3, and leading-row Wronskian 31*17 modulo 31^2 at e=2,...,6. No uniform closure is claimed."
         }
       ]
     },

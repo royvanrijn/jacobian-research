@@ -439,3 +439,356 @@ Thus \(U=P L+Q M\) for a linear \(M\), since
 divisor. Expanding the displayed \(\widetilde g,\widetilde
 p,\widetilde q\) gives exactly the original degree-five
 vector, including the shift \(\sigma\).
+
+## Exclusion of the reduced common factor in the pencil
+
+**Theorem SexticKellerTangentConicReducedCommonFactorExclusion.**
+Let \(P=xz+y^2\) and \(Q=xy\) in characteristic zero.
+There is no three-variable Keller map with ordinary highest
+tuple \((P^2Q,PQ^2,Q^3)\).
+
+Work over the algebraic closure. By the first-correction
+theorem, a completion differs in ordinary degrees at most
+four from
+\[
+ (\widetilde g\widetilde p^{\,2},
+   \widetilde g\widetilde p\widetilde q,
+   \widetilde g\widetilde q^{\,2}),
+ \qquad
+ \widetilde p=P+M,\quad
+ \widetilde q=Q+\sigma-L,\quad
+ \widetilde g=Q+\sigma+2L ,
+\]
+where the corrections are linear. Give \(x,y,z\) weights
+\(1,1,w\) and increase \(w\) from one to two. For \(1<w<2\)
+the reference leading tuple is
+\[
+                    (x^3 y z^2,\ x^3y^2z,\ x^3y^3).
+ \tag{5}
+\]
+The only possible earlier changes from the degree-at-most-four
+errors are a \(z^4\) term in the third component at \(w=3/2\),
+and a \(z^4\) term in the second or \(z^3\) times a binary
+linear form in the third at \(w=5/3\). These follow by
+comparing their weights with \(4+2w,5+w,6\).
+
+At \(w=3/2\) the first two entries of (5) fix \(xy\) and
+\(z/y\) up to finitely many choices. The additional \(z^4\)
+term in the third would vary on their generic fibres,
+contradicting the leading determinant equation.
+At \(w=5/3\) the tuple could have form
+\[
+       (x^3yz^2,\ x^3y^2z+\alpha z^4,\
+                  x^3y^3+(\lambda x+\mu y)z^3).
+\]
+Its determinant is
+\[
+ 2x^2z^5(2\alpha\lambda xz^3-6\alpha\mu yz^3
+                    +3\lambda x^4y^2+(6\mu-12\alpha)x^3y^3).
+\]
+Thus \(\lambda=0\), \(\mu=2\alpha\), and \(\alpha\mu=0\),
+so all three coefficients vanish.
+
+### The transition at \(w=2\)
+
+At weights \((1,1,2)\), write \(p=xz,\ q=xy+uz,\ g=xy+vz\)
+for the reference leading parameters. The actual weighted
+highest tuple is
+\[
+ \bigl(gp^2+a z^4,\ gpq+z^3(bx+cy),\
+       gq^2+z^2(dx^2+e xy+f y^2)+h z^3\bigr)
+ \tag{6}
+\]
+of weights \(8,7,6\). Use the leading zero determinant.
+The coefficients at \(x^6y^3z^4,x^6yz^5,x^5y^4z^4,
+x^5y^2z^5\), in order, give
+\[
+        e=2b,\qquad d(u-v)=0,\qquad f=2c-a,\qquad h=2bu .
+\]
+With these substitutions the coefficient at \(x^5 z^6\)
+is \(4bd+2dv(u-v)\), so \(bd=0\). The coefficient at
+\(x^2 y^3 z^6\) is \(-24(a-c)^2\), giving \(a=c\).
+After that substitution the coefficients at \(x^4yz^6\)
+and \(x^3y^2z^6\) are \(-8ad-12b^2\) and \(18au^2\),
+respectively. Hence \(b=0,\ ad=0,\ au=0\).
+
+We use the following weighted conic-relation obstruction.
+Suppose the highest entries \(A,B,C\) in (6) satisfy
+\(AC=B^2\), have relatively closed fraction field
+\(k(A,B)\), and their polynomial invariants are precisely
+\(k[A,B,C]\). Then no Keller completion exists.
+Indeed the actual conic relation \(F_1F_3-F_2^2\)
+has weight below fourteen. One can subtract from it
+any polynomial in \(F_1,F_2,F_3\) of weight below
+fourteen. Its derivative in the third target variable
+has weight at most seven, since the only positive-weight
+monomials allowed are the three individual components
+and \(F_3^2,F_2F_3\). Thus the bracket with \(F_1,F_2\)
+of the remainder has weight eight and leading term
+\(\kappa A\) for \(\kappa=\det JF\). A highest term
+of positive weight \(d<14\) in the remainder has
+zero bracket with \(A,B\) at weight \(11+d\).
+By the assumed constant ring it can be absorbed
+by a polynomial in the actual components. Iterating
+would make the remainder constant, a contradiction.
+
+For the applications below the polynomial invariant
+assertion follows from relative closedness and surjectivity
+of the leading map onto \(AC=B^2\). On \(A\ne0\)
+the cone has coordinate ring \(k[A,A^{-1},B/A]\);
+a reduced denominator with a zero off the numerator
+would lift to a point of the source, an impossibility
+for a polynomial pullback. Likewise use the chart
+\(C\ne0\). The intersection of the two rings is the
+cone ring \(k[A,B,C]\). For example, express them
+in \(A=s^2,B=st,C=t^2\). Their intersection belongs
+to \(k[s,t]\) and is invariant under simultaneous
+change of signs, so lies in the cone ring.
+
+If \(a\ne0\), the equations for (6) give \(u=d=0\).
+Then the tuple is \(G(z^2,zy,y^2)\) with
+\(G=x^2(xy+vz)+az^2\). Put \(T=y/z\) and \(A=Gz^2\).
+On a generic fibre of this pair,
+\[
+               T x^3+v x^2+a z=A/z^3.
+\]
+This cubic in \(x\) is irreducible over the rational
+function field in \(z\) over the algebraic closure
+of \(k(A,T)\). A rational root cannot have a pole at
+infinity, since its cubic term would have pole order
+at least three and dominate the other terms. A root
+finite there cannot cancel \(az\). The generic field
+is therefore geometrically integral and \(k(A,T)\)
+is relatively closed. Every \(A\ne0\) and finite \(T\)
+is realized by taking \(x=0\), \(az^4=A\), \(y=Tz\).
+The ray \(A=B=0\) is realized on \(z=0\), where
+\(C=x^3y^3\); the origin also occurs. The conic-relation
+obstruction applies.
+
+If \(a=0,\ u\ne v\), we have \(d=0\) and (6) is
+\(g(p^2,pq,q^2)\). Put \(A=gp^2\) and \(T=q/p\).
+On the generic fibre the equations give
+\[
+             y=(Tx-u)z/x,\qquad
+             z^3=\frac{A}{x^2(Tx+v-u)}.
+\]
+The simple pole at \(x=(u-v)/T\) proves geometric
+integrality, so \(k(A,T)\) is relatively closed.
+Every \(A\ne0\) and finite \(T\) is realized by choosing
+\(x\ne0\) with \(Tx+v-u\ne0\) and solving for \(z,y\).
+The opposite ray is again surjective on \(z=0\),
+and the origin occurs. The same conic-relation
+obstruction applies.
+
+If \(a=0,\ u=v\ne0\), (6) is
+\((q p^2,q^2p,q^3+d p^2)\). Choose its last two
+entries \(B=q^2p,\ C=q^3+d p^2\). Their parameter
+Jacobian in \((p,q)\) is nonzero at generic \(p=0\),
+where its value is \(3q^4\). At \(x=0\), \(p=0\)
+and \(q=u z\); at \(z=0\), \(p=0\) and \(q=xy\).
+The differentials of \(p,q\), and hence those of
+\(B,C\), are independent at both generic points.
+The rational constant field of the pair is \(k(p,q)\)
+since the source field is \(k(p,q)(x)\).
+A rational primitive for the leading derivation is,
+up to scalar, \(1/(x\det\partial(B,C)/\partial(p,q))\),
+using \(\det J(p,q,1/x)=1\).
+It has a pole along \(x=0\) and is regular along
+\(z=0\). Both divisors dominate \(p=0\) in the
+constant-field plane, with order one of \(p\).
+No correction by a constant of the derivation can
+make the primitive regular at both. This contradicts
+the divisor-regular
+[leading-pair slice](KELLER_LEADING_PAIR_RATIONAL_SLICE.md).
+
+### Exclusion of the final weighted frame
+
+Only \(a=u=v=0\) remains. In particular
+\(\widetilde q,\widetilde g\) are binary, because
+the \(z\)-coefficients of both \(\sigma-L\) and
+\(\sigma+2L\) vanish. Fix \(y,z\) at weights \(1,2\)
+and raise the weight \(r\) of \(x\) starting at two.
+The weighted reference leading tuple is (5), of
+weights \(3r+5,3r+4,3r+3\).
+For \(r\ge2\), the residual terms of degree at most
+four and \(x\)-exponent at most three have weight
+at most \(3r+2\). Thus the only possible new ties
+come from \(x^4\), at \(r=3,4,5\) in the third,
+second, first component, respectively. At each
+first such tie the unchanged two entries of (5)
+fix \(p=xz,q=xy\) up to finitely many choices.
+Then \(x\) is still free, and the new \(x^4\)
+term contradicts the leading determinant equation.
+The map has therefore degree three in \(x\).
+
+Write its highest \(x\)-coefficient as a binary vector
+\(K(y,z)\). This has ordinary degree three with
+highest part \(y(z^2,zy,y^2)\): it comes from the
+product of the three reference coefficients of \(x\),
+and a degree-at-most-four error contributes at
+most a linear term to \(K\). The \(x^8\) determinant
+coefficient gives \(\det(K_y,K_z,K)=0\).
+The projective image is thus a curve, containing
+the conic given by the highest binary part, since
+that part is the limit along the radial direction.
+Factor \(K\) on this conic. Its two binary parameters
+have degree one and independent linear parts, by
+degree three and the highest ratio \(z/y\).
+Center them affinely, so \(K=(\ell+c_0)\nu(u_1,u_2)\)
+in the two binary variables, with \(\ell\ne0\)
+linear and \(\nu(u_1,u_2)=(u_1^2,u_1u_2,u_2^2)\).
+
+Now apply the
+[top-coefficient argument for a cubic transverse leading coefficient](SEXTIC_KELLER_NONBINARY_QUARTIC_LINE_FACTOR.md#the-highest-z-coefficient).
+That argument from its \(A=(\ell+c)\nu\) frame
+onward uses only the degree three in the transverse
+variable and the displayed form of its top coefficient.
+It first excludes \(c_0\ne0\) by the quadratic
+lowest-coefficient descent. For \(c_0=0\), the
+determinant coefficients force the constant terms
+of the next two transverse coefficients to vanish.
+Here the transverse variable is \(x\), so the
+centered line \(u_1=u_2=0\) is collapsed, again
+contradicting the Keller condition. This finishes
+the last weighted case.
+
+## The first correction for a square common factor with a transverse lower member
+
+**Theorem SexticKellerTangentConicSquareCommonFactorTransverseFirstCorrection.**
+Let \(P=xz+y^2\) and let \(Q\) be a homogeneous binary
+quadratic in \(x,y\) with \(Q(0,y)\ne0\).
+For a characteristic-zero three-variable Keller map
+with ordinary highest tuple \(x^2(P^2,PQ,Q^2)\), its
+degree-five terms can be absorbed by the reference
+\[
+         \bigl((xP+U_2)^2,\ (xP+U_2)(xQ+V_2),\
+                           (xQ+V_2)^2\bigr)
+\]
+for homogeneous quadratic polynomials \(U_2,V_2\).
+
+Work over the algebraic closure and write \(A=xP\),
+\(B=xQ\). The pair \(A,B\) is onto. For generic
+nonzero \(x\) write \(r=y/x\), so \(B=x^3Q(1,r)\)
+and \(z\) is determined by \(A\). To prescribe nonzero
+\(B\) choose \(r\) off the roots and rescale \(x\);
+for \(B=0\) choose a finite root of \(Q(1,r)\).
+Such a root exists since \(Q(0,y)\ne0\) gives a
+nonzero \(r^2\)-coefficient. On the generic fibre
+\(x^3=B/Q(1,r)\) is geometrically integral because
+a root of the quadratic has multiplicity one or
+two. Hence \(k(A,B)\) is relatively closed, and
+the polynomial constant ring is \(k[A,B]\) by
+surjectivity. In particular all its homogeneous
+degrees are multiples of three.
+
+Let \(\Delta=F_1F_3-F_2^2\). As in the conic-relation
+argument, its highest coefficient of degree below
+twelve belongs to \(k[A,B]\), by the bracket with
+\(F_1,F_2\). Thus its terms of degrees eleven and
+ten vanish, and its degree-nine term, if nonzero,
+belongs to \(k[A,B]\) and is divisible by \(x^3\).
+Put \(n=(Q^2,-2PQ,P^2)\). The degree-eleven equation
+gives \(n\cdot E=0\) for the degree-five vector \(E\).
+By coprimeness of \(P,Q\), write
+\[
+                        E=(2P U,\ QU+PV,\ 2QV)
+\]
+with cubics \(U,V\). If \(E_4\) is the degree-four
+vector, the degree-ten equation is
+\[
+                 x^2 n\cdot E_4=(QU-PV)^2 .
+\]
+Put \(\lambda=Q(0,y)/y^2\ne0\), and
+\(S=(QU-PV)/x\), which is a polynomial.
+At \(x=0\), \(V=\lambda U\) and \(y^4\) divides
+\(S^2\), so \(y^2\) divides \(S\).
+Writing \(Q=\lambda y^2+\beta xy+\alpha x^2\)
+shows that
+\(S|_{x=0}\equiv(\beta y-\lambda z)U|_{x=0}
+\bmod y^2\). Indeed the derivatives at \(x=0\)
+of \(U,V\) contribute multiples of \(y^2\), and
+\(P_x=z\). Thus \(y^2\mid U|_{x=0}\).
+There are a binary linear \(L(y,z)\) and quadratics
+\(U_2,V_2\) with
+\[
+                        U=P L+xU_2,\qquad V=Q L+xV_2 .
+ \tag{7}
+\]
+
+Suppose \(L\ne0\). In degree nine the discriminant
+on \(x=0\) is the cross term of \(E,E_4\).
+By (7), \(E|_{x=0}=2L(P^2,PQ,Q^2)|_{x=0}\),
+so that cross term equals \(2L S^2|_{x=0}\).
+It vanishes since the degree-nine invariant is
+divisible by \(x^3\). Hence \(S|_{x=0}=0\) and
+\(V_2-\lambda U_2\) is divisible by \(x\).
+
+Change target frame by replacing \(Q\) by
+\(Q'=Q-\lambda P=x(\alpha x+\beta y-\lambda z)\)
+inside the leading Veronese tuple. The determinant
+relation for the conic is unchanged by this shear.
+Put \(R=\beta y-\lambda z\), and use source
+weights \((1/2,1,1)\) on \((x,y,z)\).
+The weighted highest tuple in this frame is
+\[
+                 (x^2+2L)(y^4,\ y^2 xR,\ x^2R^2).
+ \tag{8}
+\]
+Indeed \(U\) starts with \(y^2 L\) in these weights,
+and \(V-\lambda U=Q'L+x(V_2-\lambda U_2)\)
+starts with \(xRL\). The degree-four error can
+compete only in the last entry, where its part
+on \(x=0\) vanishes: in this target frame the
+degree-ten identity \(n\cdot E_4=S^2\) restricts
+there to \(y^4(E_4)_3=0\).
+
+### The generic fibre of the weighted pair
+
+For the first two entries of (8), put \(A\) equal to
+the first and \(T=xR/y^2\) equal to their ratio. On a
+generic level their relative volume differential must
+be exact by the
+[weighted leading-pair slice](KELLER_LEADING_PAIR_RATIONAL_SLICE.md).
+At fixed \(T\) solve \(z=(\beta y-Ty^2/x)/\lambda\).
+If \(s=xy^2\), the equation at fixed \(A\), after
+substitution, is
+\[
+                    s^3+(a y^5-A)s+b y^8=0
+ \tag{9}
+\]
+for constants \(a,b\) over the algebraic closure of the
+generic value field. The coefficient \(b\) is a nonzero
+scalar times \(T\) times the \(z\)-coefficient of \(L\).
+If \(b=0\), then \(a\ne0\) because \(L\ne0\).
+The relative volume after fixing \(T\) is proportional
+to \(y^2 dx\wedge dy/x=y^2 ds\wedge dy/s\).
+Dividing by the differential of \(A\) gives the
+relative one-form
+\[
+                         \frac{y^2\,dy}{3s^2+a y^5-A}.
+ \tag{10}
+\]
+
+If \(b\ne0\), the locus \(s=0\) in (9) is the point
+\(s=y=0\), smooth with denominator \(-A\) in (10).
+Where \(s\ne0\) the affine generic level is smooth.
+At infinity \(y\) must have a pole since (9) is monic
+in \(s\). The two dominant terms are \(s^3\) and
+\(b y^8\), so \(s\) has pole order \(8/3\) times
+that of \(y\). Indeed any larger order would make
+\(s^3\) dominate, and any smaller order would make
+\(b y^8\) dominate. The denominator of (10) then
+has pole order \(16/3\) times that of \(y\).
+Thus (10) is regular at all points of the complete
+normalization. A nonzero regular differential cannot
+be exact there.
+
+If \(b=0\), the fibre on \(s\ne0\) is
+\(s^2+a y^5=A\) and (10) is proportional to
+\(y^2dy/s^2\). At a root of \(a y^5=A\) the
+parameter \(s\) gives a simple pole with nonzero
+residue, since the root is nonzero and simple.
+This again prevents exactness. Therefore \(L=0\),
+and (7) gives \(U=xU_2,V=xV_2\).
+Substitution in the tangent vector is precisely the
+degree-five correction of the stated Veronese reference.
