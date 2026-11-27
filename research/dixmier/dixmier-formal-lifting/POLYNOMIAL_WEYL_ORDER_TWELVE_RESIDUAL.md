@@ -30,7 +30,11 @@ rules out every multiplicity-26 root. The
 [multiplicity-thirty argument](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#the-multiplicity-thirty-root-forces-a-sixth-power)
 then forces a single root of multiplicity thirty over the
 algebraic closure. The coefficient-field test in the same
-source excludes this entire row over \(\mathbb Q\).
+source gives an independent coefficient-field obstruction.
+The [resultant at the ramified successors](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#the-order-eleven-obstruction-and-its-generalization-at-the-successors)
+excludes the three rows with a \((6,30)\) crossing in
+characteristic zero. The concluding corollary gives the
+sole remaining row.
 
 ## The crossings at gcd six
 
@@ -265,3 +269,47 @@ All real roots of \(h\) have multiplicity below six by the
 root-field condition. The
 [real residue obstruction](POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md#real-roots-and-parity)
 then gives the root count and makes \(d/6\) odd.
+
+
+## The remaining differential-order pair
+
+**Corollary PolynomialWeylOrderTwelveFortyTwoOnly.**
+For a characteristic-zero proper polynomial Weyl pair with
+a member of differential order twelve, the fixed-member
+reduction must leave mate order forty-two. The common
+leading factor has geometric root multiplicities three or
+fifteen, with at least one fifteen. Over the real field
+it has no real root.
+
+The order-twelve reduction gives the five initial rows.
+The [cubic resultant](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#the-cubic-resultant-in-orders-twelve-and-sixteen)
+excludes mate order sixteen.
+In the order-eighteen row the high multiplicity is twenty-six
+or thirty. The
+[multiplicity-twenty-six exclusion](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#exclusion-by-the-next-newton-face)
+rules out twenty-six.
+In the order-thirty and order-seventy-eight rows, the high
+multiplicity is thirty. The
+[(6,30) crossing exclusion](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#the-order-eleven-obstruction-and-its-generalization-at-the-successors)
+rules out that multiplicity in all three ratios
+\(2:3,\ 2:5,\ 2:13\).
+
+In the order-forty-two row the reduced gcd is six and there
+is a high root of multiplicity fifteen. The
+[common-multiplicity constraint](POLYNOMIAL_WEYL_PRIMITIVE_LEADING_FACTOR_OBSTRUCTION.md)
+gives \(e=\gcd(6,\{\operatorname{mult}_r h\})>1\), hence \(e=3\).
+The leading-factor residue excludes multiplicity six and
+the translated-root table excludes any multiplicity above
+six other than fifteen in this row. Thus the only low
+multiplicity is three. There are at least two roots by
+the degree lower bound twenty-four.
+If the coefficients are real, the
+[real residue theorem](POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md#real-roots-and-parity)
+requires even multiplicity at every real root, and neither
+allowed multiplicity is even.
+
+The [order-thirty-four resultant](POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_RESULTANT.md)
+gives a third commuting indicial shift at the multiplicity-three
+roots. The same note gives the bound on the number of small
+roots and the exact form when the multiplicity-fifteen root is
+unique.

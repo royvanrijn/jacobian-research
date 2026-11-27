@@ -31,7 +31,12 @@ Akita--Kawasaki--Satoh,
 give \(H_2(S_N,\mathbb Z)=C_2\) for \(N\ge4\) and Schur-cover
 presentations in which lifts of disjoint transpositions anticommute.
 The retained primary author manuscript contains the actual statement
-and the explicit cocycle calculation.
+and the explicit cocycle calculation. We use its unit-root realization:
+\(t_i=(e_i-e_{i+1})/\sqrt2\) in the real Clifford algebra
+\(e_i^2=1,\ e_ie_j=-e_je_i\) for \(i\ne j\).
+These roots satisfy that Schur presentation with \(t_i^2=1\)
+and central \(z=-1\); their alternating subgroup is the spin double
+cover used in D4 and D7.
 
 The [ATLAS primary group page](sources/atlas-a7-group-2026.html)
 records the multiplier of \(A_7\) as \(C_6\). Its raw
@@ -351,7 +356,11 @@ has a fixed sheet. This is impossible. A primitive group
 containing a 3-cycle contains the alternating group: take all
 conjugate 3-cycle supports; their connected components are blocks,
 and connected overlapping 3-cycles generate the alternating group
-on their union. Thus both groups are \(A_{15}\).
+on their union. To see the last step inductively, two 3-cycles
+sharing two or one letters generate \(A_4\) or \(A_5\),
+respectively; adjoining further overlapping supports gives the
+alternating group on the enlarged union. Thus both groups are
+\(A_{15}\).
 
 Choose the lift class of \(G_0\) represented by its adjacent-root
 cycle expansions. For another factor of type \((5,4,3,2,1)\),
@@ -373,7 +382,8 @@ giving the deck and absolute counts. \(\square\)
 
 No all-odd-order spin-rigidity theorem applies to (10): its first
 factor has order 60, and its lift was chosen by a split class,
-not by an arbitrary sign.
+not by an arbitrary sign. That factor has index ten, outside
+the scope of the index-two mixture connectivity theorem.
 
 ## Evidence and the remaining classification problem
 

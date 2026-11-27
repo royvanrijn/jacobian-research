@@ -139,8 +139,27 @@ def check_six_thirty_root_field():
         assert two_simple_roots_cubic(residue) % 11
 
 
+def check_resultant_successor_denominators():
+    exceptional = set()
+    for multiplicity in range(2, 6):
+        # The cancelled gcd divides 5*m - 6. If D <= 2*m then
+        # N*m - 1 <= 2*m*(5*m - 6), so this loop covers every N.
+        limit = 2*(5*multiplicity - 6)
+        for total in range(5, limit + 1, 2):
+            slope_on_lattice = Fraction(total*(6+multiplicity) - 6,
+                                        total*multiplicity - 1)
+            denominator = slope_on_lattice.denominator
+            if denominator <= 2*multiplicity:
+                mate = total - 2
+                exceptional.add((multiplicity, mate, denominator))
+                assert gcd(denominator, multiplicity) == 1
+                assert 2 % denominator and mate % denominator
+    assert exceptional == {(4, 7, 5), (5, 21, 6)}
+
+
 if __name__ == "__main__":
     check_first_coordinate_six()
     check_six_thirty_successors()
     check_six_thirty_root_field()
-    print("Checked the order-twelve crossings, scalar outcomes and multiplicity-thirty cubics.")
+    check_resultant_successor_denominators()
+    print("Checked the crossings, scalar outcomes, cubic eliminants and resultant successor denominators.")

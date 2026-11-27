@@ -17,6 +17,9 @@ in chamber-gap coordinates and a left/right ground-state argument prove
 the rotational-only kernel and a positive gap at every correlation for
 every $k$. Strict supersolutions also settle the $(k-2,2)$ and sign
 sectors for all $k\ge4$, with the explicit sign bound (S62) for $k\ge5$.
+The exterior Gaussian identity (S72) and a linear positive
+supersolution also settle the whole third exterior hook
+$(k-3,1,1,1)$ for every $k\ge4$, by (S73).
 The four-cell problem reduces
 to one scalar standard-sector inequality. These results do not supply
 the missing full active-space gap
@@ -1045,7 +1048,7 @@ semigroup in the facet metric. For $k=3$ the facet is one dimensional
 and the separate pointwise comparisons (S32) supply the needed bridge.
 
 The all-$k$ dimensional part of (S37) is settled by (S42). Its active
-balanced gap for $k\ge4$, in the standard and remaining nonhook
+balanced gap for $k\ge4$, in the standard and remaining symmetry
 blocks in (S4), is still an open mathematical obligation. The rotation
 hook, two-row moment block and sign block are settled by
 (S56), (S60) and (S62)--(S66) below. Neither a global simplex
@@ -1338,7 +1341,7 @@ positive spectral constant, not an evaluated explicit function of
 $k,\rho$. The argument is a matrix version of the positive
 ground-state mechanism behind (S18). The two-row and sign blocks are
 treated next; the standard and remaining higher-cell
-nonhook bounds require further arguments.
+remaining block bounds require further arguments.
 
 ## Every cell count: a strict supersolution for the two-row moment sector
 
@@ -1787,7 +1790,7 @@ Indeed the standard block already has the positive translation
 eigenfunction with eigenvalue $1/\rho>1$ before imposing mass balance.
 The remaining tasks are still the constrained standard inequality
 (S51), and appropriate spectral bounds or positive supersolutions for
-the other nonhook blocks when $k\ge5$. Equations (S56), (S60) and
+the other blocks when $k\ge5$. Equations (S56), (S60) and
 (S62) provide those additional arguments for the sectors they cover.
 
 ## The exact remaining standard-sector spectral test
@@ -1988,6 +1991,212 @@ and does not prove (S51). The exact checker controls the tangent-inverse
 identity and the boundary-pair cancellation for $3\le k\le8$; the
 unrestricted analytic identities are the written argument above.
 
+## An exterior Gaussian identity settles the next complete hook
+
+The junction cancellation in (S71) extends to every exterior degree.
+It gives a strict supersolution for a further whole symmetry block,
+including all its multiplicities.
+
+### The complete exterior-hook kernels and their creation identity
+
+For $0\le p\le k-2$ let $\mathsf K_p$ act on
+$G_0$-equivariant $\Lambda^pH$-valued fields on $F_{12}$, with
+$\mathsf K_0=K_{\rm std}$ and $\mathsf K_1=\mathsf K_{\rm hook}$.
+The block is $\Lambda^{p+1}E\simeq V_{(k-p-1,1^{p+1})}$, and
+its complete multiplicity space on $W$ is $L^2(W;\Lambda^pH)$.
+The representation identification follows from the same vertical
+Pieri input as (S4): the oriented $r$-subset module
+$\Lambda^r\mathbb R^k$ has the two adjacent hook constituents,
+whereas $\Lambda^r(\mathbf1\oplus E)=
+\Lambda^rE\oplus\Lambda^{r-1}E$. Induction in $r$ gives the claim.
+The $(12)$-minus space is $n\wedge\Lambda^pH$.
+
+With $M_0,M_l$ as in (S71), its full-facet kernel is
+
+\[
+ \mathsf K_p(x,y)=2M_0(x,y)I+
+                       \sum_{l=3}^k M_l(x,y)\Lambda^pC_l.
+\]
+
+Indeed the adjacent coefficient is
+
+\[
+ (2l)(n\wedge\omega)+(1l)(n\wedge\omega)
+                         =n\wedge\Lambda^pC_l\omega.
+\]
+
+To verify it for all $p$, decompose $\omega=w_l\wedge\beta+\gamma$
+with both $\beta,\gamma$ in exterior powers of $w_l^\perp\cap H$.
+Both transpositions fix this orthogonal complement. On the plane
+spanned by $n,w_l$, their tangent diagonal entries are $1/2,-1/2$,
+their off-diagonal entries have opposite signs, and each determinant
+is $-1$. Their sum therefore acts by $1$ on $n\wedge\gamma$ and
+by $-2$ on $n\wedge w_l\wedge\beta$, exactly as the displayed
+right side.
+
+For a $G_0$-equivariant $C^1$ field
+$\omega:H\to\Lambda^{p-1}H$ with polynomially bounded coefficients
+and first derivatives, let $d\omega$ denote the exterior derivative.
+Then, for $1\le p\le k-2$,
+
+\[
+ \boxed{\displaystyle
+ \mathsf K_p(y\wedge\omega(y))(x)
+    =\sigma^2\mathsf K_p(d\omega)(x)
+                            +\rho x\wedge\mathsf K_{p-1}\omega(x).}
+ \tag{S72}
+\]
+
+Apply Gaussian integration by parts to the exterior derivative.
+The interior terms have the displayed form because $C_lD_l=I$:
+applying $\Lambda^pC_l$ to $D_lx\wedge\omega$ gives
+$x\wedge\Lambda^{p-1}C_l\omega$. To check every boundary term,
+on the face $l$ the factor $2I+\Lambda^pC_l$ annihilates
+$w_l\wedge\omega$, so the self and $l$th terms cancel.
+For $r\ne l$ put $s=(lr)$ and $v=w_l-w_r$. Direct rank-one algebra
+gives
+
+\[
+ C_rw_l=v,\qquad C_lw_r=-v,\qquad
+ C_r-C_ls=v(w_l+w_r)^T.
+\]
+
+After the face substitution used in (S71), equivariance of $\omega$
+makes the paired contribution proportional to
+$v\wedge\bigl(\Lambda^{p-1}C_r-
+\Lambda^{p-1}(C_ls)\bigr)\omega=0$.
+The last equality holds because the two linear maps differ by a
+map with range spanned by $v$; expanding their exterior powers
+leaves a factor $v$ in every difference term. Gaussian decay removes
+the boundary at infinity. This proves (S72) with the stated regularity.
+
+The folded kernels preserve a useful fixed coordinate cone in every
+exterior degree. Define the orthonormal Helmert vectors
+
+\[
+ u_j=\frac{e_1+\cdots+e_j-je_{j+1}}{\sqrt{j(j+1)}},
+                       \qquad1\le j\le k-1.
+\]
+
+Here $u_1=n$ and $u_2,\ldots,u_{k-1}$ form a basis of $H$.
+For $j\ge2$, the adjacent transposition $(j,j+1)$ mixes only
+$u_{j-1},u_j$, with positive
+off-diagonal entries. In the increasing exterior basis its off-diagonal
+entries are still positive: the mixed indices are consecutive, so
+reordering introduces no extra sign. A wedge containing both mixed
+indices instead has eigenvalue $-1$. Thus every $I+R(s_j)$ is
+entrywise nonnegative in this exterior basis, and $(12)$ is diagonal.
+The interval-symmetrizer argument of (S69), applied in this same
+basis and then compressed to wedges containing $u_1$, proves that
+the folded $\mathsf K_p$ is entrywise nonnegative in the increasing
+basis of $\Lambda^pH$. This uses the retained total-positivity input;
+no general spectral ordering between different hooks is assumed.
+
+### A strict supersolution for the third exterior hook
+
+**Theorem S73 (third exterior hook).**
+
+For every $k\ge4$, $d\ge k-1$ and $0<\rho<1$, the entire
+$V_{(k-3,1,1,1)}$ isotypic component of the cylindrical simplex interface form has
+a strictly positive $L^2$ gap and no kernel:
+
+\[
+ \mathfrak q_\rho(f)\ge\kappa^{(3)}_{k,\rho}\|f\|^2,
+                    \qquad\kappa^{(3)}_{k,\rho}>0.
+ \tag{S73}
+\]
+
+The constant is qualitative here and independent of $d$. The assertion includes all fields
+in the multiplicity space, not only polynomial or radial speeds.
+For $k=4$ this is another proof of the sign gap; for $k\ge5$ it
+settles an additional hook beyond (S56).
+
+Put $p_0=(e_1+e_2)/2-k^{-1}\mathbf1\in H$, and define
+$W_2(x)=p_0\wedge x$. Write
+$R_l(x)=\int_{F_{12}}M_l(x,y)d\nu_{12}(y)>0$ and
+$v(x)=\sum_{l=3}^kR_l(x)w_l$. Since
+$w_l\cdot p_0=1/2$, (S49) gives
+
+\[
+ \mathsf K_1p_0=(a_\rho/\rho)p_0-v.
+\]
+
+Use (S72) at $p=2$ with the constant one-form $\omega=p_0$.
+Its exterior derivative is zero. Reversing the wedge order yields
+the exact supersolution residual
+
+\[
+ \mathsf K_2W_2=a_\rho W_2-\rho v\wedge x.
+\]
+
+Both $W_2$ and $v\wedge x$ have strictly positive coordinates in
+the increasing Helmert exterior basis on $W$. Here are the required
+inequalities in full. Set $\alpha_j=1/\sqrt{j(j+1)}$ and
+
+\[
+ X_j=\frac{\langle x,u_j\rangle}{\alpha_j}
+       =\sum_{i=1}^jx_i-jx_{j+1},\qquad
+ V_j=\frac{\langle v,u_j\rangle}{\alpha_j}
+       =(j+1)R_{j+1}+\sum_{l=j+2}^kR_l,
+                       \quad2\le j\le k-1.
+\]
+
+On $W$, $0<X_2<X_3<\cdots<X_{k-1}$. Also
+$R_3>R_4>\cdots>R_k>0$: to compare $R_j,R_{j+1}$ substitute
+$y\mapsto(j,j+1)y$ in the latter integral. The resulting exponent
+difference is
+$\tau(x_j-x_{j+1})(y_2-y_{j+1})>0$ on the facet interior.
+Consequently
+
+\[
+ V_{j+1}-V_j=(j+1)(R_{j+2}-R_{j+1})<0,
+                   \qquad V_j>0.
+\]
+
+Since $\langle p_0,u_j\rangle=\alpha_j$, the $i,j$ coordinates
+for $2\le i<j\le k-1$ are
+
+\[
+ (W_2)_{ij}=\alpha_i\alpha_j(X_j-X_i)>0,\qquad
+ (v\wedge x)_{ij}
+      =\alpha_i\alpha_j(V_iX_j-V_jX_i)>0.
+\]
+
+The last strict sign follows from $V_i>V_j>0$ and $X_j>X_i>0$.
+Thus, with the folded operator,
+$T_2=a_\rho^{-1/2}\mathsf K_2a_\rho^{-1/2}$ has the positive
+$L^2$ supersolution $\psi=\sqrt{a_\rho}W_2$ satisfying
+$T_2\psi<\psi$ in every coordinate almost everywhere.
+Its kernel is entrywise nonnegative in these orthonormal coordinates,
+and it is compact and self-adjoint by the full interface bounds.
+For any eigenvector $z\ne0$, integration of
+$|T_2z|\le T_2|z|$ against $\psi$ gives
+
+\[
+ |\lambda|\langle\psi,|z|\rangle
+       \le\langle T_2\psi,|z|\rangle
+           <\langle\psi,|z|\rangle.
+\]
+
+Hence every eigenvalue has modulus less than $1$, and compactness
+gives $\theta_{k,\rho}=\|T_2\|<1$. Taking
+$\kappa^{(3)}_{k,\rho}=\mu_\rho(1-\theta_{k,\rho})>0$ proves
+the active-space case for the full Hilbert-space block. No mass
+constraint occurs in this representation.
+
+For $d>k-1$, the product Mehler kernel and Gaussian surface measure
+factor exactly as in (S38). Expanding in an orthonormal Hermite basis
+in the unused coordinates multiplies the interaction at degree $m$
+by $\rho^m$, leaving $a_\rho$ unchanged. Its normalized norm is
+$\rho^m\theta_{k,\rho}\le\theta_{k,\rho}$, so every degree has
+the same lower gap bound. Parseval proves (S73) for all $L^2$ speeds
+in every ambient dimension, with the stated dimension-independent
+constant.
+
+The complete five-cell problem now reduces to
+the standard $(4,1)$ and the remaining $(2,2,1)$ blocks; (S73) does
+not settle those blocks or every higher exterior degree.
+
 ## Monotonicity and the other global obligations
 
 **Raw-deficit obstruction.** For every $k\ge2$, the unnormalized
@@ -2018,8 +2227,9 @@ The remaining targets are distinct:
   second normalized eigenvalue alone does not settle ordinary balance.
   The complete rotation hook has the all-correlation gap (S56).
   The $(k-2,2)$ block has the strict gap (S60), and every sign block is
-  settled by (S61)--(S66). In four cells only (S51) remains; for
-  $k\ge5$ the other nonhook blocks also need estimates.
+  settled by (S61)--(S66). The third exterior hook is settled by (S73).
+  In four cells only (S51) remains; in five cells the standard and
+  $(2,2,1)$ blocks remain. For $k\ge6$ the other blocks also need estimates.
   Equation (S42) then handles every ambient dimension.
   Equation (S23) and the full three-cell interface problem are settled
   by (S29)--(S38).
@@ -2073,6 +2283,11 @@ and neither of its two tests is certified for the general simplex.
 For (S71) it checks the tangent-compression inverse and all boundary-pair
 permutation identities through eight cells, not the analytic integrations
 by parts or a sign bound for their residual.
+For (S72)--(S73) it checks adjacent third-exterior transport and the
+rank-one boundary-pair identity through eight cells, selected positive
+folded exterior matrices, and exact increasing/decreasing coordinate
+controls. The Gaussian creation identity and the all-correlation
+supersolution proof remain written analytic arguments.
 The analytic operator reduction, OU parity spectra, tensor decomposition,
 dimension lifting, determinant positivity and all-$k$ representation
 argument still require written proof review. The optional

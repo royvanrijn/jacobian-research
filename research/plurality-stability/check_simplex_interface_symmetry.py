@@ -548,6 +548,105 @@ def standard_hook_gaussian_controls():
             "scope": "Exact C_l D_l=I, D_l-C_l=w_l w_l^T, same-face annihilation and all paired triple-junction permutation identities for 3<=k<=8. The unrestricted Gaussian integration-by-parts and differentiation identities S71 are written analytic proofs; no favorable residual sign or standard gap is certified."}
 
 
+def higher_exterior_hook_checks():
+    """Bounded exact controls for S72 and the complete third-hook gap S73."""
+    def dot(x, y):
+        return sum(a*b for a, b in zip(x, y))
+
+    def swap(v, i, j):
+        result = list(v)
+        result[i], result[j] = result[j], result[i]
+        return result
+
+    def wedge(columns):
+        rank, size = len(columns), len(columns[0])
+        return [sum(parity(p)*math.prod(columns[j][indices[p[j]]] for j in range(rank))
+                    for p in itertools.permutations(range(rank)))
+                for indices in itertools.combinations(range(size), rank)]
+
+    def transport(value, w):
+        return [a-2*b*dot(w, value) for a, b in zip(value, w)]
+
+    def helmert(value, j):
+        return sum(value[:j])-j*value[j]
+
+    cases, folded_cases, transport_count, boundary_count = [], [], 0, 0
+    for k in range(4, 9):
+        root = [Q(1), Q(-1)]+[Q(0)]*(k-2)
+        rays = [[Q(k-m)]*m+[Q(-m)]*(k-m) for m in range(2, k)]
+        p0 = [Q(1, 2)-Q(1, k)]*2+[Q(-1, k)]*(k-2)
+        x = [sum(ray[i] for ray in rays) for i in range(k)]
+        y = [sum((m+1)*ray[i] for m, ray in enumerate(rays)) for i in range(k)]
+        vectors = {l: [Q(1, 2)]*2+[Q(-int(i == l)) for i in range(2, k)]
+                   for l in range(2, k)}
+        rates = {l: Q(k-l) for l in vectors}
+        v = [sum(rates[l]*vectors[l][i] for l in vectors) for i in range(k)]
+        for l, w in vectors.items():
+            assert transport(p0, w) == [a-b for a, b in zip(p0, w)]
+            for first, second in itertools.combinations(rays, 2):
+                actual = [a+b for a, b in zip(
+                    wedge([swap(z, 1, l) for z in (root, first, second)]),
+                    wedge([swap(z, 0, l) for z in (root, first, second)]))]
+                assert actual == wedge([root, transport(first, w), transport(second, w)])
+                transport_count += 1
+            for r, other in vectors.items():
+                if l == r:
+                    continue
+                difference = [a-b for a, b in zip(w, other)]
+                for index in range(k):
+                    basis = [Q(i == index) for i in range(k)]
+                    first = transport(basis, other)
+                    second = transport(swap(basis, l, r), w)
+                    assert [a-b for a, b in zip(first, second)] == [a*(w[index]+other[index]) for a in difference]
+                boundary_count += 1
+        xx, vv = [helmert(x, j) for j in range(2, k)], [helmert(v, j) for j in range(2, k)]
+        for j in range(2, k):
+            assert helmert(p0, j) == 1
+            assert vv[j-2] == (j+1)*rates[j]+sum(rates[l] for l in range(j+1, k))
+        assert all(0 < a < b for a, b in zip(xx, xx[1:]))
+        assert all(a > b > 0 for a, b in zip(vv, vv[1:]))
+        assert all(vv[i]*xx[j]-vv[j]*xx[i] > 0 for i, j in itertools.combinations(range(k-2), 2))
+        cases.append({"k": k, "multiplicity_dimension": math.comb(k-2, 2),
+                      "positive_linear_supersolution_coordinates": "passed",
+                      "ordered_residual_coordinates": "passed"})
+
+        if k <= 6:
+            basis = [[Q(1)]*j+[Q(-j)]+[Q(0)]*(k-j-1) for j in range(2, k)]
+            pairs = list(itertools.combinations(range(k-2), 2))
+            terms = []
+            for rest in itertools.permutations(range(2, k)):
+                perm = [0, 1, *rest]
+                z = [y[i] for i in perm]
+                terms.append((dot(x, z), perm, None))
+                terms.extend((dot(x, swap(z, 1, l)), perm, l) for l in vectors)
+            minimum = min(e for e, _, _ in terms)
+            powers = {e: 1 << (int(e-minimum)) for e, _, _ in terms}
+            matrix = [[Q(0) for _ in pairs] for _ in pairs]
+            for exponent, perm, l in terms:
+                linear = []
+                for column in basis:
+                    value = [column[i] for i in perm]
+                    if l is not None:
+                        value = transport(value, vectors[l])
+                    linear.append([helmert(value, j)/Q(j*(j+1)) for j in range(2, k)])
+                factor = (2 if l is None else 1)*powers[exponent]
+                for a, (i, j) in enumerate(pairs):
+                    for b, (r, s) in enumerate(pairs):
+                        matrix[a][b] += factor*(linear[r][i]*linear[s][j]-linear[s][i]*linear[r][j])
+            assert all(entry > 0 for row in matrix for entry in row)
+            folded_cases.append({"k": k, "matrix_size": len(pairs),
+                                 "strict_positive_entries": len(pairs)**2, "tau": "log(2)"})
+
+    # Mere positivity of abstract row rates does not prove the ordered residual.
+    assert 105*203-108*200 == -285 < 0
+    return {"third_exterior_transport_pairs": transport_count,
+            "rank_one_junction_pairs": boundary_count,
+            "supersolution_coordinate_controls": cases,
+            "selected_positive_folded_matrices": folded_cases,
+            "unordered_positive_rates_control": "passed",
+            "scope": "Exact third-exterior transport, rank-one junction-pair and selected ordered coordinate identities for 4<=k<=8; selected strict positive folded exterior matrices for 4<=k<=6. A control rejects positivity of abstract row rates without their required ordering. The all-degree Gaussian creation identity S72 and complete third-hook spectral gap S73 are written proofs, not certified by these finite controls."}
+
+
 def standard_mass_weight_control():
     """Reject removing the translation eigenvector using the wrong mass weight."""
     rho, weights, a, h = Q(1, 2), [Q(1, 2)]*2, [Q(1), Q(4)], [Q(1), Q(-1)]
@@ -811,6 +910,7 @@ def main():
                          "universal_blocks": universal_block_controls(),
                          "standard_mass_weight": standard_mass_weight_control(),
                          "standard_hook_gaussian": standard_hook_gaussian_controls(),
+                         "higher_exterior_hooks": higher_exterior_hook_checks(),
                          "interval_gap": interval_gap_check()},
         "analytic_claims_certified_by_this_script": False,
         "independent_replay": False,

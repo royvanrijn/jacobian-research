@@ -500,7 +500,7 @@ now gives a single root, of multiplicity thirty as claimed.
 ## The coefficient field at the multiplicity-thirty edge
 
 **Corollary PolynomialWeylOrderTwelveEighteenRationalExclusion.**
-There is no proper polynomial Weyl pair over \(\mathbb Q\) with
+There is no proper polynomial Weyl pair over a totally real number field with
 nonzero scalar commutator and reduced differential orders
 \((12,18)\). More generally the same holds over any
 characteristic-zero field over which both cubics
@@ -564,6 +564,335 @@ root in the coefficient field.
 
 Both cubics are irreducible over \(\mathbb Q\): they
 have degree three modulo eleven and take nonzero values
-at every residue. The coefficient identities, resultant
+at every residue. Their derivatives have negative
+discriminants, respectively \(-62208\) and \(-13900572\),
+so each irreducible cubic has two nonreal conjugates.
+A totally real number field cannot contain a root of either.
+The coefficient identities, resultant
 and residue check are reproduced by the
 [order-twelve checker](verify_weyl_order_twelve.py).
+
+
+## The order-eleven obstruction and its generalization at the successors
+
+**Theorem PolynomialWeylSixThirtyCrossingExclusion.**
+Let \(b\ge3\) be odd. A characteristic-zero polynomial Weyl
+pair of differential orders \((12,6b)\) with nonzero scalar
+commutator cannot have highest forms proportional to \(R^2,R^b\)
+in weights \((-1,6)\), where
+\[
+ R=x^{-6}r(z),\qquad z=x^6y,\qquad
+ r(z)=zL(z),\qquad \deg L=5,\qquad L(0)\ne0 .
+\]
+In particular the \((6,30)\) crossing in the order-twelve
+reduction is impossible for each of its proposed ratios.
+
+### The polynomial resultant on the initial face
+
+Work over the algebraic closure. This highest pair has common
+leading factor \(h\) with multiplicity thirty at \(x=0\).
+Normalize \(\operatorname{lc}P=h^2\) and put \(U=P^{1/2}\).
+The
+[fractional-power expansion by differential order](POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md#fractional-powers-by-differential-order)
+writes \(Q\) as a constant linear combination of
+\((P^{j/(2e)})_+\), where \(e=\gcd(6,\{\operatorname{mult}_r h\})\).
+Subtract its integer powers of \(P\) and normalize the top
+coefficient to one. The remaining half-integer powers give
+the nonnegative part of \(F=U A(P)\), with \(A\) monic
+of degree \((b-1)/2\).
+
+If a fractional term remains with \(e\nmid j\), take the
+largest such index. Then \(Q^2-F^2\) is polynomial, of
+differential order \(6b+6j/e\) and leading coefficient
+proportional to \(h^{b+j/e}\). By the multiplicity-thirty
+root its weight is at least \(6b+6j/e\).
+Since \([Q^2-F^2,P]=2\kappa Q\) and the commutator
+loses weight five, a weight above \(6b-7\) forces
+the top to commute with \(R^2\).
+A commuting top has weight a multiple of six and
+differential order equal to that weight, by the simple
+root of \(r\) at zero and \(\deg r=6\).
+Since \(e\nmid j\), this would exceed the differential
+order of \(Q^2-F^2\). Hence \(Q=F_+\).
+
+Put \(S=F-Q\), so \([S,P]=-\kappa\).
+If the order \(j\) of \(S\) is above \(-11\), its leading
+coefficient is proportional to \(h^{j/6}\), by differential
+order. Orders \(-5,\ldots,-1\) are impossible by the same
+commuting-weight argument: \(Q^2-F^2\) would have order
+\(6b+j\) and weight at least \(6b+j>6b-7\).
+Remove order \(-6\) if present by subtracting \(cU^{-1}\).
+The remainder has order \(j\) in \([-11,-7]\), since one
+below \(-11\) could not yield the nonzero scalar commutator.
+The polynomial operator
+\[
+                 W=Q^2-P A(P)^2+2c A(P)
+\]
+has differential order \(6b+j\le6b-7\) and
+\([W,P]=2\kappa Q\). Its weight is exactly \(6b-7\):
+anything lower cannot give that commutator, whereas a
+higher value would force a commuting top of order
+at least \(6b-6\).
+
+Write the top as \(x^{-(6b-7)}w(z)\).
+The commutator gives, up to orientation,
+\[
+             6w'r-(6b-7)wr'=\kappa_0 r^{b-1},
+                  \qquad \kappa_0\ne0.                     \tag{8}
+\]
+At any root of \(r\) of multiplicity \(u\), the highest
+local derivative cannot cancel: \(6v=(6b-7)u\) for an
+integer order \(v\) would require \(6\mid u\), and all
+those multiplicities are at most five.
+Thus \(w\) has order \((b-2)u+1\) there.
+It follows that \(G=w/(zr^{b-2})\) is polynomial of
+degree at most four and vanishes at all roots of \(L\).
+In particular the maximal root multiplicity \(m\) of
+\(L\) is in \(\{2,3,4,5\}\).
+
+### The successor cannot keep the commutator
+
+Use Fourier variables \((X,Y)=(y,-x)\) and put
+\(\eta=X^{1/6}Y\). The common factor of the top of \(P,Q\)
+at slope \(s_0=1/6\), meaning weight \((1,-s_0)\) on
+\((X,Y)\), is \(X L(\eta^6)\) up to scalar.
+The top of \(W\) is a nonzero constant times
+\[
+                  X^{b-7/6}\eta^{-(6b-7)}w(\eta^6).
+\]
+Choose a maximal root \(\lambda\) of \(L(\eta^6)\).
+It is nonzero and still has multiplicity \(m\).
+Translate \(Y\) by \(\lambda X^{-1/6}\) in the fractional
+Weyl algebra with exponent lattice \((1/6)\mathbb Z\)
+in \(X\) and nonnegative integral \(Y\)-exponents.
+After translation, the terms of least \(Y\)-exponent on
+the respective \(s_0\)-faces are multiples of
+\[
+           X^2\eta^{2m},\qquad X^b\eta^{bm},\qquad
+           X^{b-7/6}\eta^{(b-2)m+1}.                         \tag{9}
+\]
+The last term follows from the order of \(w\) at the
+corresponding nonzero root. The translation preserves
+both commutator equations. The two highest forms of \(P,Q\)
+commute and have positive weights in ratio \(2:b\).
+The high-\(Y\) endpoint before translation is on the
+strict negative side of the diagonal, from the point
+\((6,30)\) of the common factor.
+The translated pair therefore has a common successor
+of larger slope \(s>s_0\) in \((0,1)\), with positive
+weights and the endpoints in (9) for \(P,Q\).
+[Guccione–Guccione–Valqui, Proposition 4.3](https://arxiv.org/pdf/1205.6827v1)
+
+We will use the same proposition after each single-root
+shift. The endpoints (9), expressed as exponent points
+in \(X,Y\), stay fixed. Write
+\(\Delta=s-1/6,\ \xi=X^s Y\), and \(k_W=(b-2)m+1\).
+The weights of the two successor forms are
+\[
+             a=2-2m\Delta>0,\qquad d=\tfrac b2 a .
+\]
+Their coefficient polynomials in \(\xi\) have degrees
+\(2m,bm\), from their high-\(Y\) endpoints.
+The endpoint for \(W\) gives a lower bound
+\(\omega_0=b-7/6-k_W\Delta\) on its weight.
+Its top polynomial in \(\xi\) has degree at most \(k_W\):
+at the preceding slope terms with larger \(Y\)-exponent
+had weight at most that of its endpoint, and their relative
+weight strictly decreases as the slope increases.
+
+If the top bracket at the successor is scalar, then
+\(a+d=1-s\). With \(N=b+2\) this gives
+\[
+                    6s=\frac{N(6+m)-6}{Nm-1}.
+\]
+Let \(D\) be its reduced denominator. Two monomials of
+the same weight on the \(1/6\)-lattice have \(Y\)-exponents
+differing by a multiple of \(D\). Therefore \(D\le2m\),
+since \(P\) has a face of positive length. Moreover
+\(D\mid 2m\) or \(D\mid bm\): if neither holds, both
+coefficient polynomials in \(\xi\) vanish at zero and their
+scalar bracket vanishes there. Since \(\gcd(D,m)=1\), this
+requires \(D\mid2\) or \(D\mid b\).
+
+The cancelled gcd divides \(5m-6\), by subtracting
+\(6(Nm-1)\) from \(m(6N-5)\).
+For \(m=2,3\) that gcd is one, since \(Nm-1\) is
+coprime to two when \(m=2\), and coprime to nine when
+\(m=3\). Thus \(D>2m\).
+For \(m=4\) cancellation is by at most seven, and
+\(D\le8\) would require \(N\le14\) and \(N\equiv2\bmod7\).
+Since \(N\ge5\) is odd, this gives \(N=9,D=5\),
+dividing neither two nor \(b=7\).
+For \(m=5\) cancellation is by at most nineteen, and
+\(D\le10\) requires \(N\le38\) and \(N\equiv4\bmod19\).
+This gives \(N=23,D=6\), dividing neither two nor \(b=21\).
+Thus a scalar successor is impossible.
+
+Otherwise \(P,Q\) have commuting top symbols.
+Their coefficient polynomials have constant quotient
+of the square of the second by the \(b\)-th power of
+the first, by the Poisson bracket in \(X,\xi\).
+Thus the symbols are \(X^a f(\xi)^2,\ X^d f(\xi)^b\),
+up to scalars, with \(\deg f=m\).
+If \(W\) has weight \(\omega>\omega_0\), its top
+\(X^\omega U_0(\xi)\) must commute with \(X^a f^2\):
+otherwise \([W,P]\) would have weight above \(d\),
+since \(\omega_0+a-(1-s)=d\).
+The leading degree in the commuting bracket gives
+\[
+ \omega=\frac{a\deg U_0}{2m}\le\frac{a k_W}{2m}
+             =\omega_0-\left(\frac56-\frac1m\right)
+             <\omega_0.
+\]
+Thus the weight is exactly \(\omega_0\).
+The bracket of the leading symbols is now nonzero and
+the identity \([W,P]=2\kappa Q\) gives
+\[
+         U_0'-\frac{2\omega_0}{a}\frac{f'}{f}U_0
+                      =c_0 f^{b-2},\qquad c_0\ne0 .        \tag{10}
+\]
+These bracket formulas follow from
+\(\{\xi,X\}=\pm X^s\) and the positive weight loss \(1-s\)
+in the fractional Weyl algebra.
+
+For a root of \(f\) of multiplicity \(u\), if \(U_0\)
+has order \(v\le(b-2)u\), the coefficient at order \(v-1\)
+in (10) has nonzero multiplier \(v-(2\omega_0/a)u\),
+since \(2\omega_0/a>k_W/m>b-2\).
+This contradicts the order \((b-2)u\) of the right side.
+Thus \(v\ge(b-2)u+1\) at each root.
+As \(\deg U_0\le k_W\), \(f\) has only one distinct root,
+and \(U_0\) vanishes there to order \(k_W\).
+
+This root is nonzero because the successor for \(P\)
+has more than one monomial.
+Its coefficient polynomial is proportional to a
+\(2m\)-th power of a linear polynomial with nonzero
+constant term. Consecutive \(Y\)-exponents therefore
+occur, so \(6s\) is integral. The root shift stays on
+the same fractional lattice. After it, \(P,Q,W\)
+have monomial faces at slope \(s\) at precisely the
+endpoints in (9).
+Before the shift the primitive high-\(Y\) endpoint is
+\((1+m/6,m)\), on the strict negative side of
+the diagonal since \(m\ge2\).
+Thus Proposition 4.3 applies again with the same lattice.
+Each such step strictly increases \(s\) in \((0,1)\)
+and has \(6s\) integral, so only finitely many can
+occur. There is no possible scalar step. This contradicts
+the existence of the required successors.
+
+
+## The cubic resultant in orders twelve and sixteen
+
+**Theorem PolynomialWeylOrderTwelveSixteenResultantExclusion.**
+A proper polynomial Weyl pair over a characteristic-zero field
+cannot have reduced differential orders \((12,16)\).
+
+Work over the algebraic closure. In this row the common leading
+factor \(h\) has a root of multiplicity twelve and degree at
+least twenty-four. The
+[gcd-four translated crossing](POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md#gcd-four-and-differential-order-eight)
+at that root, translated to zero, has top symbols proportional
+to \(R^3,R^4\) at weight \((-1,4)\), where
+\[
+          R=x^{-4}r(z),\qquad z=x^4y,\qquad
+          r(z)=z L(z),\qquad \deg L=3,\qquad L(0)\ne0 .
+\]
+Set \(e=\gcd(4,\{\operatorname{mult}_r h\})\).
+If \(e=4\), the
+[perfect-power residue obstruction](POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md#perfect-power-leading-factors)
+would make \(h\) have a single root of multiplicity twelve,
+contrary to the degree bound. Thus \(e\) divides two.
+
+Normalize the leading coefficients to \(h^3,h^4\), and let
+\(U=P^{1/3}\), with rational coefficients and differential
+order four. The
+[fractional-power expansion](POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md#fractional-powers-by-differential-order)
+expresses \(Q\) as a sum of nonnegative parts of powers
+\(P^{j/(3e)}\). Those with \(e\mid j\) give the nonnegative
+part of a monic \(F(U)\) of degree four. We will also allow
+terms of degrees \(-1,-2\) in \(F\) when removing negative
+orders of \(Q-F(U)\).
+
+Let \(\zeta\) be a primitive cube root of unity and define
+the polynomial in commuting auxiliary variables \(P,T\) by
+\[
+           \Psi(P,T)=P^2\prod_{i=0}^2\bigl(T-F(\zeta^i U)\bigr),
+                        \qquad U^3=P .
+\]
+Its coefficients are invariant under \(U\mapsto\zeta U\),
+and multiplication by \(P^2=U^6\) clears all negative
+exponents. Evaluate the polynomial at the Weyl pair with
+\(P\)-coefficients on the left, and denote the result by \(W\).
+Then \([W,P]=\kappa\Psi_T(P,Q)\) for \([Q,P]=\kappa\ne0\).
+With weights \(12,16\) on the auxiliary variables, the top
+of \(\Psi\) is \(P^2(T^3-P^4)\), since the highest term of
+\(F\) is \(U^4\). Therefore \([W,P]\) has weight fifty-six
+at \((-1,4)\), and its top is a nonzero multiple of \(R^{14}\).
+
+Let \(T_1=Q-F(U)\), of differential order \(j<16\).
+It is nonzero since \(F(U)\) commutes with \(P\).
+In the pseudodifferential expansion of \(W\) in \(T_1\),
+the term with no \(T_1\) vanishes by the defining
+product. The terms linear in \(T_1\) have highest-order
+coefficient equal to that of \(\Psi_T(P,F(U))T_1\):
+moving the coefficients past \(T_1\) affects only lower
+orders. The derivative at \(F(U)\) has order fifty-six
+and leading coefficient \(3h^{14}\), from
+\[
+ P^2\bigl(F(U)-F(\zeta U)\bigr)
+      \bigl(F(U)-F(\zeta^2 U)\bigr).
+\]
+Terms with at least two \(T_1\)'s have order at most
+\(72-2(16-j)<56+j\). Hence \(W\) has order \(56+j\).
+If the leading coefficient of \(T_1\) is proportional
+to \(h^{j/4}\), the high root gives weight at least
+\(56+j\) for \(W\).
+
+Whenever \(56+j>47\) and that leading coefficient
+condition holds, the top of \(W\) must commute with
+\(R^3\), by \([W,P]=\kappa\Psi_T(P,Q)\) and the weight
+loss of three. A homogeneous commuting symbol
+\(x^{-v}a(z)\) satisfies \(v a r'-4a'r=0\).
+The simple root of \(r\) at zero forces \(v/4\) integral,
+and \(a\) is a multiple of \(r^{v/4}\).
+Its differential order is then \(v\), since \(\deg r=4\).
+So \(j\) must be divisible by four in this case.
+
+If the original \(F\) omitted any nonnegative
+fractional power in \(Q\), then \(j>0\) is not divisible
+by four and its coefficient is proportional to
+\(h^{j/4}\), a contradiction. Thus \(T_1\) has negative
+order. At an order \(j>-11\), differential-order
+comparison in \([T_1,P]=\kappa\) gives the same leading
+coefficient condition, and rationality requires
+\(4/e\mid j\). In particular \(j\) is even.
+Orders \(j>-9\) are possible only at \(-4\) and \(-8\),
+by the preceding weight comparison. Remove those
+successively, if present, by including the corresponding
+constant multiples of \(U^{-1},U^{-2}\) in \(F(U)\).
+Each redefines \(\Psi\) with the same polynomiality
+and top. The remaining order is at most \(-10\), since
+\(-9\) is not even.
+
+Now \(W\) has order at most forty-six and weight
+exactly forty-seven. A lower weight contradicts the
+commutator of weight fifty-six. A higher weight would
+give a commuting top of order at least forty-eight.
+Write its top as \(x^{-47}w(z)\), with \(\deg w\le46\).
+After division by the factor \(R^2\) in the leading
+bracket with \(R^3\), one obtains
+\[
+                        4w'r-47wr'=c_1 r^{12},
+                         \qquad c_1\ne0 .
+\]
+At a root of \(r\) of multiplicity \(u\le3\),
+the integer order \(v\) of \(w\) cannot satisfy
+\(4v=47u\). Comparing local orders therefore gives
+\(v=11u+1\).
+There are at least two distinct roots of \(r\), so
+\(\deg w\ge11\deg r+2=46\). At degree forty-six, the
+left side has nonzero leading coefficient and degree
+forty-nine, whereas the right side has degree forty-eight.
+This contradiction excludes the row.

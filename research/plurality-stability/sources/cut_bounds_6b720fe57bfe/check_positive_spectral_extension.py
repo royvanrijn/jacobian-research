@@ -10,6 +10,7 @@ import argparse
 from fractions import Fraction
 import json
 import math
+import sys
 import time
 
 import numpy as np
@@ -194,6 +195,64 @@ def integrate(values, widths):
     return Interval(lo, hi)
 
 
+def temple_bound(hs_squared, rayleigh_lo, rayleigh_hi, residual_squared):
+    if not rayleigh_lo > 0:
+        raise ArithmeticError('leading eigenvalue not isolated')
+    rest_square = base.sub_hi(hs_squared, base.mul_pos_lo(rayleigh_lo, rayleigh_lo))
+    rest = base.sqrt_pos_hi(max(0, float(rest_square)))
+    if not rayleigh_lo > rest:
+        raise ArithmeticError('leading eigenvalue not isolated')
+    upper = base.add_hi(rayleigh_hi, base.div_pos_hi(residual_squared,
+                        base.sub_lo(rayleigh_lo, rest)))
+    return rest, float(upper)
+
+
+def finite_controls(table):
+    # A self-adjoint two-dimensional positive control with an exactly
+    # normalized rational vector, and a rejected absent spectral gap.
+    a = arb(19) / 10
+    b = arb(1) / 5
+    w = arb(99)**2 / 101**2
+    rayleigh = w * a + (1 - w) * b
+    raw_residual = w * (a - 2)**2 + (1 - w) * (b - 2)**2
+    h2 = a*a + b*b
+    rest, upper = temple_bound(base.bounds(h2)[1], *base.bounds(rayleigh),
+                               base.bounds(raw_residual)[1])
+    assert upper >= base.bounds(a)[1] and upper < 2
+    try:
+        temple_bound(4, 0.1, 0.2, 0.01)
+    except ArithmeticError:
+        pass
+    else:
+        raise AssertionError('absent isolation must be rejected')
+    points = (0.0, float(table.edges[len(table.edges)//3]),
+              float((table.edges[len(table.edges)//2] + table.edges[len(table.edges)//2+1])/2))
+    for q in points:
+        direct = point_values(arb(q))
+        for key in direct:
+            enclosed = table.query(key, Interval(q))
+            lo, hi = base.bounds(direct[key])
+            assert float(enclosed.lo) <= lo and float(enclosed.hi) >= hi, (key, q)
+    try:
+        table.query('L', Interval(-0.01))
+    except ArithmeticError:
+        pass
+    else:
+        raise AssertionError('negative table argument must be rejected')
+    return dict(rational_matrix_spectral_upper=upper,
+                absent_isolation_rejected=True, interpolation_control_points=len(points),
+                negative_table_argument_rejected=True)
+
+
+def verify_cover(results, lower, upper):
+    position = Fraction(str(lower))
+    for item in sorted(results, key=lambda r: r['rho_lo']):
+        if Fraction(item['rho_lo']) > position or not item['spectral_upper'] < 2:
+            return False
+        position = max(position, Fraction(item['rho_hi']))
+    return position >= Fraction(str(upper))
+
+
 class TrialMesh:
     def __init__(self, cutoff, panels):
         edges = np.linspace(0, cutoff, panels + 1)
@@ -271,12 +330,8 @@ def spectral_slab(rho_lo, rho_hi, cutoff, mesh, table, exp_table, constants, hs_
         raise ArithmeticError('trial norm lower bound not positive')
     rayleigh = Interval(2) + correction / denom
     residual_squared = base.div_pos_hi(defect.hi, denom.lo)
-    rest_square = base.sub_hi(hs_squared, base.mul_pos_lo(rayleigh.lo, rayleigh.lo))
-    rest = base.sqrt_pos_hi(max(0, float(rest_square)))
-    if not float(rayleigh.lo) > rest:
-        raise ArithmeticError('leading eigenvalue not isolated')
-    upper = base.add_hi(rayleigh.hi, base.div_pos_hi(residual_squared,
-                        base.sub_lo(rayleigh.lo, rest)))
+    rest, upper = temple_bound(hs_squared, float(rayleigh.lo), float(rayleigh.hi),
+                               float(residual_squared))
     return dict(rho_lo=rho_lo, rho_hi=rho_hi, hs_squared=float(hs_squared),
                 trial_norm=[float(denom.lo), float(denom.hi)],
                 rayleigh=[float(rayleigh.lo), float(rayleigh.hi)],
@@ -288,15 +343,17 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--rho-min', type=float, default=0.42)
     parser.add_argument('--rho-max', type=float, default=0.44)
-    parser.add_argument('--rho-panels', type=int, default=40)
+    parser.add_argument('--rho-panels', type=int, default=20)
     parser.add_argument('--cutoff', type=float, default=7.0)
-    parser.add_argument('--trial-panels', type=int, default=8192)
-    parser.add_argument('--interpolation-bins', type=int, default=2048)
-    parser.add_argument('--hs-panels', type=int, default=1600)
-    parser.add_argument('--a-bins', type=int, default=16384)
-    parser.add_argument('--q-bins', type=int, default=4096)
-    parser.add_argument('--exp-bins', type=int, default=65536)
+    parser.add_argument('--trial-panels', type=int, default=262144)
+    parser.add_argument('--interpolation-bins', type=int, default=4096)
+    parser.add_argument('--hs-panels', type=int, default=800)
+    parser.add_argument('--a-bins', type=int, default=4096)
+    parser.add_argument('--q-bins', type=int, default=1024)
+    parser.add_argument('--exp-bins', type=int, default=131072)
     parser.add_argument('--v-panels', type=int, default=64)
+    parser.add_argument('--min-rho-width', type=float, default=0.0000001)
+    parser.add_argument('--max-attempts', type=int, default=20000)
     parser.add_argument('--output')
     args = parser.parse_args()
     assert 0 < args.rho_min < args.rho_max < 0.5
@@ -311,6 +368,7 @@ def main():
     zmax = float(math.ceil(base.bounds(max(arb(args.cutoff**2), rhomax**2 / d * 2 * args.cutoff**2))[1]) + 1)
     print('building validated interpolation points', flush=True)
     table = InterpolatedTable(qmax, args.interpolation_bins)
+    controls = finite_controls(table)
     print('building upstream HS tables', flush=True)
     qt = positive.build_positive_q_table(qmax, args.q_bins, args.v_panels, 2.0)
     at = positive.build_positive_a_table(amax, args.a_bins, args.v_panels, 2.0)
@@ -321,19 +379,58 @@ def main():
     edges[0] = args.rho_min
     edges[-1] = args.rho_max
     results = []
-    for lo, hi in zip(edges[:-1], edges[1:]):
-        lo = math.nextafter(float(lo), -math.inf)
-        hi = math.nextafter(float(hi), math.inf)
+    parent_covers = []
+    attempts = 0
+    stopped = False
+    for parent_lo, parent_hi in zip(edges[:-1], edges[1:]):
+        lo = math.nextafter(float(parent_lo), -math.inf)
+        hi = math.nextafter(float(parent_hi), math.inf)
         hs = positive.certify_slab(lo, hi, args.cutoff, args.hs_panels, 48,
                                   at, qt, et, constants)
-        result = spectral_slab(lo, hi, args.cutoff, mesh, table, et, constants, hs.total)
-        print(json.dumps(result), flush=True)
-        results.append(result)
-    passed = all(x['spectral_upper'] < 2 for x in results)
+        parent_covers.append(dict(rho_lo=lo, rho_hi=hi, hs_squared=hs.total,
+                                  finite=hs.finite, tail=hs.tail,
+                                  kernel_tail=hs.kernel_tail, additive_tail=hs.additive_tail))
+        pending = [(float(parent_lo), float(parent_hi))]
+        while pending:
+            child_lo, child_hi = pending.pop()
+            attempts += 1
+            expanded_lo = math.nextafter(child_lo, -math.inf)
+            expanded_hi = math.nextafter(child_hi, math.inf)
+            try:
+                result = spectral_slab(expanded_lo, expanded_hi, args.cutoff, mesh,
+                                       table, et, constants, hs.total)
+            except ArithmeticError as exc:
+                if str(exc) != 'leading eigenvalue not isolated':
+                    raise
+                result = None
+            if result is not None and result['spectral_upper'] < 2:
+                result['hs_parent_index'] = len(parent_covers) - 1
+                print(json.dumps(result), flush=True)
+                results.append(result)
+            elif child_hi-child_lo > args.min_rho_width and attempts < args.max_attempts:
+                midpoint = (child_lo+child_hi)/2
+                pending.append((midpoint, child_hi))
+                pending.append((child_lo, midpoint))
+            else:
+                print('unaccepted slab '+repr((child_lo, child_hi, result)), flush=True)
+                stopped = True
+                break
+        if stopped:
+            break
+    passed = not stopped and verify_cover(results, args.rho_min, args.rho_max)
+    # A deliberately incomplete cover cannot be promoted by successful
+    # individual slabs.
+    if passed and len(results) > 1:
+        assert not verify_cover(results[1:], args.rho_min, args.rho_max)
+    controls['incomplete_cover_rejected'] = bool(passed and len(results) > 1)
     output = dict(status='pass' if passed else 'fail', parameters=vars(args),
                   coefficients=[str(c) for c in COEFFICIENTS],
                   exponents=[str(lam) for lam in LAMBDAS],
-                  trial_mean='0', slabs=results,
+                  trial_mean='0', slabs=results, hilbert_schmidt_cover=parent_covers,
+                  attempts=attempts, controls=controls,
+                  environment=dict(python=sys.version.split()[0],
+                                   python_flint=__import__('flint').__version__,
+                                   numpy=np.__version__),
                   maximum_spectral_upper=max(x['spectral_upper'] for x in results),
                   elapsed_seconds=time.perf_counter() - start)
     if args.output:

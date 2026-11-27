@@ -9,7 +9,7 @@
   },
   "checker_sha256": "3d34471ddee5b3d3ad6e680ac645fce7ff53aa6e0288ff6b8f4dfe9edaee9b1a",
   "proof_source": "THREE_CELL_DIRECT_GLOBAL_INEQUALITY.md",
-  "proof_source_sha256": "4e7c4dbdb5d353680bcaff8bb9388f0b53fa26bdac731b2fb4c4951db5ae55b5",
+  "proof_source_sha256": "c0815a3b769a1f031b826ef9af9b6f6097aef8a599ffef037b2429364d4f97ff",
   "result": {
     "status": "pass",
     "rho": "1/2",
@@ -295,5 +295,5 @@
     "formal_verification": false,
     "external_review": false
   },
-  "limits": "The unrestricted direct inequality remains open above21/50. The fixed-profile comparisons at1/2,3/5 and9/10 allow arbitrary angular shapes but only sufficiently small multiples of the specified circular-mass profile. Positive upper-bound coefficients at3/5,7/10 and99/100 refute particular sufficient criteria, not simplex optimality. Independent replay, formal verification and external review are unperformed."
+  "limits": "The all-positive-correlation target remains open. The separate spectral result DG10 now proves the direct lower interval through11/25. The fixed-profile comparisons at1/2,3/5 and9/10 allow arbitrary angular shapes but only sufficiently small multiples of the specified circular-mass profile. Positive upper-bound coefficients at3/5,7/10 and99/100 refute particular sufficient criteria, not simplex optimality. Independent replay, formal verification and external review are unperformed."
 }

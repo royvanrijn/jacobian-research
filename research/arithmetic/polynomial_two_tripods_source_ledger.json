@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "checked_utc_date": "2026-11-27",
+  "result_document": "research/arithmetic/POLYNOMIAL_TWO_TRIPOD_COMPONENTS.md",
+  "assurance": "Internal unrestricted written E1-E3 proofs with bounded exact permutation/coordinate controls. Complete component classification of the five-part/two3cycle family, not of arbitrary polynomial passports. Lifting values are not classified uniformly beyond the previously retained degree15 case.",
+  "declarations": [
+    {
+      "name": "Lemma E1. Exact tripod coordinates",
+      "node": "ARITH-POLYNOMIAL-TWO-TRIPOD-COORDINATES",
+      "scope": "For a five-cycle finite factor and two3cycles in the minimal polynomial domain, contracting the five cycles gives exactly two tripods sharing one cycle. With cycle labels, simultaneous-relabeling classes are (c,a,b,d,e;delta), count24N. Forgetting repeated-length labels is the free product-of-symmetric-groups quotient of order M=product m_a!. Every tuple has trivial deck centralizer."
+    },
+    {
+      "name": "Theorem E2. Two components exactly for distinct lengths",
+      "node": "ARITH-POLYNOMIAL-TWO-TRIPOD-ORIENTATION-COMPONENTS",
+      "scope": "For every nonidentity five-part cycle type lambda, the full polynomial passport lambda,3,3 has exactly two components if lambda has distinct parts and one otherwise. Pair twists normalize every attachment offset, and the zero-offset moves generate A5 on the five labels. Each strict component has36N absolute/36N^2 literal states. With repeated parts the sole component has72N/M absolute/72N^2/M literal states, except lambda=(1,1,1,1,3) with all three factors of the same type, whose counts are7/49. These are written all-degree proofs, not extrapolated searches."
+    },
+    {
+      "name": "Theorem E3. Actual group, every block system, and deck symmetry",
+      "node": "ARITH-POLYNOMIAL-TWO-TRIPOD-ACTUAL-GROUP-AND-BLOCKS",
+      "scope": "For the entire five-cycle/two3cycle family, D=gcd(lambda), n=N/D>=5, all block-count divisors are div(D) union{N}, and every tuple has the identical actual embedded group (product of Alt(B_j))<P_N>. Its order is(n!/2)^D times D for odd n and2D for even n. The normal closure of the literal3cycles is precisely the independent alternating product. Deck group is trivial. D1 specializes to primitive An for odd N and Sn for even N."
+    }
+  ],
+  "primary_inputs": [
+    {
+      "authors": "Gareth A. Jones and Alexander Zvonkin",
+      "title": "Orbits of braid groups on cacti",
+      "url": "https://www.labri.fr/perso/zvonkin/Research/jones-zv.pdf",
+      "doi": "10.17323/1609-4514-2002-2-1-127-160",
+      "path": "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf",
+      "sha256": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+      "inspected": "Actual retained author PDF, Section1.1 and Theorem1.1, printed130-131; Section1.3 Goulden-Jackson formula, printed133. Primary paper opened online and actual local statements read.",
+      "application": "Conventions and exact total24N^2/M as a comparison. The new braid/component and actual-group proofs are explicit. The historical unresolved statement is not evidence of current novelty, and no arbitrary An/Sn classification is imported."
+    }
+  ],
+  "proof_inputs": [
+    {
+      "path": "research/arithmetic/POLYNOMIAL_TWO_TRIPOD_COMPONENTS.md",
+      "sha256": "21f38a29a7e3462560a088ded93e883fabeb1f3344129bf5a74ec6a72dadb7fa",
+      "locator": "E1-E3; exact repeated-length and identical-factor exception; explicit lifting limits"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
+      "sha256": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+      "locator": "H1 cycle-incidence tree; H2 complete residue block systems; ordinary hook character count"
+    },
+    {
+      "path": "research/arithmetic/POLYNOMIAL_INTRINSIC_CLASSES_AND_LIFTING.md",
+      "sha256": "7f7edcd00cce8221f6f705684ef394aa7f56bebc3fb5b53dacd443c53add17c9",
+      "locator": "D7 strict lift-class criterion and degree15 specialization only"
+    },
+    {
+      "path": "research/arithmetic/sources/jones-zvonkin-braid-cacti-2002.pdf",
+      "sha256": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+      "locator": "Section1.1/Theorem1.1 conventions and Section1.3 count comparison"
+    }
+  ],
+  "verification": {
+    "checker": "research/arithmetic/verify_polynomial_two_tripods.py",
+    "checker_sha256": "25f5bf11e359684826b3a399c26af7996926cc4b6910fb90e8fa20d38484fac1",
+    "receipt": "research/arithmetic/polynomial_two_tripods_verification.json",
+    "receipt_sha256": "37124cd2192bc902f22a5de10a2d7ffcd44b89a11af657bbdcf2daad696f4075",
+    "command": "python3 research/arithmetic/verify_polynomial_two_tripods.py",
+    "working_directory": "Canonical Ubuntu-24.04 WSL repository root",
+    "software": "Python3.12.3, standard library, assertions active",
+    "compact_scope": "14 strict partitions: 6696 full compact states, all six signed Schreier edges compared with raw permutation braids. Eight repeated partitions: 338 full unlabelled compact states, raw signed-edge comparison and connected quotient.",
+    "literal_scope": "Eleven complete passports with 112552 literal tuples, exact disjoint braid closures exhausting independently calculated ordinary hook totals. All strict literal states checked for orientation; every component seed has complete residue-divisor/deck tests and exact normal-three-cycle support block certificates.",
+    "negative_controls": "Unsorted lengths, repeated coordinate labels, out-of-range offsets and non-tree supports rejected. Independently close five-position generators and overlap A4/A5 controls.",
+    "limits": "No full large generated-group enumeration. Actual group and all-degree completeness use E1-E3 written proofs. No uniform reduced multiplier or lift-value sufficiency formula is asserted."
+  },
+  "mathematical_review": {
+    "status": "pending",
+    "kind": "internal proof and computation audit",
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false,
+    "audited_steps": [
+      "Tree contraction including fixed cycles",
+      "Label transport and mixed-braid Schreier generators",
+      "Pair-twist attachment walk and signed action",
+      "Zero-offset A5 transitivity",
+      "Equal-length odd relabeling and pure3cycle type collision",
+      "Phase construction of every gcd block system",
+      "Normal3cycle support closure, alternating direct factors and actual embedded group",
+      "Free centralizer and full-twist literal/absolute counts"
+    ]
+  }
+}

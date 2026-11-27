@@ -3,9 +3,10 @@
 Fix $0<\rho<1$. Every global maximizer with three positive prescribed
 masses has a two-dimensional active plane, full moment rank and three
 pairwise interfaces of positive surface measure.
-A balanced maximizer with convex cells, or one invariant under dilations
-about the origin, is the regular three-sector partition. Thus a nonsimplex
-maximizer at the first continuation endpoint must escape both classes.
+A balanced maximizer with convex cells, invariant under dilations
+about any point, or sharing one simplex cell, is the regular three-sector
+partition. A nonsimplex maximizer at the first continuation endpoint
+must escape all three classes.
 The last section gives a counterexample to a circular rearrangement
 relaxation that drops disjointness while retaining all circular masses.
 
@@ -567,6 +568,331 @@ argument uses additional hypotheses, including a mixed correlation
 variation. The proof above uses positive-correlation maximality once
 conicality is given. Conicality of an arbitrary maximizer remains the
 missing step. [Heilman, arXiv:2209.11216v1, Definition 1.3, Theorem 1.5 and Lemmas 8.2–8.3](https://arxiv.org/html/2209.11216v1).
+
+### Cones centered at an arbitrary point
+
+A balanced planar global maximizer invariant under all positive
+dilations about a point $p$ is a central regular simplex. Only the
+stationary winning-score rule is needed to force $p=0$.
+
+First represent the conical partition by finitely many sectors. For
+each adjusted pair score choose a radial line from $p$ on which the
+analytic difference is not identically zero. It is nonzero at almost
+every positive radius on that line. For an almost-everywhere common
+radius the angular score differences are then nonidentically zero
+analytic functions of angle, so their zeros on the circle are finite.
+The conical labels agree almost everywhere with the winner on such
+a circle by Fubini. This determines finitely many interface rays
+from $p$.
+
+Take an interface ray between labels $i,j$, with tangential direction
+$\tau$ and unit normal $n$. Stationarity and real analyticity give
+that $T_\rho(1_{A_i}-1_{A_j})$ is constant on its entire supporting
+line $p+\mathbb R\tau$. In coordinates $p+s\tau+tn$ write
+$F(s,t)=1_{A_i}(p+s\tau+tn)-1_{A_j}(p+s\tau+tn)$ and set
+$\eta=-(1-\rho)p\cdot n$. The conditional normal distribution on
+that line has mean $\eta$ and variance $\sigma^2=1-\rho^2$.
+The conditional tangential mean ranges over the line. Hence
+one-dimensional Gaussian deconvolution gives that
+\[
+ \int_{\mathbb R} F(s,t)\phi_\sigma(t-\eta)\,dt
+ \quad\text{is constant for almost every }s\in\mathbb R.
+ \tag{G15}
+\]
+For bounded functions, deconvolution follows by Fourier transform
+in tempered distributions, since the Gaussian multiplier never
+vanishes and can be divided out on each compact frequency set.
+
+Suppose $\eta\ne0$. On $s>0$, the function $F(s,t)$ is a finite
+step function of $t/s$. Its jump locations are the slopes of all
+interface rays with positive tangential projection, since the
+three phase values $1,-1,0$ are distinct. Write $m$ for these
+slopes and $\Delta_m$ for the signed jumps. The slice in (G15) is
+continuous for $s>0$ and constant there. Differentiating its finite
+step formula gives a linear combination of
+\[
+ m\exp[-(ms-\eta)^2/(2\sigma^2)]
+ \qquad(m\ne0)
+\]
+with coefficients proportional to $\Delta_m$. These functions
+are linearly independent on $s>0$. In a finite combination,
+pick the term with smallest $m^2$ and, among those, largest
+$m\eta$. That term uniquely decays slowest as $s\to\infty$.
+Divide by it and take the limit, then repeat. Thus every
+nonzero slope jump vanishes. Applying the same calculation on
+$s<0$ with $-s>0$ leaves only rays parallel or perpendicular to
+the supporting line.
+
+Choose $n$ so that on the $s>0$ side the label of $t>0$ is $i$
+and that of $t<0$ is $j$. Put $q=\Phi(\eta/\sigma)$. The constant
+in (G15) is $2q-1$. On $s<0$ the difference now has constant
+values in $\{-1,0,1\}$ for $t>0$ and for $t<0$, respectively.
+At the observation points tending to infinity on the forward
+and reverse directions of the line, the full vector of
+conditional cell probabilities tends to the corresponding
+two side weights $q$ and $1-q$. If the reverse direction
+has distinct labels different as an unordered pair from
+$\{i,j\}$, then stationarity for its pair gives a second
+independent pair difference constant on the same line.
+The two differences and sum one force the forward and reverse
+probability vectors to coincide. This contradicts their
+different supports. If the reverse direction has a single
+label, the reverse difference is $1,-1$, or $0$, which cannot
+equal $2q-1$ since $0<q<1$ and $q\ne1/2$. Therefore the labels
+are $i,j$ on the two sides also in reverse, and in the same
+physical order since interchanging them negates $2q-1$.
+All four open quadrants then use only $i,j$, contradicting
+the positive mass of the third cell.
+
+Consequently each interface ray has $p\cdot n=0$. If $p\ne0$
+all such rays lie on the line through zero and $p$, which again
+leaves at most two labels. Thus $p=0$, and the origin-conical
+classification above gives the simplex under balance and
+stability. The argument uses the same analytic extension of
+stationary scores as the shifted simplicial result of
+Heilman–Mossel–Neeman, with the displaced normal convolution
+handling arbitrary finite conical sector patterns.
+[Heilman–Mossel–Neeman, Corollary 5.1](https://arxiv.org/abs/1403.0885)
+
+### One simplex cell determines the whole partition
+
+Suppose a balanced planar partition satisfies the stationary
+winning-score rule at $0<\rho<1$ and one cell $A_1$ agrees
+almost everywhere with a central $120^\circ$ wedge $T_1$.
+Then the partition is the central simplex.
+
+Along each of the two boundary rays of $T_1$, label 1 ties at
+least one other adjusted score, by continuity and the labels
+on both sides. Each of the two possible differences on the
+supporting line is analytic. At least one difference is
+identically constant on the line because two discrete zero
+sets cannot cover a ray. If both differences are constant
+then $U_1$ is constant by $\sum_i U_i=1$. This is impossible
+since $U_1$ tends to $1/2$ and to $0$ in the forward and reverse
+directions. Thus each ray has exactly one stationary opposing
+label in this sense.
+
+The two rays cannot have the same label $j$. If they did, the
+stationary difference $U_1-U_j$ on either line would be zero.
+It is at least $2U_1-1$ in the forward direction, so the limit
+is nonnegative. In the reverse direction it is at most $U_1$,
+so the same limit is nonpositive. By (G15) with $\eta=0$, the two
+projections of the Gaussian measures of $A_1$ and $A_j$ with
+covariance $\sigma^2 I$ would then coincide along the two unit
+tangents $\tau_1,\tau_2$. Put $g(z)=z$ for $z\ge0$ and $g(z)=2z$
+for $z<0$. The sum
+\[
+ g(x\cdot\tau_1)+g(x\cdot\tau_2)
+\]
+is strictly positive in the interior of $T_1$ and strictly
+negative outside its closure. Indeed if the two projections
+have opposite signs, the zero condition is that the negative
+projection equals minus half of the positive one. These are
+exactly the two outward rays, since $\tau_1\cdot\tau_2=-1/2$.
+When the projections have the same strict sign, the conclusion
+follows directly. Equality of the projected measures would
+give equal integrals of this sum on $A_1$ and $A_j$ under the
+narrower Gaussian, contradicting the opposite signs.
+
+Label the remaining reference cells $T_2,T_3$ according to
+the distinct opposing labels. Set $f=1_{A_2}-1_{T_2}$, so the
+discrepancy in cell 3 is $-f$. For the reference simplex, its
+incident pair convolutions are equal on the supporting lines
+by reflection. On the two lines bounding $T_1$, subtract the
+reference equality from the corresponding score equation for
+$A$. It follows that $T_\rho f$ is constant on each of these
+nonparallel lines. Therefore its gradient at zero vanishes,
+which says
+\[
+ \int_{\mathbb R^2} y f(y)\,d\gamma_{\sigma^2 I}(y)=0 .
+ \tag{G16}
+\]
+Here $\gamma_{\sigma^2 I}$ is the centered Gaussian measure
+with covariance $\sigma^2 I$. The discrepancy is nonpositive
+on $T_2$, nonnegative on $T_3$, and zero on $T_1$. Test
+(G16) against the linear functional strictly positive on the
+interior of $T_3$ and strictly negative on the interior of
+$T_2$. Its integral is strictly positive unless $f=0$ almost
+everywhere. This proves the assertion.
+
+For every compact interval $J\subset(0,1)$ there is
+$\varepsilon_J>0$ such that, if a balanced planar global
+maximizer at $\rho\in J$ has a cell within $\varepsilon_J$
+in Gaussian symmetric difference of any central $120^\circ$
+wedge, it is the simplex. Otherwise align and relabel a
+sequence of nonsimplex maximizers to make that cell approach
+$T_1$. By strong positive-correlation maximizer compactness,
+after a subsequence the partitions converge to an actual
+maximizer at a limiting correlation in $J$. The preceding
+result identifies the limit as the simplex. The
+[fixed-correlation measurable local comparison](POSITIVE_CORRELATION_CONTINUATION.md#an-interface-gap-implies-a-uniform-measurable-local-comparison),
+with (S37), precludes distinct maximizing partitions approaching
+this orbit. In particular every cell of a tied nonsimplex
+maximizer stays a positive distance from every regular simplex
+cell, uniformly over a compact correlation interval.
+
+## Negative index and the higher Hermite blocks at a maximizer
+
+Work in the weighted interface space $L^2(a\,d\nu)$ with norm
+$\|\cdot\|_a$. The unconstrained ordinary second-variation form is
+$Q_0(f)=\|f\|_a^2-\langle f,Kf\rangle$. The interaction is positive
+semidefinite by the Mehler factorization on the signed facet measures,
+and bounded in this weighted space by (G1). These assertions extend
+from compact regular speeds by density. Let $V=\{s_v:v\in\mathbb R^2\}$.
+It has dimension two, since the active plane is two-dimensional and
+the normals span it. By (G2), $Q_0$ acts as $1-1/\rho<0$ on this
+space, with zero mixed pairing between $V$ and $V^{\perp_a}$.
+
+The form is nonnegative on $V^{\perp_a}$. Otherwise adjoining a
+strictly negative direction in that complement to the two
+translations yields a three-dimensional negative space. Approximate
+its three basis speeds in the weighted norm by smooth compact
+speeds in regular interface interiors. Negative definiteness
+persists by continuity. This three-dimensional space must contain
+a nonzero balanced speed, since balance has at most two independent
+linear constraints. Its negative second variation contradicts
+stability of the actual planar maximizer. This argument needs
+balance only for the compact speeds.
+
+Consequently, writing $P_V$ for the weighted orthogonal projection,
+every extra-coordinate Hermite block with degree $m\ge1$ satisfies
+\[
+ Q^{(m)}(f)=\|f\|_a^2-\rho^m\langle f,Kf\rangle
+ \ge (1-\rho^{m-1})\|P_V f\|_a^2
+      +(1-\rho^m)\|f-P_V f\|_a^2 .
+ \tag{G17}
+\]
+This follows from $Q^{(m)}=\rho^m Q_0+(1-\rho^m)\|\cdot\|_a^2$
+and the exact translation value for $Q_0$. Thus the first extra
+block has a gap of at least $1-\rho$ modulo translations, and
+translations times linear extra coordinates give exactly the
+rotations mixing the active plane and the unused space. All
+higher blocks have positive gaps. The planar balanced Hessian
+can still have other zero modes.
+
+For a measurable interface subset $D$, put
+$A_D=\int_D a N N^{\mathsf T}d\nu$ and $A=A_{\mathrm{all}}$.
+The latter is positive definite. Apply (G17) at $m=1$ to
+$1_Ds_v$ and use (G2). The resulting strengthening of (G4) is
+\[
+ \rho\int_{D\times D^c}K(x,y)s_v(x)s_v(y)\,d\nu(x)d\nu(y)
+  \ge (1-\rho)v^{\mathsf T}(A_D-A_D A^{-1}A_D)v.
+ \tag{G18}
+\]
+Indeed the projection of $1_Ds_v$ onto $V$ is $s_{A^{-1}A_Dv}$.
+The right side is positive for every nonzero $v$ whenever the
+normals on each side of the cut span the active plane, since
+all eigenvalues of $A^{-1/2}A_D A^{-1/2}$ then lie in $(0,1)$.
+
+The dilation identity preceding (G6) and (G17) also give
+\[
+ \int bg\,d\nu
+ \le -\frac{\|b\|_a^2}{\rho(1+\rho)}
+     -\frac{\|b-P_V b\|_a^2}{1+\rho},
+ \qquad b=x\cdot N,
+ \tag{G19}
+\]
+with $g$ as in (G6). In fact the exact first-block term on the
+right is $-Q^{(1)}(b)/(1-\rho^2)$. The weighted norm and
+pairings are finite by the polynomial-weighted estimate used
+in (G6). For a nonsimplex balanced maximizer the distance
+term is strictly positive. If it were zero, some $p$ would
+satisfy $(x-p)\cdot N=0$ along the interfaces almost everywhere.
+Then $(x-p)\cdot D1_{A_i}=0$ in distributions for every $i$.
+In polar coordinates about $p$, away from $p$, this says each
+indicator has zero weak radial derivative, so it is conical
+about $p$. The translated-cone classification above forces the
+simplex. Thus (G19) quantifies the sign obstruction at any
+nonsimplex tie in terms of failure of conicality about every point.
+
+## Regular interface arcs and isolated triple junctions
+
+For every compact $B\subset\mathbb R^2$ and each pair $e$ of
+an actual planar maximizer,
+\[
+       \int_{\Sigma_e\cap B} a_e^{-1}\,d\nu_e
+              \le [2\rho\min_{B\times B}M_\rho]^{-1} .
+ \tag{G20}
+\]
+Restrict (G1) to a nonnegative speed on that pair and on $B$.
+The kernel is at least $2\min_{B\times B}M_\rho$ on the product
+support. Use bounded truncations of $a_e^{-1}$, for which
+$a_e f^2\le f$, and pass to the limit by monotone convergence.
+This yields (G20), including when there is no a priori integral
+bound for the reciprocals.
+
+A connected analytic jump arc for this pair cannot accumulate
+at a point $x_0$ where the pair score gradient vanishes.
+The score has bounded Hessian on $B$, so $a_e(x)\le C|x-x_0|$
+on the arc near $x_0$. The radial distance is a $1$-Lipschitz
+function of arclength, and its range on the connected arc
+contains every sufficiently small positive radius. By the
+one-dimensional coarea formula the arc integral of
+$|x-x_0|^{-1}$ is infinite. The Gaussian surface density is
+bounded below in the compact neighborhood, contradicting
+(G20).
+
+Write $V_i=U_i-\beta_i$, and call $x_0$ a genuine triple
+junction if it is in the closure of all three open strict
+winner sets. Locally these winner sets and their closures
+admit a common finite analytic stratification, since their
+equations and inequalities involve only analytic pair
+differences. Use Bierstone–Milman, Corollaries 2.8 and 2.11,
+which give closure and local stratification for semianalytic
+sets. The two-dimensional strata are in strict winner sets
+except on pair ties of measure zero. A one-dimensional stratum
+adjoining different strict winners on its two open sides is
+an actual interface, with its reduced-boundary surface measure.
+If two different strict winners are present in a connected
+open neighborhood, they cannot meet only at the finitely many
+zero-dimensional strata. The open neighborhood with those
+points removed is connected, so a common one-dimensional
+jump stratum must separate some winners. Apply this also on
+arbitrarily small neighborhoods of a genuine triple point.
+[Bierstone–Milman, *Semianalytic and subanalytic sets*](https://www.numdam.org/item/PMIHES_1988__67__5_0.pdf)
+
+The three gradients $\nabla V_i(x_0)$ at a genuine triple
+junction are distinct. If all three coincide, a jump stratum
+accumulating at $x_0$ contradicts (G20). If exactly two
+coincide, say 1 and 2, choose a transverse coordinate where
+both $V_1-V_3$ and $V_2-V_3$ have positive derivatives at
+$x_0$. In a small rectangle each is positive above its own
+analytic graph. The region above both graphs is connected
+and contains strict wins of both 1 and 2 arbitrarily close
+to $x_0$. To see this for label $i$, if a strict win of $i$
+lies above its graph but below the other graph, move upward
+on the same transverse line to just above the other graph.
+At the other graph its margin remains strict, since the other
+score there equals $V_3$ and $V_i>V_3$. The rectangle can be
+chosen arbitrarily small to obtain both wins. In the common
+epigraph neither can meet label 3, so some 1–2 jump stratum
+accumulates at $x_0$ by local finiteness, a contradiction.
+
+In the noncollinear case the two independent score differences
+are local analytic coordinates. Their winner regions give
+three arcs with distinct tangents and positive opening angles.
+In the collinear case put $t=V_{m high}-V_{m low}$ in
+local analytic coordinates $(s,t)$, where high and low refer
+to the outer two gradients along their common line. The
+middle difference from the low score is
+$q(s)+\lambda(s,t)t$, with $0<\lambda<1$ near the junction and
+with its transverse derivative strictly between zero and one.
+Here $q(0)=q'(0)=0$. For $q(s)>0$ the middle label wins a thin
+strip bounded by two analytic graphs on opposite sides of
+$t=0$. For $q(s)<0$ it is absent and the outer labels meet
+along $t=0$. This follows by monotonicity in $t$ of the middle
+score minus each outer score. If $q$ vanished identically,
+the middle region would be absent, contrary to being a genuine
+junction. Hence a collinear triple has either a one-sided
+cusp of odd order at least three, or two cusps of even order
+at least two with positive leading coefficient. This accounts
+for three and four incident arcs, respectively.
+
+In both rank cases the genuine triple point is isolated. The
+intersection of the three strict-winner closures is closed,
+so genuine triple junctions are locally finite in the plane.
+These restrictions allow collinear distinct gradients and
+do not classify the global network of interfaces.
 
 ## Circular balance and compatibility of first angular moments
 

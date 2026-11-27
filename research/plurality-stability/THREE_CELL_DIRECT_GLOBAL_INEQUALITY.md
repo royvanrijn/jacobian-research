@@ -4,10 +4,12 @@ The unrestricted inequality
 \(\widetilde Q_\rho(e)\leq2L_\rho(A;T)\) remains open here.
 The exact expansion (B1) in the [continuation note](POSITIVE_CORRELATION_CONTINUATION.md)
 makes it equivalent to \(S_\rho(A)\leq S_\rho(T)\), including for
-partitions far from the simplex. Proposition DG4 below now gives a direct
+partitions far from the simplex. Proposition DG10 gives a direct
 computer-assisted proof for every balanced three-cell partition in every
-dimension \(d\geq2\) throughout \(0<\rho\leq21/50\). The full range
-\(21/50<\rho<1\) remains open here. The argument also proves the comparison
+dimension \(d\geq2\) throughout \(0<\rho\leq11/25\), extending DG4.
+A separate [near-one result](THREE_CELL_NEAR_ONE_EXACT.md) records a qualitative
+interval adjacent to one. The full all-positive-correlation statement remains
+open; no overlap closing the intermediate range is established here. The argument also proves the comparison
 at every positive correlation when the three labels occupy equal portions
 of almost every circle. For general balanced partitions it isolates an
 exact missing inequality and proves that discarding the angular
@@ -17,6 +19,11 @@ Propositions DG6, DG8 and DG9 retain progressively more angular information,
 including a globally valid measure-dependent rearrangement bound with the
 exact arc interaction. The certified restricted-profile comparisons and
 limitations of those sufficient criteria do not extend the unrestricted cutoff.
+The joint angular comparison in DG11 excludes all sufficiently small
+squared circular-mass deviations on a fixed annulus, with arbitrary angular
+shapes. Together with the near-one theorem, it confines any unresolved global
+failure to a fixed intermediate correlation range and a definite annular
+mass discrepancy.
 
 ## Primary results and scope
 
@@ -945,8 +952,9 @@ neighborhood, improving a bound that uses only those norm and closure
 constraints cannot fix this coefficient. The remainder rearrangement
 envelope or additional angular information must also be strengthened.
 This is a limitation of the specified upper-bound criterion, not a
-counterexample to the original inequality. The unrestricted cutoff
-remains \(21/50\).
+counterexample to the original inequality. This angular refinement does
+not itself extend the unrestricted cutoff; DG10 supplies a separate
+spectral extension to \(11/25\).
 
 ### Proposition DG9 (measure-dependent rearrangement with the exact arc interaction)
 
@@ -1136,10 +1144,366 @@ current proof source. These new arguments have internal checking only;
 independent replay, formal verification and external review remain
 unperformed.
 
+
+## A spectral refinement of the unrestricted direct interval
+
+### Proposition DG10 (global comparison through rho equal to 11/25)
+
+For every $d\ge2$, every ordinary balanced Gaussian three-cell partition,
+and every $0<\rho\le11/25$, the inequalities in (DG14) hold.
+The new interval $[21/50,11/25]$ is global in partition distance.
+It uses (DG16) and a directed spectral estimate rather than continuation.
+The all-positive-correlation target remains open. A separate
+[near-one analysis](THREE_CELL_NEAR_ONE_EXACT.md) records a qualitative
+interval adjacent to one; the present certificate addresses the lower interval.
+
+The distinction from DG4 is that a Hilbert--Schmidt norm exceeding two
+need not mean that the largest eigenvalue exceeds two. Define the compact
+self-adjoint operator on $L^2(\nu)$ with kernel
+
+$$
+ A_\rho(t,s)=\frac{K_+(t,s)-\ell_\rho(\sqrt t)-\ell_\rho(\sqrt s)}
+                    {\sqrt{J_+(t)J_+(s)}}.
+ \tag{DG41}
+$$
+
+Its squared Hilbert--Schmidt norm is exactly (DG17). For any bounded
+mean-zero $z$, additive centering disappears, so
+$\langle z,\mathcal K_+z\rangle\le\lambda_{\max}(A_\rho)\int J_+z^2d\nu$.
+It therefore suffices to bound the largest eigenvalue, using the rest of
+the spectrum to control the error in a Rayleigh quotient.
+
+Here is the spectral estimate, with its isolation hypothesis explicit.
+Suppose $\|A\|_{HS}^2\le H^2$ and a unit vector $\phi$ satisfies
+$a_-\le a=\langle\phi,A\phi\rangle\le a_+$ and
+$\|(A-2)\phi\|^2\le r^2$. Put $c=\sqrt{H^2-a_-^2}$.
+If $a_->c\ge0$, then
+
+$$
+ \lambda_{\max}(A)\le a_++\frac{r^2}{a_--c}.
+ \tag{DG42}
+$$
+
+Indeed the largest eigenvalue $\lambda_1$ is at least $a_->0$;
+removing its squared contribution from the Hilbert--Schmidt sum bounds
+every other eigenvalue in absolute value by $c$. In particular it is
+simple. For the spectral probability measure of $\phi$,
+$(\lambda_1-\lambda)(\lambda-c)\le0$ at every spectral point.
+Taking expectations gives
+$(\lambda_1-a)(a-c)\le\|(A-a)\phi\|^2$.
+The right side is $\|(A-2)\phi\|^2-(a-2)^2\le r^2$, proving (DG42).
+This is the usual one-sided Temple argument, derived here.
+[Kuroda, Theorem A](https://www.kurims.kyoto-u.ac.jp/~prims/pdf/43-2/43-2-24.pdf),
+printed p. 506, was inspected: its isolated-eigenvalue interval and
+residual-gap hypotheses are essential. No spectral isolation is inferred
+from a floating eigenvalue calculation; it is supplied by $H^2$ and $a_-$.
+
+The exact auxiliary trial is
+
+$$
+ f(t)=t^{-1/2}\sum_{j=1}^5 b_j e^{-\lambda_jt}-M,\qquad
+ M=\sqrt\pi\sum_j\frac{b_j}{\sqrt{1+\lambda_j}},
+$$
+
+where
+
+$$
+ (\lambda_j)=(0,1/4,1,4,16),\qquad
+ (b_j)=(151/250,-1,28/125,-33/1250,121/2500).
+ \tag{DG43}
+$$
+
+Thus $\int f\,d\nu=0$ exactly. Although $f$ is unbounded at zero,
+$\sqrt{J_+}f\in L^2(\nu)$: $J_+(x^2)/x$ has a finite positive limit
+at zero, and $f(x^2)=O(1/x)$. At infinity $f$ is bounded and $J_+$ is
+bounded. This trial is used only as a Hilbert-space vector; the partition
+mass functions to which (DG16) is applied remain bounded. Set
+$D=\int J_+f^2d\nu$ and $\phi=\sqrt{J_+}f/\sqrt D$.
+
+All trial integrals are one dimensional after an exact Gaussian radial
+integration. The following formulas specify the reduction checked by the
+new program. Write $d=1-\rho^2$, $\kappa=\rho^2/d$,
+$q=\rho x/\sqrt d$, $w_j=1+\lambda_jd$, and
+$h(x)=\sum_jb_je^{-\lambda_jx^2}-Mx$. For real $q\ge0$ put
+
+$$
+\begin{split}
+ L(q)&=\tfrac12\int_0^{2/3}(2+3v)e^{q^2\cos^2(\pi v)}
+                          \operatorname{erfc}(-q\cos(\pi v))dv,\\
+ P(q)&=\tfrac12\int_0^{2/3}(2+3v)
+    [1+\sqrt\pi q\cos(\pi v)e^{q^2\cos^2(\pi v)}
+                          \operatorname{erfc}(-q\cos(\pi v))]dv,\\
+ R(q)&=1-\sqrt\pi q e^{q^2}\operatorname{erfc}(q),\\
+ S(q)&=\sqrt\pi(1+2q^2)e^{q^2}\operatorname{erfc}(q)-2q.
+\end{split}
+$$
+
+The displayed expression for $S$ is also used at negative arguments.
+Let $H_+(q)$ be the positive angular integral `positive_q_integrand`
+in the retained upstream source. Explicitly it is
+$\frac\pi2\int_0^{2/3}v(1-3v/2)\sin(\pi v)S(-q\cos(\pi v))dv$.
+Then
+
+$$
+\begin{split}
+ \bar J(x)&=e^{\kappa x^2}J_+(x^2)/x
+      =\frac\rho{\sqrt d}[H_+(q)+(j_1/2)S(q)],\\
+ G(x)&=e^{\kappa x^2}(\mathcal K_+f)(x^2)\\
+ &=\sum_jb_j\left[\frac{\sqrt\pi}{\sqrt{dw_j}}L(q/\sqrt{w_j})
+           -\frac{4j_1q}{\sqrt d\,w_j}R(q/\sqrt{w_j})\right]
+       -M[P(q)-2j_1qS(q)].
+\end{split}
+ \tag{DG44}
+$$
+
+For example, substitute $y=\sqrt{d/w_j}\,u$ in the radial integral
+with $s=y^2$. The elementary integrals of $1,u,u^2$ against
+$e^{-u^2+2bu}$ give $L,P,R,S$ and the displayed factors.
+The additive center is integrated exactly by gamma moments:
+
+$$
+ c_0=\int\ell_\rho(\sqrt t)f(t)d\nu(t)
+ =\sum_{n=0}^4e_n(\rho)\left[
+   \sum_j\frac{b_j\Gamma((n+1)/2)}{(1+\lambda_j)^{(n+1)/2}}
+                         -M\Gamma(1+n/2)\right],
+$$
+
+where $\ell_\rho(x)=\sum_ne_n(\rho)x^n$ is the original binary64
+polynomial, treated exactly as in DG4. With
+$U(x)=G(x)-c_0e^{\kappa x^2}-2\bar J(x)h(x)$, the quantities used are
+
+$$
+\begin{split}
+ D&=\int_0^\infty2e^{-(1+\kappa)x^2}\bar J(x)h(x)^2dx,\\
+ I&=\int_0^\infty2e^{-(1+\kappa)x^2}h(x)U(x)dx,\\
+ B&=\int_0^\infty\frac{2e^{-(1+\kappa)x^2}}{\bar J(x)}U(x)^2dx,\\
+ a&=2+I/D,\qquad \|(A_\rho-2)\phi\|^2=B/D.
+\end{split}
+ \tag{DG45}
+$$
+
+The middle identity uses the exact mean zero of $f$. These integrands
+extend continuously to $x=0$, so no singular point is omitted.
+
+The finite domain is $[0,7]$. The functions $L,P,H_+,S,R$ are enclosed
+at exact binary64 grid nodes by 100-bit Arb arithmetic; the angular
+integrals use validated `acb.integral` on entire functions, so ignoring
+its analytic flag introduces no branch assumption. Between nodes the
+program uses the linear interpolant with the Lagrange error
+$\frac12\sup|F''|\,|(q-q_0)(q-q_1)|$. This remains valid when a query
+interval crosses a cell boundary, by taking the curvature bound on its
+whole convex hull with the two interpolation nodes. All curvature
+majorants are explicit increasing functions of $q\ge0$. They follow
+from differentiating $e^{z^2}\operatorname{erfc}(-z)$ and, for example,
+
+$$
+ S''(z)=\sqrt\pi(6+24z^2+8z^4)e^{z^2}\operatorname{erfc}(z)
+                         -20z-8z^3.
+$$
+
+The bound for $H_+''$ uses
+$\frac\pi2\int_0^{2/3}v(1-3v/2)dv=\pi/27$.
+The remaining one-dimensional integrations are complete directed interval
+Riemann sums, not point sampling. Positivity used to clamp lower bounds
+follows from the positive Gaussian integral representations of $L,P,R,S$
+and $H_+$. The lower bound $\bar J\ge c_+\rho/\sqrt d$ is also kept.
+
+Here are explicit tail bounds, including their uniform parameter domain.
+Let $X=7$, $C=\sum_j|b_j|$, $F=C/X+|M|$,
+$j_{\max}=1/2+j_1/(2e)$ and $k_{\max}=2+2j_1/e$.
+The angular definitions give $0<J_+\le j_{\max}$ and
+$|K_+|\le k_{\max}R_0$. Moreover
+
+$$
+ \sup_t P_\rho(t^{-1/2})\le\sqrt{\pi/d}.
+$$
+
+To verify this bound, integrate the identity
+$t^{-1/2}=\pi^{-1/2}\int_0^\infty u^{-1/2}e^{-ut}du$ against the
+conditional Gaussian radial distribution. Its Laplace transform is
+$(1+du)^{-1}\exp[-\rho^2tu/(1+du)]\le(1+du)^{-1}$; the last integral
+is $\sqrt{\pi/d}$. Therefore let
+$K_*=k_{\max}(C\sqrt{\pi/d}+|M|)$ and
+$U_*=K_*+|c_0|+2j_{\max}F$. The tails of $D,I,B$ are bounded by
+
+$$
+ 0\le D_{\rm tail}\le j_{\max}F^2e^{-X^2},\qquad
+ |I_{\rm tail}|\le FU_*e^{-X^2},\qquad
+ 0\le B_{\rm tail}\le
+ \frac{U_*^2e^{-(1-\kappa)X^2}}
+      {c_+(\rho/\sqrt d)(1-\kappa)X}.
+ \tag{DG46}
+$$
+
+All rates are positive on $[21/50,11/25]$. The coarse two-dimensional
+Hilbert--Schmidt cover uses the original (DG19) tail argument, still
+valid because $11/25<1/2$. At the exact upper endpoint the squared-kernel
+completion rate is $47/168$, and $1-\kappa=383/504$; the outward-expanded
+inputs retain positive rates. No table from a smaller parameter range is
+reused without enclosing the new domain.
+
+The complete run accepted 397 covering correlation subintervals after
+774 attempts, using 20 coarse Hilbert--Schmidt parent bounds. Its largest
+outward-rounded spectral upper bound was `1.999981001453614`, so uniformly
+
+$$
+                 \lambda_{\max}(A_\rho)<1.999981002<2.
+                 \tag{DG47}
+$$
+
+The run used 262144 radial intervals for the one-dimensional trial integrals,
+4096 interpolation cells, 800 intervals per coordinate for each coarse
+Hilbert--Schmidt square, 1024 upstream q bins, 4096 angular-parameter bins,
+131072 exponential bins and 64 upstream angular midpoint intervals.
+It completed in 524.30 seconds. Every accepted child lies in its
+certified parent, and an exact Fraction audit of the retained binary64 bounds
+checks the complete rational endpoint cover, all spectral caps and all
+397 assemblies of (DG42). Positive and rejected controls are recorded;
+these finite controls supplement the written unrestricted spectral argument.
+
+
+Substitute the accepted bounds in (DG42), then (DG16), to prove the
+planar comparison on $[21/50,11/25]$. DG4 supplies the lower correlations;
+Heilman--Tarter maximizer existence and dimension reduction, with exactly
+the hypotheses checked in DG4, extend this bound to every $d\ge2$.
+The exact quadratic expansion gives the requested inequality.
+
+The [spectral checker](sources/cut_bounds_6b720fe57bfe/check_positive_spectral_extension.py)
+imports both retained upstream modules unchanged. Its
+[verification record](positive_spectral_extension_verification.json)
+pins the program, sources, exact inputs, environment and full covering
+output. Replay from the repository root:
+
+```sh
+OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/sources/cut_bounds_6b720fe57bfe/check_positive_spectral_extension.py
+```
+
+This is an internal computer-assisted result. It is not independent replay,
+formal verification, external review or a proof for all positive correlations.
+
+## Adopting the joint angular and near-one comparisons
+
+### Corollary DG11 (annular localization of any unresolved global failure)
+
+For every compact correlation interval \(J\subset(0,1)\), there are
+\(0<a_J<R_J<\infty\), \(\delta_J>0\) and \(c_J>0\) such that
+every ordinary balanced planar partition satisfying
+
+\[
+ E_J(A):=\int_{a_J}^{R_J}
+       \sum_i|p_i(r)-1/3|^2d\mu(r)\le\delta_J
+\]
+
+obeys
+
+\[
+ S_\rho(T)-S_\rho(A)\ge c_J\left[
+   \int_0^{R_J}r\sum_i|p_i(r)-1/3|^2d\mu(r)
+   +\int_{R_J}^\infty\sum_i|p_i(r)-1/3|^2d\mu(r)\right],
+ \qquad \rho\in J.
+ \tag{DG48}
+\]
+
+Equality in the simplex comparison forces a common rotated, labeled
+simplex up to null sets. No angular closeness, profile derivative bound,
+or bound on the circular masses inside or outside the annulus is required.
+This is the annular mass theorem (JA1), including its final squared-mean
+extension, in the [joint angular note](THREE_CELL_JOINT_ANGULAR_ENVELOPE.md).
+It is adopted here as an analytic input; its proof remains in that single
+source.
+
+The useful change of mechanism is its exact joint pair Hessian. Write
+\(b=p-\mathbf1/3\), \(c=q-\mathbf1/3\),
+\(k_0=k_\kappa(0)\) and \(k_\ell=k_\kappa(2\pi/3)\).
+For bounded angular parameter and masses near \(\mathbf1/3\), the
+maximizing two-slice pair consists of compatible consecutive arcs, and
+its quadratic change is
+
+\[
+ \tfrac13[-(k_0-k_\ell)(|b|^2+|c|^2)
+                       +(2k_0+k_\ell)b\cdot c].
+\]
+
+After polar integration this is (JA6), with standard facet speed
+\(f(r)=r b(r)\) and edge measure
+\(d\eta(r)=(2\pi)^{-1}e^{-r^2/2}dr\). Its interface kernel is
+\(\mathsf K_\rho^{\rm st}=2M_1+M_{-1/2}\) of (S14); the radial
+kernel \(K_+\) keeps its definition in (DG15). The interface gap (S37)
+controls this joint Hessian on every compact positive correlation interval.
+The radial proof of (JA1) handles arbitrary inner and outer masses by
+small-parameter angular coercivity and Gaussian kernel tails. Its
+squared-mean extension handles the exceptional annular radii by the
+all-mass centered angular penalty in Heilman's Lemma 6.1. Thus it retains
+the label compatibility lost in the sufficient criteria of DG5--DG9.
+The constants and the admissibility neighborhood are allowed to depend
+on \(J\); no uniform limit as \(\rho\uparrow1\) is asserted in (DG48).
+
+There is also one annulus and one positive threshold sufficient to
+localize every possible failure of the original all-correlation inequality.
+More precisely, there exist \(u\in(11/25,1)\),
+\(0<a<R<\infty\) and \(\delta>0\) with the following property:
+if the inequality fails at any correlation in any \(d\ge2\), then
+
+\[
+ 11/25<\rho<u,
+ \quad\text{and a planar balanced global maximizer }B\text{ exists with}
+ \quad\int_a^R\sum_i|p_{B,i}(r)-1/3|^2d\mu(r)>\delta.
+ \tag{DG49}
+\]
+
+Every planar strict improver at that correlation has the same annular
+lower bound. Consequently its Gaussian symmetric-difference distance
+from the centered simplex orbit, summed over labels, is greater than
+\(\delta\).
+
+To prove this assertion, let \(\rho_*<1\) be the qualitative threshold
+in the [exact near-one theorem](THREE_CELL_NEAR_ONE_EXACT.md). Set
+\(u=(1+\max(11/25,\rho_*))/2\), and apply (DG48) on
+\(J=[11/25,u]\). DG10 excludes every strict improvement below or at
+\(11/25\), and the near-one theorem excludes it above \(\rho_*\).
+Thus every strict failure lies in this fixed \(J\). The contrapositive
+of (DG48) gives the annular lower bound for every planar strict improver.
+For an improvement in higher dimension, maximizer existence and
+Heilman--Tarter dimension reduction supply a planar global maximizer with
+at least that value. These are exactly the existence and dimension
+hypotheses used in DG4 and DG10. Finally, for any centered simplex \(U\),
+conditional Jensen gives
+
+\[
+ \int_a^R\sum_i|p_{B,i}(r)-1/3|^2d\mu(r)
+ \le\sum_i\gamma_2(B_i\mathbin\triangle U_i).
+\]
+
+Take the infimum over its rotations and labelings to get the distance
+assertion. The same annular exclusion applies to a nonsimplex tied
+global maximizer whenever its correlation belongs to \(J\), using the
+equality statement in (DG48).
+
+In particular, fix any bounded radial vector \(v\) with
+\(\sum_i v_i=0\) pointwise and \(\int v_i d\mu=0\). Uniformly for
+\(\rho\in J\), all sufficiently small feasible profiles
+\(p=\mathbf1/3+\epsilon v\) satisfy the simplex comparison, with
+arbitrary angular shapes. Indeed
+\(E_J(A)=\epsilon^2\int_{a_J}^{R_J}|v|^2d\mu\), so (DG48) applies.
+This includes both the profile (DG21) and the six-exponential profile in
+DG9 at every fixed positive correlation. Their positive separated
+upper-bound coefficients remain valid limitations of those particular
+criteria; they are not actual stability counterexamples.
+
+The near-one core and exterior estimates enter (DG49) through their
+proved exact comparison theorem. Their small-noise remainders and
+qualitative thresholds do not provide numerical constants extending that
+theorem down to \(11/25\). The outstanding direct task is the comparison
+for annular mass profiles separated from the balanced one as in (DG49).
+No exclusion of that entire class, or certified overlap of the correlation
+intervals, follows from this localization.
+
 ## Remaining obligation and reproducible controls
 
-Above the newly certified cutoff \(21/50\), an unrestricted direct proof
-must establish (DG4), retaining enough of
+Completing the all-positive-correlation statement requires a comparison
+across the remaining intermediate range between the direct interval through
+\(11/25\) and the separate qualitative near-one interval. In the polar
+route, the unresolved all-partition comparison is (DG4), retaining enough of
 \(\mathcal C_\rho\) or using a different mechanism. Global balance
 alone does not remove \(\mathcal R_\rho\); equal circular masses do.
 Proposition DG5 rules out extending the particular scalar operator

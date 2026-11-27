@@ -1,0 +1,1843 @@
+{
+  "schema_version": 1,
+  "kind": "five_cycle_two_tripod_components",
+  "result": "PASS",
+  "python": "3.12.3",
+  "checker_sha256": "25f5bf11e359684826b3a399c26af7996926cc4b6910fb90e8fa20d38484fac1",
+  "input_sha256": {
+    "POLYNOMIAL_TWO_TRIPOD_COMPONENTS.md": "21f38a29a7e3462560a088ded93e883fabeb1f3344129bf5a74ec6a72dadb7fa",
+    "POLYNOMIAL_PASSPORT_COMPONENTS.md": "8ec0c97165a986da569b1a9962d05f372eab173469e9d05e0b8c7be655cca194",
+    "POLYNOMIAL_INTRINSIC_CLASSES_AND_LIFTING.md": "7f7edcd00cce8221f6f705684ef394aa7f56bebc3fb5b53dacd443c53add17c9",
+    "polynomial_lifting_obstructions_verification.json": "e53a06a3c436fa97e601b81339847061bd182233b29c3869300a608c47196c9c",
+    "verify_polynomial_passport_components.py": "17339464fa9c7383e8aab0c99130f3cf64e2e89d39d3b06b991520e7e61850fb",
+    "sources/jones-zvonkin-braid-cacti-2002.pdf": "884887f2e3cbe5dc5b569e7c0fc0dc8b34730b3b96f12a148b0966b956ec81c2",
+    "verify_unmarked_polynomial_hurwitz_reduction.py": "600ab056845d7ef3b202546dfc987675e887887a0a612168d991d108962f946f",
+    "verify_paired_hurwitz_leaf_extraction.py": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
+    "verify_index_two_hurwitz_mixtures.py": "1f66c391650dc11f5226c25470dcae22a3800643c1b1d737b1fb687831fc2d3f",
+    "verify_mixed_hurwitz_isolation.py": "6763c1ebf292c314c3cf9b7f7f9de345beb0191143e4b832d0516b8bebc0336b"
+  },
+  "small_controls": {
+    "zero_offset_position_group_order": 60,
+    "overlap_orders": [
+      12,
+      60
+    ],
+    "deliberately_invalid_inputs_rejected": 4
+  },
+  "compact_controls": [
+    {
+      "lengths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "complete_compact_domain": 360,
+      "raw_signed_Schreier_edge_tests": 2160,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 180,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 180,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        3,
+        4,
+        7
+      ],
+      "complete_compact_domain": 408,
+      "raw_signed_Schreier_edge_tests": 2448,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 204,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 204,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        3,
+        4,
+        9
+      ],
+      "complete_compact_domain": 456,
+      "raw_signed_Schreier_edge_tests": 2736,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 228,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 228,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        3,
+        4,
+        11
+      ],
+      "complete_compact_domain": 504,
+      "raw_signed_Schreier_edge_tests": 3024,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 252,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 252,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "complete_compact_domain": 384,
+      "raw_signed_Schreier_edge_tests": 2304,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 192,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 192,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "complete_compact_domain": 432,
+      "raw_signed_Schreier_edge_tests": 2592,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 216,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 216,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ],
+      "complete_compact_domain": 432,
+      "raw_signed_Schreier_edge_tests": 2592,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 216,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 216,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "complete_compact_domain": 600,
+      "raw_signed_Schreier_edge_tests": 3600,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 300,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 300,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        4,
+        6,
+        8
+      ],
+      "complete_compact_domain": 504,
+      "raw_signed_Schreier_edge_tests": 3024,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 252,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 252,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "complete_compact_domain": 720,
+      "raw_signed_Schreier_edge_tests": 4320,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 360,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 360,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ],
+      "complete_compact_domain": 456,
+      "raw_signed_Schreier_edge_tests": 2736,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 228,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 228,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "complete_compact_domain": 504,
+      "raw_signed_Schreier_edge_tests": 3024,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 252,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 252,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        3,
+        6,
+        8
+      ],
+      "complete_compact_domain": 480,
+      "raw_signed_Schreier_edge_tests": 2880,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 240,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 240,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        3,
+        6,
+        7
+      ],
+      "complete_compact_domain": 456,
+      "raw_signed_Schreier_edge_tests": 2736,
+      "components": [
+        {
+          "orientation": 1,
+          "compact_orbit": 228,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            0
+          ]
+        },
+        {
+          "orientation": -1,
+          "compact_orbit": 228,
+          "coordinate_seed": [
+            [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "repeated_length_controls": [
+    {
+      "lengths": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "equal_length_label_group_order": 24,
+      "complete_unlabelled_domain": 6,
+      "components": 1,
+      "raw_signed_Schreier_edge_tests": 36
+    },
+    {
+      "lengths": [
+        1,
+        1,
+        1,
+        1,
+        3
+      ],
+      "equal_length_label_group_order": 24,
+      "complete_unlabelled_domain": 7,
+      "components": 1,
+      "raw_signed_Schreier_edge_tests": 42
+    },
+    {
+      "lengths": [
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "equal_length_label_group_order": 12,
+      "complete_unlabelled_domain": 14,
+      "components": 1,
+      "raw_signed_Schreier_edge_tests": 84
+    },
+    {
+      "lengths": [
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "equal_length_label_group_order": 4,
+      "complete_unlabelled_domain": 54,
+      "components": 1,
+      "raw_signed_Schreier_edge_tests": 324
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        2,
+        3,
+        4
+      ],
+      "equal_length_label_group_order": 2,
+      "complete_unlabelled_domain": 144,
+      "components": 1,
+      "raw_signed_Schreier_edge_tests": 864
+    },
+    {
+      "lengths": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "equal_length_label_group_order": 120,
+      "complete_unlabelled_domain": 2,
+      "components": 1,
+      "raw_signed_Schreier_edge_tests": 12
+    },
+    {
+      "lengths": [
+        2,
+        2,
+        4,
+        4,
+        6
+      ],
+      "equal_length_label_group_order": 4,
+      "complete_unlabelled_domain": 108,
+      "components": 1,
+      "raw_signed_Schreier_edge_tests": 648
+    },
+    {
+      "lengths": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "equal_length_label_group_order": 120,
+      "complete_unlabelled_domain": 3,
+      "components": 1,
+      "raw_signed_Schreier_edge_tests": 18
+    }
+  ],
+  "literal_controls": [
+    {
+      "lengths": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "complete_literal_domain": 16200,
+      "all_literal_orientation_tests": 16200,
+      "independent_total": "ordinary hook-character formula, all3 type placements",
+      "components": [
+        {
+          "literal_seed": [
+            [
+              0,
+              2,
+              3,
+              4,
+              1,
+              6,
+              7,
+              8,
+              9,
+              5,
+              11,
+              10,
+              13,
+              14,
+              12
+            ],
+            [
+              11,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              14,
+              12,
+              13,
+              0
+            ],
+            [
+              4,
+              1,
+              2,
+              3,
+              9,
+              5,
+              6,
+              7,
+              8,
+              0,
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          ],
+          "orientation": 1,
+          "literal_orbit": 8100,
+          "absolute_orbit": 540,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            15
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 455,
+            "normal_support_blocks": 1,
+            "fibre_degree": 15,
+            "actual_group_order_from_written_support_theorem": 653837184000
+          },
+          "orbit_sha256": "b4afc514055e9737c2123d02bb11642238b4125c2ad3d4e667fe079554e13cc4"
+        },
+        {
+          "literal_seed": [
+            [
+              0,
+              2,
+              3,
+              4,
+              5,
+              1,
+              7,
+              8,
+              9,
+              6,
+              11,
+              10,
+              13,
+              14,
+              12
+            ],
+            [
+              11,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              14,
+              12,
+              13,
+              0
+            ],
+            [
+              5,
+              1,
+              2,
+              3,
+              4,
+              9,
+              6,
+              7,
+              8,
+              0,
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          ],
+          "orientation": -1,
+          "literal_orbit": 8100,
+          "absolute_orbit": 540,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            15
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 455,
+            "normal_support_blocks": 1,
+            "fibre_degree": 15,
+            "actual_group_order_from_written_support_theorem": 653837184000
+          },
+          "orbit_sha256": "fa91ed01821b8ff76b575fda8a59cc6969ff92b262bd74a0cdd4a3a022810f7a"
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "complete_literal_domain": 18432,
+      "all_literal_orientation_tests": 18432,
+      "independent_total": "ordinary hook-character formula, all3 type placements",
+      "components": [
+        {
+          "literal_seed": [
+            [
+              0,
+              2,
+              3,
+              4,
+              1,
+              6,
+              7,
+              8,
+              9,
+              10,
+              5,
+              12,
+              11,
+              14,
+              15,
+              13
+            ],
+            [
+              12,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              15,
+              13,
+              14,
+              0
+            ],
+            [
+              4,
+              1,
+              2,
+              3,
+              10,
+              5,
+              6,
+              7,
+              8,
+              9,
+              0,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          ],
+          "orientation": 1,
+          "literal_orbit": 9216,
+          "absolute_orbit": 576,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            16
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 560,
+            "normal_support_blocks": 1,
+            "fibre_degree": 16,
+            "actual_group_order_from_written_support_theorem": 20922789888000
+          },
+          "orbit_sha256": "2f5b06659b0bbbfccc4edc35a39312e16f458433c27bbe3392c23adbf0893e7d"
+        },
+        {
+          "literal_seed": [
+            [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              1,
+              8,
+              9,
+              10,
+              7,
+              12,
+              11,
+              14,
+              15,
+              13
+            ],
+            [
+              12,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              15,
+              13,
+              14,
+              0
+            ],
+            [
+              6,
+              1,
+              2,
+              3,
+              4,
+              5,
+              10,
+              7,
+              8,
+              9,
+              0,
+              11,
+              12,
+              13,
+              14,
+              15
+            ]
+          ],
+          "orientation": -1,
+          "literal_orbit": 9216,
+          "absolute_orbit": 576,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            16
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 560,
+            "normal_support_blocks": 1,
+            "fibre_degree": 16,
+            "actual_group_order_from_written_support_theorem": 20922789888000
+          },
+          "orbit_sha256": "fe8fafbadff04d93ba5415e0cfa80f3ee1e6f34370488ba360a33657594cd906"
+        }
+      ]
+    },
+    {
+      "lengths": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "complete_literal_domain": 64800,
+      "all_literal_orientation_tests": 64800,
+      "independent_total": "ordinary hook-character formula, all3 type placements",
+      "components": [
+        {
+          "literal_seed": [
+            [
+              29,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              1,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              9,
+              20,
+              21,
+              22,
+              19,
+              24,
+              25,
+              26,
+              27,
+              28,
+              23,
+              0
+            ],
+            [
+              22,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              28,
+              23,
+              24,
+              25,
+              26,
+              27,
+              0,
+              29
+            ],
+            [
+              8,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              18,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              0,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          ],
+          "orientation": 1,
+          "literal_orbit": 32400,
+          "absolute_orbit": 1080,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            2,
+            30
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 910,
+            "normal_support_blocks": 2,
+            "fibre_degree": 15,
+            "actual_group_order_from_written_support_theorem": 855006126362099712000000
+          },
+          "orbit_sha256": "afa9f3f93ab8c85e22f02dbfc438297eb70e7f76442c152ea43f81777b844c73"
+        },
+        {
+          "literal_seed": [
+            [
+              29,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              1,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              11,
+              20,
+              21,
+              22,
+              19,
+              24,
+              25,
+              26,
+              27,
+              28,
+              23,
+              0
+            ],
+            [
+              22,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              28,
+              23,
+              24,
+              25,
+              26,
+              27,
+              0,
+              29
+            ],
+            [
+              10,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              18,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              0,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ]
+          ],
+          "orientation": -1,
+          "literal_orbit": 32400,
+          "absolute_orbit": 1080,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            2,
+            30
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 910,
+            "normal_support_blocks": 2,
+            "fibre_degree": 15,
+            "actual_group_order_from_written_support_theorem": 855006126362099712000000
+          },
+          "orbit_sha256": "f8e0dbc0ee5ae7518f95a2b2fd07332309a1cd5c3a4f137d392490393052f79e"
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "complete_literal_domain": 108,
+      "all_literal_orientation_tests": 0,
+      "independent_total": "ordinary hook-character formula, all3 type placements",
+      "components": [
+        {
+          "literal_seed": [
+            [
+              0,
+              1,
+              3,
+              2,
+              4,
+              5
+            ],
+            [
+              4,
+              1,
+              2,
+              3,
+              5,
+              0
+            ],
+            [
+              1,
+              3,
+              2,
+              0,
+              4,
+              5
+            ]
+          ],
+          "orientation": 1,
+          "literal_orbit": 108,
+          "absolute_orbit": 18,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            6
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 20,
+            "normal_support_blocks": 1,
+            "fibre_degree": 6,
+            "actual_group_order_from_written_support_theorem": 720
+          },
+          "orbit_sha256": "ee57d5e9d8c53e758d6f36a09678dda5746bb9122fbe76b25dd37191e74d8c83"
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        1,
+        1,
+        1,
+        3
+      ],
+      "complete_literal_domain": 49,
+      "all_literal_orientation_tests": 0,
+      "independent_total": "ordinary hook-character formula, all3 type placements",
+      "components": [
+        {
+          "literal_seed": [
+            [
+              0,
+              1,
+              3,
+              4,
+              2,
+              5,
+              6
+            ],
+            [
+              5,
+              1,
+              2,
+              3,
+              4,
+              6,
+              0
+            ],
+            [
+              1,
+              4,
+              2,
+              3,
+              0,
+              5,
+              6
+            ]
+          ],
+          "orientation": 1,
+          "literal_orbit": 49,
+          "absolute_orbit": 7,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            7
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 35,
+            "normal_support_blocks": 1,
+            "fibre_degree": 7,
+            "actual_group_order_from_written_support_theorem": 2520
+          },
+          "orbit_sha256": "4d9095866c4fb024b2f51f1bec282699ec7ad071842ed07e1e1a6798fb147844"
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "complete_literal_domain": 294,
+      "all_literal_orientation_tests": 0,
+      "independent_total": "ordinary hook-character formula, all3 type placements",
+      "components": [
+        {
+          "literal_seed": [
+            [
+              0,
+              2,
+              1,
+              4,
+              3,
+              5,
+              6
+            ],
+            [
+              5,
+              1,
+              2,
+              3,
+              4,
+              6,
+              0
+            ],
+            [
+              2,
+              1,
+              4,
+              3,
+              0,
+              5,
+              6
+            ]
+          ],
+          "orientation": 1,
+          "literal_orbit": 294,
+          "absolute_orbit": 42,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            7
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 35,
+            "normal_support_blocks": 1,
+            "fibre_degree": 7,
+            "actual_group_order_from_written_support_theorem": 2520
+          },
+          "orbit_sha256": "a223277ef2590d7ab9ddafd9a58c6c3f6d63f3554a7c6bfa5b6d765f72f0b635"
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "complete_literal_domain": 1458,
+      "all_literal_orientation_tests": 0,
+      "independent_total": "ordinary hook-character formula, all3 type placements",
+      "components": [
+        {
+          "literal_seed": [
+            [
+              0,
+              2,
+              1,
+              4,
+              5,
+              3,
+              6,
+              8,
+              7
+            ],
+            [
+              6,
+              1,
+              2,
+              3,
+              4,
+              5,
+              8,
+              7,
+              0
+            ],
+            [
+              2,
+              1,
+              5,
+              3,
+              4,
+              0,
+              6,
+              7,
+              8
+            ]
+          ],
+          "orientation": -1,
+          "literal_orbit": 1458,
+          "absolute_orbit": 162,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            9
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 84,
+            "normal_support_blocks": 1,
+            "fibre_degree": 9,
+            "actual_group_order_from_written_support_theorem": 181440
+          },
+          "orbit_sha256": "0578113a37df5318b566651bca309558341347eda1ce6c9c4d9016f50f0ef8dd"
+        }
+      ]
+    },
+    {
+      "lengths": [
+        1,
+        2,
+        2,
+        3,
+        4
+      ],
+      "complete_literal_domain": 5184,
+      "all_literal_orientation_tests": 0,
+      "independent_total": "ordinary hook-character formula, all3 type placements",
+      "components": [
+        {
+          "literal_seed": [
+            [
+              0,
+              2,
+              3,
+              1,
+              5,
+              6,
+              7,
+              4,
+              9,
+              8,
+              11,
+              10
+            ],
+            [
+              9,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              11,
+              10,
+              0
+            ],
+            [
+              3,
+              1,
+              2,
+              7,
+              4,
+              5,
+              6,
+              0,
+              8,
+              9,
+              10,
+              11
+            ]
+          ],
+          "orientation": 1,
+          "literal_orbit": 5184,
+          "absolute_orbit": 432,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            12
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 220,
+            "normal_support_blocks": 1,
+            "fibre_degree": 12,
+            "actual_group_order_from_written_support_theorem": 479001600
+          },
+          "orbit_sha256": "fab2511925cfaf46e04c20af6684bdaccef442e098f05f396c5e0492bc582ad0"
+        }
+      ]
+    },
+    {
+      "lengths": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "complete_literal_domain": 60,
+      "all_literal_orientation_tests": 0,
+      "independent_total": "ordinary hook-character formula, all3 type placements",
+      "components": [
+        {
+          "literal_seed": [
+            [
+              9,
+              2,
+              1,
+              4,
+              3,
+              6,
+              5,
+              8,
+              7,
+              0
+            ],
+            [
+              6,
+              1,
+              2,
+              3,
+              4,
+              5,
+              8,
+              7,
+              0,
+              9
+            ],
+            [
+              2,
+              1,
+              4,
+              3,
+              0,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          ],
+          "orientation": 1,
+          "literal_orbit": 60,
+          "absolute_orbit": 6,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            2,
+            10
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 20,
+            "normal_support_blocks": 2,
+            "fibre_degree": 5,
+            "actual_group_order_from_written_support_theorem": 7200
+          },
+          "orbit_sha256": "c96d907d9cd176e0f516b4981d97eb8307eb7f6376407fa6eb23707eb76f7183"
+        }
+      ]
+    },
+    {
+      "lengths": [
+        2,
+        2,
+        4,
+        4,
+        6
+      ],
+      "complete_literal_domain": 5832,
+      "all_literal_orientation_tests": 0,
+      "independent_total": "ordinary hook-character formula, all3 type placements",
+      "components": [
+        {
+          "literal_seed": [
+            [
+              17,
+              2,
+              3,
+              4,
+              1,
+              6,
+              7,
+              8,
+              9,
+              10,
+              5,
+              12,
+              11,
+              14,
+              15,
+              16,
+              13,
+              0
+            ],
+            [
+              12,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              16,
+              13,
+              14,
+              15,
+              0,
+              17
+            ],
+            [
+              4,
+              1,
+              2,
+              3,
+              10,
+              5,
+              6,
+              7,
+              8,
+              9,
+              0,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17
+            ]
+          ],
+          "orientation": -1,
+          "literal_orbit": 5832,
+          "absolute_orbit": 324,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            2,
+            18
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 168,
+            "normal_support_blocks": 2,
+            "fibre_degree": 9,
+            "actual_group_order_from_written_support_theorem": 65840947200
+          },
+          "orbit_sha256": "9058b0eefe080d541082738847bf40f9075f485c4f289dff01c77625edd044f3"
+        }
+      ]
+    },
+    {
+      "lengths": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "complete_literal_domain": 135,
+      "all_literal_orientation_tests": 0,
+      "independent_total": "ordinary hook-character formula, all3 type placements",
+      "components": [
+        {
+          "literal_seed": [
+            [
+              13,
+              2,
+              3,
+              1,
+              5,
+              6,
+              4,
+              8,
+              9,
+              7,
+              11,
+              12,
+              10,
+              14,
+              0
+            ],
+            [
+              9,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              12,
+              10,
+              11,
+              0,
+              13,
+              14
+            ],
+            [
+              3,
+              1,
+              2,
+              6,
+              4,
+              5,
+              0,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ]
+          ],
+          "orientation": 1,
+          "literal_orbit": 135,
+          "absolute_orbit": 9,
+          "deck": 1,
+          "all_block_count_divisors": [
+            1,
+            3,
+            15
+          ],
+          "normal_support_certificate": {
+            "normal_three_cycle_supports": 30,
+            "normal_support_blocks": 3,
+            "fibre_degree": 5,
+            "actual_group_order_from_written_support_theorem": 648000
+          },
+          "orbit_sha256": "7944a41dcc4ccf33e0a9a78e062434233a9aa16d87adf50dfb1f637b82966821"
+        }
+      ]
+    }
+  ],
+  "unrestricted_scope": "E1-E3 written tree, braid-normalization and normal-support proofs; finite domains do not establish the universal statement",
+  "lifting_scope": "D7's existing degree15 quadratic values are retained; no uniform lifting-value formula for every strict five-part passport",
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false
+}

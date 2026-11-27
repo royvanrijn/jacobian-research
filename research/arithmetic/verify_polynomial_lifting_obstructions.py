@@ -349,9 +349,46 @@ def cyclic_family_controls():
                 q=tuple(tuple(g[a]%7 for a in range(7)) for g in state)
                 assert cubic_a7(q)==value
             assert c.stabilizer_size(seed)==b
+            class_certificates=[]
+            if top_order==2520:
+                top=set(cover_a7()[0])
+                target_dt=m.perm(7,[(0,1),(2,3)])
+                I=tuple(range(b))
+                Pc=m.perm(b,[tuple(range(b))])
+                powers={m.power(Pc,k) for k in range(b)}
+                for factor,g in enumerate(seed):
+                    q,maps=l.to_wreath((g,),7)[0]
+                    if c.index(q):
+                        charts=[None]*7
+                        for C in c.cycles(q):
+                            charts[C[0]]=I
+                            a=C[0]
+                            for _ in C:
+                                z=q[a]
+                                value_chart=m.compose(maps[a],charts[a])
+                                if charts[z] is not None:
+                                    assert charts[z]==value_chart
+                                else:
+                                    charts[z]=value_chart
+                                a=z
+                        assert all(F in powers for F in charts)
+                        base=l.to_perms(((tuple(range(7)),tuple(m.inverse(F) for F in charts)),))[0]
+                        u=next(u for u in sorted(top) if m.conjugate(u,q)==target_dt)
+                        diagonal=l.to_perms(((u,(I,)*7),))[0]
+                        conjugator=m.compose(diagonal,base)
+                        target=l.to_perms(((target_dt,(I,)*7),))[0]
+                    else:
+                        a,= [a for a,A in enumerate(maps) if A!=I]
+                        u=next(u for u in sorted(top) if u[a]==0)
+                        conjugator=l.to_perms(((u,(I,)*7),))[0]
+                        target=l.to_perms(((tuple(range(7)),(Pc,)+(I,)*6),))[0]
+                    assert m.conjugate(conjugator,g)==target
+                    class_certificates.append({"factor":factor,"wreath_conjugator":conjugator,
+                                               "common_class_representative":target})
             rows.append({"cyclic_fibre":b,"quotient_group_order":top_order,
                          "literal_orbit":len(orbit),"cubic_value":value,
-                         "literal_seed":seed,"orbit_sha256":c.digest(orbit)})
+                         "literal_seed":seed,"orbit_sha256":c.digest(orbit),
+                         "intrinsic_class_conjugacy_certificates":class_certificates})
     assert sorted(row["cubic_value"] for row in rows if row["quotient_group_order"]==2520)==[1,1,2,2]
     return {"complete_lift_orbits":rows,"literal_states":sum(row["literal_orbit"] for row in rows),
             "scope":"Finite replay b2,b3; all b>=2 uses D6 and L5-L7."}
@@ -409,6 +446,7 @@ def primitive15_controls():
         assert len(orbit)==8100 and not orbit&all_states
         all_states.update(orbit)
         assert c.block_divisors(seed)==[1,15]
+        assert c.stabilizer_size(seed)==1
         value=quadratic15(seed)
         for move in (-1,1,-2,2):
             assert quadratic15(m.braid(seed,[move]))==value
@@ -433,10 +471,13 @@ def primitive15_controls():
         assert transported=={mask:sign*coef for mask,coef in reference.items()}
         centralizers[sign]+=1
     assert dict(centralizers)=={-1:60,1:60}
+    assert len(r.perm_group((m.perm(4,[(0,1,2)]),m.perm(4,[(1,2,3)])),4))==12
+    assert len(r.perm_group((m.perm(5,[(0,1,2)]),m.perm(5,[(2,3,4)])),5))==60
     return {"complete_literal_domain":independent,"components":rows,
             "quadratic_signed_braid_tests":spin_edge_tests,
             "quadratic_cycle_rotation_tests":2,
             "strict_partition_centralizer_parities":dict(centralizers),
+            "overlapping_three_cycle_base_group_orders":[12,60],
             "spin_scope":"Exact values at the two seeds and their listed edges; constancy on all tuples follows from D1/D7's class-equivariant lift proof."}
 
 

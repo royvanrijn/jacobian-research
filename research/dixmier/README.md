@@ -52,7 +52,7 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Nonconstant gcd-five Weyl factors have two possible high-root crossings | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md) |
 | Order ten reduces to orders ten and fifteen with a degree-at-least-thirty leading factor | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md) |
 | Order fifteen reduces to a mate of order ten, twenty, twenty-five or eighty | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_TRANSLATED_ROOT_CROSSINGS.md) |
-| Order twelve reduces to five possible mate orders | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md) |
+| Translated-root crossings give the initial order-twelve list | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md) |
 | High roots in reduced orders (12,42) contain a square root of minus fifteen | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md) |
 | The real Weyl branch of reduced orders (12,42) has factor degree six modulo twelve | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md) |
 | Rank-one Dixmier counterexamples reduce to rectangular pairs with a single regular spectral pole | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ALL_DEGREE_SPECTRAL_REDUCTION.md) |
@@ -141,7 +141,13 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | Differential order determines the fractional powers in a scalar mate | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_LEADING_FACTOR_RESIDUE.md) |
 | The even multiplicity-26 branch has a fixed order-nine Weyl face | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
 | A multiplicity-thirty root forces a single root in reduced orders (12,18) | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
-| The reduced (12,18) Weyl branch is excluded over the rationals | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
+| Reduced Weyl orders (12,18) are excluded over totally real number fields | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
+| The order resultant excludes every (6,30) crossing in the order-twelve Weyl reduction | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
+| Differential order twelve leaves only mate order forty-two | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_RESIDUAL.md) |
+| The cubic fractional-power resultant excludes reduced orders (12,16) | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md) |
+| The surviving order-twelve Weyl row has a polynomial resultant of order thirty-four | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_RESULTANT.md) |
+| The resultant cuts the small-root indicial divisor to 1694 explicit possibilities | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_RESULTANT.md) |
+| The surviving order-twelve profile has at most two more small roots than high roots | Internal result | proved | [Source](dixmier-formal-lifting/POLYNOMIAL_WEYL_ORDER_TWELVE_FORTY_TWO_RESULTANT.md) |
 
 **Computed obligations:** 26 unresolved; 5 resolved within their exact scope.
 

@@ -1,6 +1,6 @@
 {
-  "checker_sha256": "1bfc772afdb1512b1956a457726d5db1fe471ff603281319fdb53a9ce53a2a04",
-  "proof_source_sha256": "dd2b2bdf09b018e552c5a4ac699f2f08977c67f30b41d54183860c6d1a8915b0",
+  "checker_sha256": "af07add0b6216132e4f67e5bae846c3d6cff471ca2766534d83e82ee03c1414e",
+  "proof_source_sha256": "cc0decc3681a78fe06726528432e95b10d16f3704ed4d07a77875f0c1a2e209f",
   "perimeter_proof_source_sha256": "af5505154ccf0dca5ffd157a1c7764474cb46a1b2f27216c9c915ecc1445ac08",
   "exact_checks": {
     "characters": {
@@ -537,6 +537,64 @@
       ],
       "wrong_orthogonal_reflection_control": "passed",
       "scope": "Exact C_l D_l=I, D_l-C_l=w_l w_l^T, same-face annihilation and all paired triple-junction permutation identities for 3<=k<=8. The unrestricted Gaussian integration-by-parts and differentiation identities S71 are written analytic proofs; no favorable residual sign or standard gap is certified."
+    },
+    "higher_exterior_hooks": {
+      "third_exterior_transport_pairs": 175,
+      "rank_one_junction_pairs": 70,
+      "supersolution_coordinate_controls": [
+        {
+          "k": 4,
+          "multiplicity_dimension": 1,
+          "positive_linear_supersolution_coordinates": "passed",
+          "ordered_residual_coordinates": "passed"
+        },
+        {
+          "k": 5,
+          "multiplicity_dimension": 3,
+          "positive_linear_supersolution_coordinates": "passed",
+          "ordered_residual_coordinates": "passed"
+        },
+        {
+          "k": 6,
+          "multiplicity_dimension": 6,
+          "positive_linear_supersolution_coordinates": "passed",
+          "ordered_residual_coordinates": "passed"
+        },
+        {
+          "k": 7,
+          "multiplicity_dimension": 10,
+          "positive_linear_supersolution_coordinates": "passed",
+          "ordered_residual_coordinates": "passed"
+        },
+        {
+          "k": 8,
+          "multiplicity_dimension": 15,
+          "positive_linear_supersolution_coordinates": "passed",
+          "ordered_residual_coordinates": "passed"
+        }
+      ],
+      "selected_positive_folded_matrices": [
+        {
+          "k": 4,
+          "matrix_size": 1,
+          "strict_positive_entries": 1,
+          "tau": "log(2)"
+        },
+        {
+          "k": 5,
+          "matrix_size": 3,
+          "strict_positive_entries": 9,
+          "tau": "log(2)"
+        },
+        {
+          "k": 6,
+          "matrix_size": 6,
+          "strict_positive_entries": 36,
+          "tau": "log(2)"
+        }
+      ],
+      "unordered_positive_rates_control": "passed",
+      "scope": "Exact third-exterior transport, rank-one junction-pair and selected ordered coordinate identities for 4<=k<=8; selected strict positive folded exterior matrices for 4<=k<=6. A control rejects positivity of abstract row rates without their required ordering. The all-degree Gaussian creation identity S72 and complete third-hook spectral gap S73 are written proofs, not certified by these finite controls."
     },
     "interval_gap": {
       "interval": [
