@@ -297,7 +297,7 @@ prime-pair count at \(H\asymp_m X^{1/(4m)}\).
 
 The only nonzero valuations of \(\gamma_0\) now
 occur at the two places above \(P\), where they
-are \(8m,-8m\); those of \(\gamma_\infty\) occur at
+are \(8m,-8m\). Those of \(\gamma_\infty\) occur at
 the two places above \(Q\) with the same values.
 Their divided ideal classes are the \(16\)-th
 powers of the corresponding oriented prime classes,
@@ -353,3 +353,222 @@ conductor exponent two. These exponents are
 \(2v_p(D)\) away from \(157,173\), and both these
 primes have exponent one in the conductor. Their
 product is \(27161\).
+
+## The two-primary relation between the actual prime classes
+
+**Proposition MP5.** Take the prime-ratio fields of
+MP3 and orient \(\mathfrak P,\mathfrak Q\) by the
+zeros of \(L,L\circ(+S)\) at the respective boundary
+fibers. Let \(r\) be the class of the product of the
+four ramified primes over \(3,5,11,181\).
+In additive class group notation,
+\[
+ 8m[\mathfrak P]=8m[\mathfrak Q]=r,\qquad
+ 2m([\mathfrak P]-[\mathfrak Q])=r .
+ \tag{5}
+\]
+If the field is imaginary and \(|D|>4\cdot29865\),
+the two classes individually have exact order
+\(16m\), and together generate
+\(\mathbb Z/(16m)\times\mathbb Z/(2m)\).
+The inherited cubic class gives a further independent
+\(\mathbb Z/3\) factor. The prime-ratio field count
+of MP3 holds with these conclusions.
+
+The ratio of the two tangent functions is a fourth
+power up to a rational constant:
+\[
+     \frac{L}{L\circ(+S)}
+            = \frac{(y/x)^4}{b^2},\qquad
+             \operatorname N(y/x)=b .
+ \tag{6}
+\]
+For the first identity use
+\(L\circ(+S)=b^2(1+tx)^2/(x+b)\) and
+\(y(y+x+b)=x^2(x+b)\). For the norm use
+\(\operatorname N(x)=b/t\) and
+\(\operatorname N(y)=b^2/t\).
+The same formulas also give
+\(\operatorname N(L)=\operatorname N(L\circ(+S))=b^3\).
+The exact checker verifies (6) in the quadratic
+function field.
+
+At the two moving primes the ideals of \(L\) and
+\(L\circ(+S)\) have opposing valuations \(4m,-4m\)
+on the indicated primes and their conjugates.
+At the six fixed ramified primes their normalized
+valuations are \(3v_p(b)\), by the norm \(b^3\).
+At all other primes their valuations vanish by the
+unit argument of MP2. The odd valuations of \(b\)
+occur at \(3,5,11,181\) only. Each corresponding
+ramified ideal class has order at most two.
+This gives the first two equalities in (5).
+Formula (6) gives \(m,-m\) for \(y/x\) above
+\(P\) and \(-m,m\) above \(Q\) in the stated
+orientations. At the ramified primes its valuations
+are \(v_p(b)\). This gives the last equality in (5).
+
+For an imaginary field, a nonrational integral
+element has norm at least \(|D|/4\). The norm of
+the ideal defining \(r\) is the squarefree number
+\(3\cdot5\cdot11\cdot181=29865\).
+For \(|D|>4\cdot29865\) it cannot be principal.
+Thus \(r\) has exact order two, and the two-primary
+parts \(P_2,Q_2\) of the prime classes have
+exact order sixteen. By (5),
+\[
+             Q_2=5P_2+e,\qquad 2e=0 .
+\]
+Indeed \(m\) is odd and \(2(P_2-Q_2)=8P_2\).
+
+To see that \(e\) is independent of \(P_2\), use
+the unramified quadratic extension \(K(\sqrt{13})/K\).
+The prime \(13\) occurs to exponent one in \(D\).
+At \(13\) the two ramified quadratic local fields
+have unramified or trivial compositum over \(K\),
+and away from \(13\) the additional quadratic
+field is unramified. Real places, if present,
+split in the extension. Its Artin character on
+the classes above \(P,Q\) is
+\((P/13),(Q/13)\), respectively, by quadratic
+reciprocity. The local center at \(13\) in MP2
+has \(t/c\equiv8\bmod13\) with valuation zero.
+Since \(u^m=t/c\) and \(m\) is odd, \(u\bmod13\)
+is a nonsquare. The sign in \(u=\pm P/Q\) has
+no effect since \(-1\) is a square modulo \(13\).
+Thus the character on \(e\) is nontrivial, while
+the character on \(8P_2\) is trivial. This proves
+that the two-primary subgroup is
+\(\mathbb Z/16\times\mathbb Z/2\).
+Combining with the three-primary independence
+from MP3 proves the result. Deleting the finitely
+many fields with small \(|D|\) preserves the count.
+
+Equivalently in the large imaginary fields, the
+full principal-relation lattice on the two
+oriented primes consists exactly of exponent
+pairs \((a,b')\in\mathbb Z^2\) satisfying
+\[
+        m\mid a,\quad m\mid b',\quad
+        a+5b'\equiv0\bmod16,\quad b'\equiv0\bmod2.
+\]
+For either quadratic sign, the genus character
+at \(13\) separates the two prime classes for
+every choice of orientations. In particular
+the two actual prime supports cannot be put in
+one coset modulo the odd \(m\)-torsion, despite
+the independent three-primary markings in the
+imaginary case.
+
+## Infinite towers with prescribed moving-prime decomposition
+
+**Lemma MP6 (cuts preserving the abelianization).** Let \(K\) be an
+imaginary quadratic field other than \(\mathbb Q(\sqrt{-3})\), put
+\(A=\operatorname{Cl}(K)_{(3)}\), \(d=\dim_{\mathbb F_3}A/3A\), and let
+\(G=\operatorname{Gal}(K^{\mathrm{ur},3}/K)\) be its maximal unramified
+pro-\(3\) group. For finitely many primes \(\mathfrak l_i\) of \(K\),
+choose Frobenius representatives \(x_i\in G\) and powers
+\(e_i=3^{a_i}\), \(a_i\ge0\), killing their images in \(A\). Set
+\[
+ b_i=\begin{cases}e_i&e_i>1,\\2&e_i=1.\end{cases}
+\]
+If, for some \(0<t<1\),
+\[
+                 1-dt+dt^3+\sum_i t^{b_i}<0,
+                 \tag{7}
+\]
+then the quotient
+\[
+ \Gamma=G/\overline{\langle\!\langle x_i^{e_i}:i\rangle\!\rangle}
+                 \tag{8}
+\]
+is infinite and its natural abelianization is still \(A\).
+If the image of \(x_i\) in \(A\) has exact order \(e_i\), the
+decomposition group at \(\mathfrak l_i\) in the corresponding extension
+is exactly \(C_{e_i}\). In particular, \(e_i=1\) gives complete splitting.
+If the marked prime/exponent pairs are stable under quadratic
+conjugation, that extension is also Galois over \(\mathbb Q\).
+
+Proof. The arithmetic input in
+[Koch–Venkov, §1, pp. 57–58](sources/koch-venkov-imaginary-quadratic-p-towers-1975.pdf)
+gives a minimal presentation \(G=F/R\) with \(d\) generators and
+\(d\) defining relations. Their Satz 2 and proof, pp. 60–62,
+place the relations in odd Zassenhaus depths, hence at least three.
+Thus their contribution to the Golod–Shafarevich polynomial is at most
+\(dt^3\) for \(0<t<1\).
+
+For \(e_i>1\), any lift \(f_i\in F\) of \(x_i\) has
+\(f_i^{3^{a_i}}\in F_{3^{a_i}}\). This also follows directly from
+\((f_i-1)^{3^{a_i}}=f_i^{3^{a_i}}-1\) in the completed group algebra
+over \(\mathbb F_3\). For \(e_i=1\), the class hypothesis puts
+\(x_i\) in \(\overline{[G,G]}\subseteq G_2\), so it has a lift in
+\(F_2\). These are precisely the power-depth and quotient-filtration
+properties in [Hajir–Maire–Ramakrishna, Propositions 1.2(i), 1.6 and
+1.9, pp. 4–5](sources/hajir-maire-ramakrishna-cutting-towers-1901.04354v1.pdf).
+Adjoining these lifted relators leaves the generator rank unchanged
+and bounds the new polynomial by (7). Their Theorem 1.4, p. 4,
+therefore proves infinitude; no equality of relation ranks is asserted
+for the quotient.
+
+Class field theory identifies \(G^{\mathrm{ab}}\) with \(A\).
+Every \(x_i^{e_i}\) is in \(\overline{[G,G]}\), so their closed normal
+closure is contained there. Thus (8) preserves the whole
+abelianization, a stronger assertion than preservation of generator
+rank alone. In \(\Gamma\), the order of \(x_i\) divides \(e_i\) and
+is at least its order in \(A\). Unramified decomposition groups are
+procyclic and generated by Frobenius, proving the exact-order claim.
+Finally quadratic conjugation takes Frobenius to a conjugate of the
+Frobenius at the conjugate prime. Stability of the marked pairs
+makes the closed normal subgroup in (8) invariant, proving the last
+assertion. The field in question is a subextension of
+\(K^{\mathrm{ur},3}\), so it remains everywhere unramified over \(K\).
+
+**Corollary MP7 (two moving local degrees).** Fix \(m=3^n\ge9\).
+Every imaginary prime-ratio field \(K\) of MP3 admits an infinite
+everywhere unramified pro-\(3\) extension \(L/K\), Galois over
+\(\mathbb Q\), such that
+\[
+ \operatorname{Gal}(L/K)^{\mathrm{ab}}\simeq\operatorname{Cl}(K)_{(3)},
+ \qquad D_{\mathfrak l}(L/K)\simeq C_m
+ \quad(\mathfrak l\mid PQ).
+\]
+Consequently there are
+\[
+       \gg_m X^{1/(2m)}/(\log X)^{B_m}
+\]
+distinct imaginary quadratic fields of absolute fundamental
+discriminant at most \(X\) with these properties. For \(m=9\) the
+exponent is \(1/18\) and all four marked local degrees are nine.
+
+Proof. MP3 gives \(d\ge3\) and exact order \(m\) for the images in
+\(A\) of a prime above each of the distinct split rational primes
+\(P,Q\). Their conjugate classes are inverses and have the same
+orders. Apply MP6 to all four primes with \(e_i=m\). At \(t=1/2\),
+\[
+ 1-\frac d2+\frac d8+\frac4{2^m}
+       =1-\frac{3d}{8}+2^{2-m}
+       \le-\frac18+2^{2-m}
+       \le-\frac{15}{128}<0.
+\]
+The four cuts are stable under conjugation. MP6 gives both infinitude
+and exact Frobenius orders, using the unchanged full abelianization.
+It applies to every field in the imaginary prime-ratio family, so
+the distinct-field count transfers without another counting loss.
+No assertion for \(m=3\) follows from this polynomial estimate.
+
+The imported tower mechanism is classical; MP7 is its application to
+the exact moving-prime markings of MP3. No historical novelty is
+claimed. This is a written derived corollary with internal source
+inspection, not independent review or a computation of the infinite
+Galois group. The finite local checker above verifies the underlying
+marked-field data, not the tower argument.
+
+Verification scope (2026-11-27): the retained Koch–Venkov §1 and
+Satz 2 proof, and the retained arXiv:1901.04354v1 §1.1–1.4, were
+inspected for the presentation, power-depth, quotient and infinitude
+inputs. The mixed-field and octic local checkers were internally
+replayed with their existing \(\texttt{sage -python}\) commands.
+Exact rational arithmetic confirms the two extremal polynomial
+values \(-15/128\) and \(-3/125\) in MP7 and MO4a. These checks do
+not supply independent mathematical review of the underlying
+families or of these corollaries.

@@ -15,6 +15,28 @@ this gives an absolute bound on the degree of a failing
 homogeneous bivariate trinomial. The per-profile bound below
 does not require that the limiting gamma system be nonvanishing.
 
+**Completion target and priority.** Finish the initial homogeneous
+bivariate trinomial theorem: exclude simultaneous zeros at orders
+\(1,2,3\) in every degree, over every characteristic-zero field.
+The absolute degree bound makes this a finite global reduction in
+the integer supports. Each remaining support must be checked exactly
+over all projective coefficient directions; sampling coefficients
+does not discharge that test. The bound has not been numerically
+evaluated, the complete residual has not been checked, and the
+practical cost is unknown. The finite reduction is proved; the
+nonvanishing theorem remains open.
+
+There are two completion routes. Evaluate or sharpen the nested
+cutoffs in Section 3 and run the exact residual tests, or prove the
+uniform [signed remainder inequality](SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md)
+\(R(L,H;a,d)<0\) for integer gaps and nonnegative heights.
+The latter would give a direct finish without evaluating the
+absolute bound. This initial-window target has priority over the
+separate [arbitrary-dimensional two-monomial project](MULTIVARIATE_ALL_DEGREE_REDUCTION.md),
+whose finitely many remaining terminal orders still admit infinitely
+many exponent profiles. Neither route here asserts windows at
+arbitrary positive starting orders.
+
 ## 1. Isolating the highest exponent at a fractional degree
 
 Let \(M=\max_j u_j\), which is at least one because some side

@@ -3,9 +3,9 @@
   "kind": "terminal_mass_global_compatibility_controls",
   "result": "PASS",
   "python": "3.12.3",
-  "checker_sha256": "a0ac25b41a477dc94e5cc4c45445441af7bc1c0088455d19353f5a04d710e199",
+  "checker_sha256": "267080274616f9c8c6ffc87bbd7c6cee1a0bd243f2016cb8e736760a0473ddcf",
   "input_sha256": {
-    "TERMINAL_MASS_HURWITZ_DESCENT.md": "ef4d40a50464591ea5367227a90ca02ee9abcf5ff9fbb973045e8679047b636e",
+    "TERMINAL_MASS_HURWITZ_DESCENT.md": "73d6681d14344544a3db2ad71311191534636b2ff33e4bbc5b32562fd2d99033",
     "terminal_mass_hurwitz_descent_certificate.json": "d2f2ba4d9c9d7cbb665183bf33fe3cbc195401ff37fd0dd9a339138a961257d0",
     "verify_terminal_mass_hurwitz_descent.py": "0718f36bc5814aec06d6746934619353fe4545f9d37ae956ce7782d24cba5a1f",
     "verify_paired_hurwitz_leaf_extraction.py": "7769e4d160bb4f44ac7709028a14239a620bde8e0ef20420db48ce71420a23d0",
@@ -100,7 +100,273 @@
     "unsynchronized_equal_terminal_trees_detected": true,
     "DT_wholly_in_a_terminal_component_detected": true
   },
-  "scope": "Exact controls of cut-preserving front placement, complementary full twists, cyclic contact covers, paired-terminal synchronization, the positive orbit-minimum bound 3m>=N-4 and the terminal-size restrictions. General statements have written proofs. No higher-degree census or exclusion of all positive full-alternating orbit minima.",
+  "exact_phase_controls": {
+    "g_range_inclusive": [
+      1,
+      12
+    ],
+    "terminal_multiplier_range_inclusive": [
+      1,
+      8
+    ],
+    "normalized_middle_patterns": 15182,
+    "three_coset_covers": 48,
+    "four_coset_covers": 48,
+    "covered_terminal_endpoint_lifts": 2064
+  },
+  "pair_reminimization_controls": {
+    "middle_components_by_rotation": [
+      [
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    ],
+    "terminal_components_by_rotation": [
+      [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            4
+          ]
+        ],
+        [
+          [
+            0
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            1
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            4
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2
+          ]
+        ],
+        [
+          [
+            1
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            0
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3
+          ]
+        ]
+      ]
+    ],
+    "odd_g_range_inclusive": [
+      3,
+      31
+    ],
+    "pair_feasible_weightings": 270,
+    "excluded_by_new_minimizer_terminal_sizes": 270,
+    "corrupted_middle_mask_detected": true
+  },
+  "support_code_interface_controls": {
+    "retained_degree7_tuples": 392,
+    "invariant_codes": 98,
+    "noninvariant_codes": 294,
+    "degree15_exact_cover_without_code_invariance": {
+      "tuple_edges": [
+        [
+          [
+            0,
+            14
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        [
+          [
+            2,
+            3
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        [
+          [
+            3,
+            4
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          [
+            11,
+            12
+          ]
+        ],
+        [
+          [
+            5,
+            6
+          ],
+          [
+            12,
+            13
+          ]
+        ]
+      ],
+      "cut_sizes_terminal_terminal_middle": [
+        7,
+        1,
+        7
+      ],
+      "selected_factor_mass": 6,
+      "global_tuple_mass": 0,
+      "all_complementary_phases_have_no_outer_one_contact": true,
+      "odd_support_intersection": 3,
+      "positive_orbit_minimum_counterexample": false
+    }
+  },
+  "scope": "Exact controls of complementary twists, contact covers, common terminal matching and cut-size restrictions; bounded modular controls for exact order-three/four coset alignment; literal pair-rotation masks and the new-minimizer contradiction; tree support-code invariance criterion. The universal proofs exclude equal-terminal ratio three for N>=15 and singleton ratios 3/2 and 4/3. No higher-degree census or exclusion of all positive full-alternating orbit minima.",
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false

@@ -139,6 +139,29 @@ result, but do not settle historical priority or exclude
 later constructions. Specialist novelty and proof review
 remain open.
 
+## Dependencies of the genus-three existence result
+
+HG1 is a result about the single smooth projective curve (1),
+independent of the later field counts, unit arguments and conductor
+calculations. Its rational \(3\)-torsion assertion has the following
+proof dependencies.
+
+| Required part | Argument or exact evidence |
+|---|---|
+| Smooth genus-three curve | The degree-eight polynomial is squarefree modulo \(7\); the smooth double cover has genus three. |
+| Three rational marked torsion classes | Equations (3)–(5) give three degree-eight maps to the stated elliptic curves. Their marked points \((0,-h_i-1)\) have order three, and pullback is nonzero because pushforward composed with pullback is multiplication by eight. |
+| Independence | The three pullbacks lie in distinct nontrivial characters of the sign group; its order four is prime to three. |
+| Exact rational \(3\)-rank | The Weil pairing on the principally polarized Jacobian is Galois equivariant. Its restriction to rational points is trivial because \(\mu_3(\mathbb Q)=\{1\}\). The rational subspace is isotropic of dimension at most three, matching the constructed lower bound. |
+| Classical construction and benchmark | Howe–Leprévost–Poonen Proposition 14 supplies the gluing mechanism; the direct equations above verify this model. The question after Levin–Yan–Wiljanen Theorem 9 concerns exactly hyperelliptic genus three and rational Jacobian \(3\)-rank three. |
+
+The [exact checker](verify_genus_three_marked_elliptic_quotients.py)
+checks the squarefreeness, quotient identities, map degrees and
+elliptic data. The sign-character and Weil-pairing arguments remain
+written proof inputs. Specialist proof review and comparison with
+later models are the open obligations for this standalone existence
+result. Neither the full torsion group nor geometric simplicity is
+part of its assertion.
+
 ## Three specialized Kummer directions and a common conductor
 
 **Theorem HG2.** Impose the rational parameter congruences

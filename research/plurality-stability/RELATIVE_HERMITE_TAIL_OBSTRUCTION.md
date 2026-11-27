@@ -324,6 +324,97 @@ the Gaussian density and balanced four-cell identity are proved here
 directly. This comparison makes no novelty claim and supplies no
 reduction of arbitrary four-cell competitors to reflected swaps.
 
+## Balanced three-cell cycles and their cross-interactions
+
+Let $B_i\subset T_i$ for $i=1,2,3$ have the same Gaussian measure
+$p$, and put $C_i=T_i\setminus B_i$. Indices in this section are
+cyclic modulo three. The forward cycle assigns $B_i$ to label $i+1$:
+$A_i^+=C_i\cup B_{i-1}$, with $A_4^+=T_4$. The reverse cycle uses
+$A_i^-=C_i\cup B_{i+1}$. Both partitions are exactly balanced.
+Write $D_\pm=S_\rho(T)-S_\rho(A^\pm)$ and retain the integral
+$I_\rho$ from the reflection proof. Cancellation of self-interactions
+gives the exact identity
+
+$$
+D_+=2\sum_{i=1}^3
+  \bigl[I_\rho(B_i,C_i)-I_\rho(B_i,C_{i+1})\bigr].
+\tag{CY1}
+$$
+
+Equivalently, with $f_i=1_{B_i}$, the Ornstein--Uhlenbeck operator
+$T_\rho$, and $\|f\|_\rho^2=\langle f,T_\rho f\rangle$,
+
+$$
+D_+=2\sum_i\int_{B_i}T_\rho(1_{T_i}-1_{T_{i+1}})\,d\gamma_n
+       -\sum_{i<j}\|f_i-f_j\|_\rho^2.
+\tag{CY2}
+$$
+
+Indeed expanding $C_i=T_i\setminus B_i$ in (CY1) leaves
+$-2\sum_i I_\rho(B_i,B_i)+2\sum_{i<j}I_\rho(B_i,B_j)$,
+which is the last term in (CY2). The kernel norm is nonnegative
+for $0<\rho<1$ by the Hermite expansion. These cross-interactions
+must be controlled along with the linear score loss.
+
+Let $D_{ij}$ be the loss for swapping only $B_i,B_j$ between their
+two original cells, leaving all other labels in $T$ unchanged.
+No reflection relation between the two sets is assumed in this
+definition. Expanding the same six blocks gives
+
+$$
+D_++D_-=D_{12}+D_{23}+D_{31}.
+\tag{CY3}
+$$
+
+For example, the $ij$ summand on the right is
+$2[I_\rho(B_i,C_i)+I_\rho(B_j,C_j)
+-I_\rho(B_i,C_j)-I_\rho(B_j,C_i)]$.
+Thus (CY3) retains both orientations of every interaction;
+it does not assert that either cycle has a sign for arbitrary seeds.
+
+**Equivariant cyclic-swap theorem.** Suppose the three seeds are
+equivariant under the tetrahedral orthogonal symmetries permuting
+labels $1,2,3$ and fixing label $4$: $hB_i=B_{h(i)}$ up to null
+sets for every such symmetry $h$. For every $0<\rho<1$,
+
+$$
+D_+=D_-=\frac12(D_{12}+D_{23}+D_{31})
+ =6\int_{B_1\times C_1}
+       [K_\rho(x,y)-K_\rho(x,g_{12}y)]\,d\gamma_n(x)d\gamma_n(y).
+\tag{CY4}
+$$
+
+Here $g_{12}$ is the tetrahedral reflection interchanging labels
+$1,2$ and fixing $3,4$. Both cycles strictly lose full noise
+stability exactly when $0<p<1/4$. The null cycle and the complete
+global three-label cycle give equality.
+
+For the proof, any transposition in this symmetry group conjugates
+the forward cycle to the reverse cycle, so orthogonal invariance
+gives $D_+=D_-$. Every pair swap now has exactly the reflected
+form of (11), because $g_{ij}B_i=B_j$ and
+$g_{ij}C_i=C_j$. All three pair losses agree by the cyclic
+symmetry. Equation (CY3) and the reflection identity give (CY4),
+including the factor six and both equality cases. This argument
+compares each partition directly with $T$ and does not apply a
+second reflection theorem to an already modified pair.
+
+This is a nonempty family of measurable partial cycles. To construct
+it, choose $B_1\subset T_1$ invariant under the reflection
+interchanging labels $2,3$ and fixing $1,4$, and take its orbit under
+the order-three symmetry $(123)$. For example
+$B_i=T_i\cap\{\|x\|>R\}$ gives proper cycles for every $R>0$.
+The argument uses the full kernel, with no Hermite-tail truncation.
+
+The next coupled test is (CY1) for equal-mass seeds without this
+permutation equivariance, including order-three orbit seeds that
+are not invariant under the cell-stabilizing reflection. For such
+seeds (CY3) alone gives no sign for a chosen orientation. A general
+cycle-loss inequality, or a reduction of arbitrary competitors to
+these cycles, remains open. The checked polarization theorem cited
+above is a two-point sphere theorem; it is not imported as a
+three-cell Gaussian rearrangement theorem here.
+
 ## Effect on the remaining proof route
 
 The [full-rank first-Hermite stability obligation](BALANCED_AFFINE_CENTROID_OPTIMIZATION.md#boundary-exclusion-and-the-remaining-global-obligation)
@@ -346,6 +437,9 @@ The other task is the high-value full-rank first-Hermite stability gap,
 using the [five-dimensional shape Hessian](BALANCED_AFFINE_CENTROID_OPTIMIZATION.md#five-shape-directions-and-the-averaged-trace).
 That finite-dimensional obligation and a uniform full-noise comparison
 remain distinct; resolving the former alone does not resolve the latter.
+The radius-changing subspace there targets equal centroid norms. On
+the full-noise side, (CY4) settles the permutation-equivariant three-cell
+cycles, while (CY1)--(CY3) retain the open interactions for general seeds.
 
 ## Reproducible controls and assurance
 
@@ -365,3 +459,10 @@ the proof for unbounded $R$ is (2)--(8). The full-noise theorem (11)--(13)
 is a written kernel argument for arbitrary measurable $B$; the tensor
 checker does not verify it. There is no interval certificate, independent
 replay, formal verification or external review.
+The checker also compares all 21 symmetric six-block interaction
+coefficients exactly over the rationals for (CY1), (CY3), and the
+permutation-equivariant reduction in (CY4). A separate coefficient
+control rejects equality of the two orientations without equivariance.
+This finite algebra check is supplementary to the written measurable-set
+proof; it performs no Gaussian kernel quadrature and proves no general
+cycle sign.

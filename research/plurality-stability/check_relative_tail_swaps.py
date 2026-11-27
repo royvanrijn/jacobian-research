@@ -13,6 +13,8 @@ import itertools
 import json
 import math
 import platform
+from collections import Counter
+from fractions import Fraction
 
 
 ROOT2 = math.sqrt(2)
@@ -123,6 +125,57 @@ def check_case(radius, positive_u=False):
     }
 
 
+def cyclic_interaction_control():
+    """Exact coefficients of every symmetric interaction of the six blocks.
+
+    This checks finite interaction algebra, not the measurable-set sign proof.
+    """
+    atoms = [(kind, i) for kind in ('B', 'C') for i in range(3)]
+    original = {atom: atom[1] for atom in atoms}
+
+    def loss(labels):
+        return {tuple(sorted((a, b))): Fraction(
+                    (1 if original[a] == original[b] else 0)
+                    - (1 if labels[a] == labels[b] else 0)) * (1 if a == b else 2)
+                for a, b in itertools.combinations_with_replacement(atoms, 2)}
+
+    def cycle(shift):
+        return loss({a: (a[1] + shift) % 3 if a[0] == 'B' else a[1] for a in atoms})
+
+    plus, minus = cycle(1), cycle(-1)
+    pairs = []
+    for i, j in itertools.combinations(range(3), 2):
+        swapped = original.copy()
+        swapped[('B', i)], swapped[('B', j)] = j, i
+        pairs.append(loss(swapped))
+    for key in plus:
+        assert plus[key] + minus[key] == sum(row[key] for row in pairs)
+        a, b = key
+        expected = 0
+        if a[0] != b[0]:
+            seed, complement = (a, b) if a[0] == 'B' else (b, a)
+            expected = 2 * (int(seed[1] == complement[1])
+                            - int((seed[1] + 1) % 3 == complement[1]))
+        assert plus[key] == expected
+
+    def equivariant_coefficients(row):
+        result = Counter()
+        for (a, b), value in row.items():
+            result[(tuple(sorted((a[0], b[0]))), a[1] == b[1])] += value
+        return dict(result)
+
+    # S3 invariance identifies precisely the kind/equal-label interaction orbits.
+    equivariant = equivariant_coefficients(plus)
+    assert equivariant == equivariant_coefficients(minus)
+    assert equivariant == equivariant_coefficients({key: Fraction(3, 2) * pairs[0][key] for key in plus})
+    # Reject using equal forward/reverse losses without equivariance.
+    assert plus != minus
+    return dict(outcome='PASS', symmetric_block_coefficients=len(plus),
+                identities=['CY1', 'CY3', 'CY4 coefficient reduction'],
+                unequal_orientation_control=True,
+                scope='exact six-block algebra only; Gaussian positivity is proved in the note')
+
+
 if __name__ == "__main__":
     assert math.isclose(sum(dot(m, m) for m in BASE_M), 12 * C**2, rel_tol=1e-14)
     assert math.isclose(sum(frobenius(q, q) for q in BASE_Q) / 2, 1 / math.pi**2,
@@ -133,5 +186,6 @@ if __name__ == "__main__":
         "python": platform.python_version(),
         "scope": "finite floating-point geometry and tensor controls; unbounded proof is written",
         "cases": rows,
+        "cyclic_interactions": cyclic_interaction_control(),
         "outcome": "PASS",
     }, indent=2))

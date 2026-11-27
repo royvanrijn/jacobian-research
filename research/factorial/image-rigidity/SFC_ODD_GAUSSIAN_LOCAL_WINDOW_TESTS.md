@@ -516,14 +516,20 @@ leaves \(160(7Z-18)\). Substitution of \(18/7\) in
 the latter gives \(24\cdot31/49\). Thus the theorem
 covers \(n=2p^e\) and \(4p^e\) under the displayed prime
 bound, and \(6p^e\) for \(p>12\) with \(p\ne31\).
+The [normalized valuation-one proof](SFC_ODD_GAUSSIAN_MIDDLE_31_COMPATIBILITY.md)
+also excludes \(n=6\cdot31^e\) for every \(e\ge1\). Thus the
+\(6p^e\) family is covered at every prime \(p>12\).
 
 ### The exceptional prime 31: normalized finite controls
 
-The family \(n=6\cdot31^e\) is not included in the preceding
-uniform theorem. Its common residue is \(Z=7\), where the
+The family \(n=6\cdot31^e\) requires the separate
+[valuation-one theorem](SFC_ODD_GAUSSIAN_MIDDLE_31_COMPATIBILITY.md),
+whose complete projected residue is \(20\ne0\), uniformly for
+\(e\ge3\); the existing finite prefix covers \(e=1,2\).
+Its common residue is \(Z=7\), where the
 derivatives of \(A=P_3\) and \(B=Q_3\) are \((7,3)\) modulo
 31. The following calculation determines the first transverse
-correction at \(e=2\); it does not settle the whole family.
+correction at \(e=2\); these finite controls alone do not settle the family.
 The individual window \(5765,5766,5767\) is already included in
 the finite coverage of Section 6.
 
@@ -628,11 +634,12 @@ at \(jM\) and \(a+jM\), reduce modulo \(31^2=961\) to
  A_e=[1,203,628,612],\qquad B_e=[1,506,542],\qquad
  (B'_eA_e-A'_eB_e)(7)=31\cdot17\pmod{961}.             \tag{6}
 \]
-These are finite checks. A uniform proof must establish the
-normalized compatibility through valuation one for every remaining
-exponent, including the coefficient congruence errors at that
-valuation. Neither (6) nor the tangent-layer controls establish
-that statement.
+These are finite checks. The separate valuation-one proof establishes
+(6) for all \(e\ge2\) by factorial blocks modulo \(31^2\), and
+cancels every lower digit unit through weight one. Its last-digit
+quotient adds \(4\) to the lower value equation, so the full
+transverse residue is \(17-7\cdot4=20\bmod31\). Neither (6)
+nor the tangent-layer controls alone establish that statement.
 
 The [checker](verify_sfc_odd_gaussian_middle_layer.py) enumerates
 every actual pure coefficient below relative weight one at

@@ -108,6 +108,57 @@ def shape_frame(sites):
     return coordinates[:, :5], coordinates[:, 5:8], coordinates[:, 8]
 
 
+def radius_control(sites, data, tetrahedral=False):
+    """Check the radius metric, full rank, face restriction and tetrahedral sign.
+
+    The asymmetric input is exactly rebalanced but is not stationary. Use its
+    actual Laplacian inverse, rather than the stationary identity L^+=P.
+    """
+    g = np.sum(sites**2, axis=1)
+    gram = sites @ sites.T
+    metric = np.diag(g) - gram / 4
+    assert np.linalg.eigvalsh(metric)[0] > 0
+    assert np.max(np.abs(metric @ np.ones(4) - g)) < 2e-14
+    _, _, vectors = np.linalg.svd(g.reshape(1, 4))
+    frame = vectors[1:].T
+    restricted_metric = frame.T @ metric @ frame
+    values, axes = np.linalg.eigh(restricted_metric)
+    frame = frame @ axes @ np.diag(1 / np.sqrt(values))
+    directions = []
+    for a in frame.T:
+        v = a[:, None] * sites
+        v -= v.mean(axis=0)
+        assert np.max(np.abs(v.sum(axis=0))) < 2e-14
+        assert abs(np.sum(sites * v)) < 2e-14
+        assert np.max(np.abs(sites.T @ v - v.T @ sites)) < 2e-14
+        assert np.max(np.abs(2 * np.sum(sites * v, axis=1) - 2 * metric @ a)) < 2e-14
+        directions.append((LABEL_BASIS.T @ v).reshape(9))
+    coordinates = np.array(directions).T
+    assert np.max(np.abs(coordinates.T @ coordinates - np.eye(3))) < 2e-14
+    assert np.linalg.matrix_rank(metric @ frame) == 3
+    q = np.zeros((4, 4))
+    mixed = np.zeros((4, 4))
+    for e, (i, j) in enumerate(affine.PAIRS):
+        edge = np.zeros((4, 3))
+        edge[i], edge[j] = sites[i], -sites[j]
+        q += edge @ data['second'][e] @ edge.T / data['cells'].length[e]
+        mixed += np.outer(affine.DIFFERENCE[e], edge @ data['first'][e]) / data['cells'].length[e]
+    correction = mixed.T @ np.linalg.solve(data['laplacian'] + affine.MEAN_PROJECTION, mixed)
+    h_radius = 2 * (q - correction - metric)
+    direct = frame.T @ h_radius @ frame
+    compressed = coordinates.T @ data['hessian'] @ coordinates
+    discrepancy = float(np.max(np.abs(direct - compressed)))
+    assert discrepancy < 3e-13
+    eigenvalues = np.linalg.eigvalsh(direct)
+    if tetrahedral:
+        theta = atan(sqrt(2))
+        expected = -1 + sin(2 * theta) / (2 * theta) - pi / (3 * theta**2)
+        assert np.max(np.abs(eigenvalues - expected)) < 3e-12
+    return dict(restriction_dimension=3, direct_face_restriction_error=discrepancy,
+                eigenvalues=eigenvalues.tolist(), stationary_input=tetrahedral,
+                scope='metric and compression controls; no unequal-radius stationary sign certificate')
+
+
 def finite_difference_control(sites, rule):
     data = hessian_data(sites, rule)
     observed = np.zeros((9, 9))
@@ -141,7 +192,8 @@ def finite_difference_control(sites, rule):
     return dict(step=step, maximum_entry_discrepancy=error,
                 omitted_correction_matrix_norm=omitted_error,
                 anisotropy_direction_squared_norm=anisotropy_norm,
-                cell_second_moment_mixed_error=float(np.max(np.abs(mixed - via_cells))))
+                cell_second_moment_mixed_error=float(np.max(np.abs(mixed - via_cells))),
+                radius_restriction=radius_control(sites, data))
 
 
 def tetrahedral_control(rule):
@@ -168,7 +220,8 @@ def tetrahedral_control(rule):
     assert abs(formula - expected) < 3e-12
     assert abs(np.trace(shape.T @ h @ shape) - formula) < 3e-12
     return dict(eigenvalues=eigenvalues.tolist(), shape_trace=formula,
-                balancing_trace=float(balancing_trace), stationarity_residual=float(np.linalg.norm(data["moments"] - sites)))
+                balancing_trace=float(balancing_trace), stationarity_residual=float(np.linalg.norm(data["moments"] - sites)),
+                radius_restriction=radius_control(sites, data, tetrahedral=True))
 
 
 def local_radius_arithmetic():

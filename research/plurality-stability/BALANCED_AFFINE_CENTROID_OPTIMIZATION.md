@@ -15,6 +15,8 @@ The balanced Hessian now has an explicit five-dimensional shape reduction,
 a trace identity and exact tetrahedral eigenvalues. The local theorem below
 also has an explicit polar Frobenius radius $10^{-5}$. These results do not
 prove instability of every other high-valued full-rank stationary tuple.
+The quantitative boundary theorem below excludes high-value full-rank
+stationarity whenever $\lambda_{\min}(C)/\operatorname{tr}C\le10^{-11}$.
 A deterministic search from 76 asymmetric initializations
 converged numerically to the tetrahedral Gram matrix. The global balanced
 first-order comparison remains open in this work.
@@ -36,6 +38,19 @@ rearrangement used for three candidates runs into this example at four
 cells. The biases below enforce the measure constraint.
 [Heilman, Jagannath and Naor, Theorems 1.1–1.2](https://www.stevenheilman.org/~heilman/papers/PropR3.pdf)
 [Heilman, Section 1.5](https://arxiv.org/pdf/2306.03312v3)
+
+The equal-mass, four-cell specialization of
+[Heilman, *Stable Gaussian minimal bubbles*, Problem 1.15 and
+Conjecture 1.16](https://doi.org/10.1007/s00526-026-03408-z)
+is exactly this first-moment problem, apart from the positive factor
+$\sqrt{\pi/2}$: equal simplex masses give $w=0$. The published statements
+of Problem 1.15, Conjecture 1.16 and Theorem 1.6 were inspected. The latter
+retains the first-moment conjecture as a hypothesis when $m>3$; the
+balanced four-cell conclusion here would supply that specialization,
+not the unequal-mass cases or the full positive-correlation simplex
+conjecture. The boundary estimate below is derived directly from (3G)
+and the stationary interface identities, without importing an estimate
+from this reference or making a priority claim.
 
 For a tuple $z=(z_i)_{i=1}^4$ define
 $F(z)=\sup_A\sum_i z_i\cdot m_i(A)$ over balanced partitions. The elementary
@@ -276,6 +291,88 @@ Positivity of (AT) on every non-tetrahedral stationary tuple with
 $W\ge W_1(T)$ would suffice. This is a candidate scalar inequality,
 not an established sign or a replacement for the other shape directions.
 
+### Radius-changing directions and the equal-norm bridge
+
+There is a more targeted three-dimensional test. Set
+$g_i=\|z_i\|^2$, $G=ZZ^{\mathsf T}$, $P=I-\mathbf1\mathbf1^{\mathsf T}/4$
+and $N=\operatorname{diag}(g)-G/4$. For $a\in\mathbb R^4$ put
+
+$$
+V(a)=P\operatorname{diag}(a)Z,\qquad g^{\mathsf T}a=0.
+\tag{RV}
+$$
+
+These directions belong to (S5): centering follows from $P$,
+$Z^{\mathsf T}V=\sum_i a_i z_i z_i^{\mathsf T}$ is symmetric, and
+$\langle Z,V\rangle_F=g^{\mathsf T}a=0$. Their metric and the
+first variations of the four squared radii are
+
+$$
+\|V(a)\|_F^2=a^{\mathsf T}Na,\qquad
+\left.\frac d{dt}\|z_i+tV_i(a)\|^2\right|_{t=0}=2(Na)_i.
+\tag{RM}
+$$
+
+The matrix $N$ is positive definite. Indeed $V(a)=0$ would make
+all $a_i z_i$ equal. A nonzero common vector would make every site
+collinear. A zero common vector forces $a=0$, since a centered
+rank-three four-tuple has no zero site. Also $N\mathbf1=g$.
+Consequently $a\mapsto2Na$ maps $g^\perp$ bijectively onto
+$\mathbf1^\perp$: (RV) realizes every infinitesimal change of
+squared radii whose sum is zero. In particular this space has
+dimension three. Its orthogonal complement inside (S5) consists
+exactly of the two shape directions preserving all four radii,
+because $\langle V(a),U\rangle_F=\sum_i a_i z_i\cdot U_i$.
+If this vanishes for all $a\perp g$, then
+$(z_i\cdot U_i)_i$ is proportional to $g$; its sum is zero by
+(S5), so the proportionality constant is zero.
+
+The complete radius Hessian can be assembled without differentiating
+the balance solve. For each edge $e=(i,j)$ let $B_e$ be the $4$ by $3$
+matrix with rows $z_i$ at $i$, $-z_j$ at $j$, and zero elsewhere, and put
+
+$$
+u_e=\frac1{d_{ij}}\int_{F_{ij}}x\phi_3\,d\mathcal H^2,\qquad
+M_e=\frac1{d_{ij}}\int_{F_{ij}}xx^{\mathsf T}\phi_3\,d\mathcal H^2,
+\qquad R=\sum_e(e_i-e_j)(B_eu_e)^{\mathsf T}.
+$$
+
+Here $e_i$ denotes a label coordinate vector. Translation cancels
+from $V_i-V_j$, so $q_{ij}=a^{\mathsf T}B_ex$ and $r=Ra$.
+At centroidal stationary tuples, (BV) therefore gives
+
+$$
+D^2J[V(a),V(a)]=a^{\mathsf T}H_Ra,\qquad
+H_R=2\left(\sum_e B_eM_eB_e^{\mathsf T}-R^{\mathsf T}R-N\right).
+\tag{RH}
+$$
+
+Away from stationarity the same formula uses $R^{\mathsf T}L^+R$.
+If the columns of a $4$ by $3$ matrix $E$ span $g^\perp$, the sufficient
+test is a positive generalized eigenvalue of
+$(E^{\mathsf T}H_RE,E^{\mathsf T}NE)$. The second matrix is positive
+definite. At the tetrahedron these three eigenvalues are exactly
+$\lambda_{\rm off}$ in (TS). Indeed $z_i=c s_i$ makes the constraint
+$\sum_i a_i=0$, and $V=ZS$ with
+$S=(4c^2)^{-1}\sum_i a_i z_i z_i^{\mathsf T}$ symmetric and with
+zero diagonal. Thus these directions fill the off-diagonal eigenspace.
+A sign for unequal radii must use
+stationarity and the high-value hypothesis, not just proximity to $T$.
+
+The **equal-radius stability obligation remains open**: every centered
+rank-three centroidal exactly balanced tuple with $J\ge W_1(T)$ and
+nonpositive balanced second variation in every site direction should
+have $g_1=g_2=g_3=g_4$. This is sufficient for the existing high-value
+stability gap. The [equal-centroid-norm theorem](BALANCED_FOUR_CLASS_POLYNOMIAL_PARTITIONS.md#hermite-bounds)
+already gives $W_1\le W_1(T)$ in that case, with equality only for the
+tetrahedral partition. Thus a non-tetrahedral stationary tuple at or
+above the tetrahedral value necessarily has unequal radii. Proving a
+positive direction in (RH) for every such unequal-radius tuple is a
+stronger, targeted sufficient test for the obligation. Neither this
+sign nor the equal-radius stability obligation has been proved.
+This bridge concerns first-Hermite mass and balanced quantization;
+it supplies no uniform full-noise comparison.
+
 ### Exact tetrahedral spectrum
 
 Write $z_i^*=c s_i$, with $s_i$ the even sign vectors as below, and let
@@ -356,6 +453,13 @@ by Frobenius norm $1.1746\ldots$. The
 NumPy 1.26.4 and the 80-node rule. These are floating-point controls;
 the formulas have the analytic proofs above, and no global stationary
 classification or interval sign certificate is supplied.
+The same diagnostic now checks (RM), compares (RH) with compression
+of the full nine-dimensional Hessian at the tetrahedron and the fixed
+asymmetric tuple, and recovers all three tetrahedral radius eigenvalues.
+The maximum compression discrepancy was $8.89\cdot10^{-16}$.
+The asymmetric tuple is balanced but not stationary, so its calculation
+uses the full $L^+$ and supplies no evidence for the missing stationary
+positive-sign assertion.
 
 ## Lifting a planar stationary configuration
 
@@ -585,6 +689,194 @@ displayed rational margins using exact fractions and prints $B$ using
 the standard-library Gaussian quantile. The decimal is illustrative;
 the proof of the strict comparisons is the analytic argument above.
 
+## An explicit stationary exclusion near the rank-deficient boundary
+
+**Quantitative stationary boundary theorem.** Let $Z$ be a centered,
+rank-three tuple in $\mathbb R^3$ whose exactly balanced affine cells
+have first moments $m_i=z_i$. Put $C=Z^{\mathsf T}Z$ and
+$W=\operatorname{tr}C=J(Z)$. If $W\ge W_1(T)$, then
+
+$$
+\frac{\lambda_{\min}(C)}{\operatorname{tr}C}>10^{-11}. \tag{QB}
+$$
+
+Thus the requested improving-perturbation assertion holds on the region
+with ratio at most $\eta=10^{-11}$ because there is no high-value
+stationary tuple there. This is an exclusion by the first-order
+equations, stronger than a positive-Hessian test in this region.
+It asserts neither a planar value bound nor a value bound for every
+near-planar nonstationary assignment. The proof uses Gaussian strip
+and radial tail integrals analytically, with no quadrature.
+
+**1. High value forces a uniform convex-hull margin.** For the first
+moments of any balanced partition, in any Gaussian dimension, set
+$W=\sum_i\|m_i\|^2$. Then
+
+$$
+W\ge\frac7{20}
+\quad\Longrightarrow\quad
+\operatorname{dist}(m_i,\operatorname{conv}\{m_j:j\ne i\})
+ >\frac1{25}\quad\text{for every }i. \tag{RE}
+$$
+
+Here is a quantitative extension of (NE), including its constants.
+Take $i=4$, choose a closest convex combination $p$ of the other
+three moments, and put $\delta=\|m_4-p\|$, $t=\|m_4\|^2$.
+Pointwise,
+
+$$
+\max_{1\le i\le4}m_i\cdot X
+ \le\max_{1\le i\le3}m_i\cdot X+((m_4-p)\cdot X)_+.
+$$
+
+The last summand has expectation $\delta/\sqrt{2\pi}$. The assignment
+bound, (3G), centering and the cell moment bound $\|m_i\|\le c$
+therefore give
+
+$$
+W\le\sqrt{\frac9{8\pi}(W-4t/3)}+\frac\delta{\sqrt{2\pi}},
+\qquad t\ge W-3c^2.
+$$
+
+The already proved bounds $c^2<81/(250\pi)$ and $\pi>25/8$ give
+$c^2<324/3125$ and $9/(8\pi)<9/25$. If $W\ge7/20$ and
+$\delta\le1/25$, then $W-\delta/\sqrt{2\pi}>33/100$, whereas
+
+$$
+\left(W-\frac\delta{\sqrt{2\pi}}\right)^2
+ \le\frac9{8\pi}(4c^2-W/3)
+ <\frac9{25}\left(\frac{1296}{3125}-\frac7{60}\right)
+ <\left(\frac{33}{100}\right)^2.
+$$
+
+This contradiction proves (RE). In particular, a centroidal tuple at
+the tetrahedral value level satisfies (RE), since the earlier rational
+bound $W_1(T)>1/3+23/1331$ exceeds $7/20$. Also
+$W\le4c^2<1296/3125<1/2$, and every site norm is less than $1/2$.
+
+**2. Flattening gives a uniformly nondegenerate quadrilateral.**
+Suppose, contrary to (QB), that $\lambda/W\le10^{-11}$, where
+$\lambda=\lambda_{\min}(C)>0$. Then
+
+$$
+\sqrt\lambda<\frac1{400000}, \tag{BS}
+$$
+
+because $W<1/2$ and $(400000)^{-2}> (2\cdot10^{11})^{-1}$.
+Choose a unit eigenvector $u$ for $\lambda$, set
+$v=Zu/\sqrt\lambda$ and let $y_i=z_i-\sqrt\lambda v_i u$.
+Then $\|v\|=1$, $\mathbf1^{\mathsf T}v=0$,
+$Z^{\mathsf T}v=\sqrt\lambda u$, and $Y^{\mathsf T}v=0$.
+The matrix $Y$ has rank two. For any convex coefficients on the other
+three sites, the change in the corresponding difference vector is
+at most $2\sqrt\lambda$. Thus (RE) and (BS) imply
+
+$$
+\operatorname{dist}(y_i,\operatorname{conv}\{y_j:j\ne i\})
+ >\frac1{50}. \tag{PQ}
+$$
+
+All four projected sites are vertices of a strict convex quadrilateral.
+Its affine dependence $v$ has two positive and two negative entries;
+none is zero. Its diameter is less than one because orthogonal
+projection does not increase distances and $\|z_i\|<1/2$.
+
+In fact
+
+$$
+\min_i|v_i|>\frac1{200}. \tag{VC}
+$$
+
+To check this, let $s$ be the common sum of the positive entries and
+of the absolute negative entries. Since $1=\|v\|^2\le2s^2$,
+the larger entry $b$ in either sign pair exceeds $1/4$. Denote the
+smaller entry by $a$, with its site $y_i$, and the larger-entry site
+by $y_j$. The affine dependence gives
+$a y_i+b y_j=s p$ for a convex combination $p$ of the opposite pair.
+Consequently $y_j-p=(a/b)(p-y_i)$, so its distance from that opposite
+segment is less than $a/b$. By (PQ) it exceeds $1/50$, whence
+$a>b/50>1/200$. This works for both sign pairs.
+
+**3. Every site triangle has a uniform altitude.** From (RE), all
+pairwise distances exceed $1/25$. In any three-site triangle the
+altitude to a longest side lands in that side's segment: both angles
+at the longest side's endpoints are acute. The opposite vertex is
+at distance greater than $1/25$ from this segment, by (RE). This
+altitude is the smallest of the three altitudes, so all three exceed
+$1/25$. Collinear triangles are already excluded by (RE). Hence for
+any three distinct labels $i,j,k$, if $n$ is the unit normal to the
+equality plane of $i,j$, then
+
+$$
+\|(I-nn^{\mathsf T})(z_i-z_k)\|>\frac1{25}. \tag{TA}
+$$
+
+**4. One stationary interface is too small.** Let $b$ be the exact
+balancing biases and write $s_i(x)=z_i\cdot x+b_i$. Reverse $v$ and
+$u$ together if necessary so that $k=v\cdot b\le0$, and let $i,j$
+be the positive sign pair of $v$. On their winning interface,
+$s_i=s_j\ge s_l,s_m$, where $l,m$ are the negative pair. Therefore
+
+$$
+|v_l|(s_i-s_l)+|v_m|(s_i-s_m)
+ =\sum_r v_r s_r(x)=\sqrt\lambda\,u\cdot x+k.
+$$
+
+On the part with $\|x\|\le4$, both gaps on the left are nonnegative,
+and (VC) bounds either one by $800\sqrt\lambda$. In particular this
+part of the face lies in the strip
+
+$$
+0\le (z_i-z_l)\cdot x+b_i-b_l\le800\sqrt\lambda
+$$
+
+inside the equality plane $H_{ij}$. By (TA), the tangent gradient of
+the middle expression has length greater than $1/25$. On any plane
+$H=\{x:n\cdot x=h\}$, a strip of coordinate width $\ell$ and tangent
+gradient length $a$ has Gaussian surface integral at most
+$\ell/(2\pi a)$. Indeed write $x=hn+y$ with a standard two-dimensional
+tangent Gaussian; its one-dimensional marginal density is at most
+$(2\pi)^{-1/2}$, and the normal density has the same bound.
+The inner part of this face thus has area less than
+$20000\sqrt\lambda/(2\pi)<1/120$, by (BS) and $\pi>3$.
+
+Uniformly over the plane's offset, its outside-ball area satisfies
+
+$$
+\int_{H\cap\{\|x\|>4\}}\phi_3(x)\,d\mathcal H^2(x)
+ \le\frac{e^{-8}}{\sqrt{2\pi}}<\frac1{1000}. \tag{PT}
+$$
+
+For $|h|\le4$, the two-dimensional radial tail is
+$\exp(-(16-h^2)/2)$, which multiplied by $\phi(h)$ gives the
+displayed bound. For $|h|>4$, the entire plane has area $\phi(h)$
+bounded by the same expression. Finally
+$e^8>\sum_{r=0}^{5}8^r/r!=8551/15>500$ and
+$(2\pi)^{-1/2}<1/2$ prove the rational comparison in (PT).
+
+It follows that the interface area obeys
+
+$$
+a_{ij}<\frac1{120}+\frac1{1000}=\frac7{750}<\frac1{100}.
+$$
+
+Full-rank centroidal stationarity, however, requires
+$a_{ij}=\|z_i-z_j\|/4>1/100$, by the six interface identities and
+(RE). This is the contradiction proving (QB).
+
+The [exact constant audit](check_stationary_boundary_margin.py) checks
+the rational comparisons, including the strip/tail contradiction and
+the admissible $\eta$, with Python's standard-library fractions. It
+does not certify the geometric argument or replace its analytic proof.
+An internal Python 3.12.3 run passed with robust value-squared margin
+$2001/1250000$ and face-area contradiction margin $1/1500$; three
+deliberately invalid constant choices were rejected. Reproduce it from
+the repository root with
+`python3 research/plurality-stability/check_stationary_boundary_margin.py`.
+No certified balance solve or numerical Gaussian integration is used
+in this boundary theorem. The high-value stability gap on the remaining
+compact shape region is still open.
+
 ## Boundary exclusion and the remaining global obligation
 
 The rank-one case also has a sharper bound. If the first moments are
@@ -639,6 +931,12 @@ tetrahedral centroid tuple up to orthogonal maps and label permutations,
 has an improving site perturbation for $J$. A positive value of (BV)
 in one direction is sufficient. This statement remains open.
 
+The immediate targeted route is the equal-radius stability obligation
+above. A positive direction in the three-dimensional radius restriction
+(RH) whenever the radii differ, at these high-value stationary tuples,
+would connect the shape Hessian directly to the established equal-norm
+theorem. It would avoid classifying lower-valued stationary tuples.
+
 **Full-rank stability gap (open):** the same improving-perturbation
 statement for every non-tetrahedral full-rank stationary tuple, without
 restricting its value. This is a stronger sufficient statement; its
@@ -687,9 +985,8 @@ of the remaining stability route.
 
 For a computer-assisted route, the explicit local theorem below supplies
 a polar Frobenius neighborhood of radius $10^{-5}$. A complete interval proof
-still needs rigorous Gaussian tail bounds,
-coverage of the rank-deficient and coincident-site strata, and an
-exhaustive cover of the remaining compact normalized Gram domain.
+still needs rigorous Gaussian integral enclosures and an exhaustive cover
+of the remaining compact normalized Gram domain.
 For upper bounds on the value, **a certified bias solve is unnecessary**:
 every fixed mean-zero bias $\beta$ gives $F(z)\le G(z,\beta)$, even
 if the resulting cells are unbalanced. On a box of centered sites of
@@ -698,10 +995,23 @@ $G(z,\beta)\le\sqrt{W_1(T)}$ suffices. Different boxes may use
 different fixed biases. Certification of stationary tuples, in contrast,
 must enforce the balance equations before using (BV) or the six
 interface identities. Compactness alone supplies no numerical certificate.
-The analytic boundary exclusion is sufficient when searching for global
-maxima. It supplies no explicit neighborhood or value bound around the
-entire rank-deficient stratum; an interval proof requiring such a
-neighborhood must still quantify it.
+The analytic rank-deficient exclusion is sufficient when searching for
+global maxima. In addition, (QB) now confines every high-value full-rank
+stationary candidate to $\lambda_{\min}(C)/\operatorname{tr}C>10^{-11}$;
+(RE) excludes coincident sites with an explicit separation. Together
+with the local exclusion (NR), this leaves a compact domain of normalized
+shapes on which an exhaustive interval cover can be attempted. The
+Gaussian integrals for balance, stationarity and Hessian rejection on
+that domain still require certified enclosures. No exhaustive cover or
+practical complexity bound has been established.
+
+The balancing biases also have an explicit compact bound after unit
+Frobenius normalization. In the gauge $\sum_i b_i=0$, every minimizing
+bias satisfies $\|b\|_\infty\le3$: the dual coercivity estimate gives
+$G(Z,b)\ge\max_i b_i\ge\|b\|_\infty/3$, whereas
+$G(Z,b)\le G(Z,0)\le\mathbb E\|ZX\|\le\|Z\|_F=1$.
+This bounds the possible bias solutions; it does not certify the
+balance equations or the required Gaussian integrals on a shape box.
 
 ## Local tetrahedral maximality
 
@@ -902,10 +1212,6 @@ $\|\sqrt{3C/W}-I\|_F>1/300000$. This supplies an explicit excluded
 region near isotropy, while leaving the sign of (ST) or (AT) outside
 that region open.
 
-For context, [Heilman's published Problem 1.15 and Conjecture 1.16](https://link.springer.com/article/10.1007/s00526-026-03408-z)
-retain the balanced first-moment optimization as a separate finite-dimensional
-obligation. His Theorem 1.5 concerns Gaussian surface area plus a small
-first-moment penalty, and does not establish the pure first-moment maximum.
 The checked transport and propeller results cited above likewise do not
 supply the sign in (ST) or (AT). These formulas and the local radius do
 not assert that the global conjecture has been resolved.

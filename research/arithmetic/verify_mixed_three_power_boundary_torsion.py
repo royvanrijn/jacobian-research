@@ -42,6 +42,8 @@ assert y*y+(x+b)*y == x*x*(x+b)
 assert y2*y2+(x2+b)*y2 == x2*x2*(x2+b)
 assert y2/(x2*(x2+b)) == 1/(b*t)
 assert (y*y/(x+b))*(ybar*ybar/(xbar+b)) == b**3
+assert (y*y/(x+b))/(y2*y2/(x2+b)) == (y/x)**4/b**2
+assert (y/x)*(ybar/xbar) == b
 
 
 def marked_values(t, x, b, xr, yr, slope):
@@ -83,6 +85,8 @@ for p, center, valuation, local_twist in ramified:
     expected_conductor_exponent = 6 if p == 2 else 2
     assert E.quadratic_twist(local_twist).conductor().valuation(p) == expected_conductor_exponent
 
+assert not GF(13)(QQ(10686)/c).is_square()
+assert 3*5*11*181 == 29865
 assert E.conductor() == 2*3*5*11*13*157*173*181
 assert set(b.numerator().prime_factors()+b.denominator().prime_factors()) == {
     p for p, _, _, _ in ramified

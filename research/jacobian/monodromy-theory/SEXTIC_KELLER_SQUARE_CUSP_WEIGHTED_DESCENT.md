@@ -164,15 +164,15 @@ the field generators lift to polynomials of
 weights ten and thirty restricting to \(x,Y\) at
 \(z=0\). Since the weight of the new variable is
 above eighteen, only \(Y\) can lift nontrivially.
-The lift is either \(y^2+\delta z\) at weight
-thirty or \(y^2+\delta xz\) at weight twenty,
-where \(\delta\ne0\). In all these applications the
-expected top determinant weight is positive: the
-component weights sum to \(220\), and the moving
-weight at a first tie is at most \(90\).
-
-In the former case take \(Z=y^2+\delta z\) as a new
-variable of weight thirty. The leading tuple is
+The monomial \(x^3z^3\) in the first component ties at
+weight twenty, so the first tie is at most twenty.
+A monomial of weight thirty involving \(z\) between
+weights eighteen and twenty can only be \(xz\) at
+weight twenty. Hence the lift is \(H=y^2+\delta xz\),
+with \(\delta
+e0\). Its expected top determinant weight
+is \(175>0\), so the normalization lift applies.
+The leading tuple is
 binary in the parameters \(x,Z\) and these again
 give its finite normalization. Increase the weight
 of the unused variable \(y\) from fifteen. The only
@@ -276,3 +276,87 @@ This descends through all positive weights and
 constants, giving a map depending on only two
 polynomials and a zero determinant. The contradiction
 proves \(b=0\) in (1).
+
+## Returning from the binary edge to the conic
+
+**Theorem SexticKellerSquareCuspWeight101520Reduction.**
+In the square-cusp setting above, the highest tuple in
+weights \((10,15,20)\) is
+\[
+             (P^3,\ Px^4,\ x^6+kx^3P+eP^2),
+\]
+with the same \(k,e\) as on the binary edge.
+
+Increase only the weight of \(z\) from eighteen to twenty.
+A monomial involving \(z\) ties if \(10i+15j+wl\) equals
+the relevant component weight \(90,70,60\). In the open
+interval the possible ties are \(yz^3\) in the second
+entry at \(55/3\) and \(yz^4\) in the first entry at
+\(75/4\). This uses the divisibilities of both
+degree-five corrections and the eliminated coefficients
+in the preceding two theorems. At the first tie the other
+two entries are independent in \(x,y\). At the second
+tie the two unchanged entries \(x^4y^2,\ x^6+kx^3y^2+ey^4\)
+are also independent: their binary determinant contains
+a nonzero contribution from \(x^6\) of strictly higher
+\(x\)-degree than any other contribution.
+Thus each tie would give a nonzero weighted determinant
+unless its coefficient vanishes.
+
+At weight twenty use the polynomial variables \(x,P,z\)
+in the subring \(k[x,y^2,z]\). The leading tuple has the
+following general form, by the same exponent test:
+\[
+\begin{aligned}
+ A&=P^3+a Pz^3+a' xz^4,\\
+ B&=x^4P+d x^2Pz+d' x^3z^2+f Pz^2+f' xz^3,\\
+ C&=x^6+kx^3P+eP^2+g x^4z+g' xPz+g'' x^2z^2+g''' z^3 .
+\end{aligned}
+\]
+The actual source Jacobian of this tuple is \(2y\)
+times its determinant in \(x,P,z\). The expected weight
+is \(175>0\), so the latter determinant is zero.
+
+In order, the coefficients of \(x^8P^2 z\),
+\(x^9Pz^2\), \(x^6P^2z^2\), and \(x^{10}z^3\) give
+\(d'=a=f'=a'=0\). Their expressions are
+\(36d'\), \(-18a\), \(3ak+15d'g+54f'\), and \(-24a'\),
+respectively. After these vanishings compare the following:
+\[
+\begin{array}{c|r}
+ x^7P^3 &18d-12g\\
+ x^4P^4 &9dk-12g'\\
+ x^5P^3z &6dg+36f-24g''\\
+ x^3P^3z^2 &-6dg''+24fg-36g'''\\
+ xP^3z^3 &-18dg'''+12fg''\\
+ x^2P^4z &-3dg'+18fk .
+\end{array}
+\]
+The first four determine \(g,g',g'',g'''\). Substitution
+in the fifth gives \(18(f-d^2/4)^2=0\), and the last
+then gives \(kd^2=0\). With \(\gamma=d/2\) and
+\(Q=x^2+\gamma z\), the tuple is
+\((P^3,PQ^2,Q^3+k x^3P+eP^2)\) and \(k\gamma=0\).
+
+If \(\gamma\ne0\), the
+[weighted leading-pair slice](KELLER_LEADING_PAIR_RATIONAL_SLICE.md)
+applied to \(P^3,PQ^2\) gives a rational primitive for
+the relative area differential on a geometric generic
+fibre of \((P,Q)\). Indeed
+\(d(P^3)\wedge d(PQ^2)=6P^3Q\,dP\wedge dQ\),
+with nonzero constant factor on the generic fibre.
+For generic \(P=S,Q=T\), eliminating \(z\) gives
+\[
+                      y^2=S+(x^3-Tx)/\gamma .
+\]
+The right side is a squarefree cubic over the geometric
+generic field. Also \(dP\wedge dQ\wedge dx
+=2\gamma y\,dx\wedge dy\wedge dz\), so the relative
+differential is a nonzero scalar multiple of \(dx/y\).
+This differential is regular on the smooth projective
+model: at a simple finite root, \(y\) is a parameter,
+and at infinity \(x,y\) have pole orders two and three.
+A rational function with a pole has differential with
+a pole in characteristic zero. Thus this nonzero
+regular differential cannot have a rational primitive.
+The contradiction gives \(\gamma=0\), as claimed.

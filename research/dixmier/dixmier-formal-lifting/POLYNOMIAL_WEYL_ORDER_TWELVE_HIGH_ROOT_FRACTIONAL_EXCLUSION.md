@@ -207,3 +207,130 @@ Indeed the root orders in (1) force the two zeros of
 factor. Both the small-root classes and this high-root
 face are necessary conditions for the remaining even
 branches. They supply no polynomial Weyl pair.
+
+## A primitive length-two commutator problem
+
+**Proposition PolynomialWeylOrderTwelvePrimitiveCommutatorChain.**
+In the surviving degree-thirty even branch, write \(h=H^2\),
+absorbing a nonzero constant into \(H\). With the normalization above,
+\(\operatorname{lc}P=H^4\), \(\operatorname{lc}Q=H^6\), and
+\(\operatorname{lc}W=\delta H^3\) for \(\delta\ne0\). Thus \(P,W\)
+have orders \(12,9\), reduced ratios \(4:3\), and common leading
+factor \(H\). Its root multiplicities are \((13,2)\) or \((13,1,1)\),
+so their gcd with the new order gcd three is one. They satisfy
+\[
+ \begin{aligned}
+ C&=[W,P]=2\kappa Q, & [C,P]&=2\kappa^2,\\
+ C^2&=4\kappa^2(W+P^3-2cP),
+ & [W,C]&=2\kappa^2(3P^2-2c).
+ \end{aligned}                                                   \tag{2}
+\]
+In particular \(P,W\) generate the same associative algebra as
+\(P,Q\). Conversely, polynomial differential operators \(P,W\)
+satisfying the second-commutator and squared-commutator equations
+in (2), for constants \(\kappa\ne0,c\), recover a polynomial Weyl
+pair by \(Q=[W,P]/(2\kappa)\), with exactly the defining identity
+\(W=Q^2-P^3+2cP\).
+
+There is also a controlled first binomial resultant. For the rational
+pseudodifferential root \(V=P^{1/4}\) with leading coefficient \(H\),
+\[
+ \begin{aligned}
+ \operatorname{ord}(W-\delta V^3)&=7,&
+ \operatorname{lc}(W-\delta V^3)&=-\frac{\kappa}{6}BH^2,\\
+ B'-\frac{H'}{3H}B&=1,&
+ \operatorname{ord}(W^4-\delta^4P^3)&=34,\\
+ \operatorname{lc}(W^4-\delta^4P^3)&=
+       -\frac{2\kappa\delta^3}{3}BH^{11}.
+ \end{aligned}                                                   \tag{3}
+\]
+Here \(B\) is the polynomial residue primitive already supplied
+by the original scalar Weyl pair; no scalar commutator for \(P,W\)
+is assumed.
+
+The order-nine leading coefficient was obtained above from the
+nonzero order-minus-nine coefficient proportional to \(h^{-3/2}\).
+This proves the leading-factor statements. The first line of (2)
+is the product rule applied to the defining identity for \(W\).
+The squared equation is that identity itself. Since
+\([P,Q]=-\kappa\), the same product rule gives
+\([W,Q]=\kappa(3P^2-2c)\), proving the remaining equation.
+The converse and equality of generated algebras follow by the
+displayed formula for \(Q\). The converse alone makes no assertion
+about differential orders or root multiplicities; these remain
+part of the specified branch.
+
+To prove (3), set \(T=W-\delta V^3\), so \(\operatorname{ord}T<9\)
+and \([T,P]=2\kappa Q\). If \(T\) had order eight, its leading
+coefficient \(t\) would solve \(8t(H^4)'-12H^4t'=0\), and hence
+be proportional to \(H^{8/3}\). This is not rational, already at
+the multiplicity-thirteen root. Order below seven cannot produce
+the order-eighteen commutator. Thus its order is seven and
+\[
+                 7t(H^4)'-12H^4t'=2\kappa H^6.
+\]
+Its rational solution is \(t=-\kappa BH^2/6\). The difference of
+two solutions is proportional to \(H^{7/3}\), again not rational.
+Expand \(W^4=(\delta V^3+T)^4\). The four words with one \(T\)
+have order \(3\cdot9+7=34\) and the same nonzero leading
+coefficient; words with two or more \(T\)'s have order at most
+32. The term without \(T\) is \(\delta^4P^3\). This proves (3).
+
+### Why the scalar critical-face argument stops here
+
+The closest critical-edge input used in the
+[primitive-factor proof](POLYNOMIAL_WEYL_PRIMITIVE_LEADING_FACTOR_OBSTRUCTION.md#no-high-root-in-the-primitive-case)
+is Guccione–Guccione–Valqui, *The Dixmier conjecture and the shape
+of possible counterexamples*, arXiv:1111.6100v3,
+[Lemma 7.1, printed pages 37–38](sources/guccione-guccione-valqui-1111.6100v3.pdf).
+Its statement and proof require a scalar commutator. In particular
+its zero-leading-bracket conclusion does not extend to \(P,W\).
+
+Indeed write the known top forms at weight \((-1,6)\) as
+\(p_0=R^2\), \(q_0=R^3\), \(w_0=x^{-15}w(z)\). Their weights
+are 20, 30 and 15, and their already established equation gives
+\[
+                    \{w_0,p_0\}=2\kappa R^3\ne0,
+       \qquad \{\{w_0,p_0\},p_0\}=0.                         \tag{4}
+\]
+Thus the first commutator is supported on this face, while the
+leading part of the second commutator cancels. Moreover \(p_0\)
+is not a fourth power: at \(z=-\beta\) its multiplicity is two.
+This is exactly where the scalar proof's common-power factorization
+would fail for the new ratios \(4:3\).
+
+The first resultant in (3) also survives on the same face. For
+the display normalize \(\rho=1\) and put
+\(A=-2\kappa/(15\beta^2)\), so \(\delta=A\) there. Its top form is
+\[
+ x^{-60}A^4z^{24}(z+\beta)^6
+       \big((z+\beta)^2(z-\beta/2)^4-z^6\big).                  \tag{5}
+\]
+The parenthesis has degree four and leading coefficient
+\(-3\beta^2/2\). Hence (5) has differential degree 34 and is
+nonzero, consistently with (3). The new primitiveness by itself
+therefore yields no contradiction through this first resultant.
+
+**Open obligation.** Exclude polynomial solutions of the two-operator
+system
+\[
+ [[W,P],P]=2\kappa^2,\qquad
+ [W,P]^2=4\kappa^2(W+P^3-2cP)
+\]
+in this order-\((12,9)\) branch, retaining its leading coefficients,
+root multiplicities and known critical face. A successful extension
+of the primitive obstruction must use further coefficients of this
+system or a new consequence of its exact second commutator. Equation
+(4) shows that its principal part alone supplies no obstruction.
+This remains the existing
+[global polynomial constraint gap](POLYNOMIAL_WEYL_PRIMITIVE_LEADING_FACTOR_OBSTRUCTION.md);
+neither even profile is excluded here.
+
+The existing [exact checker](verify_weyl_primitive_leading_resultant.py)
+also checks (2) in the abstract Weyl algebra over \(\mathbb Q[\kappa,c]\),
+the cancellations and degree in (5), and (4) for three nonzero
+rational \(\beta\)'s. Run
+`python3 research/dixmier/dixmier-formal-lifting/verify_weyl_primitive_leading_resultant.py`
+from the repository root. These are exact internal controls for
+the written argument, not a test of polynomial admission or a
+resolution of the open obligation.

@@ -19,6 +19,29 @@ specifies a terminating computation of an absolute cutoff.
 Its numerical value is unevaluated. Coprimality at the earlier
 terminals requires a separate argument.
 
+**Separate research project: the infinite-profile remainder.**
+The exact residual is at terminal orders \(15\le N<N_{\rm ang}\),
+with the support and curvature restrictions in the residual
+implication below. Although this is a finite set of orders, the
+remaining integer exponents, row counts and multiplicities are
+unbounded. No finite global list of exponent profiles is supplied.
+This differs from the computable absolute degree reduction for the
+[initial homogeneous bivariate trinomial window](SFC_HOMOGENEOUS_TRINOMIAL_AXIS_DEGREE_SIEVE.md),
+which is the immediate completion priority.
+
+The missing bridge is uniform exclusion near exceptional Gaussian
+limits for the original integer exponent profiles, retaining the
+linked factorial arrays and their arithmetic constraints. Relaxing
+the row data to arbitrary positive measures admits collisions, as
+the [joint curvature analysis](MULTIVARIATE_JOINT_FACTORIAL_CURVATURE.md)
+shows. Prescribed finitely many prime-power screens also admit
+[simultaneous survival](MULTIVARIATE_PADIC_DIGIT_AUTOMATON.md#a-simultaneous-obstruction-at-finitely-many-primes).
+These obstructions concern the relaxed models and tests; they do
+not exhibit an ordinary integer-profile SFC counterexample. The
+project's completion criterion is a certificate uniform over the
+unrestricted original tails at those exceptional limits, rather
+than a larger bounded profile search or another fixed local screen.
+
 **Theorem.** For each fixed \(s_0>0\) there is a terminal
 \(N_0(s_0)\) such that every fully shared profile with \(S\ge s_0\)
 has \(\gcd(Q_{N-1},Q_N)=1\) for \(N\ge N_0(s_0)\).

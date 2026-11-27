@@ -792,3 +792,652 @@ This again prevents exactness. Therefore \(L=0\),
 and (7) gives \(U=xU_2,V=xV_2\).
 Substitution in the tangent vector is precisely the
 degree-five correction of the stated Veronese reference.
+
+## Two correction orders at the double common divisor
+
+**Theorem SexticKellerTangentConicSquareCommonFactorTransverseJetReduction.**
+Under the hypotheses of the preceding theorem, write
+\[
+\lambda=Q(0,y)/y^2,\quad q=Q-\lambda P,\quad
+\widehat F=(F_1,F_2-\lambda F_1,F_3-2\lambda F_2+\lambda^2 F_1).
+\]
+In the Veronese reference for \(\widehat F\) write the
+degree-three parameters as \(xP+U_2,xq+V_2'\), where
+\(V_2'=V_2-\lambda U_2\). Then \(x\mid V_2'\).
+The homogeneous degree-four error relative to this
+reference is of the form
+\[
+                      (2P U,\ qU+P V,\ 2q V),
+       \qquad \deg U=\deg V=2,\qquad x\mid V.
+\]
+The third component of \(\widehat F\) has its degree-six,
+degree-five, degree-four and degree-three parts divisible
+by \(x^4,x^3,x^2,x\), respectively. In the variables \(y,z\),
+the degrees of the three components of \(\widehat F\) are at
+most \(4,3,2\), with coefficients in \(k[x]\).
+
+### The first transverse coefficient
+
+Write \(q=x(R+\alpha x)\) with \(R=\beta y-\lambda z\).
+The discriminant \(D=\widehat F_1\widehat F_3-\widehat F_2^2\)
+has terms of degrees eleven and ten equal to zero, by the
+preceding proof. The change of target frame preserves \(D\).
+The degree-ten equality contracts the degree-four error of the
+Veronese reference against \(x^2(q^2,-2Pq,P^2)\).
+Since \(P,q\) are coprime, every vector in this kernel
+has the displayed form: the first entry is divisible by \(P\),
+the third by \(q\), and the equation gives the middle entry.
+
+Use weights \((1/2,1,1)\). The weighted highest tuple is
+\((a^2,ab,b^2)\), with
+\[
+                     a=xy^2,\qquad b=x^2R+L(y,z),
+                 \qquad L=V_2'|_{x=0}.
+\]
+The leading parameter weights are \(5/2,2\). Terms of the
+degree-four error cannot tie the first or second components.
+They cannot tie the third either, since its degree-four
+error \(2qV\) is divisible by \(x\).
+The pair \(ab,b^2\) is independent, since \(a,b\) are
+independent. Its parameter Jacobian is \(2b^2\).
+Consequently a rational slice for \(ab,b^2\) gives a
+nonzero constant multiple of a rational primitive of the
+relative differential of \((a,b)\) on each geometric generic
+fibre.
+
+Write \(L=u z^2+v yz+\gamma y^2\). On levels \(a=A,b=B\)
+solve \(x=A/y^2\). The equation for \(z\) is
+\[
+ u z^2+(v y-\lambda A^2/y^4)z+
+                \gamma y^2+\beta A^2/y^3-B=0 .
+\]
+The relative differential is, up to sign,
+\[
+ \frac{dy}{y^2(2u z+v y-\lambda A^2/y^4)}
+                    =\frac{y^2\,dy}{W},\qquad
+ W=y^4(2u z+v y-\lambda A^2/y^4).
+\]
+If \(u\ne0\), this is the hyperelliptic model
+\[
+ W^2=(v^2-4u\gamma)y^{10}+4uB\,y^8
+       -(2v\lambda+4u\beta)A^2y^5+\lambda^2 A^4 .
+\]
+The right side is squarefree over the algebraic closure of
+the generic level field. Its constant term is nonzero, and
+away from zero a multiple root would make the transcendental
+value \(B\) a critical value of the nonconstant rational function
+obtained by solving this equation at \(W=0\) for \(B\).
+Its degree is eight or ten. The differential is regular at
+finite branch points by taking \(W\) as parameter, and at
+infinity its possible pole is cancelled by the pole order
+of \(W\), at least four. This nonzero regular differential
+on a complete smooth curve has no rational primitive.
+
+If \(u=0\) and \(v\ne0\), the curve is rational in \(y\)
+and the denominator \(W=v y^5-\lambda A^2\) has simple
+nonzero roots. The differential has nonzero residues
+there, which also preclude a rational primitive.
+
+It remains to test \(L=\gamma y^2\). If \(\gamma\ne0\),
+the differentials of \(a,b\) are independent at the
+generic point of \(x=0\), where \(a=0,b=\gamma y^2\):
+\(da\) has a nonzero normal coefficient, and \(db\) a
+nonzero tangential coefficient. The same is true of
+\(ab,b^2\) since \(2b^2\) is a unit there. By the
+[divisor-regular leading-pair slice](KELLER_LEADING_PAIR_RATIONAL_SLICE.md)
+there must be a rational function \(\phi\), regular at
+that divisor, with \(\det J(ab,b^2,\phi)=1\) after
+rescaling. On the full field one such primitive is
+\[
+                            \phi_0=\frac{y^3}{6\lambda a^2 b^2}.
+\]
+Indeed \(\det J(a,b,y)=\lambda a^2/y^2\).
+The source field is \(k(a,b)(y)\), since \(x,z\) are
+recovered from \(a,b,y\), so every other primitive differs
+from \(\phi_0\) by an element of \(k(a,b)\).
+Along \(x=0\), the valuation restricted to \(k(a,b)\)
+is the order along \(a=0\): \(a\) has order one and
+the residue \(b=\gamma y^2\) is transcendental over
+\(k\). Any correction cancelling the order-two pole must
+therefore have its product with \(a^2\) reduce into
+\(k(\gamma y^2)\). The residue of \(a^2\phi_0\) is
+\(y^3/(6\lambda b^2)\), which is outside this field.
+No correction makes the slice regular. Thus \(\gamma=0\)
+as well, proving \(x\mid V_2'\).
+
+### The next transverse coefficient
+
+Lower the weight of \(x\) from \(1/2\) to \(1/3\) with
+\(y,z\) fixed in weight one. Since \(V_2'\) is divisible
+by \(x\), the highest reference parameters up to the first
+tie are \(a=xy^2,\ b=x^2R\). The only possible ties are
+the \(P V\) contribution in the second degree-four error
+and \(2qV\) in the third, both at weight \(1/3\).
+Indeed the reference weights of the three outputs are
+\(2w+4,3w+3,4w+2\) for the moving weight \(w\). The
+degrees at most three are below these weights, and the
+first degree-four error has weight at most four. In the
+second error \(qU\) has weight at most \(w+3\) and
+\(PV\) at most four. The third error has weight at most
+\(w+3\).
+
+Set \(V_0=V|_{x=0}\). The leading tuple at the tie is
+\[
+                (a^2,\ a(b+\eta),\ (b+\eta)^2-\eta^2),
+                            \qquad \eta=V_0(y,z)/x.
+\]
+Its determinant is zero since the expected determinant
+weight \(8w+7\) is positive. The tuple's field has
+transcendence degree at most two, and adjoining \(a\)
+and \(\eta\) is algebraic over it. Thus \(\eta\) is
+algebraic over \(k(a,b)\). The latter field is relatively
+closed, as its source field is \(k(a,b)(y)\), with
+\[
+                       x=a/y^2,\qquad
+                       z=(\beta y-b y^4/a^2)/\lambda .
+\]
+If \(V_0\ne0\), substitution into \(y^2 V_0(y,z)/a\)
+has positive degree in \(y\). The leading degrees
+from \(z^2,yz,y^2\) are respectively ten, seven and
+four, so cancellation of the highest present one is
+impossible. Therefore \(V_0=0\) and \(x\mid V\).
+
+Let \(E_3\) be the degree-three error. The degree-nine
+part of \(D\) is
+\[
+ x^2(q^2,-2Pq,P^2)\cdot E_3
+             -2x(qU_2-PV_2')(qU-PV).
+\]
+The second summand is divisible by \(x^3\). The degree-nine
+part of \(D\) is also divisible by \(x^3\), by the
+leading constant-ring argument in the preceding theorem.
+Reducing after division by \(x^2\) gives
+\(y^4(E_3)_3|_{x=0}=0\). This yields the degree-three
+divisibility. The degree-four part of the third output is
+\((V_2')^2+2qV\), the degree-five part is \(2xqV_2'\),
+and the degree-six part is \((xq)^2\), giving the
+other stated divisibilities. For the degree bounds in
+\(y,z\), the reference parameters have degrees at most
+two and one, respectively. In the quartic error the
+second entry \(qU+PV\) has degree at most three in
+\(y,z\), since \(q,V\) are divisible by \(x\). The third
+entry has degree at most two by the divisibilities just
+proved, including that of the degree-three part. The
+correction pair is unique from the
+degree-five vector, so the divisibilities hold over the
+original field as well.
+
+## The highest tuple in the transverse variables
+
+**Theorem SexticKellerTangentConicSquareCommonFactorTransverseNormalForm.**
+Under the hypotheses of the preceding theorem, make the same target
+shear and use \(R=\beta y-\lambda z\) as the third linear source
+coordinate, denoted here by \(z\). Let \(A,B,C\) be the highest
+parts of the sheared components in the variables \(y,z\) over \(k[x]\).
+There is a translation \(X=x+\alpha\) and there are scalars
+\(\mu,\delta\) such that
+\[
+ (A,B,C)=(S^2,ST,T^2+\delta S),\qquad
+                  S=Xy^2,\qquad T=X^2z+\mu Xy .
+\]
+Moreover both quartic tangent corrections \(U,V\) in the preceding
+theorem are divisible by \(x\) in the untranslated source frame.
+Hence the degree-five and degree-four terms are together absorbed
+by a Veronese reference with parameter degrees at most three.
+
+### The transverse discriminant
+
+Write \(R=k[x,y,z]\) for the source ring in this proof.
+The weight \((0,1,1)\) gives highest determinant weight
+\(4+3+2-2=7\), so \((A,B,C)\) has zero determinant.
+The rational slice proof works for this weight: rescale \(y,z\)
+by \(\epsilon^{-1}\) and leave \(x\) fixed. The rescaled
+polynomials are in \(R[\epsilon]\), and the determinant has
+order seven. The same formal rectification of an independent
+leading pair therefore yields the rational slice.
+
+The highest powers of \(x\) in \(A,B,C\) are \(x^2y^4,x^3y^2z,x^4z^2\).
+The polynomial \(D_\perp=AC-B^2\) is the part of \(y,z\)-degree six
+of the ordinary discriminant, whose ordinary degree is at most nine.
+Consequently \(\deg_x D_\perp\le3\). On \(y=1\) write \(t=z\) and
+use lower-case \(a,b,c,d\) for \(A,B,C,D_\perp\) in this chart.
+The two weight-zero fractions \(C^2/A,D_\perp^2/A^3\) are
+algebraically dependent: otherwise adjoining the positive-weight
+element \(A\) would make their field have transcendence degree
+at least three inside \(k(A,B,C)\).
+In \(k(t)((1/x))\) take the square root of \(a\) with leading term
+\(x\), and put
+\[
+                         \rho=c^2/a,\qquad h=d/a^{3/2}.
+\]
+The series \(h\) is algebraic over \(k(\rho)\), regular at \(x=\infty\),
+and all its \(1/x\)-coefficients lie in \(k[t]\), since \(a\) is
+monic in \(x\). The leading term of \(\rho\) is \(x^6 t^4\).
+The residue field of the restricted valuation on \(k(\rho,h)\)
+is algebraic over \(k\), by finiteness over \(k(\rho)\).
+Work over the algebraic closure for the argument. The residue of
+\(h\) is then a scalar \(\delta\).
+If \(h-\delta\) has positive order \(n\) and leading coefficient
+\(p(t)\ne0\), the element \(\rho^n(h-\delta)^6\) has nonzero
+residue \(t^{4n}p(t)^6\), which is not scalar. Thus \(h=\delta\).
+After restoring homogeneity, either \(D_\perp=0\), or
+\(D_\perp^2=\delta^2 A^3\) with \(\delta\ne0\).
+
+### The nonsquare case
+
+If \(A\) is not a square, the latter identity is impossible by
+unique factorization, so \(AC=B^2\). Factor the tuple as
+\(g(s^2,st,t^2)\) with \(s,t\) coprime and \(g,s,t\) homogeneous
+in \(y,z\). Here the letters \(s,t\) denote polynomial parameters.
+The \(x\)-degree of \(s\) is zero or one. If it is one, \(g\)
+is independent of \(x\) and its product with the square of the
+leading \(x\)-coefficient of \(s\) is \(y^4\). Thus \(g\) is a
+square, contrary to the hypothesis. If the \(x\)-degree of \(s\)
+is zero, \(s^2\) divides \(y^4\), by the leading coefficient of
+\(A\). The leading \(x\)-term of \(t/s=B/A\) is \(xz/y^2\),
+so \(y^2\) divides \(s\). After a scalar normalization the tuple
+therefore has the form
+\[
+ g(x)\bigl(y^4,\;y^2(xz+\ell(y,z)),\;(xz+\ell(y,z))^2\bigr)
+\]
+with \(g\) a squarefree monic quadratic and \(\ell\) linear.
+Shift \(x\) by the coefficient of \(z\) in \(\ell\) to a
+coordinate \(X\). On fixed generic \(A\) and \(B/A\), eliminate
+\(z\) using \(B/A=(Xz+c y)/y^2\). The resulting curve is
+\(g_*(X)y^4=A\), and its relative volume differential is
+proportional to \(y^3\,dX/X\). Indeed fixing \(B/A\) gives the
+two-form \(y^2\,dX\wedge dy/X\), and the derivative in \(y\)
+of \(g_*(X)y^4\) is \(4A/y\) on the level.
+
+If \(g_*(0)\ne0\), this differential has a simple pole with
+nonzero residue over \(X=0\). Otherwise \(g_*(X)=X(X-d)\)
+for \(d\ne0\), and the fourth-root cover is irreducible by
+the simple zero at \(d\). The differential has a single pole
+of order four over \(X=0\). At \(X=d\), \(dX\) has order
+three and \(y^3\) has pole order three. At infinity \(X\)
+has pole order two and \(y\) has a simple zero. These orders
+follow from the defining fourth-power relation at the two
+simple finite roots and at the pole of order two of \(g_*\).
+
+If a primitive exists, project it onto the character
+\(y\mapsto\zeta y\) with eigenvalue \(\zeta^3\), where \(\zeta\)
+is a primitive fourth root of unity. Its form is \(p(X)y^3\)
+with \(p(X)\) rational. It has at most a pole of order three
+over \(X=0\) and is regular elsewhere. Thus \(p\) has no finite
+pole, must vanish at \(X=d\), and has degree at most one by
+the orders at infinity. But
+\[
+        d((X-d)y^3)=y^3\left(-\tfrac12+\frac{3d}{4X}\right)dX
+\]
+is not proportional to the required differential. This excludes
+the nonsquare case by the leading-pair rational slice.
+
+### The square case and the remaining common factor
+
+Choose the square root \(S\) of \(A\) with leading \(x\)-term
+\(xy^2\). The discriminant identity gives \(D_\perp=\delta S^3\)
+with the same sign choice as in the formal calculation.
+Then \(S^2\mid B^2\), so \(B=ST\) and \(C=T^2+\delta S\)
+for a polynomial \(T\). Comparison of \(x\)-coefficients in \(A\)
+shows \(S=xy^2+U_2(0,y,z)\). The constant term in this
+coefficient comparison gives \(2y^2 U(0,y,z)=0\). Thus \(x\mid U\),
+as claimed. Together with \(x\mid V\) this absorbs the quartic
+error by adding \(U/x,V/x\) to the two reference parameters.
+
+On the chart \(y\ne0\) write \(s=z/y\), and set
+\[
+       S=y^2(x+u(s)),\qquad T=y(s L(x)+M(x)),
+\]
+where \(u(s)=u_2s^2+u_1s+u_0\), \(L\) is monic quadratic and
+\(\deg M\le1\). These bounds follow from the weights and the
+highest \(x\)-term \(x^2z\) of \(T\).
+The pair \(S^2,ST\) is independent and has nonzero parameter
+Jacobian generically. On fixed \(S,T\), put \(\xi=T^2/S\)
+and eliminate \(y\). With \(b=sL+M\), the level equation is
+\(f=b^2-\xi(x+u(s))=0\), and its differential is proportional to
+\(dx/f_s\). In fact the volume is \(y\,dx\wedge dy\wedge ds\),
+fixing \(T\) gives \(T\,dx\wedge ds/b^2\), and on the
+level \(dS=-S\,df/b^2\) at fixed \(T\).
+
+The quadratic discriminant in \(s\) is
+\[
+ 4\xi\bigl(L^2(x+u_0)+u_2M^2-u_1 LM\bigr)
+                   +\xi^2\bigl(u_1^2-4u_2(x+u_0)\bigr).
+\]
+If \(u_1,u_2\) do not both vanish, it is squarefree of degree
+five over the geometric generic field. Indeed the two
+polynomials of \(x\) multiplying \(\xi,\xi^2\) have degrees
+five and at most one, with the second nonzero. Common zeros
+are simple for generic \(\xi\); away from them a multiple
+root would make \(\xi\) a critical value of their ratio.
+Then \(dx/f_s\) is \(dx\) divided by a square root of the
+discriminant. It is nonzero and regular at the branch points
+and at infinity, so cannot be exact. Therefore \(u\) is constant.
+
+Put \(X=x+u_0\). On the resulting curve take \(r=\sqrt{X}\):
+the differential is a nonzero constant times
+\(dr/L(r^2-u_0)\). If \(L\) has a simple root different
+from \(-u_0\), there is a simple pole with nonzero residue.
+If \(L\) has a double root other than \(-u_0\), the denominator
+is \((r-\tau)^2(r+\tau)^2\) with \(\tau\ne0\). Its reciprocal
+has nonzero residue at \(r=\tau\), since the derivative
+of \((r+\tau)^{-2}\) there is nonzero. Thus \(L=X^2\),
+leaving \(S=Xy^2\) and \(T=X^2z+(\mu X+\nu)y\).
+
+Finally suppose \(\nu\ne0\). The pair \(S,T\) is coprime and
+onto, and its source field is \(k(S,T)(y)\): one solves
+\(X=S/y^2\) and then \(z\) on the generic chart. The polynomial
+derivation kernel is \(k[S,T]\) by surjectivity and relative
+closedness. The three parameter minors of
+\((S^2,ST,T^2+\delta S)\) are, up to sign,
+\[
+                        2T^2-\delta S,\quad 4ST,\quad 2S^2,
+\]
+and have gcd one. Apply the
+[weighted saturation descent](SEXTIC_KELLER_MIXED_DEGREE_LEADING_REDUCTIONS.md#descending-through-the-lower-terms)
+with weights \((0,1,1)\). Here the parameter weights are two
+and one and the determinant order seven exceeds every output
+weight. For clarity the graded-basis step still works with
+a zero source weight. Lift a homogeneous \(k\)-basis of
+\(R/(S,T)\), including \(1\). The lifts generate \(R\) over
+\(k[S,T]\) by induction on weight since both parameter weights
+are positive. They are independent because a homogeneous
+relation in the \(I=(S,T)\)-adic graded ring has independent
+monomials in \(S,T\) over \(R/I\): if
+\(\sum_{i=0}^n S^i T^{n-i}r_i\in I^{n+1}\), first absorb
+the right side into the coefficients modulo \(I\). In the
+resulting zero relation \(S\mid r_0\) by coprimality.
+Transfer this multiple to the next coefficient, divide by
+\(S\), and induct to obtain \(r_i\in I\) for all \(i\).
+Taking minimal total parameter degree in any finite relation
+gives independence of the lifts. In the determinant descent
+one uses all lifts except \(1\), including any of weight zero,
+for the tangent coefficient calculation. This absorbs every
+error through loss four, since weights in the source ring are
+nonnegative and the determinant order remains larger. The
+result would factor through two polynomials, a contradiction.
+Thus \(\nu=0\).
+
+The square root, the shift and the remaining scalar coefficients
+are determined by the displayed polynomial comparisons. They
+therefore belong to the original coefficient field.
+
+## Exclusion of the transverse discriminant scalar
+
+**Theorem SexticKellerTangentConicSquareCommonFactorTransverseVeronese.**
+Under the hypotheses of the transverse normal form, its scalar
+\(\delta\) is zero. Thus the highest tuple in \(y,z\) over \(k[X]\)
+is the Veronese tuple on \(Xy^2,X^2z+\mu Xy\).
+
+Use the translated coordinate, now called \(x\), and put
+\[
+                 a=xy^2,\qquad b=x^2z+\mu xy.
+\]
+The source field is \(k(a,b)(y)\) with
+\[
+                  x=a/y^2,\qquad z=b y^4/a^2-\mu y^3/a .
+\]
+In the source ring localized at \(a\), the intersection with
+\(k(a,b)\) is exactly \(k[a,a^{-1},b]\). This follows either
+from these formulas or directly from the resulting ring
+identity
+\[
+              k[x,y,z,a^{-1}]=k[a,a^{-1},b,y,y^{-1}].
+\]
+The coefficient of \(y^0\) in these Laurent coordinates
+also gives a \(k[a,b]\)-linear projection from the
+unlocalized source ring to \(k[a,b]\). Indeed the
+coefficient of a term with \(y\)-exponent zero coming
+from \(x^i y^j z^k\) has power \(i-2k+n=(j+n)/2\) of \(a\),
+where \(n\) counts the uses of \(-\mu y^3/a\) in expanding
+\(z^k\). This power is nonnegative. The projection preserves
+the transverse grading, since \(a,b,y\) have weights \(2,1,1\).
+In particular the unlocalized polynomial kernel for
+\(\det J(a,b,\cdot)\) is \(k[a,b]\).
+
+Suppose \(\delta\ne0\), and write \(f=(a^2,ab,b^2+\delta a)\)
+for the leading map in parameter coordinates. Its normal vector is
+\((2b^2-\delta a,-4ab,2a^2)\). The gcd of its entries in the
+source ring is \(x\) up to a nonzero scalar: \(y\) cannot divide
+the first, and the first has \(x\)-order one. At a first error of
+loss \(r\) relative to a two-parameter reference, the linear
+determinant equation puts the normal contraction in \(k[a,b]\).
+Use the projection to absorb the scalar coefficient vector into
+the reference, leaving a tangent error \(f_a U+f_b V\).
+Solving by the minors shows \(xU,xV\) are polynomials, with
+weights \(2-r,1-r\), respectively. In particular \(V=0\)
+when \(r\ge2\). The third error coefficient is \(\delta U+2bV\),
+so \(U\) is polynomial even for \(r=1\), since \(b\) is
+divisible by \(x\). Every error of loss at least two therefore
+admits polynomial absorption. It suffices to handle the
+simple pole of \(V\) at loss one.
+
+Use the rescaling in \(\epsilon\) of transverse weights \((0,1,1)\).
+In parameter coordinates the scalar correction at loss one is
+\(G_\epsilon=f+\epsilon K\), where the three entries of \(K\)
+have weights \(3,2,1\) in \(k[a,b]\).
+Write \(V=V_++c/x\) with \(V_+\in k[x]\) and \(c\in k\).
+After absorbing the polynomial tangent terms, the reference
+uses \(\widetilde a=a+\epsilon U,\
+\widetilde b=b+\epsilon V_+\). The first remaining error
+relative to it is \(f_b c/x\). Write \(E^{(2)}\) for the
+polynomial coefficient of the error at order two.
+
+Solve the first two reference output equations exactly in
+\(k[x,y,z,a^{-1}][[\epsilon]]\), using the leading parameter
+Jacobian \(2a^2\). Denote their parameters by \(a',b'\).
+With \(w=c/x\), their expansions in the fraction field are
+\[
+ a'=\widetilde a+\epsilon^2 P_2+O(\epsilon^3),\qquad
+ b'=\widetilde b+\epsilon w+\epsilon^2 Q_2+O(\epsilon^3).
+\]
+Let \(H=F_{3,\epsilon}-G_{3,\epsilon}(a',b')\). Its order
+is at least two, and \(\det J(F_{1,\epsilon},F_{2,\epsilon},H)\)
+is the Keller determinant of order seven: the removed
+output depends on \(a',b'\), just as the first two do.
+The coefficient \(H_2\) therefore belongs to \(k(a,b)\).
+It also belongs to the localization at \(a\), and has
+transverse weight zero. The ring identity gives
+\[
+                            H_2\in k[b^2/a].
+\]
+It is regular at \(x=0\), since \(b^2/a\) has positive order
+there.
+
+On the other hand, the first two output comparisons give
+\[
+\begin{aligned}
+ 2aP_2&=E^{(2)}_1-K_{1,b}w,\\
+ aQ_2&=E^{(2)}_2-bP_2-(U+K_{2,b})w.
+\end{aligned}
+\]
+The first coefficient \(K_1\) is a linear combination of
+\(ab,b^3\), so \(K_{1,b}\) is divisible by \(x\). It follows
+that \(P_2\) has at most a simple pole and \(Q_2\) at most
+a double pole along \(x=0\). The third comparison is
+\[
+          H_2=E^{(2)}_3-\delta P_2-2bQ_2
+                            -(2V_++K_{3,b})w-w^2 .
+\]
+All terms except \(w^2\) have at most simple poles, since
+\(x\mid b\). Regularity of \(H_2\) forces \(c=0\).
+This absorbs the loss-one correction as well. The determinant
+order seven allows the same tangent descent at each later loss
+through four. At that point the tuple factors through two
+polynomials, contradicting the Keller determinant. Hence
+\(\delta=0\).
+
+## Exclusion when the linear term of the transverse parameter vanishes
+
+**Theorem SexticKellerTangentConicSquareCommonFactorTransverseNonzeroSlope.**
+In the transverse Veronese conclusion, \(\mu\ne0\).
+Thus a Keller completion in this doubled common-factor branch must
+have transverse highest tuple \((S^2,ST,T^2)\) with
+\(S=Xy^2,\ T=X^2z+\mu Xy\) and a nonzero linear slope \(\mu\).
+
+Suppose \(\mu=0\), write \(x\) for the translated coordinate, and
+let \(a=xy^2,\ b=x^2z\). Work in transverse weights \((0,1,1)\).
+The projection and derivation kernel of the preceding proof apply.
+In addition,
+\[
+                   k[x,y,z,b^{-1}]\cap k(a,b)=k[a,b,b^{-1}].
+ \tag{11}
+\]
+Over an algebraic closure the pair maps the chart \(b\ne0\) onto
+the parameter chart \(b\ne0\), by taking \(x=1\) and solving
+\(y^2=a,z=b\). A reduced denominator with a zero off the numerator
+would contradict this surjectivity. This proves (11), and the
+coefficient-field assertion also follows by descent.
+
+At each error loss \(r\), project the error onto \(k[a,b]\) as
+before and absorb that scalar vector into the reference. The
+remaining error is tangent to \(f=(a^2,ab,b^2)\). Its tangent
+coefficients \(U,V\) can have poles only along \(x=0\), since the
+common divisor of the three source minors is \(x^2\).
+In fact they have at most simple poles: \(U\) is the first
+error divided by \(2a\), and \(aV\) is the second error minus
+\(bU\), which is polynomial since \(x^2\mid b\).
+Their weights are \(2-r,1-r\). Only \(U,V\) at loss one
+and \(U\) at loss two can therefore have poles.
+
+### Loss one
+
+Write the pole parts as \(u=l(y,z)/x,\ v=c/x\), where \(l\) is
+linear and \(c\) scalar. After absorbing the polynomial parts
+\(U_1,V_1\), put
+\(\widetilde a=a+\epsilon U_1,\ \widetilde b=b+\epsilon V_1\)
+and write \(G_\epsilon=f+\epsilon K\) for the reference in
+parameters. The three weights of \(K\) are \(3,2,1\).
+Solving two output equations identifies the first parameter
+perturbation relative to \(\widetilde a,\widetilde b\) as
+\((u,v)\). The remaining third-output error starts at order
+two, and its order-two coefficient is killed by the leading
+derivation. Thus it is in \(k(a,b)\).
+
+First solve \((F_1,F_2)\), whose parameter Jacobian is \(2a^2\).
+The normalized coefficient at order two in \(F_3\) is in
+\(k[a,a^{-1},b]\) of weight zero, hence regular at \(x=0\)
+as it belongs to \(k[b^2/a]\).
+Its pole of order two could only come from
+\[
+                     -\left(v-(b/a)u\right)^2 .
+\]
+Indeed the linear projection to the normal component is
+\((b^2/a^2,-2b/a,1)\), regular at \(x=0\). It annihilates the
+order-two tangent parameters. Applying it to the quadratic
+term \(-(u^2,uv,v^2)\) gives the displayed term. Products with
+the polynomial first corrections and the first derivatives of
+\(K\) have at most simple poles. Since \(b/a=xz/y^2\),
+the order-two residue is \(-c^2\), so \(c=0\).
+
+Now solve \((F_2,F_3)\), whose parameter Jacobian is \(2b^2\).
+By (11) the normalized coefficient at order two in \(F_1\)
+has weight two and belongs to \(k[a,b,b^{-1}]\).
+The monomials of weight two there are \(a^m b^{2-2m}\)
+for \(m\ge0\), of distinct \(x\)-orders \(4-3m\).
+The normal projection is now \((1,-2a/b,a^2/b^2)\).
+With \(v=0\), the order-two coefficient has pole order at
+most two. Its terms of pole order two have residues
+\[
+ -l^2+2\kappa \frac{y^2}{z}l+e\,\frac{y^4}{z^2}
+\]
+for scalars \(\kappa,e\). Here the quadratic term contributes
+\(-l^2\), the first correction to the second output
+contributes \(2(V_1(0)+K_{2,a})y^2l/z\), and the polynomial
+order-two error in the third output contributes \(e y^4/z^2\).
+There are no other double-pole terms, since \(K_3\) depends
+only on \(b\) and the mixed quadratic term in the third
+output is zero when \(v=0\). By the listed monomial orders
+the residue must be a scalar times \(y^4/z^2\), the residue
+from \(m=2\). Consequently \(zl/y^2\) satisfies a monic
+quadratic over \(k\). It is a polynomial in \(z/y\) with
+zero constant term, so it must vanish. This proves \(l=0\)
+and absorbs the first loss.
+
+### Loss two
+
+Project the scalar error at loss two into the reference
+and absorb the polynomial part of its first tangent
+coefficient. Write the resulting reference as
+\(G_\epsilon(\widetilde a,\widetilde b)\) with
+\(\widetilde a=a+\epsilon U_1+\epsilon^2 U_2\) and
+\(\widetilde b=b+\epsilon V_1\), where \(V_1,U_2\in k[x]\).
+The unabsorbed tangent coefficient is \(c/x\) in the
+\(a\)-direction. By the parameter weights the reference
+polynomials have the forms
+\[
+\begin{aligned}
+ G_1(A,B)&=A^2+\epsilon(k_1AB+k_2 B^3)
+                         +\epsilon^2(k_3 A+k_4 B^2),\\
+ G_2(A,B)&=AB+\epsilon(\alpha A+k_5 B^2)+\epsilon^2 k_6 B,\\
+ G_3(A,B)&=B^2+\epsilon k_7 B+\epsilon^2 k_8 .
+\end{aligned}
+\]
+Here all displayed coefficients are scalars.
+Since the third tangent error vanishes and the third output
+has weight two, \(F_{3,\epsilon}=G_3(\widetilde a,\widetilde b)\)
+exactly. Thus on rectifying \((F_2,F_3)\) the second parameter
+stays \(\widetilde b\).
+The second-output difference from the reference is
+\(\epsilon^2 b c/x+\epsilon^3 s(x)\) for some polynomial \(s\).
+Put \(W=V_1+\alpha\) and \(d=s-Wc/x\).
+The adjusted first parameter \(a'=\widetilde a+\Delta\)
+therefore has
+\[
+ \Delta=\frac{\epsilon^2 b c/x+\epsilon^3 s}{b+\epsilon W}
+        =\epsilon^2 c/x+\epsilon^3 d/b-\epsilon^4 Wd/b^2
+          +O(\epsilon^5).
+\]
+The remainder \(H=F_{1,\epsilon}-G_1(a',\widetilde b)\)
+starts in order three. Its coefficients \(H_3,H_4\) are found
+from
+\[
+ G_1(a',\widetilde b)-G_1(\widetilde a,\widetilde b)
+ =(2\widetilde a+\epsilon k_1\widetilde b+\epsilon^2 k_3)
+                                         \Delta+\Delta^2 .
+\]
+In particular
+\[
+ H_3=E^{(3)}_1-2ad/b-(2U_1+k_1 b)c/x
+ \tag{12}
+\]
+with polynomial \(E^{(3)}_1\).
+It is a constant of the leading derivation, since the
+rescaled determinant has order seven. Its weight is one
+and it lies in the ring (11). The monomials of weight
+one in that ring have \(x\)-orders \(2-3m\) for \(m\ge0\).
+Formula (12) gives pole order at most two, so in fact
+\(H_3=h_0 b+h_1 a/b\).
+
+Assume \(c\ne0\). Since \(H_3\) cannot have a double pole,
+(12) forces \(d\) to be polynomial and \(W(0)=0\).
+Its possible simple-pole residue then gives
+\(U_1(0,y,z)=0\): the other terms at this pole are scalar
+multiples of \(y^2/z\), and \(U_1(0,y,z)\) is a linear
+polynomial. The fourth coefficient is
+\[
+ H_4= E^{(4)}_1+2a Wd/b^2-(2U_1+k_1 b)d/b
+                    -(2U_2+k_1 V_1+k_3)c/x-c^2/x^2 .
+\]
+It has pole order at most two, with residue at that order
+\(2W'(0)d(0)y^2/z^2-c^2\).
+
+For the constant-field test at order four one must remove
+the lifted previous coefficient. Subtract
+\(\epsilon^3(h_0\widetilde b+h_1 a'/\widetilde b)\) from
+\(H\). This subtracts \(h_0 V_1+h_1(U_1/b-aV_1/b^2)\)
+from \(H_4\). It depends on the rectified parameters,
+so leaves the determinant intact. Its order-four remainder
+belongs to \(k[a,b,b^{-1}]\) of weight zero, by the
+leading determinant equation and (11). Remove also the
+scalar term \(h_1 V_1(0)a/b^2\) at this coefficient.
+The resulting weight-zero constant has pole order at most
+two. Its residue at order two is a scalar times \(y^2/z^2\)
+minus \(c^2\), because \(U_1(0)=0\).
+The weight-zero monomials in (11) have orders \(-3m\)
+for \(m\ge0\). Thus a weight-zero constant with pole
+order at most two must be regular. The displayed residue
+cannot vanish for \(c\ne0\). This contradiction absorbs
+the second loss, and every later tangent coefficient is
+polynomial by the weight bound. The descent factors the
+map through two polynomials, contrary to its determinant.

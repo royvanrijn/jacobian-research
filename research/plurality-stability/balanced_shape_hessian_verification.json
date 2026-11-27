@@ -13,14 +13,36 @@
     ],
     "shape_trace": -7.442351447343292,
     "balancing_trace": 1.721175723671646,
-    "stationarity_residual": 9.614813431917819e-17
+    "stationarity_residual": 9.614813431917819e-17,
+    "radius_restriction": {
+      "restriction_dimension": 3,
+      "direct_face_restriction_error": 8.881784197001252e-16,
+      "eigenvalues": [
+        -1.6539967814993841,
+        -1.6539967814993828,
+        -1.6539967814993812
+      ],
+      "stationary_input": true,
+      "scope": "metric and compression controls; no unequal-radius stationary sign certificate"
+    }
   },
   "asymmetric_hessian": {
     "step": 2e-05,
     "maximum_entry_discrepancy": 7.053901907028148e-10,
     "omitted_correction_matrix_norm": 1.1746290823198493,
     "anisotropy_direction_squared_norm": 4.398390026292138,
-    "cell_second_moment_mixed_error": 1.1102230246251565e-16
+    "cell_second_moment_mixed_error": 1.1102230246251565e-16,
+    "radius_restriction": {
+      "restriction_dimension": 3,
+      "direct_face_restriction_error": 4.440892098500626e-16,
+      "eigenvalues": [
+        -1.8518005351762696,
+        -1.818657265032828,
+        -1.505297951652307
+      ],
+      "stationary_input": false,
+      "scope": "metric and compression controls; no unequal-radius stationary sign certificate"
+    }
   },
   "local_radius": {
     "polar_frobenius_radius": "1/100000",

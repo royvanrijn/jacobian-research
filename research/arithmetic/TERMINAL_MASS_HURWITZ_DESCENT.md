@@ -10,13 +10,14 @@ endpoint labels and their component memberships. A complete three-factor
 calculation below gives eight inequalities valid at every weighting of
 the plateau example's local pattern. Complementary full twists impose
 simultaneous cyclic contact conditions on a minimizing factor's three
-cut components. These global conditions exclude small positive orbit
-minima and strongly restrict the terminal component sizes.
+cut components. Exact phase sets and reapplication of the cut-size
+restriction to new minimizing factors exclude the residual ratio three
+for equal terminals, without controlling middle-middle attachments.
 
 These statements do **not** yet prove extraction from every full-alternating
 tuple. The principal remaining objective is to exclude a positive minimum
 over an entire braid orbit. This needs no monotonicity along a braid.
-Theorem 10 and Corollary 11 below give necessary global compatibility
+Theorem 10 and Corollaries 11 and 13 below give necessary global compatibility
 conditions, not that complete exclusion.
 The [overlap-one theorem](PAIRED_HURWITZ_LEAF_EXTRACTION.md#theorem-5-every-full-alternating-dt-tree-reaches-overlap-one)
 does not locate its overlap at the required outer endpoint, or control this
@@ -752,16 +753,180 @@ cycles, all covers (24), the shared matching (22), and the edge counts
 for a global orbit minimum. In particular no new count of surviving
 marked templates is inferred.
 
-The remaining problem is to rule out the equal-terminal and
-singleton-terminal cases in full-alternating monodromy, using their
-overlapping windows or another orbit argument. Full alternating
-monodromy supplies an odd support intersection by Lemma 4 of the
-[paired-tree note](PAIRED_HURWITZ_LEAF_EXTRACTION.md#lemma-4-the-even-overlap-code-is-a-hurwitz-invariant),
-but the present argument does not transport that intersection to an
-outer endpoint of a minimizing factor. That is still an open implication.
 The proper order-168 degree-seven orbit has \(m=1\), attaining
 \(3m=N-4\); dropping the monodromy hypothesis from the desired complete
 exclusion would remain false.
+
+## Lemma 12. Exact three- and four-phase covers align the endpoints
+
+Use cyclic coordinates on the middle component, with \(b=0\) and
+\(c=h\ne0\) in \(\mathbb Z/\ell\). For a terminal-middle factor whose
+middle edge has distinct endpoints \(p,q\), its middle contact set is
+\[
+                    E=\{p,q,p-h,q-h\}.                            \tag{29}
+\]
+Put \(g=\gcd(v,\ell)\), where \(v\) is the size of its terminal
+component. Each terminal endpoint phase modulo \(v\) develops into
+a whole coset of the order-\(\ell/g\) subgroup modulo \(\ell\).
+If \(\ell/g=3\), covering even one such coset forces
+\[
+ \ell=3g,\qquad h\in\{g,2g\},\qquad q-p\in\{g,2g\},
+ \qquad E=p+\{0,g,2g\}.                                           \tag{30}
+\]
+Both terminal endpoint coordinates are congruent to \(p\) modulo
+\(g\). At some common twist phase, this factor has support intersection
+three with the minimizer: one outer endpoint and both middle endpoints.
+If \(\ell/g=4\), the same cover forces all four points of (29) to
+be one coset modulo \(g\), and again both terminal endpoint coordinates
+are congruent modulo \(g\).
+
+**Proof.** An integer phase fixed modulo \(v\) runs through a full
+coset modulo \(\ell\), by the elementary congruence criterion modulo
+\(g\). For an order-three coset, if \(h\not\equiv0\pmod g\), each
+of \(\{p,p-h\}\) and \(\{q,q-h\}\) contributes at most one point
+to that coset. This cannot cover three points. Thus \(g\mid h\).
+Neither two-point set alone covers three points, so both lie in the
+required coset. Nonzero \(h\), distinct \(p,q\), and \(\ell=3g\)
+now give (30). Every covered coset must equal this same \(E\), proving
+the assertion for the two terminal endpoints. The two middle pairs
+\(\{0,h\}\) and \(\{p,q\}\) are translates inside this order-three
+coset. A phase making them coincide is congruent to either terminal
+endpoint phase modulo \(g\). The congruence criterion therefore gives
+a common integer phase with an outer contact and both middle contacts.
+For order four, a four-element coset contained in the at most four
+points of \(E\) equals \(E\); in particular \(p,q,p-h,q-h\) all
+have its residue modulo \(g\). \(\square\)
+
+## Corollary 13. Ratio three is excluded in the residual degree range
+
+At a positive global orbit minimum, every minimizing factor with
+\(N\ge15\) satisfies one of the following necessary conditions:
+\[
+ \begin{array}{c|c}
+ \text{terminal sizes}&\text{middle size}\\ \hline
+ (s,s),\ s>1&\ell\text{ odd and }\ell\mid s\\
+ 1,t\ (t>1)&\ell=t\text{, or }\ell=2t\text{ with }2\mid t.
+ \end{array}                                                       \tag{31}
+\]
+These conclusions still require no full alternating monodromy assumption.
+
+**Proof.** First suppose both terminals have size \(s>1\) and the
+remaining ratio in Corollary 11 is \(\ell/\gcd(s,\ell)=3\).
+A terminal-middle factor exists by Theorem 10. Lemma 12 supplies a
+complementary twist phase with
+\[
+                  A=(a\,b)(c\,d),\qquad B=(e\,a)(b\,c).
+\]
+Bring \(B\) beside \(A\), retaining its literal permutation and the
+cut of \(A\). Their four edges form the path \(e,a,b,c,d\).
+Delete them and let the five component weights in this order be
+\(w_0,\ldots,w_4>0\). Thus
+\[
+             w_0+w_1=s,\quad w_2+w_3=\ell,\quad w_4=s.
+\]
+The five pair rotations have the following middle components; the
+entries are sets of component indices, not identified sheet labels:
+\[
+ \begin{array}{c|cc}
+ k&\text{first factor of }Q^k(A,B)&\text{second factor}\\ \hline
+ 0&\{2,3\}&\{1,2\}\\
+ 1&\{0,3\}&\{2,3\}\\
+ 2&\{0,4\}&\{0,3\}\\
+ 3&\{1,4\}&\{0,4\}\\
+ 4&\{1,2\}&\{1,4\}.
+ \end{array}                                                       \tag{32}
+\]
+This table follows directly by conjugating the two displayed DTs.
+By Lemma 5 the factor mass is \(N\) minus its middle weight minus
+two. Global minimality therefore bounds every middle weight in (32)
+by the original middle weight \(\ell\). In particular
+\[
+          \ell\ge s+\max(w_0,w_1)\ge3s/2.                        \tag{33}
+\]
+Write \(s=ag,\ell=3g\), with \(\gcd(a,3)=1\). The old bound
+\(\ell\le2s\) and (33) force \(a=2\). Since \(\ell\) is odd,
+\(g\) is odd, \(N=7g\), and \(N\ge15\) gives \(g\ge3\).
+Equality in (33) gives
+\[
+ w_0=w_1=g,\quad w_4=2g,\quad w_2+w_3=3g.
+\]
+The other two middle weights in (32) give \(g\le w_2,w_3\le2g\).
+The first factors at rotations two and three both have middle weight
+\(3g\), hence both attain the same global minimum. Their terminal
+sizes are respectively
+\[
+                 (g+w_3,w_2),\qquad(g+w_2,w_3).                   \tag{34}
+\]
+All four sizes exceed one. Corollary 11 must apply to **both new
+minimizing factors**. It forces \(g+w_3=w_2\) and
+\(g+w_2=w_3\), an impossibility. This excludes ratio three.
+Corollary 11 leaves exactly \(\ell\mid s\) for equal terminals.
+
+For singleton terminals, no terminal-to-terminal factor is possible.
+Thus every edge of the size-\(t\) terminal tree is paired with a
+middle edge. In either of the old cases \(\ell=3t/2\) and
+\(\ell=4t/3\), apply Lemma 12 to **each** of those edges, using
+the one fixed cyclic coordinate system. Its terminal endpoints have
+the same residue modulo \(g=\gcd(t,\ell)\). The terminal tree is
+connected, so all its vertices have one residue modulo \(g\).
+Its cyclic coordinates exhaust \(\mathbb Z/t\), forcing \(g=1\).
+But Corollary 11 requires respectively \(t=2g\) with \(4\mid t\),
+or \(t=3g\) with \(6\mid t\). Both force even \(g\), a
+contradiction. The other two cases in (27) give (31). \(\square\)
+
+The ratio-three argument uses only complementary twists, pair rotations
+and reapplication of a global restriction to tied minimizers. No condition
+on the individual middle-middle factors, nor a three-factor completion
+of an isolated seven-weight witness, is needed for this exclusion.
+
+## Lemma 14. The tree support code has an exact invariance test
+
+For a polynomial DT tree let \(C\subseteq\mathbb F_2^N\) be the span
+of the factor support indicators. Then \(\dim C=r=(N-1)/2\), and
+\(C\) is invariant under the generated permutation group if and only
+if every pair of factor supports has even intersection.
+
+**Proof.** The vertex incidence map from the binary edge space of a
+tree to the even-weight vertex space is an isomorphism: its kernel
+would be a nonempty subforest of even degrees, contradicted by a leaf,
+and both spaces have dimension \(N-1\). Each factor support is the
+image of the sum of its two edges. These disjoint edge pairs give
+\(r\) independent vectors. A single edge incidence cannot lie in
+\(C\): its unique preimage has unequal coefficients in that pair.
+
+For a DT \(D\) acting on another factor's support indicator \(v\),
+\(D(v)+v\) is the sum of those edge incidences of \(D\) whose
+edges have exactly one endpoint in that support. An odd intersection
+gives exactly one such edge, whose incidence is outside \(C\).
+Hence invariance implies even intersections. Conversely, an even
+intersection gives zero or both edge incidences, so \(D(v)+v\)
+is zero or the support of \(D\). This proves invariance. \(\square\)
+
+Consequently this proper support code is excluded by full alternating
+monodromy, as in Lemma 4 of the
+[paired-tree note](PAIRED_HURWITZ_LEAF_EXTRACTION.md#lemma-4-the-even-overlap-code-is-a-hurwitz-invariant).
+Exact ratio-three covers actually produce an odd three-label contact;
+they do not by themselves establish code invariance. Corollary 13
+resolves that case through new minimizers instead.
+
+The remaining full-alternating problem is to exclude (31), by forcing
+even intersections for **all** factor pairs or an endpoint decrease.
+The one-cut covers (24) constrain contacts with the minimizer, but do
+not constrain every middle-middle attachment or the overlaps between
+two complementary factors. They alone do not imply an invariant code:
+take two seven-vertex paths \(M=(0,\ldots,6)\), \(U=(7,\ldots,13)\),
+the singleton \(S=\{14\}\), and
+\[
+ A=(14\,0)(1\,7),\qquad
+ B_i=(i\,i+1)(7+i\,8+i)\quad(0\le i<6).
+\]
+The paired paths give the same rooted cyclic coordinates, so every
+terminal hit is accompanied by a middle hit in every complementary
+twist. Nevertheless \(A,B_0\) overlap in three labels. The last
+factor is removable, so this is not a positive global minimum and
+does not refute the proposed global bridge. Compatibility of all
+minimizing cuts and middle-middle attachments in (31) remains open;
+arbitrary extraction and mixed connectivity are not established.
 
 ## The remaining plateau-escape obligation
 
@@ -829,6 +994,18 @@ equal-sized terminal trees and a DT wholly inside a terminal component
 are detected as incompatible with the phase covers. These are internal
 controls of the written global argument, not a higher-degree census or
 a computational proof of complete extraction.
+
+The same checker also exhausts the modular three- and four-coset
+implications for \(\ell=3g,4g\), \(1\le g\le12\), and checks
+the congruence lifts for the tested terminal sizes. It independently
+recomputes all ten middle and terminal masks in (32), rejects a corrupted
+mask, and checks the tied-minimizer contradiction for odd
+\(3\le g\le31\). Binary support-span enumeration checks the exact
+code criterion on the retained degree-seven domain and the displayed
+degree-fifteen phase-compatible counterexample to the weaker implication.
+These bounded controls supplement the universal written proofs of
+Lemmas 12 and 14 and Corollary 13; they are not the reason those
+statements hold for unbounded sizes.
 
 The [receipt](terminal_mass_hurwitz_descent_verification.json) and
 [source ledger](terminal_mass_hurwitz_descent_source_ledger.json) record

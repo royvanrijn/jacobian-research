@@ -219,6 +219,13 @@ With multiplicity 26 and gcd six the divisor must be two,
 and the remaining degree four is partitioned into even
 multiplicities. The [even-profile analysis](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#the-remaining-even-profiles)
 imposes further local restrictions on those partitions.
+It also gives an actual order-nine polynomial operator \(W\) whose
+leading factor with \(P\) is primitive for the new gcd three. The
+[length-two commutator reduction](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#a-primitive-length-two-commutator-problem)
+retains the defining identity for \(W\) and computes its first
+order-34 binomial resultant. The new pair has a nonzero critical-face
+bracket, so the scalar theorem above does not apply to it. Excluding
+the two resulting even profiles remains open.
 
 ## Exact controls
 
@@ -228,5 +235,8 @@ only the Python standard library. From the repository root run
 It computes 50 commutative Laurent resultants by a multiplication
 matrix, checks their top weighted terms and the leading derivative
 after substitution, and checks three exact multiplicity-26 face
-identities and the remaining degree-thirty partitions. These are
-finite arithmetic controls for the written proof.
+identities and the remaining degree-thirty partitions. It also
+checks the universal length-two chain identities, a corrupted
+defining-identity control, and the nonzero order-34 resultant faces.
+These are finite arithmetic controls for the written proofs; they
+do not exclude the even profiles.

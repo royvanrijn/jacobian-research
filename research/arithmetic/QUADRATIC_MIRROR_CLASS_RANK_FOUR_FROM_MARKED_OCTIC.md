@@ -18,6 +18,13 @@ conductors \(28D^2,252D^2,126D^2\), and
 at most \(X\). The real bound is three; a bound of four
 on both sides remains open.
 
+Already on the original parameter line, MO2 gives
+\(\gg X^{1/4}/(\log X)^2\) imaginary quadratic fields of
+absolute discriminant at most \(X\) and class \(3\)-rank at
+least three. Corollary MO2a below isolates this consequence
+and its comparison with Kulkarni–Levin's Theorem 1.5.
+Its proof and historical priority still require specialist review.
+
 The subsequent [torsion calculation](MARKED_CUBIC_BASE_CHANGE_RATIONAL_THREE_TORSION.md)
 exhausts the rational cubic directions on this cover.
 The [scale classification](MARKED_OCTIC_BETA_CUBIC_SCALE_CLASSIFICATION.md)
@@ -186,6 +193,56 @@ denominator congruences inside the stated neighborhoods.
 The fields give distinct imaginary mirrors of
 discriminant \(-3D\).
 
+## The imaginary quadratic count and its dependencies
+
+**Corollary MO2a (imaginary class rank three).** As \(X\to\infty\),
+\[
+ \#\{M\text{ imaginary quadratic}:\ |\operatorname{Disc}M|\le X,
+                 \ \operatorname{rk}_3\operatorname{Cl}(M)\ge3\}
+       \gg \frac{X^{1/4}}{(\log X)^2}.
+\]
+The implicit constant is fixed by the single local slice of MO2.
+
+Proof. On this slice \(2\) and \(3\) split in the real field.
+Thus its positive fundamental discriminant \(D\) is squarefree,
+\(D\equiv1\pmod4\), and \(3\nmid D\). The mirror
+\(M_D=\mathbb Q(\sqrt{-3D})\) has fundamental discriminant
+\(-3D\). Applying MO2 with the bound \(D\le X/3\) gives
+\[
+ \#\{M_D:\ |\operatorname{Disc}M_D|\le X\}
+ \gg \frac{(X/3)^{1/4}}{(\log(X/3))^2}
+ \gg \frac{X^{1/4}}{(\log X)^2}.
+\]
+Distinct \(D\)'s give distinct \(-3D\)'s and therefore distinct
+imaginary quadratic fields. Each mirror has the unramified
+\((\mathbb Z/3)^3\) extension constructed in MO2.
+The loss of one unit direction occurs only in the map from
+real virtual classes to the real ideal class group. Mirror descent
+uses all three independent classes in \(K^\times/K^{\times3}\),
+including any real unit direction, before taking that quotient.
+
+The dependencies needed for this consequence can be reviewed in
+four parts. The elliptic twist ranks and conductor formulas of MO2
+are additional conclusions; they are not needed for this count.
+
+| Required part | Proof and exact input | Review obligation |
+|---|---|---|
+| Three independent specialized classes | MO1 and MO2: degree-eight maps, norm identities and the rank-three cubic-character matrix at \(13,19,31\); [exact checker](verify_marked_octic_mirror_class_rank_four.py) | Check specialization on one common nonempty local slice, including poles and zeros. |
+| Virtuality and local cubes | MO2 at \(2,3,5,7,11\), with the off-support pole/unit argument in [BT2](QUADRATIC_MIRROR_RANK_TWO_FROM_BIELLIPTIC_TWISTS.md#local-conditions-mirror-classes-and-elliptic-conductors) | Verify every finite valuation and both completions at \(3\); finitely many centers supply certificates for the written open-neighborhood argument. |
+| Three mirror class directions | [MT2 mirror descent](QUADRATIC_MIRROR_RANK_TWO_FROM_MARKED_MESTRE_TWISTS.md#the-common-local-conditions-and-the-mirror-classes), applied to all three independent classes as in MO2, and unramified class field theory | Check independence after the degree-two cyclotomic base change, the conjugation action and descent of unramifiedness. No real unit quotient enters this step. |
+| Discriminant count | [Stewart–Top, Theorem 2, printed p. 954](sources/stewart-top-ranks-of-twists.pdf), with \(k=2\), degree \(8\), and fixed numerator/denominator congruences; the injective mirror map above | The homogeneous octic is squarefree by MO1, hence has no square factor and is not a power of a linear form. Clear the fixed local denominators and check the common congruence class. The theorem counts distinct squarefree parts, not parameter values. |
+
+For the same counting function,
+[Kulkarni–Levin, Theorem 1.5](sources/kulkarni-levin-hilbert-irreducibility-2111.15582.pdf)
+(arXiv:2111.15582v1, p. 3; proof on p. 8) gives
+\(\gg X^{1/5}/(\log X)^2\). Corollary MO2a improves that
+explicit bound by a factor of \(X^{1/20}\) in the displayed
+lower-bound functions. The comparison is with that theorem;
+a broader literature comparison and specialist review of the
+complete construction remain open before any current-record claim.
+The exact checker supports the displayed algebra and local data;
+it does not prove the field count or replace that proof review.
+
 ## The fourth norm identity and a cubic change of parameter
 
 **Theorem MO3.** On a fixed local parameter slice of
@@ -320,6 +377,54 @@ congruences for \(u\). The
 [exact checker](verify_marked_octic_mirror_class_rank_four.py)
 replays the maps, the new norm identity, both sets of
 local residue data, and the binary form hypotheses.
+
+## Infinite mirror towers split above three and five
+
+**Corollary MO4a (two completely split ramified primes).** Every
+imaginary mirror \(M=\mathbb Q(\sqrt{-3D})\) on the MO3 slice admits
+an infinite everywhere unramified pro-\(3\) extension \(L/M\), Galois
+over \(\mathbb Q\), in which the primes above \(3\) and \(5\) split
+completely. Its full abelianization is \(\operatorname{Cl}(M)_{(3)}\).
+There are
+\[
+ \gg X^{1/12}/(\log X)^2
+\]
+distinct such imaginary quadratic fields with absolute fundamental
+discriminant at most \(X\).
+
+Proof. On the MO3 slice, \(3\) splits in the real field, so
+\(3\nmid D\), while \(5\) ramifies. The imaginary mirror has
+fundamental discriminant \(-3D\), and both \(3\) and \(5\) ramify
+in it. Each therefore has one prime \(\mathfrak l_p\) in \(M\), with
+\(\mathfrak l_p^2=(p)\). Its ideal class has order dividing two and
+maps to zero in \(\operatorname{Cl}(M)_{(3)}\). The two Frobenius
+elements in the maximal unramified pro-\(3\) group consequently lie
+in the closed commutator subgroup. By
+[MP6](MIXED_THREE_POWER_CLASS_GROUPS_FROM_TWO_PRIME_FIBRES.md#infinite-towers-with-prescribed-moving-prime-decomposition),
+each can be killed by one relator of Zassenhaus depth at least two,
+while preserving the whole abelianization.
+
+MO3 gives \(d=\operatorname{rk}_3\operatorname{Cl}(M)\ge4\).
+For the quotient by these two Frobenius elements the polynomial is
+bounded above by \(1-dt+2t^2+dt^3\). At \(t=2/5\),
+\[
+       1-\frac{2d}{5}+\frac8{25}+\frac{8d}{125}
+         =\frac{165-42d}{125}\le-\frac3{125}<0.
+\]
+Thus the quotient is infinite, and killing Frobenius gives complete
+splitting in this entire extension, including at the prime over
+\(3\). Both marked primes are fixed by quadratic conjugation, so
+the extension is Galois over \(\mathbb Q\). Finally MO4 with
+\(D\le X/3\) gives the displayed count, since distinct positive
+fundamental \(D\)'s give distinct imaginary discriminants \(-3D\).
+
+This applies to the original MO3 slice, where \(5\) ramifies; it
+does not assert the same cut for the different slices on which
+\(5\) splits. The proof combines the existing marked rank-four
+family with the classical tower-cut mechanism. It makes no
+historical novelty claim and has not received independent review.
+The exact octic checker verifies the finite family inputs, not
+infinitude of this quotient.
 
 ## Rigidity of the two boundary fibers
 

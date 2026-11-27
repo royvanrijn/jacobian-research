@@ -7,6 +7,7 @@ from collections import Counter, deque
 import hashlib
 import importlib.util
 import json
+from itertools import combinations
 from math import gcd, lcm
 from pathlib import Path
 import platform
@@ -251,6 +252,160 @@ def synchronized_controls():
     return rows
 
 
+def exact_phase_controls():
+    """Translation-normalized exhaustive modular controls; proofs are unbounded."""
+    tested = covered_three = covered_four = lifts = 0
+    for order in (3, 4):
+        for g in range(1, 13):
+            ell = order * g
+            cosets = [frozenset(range(r, ell, g)) for r in range(g)]
+            # Translate p to zero; q and h remain arbitrary distinct/nonzero residues.
+            for q in range(1, ell):
+                for offset in range(1, ell):
+                    E = {0, q, -offset % ell, (q - offset) % ell}
+                    tested += 1
+                    covered = [C for C in cosets if C <= E]
+                    if not covered:
+                        continue
+                    assert len(covered) == 1 and E == set(covered[0])
+                    assert offset % g == q % g == 0
+                    if order == 3:
+                        covered_three += 1
+                        assert offset in (g, 2 * g) and q in (g, 2 * g)
+                        both_middle = {k for k in range(ell)
+                                       if {k, (k + offset) % ell} == {0, q}}
+                        assert len(both_middle) == 1
+                    else:
+                        covered_four += 1
+                    for a in range(1, 9):
+                        if gcd(a, order) != 1:
+                            continue
+                        terminal_size = a * g
+                        for endpoint in range(terminal_size):
+                            lift = {(endpoint + k * terminal_size) % ell
+                                    for k in range(order)}
+                            if lift <= E:
+                                assert endpoint % g == 0
+                                lifts += 1
+                                if order == 3:
+                                    # Check the actual simultaneous integer phase,
+                                    # rather than separate witnesses in each modulus.
+                                    assert any(k % terminal_size == endpoint
+                                               and k % ell in both_middle
+                                               for k in range(lcm(terminal_size, ell)))
+    return {"g_range_inclusive": [1, 12], "terminal_multiplier_range_inclusive": [1, 8],
+            "normalized_middle_patterns": tested, "three_coset_covers": covered_three,
+            "four_coset_covers": covered_four, "covered_terminal_endpoint_lifts": lifts}
+
+
+def pair_reminimization_controls():
+    """Derive the complete pair table from literal permutations and tree cuts."""
+    A = m.perm(5, [(1, 2), (3, 4)])
+    B = m.perm(5, [(0, 1), (2, 3)])
+    expected_middle = [((2, 3), (1, 2)), ((0, 3), (2, 3)),
+                       ((0, 4), (0, 3)), ((1, 4), (0, 4)),
+                       ((1, 2), (1, 4))]
+    actual_middle, actual_terminal = [], []
+    active = (A, B)
+    for k in range(5):
+        cuts = [v.factor_cut(active, j) for j in range(2)]
+        actual_middle.append(tuple(tuple(sorted(cut[1])) for cut in cuts))
+        actual_terminal.append([sorted(tuple(sorted(S)) for S in cut[2]) for cut in cuts])
+        active = m.hurwitz(active, 0, 1)
+    assert active == (A, B) and actual_middle == expected_middle
+    assert actual_terminal[2][0] == [(1, 3), (2,)]
+    assert actual_terminal[3][0] == [(0, 2), (3,)]
+    corrupted = expected_middle.copy()
+    corrupted[2] = ((0, 2), (0, 3))
+    assert actual_middle != corrupted
+    feasible = excluded = 0
+    for g in range(3, 32, 2):
+        for w0 in range(1, 2 * g):
+            w1 = 2 * g - w0
+            for w2 in range(1, 3 * g):
+                w3 = 3 * g - w2
+                weights = (w0, w1, w2, w3, 2 * g)
+                if any(sum(weights[i] for i in middle) > 3 * g
+                       for pair in actual_middle for middle in pair):
+                    continue
+                feasible += 1
+                assert w0 == w1 == g and g <= w2 <= 2 * g and g <= w3 <= 2 * g
+                new_terminals = [(sum(weights[i] for i in S) for S in actual_terminal[k][0])
+                                 for k in (2, 3)]
+                sizes = [tuple(pair) for pair in new_terminals]
+                assert all(min(pair) > 1 for pair in sizes)
+                assert not all(left == right for left, right in sizes)
+                excluded += 1
+    assert excluded == feasible > 0
+    return {"middle_components_by_rotation": actual_middle,
+            "terminal_components_by_rotation": actual_terminal,
+            "odd_g_range_inclusive": [3, 31],
+            "pair_feasible_weightings": feasible,
+            "excluded_by_new_minimizer_terminal_sizes": excluded,
+            "corrupted_middle_mask_detected": True}
+
+
+def binary_span(vectors):
+    span = {0}
+    for vector in vectors:
+        span |= {w ^ vector for w in span}
+    return span
+
+
+def support_vector(g):
+    return sum(1 << a for a in support(g))
+
+
+def act_vector(g, vector):
+    return sum(1 << g[a] for a in range(len(g)) if vector & (1 << a))
+
+
+def check_tree_code(t):
+    v.edge_list(t)
+    vectors = [support_vector(g) for g in t]
+    C = binary_span(vectors)
+    assert len(C) == 1 << len(t)
+    for D in t:
+        for a, b in enumerate(D):
+            if a < b:
+                assert (1 << a) ^ (1 << b) not in C
+        for B, vector in zip(t, vectors):
+            even = len(support(D) & support(B)) % 2 == 0
+            assert (act_vector(D, vector) in C) == even
+    even_overlap = all(len(support(A) & support(B)) % 2 == 0 for A, B in combinations(t, 2))
+    invariant = all(act_vector(D, vector) in C for D in t for vector in vectors)
+    assert invariant == even_overlap
+    return invariant
+
+
+def code_interface_controls():
+    ds = h.dt_class(7)
+    D = set(ds)
+    P = m.perm(7, [tuple(range(7))])
+    domain = {(a, b, c) for a in ds for b in ds
+              if (c := m.compose(m.inverse(m.compose(a, b)), P)) in D}
+    assert len(domain) == 392
+    invariant = sum(check_tree_code(t) for t in sorted(domain))
+    assert invariant == 98
+    # A deliberately weaker hypothesis: one cut's exact covers, without minimality.
+    t = (m.perm(15, [(14, 0), (1, 7)]),) + tuple(
+        m.perm(15, [(i, i + 1), (7 + i, 8 + i)]) for i in range(6))
+    profile = phase_profile(t)
+    assert sorted(profile["sizes"][:2]) == [1, 7] and profile["sizes"][2] == 7
+    assert not profile["forbidden"]
+    assert len(support(t[0]) & support(t[1])) == 3
+    assert not check_tree_code(t) and v.mu(t) == 0 and profile["mass"] == 6
+    return {"retained_degree7_tuples": len(domain), "invariant_codes": invariant,
+            "noninvariant_codes": len(domain) - invariant,
+            "degree15_exact_cover_without_code_invariance": {
+                "tuple_edges": [[(a, b) for a, b in enumerate(D) if a < b] for D in t],
+                "cut_sizes_terminal_terminal_middle": profile["sizes"],
+                "selected_factor_mass": profile["mass"], "global_tuple_mass": v.mu(t),
+                "all_complementary_phases_have_no_outer_one_contact": True,
+                "odd_support_intersection": 3,
+                "positive_orbit_minimum_counterexample": False}}
+
+
 def negative_controls():
     # Equal terminal sizes alone do not synchronize their colored edges.
     t = tuple(m.perm(11, es) for es in (
@@ -279,6 +434,9 @@ def main():
     plateau = plateau_control()
     synchronized = synchronized_controls()
     negative = negative_controls()
+    exact_phases = exact_phase_controls()
+    pair_reminimization = pair_reminimization_controls()
+    code_interface = code_interface_controls()
     inputs = ["TERMINAL_MASS_HURWITZ_DESCENT.md",
               "terminal_mass_hurwitz_descent_certificate.json",
               "verify_terminal_mass_hurwitz_descent.py",
@@ -292,7 +450,10 @@ def main():
         "degree7_complete_orbit_controls": degree7, "degree15_plateau_control": plateau,
         "synchronized_terminal_tree_controls": synchronized,
         "negative_controls": negative,
-        "scope": "Exact controls of cut-preserving front placement, complementary full twists, cyclic contact covers, paired-terminal synchronization, the positive orbit-minimum bound 3m>=N-4 and the terminal-size restrictions. General statements have written proofs. No higher-degree census or exclusion of all positive full-alternating orbit minima.",
+        "exact_phase_controls": exact_phases,
+        "pair_reminimization_controls": pair_reminimization,
+        "support_code_interface_controls": code_interface,
+        "scope": "Exact controls of complementary twists, contact covers, common terminal matching and cut-size restrictions; bounded modular controls for exact order-three/four coset alignment; literal pair-rotation masks and the new-minimizer contradiction; tree support-code invariance criterion. The universal proofs exclude equal-terminal ratio three for N>=15 and singleton ratios 3/2 and 4/3. No higher-degree census or exclusion of all positive full-alternating orbit minima.",
         "independent_replay": False, "formal_verification": False, "external_review": False,
     }
     args.output.write_text(json.dumps(receipt, indent=2) + "\n")
