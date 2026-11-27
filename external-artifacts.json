@@ -3,7 +3,7 @@
   "description": "Bulk files stored outside Git. Local ignored symlinks preserve original paths; a fresh checkout requires restoring these files before running dependent checkers. Hashes identify bytes, not verification outcomes.",
   "external_root": "/home/royvanrijn/research-large-artifacts/2026-11-25",
   "historical_commit": "158ab5205",
-  "restore": "Copy each external_root/path to its original path, or create an ignored local symlink. Verify SHA-256 against this manifest. Original committed bytes also remain in Git history.",
+  "restore": "For each file, copy external_root/path back or make an ignored symlink. If absent, recover exact bytes with git show COMMIT:PATH, using the entry historical_commit when present, otherwise the top-level historical_commit. Verify SHA-256 before replay. Recovery uses retained Git history; byte-for-byte regeneration from source is not asserted.",
   "files": [
     {
       "path": "research/arithmetic/abc_height_fulloc_improved_unit_certificate.part2.xz",
@@ -72,6 +72,186 @@
     {
       "path": "research/arithmetic/abc_budget_990_delta.json.xz",
       "sha256": "95bd3807ea70bf9fa7dd4fe95d9d6521d24613f81c36b2ed2db4e36d38fe98ee"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_950_delta.json.xz",
+      "sha256": "73babb47f388a5e7ff1c789ae74acfb8fcc4be3c17485e1c0f2f811d86ef939a",
+      "size_bytes": 1249892,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_955_delta.json.xz",
+      "sha256": "30418b43cb7a29d5b01a90a4397fdee291c22368f33ec160f60f31b920eaab4e",
+      "size_bytes": 1765388,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_960_delta.json.xz",
+      "sha256": "3a2c46e0cb4ba98fa491d8e21d8f7b4273693aaa00b769de99603166aaaa4054",
+      "size_bytes": 4043452,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_965_delta.json.xz",
+      "sha256": "0da9c3eacfd604050ea0f778afbe2f7e4c9e7fdd85213fd847cf17b5c11910cd",
+      "size_bytes": 6135904,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_970_delta.json.xz",
+      "sha256": "2fcd184f4d9603f61846d299f4f927d9e97633fee1a2713a1715928d5c4dd4a7",
+      "size_bytes": 3611224,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_975_delta.json.xz",
+      "sha256": "0e314a69be37a4e300314ac8ba58357b5063b0c7af4ea40b9d941d8f0d693426",
+      "size_bytes": 4145492,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_9775_delta.json.xz",
+      "sha256": "451bc72012f8737744d4cceadef0691da089baed232c6f9c3c5e2d022c54a8c7",
+      "size_bytes": 4809660,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_9805_delta.json.xz",
+      "sha256": "060f22cbe8bf61d6d5de92d68e65493ee3af12ab2b9dc3a7458c422acff9514e",
+      "size_bytes": 6326236,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_980_delta.json.xz",
+      "sha256": "803fbfe80beee6e2c91af62a80efc301c783f247ef6ef7a28f3c729434c498c5",
+      "size_bytes": 6240424,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_981_delta.json.xz",
+      "sha256": "dfac34131e2cf183cda35b5032916903e6a4516158c48672c21b3f27f01ae3c5",
+      "size_bytes": 6085268,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_9825_delta.json.xz",
+      "sha256": "d104829c7dc0e9c1da53691e0ee85e4b416f99ad506e6755a78a95a34416099d",
+      "size_bytes": 7270188,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_983_delta.json.xz",
+      "sha256": "de66c3d6bfdd01afad9bea2b4f04910c9a6a4e3e4c873f6f185e5e6e55482bcb",
+      "size_bytes": 7362116,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_budget_984_delta.json.xz",
+      "sha256": "1f1cb903338ecee3347258c96bbe1d915210b8c276019c2f23a7f8a8f10d523a",
+      "size_bytes": 8119656,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_grouped_fulloc_delta.json.gz",
+      "sha256": "66bc415bd95803fec7c0d3ea06b19f15a7ad1c829d119eb289e8d1bbaba2f347",
+      "size_bytes": 2558731,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/abc_unit_budget_1_interval_overlay.json.xz",
+      "sha256": "33276cd6a81b04642920c66657891455b8f4bfb4195bcdf8bf7ff4835ee1f5e1",
+      "size_bytes": 1519276,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/arithmetic/degree_eight_braid_word_certificate.json.gz",
+      "sha256": "6c644c4cb265d73392c0172730f72dc87185389fba8aab10eed9a1c88a32b416",
+      "size_bytes": 1098686,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/dixmier/dixmier-formal-lifting/airy_first_coefficient_cap26_witness.json",
+      "sha256": "255cf5800540dd7b0131cf8f0a34cecc8ee0487ef2d72bb5bebb8d4292e0c88f",
+      "size_bytes": 1744558,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/dixmier/dixmier-formal-lifting/graded_long_cap25_full_jet_witness.json",
+      "sha256": "ad37fdf1e423f57d5dc9fdfe1a69082a89670129208136ded83608711659f3a0",
+      "size_bytes": 1687787,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/dixmier/dixmier-formal-lifting/graded_long_cap26_full_jet_witness.json",
+      "sha256": "38a530b0b3f0eee57bdd79e36b5d1b7006c2ca44b9779fa44d3594f5bf5592f0",
+      "size_bytes": 5407348,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/factorial/image-rigidity/all_exponent_prefix_certificates.json",
+      "sha256": "79b06fc07ec60d593fde7af48da96e873583f6d0d406896d3dda21ad5c74b16f",
+      "size_bytes": 9479959,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/factorial/image-rigidity/binary_quadratic_initial_support_certificates.json",
+      "sha256": "a23371afe85f8b22648761cae8936b35c912e5520dff19ee8ae323168bd6ed13",
+      "size_bytes": 1010673,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/factorial/image-rigidity/gap_two_horizontal_endpoint_cubic_balls_verification.json",
+      "sha256": "748d043c8f70cfcbb7ff4960bf01692eeeab2539ce184f86b5f2c72de012b9e7",
+      "size_bytes": 2427276,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/factorial/image-rigidity/stepanov_terminal_11_12_bezout.jsonl.gz",
+      "sha256": "401fe2b233dd45dff604aa955b0b6134662ccfd894675b2155375f082d699ae1",
+      "size_bytes": 2346687,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/foundations/extended-geometry/certificates/odd-angular-d0-finite-moment-certificate.json.gz",
+      "sha256": "f3613dd5da4a853dc5a42e8664394cd5de8185a1ca27a08152b8281d96c74dff",
+      "size_bytes": 7428692,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/foundations/extended-geometry/certificates/odd-angular-quintic-finite14-certificate.json.gz",
+      "sha256": "9bb2c3ec17173f7ba4461bd5cefb6b6981b3af771921d4c38a700a0568dc5321",
+      "size_bytes": 5883224,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/jacobian/subtree-shuffling/cubic_cube_zero_one_generator_certificates.jsonl.gz",
+      "sha256": "6eafab13e395bf6d42612a2c09a9588bfc86340be06bbf8a8c3865e250622f0f",
+      "size_bytes": 5106854,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/meridional-rank/representations/core_subgroup_homology_results.json",
+      "sha256": "bcacf8980c1773f86b8505466f5aef78a4bdf7f3af4ca3588274f531ee5c771c",
+      "size_bytes": 1015359,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/meridional-rank/representations/new17_reflection_unit_certificate.json",
+      "sha256": "4ec48c9ba5524c5d1729128adcaeaf2967ba981c3e4a518b340dcc03595517b1",
+      "size_bytes": 5627076,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/meridional-rank/representations/rank_one_binary_boundary_inputs.json",
+      "sha256": "c2f3fbf00bfd66c9931c430f7f6be24077c19cf22ff3a4d181b888b3bbf7bb06",
+      "size_bytes": 1990550,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
+    },
+    {
+      "path": "research/meridional-rank/representations/rank_three_knot_group_inputs.json",
+      "sha256": "5617ff488fe874936b4810e4176c4cba90481499d9d1b990efd55c5b4f873ae4",
+      "size_bytes": 1034025,
+      "historical_commit": "83b3edde7af54f1d7fbe10a101a9b1c71ebce5e5"
     }
   ]
 }

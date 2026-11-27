@@ -194,6 +194,26 @@ proofs never acquire assurance flags through propagation.
 
 ## Canonical workspace
 
+### Bulk calculation inputs
+
+`external-artifacts.json` lists calculation payloads retained outside Git, with
+SHA-256 checksums and the committed revision containing each original input.
+Local ignored symlinks keep existing checkers and source references usable.
+Keep the checkers, mathematical notes, primary sources, paper deposits and
+`research/MATH_STATUS.json` tracked.
+
+On another machine, restore the listed files before running dependent checks.
+Use an entry's `historical_commit`, or the manifest's top-level value if absent,
+and recover the original bytes with `git show COMMIT:PATH`. Store them beneath
+the configured external root using the same relative paths, verify SHA-256,
+and create local ignored symlinks at the original repository paths. The
+revision remains in project history; do not prune it without supplying another
+durable recovery source. Exact input recovery permits replay even when a
+certificate's original generation procedure is not retained. It does not claim
+that every certificate can be regenerated from source alone.
+
+### Shared Windows and WSL path
+
 The active checkout is `/home/royvanrijn/src/jacobian-research` in Ubuntu-24.04 WSL.
 The Windows path `C:\home\royvanrijn\src\jacobian-research` is a directory link to
 that same checkout, not a second repository. Use WSL Git for commits and pushes.
