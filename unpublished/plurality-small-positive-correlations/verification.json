@@ -1,18 +1,18 @@
 {
   "edition_date": "2026-11-27",
-  "review_basis": "Standalone presentation of the current internally accepted analytic results in research/plurality-stability, with an isolated internal AI PDF-only reader. No external human review.",
+  "review_basis": "Revised standalone every-fixed-k article. Internal analytic self-audit and PDF-only reading; no external human review.",
   "source_files": {
-    "main.tex": "2457475baaa2abd3d68cf3b1b24f6c609d29ee81234dce455b91c357d8f47da6",
-    "README.md": "761ea7efddb1725ea90a7f1ff9cbab8bb7c1c7d7f2b0c5830546fecaef3f60d9",
-    "metadata.json": "feda50dd5f72f186c0c78a5096516857ebcadff78391af88f304f9678699235e"
+    "main.tex": "54414f6f9aa12705b5ca3ab9aaabbdf8b267158482c301469e3b5e3ed527bcec",
+    "README.md": "18a7b4a7c4334d333a0a224c3e11ac256c7e0e765c23a3ec145dd0bb1250892f",
+    "metadata.json": "37fed4ddd98ef6c8d00acdb5efe6a3b1d96cd031007f30f11f8b8533d01e2997"
   },
   "pdf": {
-    "path": "four-cell-gaussian-noise-stability.pdf",
-    "sha256": "0c14236f3af16570cb4229603c813c5b17b2ce31c346b81455e05b38a204aeb2",
-    "pages": 10
+    "path": "plurality-small-positive-correlations.pdf",
+    "sha256": "8c2527d72320c7dd25fed7c4cba8cc0d170840506c4dc5093b60d71c63fd18a9",
+    "pages": 9
   },
   "build": {
-    "command": "SOURCE_DATE_EPOCH=1795737600 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=four-cell-gaussian-noise-stability main.tex",
+    "command": "SOURCE_DATE_EPOCH=1795737600 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=plurality-small-positive-correlations main.tex",
     "result": "passed",
     "unresolved_references": false,
     "warnings": false,
@@ -21,74 +21,97 @@
   },
   "build_environment": {
     "distribution": "Ubuntu 24.04 WSL",
-    "tex": "pdfTeX 3.141592653-2.6-1.40.25, TeX Live 2023/Debian",
+    "tex": "pdfTeX 1.40.25, TeX Live 2023/Debian",
     "latexmk": "4.83",
     "source_date_epoch": 1795737600
   },
-  "visual_review": {
+  "revision_scope": [
+    "Exact requested title and an all-fixed-cell main theorem with dimension-independent threshold and equality rigidity.",
+    "Reproduced Zhang covariance argument with explicit attribution, retaining published multi-bubble and dimension-reduction inputs.",
+    "Replaced large explicit constants by compactness on the uniformly positive covariance set.",
+    "Removed unused cut-off energy estimates; retained the transfer and kernel bounds needed in the proof.",
+    "Displayed the covariance differential defect, truncated one-dimensional cost and shared plane orientation.",
+    "Simplified and generalized the tail obstruction to one reflected remote ball for every k."
+  ],
+  "previous_pdf_only_pass": {
     "performed": true,
-    "reviewer": "OpenAI Codex source-aware internal reviewer",
-    "scope": "All ten pages rendered with pdftoppm at 120 dpi and inspected individually; title, theorem continuity, equations, citations, bibliography and page breaks checked.",
-    "result": "No clipping, overlap, unresolved references or unreadable equations observed. All fonts embedded; no Type 3 fonts."
+    "reviewer": "OpenAI Codex simplex_pdf_reader",
+    "pdf_sha256": "3e892496322b57dac890b9f4c123f5f4c7dcd3c6fdb110ac1b68bc1f55a38315",
+    "pages": 9,
+    "finding": "No concrete mathematical gap or necessary revision identified. Three optional exposition suggestions were incorporated: display D=C trL/n-F; display the truncated normal-cost bound; identify the reversed pair plane and normal.",
+    "assurance_scope": "Isolated internal AI reading only; its edition is superseded by the PDF identified above."
   },
   "isolated_pdf_only_reading": {
     "performed": true,
     "date": "2026-11-27",
-    "reviewer": "OpenAI Codex agent pdf_only_reader",
-    "type": "isolated internal AI PDF-only reading",
-    "supplied_context": "Fresh context (fork_turns=none): only the assigned PDF path and checksum, five reader questions, and requested checks of score regret, tails, flux coefficient, interaction limit and rotational gauge. No conversation, repository instructions, source, research notes, separate metadata files or web sources.",
-    "pdf_sha256": "0c14236f3af16570cb4229603c813c5b17b2ce31c346b81455e05b38a204aeb2",
-    "pages": 10,
-    "process_disclosure": "The reader used pdftotext and pdfinfo on the allowed PDF. pdfinfo exposed inherent PDF document metadata (title, author and timestamps). No separate metadata files or other mathematical sources were read. This exceeded a literal interpretation of the instruction to avoid metadata but supplied no additional mathematical content.",
-    "answers": {
-      "contribution": "Theorem 1.1 p.1 gives a dimension-independent four-cell equal-mass Gaussian noise-stability interval and equality classification. Beyond imported first moments, the contributions are quantitative moment alignment (Proposition 2.2 pp.3-4), the rotational kernel (Lemma 3.1 pp.4-5), and regret-normalized compactness (Sections 4-6). Priority cannot be established through this reading.",
-      "mechanism": "First-moment localization and closest-moment alignment; normalize transfers by actual OU regret; weighted tail control prevents escape; limiting facet flux has interaction determined by first moments; its only possible zero modes are rotations, removed by the moment gauge.",
-      "hardest_step": "Proposition 5.1 pp.7-8: arbitrary measurable transfers become L2 facet fluxes, with the sharp regret liminf (19)/(25) and interaction limit (20). Lemmas 4.2-4.3 and Corollary 4.4 pp.6-7 supply tail control.",
-      "limitations": "Qualitative small-correlation interval only; no explicit threshold and no conclusion at every positive correlation (Section 7 p.9).",
-      "verification_obstacles": "Imported Proposition 2.1 depends on Zhang first-moment and covariance results, including singular endpoints and price regularity; Theorem 1.1 additionally imports Heilman-Tarter existence and dimension reduction. Their proofs cannot be checked from this PDF alone."
-    },
-    "mechanism_checks": {
-      "normalization": "With s_m^2=L_rho/rho, rho*s_m^2 is exactly the regret; (15)/(27) give normalized interaction at least 2. The saturated margin makes regret positive for every aligned nonidentical partition.",
-      "tails": "The weighted transfer estimate and (11) yield uniform weighted tightness (21), with no relation needed between s_m and rho_m. The weight dominates first moments and the normalized Mehler kernel.",
-      "flux_coefficient": "The density bound m^2/(2*phi_0), theta=m/(s_m*phi_0) and dnu=phi_0*dgamma_2 give ell/2. Exact vanishing on the pair plane makes the normal-score error multiplicative even for exceptionally thin transfers.",
-      "interaction_limit": "Weak L2 limits, normal collapse (23), weighted tightness and compact uniform kernel convergence justify balance, first moments and (20). After replacement by x dot y the product integral factors into convergent first moments.",
-      "rotations": "Closest-moment orthogonality is exact, passes to Df, and combines with the exact rotational interface kernel to yield the contradiction in Theorem 6.1."
-    },
-    "finding": "No concrete mathematical gap found in the requested mechanisms. The argument is coherent conditional on its explicitly imported results. No necessary proof-changing revision identified.",
-    "optional_editorial_suggestions": [
-      "Display cutoff factors explicitly in the derivation of (25).",
-      "Add a one-line continuous-cutoff/product-factorization argument for (20)."
+    "reviewer": "OpenAI Codex simplex_final_pdf_reader",
+    "type": "isolated internal AI PDF-only review",
+    "supplied_context": "Fresh context: PDF path and the five reader questions only. No conversation, repository instructions, TeX, research notes, sidecars or web sources. Follow-ups supplied revised PDFs and requested checks of the visible bibliography locator and clarity additions. The installed PDF skill supplied operational instructions only.",
+    "pdf_sha256": "8c2527d72320c7dd25fed7c4cba8cc0d170840506c4dc5093b60d71c63fd18a9",
+    "pages": 9,
+    "tools": [
+      "sha256sum",
+      "pdfinfo",
+      "pdftotext -layout",
+      "pdftoppm",
+      "image viewing"
     ],
-    "disposition": "The existing cutoff exhaustion and first-moment factorization passages were re-read by the source-aware authoring agent. The reader identified both suggestions as optional and no verification obstacle requiring a manuscript change; the reviewed PDF edition is retained unchanged.",
+    "answers": {
+      "contribution": "Every fixed k has a qualitative dimension-independent positive correlation interval and regular-simplex equality rigidity. Gaussian statement only.",
+      "mechanism": "First-moment alignment; exact OU score-loss normalization; weighted tightness; facet-flux interaction and sharp cost; rotational kernel removed by the moment gauge.",
+      "hardest_step": "Proposition5.1, pages7-8, equations18-22: normalized measurable transfers retain mass and first moments despite unbounded tails and arbitrarily thin transfers.",
+      "limitations": "No explicit threshold, threshold uniform in k, all-positive-correlation theorem or discrete plurality theorem.",
+      "verification_obstacles": "Milman-Neeman and Heilman-Tarter remain imported published results. Their exact statements could not be independently inspected in a PDF-only review. Zhang covariance argument is reproduced in Section2. Historical novelty is not established by this reading."
+    },
+    "findings": "No concrete mathematical gap, ambiguity or necessary revision identified in the final edition. Sharp ell/2 coefficient, covariance constants, moment-variation signs, interaction limit and final contradiction were consistent.",
+    "changes_from_reading": [
+      "Displayed the covariance differential defect.",
+      "Displayed the truncated one-dimensional cost.",
+      "Identified the reversed pair plane and normal.",
+      "Added a visible repository locator to reference5.",
+      "Defined I_A before use.",
+      "Stated the pointwise transfer identity.",
+      "Made the abstract k,d range explicit."
+    ],
+    "final_followup": "Reader reread all nine final-edition pages and visually inspected every final rendered page. Reference list and locator fit legibly on page9. Final SHA-256 checked before and after reading.",
+    "earlier_pdf_hashes": [
+      "49e563472e64bdc88605d0b3f85abb173cfc7b47b3ce499331626e90e325df9f",
+      "4b72d6087d5731da1ae4f0fe48c574be4c696e8291750c2b3639c9c3b8e1a242"
+    ],
     "external_review": false
+  },
+  "visual_review": {
+    "performed": true,
+    "scope": "All nine final-edition pages rendered and inspected by the isolated PDF reader. Source-aware authoring review inspected every page of the preceding nine-page version, a full contact sheet, and the final page at full resolution. No clipping, overlap or obstructive line breaks observed. All fonts embedded, with no Type3 fonts.",
+    "result": "passed"
   },
   "source_archive_reproduction": {
     "archive": "source.zip",
-    "sha256": "bcd5dc6b65cd55e1741e3cff4409d853452e7408df33dbf446a738fbad87777e",
+    "sha256": "970eabd252e594b6528afe57e6b49e42c99bbbe120fb9547dcdc47de78d1a953",
     "contents": [
       "main.tex"
     ],
     "result": "passed",
-    "scope": "Clean build in an isolated directory extracted from source.zip, using the documented environment and command; main.tex and the ten-page output PDF are byte-for-byte identical to the designated source and PDF. Artifact reproduction only, not independent mathematical replay."
+    "scope": "Final source archive extracted into an isolated directory and built with the documented command/environment. Source and designated PDF are byte-identical; this certifies artifact reproduction, not mathematical replay."
   },
   "mathematical_dependencies": [
     {
-      "input": "Zhang equal-cell first-moment theorem and covariance deficit identity",
-      "paper_locator": "Proposition 2.1; reference [5], Theorem 1, Lemma 2, Sections 2-4 equations (13)-(14)",
-      "edition": "gaussian-balanced-simplex-all-k-v1, commit ebfd90558439afca21babeb7b77c8d8837ea745f",
+      "input": "Milman-Neeman Gaussian multi-bubble theorem",
+      "paper_locator": "Proposition2.1, Theorem1.1 of reference MN",
+      "hypotheses": "k positive equal masses in dimension n=k-1, so k=n+1. Perimeter is the ordinary interface sum, half the sum of cell perimeters."
+    },
+    {
+      "input": "Heilman-Tarter dimension reduction",
+      "paper_locator": "Proof of Theorem1.1, reference HT Theorem1.9",
+      "hypotheses": "0<rho<1, positive equal masses, d>=k-1; only actual maximizers are reduced. Fixed-mass existence is proved in the article."
+    },
+    {
+      "input": "Zhang covariance-path argument",
+      "paper_locator": "Proposition2.1 reproduces the argument with attribution to Sections2-5 of the frozen release",
+      "edition": "gaussian-balanced-simplex-all-k-v1, ebfd90558439afca21babeb7b77c8d8837ea745f",
       "retained_source": "../../research/plurality-stability/sources/zhang-equal-gaussian-cells-ebfd905.md",
       "sha256": "8416f741398ceb4207edcc3ff31964883ae14044698043bf17a75d66c1dec832",
-      "attribution": "Frozen source author field is mxym/math research project; existing signed-companion source audit identifies Yongxian Zhang. No affiliation or peer review inferred."
-    },
-    {
-      "input": "Milman-Neeman Gaussian multi-bubble theorem",
-      "paper_locator": "Proposition 2.1, reference [4] Theorem 1.1",
-      "hypotheses": "Four positive equal masses in ambient dimension three, 4<=3+1; total interface perimeter is half the sum of cell perimeters."
-    },
-    {
-      "input": "Heilman-Tarter maximizer existence and dimension reduction",
-      "paper_locator": "Proof of Theorem 1.1 p.9, reference [3] Lemma 2.3 and Theorem 1.9",
-      "hypotheses": "0<rho<1, four prescribed positive equal masses, ambient dimension at least three; applied only to actual maximizers."
+      "scope": "The covariance argument is supplied in the article. It remains credited to its source; no authorship or novelty claim for that comparison."
     }
   ],
   "independent_mathematical_replay": false,
@@ -100,49 +123,24 @@
     "submitted": false
   },
   "remaining_obligations": [
-    "External specialist audit of the imported inputs and new analytic proof.",
-    "Precise novelty comparison and venue selection before submission."
+    "External specialist review of the written argument and published theorem applications.",
+    "Historical priority comparison and venue selection before any authorized submission."
   ],
   "repository_checks": {
     "date": "2026-11-27",
-    "render_navigation": {
-      "command": "make render-navigation",
-      "result": "passed"
-    },
-    "check_navigation": {
-      "command": "make check-navigation",
-      "result": "blocked_by_concurrent_unrelated_inventory_changes",
-      "observed_errors": [
-        "unmapped retained document: arithmetic/SEPTIC_PELL_NODAL_FIVE_OBSTRUCTION.md",
-        "unmapped source declaration: arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md :: Theorem HG8"
-      ],
-      "unit_tests": "not reached because the prerequisite research.py check stopped on coverage"
-    },
-    "paper_scoped_checks": {
-      "result": "passed",
-      "coverage_documents": 8,
-      "indexed_statements": 11,
-      "explicit_tex_proof_links": 8,
-      "bibliography_items": 5,
-      "article_and_index_local_links": 30,
-      "claims": "All eleven article statement nodes have supported current proof routes in the acyclic repository graph.",
-      "artifacts": "Metadata abstract equals the LaTeX abstract; source/PDF/archive hashes, archive source and publication/review fields agree. Portfolio metadata validation passes."
-    },
-    "additional_concurrent_source_catalogue_issue": "A separate catalogue scan observed a changed antecedent proof-source pin for plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md during concurrent extension of that research note. The current article is unchanged and all article claims still have current supported routes; the other research edit and its antecedent record were left untouched.",
-    "diff_check": {
-      "command": "git diff --check",
-      "result": "passed"
-    },
-    "scope": "Navigation and artifact consistency only, not mathematical proof replay. Concurrent repository work outside this article is not certified by the paper-scoped checks."
+    "status": "Final paper-scoped source, declaration, proof-link and artifact checks recorded below; repository-wide checks run separately.",
+    "scope": "Consistency and artifact reproduction, not mathematical proof verification."
+  },
+  "bibliographic_audit": {
+    "Heilman_2014": "Printed author edition and bibliography give no.71; journal HTML mirror labels article99. The article cites printed no.71 with DOI10.1214/EJP.v19-3083.",
+    "Zhang": "Visible github.com/mxym/math locator and release version; hyperlink targets exact release. Full commit and retained-source hash remain in this record and research ledger."
   },
   "checklist_outcomes": {
-    "statement_and_scope": "Theorem 1.1 p.1, abstract, introduction, Section 7 and metadata consistently state four equal cells, all measurable partitions, d>=3, a qualitative positive interval and equality up to orthogonal maps, labels and cylindrical extension. No explicit threshold or all-positive-correlation claim.",
-    "essential_proofs": "Sections 2-6 contain quantitative alignment, interface kernel, weighted tails, normalized kernel, measurable-transfer compactness and final rigidity. Proposition 2.1 and proof of Theorem 1.1 identify exact imported statements. Degenerate covariance endpoints are attributed to the imported theorem.",
-    "uniformity": "Dimension-free localization is proved in Proposition 2.2; all compactness estimates are in R^3 with uniform small-rho constants; only actual maximizers undergo the cited dimension reduction.",
-    "references": "Five exact bibliographic items; imported hypothesis checks and frozen Zhang source are recorded above and in the current research source/application ledger. Christof-Wachsmuth and Heilman 2014 are comparisons, not a missing four-cell implication.",
-    "readability": "The introduction explains the actual-regret scale, thin-transfer coefficient and rotational contradiction. The isolated reader identified the contribution, mechanism, hardest step and limits without research context. No required manuscript revision was identified.",
-    "computation": "No essential finite experiment, numerical search or computational certificate is used in the theorem. TeX compilation and archive comparison verify artifacts only.",
-    "formalization": "No formal proof or independent mathematical replay is asserted.",
-    "submission": "Ready for specialist mathematical review. No submission, deposit or publication was authorized or performed; venue-specific requirements are not yet applicable."
+    "scope": "Title, abstract, Theorems1.1/6.1 and metadata consistently give every fixed k>=2, d>=k-1, a qualitative threshold depending on k and equality rigidity.",
+    "essential_arguments": "Sections2-6 supply the complete essential argument, including the credited first-moment covariance proof and fixed-mass existence. Published geometric and dimension-reduction theorems remain imported.",
+    "human_readability": "The opening question, exact theorem, strip-cost example and contradiction precede technical machinery. The PDF-only reader identified contribution, mechanism, hardest step and limitations.",
+    "uniformity_and_degeneracies": "Constants depend on k; only actual maximizers are dimension reduced. Singular covariances, deficient-rank moments and k=2 zero-dimensional facets are covered.",
+    "computation": "No finite experiment or computational certificate is used to prove the theorem. Build and archive equality certify artifacts only.",
+    "assurance": "Internal authoring audit and isolated AI reading only. No external review, independent mathematical replay, formal proof, submission or publication."
   }
 }

@@ -31,18 +31,17 @@
 \date{}
 \begin{document}
 \begin{abstract}
-For every fixed number of cells, we prove that the central regular-simplex
+For every fixed $k\ge2$, we prove that the central regular-simplex
 partition maximizes Gaussian noise stability among all equal-measure
-measurable partitions, for every sufficiently small positive correlation.
-The correlation interval is independent of the ambient dimension, and
+measurable $k$-cell partitions in every dimension $d\ge k-1$, for all
+sufficiently small positive correlations. The interval is independent of $d$, and
 equality determines the simplex partition up to orthogonal maps, labels
 and cylindrical extension. The proof combines Zhang's first-moment
-comparison with a compactness argument for arbitrary changes of labels.
-We normalize those changes by their exact Ornstein--Uhlenbeck score loss.
-A weighted Gaussian estimate prevents this normalized mass from escaping
-to infinity; its limiting facet flux has a sharp quadratic cost and can
-only be rotational. Alignment of the cell moments removes that mode.
-The threshold may depend on the number of cells and is not explicit.
+comparison with compactness for measurable label changes, normalized by
+their exact Ornstein--Uhlenbeck score loss. Weighted Gaussian tightness
+gives a limiting facet flux whose sharp quadratic cost forces
+rotationality; moment alignment removes that mode. The threshold is
+qualitative and may depend on the number of cells.
 \end{abstract}
 \maketitle
 
@@ -69,7 +68,7 @@ $v_1,\ldots,v_k$ of a centered regular simplex in $\R^n$, let
 \]
 In higher dimension $T$ denotes the cylindrical extension of this
 partition. All partitions and equality statements are understood modulo
-Gaussian null sets.
+Gaussian null sets. Write $I_A(x)=i$ when $x\in A_i$.
 
 \begin{theorem}\label{thm:main}
 For every integer $k\ge2$ there exists $\rho_k>0$, independent of
@@ -229,10 +228,11 @@ cell perimeters. Weighted Cauchy--Schwarz now yields
 \]
 Along $Q_t$, write $C(t)=\mathcal C(Q_t)$ and $h(t)=C(t)^2-F$.
 Equation~\eqref{eq:cov-derivative} gives
-\[
+\begin{gather*}
  tC'(t)=\tfrac12(C(t)-\tr L_t/n),\qquad
+ D(t)=C(t)\tr L_t/n-F,\\
  (h(t)/t)'=-D(t)/t^2\le0.
-\]
+\end{gather*}
 Expanding the weighted Cauchy difference gives exactly $D(t)$ in
 \eqref{eq:cov-deficit}. Since $L_*=\sqrt F P$ and
 $\tr(Q-Q_*)=0$, we have $C'(0)=0$ and $h(t)/t\to0$ at zero.
@@ -506,8 +506,9 @@ $\widetilde Q_\rho(e)/\rho\le C(\sum_i\int w|e_i|d\ga_n)^2$.
 \end{corollary}
 
 \begin{proof}
-Sum Lemma~\ref{lem:weighted} over the $k(k-1)$ ordered transfers and
-use \eqref{eq:regret-cost}. The interaction bound is
+Since $\sum_i|e_i|=2\sum_{i\ne j}h_{ij}$ pointwise, sum
+Lemma~\ref{lem:weighted} over ordered transfers and use
+\eqref{eq:regret-cost}. The interaction bound is
 Lemma~\ref{lem:kernel} integrated against $e_i\ga_n$ in both variables.
 \end{proof}
 
@@ -565,7 +566,8 @@ a fixed normal displacement. Junctions are plane-null sets and acquire
 no mass from these $L^2$ densities; there are no junctions when $n=1$.
 
 Put $f_{ij}=\theta_{ji}-\theta_{ij}$ for $i<j$ and extend
-antisymmetrically. Then
+antisymmetrically. Here $H_{ji}=H_{ij}$ and $n_{ji}=-n_{ij}$, so both
+ordered limits use the same surface measure. Then
 \begin{equation}\label{eq:measure-limit}
  \mu_{m,i}\rightharpoonup\mu_i
        =\sum_{j\ne i}f_{ij}\nu_{ij}|_{F_{ij}}.
@@ -583,8 +585,13 @@ Exact vanishing on the pair plane and local gradient convergence give
 on its compact normal cylinder. This is a multiplicative estimate, even
 for transfers much thinner than $\rho_m$. Write
 $m_{m,ij}^b(z)=\int_0^b h_{ij}^{(m)}(z+tn_{ij})\phi_1(t)dt$.
-Discard nonnegative loss outside the cylinders and apply the density
-bound to obtain explicitly
+The density bound is
+\[
+ \int_0^b t h_{ij}^{(m)}(z+tn_{ij})\phi_1(t)dt
+       \ge\frac{(m_{m,ij}^b(z))^2}{2\phi_0}.
+\]
+Discard nonnegative loss outside the cylinders and divide by
+$\rho_ms_m^2=\LL_{\rho_m}(A^{(m)})$ to obtain explicitly
 \[
  1\ge\frac{\ell-o(1)}2\sum_{i\ne j}
        \int\chi(z)\left(\frac{m_{m,ij}^b(z)}{s_m\phi_0}\right)^2d\nu_{ij}(z).
@@ -722,15 +729,15 @@ positive deficit times $\rho$ gives a ratio tending to zero.
 \end{proof}
 
 For these remote changes, linear score loss grows like distance times
-mass, while the bounded OU score loss saturates. The normalization in
-\eqref{eq:scale} keeps precisely this bounded-score cost in the
-compactness argument. It imposes no lower bound on the size or location
-of the perturbation.
+mass, while OU score loss saturates. Normalization by the latter keeps
+their cost in the compactness argument, without restricting their size
+or location.
 
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
 exposition, proof review and verification code.
 
+\enlargethispage{2\baselineskip}
 \begin{thebibliography}{9}
 \raggedright
 \bibitem{CW}
@@ -760,9 +767,8 @@ Ann. of Math. (2) \textbf{195} (2022), 89--206.
 \bibitem{Zhang}
 Y.~Zhang (mxym/math research project),
 \emph{Equal Gaussian cells: the sharp simplex first-moment theorem},
-preprint, 8 October 2026.
-Release \texttt{gaussian-balanced-simplex-all-k-v1},
-commit \texttt{ebfd90558439afca21babeb7b77c8d8837ea745f}.
-\url{https://github.com/mxym/math/releases/tag/gaussian-balanced-simplex-all-k-v1}.
+preprint, 8 October 2026,
+\href{https://github.com/mxym/math/releases/tag/gaussian-balanced-simplex-all-k-v1}{\texttt{github.com/mxym/math}},
+release \texttt{gaussian-balanced-simplex-all-k-v1}.
 \end{thebibliography}
 \end{document}

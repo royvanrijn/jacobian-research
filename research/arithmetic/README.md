@@ -2119,8 +2119,14 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | Gauss valuation and root deficits force a critical reduction for polynomial Pell marks | Internal result | proved | [Source](SEPTIC_PELL_NODAL_FIVE_OBSTRUCTION.md) |
 | All-five split root residues at five severely restrict polynomial septic Pell marks | Internal result | proved | [Source](SEPTIC_PELL_NODAL_FIVE_OBSTRUCTION.md) |
 | Only three fully split primitive residue profiles can support five marked septic directions | Internal result | proved | [Source](SEPTIC_PELL_NODAL_FIVE_OBSTRUCTION.md) |
+| A primitive ramified quadratic norm gives exact composite-degree affine discriminants | Internal result | proved | [Source](PELL_PRIME_PATH_WILD_AFFINE_FIELDS.md) |
+| All prime-power wild mirror characters have exact conductors for arbitrary odd p | Internal result | proved | [Source](PELL_PRIME_PATH_WILD_AFFINE_FIELDS.md) |
+| One actual moving prime has high real ideal order and any prescribed affine Frobenius order | Internal result | proved | [Source](PELL_PRIME_PATH_WILD_AFFINE_FIELDS.md) |
+| In the composite mirror all primary wild conductors are simultaneous and exact | Internal result | proved | [Source](PELL_PRIME_PATH_WILD_AFFINE_FIELDS.md) |
+| Infinite simple genus-three exact [3,3] family with rational Weierstrass point | Internal result | proved | [Source](GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md) |
+| Two rational-Weierstrass norm directions satisfy simultaneous all-prime virtuality | Internal result | proved | [Source](GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md) |
 
-**Computed obligations:** 188 unresolved; 36 resolved within their exact scope.
+**Computed obligations:** 189 unresolved; 36 resolved within their exact scope.
 
 
 Scope limits:

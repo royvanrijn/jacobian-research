@@ -353,7 +353,10 @@ The [exact checker](verify_pell_period_ring_class_inertia.py)
 checks the parity and residue groups, the norm and CRT identities,
 a genuine simultaneous prime fixture with \(B=15,m=45,s=479,c=511,q=11690712001\), and the exact degree-25
 example. The class field and counting conclusions use the written
-arguments. The period weight in PI1 makes the relative inertia
+arguments. [AW3–AW4](PELL_PRIME_PATH_WILD_AFFINE_FIELDS.md)
+use the same moving prime to prescribe affine Frobenius
+and compute all wild character conductors over the composite
+cyclotomic mirror. The period weight in PI1 makes the relative inertia
 product exact. PI3 shows that a uniform search solely for
 degree-\(p\) extensions would miss such factors even when continued
 through a fixed number of higher degrees. The full weighted sum

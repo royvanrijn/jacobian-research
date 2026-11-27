@@ -1,40 +1,77 @@
-# The tetrahedral partition maximizes Gaussian noise stability for small positive correlations
+# Plurality Is Stablest for Small Positive Correlations: A Gaussian Simplex Theorem
 
-Roy van Rijn · prepared 27 November 2026 · ready for specialist review
+Roy van Rijn · revised 27 November 2026 · prepared for specialist review
 
-The paper proves a qualitative, dimension-independent interval of positive correlations on which the central regular tetrahedral partition maximizes Gaussian noise stability among all balanced ordinary measurable four-cell partitions. Equality is classified up to orthogonal maps, labels, cylindrical extension and null sets. The main statement is for ambient dimension at least three. The threshold is not explicit, and the paper does not address every positive correlation.
+For every fixed number of cells $k\ge2$, the paper proves that the central
+regular-simplex partition maximizes Gaussian noise stability among all
+balanced measurable partitions for a qualitative interval
+$0<\rho\le\rho_k$. The threshold may depend on $k$ but is independent of
+the ambient dimension $d\ge k-1$. Equality is classified up to orthogonal
+maps, labels, cylindrical extension and null sets. The paper does not
+assert a numerical threshold, a threshold uniform in $k$, or optimality
+throughout $0<\rho<1$.
 
-[Read the paper](four-cell-gaussian-noise-stability.pdf) · [LaTeX source](main.tex) · [Source archive](source.zip) · [Metadata](metadata.json) · [Verification and blind-reader record](verification.json) · [Checksums](SHA256SUMS.txt)
+[Read the paper](plurality-small-positive-correlations.pdf) ·
+[LaTeX source](main.tex) · [Source archive](source.zip) ·
+[Metadata](metadata.json) · [Verification and reader record](verification.json) ·
+[Checksums](SHA256SUMS.txt)
 
-## Proof and dependencies
+## Argument and mathematical dependencies
 
-The article contains every new argument needed for its theorem. Its chain is:
+The article contains the complete essential argument for every fixed $k$.
+Section 2 reproduces Zhang's covariance-path proof with attribution,
+including balancing prices, Gaussian flux, the ordinary-perimeter
+normalization, singular covariance endpoints and equality. The geometric
+input is Milman–Neeman's Gaussian multi-bubble theorem in dimension $k-1$.
+The quantitative alignment proof uses compactness of a uniformly positive
+covariance set instead of unnecessary explicit constants.
 
-1. Zhang's sharp equal-cell first-moment theorem and balanced covariance deficit identity, stated precisely in Proposition 2.1; Milman–Neeman supplies the Gaussian multi-bubble perimeter input used there.
-2. Quantitative covariance, moment and partition alignment (Proposition 2.2), including exact orthogonality to the closest regular moment orbit.
-3. The first-moment interface form and its exact rotational kernel (Lemma 3.1).
-4. Saturated tetrahedral Ornstein–Uhlenbeck score margins, a Gaussian weighted exterior estimate and the normalized Mehler kernel bound (Section 4).
-5. Regret-normalized normal-flux compactness, its sharp one-sided cost and interaction limit (Proposition 5.1).
-6. Three-dimensional rigidity (Theorem 6.1), followed by Heilman–Tarter maximizer existence and dimension reduction to obtain Theorem 1.1 in every ambient dimension at least three.
+Sections 3–5 identify the rotational interface kernel and prove weighted
+normal-flux compactness for arbitrary measurable transfers. The sharp
+one-sided cost and compact-cutoff interaction limit are displayed
+explicitly. Section 6 gives the contradiction, proves existence with the
+mass constraints retained, and uses Heilman–Tarter dimension reduction
+only for actual maximizers. Section 7 replaces a four-cell tail box by a
+single reflected remote ball, showing for every $k$ why first-moment
+deficit cannot be the uniform scale of a full noise-value gap.
 
-The stronger maximizer localization and analytic interface chart remain in the [research companion](../../research/plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md). They are not premises of the shorter proof in this article. Section 7 retains the tail-swap obstruction to a noise-stability deficit proportional to the first-moment deficit.
+Zhang's argument is credited to the frozen external preprint
+`gaussian-balanced-simplex-all-k-v1`, commit
+`ebfd90558439afca21babeb7b77c8d8837ea745f`. The
+[retained source](../../research/plurality-stability/sources/zhang-equal-gaussian-cells-ebfd905.md)
+and [attribution ledger](../../research/plurality-stability/sources/zhang-equal-gaussian-cells-sources-ebfd905.md)
+give its exact edition and authorship evidence. The paper supplies that
+argument for reader verification; it does not claim authorship of the
+first-moment comparison.
 
-The current research proofs and exact dependency scopes remain in [quantitative first-moment stability](../../research/plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md), [interface rigidity](../../research/plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md), [the small-correlation proof](../../research/plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md), and [MATH_STATUS.json](../../research/MATH_STATUS.json). The article is their standalone presentation, not an independent verification of those arguments.
+The [first-moment stability proof](../../research/plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md)
+and [fixed-cell normal-flux proof](../../research/plurality-stability/SMALL_POSITIVE_CORRELATION_INTERVAL.md)
+remain the research sources. The separate
+[continuation results](../../research/plurality-stability/POSITIVE_CORRELATION_CONTINUATION.md)
+are not premises of this article. The full positive-correlation conjecture
+remains open in the current mathematical account.
 
-Zhang's input is a frozen external preprint, release `gaussian-balanced-simplex-all-k-v1`, commit `ebfd90558439afca21babeb7b77c8d8837ea745f`. The [retained text](../../research/plurality-stability/sources/zhang-equal-gaussian-cells-ebfd905.md) and [source/application ledger](../../research/plurality-stability/sources/zhang-equal-gaussian-cells-sources-ebfd905.md) distinguish the frozen project author field from the signed companion's personal attribution. No peer-review status is inferred for that preprint.
+## Build and review
 
-## Build
-
-From this directory, with TeX Live, AMS packages, `microtype`, `mathtools`, `xcolor`, `hyperref` and `latexmk` installed:
+With TeX Live, AMS packages, `geometry`, `microtype`, `mathtools`, `xcolor`,
+`hyperref` and `latexmk` installed, run from this directory:
 
 ```sh
-SOURCE_DATE_EPOCH=1795737600 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=four-cell-gaussian-noise-stability main.tex
+SOURCE_DATE_EPOCH=1795737600 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=plurality-small-positive-correlations main.tex
 ```
 
-The bibliography is included in `main.tex`; no repository files or network access are needed to compile the source archive. The designated PDF has ten pages. The epoch fixes PDF creation metadata for artifact reproduction; it has no mathematical role.
+The bibliography is included in `main.tex`. The source archive builds
+without repository files or network access. The designated PDF has nine
+pages. The fixed epoch controls PDF metadata for artifact reproduction;
+it has no mathematical role.
 
-## Review status
+The current source has a warning-free build and an all-page visual
+inspection. The exact PDF-only reader test, its edition, findings and
+any resulting revisions are recorded in [verification.json](verification.json),
+together with the clean archive build and repository checks. Earlier
+four-cell review outcomes do not certify this enlarged edition.
 
-The current edition has a warning-free build, an all-page visual review and an isolated internal AI PDF-only reading. The reader found no concrete gap in the score-regret normalization, weighted tightness, flux coefficient, interaction limit or removal of rotations. The verification record preserves the edition hash, five reader answers, limitations and optional exposition suggestions.
-
-External specialist review, formal verification and independent mathematical replay have not occurred. The imported theorem applications and the new analytic proof remain subject to that review. This paper has not been submitted, released or published. No larger-correlation research was undertaken in preparing this edition.
+External specialist review, formal verification and independent
+mathematical replay have not occurred. No submission, release or
+publication is asserted. The present edition is the single current paper
+home; the previous four-cell edition remains in Git history.
