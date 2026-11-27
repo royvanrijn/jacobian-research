@@ -1,0 +1,30 @@
+{
+  "theorem": "Steven Heilman, arXiv:2608.00333v1, Theorem A.1, Lemma A.4, equation (152)",
+  "upstream_repository": "https://github.com/sheilman77/cut_bounds",
+  "commit": "6b720fe57bfe2a3c8fffc51521d00b31011aa1a3",
+  "inputs": {
+    "plur_cert_positive.py": "sha256:5b62c1f840bb6d7f651db71f3231ffc1204c446324dd313dfc4c3825ded2ce08",
+    "plur_cert.py": "sha256:eb0489a1e3e02eeee08178795cf52a84807d71a8bf36b0dc4bf1a4a78a6fed85"
+  },
+  "download": "Retrieve both filenames at the pinned commit in upstream_repository, saving the exact bytes alongside each other with their upstream filenames.",
+  "command_from_canonical_checkout": "OPENBLAS_NUM_THREADS=1 .venv/bin/python /tmp/pis-a4-rearrangement-review/plur_cert_positive.py",
+  "environment": {"python": "3.12.3", "python-flint": "0.9.0", "numpy": "1.26.4", "platform": "Ubuntu-24.04 WSL"},
+  "replay": {
+    "performed_by": "Codex rearrangement research agent",
+    "scope": "Unmodified default upstream certificate, not quick mode. Internal replay of the published recipe for the positive Appendix A interval bound, with source review of the enclosure calculations. The rest of the preprint was not replayed.",
+    "exit_code": 0,
+    "seconds": 116.16,
+    "correlation_interval": ["1/10", "2/5"],
+    "accepted_slabs": 90,
+    "attempted_slabs": 150,
+    "finite_worst_squared_bound": "3.99929063236",
+    "worst_slab": ["0.38625", "0.3875"],
+    "kernel_tail": "3.33733813468e-7",
+    "additive_tail": "3.03117401848e-12",
+    "certified_squared_bound": "3.99929096609",
+    "certified_bound": "1.99982273367"
+  },
+  "independent_mathematical_review": false,
+  "formal_verification": false,
+  "external_review_of_repository_deductions": false
+}

@@ -7340,7 +7340,7 @@ Up to a constant its volume is \(dx\wedge dY/Y\) on
 \(Y\ne0\). This is the standard volume form whose
 nonzero de Rham class on a smooth Danielewski surface
 of degree at least two is proved in
-[Dubouloz, Kunyavskiĭ and Regeta, §4.2.1](https://pure.mpg.de/rest/items/item_3499143_3/component/file_3499144/content).
+[Dubouloz, Kunyavskiĭ and Regeta, §4.2.1](https://ems.press/content/serial-article-files/26631).
 Here the obstruction also follows by residues.
 
 If \(\alpha\) is a regular primitive, its restriction
@@ -8071,3 +8071,306 @@ condition, and hence divides \(b_1\), contrary
 to their degrees six and five. This contradiction
 settles the independent-of-\(z\) case and finishes
 the doubled square-member frame.
+
+
+## Generic-fibre exactness in the nonbinary axial frame
+
+**Proposition SexticKellerTangentConicNonbinaryAxialDifferentials.**
+Let \(W=yz+a_0(x)\), for any polynomial \(a_0\), and
+put \(A=Wz^3,\ t=x/z\). Every algebraically independent
+rational pair in the leading field
+\(k(Wz^3,xWz^2,x^2Wz)=k(A,t)\) has an exact relative
+Jacobian differential on every geometric generic component.
+This applies both to the highest \(z\)-tuple
+\((yz^4,xyz^3,x^2yz^2)\) and to the signed highest
+tuple of the [first-correction theorem](#the-first-corrections-in-the-nonbinary-axial-tuple).
+
+In the highest \(z\)-frame write
+\[
+ F_1=yz^4+a(x,y)z^3+d(x,y)z^2+\cdots,\qquad
+ F_2=xyz^3+b(x,y)z^2+e(x,y)z+\cdots.
+\]
+Assume \(F\) has ordinary degree at most six.
+On a fixed generic \((F_1,F_2)\)-level of the rescaled
+tuple, the order-one relative differential is always
+rationally exact. At order two its exactness is
+equivalent to the two scalar equations
+\[
+ \begin{aligned}
+ [x]e-d(0,0)+[xy](ab)-[x^2y](b^2)&=0,\\
+ -6[x^4y^2](a^2)+20[x^5y^2](ab)-15[x^6y^2](b^2)&=0 .
+ \end{aligned}                                                \tag{1}
+\]
+Here \([x]e=[x^1y^0]e\). In particular every Keller
+completion in this frame satisfies (1).
+
+For the first assertion, \(k(x,y,z)=k(A,t,z)\) by
+\(x=tz,\ y=(A/z^3-a_0(tz))/z\).
+Also \(\det J(A,t,z)=-z^3\).
+For an independent pair \(U,V\in k(A,t)\) write
+\(\Lambda=\det \partial(U,V)/\partial(A,t)\).
+This is nonzero and is constant on each generic
+component, since \(k(A,t)/k(U,V)\) is finite separable.
+The relative form is \(-dz/(\Lambda z^3)\) and has
+primitive \(1/(2\Lambda z^2)\). The geometric components
+have rational function field in \(z\).
+
+For the higher coefficients use the weights \((0,0,1)\).
+Take \(A=yz^4,\ B=xyz^3\) and use \(A,B,z\) as rational
+coordinates, with \(x=(B/A)z,\ y=A/z^4\).
+The volume density in these coordinates is
+\(\rho=-1/(A z^3)\).
+Write the first two rescaled polynomials as
+\(A+\epsilon p_1+\epsilon^2p_2+\cdots\) and
+\(B+\epsilon q_1+\epsilon^2q_2+\cdots\), where
+\[
+ (p_1,p_2,q_1,q_2)=(az^3,dz^2,bz^2,ez)
+\]
+evaluated at \(x=(B/A)z,\ y=A/z^4\).
+The formal target coordinate change at fixed \(z\)
+has identity constant term. Use its inverse to express
+the volume density with the two target levels held fixed.
+The coefficients at orders one and two are
+\[
+ \begin{aligned}
+ \rho_1={}&-\partial_A(\rho p_1)-\partial_B(\rho q_1),\\
+ \rho_2={}&-\partial_A(\rho p_2)-\partial_B(\rho q_2)
+ +\tfrac12\partial_A^2(\rho p_1^2)
+ +\partial_A\partial_B(\rho p_1 q_1)
+ +\tfrac12\partial_B^2(\rho q_1^2).
+ \end{aligned}
+\]
+For example, writing \(u=(p_1,q_1)\) and \(v=(p_2,q_2)\),
+the inverse is the identity minus \(\epsilon u\) plus
+\(\epsilon^2((Du)u-v)\) to this order. Taylor expansion
+of the density times the inverse determinant gives
+the two displayed expressions.
+
+Both forms \(\rho_i\,dz\) are Laurent in \(z\) over
+\(k(A,B)\), so the coefficient of \(z^{-1}\) is their
+only possible obstruction to a rational primitive.
+After multiplication by \(\rho\), the residue comes
+from the \(z^2\) coefficient of each product inside
+the derivatives. At order one the term from \(p_1\)
+would require \(x^i y^j\) with \(i-4j=-1\), impossible
+for \(\deg a\le3\). The term from \(q_1\) requires
+\(i-4j=0\), allowing only the constant of \(b\);
+\(\partial_B\) kills its contribution.
+
+For order two the following table lists the monomials
+in the indicated coefficient polynomials whose terms
+can yield \(z^2\), using the ordinary degree bounds.
+
+| Rescaled term | Coefficient polynomial | Contributing monomials |
+|---|---|---|
+| \(p_2\) | \(d\) | \(1\) |
+| \(q_2\) | \(e\) | \(x\) |
+| \(p_1^2\) | \(a^2\) | \(y,\ x^4y^2\) |
+| \(p_1q_1\) | \(ab\) | \(xy,\ x^5y^2\) |
+| \(q_1^2\) | \(b^2\) | \(x^2y,\ x^6y^2\) |
+
+The first line of (1) is the coefficient of \(A^{-2}\)
+in the residue. The second is the coefficient of
+\(B^4 A^{-5}\). The term \(y\) from \(a^2\) drops out
+because \(\rho\) makes the residue term constant before
+\(\partial_A^2\). Since \(A,B\) are independent, vanishing
+of the residue is equivalent to (1).
+For an actual Keller map of this frame, the rescaled
+determinant is \(\kappa\epsilon^8\), from the component
+\(z\)-degrees \(4,3,2\) and the weight sum one. Thus
+the relative derivative of the third rescaled polynomial
+equals \(\kappa\epsilon^8\) times the relative form.
+Its coefficient at every order has a rational primitive,
+which gives (1).
+
+
+## The third-order residue in the smooth-common-factor frame
+
+**Lemma KellerFormalFixedLevelDensityFormula.**
+In rational coordinates \(A,B,z\) over a characteristic-zero field,
+let the volume form be \(\rho\,dA\wedge dB\wedge dz\).
+For a formal change of the first two coordinates
+\(A\mapsto A+h_1,\ B\mapsto B+h_2\), where \(h_1,h_2\)
+are divisible by \(\epsilon\), the density in the new
+coordinates, again named \(A,B,z\), is
+\[
+ \rho_\epsilon=\sum_{m,n\ge0}\frac{(-1)^{m+n}}{m!\,n!}
+                 \partial_A^m\partial_B^n(\rho h_1^m h_2^n).
+ \tag{2}
+\]
+In particular \(\rho_\epsilon\,dz\) is the relative Jacobian
+form on the fixed target levels of the new first two coordinates.
+
+For generic level values \(u,v\), express the density at
+\(u,v,z\) as the two-variable residue
+\[
+ \operatorname{Res}_{A=u,\,B=v}
+          \frac{\rho\,dA\wedge dB}
+          {(A+h_1-u)(B+h_2-v)} .
+\]
+This is the formal residue change of variables, in the
+identity-initial-term case of
+[Xin's residue theorem](https://arxiv.org/pdf/math/0405133),
+Theorem 3-2.7. Here it also follows directly by expanding
+about \(A=u,\ B=v\) over \(k(u,v,z)[[\epsilon]]\). Termwise
+integration in the two Laurent variables makes every
+top-degree monomial form exact except the product of
+the two logarithmic differentials. Replacing either
+logarithmic differential by its transformed one changes it
+by the differential of the formal logarithm of the
+corresponding ratio of new to old variables, a ratio
+congruent to one modulo \(\epsilon\). Thus the top residue
+is preserved. In the new variables the displayed residue
+is the density evaluated at \(u,v,z\). Expanding the two
+denominators geometrically in \(\epsilon\) and applying
+the coefficient rule for derivatives gives (2).
+
+**Theorem SexticKellerTangentConicSmoothSquareMemberNonbinaryExclusion.**
+There is no characteristic-zero sextic Keller map in the
+nonbinary case of
+[the smooth-common-factor weight-two theorem](#weight-two-in-the-smooth-common-factor-frame).
+
+Use its affine normalization to the highest \(z\)-tuple
+\((yz^4,xyz^3,x^2yz^2)\). The homogeneous degree-six
+tuple is now \((P^3,P^2 x^2,P x^4)\) with
+\(P=xz+L(x,y)^2\), where \(L\) is linear and
+\(\nu=([y]L)^2\ne0\). Indeed the affine normalization
+changes \(y\) by a linear combination of \(y,x\) and
+a constant, and then translates \(x\) by a scalar.
+Translations leave the ordinary highest forms unchanged.
+Let \(a,d,b,e\) be the lower axial coefficients of
+\(F_1,F_2\) in the preceding section. Their highest
+homogeneous pieces are
+\[
+       a_3=x^3,\qquad b_4=x^4,\qquad
+       d_4=3x^2 L^2,\qquad e_5=2x^3 L^2 .
+\]
+Put \(\beta=[y^3]b=[y^3 z^2]F_2\).
+
+On the ordinary axial levels \(A=yz^4,\ B=xyz^3\),
+consider the coefficient \(B^5 A^{-6}\) of the \(z=0\)
+residue in the order-three term of (2), with
+\(\rho=-1/(A z^3)\).
+For a summand of (2) indexed by \(m,n\), a monomial
+product with total \(x,y\)-exponents \(I,J\) gives a
+scalar multiple of \(B^{I-n}A^{J-I-1-m}\).
+Thus the desired powers require \(I=5+n,\ J=m+n\).
+At order three, the largest possible ordinary degree
+of the product of its coefficient polynomials is
+\(2m+3n+3\), because the coefficient at loss \(j\)
+has degree at most \(2+j\) in \(F_1\) and \(3+j\)
+in \(F_2\). The required degree is \(5+m+2n\), so
+\(m+n\) is two or three.
+
+For \(m+n=2\) the bound is attained, and the contributing
+products are \(ad,\ ae+db,\ be\). From the displayed
+homogeneous pieces their required coefficients are
+\(3\nu,\ 5\nu,\ 2\nu\), respectively. With the
+derivatives and signs in (2), their contributions to
+the residue coefficient are \(-20(3\nu),\
+30(5\nu),\ -42(2\nu)\).
+For \(m+n=3\), each factor is of loss one, and the
+required degree is one below the maximum. The
+\(y\)-exponent must be three. Since \(a_3,b_4\)
+are pure powers of \(x\), the only contribution
+lies in a single lower cubic term \(\beta y^3\)
+of \(b\). The range of products with nonzero
+contributions is then \(a^2 b,\ ab^2,\ b^3\).
+Their coefficients are \(\beta,\ 2\beta,\ 3\beta\),
+with derivative factors \(60,-105,56\), respectively.
+All listed products yield \(z^{-1}\) after multiplying
+by \(\rho\). Therefore the residue coefficient is
+\[
+    -60\nu+150\nu-84\nu+60\beta-210\beta+168\beta
+                          =6(\nu+3\beta).
+ \tag{3}
+\]
+For a Keller map every fixed-level coefficient is
+exact by the rescaled determinant equation. Thus
+\(\beta=-\nu/3\).
+
+The same coefficient is constrained at three source weights.
+First use \((3,4,6)\). The leading tuple is
+\[
+        (yz^4,xyz^3,x^2y z^2+\phi y^4z)
+\]
+for \(\phi=[y^4z]F_3\). This follows from the displayed
+ordinary degree-six forms, the complete highest \(z\)-terms,
+and the degree-five bound on the remaining monomials.
+The first two entries fix \(A=yz^4\) and \(x/z\).
+Consequently \(\phi y^4z=\phi A^4/z^{15}\) must be
+constant in \(z\) by the zero leading determinant,
+so \(\phi=0\).
+
+At weights \((2,3,4)\) the leading tuple is
+\[
+ (yz^4,\ xyz^3+\beta y^3z^2,\
+                 x^2y z^2+\gamma xy^3z+\delta y^5).
+\]
+Again these are the monomials allowed by degree and the
+complete highest \(z\)-terms. On the first level write
+\(t=x/z,\ v=y^2/z^2\). Dividing the second and third
+entries by the first gives \(t+\beta v\) and
+\(t^2+\gamma t v+\delta v^2\).
+Fixing the first two entries leaves \(v=A^2/z^{10}\)
+nonconstant in \(z\). Substituting for \(t\) forces
+\(\gamma=2\beta,\ \delta=\beta^2\).
+
+Finally use weights \((3,4,5)\) and put \(P_\nu=xz+\nu y^2\).
+The leading forms, of weights \(24,22,20\), are
+\[
+ \begin{aligned}
+ A'&=P_\nu^3+yz^4,\\
+ B'&=P_\nu^2x^2+xyz^3+\beta y^3z^2,\\
+ C'&=P_\nu x^4+x^2y z^2+2\beta xy^3z+\beta^2y^5.
+ \end{aligned}
+\]
+The terms of \(L^2\) involving \(x\) have weight less
+than eight, so its highest part here is \(\nu y^2\).
+Among terms of ordinary degree at most five, those of
+smaller \(z\)-degree can tie only in the terms already
+listed, once \(\phi=0\). The determinant of the
+displayed triple must vanish, because its weight
+\(24+22+20-(3+4+5)\) is positive.
+On \(z=0\) the values are
+\(\nu^3y^6,\ \nu^2x^2y^4,\ \nu x^4y^2+\beta^2y^5\),
+and the \(z\)-derivatives are
+\(3\nu^2xy^4,\ 2\nu x^3y^2,\ x^5+2\beta xy^3\).
+The determinant on \(z=0\) is therefore
+\[
+                  6\beta\nu^4(5\beta-4\nu)x^2y^{12}.
+\]
+It is nonzero at \(\beta=-\nu/3\), since \(\nu\ne0\).
+This excludes the nonbinary case. The
+[exact checker](check_sextic_smooth_member_nonbinary_axial.py)
+reproduces the derivative in (3) by direct inversion
+of the first two levels, and checks the smaller-degree
+monomial ties and the restricted determinant. Run it
+from the repository root with Python and SymPy.
+
+## Inversion for quadratic outer maps on the tangent-conic pencil
+
+**Theorem SexticKellerTangentConicQuadraticOuterInversion.**
+Every characteristic-zero sextic Keller map in the
+quadratic outer case of the tangent-conic reduction is invertible.
+
+Work over the algebraic closure and use the three highest
+forms in the
+[squarefree nonpencil reduction](#quadratic-outer-maps-on-sextic-tangent-conic-pencils).
+In the smooth-common-factor case the nonbinary option
+is excluded above, and the
+[binary inversion theorem](#exclusion-of-the-coincident-quadratic-parameters)
+applies. The reduced in-pencil factor is
+[excluded](#exclusion-of-the-reduced-common-factor-in-the-pencil).
+In the doubled common-factor case, \(Q(0,y)\ne0\)
+is [excluded](#exclusion-of-the-transverse-veronese-tuple).
+If \(Q(0,y)=0\), write \(Q=x(\alpha x+\eta y)\).
+For \(\eta\ne0\), replace \(y\) by \(y+\alpha x/\eta\)
+and change \(z\) by a linear form to preserve the
+normal form of \(P\). After target scalings this
+is the [excluded reduced binary member](#exclusion-of-the-reduced-binary-member-with-a-doubled-common-factor).
+For \(\eta=0\), rescale \(Q\) to \(x^2\) and use
+[doubled square-member inversion](#inversion-in-the-doubled-square-member-frame).
+The unique polynomial inverse over the algebraic closure
+descends to the original field, for instance by faithful
+flatness of scalar extension applied to the coordinate rings.

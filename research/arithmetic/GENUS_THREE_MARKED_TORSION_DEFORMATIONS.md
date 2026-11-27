@@ -21,6 +21,11 @@ The separate [HG13–HG14 construction](GENUS_THREE_RANK_ZERO_THREE_SHA.md)
 now gives rank-zero genus-three Jacobians with arbitrarily large
 elementary three-Sha. It uses a different HLP elliptic family; the
 specific HG8 companion-rank problem remains open.
+The [HG15 obstruction](GENUS_THREE_MESTRE_DEGENERATIONS.md) excludes
+genus-three degenerations throughout the nondegenerate balanced affine
+Mestre ansatz with a nonzero cube leading coefficient. Further use of
+Mestre's method must leave that ansatz; the broader marked-norm and
+simple-Jacobian targets remain open.
 
 ## Primary comparison and the actual target
 

@@ -17,7 +17,7 @@ by \(\langle P\rangle\). Ordered or individually marked branch values
 require a smaller braid group and are distinguished below.
 
 The arbitrary-index-two subdomain is classified in the
-[mixture theorem]((INDEX_TWO_HURWITZ_MIXTURES.md\)). The full problem (1)
+[mixture theorem](INDEX_TWO_HURWITZ_MIXTURES.md). The full problem (1)
 remains open in this repository. The results here supply a complete
 two-factor classification, general block invariants and exact component
 classifications of selected higher-index passports. They do not constitute
@@ -361,7 +361,7 @@ different from the degree-fifteen odd-order passport in H7.
 ## Exact counting and retained evidence
 
 For arbitrary finite cycle classes \(C_i\subset S_N\), the derivation of
-the [class-product formula]((HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md#the-class-product-as-a-finite-difference\))
+the [class-product formula](HURWITZ_EXACT_CENSUS_AND_REMOVABLE_FACTORS.md#the-class-product-as-a-finite-difference)
 gives, for a fixed long cycle,
 \[
  \#\{g_1\cdots g_r=P\}
@@ -384,9 +384,9 @@ The individual factors can be fractional: in (10) each higher factor
 contributes (28/3). Rounding these factors would corrupt the total.
 Completeness of H7--H8 uses (11), not that comparison formula.
 
-The [checker]((verify_polynomial_passport_components.py\)),
-[receipt]((polynomial_passport_components_verification.json\)) and
-[source ledger]((polynomial_passport_components_source_ledger.json\))
+The [checker](verify_polynomial_passport_components.py),
+[receipt](polynomial_passport_components_verification.json) and
+[source ledger](polynomial_passport_components_source_ledger.json)
 retain exact representatives, group 3-cycle words, orbit digests,
 two-strand normal forms, centralizer checks, block quotients and return
 budgets, spin controls and the 18 refinement words. These are complete

@@ -2146,8 +2146,9 @@ Constructive finite etale fibres, arithmetic failures and discriminant geometry.
 | A genus-five Pell curve realizes the exceptional geometric direction and a genuine ordinary class | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
 | The fixed quartic Pell curve has no rational affine point for an extra class direction | Internal result | proved | [Source](PELL_VIRTUAL_ROWS_AND_AFFINE_FIBERS.md) |
 | Polynomial passport component reductions, rigid classification and exact higher-index splits | Internal result | proved | [Source](POLYNOMIAL_PASSPORT_COMPONENTS.md) |
+| Balanced affine cube-leading Mestre constructions cannot degenerate to genus three | Internal result | proved | [Source](GENUS_THREE_MESTRE_DEGENERATIONS.md) |
 
-**Computed obligations:** 196 unresolved; 37 resolved within their exact scope.
+**Computed obligations:** 197 unresolved; 37 resolved within their exact scope.
 
 
 Scope limits:

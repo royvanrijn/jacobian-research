@@ -112,7 +112,7 @@
   "proof_inputs": [
     {
       "path": "research/arithmetic/POLYNOMIAL_PASSPORT_COMPONENTS.md",
-      "sha256": "11daa1ef5698eb47e08fcf8a6ad6d5857a0785564b06b0103c89e4798077f1a1",
+      "sha256": "34df05a24fbe435ae3f0b2de7e5864be7e3f4a7607d0dfe496bd15a6317e20f0",
       "locator": "H1–H10; exact universal, finite and imported scopes and remaining full classification"
     },
     {
@@ -140,7 +140,7 @@
     "checker": "research/arithmetic/verify_polynomial_passport_components.py",
     "checker_sha256": "17339464fa9c7383e8aab0c99130f3cf64e2e89d39d3b06b991520e7e61850fb",
     "receipt": "research/arithmetic/polynomial_passport_components_verification.json",
-    "receipt_sha256": "3484e213ce51a6eb110a51c52045d9978914ee05a0e56ca2c17eb9cf0dedf5b8",
+    "receipt_sha256": "83c5ce649c42e95155d616ee007acc2b17abe282e70b4ce49a743b94e9c637fd",
     "command": "python3 research/arithmetic/verify_polynomial_passport_components.py",
     "working_directory": "Canonical Ubuntu-24.04 WSL repository root",
     "software": "Python3.12.3, standard library only, active assertions",
