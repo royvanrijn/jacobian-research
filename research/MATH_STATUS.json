@@ -10528,6 +10528,25 @@
           "external_review": false,
           "review_status": "internal_only",
           "verification_note": "Written weight descent, binary lifts, an elliptic-fibre differential, affine-output restrictions and a degree-five inverse completion giving planar degree at most thirty. The support and determinant controls were replayed internally with SymPy 1.14.0."
+        },
+        {
+          "id": "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-UNCORRECTED-AXIAL-THROUGH-THREE",
+          "title": "The uncorrected doubled square-member frame remains binary through axial weight three",
+          "scope": "If the doubled square-member highest tuple at (2,3,4) is uncorrected, the highest tuple at axial weights (1,1,w) for 2<w<3 is (x^4*z^2,x^5*z,x^6). At w=3 only the stated binary corrections can occur.",
+          "state": "proved",
+          "canonical_source": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+          "checker": "jacobian/monodromy-theory/check_sextic_doubled_square_uncorrected_axial.py",
+          "artifact_hash": "sha256:196b827bd4fcaf0e6021d30c2a9640d3dc87a5a714bb68f2360a3247aa37d8f9",
+          "evidence": [
+            "jacobian/monodromy-theory/check_sextic_doubled_square_third_mixed.py"
+          ],
+          "proof_type": "written proof with exact coefficient computations",
+          "dependency_coverage": "complete",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written rational-root lift and conic descent over the full polynomial constant ring. The support and determinant controls were replayed internally with SymPy 1.14.0."
         }
       ],
       "open_questions": [
@@ -10604,7 +10623,7 @@
           "source": "jacobian/monodromy-theory/KELLER_BOUNDARY_CUSP_PROFILES_AND_OREVKOV_INVARIANT.md"
         },
         {
-          "question": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. In the shared nonbinary case the first lower z coefficients a,b,c satisfy x^2*a-2*x*b+c proportional to x^3*y, and the highest tuple in (0,-1,1) is (W*z^3,x*W*z^2,x^2*W*z) with W=y*z+a(x,0). For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch is invertible. Its affine-in-z reduction has complete z-degrees (3,2,1); distinct quadratic parameters force inversion by restriction to a common-root plane. Coincident parameters have no Keller completion by the generic-level bracket and a critical-plane obstruction. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. The nonbinary doubled tie at weight 3/2 is also excluded by a divisor-regular slice. The doubled frame stays uncorrected below axial weight two and is binary there. At (2,3,4) its highest tuple is (x^2*P^2,x^4*P+k*x*P^2,x^6). The third-output mixed correction j is excluded by the axial tie analysis, a generic-fibre residue and an exact transverse bracket. The branch with k nonzero is invertible by the lower x-weight analysis and a controlled coordinate completion. Only the uncorrected tuple remains in this doubled frame. The shared nonbinary axial frame remains available in the smooth-common-factor case. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
+          "question": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. In the shared nonbinary case the first lower z coefficients a,b,c satisfy x^2*a-2*x*b+c proportional to x^3*y, and the highest tuple in (0,-1,1) is (W*z^3,x*W*z^2,x^2*W*z) with W=y*z+a(x,0). For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch is invertible. Its affine-in-z reduction has complete z-degrees (3,2,1); distinct quadratic parameters force inversion by restriction to a common-root plane. Coincident parameters have no Keller completion by the generic-level bracket and a critical-plane obstruction. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. The nonbinary doubled tie at weight 3/2 is also excluded by a divisor-regular slice. The doubled frame stays uncorrected below axial weight two and is binary there. At (2,3,4) its highest tuple is (x^2*P^2,x^4*P+k*x*P^2,x^6). The third-output mixed correction j is excluded by the axial tie analysis, a generic-fibre residue and an exact transverse bracket. The branch with k nonzero is invertible by the lower x-weight analysis and a controlled coordinate completion. Only the uncorrected tuple remains in this doubled frame. In this case the axial tuple stays uncorrected for 2<w<3 and at w=3 is binary, with possible corrections a*x*z^3, c*x^2*z^2, and f*x^3*z+e*z^2, respectively. The shared nonbinary axial frame remains available in the smooth-common-factor case. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
           "source": "jacobian/monodromy-theory/SEXTIC_KELLER_CUBIC_COMPONENT.md",
           "kind": "mathematical",
           "node": "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION"
@@ -294054,7 +294073,7 @@
       {
         "id": "GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION",
         "title": "Three-variable sextic Keller inversion",
-        "scope": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. In the shared nonbinary case the first lower z coefficients a,b,c satisfy x^2*a-2*x*b+c proportional to x^3*y, and the highest tuple in (0,-1,1) is (W*z^3,x*W*z^2,x^2*W*z) with W=y*z+a(x,0). For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch is invertible. Its affine-in-z reduction has complete z-degrees (3,2,1); distinct quadratic parameters force inversion by restriction to a common-root plane. Coincident parameters have no Keller completion by the generic-level bracket and a critical-plane obstruction. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. The nonbinary doubled tie at weight 3/2 is also excluded by a divisor-regular slice. The doubled frame stays uncorrected below axial weight two and is binary there. At (2,3,4) its highest tuple is (x^2*P^2,x^4*P+k*x*P^2,x^6). The third-output mixed correction j is excluded by the axial tie analysis, a generic-fibre residue and an exact transverse bracket. The branch with k nonzero is invertible by the lower x-weight analysis and a controlled coordinate completion. Only the uncorrected tuple remains in this doubled frame. The shared nonbinary axial frame remains available in the smooth-common-factor case. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
+        "scope": "Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The only remaining cubic has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. In the shared nonbinary case the first lower z coefficients a,b,c satisfy x^2*a-2*x*b+c proportional to x^3*y, and the highest tuple in (0,-1,1) is (W*z^3,x*W*z^2,x^2*W*z) with W=y*z+a(x,0). For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch is invertible. Its affine-in-z reduction has complete z-degrees (3,2,1); distinct quadratic parameters force inversion by restriction to a common-root plane. Coincident parameters have no Keller completion by the generic-level bracket and a critical-plane obstruction. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. The nonbinary doubled tie at weight 3/2 is also excluded by a divisor-regular slice. The doubled frame stays uncorrected below axial weight two and is binary there. At (2,3,4) its highest tuple is (x^2*P^2,x^4*P+k*x*P^2,x^6). The third-output mixed correction j is excluded by the axial tie analysis, a generic-fibre residue and an exact transverse bracket. The branch with k nonzero is invertible by the lower x-weight analysis and a controlled coordinate completion. Only the uncorrected tuple remains in this doubled frame. In this case the axial tuple stays uncorrected for 2<w<3 and at w=3 is binary, with possible corrections a*x*z^3, c*x^2*z^2, and f*x^3*z+e*z^2, respectively. The shared nonbinary axial frame remains available in the smooth-common-factor case. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case. In the nonbinary reduced case the lower pencil must contain the square of a quadratic. When the quartic ratio is itself closed, this case further requires the pure-power tuple (x^6,x^4,C). Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven.",
         "kind": "gap",
         "status": "open",
         "origin": "internal",
@@ -294501,27 +294520,27 @@
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f",
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419",
             "locator": "KellerSexticConicLeadingDiscriminantExclusion"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f",
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419",
             "locator": "SexticKellerTangentConicQuadraticOuterNonpencilSquarefreeExclusion"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f",
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419",
             "locator": "SexticKellerTangentConicReducedCommonFactorFirstCorrection"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f",
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419",
             "locator": "SexticKellerTangentConicReducedCommonFactorExclusion"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f",
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseFirstCorrection"
           },
           {
@@ -294542,82 +294561,82 @@
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseJetReduction",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseNormalForm",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseVeronese",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseNonzeroSlope",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorTransverseExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryMember",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryNonzeroTransverse",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryFirstLift",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicQuadraticOuterSquareMemberFirstTies",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicQuadraticOuterSquareMemberBinomialExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicDoubledSquareMemberWeightThreeHalves",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberWeightTwo",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicDoubledSquareMemberBinaryRefinement",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerDoubledSquareMixedLowXWeights",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerDoubledMixedCoprimeAffineOutputInversion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/KELLER_LEADING_PAIR_DE_RHAM_OBSTRUCTION.md",
@@ -294627,97 +294646,102 @@
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerDoubledSquareMixedExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberBinaryExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberWeightThreeReduction",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberNonzeroAxialCoefficient",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberTransverseReduction",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberTransverseCuspExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberNonzeroCoefficientExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberAffineOutput",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberQuadraticParameters",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberDistinctParameterInversion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberCoincidentParameterExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicSmoothSquareMemberBinaryInversion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicNonbinaryAxialFirstCorrection",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicDoubledSquareMemberAxialThroughTwo",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicDoubledSquareMemberWeight234Reduction",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerDoubledSquareNonzeroMixedCoefficientsExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerDoubledSquareQuarticThirdCorrectionExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerDoubledSquareThirdMixedCorrectionExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           },
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerDoubledSquareSecondMixedCorrectionInversion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
+          },
+          {
+            "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+            "locator": "SexticKellerDoubledSquareUncorrectedAxialThroughThree",
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           }
         ]
       },
@@ -300828,7 +300852,7 @@
         "sources": [
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f",
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419",
             "locator": "KellerSexticConicLeadingDiscriminantExclusion"
           }
         ],
@@ -301407,7 +301431,7 @@
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "KellerTransverseVeroneseLeadingExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           }
         ],
         "topic": "jacobian",
@@ -301782,7 +301806,7 @@
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "KellerQuadraticAffineOutputRootRestriction",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           }
         ],
         "topic": "jacobian",
@@ -302154,7 +302178,7 @@
         "sources": [
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f",
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419",
             "locator": "KellerConicQuadraticFibreDifferential"
           }
         ]
@@ -302316,7 +302340,7 @@
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "SexticKellerTangentConicNonbinaryAxialFirstCorrection",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           }
         ]
       },
@@ -302728,7 +302752,7 @@
           {
             "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
             "locator": "KellerTwoQuarticTransversePartsAffineOutputExclusion",
-            "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+            "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
           }
         ]
       },
@@ -485938,7 +485962,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f",
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419",
           "locator": "SexticKellerTangentConicQuadraticOuterNonpencilSquarefreeExclusion"
         }
       },
@@ -486020,7 +486044,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f",
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419",
           "locator": "SexticKellerTangentConicReducedCommonFactorFirstCorrection"
         }
       },
@@ -486036,7 +486060,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f",
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419",
           "locator": "SexticKellerTangentConicReducedCommonFactorExclusion"
         }
       },
@@ -486114,7 +486138,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f",
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseFirstCorrection"
         }
       },
@@ -486292,7 +486316,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseJetReduction",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -486520,7 +486544,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseNormalForm",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -486583,7 +486607,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseVeronese",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -486675,7 +486699,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseNonzeroSlope",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -486818,7 +486842,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorTransverseExclusion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -486834,7 +486858,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryMember",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -486895,7 +486919,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryNonzeroTransverse",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -486910,7 +486934,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryFirstLift",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -486975,7 +486999,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSquareCommonFactorReducedBinaryExclusion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487020,7 +487044,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicQuadraticOuterSquareMemberFirstTies",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487035,7 +487059,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicQuadraticOuterSquareMemberBinomialExclusion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487049,7 +487073,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicDoubledSquareMemberWeightThreeHalves",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487113,7 +487137,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberWeightTwo",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487404,7 +487428,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicDoubledSquareMemberBinaryRefinement",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487455,7 +487479,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerDoubledSquareMixedLowXWeights",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487471,7 +487495,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerDoubledMixedCoprimeAffineOutputInversion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487743,7 +487767,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerDoubledSquareMixedExclusion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487775,7 +487799,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberBinaryExclusion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487876,7 +487900,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberWeightThreeReduction",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487891,7 +487915,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberNonzeroAxialCoefficient",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487972,7 +487996,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberTransverseReduction",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -487987,7 +488011,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberTransverseCuspExclusion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -488124,7 +488148,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberNonzeroCoefficientExclusion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -488216,7 +488240,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberAffineOutput",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -488232,7 +488256,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberQuadraticParameters",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -488246,7 +488270,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberDistinctParameterInversion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -488274,7 +488298,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberCoincidentParameterExclusion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -488289,7 +488313,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicSmoothSquareMemberBinaryInversion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -488440,7 +488464,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicDoubledSquareMemberAxialThroughTwo",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -488457,7 +488481,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerTangentConicDoubledSquareMemberWeight234Reduction",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -488819,7 +488843,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerDoubledSquareNonzeroMixedCoefficientsExclusion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -488835,7 +488859,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerDoubledSquareQuarticThirdCorrectionExclusion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -488958,7 +488982,7 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerDoubledSquareThirdMixedCorrectionExclusion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       },
       {
@@ -489377,7 +489401,21 @@
         "proof": {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
           "locator": "SexticKellerDoubledSquareSecondMixedCorrectionInversion",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f"
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
+        }
+      },
+      {
+        "id": "DERIVE-JAC-SEXTIC-KELLER-DOUBLED-SQUARE-UNCORRECTED-AXIAL-THROUGH-THREE",
+        "premises": [
+          "JAC-SEXTIC-KELLER-TANGENT-CONIC-DOUBLED-SQUARE-MEMBER-WEIGHT-234"
+        ],
+        "conclusion": "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-UNCORRECTED-AXIAL-THROUGH-THREE",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "proof": {
+          "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
+          "locator": "SexticKellerDoubledSquareUncorrectedAxialThroughThree",
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419"
         }
       }
     ],
@@ -549644,11 +549682,12 @@
           "citation": "Adam W. Marcus, Daniel A. Spielman and Nikhil Srivastava, Probability Theory and Related Fields 182 (2022), 807–848, Theorem 1.3.",
           "urls": [
             "https://doi.org/10.1007/s00440-021-01105-w",
-            "https://link.springer.com/article/10.1007/s00440-021-01105-w"
+            "https://link.springer.com/article/10.1007/s00440-021-01105-w",
+            "https://arxiv.org/pdf/1504.00350v2"
           ],
           "resource_type": "paper",
           "verification": "source_read",
-          "verification_basis": "Read Theorem 1.3 in the journal article for Walsh's real-rootedness preserver.",
+          "verification_basis": "Read Theorem 1.3 in the journal article for Walsh's real-rootedness preserver. Also inspected arXiv v2 Lemma 1.15 and its coefficient/differentiation proof on printed page 9 for the exact fixed-slot hypothesis comparison; this does not prove changing-slot interlacing.",
           "local_sources": [],
           "uses": [
             {
@@ -549657,6 +549696,15 @@
               "role": "mathematical_input",
               "nodes": [
                 "FACTORIAL-MULTIVARIATE-PHYSICAL-MULTIBLOCK-MERGER-MATCHINGS"
+              ]
+            },
+            {
+              "path": "factorial/image-rigidity/SFC_PHYSICAL_MULTIBLOCK_MERGER_MATCHINGS.md",
+              "locator": "Exact adjacent slot shifts: arXiv:1504.00350v2 Lemma 1.15, printed page 9; fixed-factor degree reduction versus changing physical slots",
+              "role": "context",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-PHYSICAL-MULTIBLOCK-MERGER-MATCHINGS",
+                "GAP-FACTORIAL-MULTIBLOCK-MERGER-ALL-ORDER-INTERLACING"
               ]
             }
           ]
@@ -659992,25 +660040,40 @@
         },
         {
           "path": "factorial/image-rigidity/SFC_PHYSICAL_MULTIBLOCK_MERGER_MATCHINGS.md",
-          "sha256": "0e1273bf07d2cb6d74716b84e2dbba3d628714c954a866cb899035c5703425c5",
+          "sha256": "89ab13f1c75d8ae25ae409196cd497f49d89830bd0a7c6dd295c97c3e6e877d0",
           "role": "proof",
           "claims": [
             "FACTORIAL-MULTIVARIATE-PHYSICAL-MULTIBLOCK-MERGER-MATCHINGS"
           ],
           "dependencies": [
             "FACTORIAL-MULTIVARIATE-PHYSICAL-MIRRORED-ROOT-CIRCLE",
-            "FACTORIAL-MULTIVARIATE-PHYSICAL-MIRROR-MERGER-EDGE"
+            "FACTORIAL-MULTIVARIATE-PHYSICAL-MIRROR-MERGER-EDGE",
+            "INPUT-MULTIBLOCK-MERGER-EUCLIDEAN-CERTIFICATES"
           ],
-          "gaps": [],
+          "gaps": [
+            "GAP-FACTORIAL-MULTIBLOCK-MERGER-ALL-ORDER-INTERLACING"
+          ],
           "statements": [
             {
               "locator": "Theorem.** Locally uniformly in complex \\(u\\),",
               "nodes": [
                 "FACTORIAL-MULTIVARIATE-PHYSICAL-MULTIBLOCK-MERGER-MATCHINGS"
               ]
+            },
+            {
+              "locator": "Theorem.** Start Euclidean division with the monic polynomials",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-PHYSICAL-MULTIBLOCK-MERGER-MATCHINGS"
+              ]
+            },
+            {
+              "locator": "Corollary.** The merger limit polynomials \\(p_n,p_{n+1}\\) strictly",
+              "nodes": [
+                "FACTORIAL-MULTIVARIATE-PHYSICAL-MULTIBLOCK-MERGER-MATCHINGS"
+              ]
             }
           ],
-          "explanation": "The scaled merger polynomial of finitely many ordinary mirrored blocks is a finite free additive convolution with simple real roots. It is exactly the expected weighted matching polynomial of a colored permutation graph. Strict adjacent-order interlacing of general multiblock limits remains open."
+          "explanation": "Exact merger and matching representation, adjacent slot shifts, four positive Euclidean pivots at every start, and strict merger-limit interlacing through upper degree six. Later pivots and unrestricted SFC remain open."
         },
         {
           "path": "factorial/image-rigidity/SFC_PHYSICAL_ROW_MERGE_INTERIOR_COLLISION.md",
@@ -791004,7 +791067,7 @@
         },
         {
           "path": "jacobian/monodromy-theory/SEXTIC_KELLER_TANGENT_CONIC_QUADRATIC_OUTER.md",
-          "sha256": "7b145027cab39d2880037e435e3df11356cd88874fd4426d00619c30d14cbb6f",
+          "sha256": "9febfee3223eb2a0a65dfbc59852f701ae46141d4be246a356bcbbe974545419",
           "role": "proof",
           "claims": [
             "JAC-KELLER-SEXTIC-CONIC-LEADING-DISCRIMINANT-EXCLUSION",
@@ -791050,7 +791113,8 @@
             "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-NONZERO-MIXED-COEFFICIENTS-EXCLUSION",
             "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-QUARTIC-THIRD-CORRECTION-EXCLUSION",
             "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-THIRD-MIXED-CORRECTION-EXCLUSION",
-            "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-SECOND-MIXED-CORRECTION-INVERSION"
+            "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-SECOND-MIXED-CORRECTION-INVERSION",
+            "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-UNCORRECTED-AXIAL-THROUGH-THREE"
           ],
           "dependencies": [
             "JAC-KELLER-LEADING-PAIR-RATIONAL-SLICE",
@@ -791507,9 +791571,19 @@
                 "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-SECOND-MIXED-CORRECTION-INVERSION"
               ],
               "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "Theorem SexticKellerDoubledSquareUncorrectedAxialThroughThree.",
+              "kind": "theorem",
+              "line": 6598,
+              "title": "Theorem SexticKellerDoubledSquareUncorrectedAxialThroughThree.",
+              "nodes": [
+                "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-UNCORRECTED-AXIAL-THROUGH-THREE"
+              ],
+              "mapping_kind": "exact-statement"
             }
           ],
-          "explanation": "Excludes squarefree factors outside the pencil and the reduced in-pencil factor, and lifts degree-five terms with square common factor and a transverse lower quadratic into a Veronese reference. The doubled common-factor branch with a transverse binary member has explicit divisibility through its first two correction orders. It also determines the transverse highest tuple and absorbs the entire degree-four correction in this branch. The possible transverse discriminant scalar is excluded by a second-order pole comparison. The chart with zero linear slope is excluded by comparing two localized constant rings. A highest determinant coefficient after fixing x and x*z+mu*y excludes the whole doubled common-factor branch with a transverse binary member. For the remaining reduced binary member with a doubled common factor it fixes the first nonbinary weighted frame. The surviving reduced binary member reaches a single parameter lift at the next transverse weight. Comparing the quadratic transverse coefficient with the ordinary sextic excludes the reduced binary member. Integral lifts exclude the early axial ties in the two remaining square-member frames, apart from explicit conic binomials. A first weight change in the unused variable excludes both binomial ties. The next doubled-frame weight is confined to a binary tuple or one axial coefficient form. The first smooth-frame weight has its own binary tuple and the same nonbinary axial normal form. The nontrivial binary doubled-frame tie is reduced to a single mixed correction and its required next weight. In the binary mixed frame an affine transverse component forces residue restrictions and gives inversion under a coprimality hypothesis. A transverse-weight calculation and the low-degree generic-level bracket exclude the binary mixed doubled frame. The smooth-common-factor binary tie at weight two is excluded by two leading-fibre slice obstructions. An exact coefficient ideal calculation and a relative logarithmic residue give the next smooth-common-factor highest tuple through axial weight three. For a nonzero remaining weight-three coefficient, a regular differential on a double cover of an elliptic curve gives the complete axial degrees. A relative differential lemma for a conic and a quadratic in z then restricts the nonzero-coefficient transverse branch to two tuples. At transverse weight, the cusp argument and exact weight-zero determinant exclude the tuple with linear y coefficient. The exact bracket on a generic level of the quadratic output excludes the remaining nonzero weight-three coefficient. The remaining binary smooth-common-factor branch has an affine transverse output, a divisibility relation and two possible quadratic parameters. The coincident-parameter exclusion completes inversion for the smooth-common-factor binary branch. The first two determinant coefficients give the next highest tuple in the shared nonbinary axial case. Divisorial regularity and a classification of generic-fibre differentials reduce the doubled square-member frame at weights (2,3,4). Two lower-x-weight descents now use a shared affine-output bracket to exclude the quartic third correction and the simultaneous mixed coefficients. The isolated third-output mixed correction is excluded by further axial weights, including one exact radical calculation and a residue obstruction, followed by the exact fibre bracket. The second-output mixed correction is settled by first ties, an elliptic fibre and an affine coordinate completion."
+          "explanation": "Excludes squarefree factors outside the pencil and the reduced in-pencil factor, and lifts degree-five terms with square common factor and a transverse lower quadratic into a Veronese reference. The doubled common-factor branch with a transverse binary member has explicit divisibility through its first two correction orders. It also determines the transverse highest tuple and absorbs the entire degree-four correction in this branch. The possible transverse discriminant scalar is excluded by a second-order pole comparison. The chart with zero linear slope is excluded by comparing two localized constant rings. A highest determinant coefficient after fixing x and x*z+mu*y excludes the whole doubled common-factor branch with a transverse binary member. For the remaining reduced binary member with a doubled common factor it fixes the first nonbinary weighted frame. The surviving reduced binary member reaches a single parameter lift at the next transverse weight. Comparing the quadratic transverse coefficient with the ordinary sextic excludes the reduced binary member. Integral lifts exclude the early axial ties in the two remaining square-member frames, apart from explicit conic binomials. A first weight change in the unused variable excludes both binomial ties. The next doubled-frame weight is confined to a binary tuple or one axial coefficient form. The first smooth-frame weight has its own binary tuple and the same nonbinary axial normal form. The nontrivial binary doubled-frame tie is reduced to a single mixed correction and its required next weight. In the binary mixed frame an affine transverse component forces residue restrictions and gives inversion under a coprimality hypothesis. A transverse-weight calculation and the low-degree generic-level bracket exclude the binary mixed doubled frame. The smooth-common-factor binary tie at weight two is excluded by two leading-fibre slice obstructions. An exact coefficient ideal calculation and a relative logarithmic residue give the next smooth-common-factor highest tuple through axial weight three. For a nonzero remaining weight-three coefficient, a regular differential on a double cover of an elliptic curve gives the complete axial degrees. A relative differential lemma for a conic and a quadratic in z then restricts the nonzero-coefficient transverse branch to two tuples. At transverse weight, the cusp argument and exact weight-zero determinant exclude the tuple with linear y coefficient. The exact bracket on a generic level of the quadratic output excludes the remaining nonzero weight-three coefficient. The remaining binary smooth-common-factor branch has an affine transverse output, a divisibility relation and two possible quadratic parameters. The coincident-parameter exclusion completes inversion for the smooth-common-factor binary branch. The first two determinant coefficients give the next highest tuple in the shared nonbinary axial case. Divisorial regularity and a classification of generic-fibre differentials reduce the doubled square-member frame at weights (2,3,4). Two lower-x-weight descents now use a shared affine-output bracket to exclude the quartic third correction and the simultaneous mixed coefficients. The isolated third-output mixed correction is excluded by further axial weights, including one exact radical calculation and a residue obstruction, followed by the exact fibre bracket. The second-output mixed correction is settled by first ties, an elliptic fibre and an affine coordinate completion. The uncorrected doubled frame has a binary axial reduction through weight three."
         },
         {
           "path": "arithmetic/MARKED_OCTIC_BETA_CUBIC_SCALE_CLASSIFICATION.md",
@@ -794279,7 +794353,8 @@
           "path": "jacobian/monodromy-theory/check_sextic_doubled_square_third_mixed.py",
           "claims": [
             "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-THIRD-MIXED-CORRECTION-EXCLUSION",
-            "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-SECOND-MIXED-CORRECTION-INVERSION"
+            "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-SECOND-MIXED-CORRECTION-INVERSION",
+            "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-UNCORRECTED-AXIAL-THROUGH-THREE"
           ],
           "dependencies": [],
           "gaps": [],
@@ -794404,7 +794479,7 @@
             {
               "locator": "Theorem M7. All-degree mixed connectivity, extraction and restoration",
               "kind": "theorem",
-              "line": 249,
+              "line": 250,
               "title": "Theorem M7. All-degree mixed connectivity, extraction and restoration",
               "nodes": [
                 "ARITH-MIXED-HURWITZ-ALL-DEGREE-CONNECTIVITY"
@@ -794464,6 +794539,42 @@
           "role": "evidence",
           "explanation": "Exact support and determinant calculations for the second-output mixed correction.",
           "sha256": "0e44c0a8775efe84caa12dd8a124ea3a7ff3578fb0d8fe244168a13abd5e7380"
+        },
+        {
+          "path": "factorial/image-rigidity/verify_multiblock_merger_euclidean_pivots.py",
+          "sha256": "69396d955257178b9887cbe66b6b64f3e11469f48b7be22005f6c6507df83172",
+          "role": "evidence",
+          "claims": [
+            "INPUT-MULTIBLOCK-MERGER-EUCLIDEAN-CERTIFICATES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Sixteen unrestricted symbolic positivity certificates; 64 exact rational controls and a negative control have separate bounded scopes."
+        },
+        {
+          "path": "factorial/image-rigidity/multiblock_merger_euclidean_pivots_verification.json",
+          "sha256": "e47acbbae3b50cfc7cd54471652535e23ededeb972520f000c5ac4576ab21681",
+          "role": "evidence",
+          "claims": [
+            "INPUT-MULTIBLOCK-MERGER-EUCLIDEAN-CERTIFICATES"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Sixteen unrestricted symbolic positivity certificates; 64 exact rational controls and a negative control have separate bounded scopes."
+        },
+        {
+          "path": "jacobian/monodromy-theory/check_sextic_doubled_square_uncorrected_axial.py",
+          "claims": [
+            "JAC-SEXTIC-KELLER-DOUBLED-SQUARE-UNCORRECTED-AXIAL-THROUGH-THREE"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "role": "evidence",
+          "explanation": "Exact support and determinant calculations for the uncorrected doubled-square axial reduction.",
+          "sha256": "196b827bd4fcaf0e6021d30c2a9640d3dc87a5a714bb68f2360a3247aa37d8f9"
         }
       ]
     },
