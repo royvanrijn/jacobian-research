@@ -641,11 +641,10 @@ where \(k\ge0\), \(e\ge1\), \(p\) is odd prime and
  T_k=\operatorname{Res}_Z((2k+1)!\,S_k(Z),(2k+1)!\,S_k(2Z)),
  \qquad T_0=1 .
 \]
-If \(p\nmid T_k\) and either \(e=1\) or \(2\) is a
-quadratic nonresidue modulo \(p\), the Gaussian gate
-closes over characteristic zero. In particular this
-covers all odd prime starts and all powers of every odd
-prime at which \(2\) is a nonresidue.
+If \(p\nmid T_k\), the Gaussian gate closes over characteristic
+zero for every \(e\ge1\). In particular this covers every odd
+prime-power start. The [shared-edge lifting argument](SFC_ODD_GAUSSIAN_SHARED_EDGE_LIFTING.md)
+completes the quadratic-residue case of the Newton reduction.
 
 Let \(P=p^e\) and \(L=\sum_{d=1}^e p^{-d}\).
 Since \(2q<p^{e+1}\), the reduction argument of
@@ -752,6 +751,10 @@ coefficients is \(2^{-D_d}\equiv
 coefficients and excludes a common root. Such edges
 are absent for \(e=1\). When \(2\) is a residue and
 these slopes occur, their initial binomials agree.
+The [two-layer combination](SFC_ODD_GAUSSIAN_SHARED_EDGE_LIFTING.md#3-two-cancellations-leave-a-monomial)
+cancels those initial terms and their next layer. It leaves one
+strictly least monomial that the quadratic perturbation cannot
+cancel, excluding these shared edges in the residue case too.
 
 For the last shared slope \(-L\), put
 \(\lambda=PL\) and \(Z=(-1)^\lambda 2x^{2P}/p^\lambda\).

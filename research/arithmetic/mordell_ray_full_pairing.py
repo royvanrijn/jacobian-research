@@ -4,6 +4,7 @@
 Run with the repository's SageMath 10.9 / PARI 2.17.3 environment.
 Generation searches for norms; verification never invokes a norm solver.
 All off-diagonal entries are evaluated, including the coordinate at 3.
+The alternating outer-product formula and compressed rank are checked too.
 Diagonal zero comes from alternation; skew symmetry is checked afterwards.
 Global correctness uses the written proof in MORDELL_RAY_CASSELS_TATE_PAIRING.md.
 """
@@ -108,12 +109,36 @@ def norm_worker(method):
     print(json.dumps(dict(coefficients=[encode_k(c) for c in co],assembly=assembly,factorization=fac)))
 
 
+def alternating_form(basis,logs,d3,tame,auxiliary):
+    """MCT14: construct an alternating matrix and its compressed congruence form."""
+    FF=GF(3);n=len(basis)
+    e=vector(FF,[v[0] for v in d3]);f=vector(FF,[v[1] for v in d3])
+    alpha=vector(FF,[v[0] for v in logs]);upsilon=vector(FF,[v[1] for v in logs])
+    pairs=[(FF(1),e,upsilon),(FF(2),f,alpha)]
+    for rec in tame:
+        u=vector(FF,n);u[basis.index(ZZ(rec['prime']))]=1
+        pairs.append((FF(rec['valuation']),vector(FF,rec['exponents']),u))
+    for rec in auxiliary:
+        pairs.append((FF(rec['degree'])**(-1),vector(FF,rec['valuations']),vector(FF,rec['residues'])))
+    def wedge(u,v):return u.column()*v.row()-v.column()*u.row()
+    form=sum((c*wedge(u,v) for c,u,v in pairs),matrix(FF,n))
+    columns=matrix(FF,[list(v) for c,u,vv in pairs for v in (u,vv)]).transpose()
+    W=columns.column_space().basis_matrix().transpose()
+    r=W.ncols();J=matrix(FF,r)
+    for c,u,v in pairs:
+        J+=c*wedge(W.solve_right(u),W.solve_right(v))
+    assert form==W*J*W.transpose() and form.rank()==J.rank()
+    compressed=dict(basis=[[int(v) for v in row] for row in W.rows()],
+                    matrix=[[int(v) for v in row] for row in J.rows()],rank=int(J.rank()))
+    return form,compressed
+
+
 def evaluate(R,inputs=None,precision=18,norm_timeout=20,quiet=False,norm_method="auto",complete=False):
     R=ZZ(R)
     assert R>1 and R.is_squarefree() and gcd(R,6)==1
     assert all(q%3==2 and kronecker(-2,q)==-1 for q in R.prime_divisors())
     t0=monotonic()
-    records=[]
+    records=[];tame_vectors=[];auxiliary_vectors=[]
     def report(*args,**kw):
         if not quiet:print(*args,**kw)
     def record(kind,prime,m):
@@ -371,6 +396,7 @@ def evaluate(R,inputs=None,precision=18,norm_timeout=20,quiet=False,norm_method=
         assert mpr.ramification_index()==3
         # rho is a uniformizer at every q|R.
         assert rho.valuation(mpr)==1
+        kappas=[0]*len(basis)
         for j,p in enumerate(basis):
             if p!=q:continue
             va=afs[j].valuation(fpr)
@@ -382,7 +408,9 @@ def evaluate(R,inputs=None,precision=18,norm_timeout=20,quiet=False,norm_method=
                 rr=pari.nfmodpr(nfm,unit,mpr.pari_prime())**((q**mpr.residue_class_degree()-1)//3)
                 zz=pari.nfmodpr(nfm,zm,mpr.pari_prime())
                 log=next(e for e in range(3) if zz**e==rr)
+                kappas[i]=int(log)
                 local[i,j]+=inv3deg(2)*log*va
+        tame_vectors.append(dict(prime=str(q),valuation=int(va%3),exponents=kappas))
         mat+=local;record('bad',q,local)
     report('after tame bad primes',mat.list(),flush=True)
     for q in sorted(aux-{2,3}-set(ps)):
@@ -392,6 +420,7 @@ def evaluate(R,inputs=None,precision=18,norm_timeout=20,quiet=False,norm_method=
         logsq=[logres(af,fpr) for af in afs]
         vqis=[b.valuation(mpr)%3 for b in betas]
         deg=fpr.residue_class_degree()
+        auxiliary_vectors.append(dict(prime=str(q),degree=int(deg),valuations=list(map(int,vqis)),residues=list(map(int,logsq))))
         for i,v in enumerate(vqis):
             for j,l in enumerate(logsq):
                 if i!=j:local[i,j]-=inv3deg(deg)*v*l
@@ -399,9 +428,15 @@ def evaluate(R,inputs=None,precision=18,norm_timeout=20,quiet=False,norm_method=
         if any(vqis) and any(logsq):report('aux contribution',q,vqis,logsq,flush=True)
     report('MATRIX',R,basis,mat,monotonic()-t0,flush=True)
     assert mat+mat.transpose()==0, 'Off-diagonal entries fail skew symmetry'
+    outer,compressed=alternating_form(basis,logs,d3,tame_vectors,auxiliary_vectors)
+    assert outer==mat,'Alternating outer-product formula differs from direct entries'
     result=dict(R=int(R),basis=[int(p) for p in basis],representatives=[encode_k(reps[q]) for q in basis],norm_coefficients=encoded_norms,denominator_factorizations=factorizations,precision=N,points3=[None if P is None else [str(P[0]),str(P[1])] for P in localpts],rho3=str(rc) if eps else None,local_basis3=[list(map(int,v)) for v in logs],local_descent3=[list(map(int,v)) for v in d3],contributions=records,matrix=[[int(v) for v in row] for row in mat.rows()])
     if any(a is not None for a in assemblies) or (inputs is not None and 'norm_assembly' in inputs):result['norm_assembly']=assemblies
-    if inputs is not None:assert result==inputs,'Certificate output does not match exact replay'
+    result['local_vectors']=dict(tame=tame_vectors,auxiliary=auxiliary_vectors,compressed=compressed)
+    if inputs is not None:
+        expected=certificate_deepcopy(inputs)
+        expected.setdefault('local_vectors',result['local_vectors'])
+        assert result==expected,'Certificate output does not match exact replay'
     return result
 
 def compare_controls(cases):
@@ -483,7 +518,7 @@ def main():
     if args.compare_controls:compare_controls(cases)
     if args.self_test:negative_controls(cases)
     print('PASS: full off-diagonal local-symbol evaluation; exact norms, Hensel bounds, '
-          'local cube descent and all auxiliary primes checked. Written global proof '
+          'local cube descent, all auxiliary primes, alternating formula and compressed rank checked. Written global proof '
           'and common Weil sign remain separate.')
 
 if __name__=='__main__':

@@ -1036,7 +1036,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Divisor sieve for factorial windows under one row translation | Internal result | proved | [Source](image-rigidity/SFC_ROW_TRANSLATION_DIVISOR_SIEVE.md) |
 | Fixed factorial window decisions under independent common heights | Internal result | proved | [Source](image-rigidity/SFC_INDEPENDENT_COMMON_HEIGHT_DECISION.md) |
 | Initial factorial window for every common translate of 1, X, Y² | Internal result | proved | [Source](image-rigidity/SFC_INDEPENDENT_COMMON_HEIGHT_DECISION.md) |
-| Quadratic Gaussian windows at prime starts and large prime-power divisors | Internal result | proved | [Source](image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md) |
+| Quadratic Gaussian windows at all odd prime powers and dominant divisors | Internal result | proved | [Source](image-rigidity/SFC_ODD_GAUSSIAN_LOCAL_WINDOW_TESTS.md) |
 | Independent-height window decisions for any number of doubled degree classes | Internal result | proved | [Source](image-rigidity/SFC_MULTIPLE_DOUBLED_DEGREE_INDEPENDENT_HEIGHTS.md) |
 | Gaussian jets and first lifting tests for all bivariate common heights | Internal result | proved | [Source](image-rigidity/SFC_BIVARIATE_TRANSLATION_GAUSSIAN_JETS.md) |
 | Higher Gaussian lifting and integer height obstructions for homogeneous bivariate supports | Internal result | proved | [Source](image-rigidity/SFC_HOMOGENEOUS_CENTERED_HIGHER_LIFT.md) |
@@ -1069,6 +1069,7 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Three factorial moments suffice at starts 2^k-5 of the quadratic triangle | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_EARLIER_DYADIC_WINDOWS.md) |
 | Three factorial moments suffice at starts 2^k-6 of the quadratic triangle | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_EARLIER_DYADIC_WINDOWS.md) |
 | Three factorial moments suffice at starts 2^k-7 of the quadratic triangle | Internal result | proved | [Source](image-rigidity/SFC_TRIANGLE_EARLIER_DYADIC_WINDOWS.md) |
+| Explicit corner cutoffs for factorial families with nonliftable Gaussian zeros | Internal result | proved | [Source](image-rigidity/SFC_EXPLICIT_GAUSSIAN_NONLIFTING_CUTOFF.md) |
 
 **Computed obligations:** 71 unresolved; 37 resolved within their exact scope.
 
@@ -1198,6 +1199,8 @@ Scope limits:
 - All three second-radius low foreign candidate classes now have explicit simultaneous residue solutions in the cubic-axis XY model, for every block quotient. This isolates the need for higher-precision actual-moment equations at that radius.
 - The D=1 monomial triangle has an all-order simplex recurrence. Four moments suffice in every window and three suffice at each odd-prime-power window start; the remaining three-moment windows stay explicit.
 - Gaussian common zeros need not prevent a fixed-window corner theorem. For offsets (0,9k),(3k,6k),(4k,5k),(9k,0) at every fixed positive integer k, two genuine Gaussian zeros cannot lift: the integral forced difference is k+2k^3 and the fifth jet is nonzero. A nonreal next height correction excludes real gamma heights as well. Orders 1,2,3,5 are not consecutive, and no numerical or uniform-in-k cutoff is claimed.
+- The four-column nonlifting family has an explicit sufficient cutoff H(k). At k=1, both heights greater than 2^373029362779174993920000137 ensure nonvanishing among orders 1,2,3,5. This enormous theoretical bound follows from Basu–Roy and does not compute the exceptional set. Every already excluded odd-start trinomial Gaussian window also has an explicit support-dependent cutoff; all remaining odd starts stay open.
+- Every odd prime-power start now has a zero-free quadratic Gaussian window and hence a computable independent-height corner exclusion for each fixed homogeneous bivariate trinomial support. The same-point two-layer Hermite combination removes the former quadratic-residue restriction in the dominant initial family. Starts q=(2k+1)p^e still require p>4k+2 and p not dividing T_k. General odd starts remain open; q=5*13^e is a concrete final-slope residue exception to that method.
 
 Tracked obligations (computed states):
 

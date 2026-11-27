@@ -24,13 +24,10 @@ reducible in both alternatives.
 Use the nonbinary frame of the preceding theorem. Denote the
 parts immediately below \(A,B,C\) by \(A_5,B_4,C_3\), respectively.
 Then \(A_5-2x B_4+x^2C_3\) belongs to \(\langle x^5,xC\rangle\).
-Restrict \(G=(B_4-xC_3)(1,y,z)\) to the level
-\(C(1,y,z)=-5\lambda\). In either of the two linear-in-\(z\)
-forms with two places at infinity, restrict to the open
-parametrization with nonzero \(y\) in the normalized frame.
-There \(G\) is constant or constant plus one Laurent monomial.
-In either of the two one-place forms, the level has a polynomial
-affine-line parameter and \(G\) is affine in that parameter.
+The level \(C(1,y,z)=-5\lambda\) must be reducible. Thus only
+the two-place area forms survive, at their reducible level.
+On the component of this level meeting \(y\ne0\) in the
+normalized plane frame, \((B_4-xC_3)(1,y,z)\) is constant.
 
 **Theorem SexticKeller654IrreducibleQuintic.**
 For \((d,e)=(5,4)\), suppose \(B\) is irreducible and \(C\) is
@@ -315,7 +312,7 @@ geometric generic level of \(K\), after multiplication by
 the constant \(K+5\lambda\) there. This applies the exact
 area boundary theorem.
 
-## The first correction on the nonbinary discriminant level
+## Descent on the nonbinary discriminant level
 
 Use the actual quartic component \(F_4\) in the reference tuple
 \((x^2F_4+(5/3)\lambda x^6,\ xF_4+\lambda x^5,\ F_4)\).
@@ -331,10 +328,20 @@ Here \(h\) belongs to the constant ring \(k[x,C]\) and is
 nonzero. The homogeneous degree-five part of that ring is
 \(\langle x^5,xC\rangle\), giving the first assertion.
 
-Now rescale the whole map in an indeterminate \(\epsilon\),
+More generally use a reference \((G_A(x,F_4),G_B(x,F_4),F_4)\)
+with the same leading tuple, giving \(x,F_4\) weights one and
+four. Let \(r\ge1\) be the smallest degree loss in its error
+from \(F\), and write \(E_A,E_B\) for the error parts of degrees
+\(6-r,5-r\), with a missing part set to zero. The same normal
+calculation gives \(E_A-2xE_B=D(x,C)\) in \(k[x,C]\).
+
+Rescale the whole map in an indeterminate \(\epsilon\),
 replacing its component of degree \(d\) by
 \(\epsilon^d F_d(x/\epsilon,y/\epsilon,z/\epsilon)\).
-The determinant is \(\kappa\epsilon^{12}\).
+The determinant is \(\kappa\epsilon^{12}\). If \(r>5\),
+then the only possible remaining error is a constant in the
+sextic component and can be added to the reference, so assume
+\(r\le5\).
 On the fixed quartic level \(c=-5\lambda\) use local
 coordinates \(x,t\) near \(x=1\) and a point of the indicated
 parametrization. For \(C(1,Y,Z)=Y^j Z+b(Y)\) one uses
@@ -343,36 +350,56 @@ parametrization. For \(C(1,Y,Z)=Y^j Z+b(Y)\) one uses
 for \(Y\). Affine normalization of the plane polynomial
 transports the level value as well. In both types the defining
 derivative for solving the rescaled quartic level is a unit
-at the chosen point. Formal implicit solution gives the
-restricted rescaled quintic component as
+at the chosen point. Formal implicit solution gives
 \[
-         \widehat B(x,t,\epsilon)
-          = xc+\lambda x^5+\epsilon \widetilde G(x,t)+O(\epsilon^2),
-          \qquad \widetilde G(1,t)=G(t).
+ \widehat B=b(x,\epsilon)+\epsilon^r V(x,t,\epsilon),
+ \qquad
+ \widehat A=a(x,\epsilon)+\epsilon^r W(x,t,\epsilon).
 \]
-The correction is \(B_4-xC_3\) because the fixed quartic
-equation replaces \(xC\) at order one by \(xc-\epsilon xC_3\).
+Here \(a,b\) are the reference functions restricted to the
+fixed level. In particular \(b(x,0)=xc+\lambda x^5\) and
+\(a(x,0)=x^2 c+(5/3)\lambda x^6\). At \(\epsilon=0\),
+\(V\) and \(W\) are the error parts restricted to the
+leading level and satisfy \(W=2xV+D(x,c)\).
+For the initial reference, \(E_B=B_4-xC_3\), so the
+initial \(V(1,t,0)\) is the function in the statement.
 
-At \(x=1\), the leading derivative in \(x\) is zero and
-its derivative in \(x\) is \(20\lambda\ne0\).
-Thus one can solve \(\partial_x\widehat B=0\) formally
-as \(x=X(t,\epsilon)\) with constant term \(1\).
-The remaining derivative
-\(\epsilon^{-1}\partial_t\widehat B(X(t,\epsilon),t,\epsilon)\)
-has constant term \(G'(t)\) in \(\epsilon\).
-If \(G'\) is nonzero and has a root on the parametrized
-open set, Weierstrass preparation at that root gives
-a zero of the remaining derivative over a Puiseux extension
-of the Laurent series field. Both quintic derivatives
-then vanish on the quartic level, contrary to the
-nonzero determinant at \(\epsilon\ne0\).
+The reference equation \(b_x=0\) has a formal solution
+\(x=X(\epsilon)\) with constant term \(1\), since
+\(b_x(1,0)=0\) and \(b_{xx}(1,0)=20\lambda\ne0\).
+Put \(\alpha(\epsilon)=a_x(X(\epsilon),\epsilon)\) and
+\(g(t)=V(1,t,0)\). At this center the two-coordinate
+determinant, up to sign, is
+\[
+ \epsilon^r\alpha(\epsilon)V_t
+ + \epsilon^{2r}(W_x V_t-W_t V_x).
+\]
+It has order at least \(12\), by the Keller determinant
+and the unit for the coordinate change to \(x,t,F_{4,\epsilon}\).
+If \(\alpha\) has order \(j<r\), the coefficient of
+\(\epsilon^{j+r}\) gives \(g'=0\).
+Otherwise the coefficient of \(\epsilon^{2r}\) gives
+\[
+               (\alpha_r+2g+D_x(1,c))g'=0
+\]
+with \(\alpha_r\) the degree-\(r\) coefficient in
+\(\epsilon\). This uses \(W(x,t,0)=2xV(x,t,0)+D(x,c)\)
+in the displayed determinant. Since \(2r\le10\),
+the coefficient vanishes and again \(g\) is constant.
 
-On an affine line a polynomial derivative with no root
-is a nonzero constant, so \(G\) is affine or constant.
-On the indicated multiplicative open set a nonzero
-Laurent polynomial with no root is a single Laurent
-monomial. Applying this to \(G'\) gives a constant plus
-one Laurent monomial for \(G\), or a constant if \(G'=0\).
+If the entire dehomogenized level is irreducible, the
+polynomial \(E_B(1,y,z)-g\) is divisible by
+\(C(1,y,z)+5\lambda\). Its degree is at most \(5-r\le4\),
+so the quotient is constant or zero, and homogenization
+puts \(E_B\) in \(k[x,C]\). The relation with \(D\) puts
+\(E_A\) in the same ring. Adding both terms to the reference
+functions \(G_A,G_B\), evaluated at \(x,F_4\), increases
+the first error loss. Repeating gives a factorization
+through \(x,F_4\), which cannot have a nonzero determinant.
+Thus a Keller completion requires reducibility of the
+special plane level. The one-place forms have irreducible
+levels, by solving for \(z\) in the third form and for
+\(y\) after completing the square in the fourth.
 
 ## An irreducible quintic with a possibly nonreduced quartic
 

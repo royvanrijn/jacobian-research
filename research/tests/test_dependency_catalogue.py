@@ -119,6 +119,52 @@ class RetainedDependencyTests(unittest.TestCase):
             self.assertEqual(without_proof[lemma]["state"], "stale")
         self.assertEqual(without_proof[extraction]["state"], "stale")
 
+    def test_mordell_termination_closes_existence_without_quantitative_claims(self):
+        algorithm = "ARITH-MORDELL-RAY-UNRESTRICTED-MATRIX-TERMINATION"
+        endpoint = "GAP-ARITH-MORDELL-ARBITRARY-RAY-PAIRING-MATRIX"
+        finite = "EVIDENCE-ARITH-MORDELL-RAY-FULL-MATRIX-CERTIFICATES"
+        norm_proof = "ARITH-MORDELL-GENERAL-NORM-AND-LOCAL-SYMBOL-REDUCTION"
+        quantitative = "GAP-ARITH-MORDELL-RAY-QUANTITATIVE-MATRIX-GENERATION"
+        frobenius = "GAP-ARITH-MORDELL-RAY-FROBENIUS-ONLY-PAIRING-FORMULA"
+        without_fixtures = self.graph.evaluate({finite: "stale"})
+        for conclusion in (algorithm, endpoint):
+            self.assertEqual(without_fixtures[conclusion]["state"], "proved")
+        for stronger in (quantitative, frobenius):
+            self.assertEqual(without_fixtures[stronger]["state"], "open")
+        without_norms = self.graph.evaluate({norm_proof: "stale"})
+        for conclusion in (algorithm, endpoint):
+            self.assertEqual(without_norms[conclusion]["state"], "stale")
+
+    def test_primitive_leading_factor_route_does_not_assume_a_small_root(self):
+        small_root_formula = "DIX-POLYNOMIAL-WEYL-SMALL-ROOT-FRACTIONAL-POWER-MATE"
+        general_resultant = "DIX-POLYNOMIAL-WEYL-PRIMITIVE-LEADING-RESULTANT"
+        general_exclusion = "DIX-POLYNOMIAL-WEYL-PRIMITIVE-LEADING-FACTOR-SINGLE-SMALL-ROOT"
+        corner = "DIX-POLYNOMIAL-WEYL-CENTERED-CORNER-NONCOPRIME"
+        # The new proof repeats the ordinary-point phase argument without a
+        # small-root hypothesis; its general e=1 scope must survive that
+        # specialized statement's withdrawal.
+        without_special_case = self.graph.evaluate({small_root_formula: "stale"})
+        for conclusion in (general_resultant, general_exclusion, corner):
+            self.assertEqual(without_special_case[conclusion]["state"], "proved")
+        without_general_proof = self.graph.evaluate({general_resultant: "stale"})
+        for conclusion in (general_exclusion, corner):
+            self.assertEqual(without_general_proof[conclusion]["state"], "stale")
+
+    def test_weyl_order_twelve_bound_retains_the_previous_bound_on_withdrawal(self):
+        new_bound = "DIX-POLYNOMIAL-WEYL-PROPER-ORDER-TWELVE-BOUND"
+        old_bound = "DIX-POLYNOMIAL-WEYL-ORDER-EIGHT-GENERATION"
+        actual = self.graph.evaluate()
+        rows = {row["id"]: row for row in bounds_records(self.graph, actual)
+                if row["id"] in (new_bound, old_bound)}
+        self.assertEqual(rows[new_bound]["state"], "proved")
+        self.assertEqual(rows[new_bound]["value"], 12)
+        self.assertEqual(rows[old_bound]["value"], 10)
+        self.assertEqual(rows[old_bound]["superseded_by"], new_bound)
+        withdrawn = self.graph.evaluate({
+            "DIX-POLYNOMIAL-WEYL-PRIMITIVE-LEADING-RESULTANT": "stale"})
+        self.assertEqual(withdrawn[new_bound]["state"], "stale")
+        self.assertEqual(withdrawn[old_bound]["state"], "proved")
+
     def test_wirtinger_verification_reaches_named_equalities_without_blocking_lift_bounds(self):
         equality_claims = (
             "MRC-ALL-CHARACTERISTIC-LIFTS-THM-PANEL",

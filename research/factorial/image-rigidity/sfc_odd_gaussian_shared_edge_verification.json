@@ -1,0 +1,289 @@
+{
+  "status": "PASS",
+  "scope": "finite exact controls of the unrestricted written shared-edge theorem",
+  "python": "3.12.3",
+  "cases": [
+    {
+      "prime": 7,
+      "exponent": 2,
+      "cofactor": 1,
+      "start": 49,
+      "layers": [
+        {
+          "edge": 2,
+          "alpha": "2/21",
+          "beta": "45/49",
+          "gamma": "-5/21",
+          "residual_weight": "0",
+          "lowest_index": 0,
+          "perturbation_margin": "86/147"
+        }
+      ]
+    },
+    {
+      "prime": 7,
+      "exponent": 3,
+      "cofactor": 1,
+      "start": 343,
+      "layers": [
+        {
+          "edge": 2,
+          "alpha": "2/21",
+          "beta": "486/343",
+          "gamma": "-5/21",
+          "residual_weight": "0",
+          "lowest_index": 0,
+          "perturbation_margin": "1115/1029"
+        },
+        {
+          "edge": 3,
+          "alpha": "25/294",
+          "beta": "486/343",
+          "gamma": "-110/147",
+          "residual_weight": "-61/147",
+          "lowest_index": 74,
+          "perturbation_margin": "685/686"
+        }
+      ]
+    },
+    {
+      "prime": 7,
+      "exponent": 4,
+      "cofactor": 1,
+      "start": 2401,
+      "layers": [
+        {
+          "edge": 2,
+          "alpha": "2/21",
+          "beta": "4602/2401",
+          "gamma": "-5/21",
+          "residual_weight": "0",
+          "lowest_index": 0,
+          "perturbation_margin": "11405/7203"
+        },
+        {
+          "edge": 3,
+          "alpha": "25/294",
+          "beta": "4602/2401",
+          "gamma": "-110/147",
+          "residual_weight": "-61/147",
+          "lowest_index": 74,
+          "perturbation_margin": "7195/4802"
+        },
+        {
+          "edge": 4,
+          "alpha": "86/1029",
+          "beta": "4602/2401",
+          "gamma": "-1286/1029",
+          "residual_weight": "-943/1029",
+          "lowest_index": 515,
+          "perturbation_margin": "3601/2401"
+        }
+      ]
+    },
+    {
+      "prime": 7,
+      "exponent": 5,
+      "cofactor": 1,
+      "start": 16807,
+      "layers": [
+        {
+          "edge": 2,
+          "alpha": "2/21",
+          "beta": "40617/16807",
+          "gamma": "-5/21",
+          "residual_weight": "0",
+          "lowest_index": 0,
+          "perturbation_margin": "105044/50421"
+        },
+        {
+          "edge": 3,
+          "alpha": "25/294",
+          "beta": "40617/16807",
+          "gamma": "-110/147",
+          "residual_weight": "-61/147",
+          "lowest_index": 74,
+          "perturbation_margin": "67171/33614"
+        },
+        {
+          "edge": 4,
+          "alpha": "86/1029",
+          "beta": "40617/16807",
+          "gamma": "-1286/1029",
+          "residual_weight": "-943/1029",
+          "lowest_index": 515,
+          "perturbation_margin": "33610/16807"
+        },
+        {
+          "edge": 5,
+          "alpha": "1201/14406",
+          "beta": "40617/16807",
+          "gamma": "-12605/7203",
+          "residual_weight": "-10204/7203",
+          "lowest_index": 3602,
+          "perturbation_margin": "67227/33614"
+        }
+      ]
+    },
+    {
+      "prime": 17,
+      "exponent": 2,
+      "cofactor": 1,
+      "start": 289,
+      "layers": [
+        {
+          "edge": 2,
+          "alpha": "9/272",
+          "beta": "280/289",
+          "gamma": "-55/136",
+          "residual_weight": "-19/68",
+          "lowest_index": 26,
+          "perturbation_margin": "3749/4624"
+        }
+      ]
+    },
+    {
+      "prime": 17,
+      "exponent": 3,
+      "cofactor": 1,
+      "start": 4913,
+      "layers": [
+        {
+          "edge": 2,
+          "alpha": "9/272",
+          "beta": "7216/4913",
+          "gamma": "-55/136",
+          "residual_weight": "-19/68",
+          "lowest_index": 26,
+          "perturbation_margin": "103029/78608"
+        },
+        {
+          "edge": 3,
+          "alpha": "145/4624",
+          "beta": "7216/4913",
+          "gamma": "-2095/2312",
+          "residual_weight": "-903/1156",
+          "lowest_index": 434,
+          "perturbation_margin": "103165/78608"
+        }
+      ]
+    },
+    {
+      "prime": 23,
+      "exponent": 2,
+      "cofactor": 1,
+      "start": 529,
+      "layers": [
+        {
+          "edge": 2,
+          "alpha": "6/253",
+          "beta": "517/529",
+          "gamma": "-109/253",
+          "residual_weight": "-86/253",
+          "lowest_index": 35,
+          "perturbation_margin": "5020/5819"
+        }
+      ]
+    },
+    {
+      "prime": 31,
+      "exponent": 2,
+      "cofactor": 1,
+      "start": 961,
+      "layers": [
+        {
+          "edge": 2,
+          "alpha": "8/465",
+          "beta": "945/961",
+          "gamma": "-209/465",
+          "residual_weight": "-178/465",
+          "lowest_index": 47,
+          "perturbation_margin": "4322/4805"
+        }
+      ]
+    },
+    {
+      "prime": 41,
+      "exponent": 2,
+      "cofactor": 1,
+      "start": 1681,
+      "layers": [
+        {
+          "edge": 2,
+          "alpha": "21/1640",
+          "beta": "1660/1681",
+          "gamma": "-379/820",
+          "residual_weight": "-169/410",
+          "lowest_index": 62,
+          "perturbation_margin": "62177/67240"
+        }
+      ]
+    },
+    {
+      "prime": 7,
+      "exponent": 3,
+      "cofactor": 3,
+      "start": 1029,
+      "layers": [
+        {
+          "edge": 2,
+          "alpha": "2/21",
+          "beta": "486/343",
+          "gamma": "-5/21",
+          "residual_weight": "0",
+          "lowest_index": 0,
+          "perturbation_margin": "1115/1029"
+        },
+        {
+          "edge": 3,
+          "alpha": "25/294",
+          "beta": "486/343",
+          "gamma": "-110/147",
+          "residual_weight": "-61/147",
+          "lowest_index": 74,
+          "perturbation_margin": "685/686"
+        }
+      ]
+    },
+    {
+      "prime": 17,
+      "exponent": 2,
+      "cofactor": 5,
+      "start": 1445,
+      "layers": [
+        {
+          "edge": 2,
+          "alpha": "9/272",
+          "beta": "280/289",
+          "gamma": "-55/136",
+          "residual_weight": "-19/68",
+          "lowest_index": 26,
+          "perturbation_margin": "3749/4624"
+        }
+      ]
+    },
+    {
+      "prime": 23,
+      "exponent": 2,
+      "cofactor": 9,
+      "start": 4761,
+      "layers": [
+        {
+          "edge": 2,
+          "alpha": "6/253",
+          "beta": "517/529",
+          "gamma": "-109/253",
+          "residual_weight": "-86/253",
+          "lowest_index": 35,
+          "perturbation_margin": "5020/5819"
+        }
+      ]
+    }
+  ],
+  "shared_edges": 20,
+  "perturbation_coefficient_checks": 1498,
+  "controls": "old leading collision retained; corrupted kappa rejected; nonresidue case passes",
+  "exact_rational_control": "start 49 at prime 7, full 27-coefficient syzygy has unique constant least term",
+  "remaining_final_slope_example": "q=5*13^e; S_2(Y) and S_2(2Y) share Y=2 modulo 13, not an actual Gaussian common-zero certificate",
+  "assurance": "internal replay; not independent mathematical review or formal verification"
+}

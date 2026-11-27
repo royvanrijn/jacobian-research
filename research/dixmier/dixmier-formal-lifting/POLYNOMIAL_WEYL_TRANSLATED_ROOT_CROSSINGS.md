@@ -236,6 +236,10 @@ the high root has multiplicity exactly twenty.
 
 ## The order-ten case
 
+The [primitive leading-factor obstruction](POLYNOMIAL_WEYL_PRIMITIVE_LEADING_FACTOR_OBSTRUCTION.md#consequences-for-centered-rectangles-and-low-orders)
+closes the order-ten branch. The following residual statement
+records the reduction used in that proof.
+
 **Corollary PolynomialWeylOrderTenResidual.** In a proper
 characteristic-zero polynomial Weyl pair with one member of
 differential order ten, keeping that member fixed and subtracting

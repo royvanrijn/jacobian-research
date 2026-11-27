@@ -19,16 +19,21 @@ holds whenever \(115\mid R\), without a restriction on \(R/115\bmod9\).
 There is also an explicit entry between the wild character and the 5-ray
 character. The 5–23 entry is nonzero for two thirds
 of the allowed moving primes \(q\equiv-1\pmod9\) in \(R=115q\).
-Thus infinitely many admissible curves have rational rank at most one and
-\(\dim_{\mathbf F_3}\Sha(E_R)[3]\ge2\).
+More generally, for every \(r\ge1\), one can fix \(2r\) allowed
+primes and vary just one further prime to realize every alternating
+matrix on the fixed tame coordinates. A nonsingular target gives
+infinitely many curves with rational rank at most one and
+\(\dim_{\mathbf F_3}\Sha(E_R)[3]\ge2r\) (MCT15–MCT16).
 Complete normalized matrices are obtained below for selected products of
 two, three and four allowed primes, including spaces with the wild
 coordinate. The cubic local descent has the explicit scalar formula
 (24), including in split cubic algebras; direct local certificates
 also verify complete tame and wild controls. The full evaluator computes
 every off-diagonal entry without a rational-rank or rational-point
-oracle. A uniform runtime guarantee and a Frobenius-only rule with all
-pairwise reference constants already evaluated are not claimed.
+oracle. MCT13 proves termination for every admissible parameter,
+including the wild coordinate. A useful uniform runtime bound and a
+Frobenius-only rule with all pairwise reference constants already
+evaluated are not claimed.
 These are internal written proofs with an exact algebra checker; no
 independent mathematical review or formal verification is claimed.
 
@@ -1304,6 +1309,84 @@ remain different obligations. MCT12 also does not identify any of the
 individual pairing entries with an additive function of \(R\): it
 assembles norm witnesses, and all subsequent local terms still apply.
 
+## A manifestly alternating formula for the entire matrix
+
+**Theorem MCT14 (alternating full-matrix formula and compression).**
+Use the complete ordered ray basis of MCT3 and the local data of
+MCT10. All vectors below are column vectors over \(\mathbf F_3\).
+Put \(\mathbf e=(e_i)\), \(\mathbf f=(f_i)\),
+\(\boldsymbol\alpha=(\alpha_j)\),
+\(\mathbf v=(\upsilon_j)\). For a tame prime \(q\mid R\), let
+\(\mathbf u_q\) be its standard coordinate vector, put
+\(t_q=v_{\mathfrak q}(a_q)\bmod3\), and let
+\(\boldsymbol\kappa_q\) contain the residue exponents in (29),
+with its unused \(q\)-coordinate set to zero. At an auxiliary prime
+\(\ell\), let \(\boldsymbol\nu_\ell\),
+\(\boldsymbol\gamma_\ell\) and \(d_\ell\in\{1,2\}\) be the
+valuation vector, residue vector and local degree in (30). Define
+\(u\wedge v=uv^{\mathsf T}-vu^{\mathsf T}\). Then the full matrix is
+\[
+ \boxed{\displaystyle
+ B_R=\mathbf e\wedge\mathbf v
+       +2\mathbf f\wedge\boldsymbol\alpha
+       +\sum_{q\mid R}t_q\boldsymbol\kappa_q\wedge\mathbf u_q
+       +\sum_{\ell\in\mathcal A}d_\ell^{-1}
+                   \boldsymbol\nu_\ell\wedge\boldsymbol\gamma_\ell .}
+                                                               \tag{37}
+\]
+Here \(\mathcal A\) is the complete auxiliary denominator-prime set,
+excluding \(2,3\) and primes dividing \(R\). The same common Weil
+normalization applies to every term. Formula (37) includes the wild
+row and column. When the wild coordinate is absent, set
+\(\mathbf f=\boldsymbol\alpha=0\).
+
+To prove the formula, form the matrix
+\[
+ C=2\mathbf e\mathbf v^{\mathsf T}
+     +\mathbf f\boldsymbol\alpha^{\mathsf T}
+     +2\sum_{q\mid R}t_q\boldsymbol\kappa_q\mathbf u_q^{\mathsf T}
+     -\sum_{\ell\in\mathcal A}d_\ell^{-1}
+                         \boldsymbol\nu_\ell\boldsymbol\gamma_\ell^{\mathsf T}.
+\]
+Equations (28)–(30) say precisely that its off-diagonal entries are
+those of \(B_R\). Its diagonal need not be computed. Since the
+Cassels–Tate form is alternating, \(C-C^{\mathsf T}=2B_R\).
+Multiplying by \(2=2^{-1}\) in \(\mathbf F_3\) gives (37),
+including the positive sign of the auxiliary wedge. This step uses
+alternation of the global sum; an individual local contribution need
+not be alternating. In particular, antisymmetrizing the local terms
+is justified only as a formula for their full sum.
+
+The formula also permits exact compression before computing the rank.
+Choose a matrix \(W\) whose columns form a basis of the span of all
+vectors occurring in (37). Express those vectors in this basis and
+form the same weighted wedge sum \(J\) in their coordinate space.
+Then
+\[
+             B_R=WJW^{\mathsf T},\qquad
+             \operatorname{rank}B_R=\operatorname{rank}J.    \tag{38}
+\]
+Indeed \(W\) is injective and \(W^{\mathsf T}\) is surjective,
+so neither changes the rank of the intervening map \(J\).
+This proves (38) without any assumption that the displayed vectors
+are independent. It can reduce linear algebra when their span is
+small; it does not reduce the number of required local symbols by
+itself. If the rank is \(2r\), MS1 and the Kummer exact sequence give
+\[
+ \dim_{\mathbf F_3}\Sha(E_R)[3]\ge2r,\qquad
+ \operatorname{rank}E_R(\mathbf Q)
+             \le\omega(R)+\epsilon_R-2r.                  \tag{39}
+\]
+Every nonzero ray vector outside the radical certifies a genuine
+local-to-global failure for its covering.
+
+The full checker independently constructs (37) from the retained local
+vectors and compares it with the separately evaluated off-diagonal
+entries. It also verifies (38) and both ranks. Thus the formula and
+compression are tested on every retained matrix. This does not make
+the proof independent of MCT10, and does not replace its auxiliary
+terms by a Frobenius-only formula.
+
 ### Optimization evidence and practical limits
 
 The retained 145 certificate now uses (32)–(34) for all three rows:
@@ -1335,6 +1418,161 @@ The retained seven cases cover prime-block assembly, adaptive precision,
 split and nonsplit cubic local algebras at 3, nonzero auxiliary terms,
 and both zero and nonzero full matrices. They do not constitute a
 performance bound for arbitrary parameters.
+
+## One moving prime and an arbitrarily large fixed block
+
+The pairwise fields in MCT4 can be used simultaneously. Their central
+coordinates have no joint relation, even though different pair fields
+share character subfields. This is the governing-group argument of
+[Wu–Zhu, Lemma 6.1 and its proof, pp. 8–9](sources/wu-zhu-fermat-pairing-2611.29541v1.pdf),
+adapted from the coefficient line \(\mu_3\) to \(M_{-2}\).
+Here the cup-product vanishing and normalized pair fields are supplied
+by the argument preceding MCT4. Wu–Zhu's Fermat-family realization
+theorem is not an input.
+
+**Lemma MCT15 (joint tame governing group).** Fix \(n\ge2\) distinct
+allowed primes \(p_1,\ldots,p_n\), oriented as in MCT3. Let
+\(H_{ij}\) be the normalized tame pair field of MCT4, and let
+\(H\) be their compositum. Put
+\[
+ V=\mathbf F_3^n,\qquad
+ Z=\mathbf F_3^{m},\qquad m=\binom n2.
+\]
+Then \(\operatorname{Gal}(H/\mathbf Q)=P\rtimes\langle c\rangle\),
+where \(P=V\times Z\) has multiplication
+\[
+ (v,z)(v',z')=(v+v',z+z'+(v_i v'_j)_{i<j}),\qquad
+ c(v,z)c^{-1}=(-v,z).                                    \tag{40}
+\]
+The quotient coordinates are the fixed characters. The central
+coordinates agree with those of the \(H_{ij}\) up to one common
+nonzero rescaling. The maximal abelian subfield of \(H/\mathbf Q\)
+is exactly \(k=\mathbf Q(\sqrt{-2})\).
+
+Proof. Choose sign-line cocycles \(f_i\) for the fixed characters,
+all zero on one complex conjugation \(c\); a coboundary change
+achieves this since 2 is invertible in \(\mathbf F_3\).
+The normalized pair constructions give continuous cochains \(h_{ij}\)
+with \(dh_{ij}=f_i\smile f_j\), after the common central
+normalization. Write \(\epsilon\) for the quadratic character of
+\(k\). The cocycle and coboundary identities make
+\[
+ g\longmapsto
+       ((f_i(g))_i,(-h_{ij}(g))_{i<j},\epsilon(g))
+\]
+a homomorphism to the group in (40) with its indicated involution.
+In particular \(h_{ij}(c)=0\), by evaluation at \((c,c)\).
+The projections onto the pair groups cut out exactly the normalized
+fields \(H_{ij}\); thus its kernel cuts out their compositum.
+Auxiliary-ramification corrections change individual cochains by
+characters and preserve this homomorphism and every commutator.
+
+The restrictions of the \(f_i\) to \(G_k\) are independent:
+the \(p_i\)-ray character has nonzero inertia at \(p_i\),
+and every other fixed character is unramified there. Hence the image
+over \(k\) surjects onto \(V\). Choose any lifts of \(e_i,e_j\)
+in that image. Their commutator, computed from (40), is the vector
+with sole nonzero central coordinate \(ij\). Central parts of the
+lifts do not affect it. These commutators generate all of \(Z\),
+so the image over \(k\) is all of \(P\). This proves the asserted
+group, rather than assuming the pair fields are linearly disjoint.
+
+Finally \([P,P]=Z\). Commutators with \(c\) project onto
+\(V\), since \(c\) acts by negation. Thus
+\([\operatorname{Gal}(H/\mathbf Q),\operatorname{Gal}(H/\mathbf Q)]=P\),
+and its fixed field is \(k\). This proves the lemma.
+
+**Corollary MCT16 (one moving prime realizes every fixed block).**
+For every \(r\ge1\), fix distinct primes
+\[
+ p_1=5,\qquad p_i\equiv71\pmod{72}\quad(2\le i\le2r),
+ \qquad R_0=\prod_{i=1}^{2r}p_i.
+\]
+For every alternating \(2r\)-by-\(2r\) matrix \(A\) over
+\(\mathbf F_3\), there are infinitely many primes
+\[
+ q\nmid6R_0,\qquad q\equiv-1\pmod9,\qquad (-2/q)=-1
+\]
+for which the restriction of \(B_{R_0q}\) to the ordered fixed
+coordinates \((\chi_{p_1},\ldots,\chi_{p_{2r}})\) is \(A\).
+Each target has relative natural density
+\(3^{-\binom{2r}{2}}\) among these eligible primes, and density
+\(1/(12\cdot3^{\binom{2r}{2}})\) among all rational primes.
+For every nonsingular target the resulting curves satisfy
+\[
+ \operatorname{rank}E_{R_0q}(\mathbf Q)\le1,\qquad
+ \dim_{\mathbf F_3}\Sha(E_{R_0q})[3]\ge2r.                \tag{41}
+\]
+
+Proof. All fixed primes are allowed; the progression \(71\bmod72\)
+contains infinitely many primes by Chebotarev in the cyclotomic
+extension. Since \(2r-1\) is odd,
+\[
+ R_0\equiv5(-1)^{2r-1}=4\pmod9,\qquad
+ R_0q\equiv5\pmod9.
+\]
+Neither parameter has an extra wild coordinate. Put \(n=2r\),
+\(m=\binom n2\), and let \(A_0\) be the fixed block at
+\(R_0\). Subtracting the two instances of (12) gives
+\[
+ (B_{R_0q})_{ij}=(A_0)_{ij}
+                 +\widetilde\kappa_{p_i,p_j}(q)
+                 \qquad(i<j).                            \tag{42}
+\]
+The entries of \(A_0\) are genuine constants; no vanishing or
+prior numerical evaluation is required.
+
+Use \(H\) from MCT15. Every element in the nontrivial coset
+\(Pc\) is conjugate to exactly one \(zc\), with \(z\in Z\).
+Indeed conjugation by a quotient vector \(w\) translates the
+\(V\)-coordinate by \(2w\), so that coordinate can be removed.
+The square is then \(2z\in Z\); it is invariant under conjugation
+because \(Z\) is central even over \(\mathbf Q\), and determines
+\(z\) uniquely. Thus the squared-Frobenius coordinates in (42)
+are simultaneously \(\lambda z_{ij}\), for one fixed
+\(\lambda\in\mathbf F_3^\times\). This includes multiplication
+by 2 from squaring and the common central normalization in MCT4;
+it does not require a standard Weil-sign calibration. Choosing
+\(\lambda z_{ij}=A_{ij}-(A_0)_{ij}\) prescribes all entries at once.
+
+Since \(H\) has maximal abelian subfield \(k\),
+\[
+ H\cap\mathbf Q(\zeta_9)=\mathbf Q:
+\]
+the intersection is abelian over \(\mathbf Q\) and the unique
+quadratic subfield of \(\mathbf Q(\zeta_9)\) is
+\(\mathbf Q(\sqrt{-3})\), different from \(k\).
+In the direct-product Galois group of \(H\mathbf Q(\zeta_9)\),
+prescribe the class of \((zc,-1\bmod9)\). Chebotarev supplies
+infinitely many primes with this class. Its size is \(3^n\):
+the centralizer of \(zc\) in \(P\) is \(Z\), and the full
+centralizer has order \(2\cdot3^m\). The compositum has degree
+\(12\cdot3^{n+m}\), so the prime density is
+\(1/(12\cdot3^m)\). The union over the \(3^m\) central vectors
+is precisely the eligible prime set, up to finitely many primes.
+This proves both densities and (42) with the prescribed matrix.
+
+Choose, for example, the block diagonal matrix with \(r\) copies
+of \(\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)\).
+The full Selmer space has dimension \(2r+1\) by MS1. Its
+alternating pairing has rank at least \(2r\), and hence exactly
+\(2r\), with one-dimensional radical. Rational Kummer classes lie
+in this radical. MS1 identifies the space with
+\(\operatorname{Sel}_3(E_{R_0q})\), and
+\(E_{R_0q}(\mathbf Q)[3]=0\): neither isogeny kernel has a
+rational nonzero point. The Kummer exact sequence therefore gives
+(41), without assuming finiteness of \(\Sha\).
+
+This is a written consequence of MS1, MCT3, MCT4, the joint group
+argument and Chebotarev. It requires no large norm certificate or
+use of MCT13 to establish existence. It realizes the fixed block;
+the row involving \(q\) is not prescribed. The result does not
+give exact rank one or determine the entire 3-primary group.
+The governing-group method is adapted from Wu–Zhu; unbounded
+\(\Sha[3]\) in other families is already known. The scope here
+is this inert-prime family with one moving prime and simultaneous
+rank control. This audit is internal written mathematics, without
+independent replay, formal verification or external review.
 
 ## Evidence, replay and remaining scope
 

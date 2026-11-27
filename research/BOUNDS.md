@@ -836,6 +836,7 @@ Bounds retain their exact domains and assumptions. Numeric comparisons use ident
 | ARITH-ABC-SPLIT-QUARTIC-UNIFORM-MOVING-POLYNOMIAL-DIVISOR-BOUND | proved | specialized polynomial repeated-part product divided by u min(v,u−v) | monic pairwise coprime P_i of total degree d and root bound H, with n>=2H and P_i(n)\|L_i | upper: (16(1+H))^(32d^2)/n |  |
 | ARITH-ABC-SPLIT-QUARTIC-CYCLIC-TAME-DISCRIMINANT-COUNT | proved | admissible cyclic quartic fibres of tame normalized root discriminant at most T | unrestricted height, k=3^a with a>=2 and S={2,3}, uniformly in a, T>=1 | upper: O(T^(3/(4(1−3^(−a)))) (1+log T)^A) for an absolute fixed A |  |
 | ARITH-ABC-SPLIT-QUARTIC-CYCLIC-TAME-DISCRIMINANT-COUNT | proved | admissible quartic pairs with rad(F)<=T | unrestricted height, T>=1 | upper: O(T^(3/4) (1+log T)^A) for an absolute fixed A |  |
+| DIX-POLYNOMIAL-WEYL-PROPER-ORDER-TWELVE-BOUND | proved | differential order | Members of proper characteristic-zero polynomial Weyl pairs with nonzero scalar commutator | lower: 12 |  |
 
 ## Comparable improvements
 
@@ -861,6 +862,7 @@ No unrecorded improvement in an identical domain.
 - HESSIAN-EXCEPTIONAL-FOLD-WEIGHTED-DEGREE-BOUND has bound 18. HESSIAN-EXCEPTIONAL-FOLD-MINIMAL-WEIGHT-BOUNDARY-EXCLUSION improves it to 24 under the same assumptions.
 - FACTORIAL-ORDINARY-INITIAL-FOUR has bound 4. FACT-LOWER-EXPONENT-INITIAL-AND-BOUNDARY-THM-ORDINARY-FIFTH improves it to 5 under the same assumptions.
 - FACTORIAL-EXPLICIT-ARITHMETIC-ORDINARY-BINOMIAL-CUTOFF has bound 3150. FACTORIAL-ORDINARY-BINOMIAL-SFC improves it to 2 under the same assumptions.
+- DIX-POLYNOMIAL-WEYL-ORDER-EIGHT-GENERATION has bound 10. DIX-POLYNOMIAL-WEYL-PROPER-ORDER-TWELVE-BOUND improves it to 12 under the same assumptions.
 - DIX-POLYNOMIAL-WEYL-BERNSTEIN-DEGREE-THROUGH-FORTY-ONE has bound 42. DIX-POLYNOMIAL-WEYL-BERNSTEIN-THROUGH-FIFTY-NINE improves it to 60 under the same assumptions.
 - DIX-POLYNOMIAL-WEYL-CONDITIONAL-THROUGH-FORTY-NINE-FROM-F7 has bound 50. DIX-POLYNOMIAL-WEYL-BERNSTEIN-THROUGH-FIFTY-NINE improves it to 60 under the same assumptions.
 - DIX-POLYNOMIAL-WEYL-CONDITIONAL-THROUGH-FIFTY-ONE-FROM-F7 has bound 52. DIX-POLYNOMIAL-WEYL-BERNSTEIN-THROUGH-FIFTY-NINE improves it to 60 under the same assumptions.

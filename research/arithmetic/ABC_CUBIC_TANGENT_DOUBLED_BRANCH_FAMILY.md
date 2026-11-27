@@ -265,6 +265,73 @@ doubled pattern or in the projective case.
 Theorem DB1 classifies the remaining pattern, and DB2 prevents
 the simultaneous virtual-unit condition there.
 The cubic norm class of a genuine triangle is a virtual unit by
-[CT1](ABC_CUBIC_TANGENT_NORM_RANK_AND_CONDUCTORS.md#the-tangent-identity-and-the-lost-cubic-direction)
-and the [weighted lift](ABC_CUBIC_TANGENT_RING_CLASS_LIFTS.md#the-fixed-slope-rank-one-field-and-cofactor).
+the [coherent reconstruction](ABC_COHERENT_NORM_PENCILS.md#exact-reconstruction-from-three-signed-coefficients),
+where each prime-supported edge has ideal exponents divisible by three.
 The unrestricted occupied rank-one norm record count is open.
+
+## Cubes of split prime ideal classes
+
+**Corollary DB5.** In every quadratic field from the \(b=6\)
+family of (1), each prime above \(2\) or \(3\) represents a
+cube in the ideal class group. Consequently every unramified
+cyclic cubic extension of such a field splits at both primes
+over \(2\) and both primes over \(3\).
+
+Outside \(2,3\), the valuations of \(\alpha,\beta\) are
+multiples of three. More generally this holds at primes
+not dividing \(2b\), including denominators of \(b\).
+For \(\alpha\), if the elliptic abscissa has a pole at such a
+prime then \(2v(y)=3v(x)\), so \(v(\alpha)=v(y)\) is a
+multiple of three. Otherwise the two conjugate terms are
+integral and sum to \(2b\), a unit. If either has positive
+valuation, the other is a unit, and the common cube norm
+gives a valuation divisible by three. The same argument
+applies to \(\beta\).
+
+Choose one split prime \(\mathfrak p_q\) over each of \(q=2,3\).
+For any product of \(\alpha,\beta\), its principal ideal gives
+the relation
+\[
+ 2v_{\mathfrak p_2}[\mathfrak p_2]+
+ 2v_{\mathfrak p_3}[\mathfrak p_3]=0
+ \quad\text{in }\operatorname{Cl}(K)/3\operatorname{Cl}(K),
+\]
+where the valuations are of that product. The factor two
+comes from the opposite valuations modulo three at conjugate
+primes and their opposite ideal classes. By DB2 the two
+valuation vectors from \(\alpha,\beta\) are independent.
+Hence both selected prime classes vanish in the quotient
+by cubes. Artin reciprocity gives the splitting assertion.
+
+This condition can hold with nontrivial class group
+3-torsion. At \(s=5/18\) the squareclass is
+\(-747375839\). Its class group has invariants \(5736,2,2\),
+and the coordinates of both split primes over \(2\) and
+\(3\) are divisible by three in the first cyclic factor.
+The checker uses the proof-enabled class-group calculation.
+
+## The third elliptic quotient
+
+**Proposition DB6.** The visible genus-one quotient of (1) by
+the cubic parameter change \(w=ms^3\) has rational 3-torsion.
+Its marked cubic norm class is the inverse of
+\([\alpha\beta]\) and therefore adds no generic virtual-unit
+direction to the \(b=6\) construction.
+
+On that quotient put
+\(X=(w+1)/(w-1),\ U=Y/(w-1)^2\).
+Then \(U^2=X^3+X^2-X\), with a point of order three at
+\((1,1)\) and tangent \(U=2X-1\).
+A corresponding norm function is
+\(\gamma=U+2X-1\), of norm \(-(X-1)^3\).
+The third division polynomial factors as
+\((X-1)(3X^3+7X^2+X+1)\), whose cubic factor has no rational
+root. Thus this is the unique rational cyclic subgroup of
+order three. Directly in the quotient's function field,
+\[
+ \alpha\beta\gamma
+ =\left(b\left[\frac{Y}{w^2-1}+\frac{w+1}{w-1}\right]\right)^3.
+\]
+The identity holds before the substitution \(w=ms^3\).
+The three elliptic projections therefore give only the two
+cubic classes already tested by the local valuation rows.

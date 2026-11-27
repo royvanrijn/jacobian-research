@@ -22,6 +22,13 @@ multiplicity thirty or it has a root of multiplicity twenty-six and
 all other multiplicities sum to four. The normalized Bernstein
 degrees in this boundary case are \((72,108)\).
 
+The [primitive leading-factor obstruction](POLYNOMIAL_WEYL_PRIMITIVE_LEADING_FACTOR_OBSTRUCTION.md#consequences-for-centered-rectangles-and-low-orders)
+requires a common multiplicity divisor greater than one in every
+row. In the degree-thirty multiplicity-26 branch, only the
+small-root partitions \((4)\) and \((2,2)\) survive. The
+[even-profile calculation](POLYNOMIAL_WEYL_ORDER_TWELVE_HIGH_ROOT_FRACTIONAL_EXCLUSION.md#the-remaining-even-profiles)
+further restricts their small-root indicial classes.
+
 ## The crossings at gcd six
 
 The [Weyl bound through 59](POLYNOMIAL_WEYL_BERNSTEIN_FIFTY_SIX.md)

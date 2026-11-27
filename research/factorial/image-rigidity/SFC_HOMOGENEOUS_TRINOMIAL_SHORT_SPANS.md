@@ -309,6 +309,107 @@ this bound on 561 steps in each direction, checking both
 increments at every source support in that range.
 Uniform comparison in (6) remains open.
 
+## A total-degree factor in every eliminated moment
+
+Put \(N=L+H+d\). Every coefficient of every positive-order
+moment after the first-moment substitution is divisible by
+\(N\) in \(\mathbb Z[L,H]\). This holds for any fixed integer
+offsets in \([0,d]\), not only three offsets. Consequently
+\[
+ N\mid A,B,C,D,E,F,G,\qquad N^3\mid S.                    \tag{12}
+\]
+Here divisibility is a polynomial identity; the physical
+total degree \(N\ge d\) is always positive.
+
+To prove it, specialize \(H=-L-d\). For every integer
+\(0\le U\le md\), cancellation of the consecutive factors gives
+\[
+ (mL+1)_U(-mL-md+1)_{md-U}
+ =(-1)^{md-U}(mL+U)(mL+1)_{md-1}.                         \tag{13}
+\]
+This includes \(U=0,md\). For column offsets \(e_j\), set
+\(\sigma=\sum_j(-1)^{e_j}Z_j\) and
+\(\tau=\sum_j e_j(-1)^{e_j}Z_j\). The specialized order-\(m\)
+form is therefore
+\[
+ (-1)^{md}m(mL+1)_{md-1}\,
+                 \sigma^{m-1}(L\sigma+\tau).              \tag{14}
+\]
+Indeed the multinomial sum of \(U Z^\alpha\), with the
+indicated signs, is \(m\tau\sigma^{m-1}\).
+At order one the form is
+\((-1)^d(L+1)_{d-1}(L\sigma+\tau)\). The polynomial
+first-moment substitution makes it identically zero.
+Since the displayed prefactor is a nonzero polynomial,
+\(L\sigma+\tau\) is identically zero after that substitution
+at \(H=-L-d\). Thus every specialized higher form vanishes.
+Division by the monic polynomial \(H+L+d\) proves the
+coefficient divisibility over \(\mathbb Z\).
+
+The factor \(N\) is relatively prime to the height factors
+in (5). Hence the smaller integer polynomial
+\[
+ \Pi_{a,d}(L,H)=\frac{S}{K_{a,d}N^3},\qquad
+ \deg_L\Pi_{a,d}\le \nu:=4d-\lceil a/2\rceil-3             \tag{15}
+\]
+is defined for every admissible support. The degree bound
+uses \(\deg_L S\le7d+4a\),
+\(\deg_L K=3d+4a+\lceil a/2\rceil\), and the three removed
+degrees. Removing \(N^3\) lowers the full height degree by
+three; the highest part of \(S/N^3\) is (3) with
+\((L+H)^4\) replaced by \(L+H\).
+
+This isolates an exact part of the cubic cancellation.
+It does not prove the sign of the remaining polynomial.
+The two inequalities (6), with \(\Pi\) in place of \(P\),
+would still suffice by induction from \(\Pi_{1,2}\), whose
+coefficients are directly nonnegative. Those reduced
+inequalities remain open as well. For the original
+inequalities, multiplication by the new \((N+1)^3\), and
+\((N+1)^3\succeq N^3\), give the implication once the
+induction has supplied nonnegative coefficients of \(\Pi\).
+
+## Both cubic remainders and the exact common-zero test
+
+The second remainder coefficient is
+\[
+ T=C^2E-BCF+(B^2-AC)G.
+\]
+Modulo \(AX^2+BXY+CY^2\), the cubic is
+\(X^2(SX+TY)/C^2\). More precisely, the difference between
+these two cubic forms is divisible by the quadratic.
+Since \(C>0\) and the real quadratic is positive definite,
+the two forms share a complex projective zero exactly when
+\(S=T=0\). A real nonzero linear form cannot vanish at a
+nonreal root of this quadratic. Equivalently, their binary
+resultant \(\mathscr R\) satisfies the polynomial identity
+\[
+ C^2\mathscr R=CS^2-BST+AT^2.                             \tag{16}
+\]
+The right side is positive unless both remainders vanish:
+\(4C(CS^2-BST+AT^2)=(2CS-BT)^2+(4AC-B^2)T^2\).
+The separate cubic pieces cannot be assigned positive signs:
+at the admissible support \((a,d)=(1,2)\), heights
+\((L,H)=(0,10)\), one has \(BG-CF<0\) and \(S>0\).
+Thus dropping \(C^2D\) would lose a necessary cancellation.
+
+By (12), the binary resultant contains \(N^5\): it has
+degree three in the quadratic coefficients and two in the
+cubic coefficients. The resultant of all three original
+moment forms contains the same factor. Eliminating the
+first form multiplies that resultant by \(p_2^6\), which is
+relatively prime to \(N\), so introduces no additional
+\(N\)-valuation. These exact factors lead to the
+[reduced subresultant divisor sieve](SFC_ROW_TRANSLATION_DIVISOR_SIEVE.md#a-smaller-initial-window-divisor-integer).
+
+The [reduced-sieve checker](verify_sfc_trinomial_reduced_sieve.py)
+verifies (16) symbolically and checks (12) for 72 projected
+coefficients at orders two through five in four small support
+profiles. A direct expansion is compared with the existing
+factored implementation at orders two and three. Equation
+(13) and its multinomial proof, not this finite control,
+supply the unrestricted divisibility statement.
+
 ## An all-order factor in the formal gap parameters
 
 Each reciprocal-height layer of \(Q_{a-1,b-1}\) is divisible,

@@ -177,7 +177,68 @@
           0,
           0
         ]
-      ]
+      ],
+      "local_vectors": {
+        "tame": [
+          {
+            "prime": "53",
+            "valuation": 2,
+            "exponents": [
+              0,
+              0
+            ]
+          }
+        ],
+        "auxiliary": [
+          {
+            "prime": "17",
+            "degree": 2,
+            "valuations": [
+              2,
+              0
+            ],
+            "residues": [
+              1,
+              2
+            ]
+          },
+          {
+            "prime": "29",
+            "degree": 2,
+            "valuations": [
+              0,
+              0
+            ],
+            "residues": [
+              0,
+              0
+            ]
+          }
+        ],
+        "compressed": {
+          "basis": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "rank": 0
+        }
+      }
     },
     {
       "R": 71,
@@ -328,7 +389,56 @@
           2,
           0
         ]
-      ]
+      ],
+      "local_vectors": {
+        "tame": [
+          {
+            "prime": "71",
+            "valuation": 2,
+            "exponents": [
+              0,
+              0
+            ]
+          }
+        ],
+        "auxiliary": [
+          {
+            "prime": "11",
+            "degree": 2,
+            "valuations": [
+              2,
+              0
+            ],
+            "residues": [
+              1,
+              1
+            ]
+          }
+        ],
+        "compressed": {
+          "basis": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "rank": 2
+        }
+      }
     },
     {
       "R": 115,
@@ -515,7 +625,76 @@
           0,
           0
         ]
-      ]
+      ],
+      "local_vectors": {
+        "tame": [
+          {
+            "prime": "5",
+            "valuation": 2,
+            "exponents": [
+              0,
+              0
+            ]
+          },
+          {
+            "prime": "23",
+            "valuation": 2,
+            "exponents": [
+              0,
+              0
+            ]
+          }
+        ],
+        "auxiliary": [
+          {
+            "prime": "11",
+            "degree": 2,
+            "valuations": [
+              2,
+              1
+            ],
+            "residues": [
+              1,
+              0
+            ]
+          },
+          {
+            "prime": "19",
+            "degree": 1,
+            "valuations": [
+              0,
+              0
+            ],
+            "residues": [
+              2,
+              2
+            ]
+          }
+        ],
+        "compressed": {
+          "basis": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "rank": 0
+        }
+      }
     },
     {
       "R": 145,
@@ -1053,7 +1232,194 @@
             ]
           }
         ]
-      ]
+      ],
+      "local_vectors": {
+        "tame": [
+          {
+            "prime": "5",
+            "valuation": 2,
+            "exponents": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "prime": "29",
+            "valuation": 2,
+            "exponents": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "auxiliary": [
+          {
+            "prime": "19",
+            "degree": 1,
+            "valuations": [
+              2,
+              2,
+              0
+            ],
+            "residues": [
+              1,
+              2,
+              1
+            ]
+          },
+          {
+            "prime": "73",
+            "degree": 1,
+            "valuations": [
+              0,
+              0,
+              1
+            ],
+            "residues": [
+              2,
+              1,
+              0
+            ]
+          },
+          {
+            "prime": "2203",
+            "degree": 1,
+            "valuations": [
+              0,
+              2,
+              0
+            ],
+            "residues": [
+              2,
+              0,
+              2
+            ]
+          },
+          {
+            "prime": "14929",
+            "degree": 1,
+            "valuations": [
+              1,
+              0,
+              0
+            ],
+            "residues": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "prime": "40771",
+            "degree": 1,
+            "valuations": [
+              0,
+              0,
+              2
+            ],
+            "residues": [
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "prime": "13569433",
+            "degree": 1,
+            "valuations": [
+              1,
+              0,
+              0
+            ],
+            "residues": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "prime": "1110230617",
+            "degree": 1,
+            "valuations": [
+              0,
+              1,
+              0
+            ],
+            "residues": [
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "prime": "4126500217357537",
+            "degree": 1,
+            "valuations": [
+              2,
+              0,
+              0
+            ],
+            "residues": [
+              2,
+              0,
+              1
+            ]
+          },
+          {
+            "prime": "1844596892326416353771034930666609147890647659255694173392053843",
+            "degree": 1,
+            "valuations": [
+              0,
+              0,
+              1
+            ],
+            "residues": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "compressed": {
+          "basis": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              2,
+              0
+            ]
+          ],
+          "rank": 2
+        }
+      }
     },
     {
       "R": 235,
@@ -1360,7 +1726,110 @@
           0,
           0
         ]
-      ]
+      ],
+      "local_vectors": {
+        "tame": [
+          {
+            "prime": "5",
+            "valuation": 2,
+            "exponents": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "prime": "47",
+            "valuation": 1,
+            "exponents": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "auxiliary": [
+          {
+            "prime": "17",
+            "degree": 2,
+            "valuations": [
+              1,
+              0,
+              1
+            ],
+            "residues": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "prime": "19",
+            "degree": 1,
+            "valuations": [
+              1,
+              2,
+              2
+            ],
+            "residues": [
+              1,
+              2,
+              0
+            ]
+          },
+          {
+            "prime": "23",
+            "degree": 2,
+            "valuations": [
+              0,
+              0,
+              0
+            ],
+            "residues": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "compressed": {
+          "basis": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "rank": 0
+        }
+      }
     },
     {
       "R": 6095,
@@ -1655,7 +2124,105 @@
           2,
           0
         ]
-      ]
+      ],
+      "local_vectors": {
+        "tame": [
+          {
+            "prime": "5",
+            "valuation": 2,
+            "exponents": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "prime": "23",
+            "valuation": 2,
+            "exponents": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "prime": "53",
+            "valuation": 2,
+            "exponents": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "auxiliary": [
+          {
+            "prime": "11",
+            "degree": 2,
+            "valuations": [
+              2,
+              2,
+              0
+            ],
+            "residues": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "prime": "17",
+            "degree": 2,
+            "valuations": [
+              2,
+              0,
+              2
+            ],
+            "residues": [
+              1,
+              2,
+              2
+            ]
+          }
+        ],
+        "compressed": {
+          "basis": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              2,
+              0
+            ]
+          ],
+          "rank": 2
+        }
+      }
     },
     {
       "R": 355,
@@ -1864,7 +2431,88 @@
           1,
           0
         ]
-      ]
+      ],
+      "local_vectors": {
+        "tame": [
+          {
+            "prime": "5",
+            "valuation": 2,
+            "exponents": [
+              0,
+              0
+            ]
+          },
+          {
+            "prime": "71",
+            "valuation": 2,
+            "exponents": [
+              0,
+              0
+            ]
+          }
+        ],
+        "auxiliary": [
+          {
+            "prime": "43",
+            "degree": 1,
+            "valuations": [
+              0,
+              0
+            ],
+            "residues": [
+              0,
+              1
+            ]
+          },
+          {
+            "prime": "47",
+            "degree": 2,
+            "valuations": [
+              0,
+              0
+            ],
+            "residues": [
+              0,
+              0
+            ]
+          },
+          {
+            "prime": "691",
+            "degree": 1,
+            "valuations": [
+              2,
+              2
+            ],
+            "residues": [
+              2,
+              2
+            ]
+          }
+        ],
+        "compressed": {
+          "basis": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "rank": 2
+        }
+      }
     }
   ]
 }

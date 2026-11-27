@@ -261,6 +261,121 @@ At higher starts the deleted orders need not be \(1,2\).
 The fractional/Gamma-binomial window and elimination of the
 surviving integer translations remain separate obligations.
 
+### A smaller initial-window divisor integer
+
+**Proposition.** Fix a homogeneous bivariate profile
+\((0,d),(a,d-a),(d,0)\), integers \(0<a<d\), and a
+nonnegative integer height \(H\). Put \(b=d-a\) and use
+the polynomial \(\Pi=S/(K_{a,d}(L+H+d)^3)\) from
+[the total-degree factor](SFC_HOMOGENEOUS_TRINOMIAL_SHORT_SPANS.md#a-total-degree-factor-in-every-eliminated-moment).
+Then
+\[
+ J_{a,d,H}=3^\nu\Pi(-1/3,H)\in\mathbb Z_{>0},\qquad
+ \nu=4d-\lceil a/2\rceil-3.                              \tag{I3}
+\]
+If the ordinary moments at \(1,2,3\) have a common nonzero
+coefficient direction at height \(L\ge0\), then
+\(3L+1\mid J_{a,d,H}\). This applies to every support and
+fixed height \(H\); the constant need not be expanded as a
+polynomial to be computed.
+
+Here is an exact product formula for the constant, including
+the mixed cubic contribution. Normalize both exponent rows
+by \((mL)!(mH)!\). Put \(\ell=-1/3\), \(A_*=a-1/3\), and
+\[
+ \begin{gathered}
+ p=(H+1)_b,\quad r=(A_*+1)_b,\\
+ u=(2H+1)_{2b},\quad
+ v=(2A_*+1)_b(2H+1)_b,\quad z=(2A_*+1)_{2b},\\
+ \mathcal B=p^2z-2prv+r^2u>0,\quad
+ t_1=(\ell+1)_a,\quad t_2=(2\ell+1)_{2a},\\
+ c_3=(3H+1)_{3d},\quad p_2=(\ell+1)_d,\quad
+ C_*=t_1^2t_2\mathcal B,\quad D_*=c_3p_2^3.
+ \end{gathered}
+\]
+The square-integral proof of (I1), with the common unmarked
+factorials also removed, proves \(\mathcal B>0\).
+At this mark the third form is exactly \(c_3Z_0^3\).
+On the first zero plane its only nonzero coefficient is
+\(D_*\), while the quadratic's \(Y^2\) coefficient is
+\(C_*\). Therefore
+\[
+ J_{a,d,H}=
+ \frac{3^\nu C_*^2D_*}
+      {K_{a,d}(-1/3,H)(H+d-1/3)^3}.                       \tag{I4}
+\]
+All factors on the right are positive. Its integrality
+follows from (I3)'s polynomial degree bound, not from an
+unstated cancellation of rational Gamma values. For an
+integer root \(L\) of \(\Pi\), evaluation modulo \(3L+1\)
+allows substitution \(L\equiv-1/3\), because three is a
+unit. This proves the divisibility.
+
+One can also remove a forced fifth power from the old
+resultant constant. With
+\[
+ R_*=3^{2b}\mathcal B\in\mathbb Z_{>0},\quad
+ B_1=\prod_{j=1}^a(3j-1),\quad
+ B_2=\prod_{j=1}^{2a}(3j-2),\quad
+ M=c_3^2R_*^3B_1^6B_2^3,\quad \mu=3(H+d)-1,
+\]
+one has \(\mu^5\mid M\), and a failed physical translation
+must satisfy
+\[
+            3L+1\mid\gcd\bigl(M/\mu^5,J_{a,d,H}\bigr).  \tag{I5}
+\]
+For integrality of \(R_*\), each term of \(\mathcal B\)
+has degree at most \(2b\) in \(A_*\). Using this smaller
+clearing exponent instead of the \(4b\) in (I2) only removes
+powers of three, which are units in the divisor congruence.
+The two-column case of (12)–(14) in the linked note gives
+\(A_*+H+b\mid\mathcal B\) as an integer polynomial before
+specialization. Hence \(\mu\mid R_*\); also \(\mu\mid c_3\).
+This proves \(\mu^5\mid M\).
+
+To justify removing that power in the divisor condition,
+let \(F(L,H)\) be the full homogeneous resultant of the
+three normalized forms. At the mark it equals
+\(c_3^2C_*^3\), so
+\(M=3^{12a+6b}F(-1/3,H)\). The exact total-degree factor
+gives \(F=(L+H+d)^5F_0\) with \(F_0\) integral.
+At an ordinary common zero, \(F_0=0\) since \(L+H+d>0\).
+Thus reduction modulo \(3L+1\) gives the nonzero divisor
+integer \(M/\mu^5\). Any remaining power of three in a
+denominator is invertible in that congruence. Combining
+this with (I3) proves (I5).
+
+The [exact reduced-sieve checker](verify_sfc_trinomial_reduced_sieve.py)
+compares (I4) with an independently expanded \(\Pi\) and
+evaluates every candidate from (I5) in these six controls:
+
+| \((a,d,H)\) | Mark \(M\) | After removing \(\mu^5\) | After (I5) |
+|---|---:|---:|---:|
+| \((1,2,0)\) | 108 | 48 | 15 |
+| \((1,3,0)\) | 1,944 | 1,404 | 216 |
+| \((2,3,0)\) | 1,836 | 1,296 | 144 |
+| \((1,3,1)\) | 5,616 | 2,496 | 346 |
+| \((2,4,0)\) | 30,780 | 13,680 | 1,404 |
+| \((1,4,0)\) | 31,104 | 18,144 | 1,800 |
+
+The entries count positive divisors congruent to one modulo
+three. All 3,925 final candidates have \(\Pi(L,H)\ne0\).
+These profiles already lie within the existing all-height
+span theorem; they test the elimination mechanism rather
+than enlarge its range. The universal conclusion is the
+sharper necessary condition (I5). Uniform elimination of
+its divisors remains open. In particular \(L=0\) still
+passes a mark whose modulus is one. If \(\Pi=0\) at a
+candidate, the second cubic remainder or the original
+moment system must still be checked; \(\Pi=0\) alone
+does not exhibit a counterexample.
+
+Replay with Python 3.12.3, python-flint 0.9.0 and SymPy 1.14.0:
+
+~~~sh
+.venv/bin/python research/factorial/image-rigidity/verify_sfc_trinomial_reduced_sieve.py
+~~~
+
 ## 3. Integer marks using an ordinary deleted face
 
 Integer specializations cause all restricted higher forms to
