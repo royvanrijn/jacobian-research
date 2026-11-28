@@ -297,3 +297,84 @@ The scalar first-transition comparison constrains the
 mixed derivative for $B=I$ at tangential contact. It gives
 no corresponding vanishing claim for general $B$ in
 the mass-flux kernel.
+
+## Real interpolation from a score-relative margin
+
+Let \(0<r<b<1\) and suppose that every balanced ordinary planar
+three-cell partition \(A\) has an oriented reference tripod \(T\) such
+that
+\[
+ S_r(T)-S_r(A)\ge\eta L_r(A;T),\qquad 0<\eta<2.
+\]
+Use that one orientation at every intervening correlation. Put
+\(u=r/\sqrt{1-r^2}\),
+\[
+ \alpha=\frac{b}{2(1+b)},\quad
+ c_r=\frac{\Phi(2u)-1/2}{2},\quad
+ D_b=\frac1{1-4\alpha}
+             +\frac{2e^{2\alpha}\phi(0)}{\sqrt{1-4\alpha}},
+ \qquad C_{r,b}=\frac{4D_b}{(1-b^2)c_r}.
+\]
+Here \(\Phi\) and \(\phi\) are the standard Gaussian distribution
+and density. The tripod has a strictly positive score-relative
+margin at every \(\rho=r^{1-t}b^t\) with \(0\le t\le1\) and
+\[
+            (2-\eta)^{1-t}C_{r,b}^t<2.                   \tag{HC5}
+\]
+For \(C_{r,b}>2\), this is the explicit condition
+\[
+ t<\frac{\log(2/(2-\eta))}{\log(C_{r,b}/(2-\eta))}.
+\]
+The planar comparison lifts to every \(d\ge2\) by dimension
+reduction for actual maximizers.
+
+Indeed, for \(e_i=1_{A_i}-1_{T_i}\), write
+\(Q_z=\sum_i\langle e_i,T_z e_i\rangle\). For real positive \(z\)
+its Hermite series has nonnegative coefficients. Hölder therefore
+gives \(Q_\rho\le Q_r^{1-t}Q_b^t\). The anchor hypothesis says
+\(Q_r\le(2-\eta)L_r\) and (CT3) gives \(L_\rho\ge L_r\).
+It remains to bound \(Q_b\le C_{r,b}L_r\).
+
+For a transfer set \(E=T_i\cap A_j\) with \(i\ne j\), let \(s\ge0\)
+be the signed distance to the associated reflecting line and put
+\(I_E=\int_E e^{\alpha|x|^2}d\gamma_2\). The lower score bound
+from (CT2), by restricting the integral there to \(v\ge us\), is
+\(c_r\min(s,1)\). Also
+\[
+ I_E^2\le D_b\int_E\min(s,1)d\gamma_2.
+\]
+For \(s\ge1\), Cauchy--Schwarz gives the first constituent
+\((1-4\alpha)^{-1}\). For \(0\le s<1\), the normal mass of a
+section squared is at most \(2\phi(0)\) times its first normal
+moment. Indeed a subdensity bounded by \(\phi(0)\) of mass \(m\)
+has smallest first moment by concentrating the mass next to
+zero at that density, giving at least \(m^2/(2\phi(0))\).
+Now use \(e^{\alpha s^2}\le e^\alpha\) and Cauchy--Schwarz in
+the tangential variable, giving the second constituent
+\(2e^{2\alpha}\phi(0)/\sqrt{1-4\alpha}\). Finally use
+\((a\sqrt{x}+b\sqrt{y})^2\le(a^2+b^2)(x+y)\).
+
+The Mehler density is at most
+\((1-b^2)^{-1}e^{\alpha(|x|^2+|y|^2)}\) in the plane.
+Associate label vector \(d_{ij}=\mathbf e_j-\mathbf e_i\) with
+each directed transfer. The nonnegative part of the matrix
+\(d_{ij}\cdot d_{kl}\) has row sum four: the same arrow contributes
+two, and one distinct same-source and one distinct same-target
+arrow contribute one apiece. Dropping the negative terms and using
+\(2I_E I_F\le I_E^2+I_F^2\) gives
+\[
+ Q_b\le \frac4{1-b^2}\sum_E I_E^2
+     \le C_{r,b}L_r .
+\]
+Combining with Hölder proves (HC5), with deficit at least
+\([2-(2-\eta)^{1-t}C_{r,b}^t]L_r\).
+Integrating (CT3) gives the bound
+\[
+ L_\rho\le
+   \left(\frac{\rho}{r}\sqrt{\frac{1-r^2}{1-\rho^2}}\right)^{5/4}
+   L_r .
+\]
+It converts the positive margin to a margin relative to \(L_\rho\).
+For strict inequality a maximizing partition must equal the
+oriented reference almost everywhere, since its transfer cost
+vanishes only there.

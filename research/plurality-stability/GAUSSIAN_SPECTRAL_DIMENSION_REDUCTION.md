@@ -8,8 +8,8 @@ define the self-adjoint multiplier \(T=\sum_j\lambda_jP_j\) and
 \]
 The competitors are ordinary measurable partitions with prescribed
 positive masses \(p_1,\dots,p_k\). Addition of \(\lambda_0P_0\)
-affects the objective by a mass-dependent constant, so we use
-\(\lambda_0=0\) when convenient.
+affects the objective by a mass-dependent constant. Set
+\(\lambda_0=0\) throughout the proof.
 
 Suppose \(\lambda_j>0\) for \(j\ge1\) and
 \(\lambda_j\le C b^j\) for some \(b<1\). If

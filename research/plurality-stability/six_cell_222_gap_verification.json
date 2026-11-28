@@ -1,0 +1,15 @@
+{
+  "shape": [
+    2,
+    2,
+    2
+  ],
+  "young_and_helmert_generators": 3,
+  "cubic_field_coefficients_per_coordinate": 16,
+  "adjacent_residual_coefficients_per_coordinate": 24,
+  "unregrouped_conditional_residual_limit": [
+    -42,
+    -36,
+    36
+  ]
+}

@@ -11,12 +11,13 @@ on adding a third Gaussian coordinate. Together these facts exclude every
 rank-deficient global maximum in dimension at least three. The global
 theorem now has an external proof through
 [Zhang's all-cell covariance comparison](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md#external-endpoint-and-application-audit).
-It also settles the strict planar value comparison. The stationary
-classification below is an alternative route, no longer a prerequisite.
+It also settles the strict planar value comparison. A separate
+[facet-Laplacian argument](BALANCED_FIRST_MOMENT_STATIONARY_RIGIDITY.md)
+classifies all full-rank centroidal tuples and all measurable local
+maxima of \(W_1\).
 The balanced Hessian now has an explicit five-dimensional shape reduction,
-a trace identity and exact tetrahedral eigenvalues. The local theorem below
-also has an explicit polar Frobenius radius $10^{-5}$. These results do not
-prove instability of every other high-valued full-rank stationary tuple.
+a trace identity and exact tetrahedral eigenvalues. The local theorem
+below also has an explicit polar Frobenius radius $10^{-5}$.
 The quantitative boundary theorem below excludes high-value full-rank
 stationarity whenever $\lambda_{\min}(C)/\operatorname{tr}C\le10^{-11}$.
 A deterministic search from 76 asymmetric initializations
@@ -943,11 +944,12 @@ above. A positive direction in the three-dimensional radius restriction
 would connect the shape Hessian directly to the established equal-norm
 theorem. It would avoid classifying lower-valued stationary tuples.
 
-**Full-rank stability gap (open):** the same improving-perturbation
-statement for every non-tetrahedral full-rank stationary tuple, without
-restricting its value. This is a stronger sufficient statement; its
-restriction gives the high-value gap. No classification of all the
-remaining stationary tuples has been proved here.
+**Full-rank classification (resolved):** every balanced centroidal
+rank-three tuple has the tetrahedral affine winner. The
+[facet-Laplacian proof](BALANCED_FIRST_MOMENT_STATIONARY_RIGIDITY.md#facet-laplacian-and-full-rank-rigidity)
+uses the perimeter and first-moment inequalities at all values.
+There is therefore no non-tetrahedral stationary tuple in the
+improving-perturbation statement.
 
 Either stability statement implies the global first-Hermite inequality
 and its tetrahedral equality characterization. The compact affine reduction

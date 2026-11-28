@@ -1,0 +1,81 @@
+{
+  "status": "corrected_replays_failed",
+  "method": "The scalar origin argument in the amplitude bound is kept distinct from the amplitude-bin index.",
+  "scope": "These runs disprove the two advertised certificate replays. The positive upper bounds are not improving partitions.",
+  "precision_bits": 120,
+  "mode_order": 168,
+  "row_order": 54,
+  "radial_limit": 14,
+  "radial_panels": 4096,
+  "slab_width": "1/4000",
+  "residual_bins": 128,
+  "amplitude_bins": 12,
+  "direction_bins": 24,
+  "runs": [
+    {
+      "target": [
+        "2611/4000",
+        "2641/4000"
+      ],
+      "checker": "check_three_cell_signed_axis_extension.py",
+      "command": "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_signed_axis_extension.py",
+      "exit_code": 1,
+      "failed_slab": [
+        "1307/2000",
+        "523/800"
+      ],
+      "gap_upper": 0.0010121636424287436,
+      "worst_bin": [
+        0.27452270519935923,
+        0.13437514752149582,
+        0.46832319918133863,
+        1.121971053593862,
+        0.8095113394900795,
+        0.1232568334324387
+      ],
+      "replaced_checker_sha256": "702c13903a1500738755126695bb115ef962b1db963d5642d32909925ca1b7fa",
+      "source_sha256": {
+        "check_three_cell_signed_axis_extension.py": "30e83610efc184394308c41ea97d91fd79e504573c5c1085abbe8acb16774106",
+        "check_three_cell_full_radius_trial_extension.py": "df9b66bec3a6b1863a2e1beaf752500832d42585e3c97e1dca1803e979a82a14",
+        "check_three_cell_projected_trial_extension.py": "3066c6aa6cf63c8a97747b2c013ea10a0609cbdb65862687b1e47e8b0e0ea277",
+        "check_three_cell_excess_purity_extension.py": "01c2a5780b00db53478780996791026086919832aaffcdb9d1f32b798a329f71",
+        "check_three_cell_sharp_undamped_extension.py": "c47d99d50e6ea35f258afeb57450641443043f858913b92321f3eb54fdf50951",
+        "check_three_cell_global_scalar_through_half.py": "827b923ff66c2e976527b6489db79d3a1008db87d9ed8e4832f0595671e9f4cb",
+        "check_three_cell_sharp_positive_arc_envelope.py": "b7b6ade8ffab6192084713fc564bdba91f44ab65004ab71833da917646cfac72"
+      }
+    },
+    {
+      "target": [
+        "2641/4000",
+        "2661/4000"
+      ],
+      "checker": "check_three_cell_graded_central_extension.py",
+      "command": "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_graded_central_extension.py",
+      "exit_code": 1,
+      "failed_slab": [
+        "2641/4000",
+        "1321/2000"
+      ],
+      "gap_upper": 0.03421881132672556,
+      "worst_bin": [
+        0.27564827592621977,
+        0.13566822046414018,
+        0.46832319918133863,
+        1.121971053593862,
+        0.8095113394900795,
+        0.1232568334324387
+      ],
+      "replaced_checker_sha256": "77dfc82de4539966e30f6152b062162c799fa202bd52b64487864062d51d35ac",
+      "source_sha256": {
+        "check_three_cell_graded_central_extension.py": "4765541b4bea254a5f66ce94baece2284de72cb64c29a86e5ba1c1adf478ef9d",
+        "check_three_cell_signed_axis_extension.py": "30e83610efc184394308c41ea97d91fd79e504573c5c1085abbe8acb16774106",
+        "check_three_cell_full_radius_trial_extension.py": "df9b66bec3a6b1863a2e1beaf752500832d42585e3c97e1dca1803e979a82a14",
+        "check_three_cell_projected_trial_extension.py": "3066c6aa6cf63c8a97747b2c013ea10a0609cbdb65862687b1e47e8b0e0ea277",
+        "check_three_cell_excess_purity_extension.py": "01c2a5780b00db53478780996791026086919832aaffcdb9d1f32b798a329f71",
+        "check_three_cell_sharp_undamped_extension.py": "c47d99d50e6ea35f258afeb57450641443043f858913b92321f3eb54fdf50951",
+        "check_three_cell_global_scalar_through_half.py": "827b923ff66c2e976527b6489db79d3a1008db87d9ed8e4832f0595671e9f4cb",
+        "check_three_cell_sharp_positive_arc_envelope.py": "b7b6ade8ffab6192084713fc564bdba91f44ab65004ab71833da917646cfac72"
+      }
+    }
+  ]
+}

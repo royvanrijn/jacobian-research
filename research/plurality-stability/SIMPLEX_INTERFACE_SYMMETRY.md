@@ -45,7 +45,12 @@ complete the gap at every positive correlation in those cases.
 The Young-prefix transport proof (S94) settles the complete mixed
 family $(k-3,2,1)$ for every $k\ge5$. The
 [six-cell $(3,2,1)$ certificate](SIX_CELL_MIXED_321_GAP.md)
-provides a separate exact proof in that case. The [explicit initial interval for higher
+provides a separate exact proof in that case. The
+[integrated cubic](SIX_CELL_222_GAP.md) and
+[integrated quadratic](SIX_CELL_2211_QUADRATIC_GAP.md) estimates
+complete every nonstandard block in six cells. The
+[mixed-wall limit](MIXED_WALL_SECTOR_LIMIT.md) also gives the full
+near-one gap in six and seven cells. The [explicit initial interval for higher
 cell counts](HIGHER_CELL_INITIAL_INTERFACE_GAP.md) includes
 $0<\rho\le 1/[k(k-1)]$ for every $k\ge6$. The full higher-cell gap
 and global optimality remain open. External review and formal
@@ -4374,10 +4379,12 @@ The remaining targets are distinct:
   (S90) specifies its closed physical image and reconstruction.
   The whole mixed family $(k-3,2,1)$ is settled by (S94), extending
   the [six-cell $(3,2,1)$ proof](SIX_CELL_MIXED_321_GAP.md).
-  In six cells only $(2,2,2)$ and $(2,2,1,1)$ remain in addition to the standard
-  sector. For higher counts, the corresponding nonhook scalar
-  spectral-radius and fixed-space bounds are open;
-  the next simple odd-kernel positivity argument is explicitly false.
+  In six cells the [cubic $(2,2,2)$](SIX_CELL_222_GAP.md) and
+  [quadratic $(2,2,1,1)$](SIX_CELL_2211_QUADRATIC_GAP.md) estimates
+  leave only the balanced standard sector. For higher counts,
+  the remaining nonhook scalar spectral-radius and fixed-space
+  bounds are open outside the proved regimes.
+  The next simple odd-kernel positivity argument is explicitly false.
   The exact tied-height reduction (S84) supplies a two-variable
   diagnostic kernel with its original mass constraint; its restricted
   sign problem is also open and would not by itself settle (S51).

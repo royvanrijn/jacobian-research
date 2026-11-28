@@ -241,3 +241,56 @@ second profile the first-profile average of
 $|(p-p_*)+(q-p_*)|^2$ is at least $\operatorname{Var}_{\mu_0}(p)$.
 Only one member of the pair must be central. The quartic reserve
 and the actual first angular moment deficit are both unchanged.
+
+## Using both orders and the pairs with two central profiles
+
+Let \(g=\mu_0(G)\) and \(V=\operatorname{Var}_{\mu_0}(p)\). With
+independent \(X=p(t)-p_*\) and \(Y=p(s)-p_*\) under the damped law,
+retaining both orders of the central condition gives
+\[
+ \mathbb E\big[|X+Y|^2 1_{\{t\in G\ \mathrm{or}\ s\in G\}}\big]
+       \ge \frac{2g}{2-g}V.                                     \tag{WV12}
+\]
+To verify this, put \(b=1-g\). Let \(m_G,m_B\) and \(V_G,V_B\) be
+the conditional means and variances on \(G\) and its complement.
+For \(0<g<1\) the expectation is
+\[
+ 2gV_G+2gbV_B+4g^2|m_G|^2+2gb|m_G+m_B|^2.
+\]
+At fixed \(m_G-m_B\), completing the square in \(m_G\) gives a
+lower bound \(2g^2b|m_G-m_B|^2/(2-g)\) on the last two terms.
+Compare all three terms with
+\(V=gV_G+bV_B+gb|m_G-m_B|^2\). The endpoint values \(g=0,1\)
+follow by direct evaluation.
+
+When both profiles lie in \(G\), one can use
+\(H(p+q)\ge (6/100)|p+q-2p_*|^2\). Here each sum is in
+\([1/2,1]\), so each negative displacement has magnitude at most
+\(h=1/6\). In the one-negative case the same isosceles comparison
+bounds the ratio by \((2R(-h)+R(h/2))/3=(-72+48\sqrt2)/\pi^2\).
+The sharp benchmark is \(P_\sharp(\mathrm{id})=-3/(2\pi^2)\).
+The difference is greater than \(24/100\) using
+\(\sqrt2<99/70\) and \(\pi^2<10\).
+With two negatives, the negative ratios are bounded by
+\(R(-h)=(-36+6\pi\sqrt3)/\pi^2<-1/3\), using
+\(\pi<22/7\), \(\sqrt3<97/56\) and \(\pi^2<10\).
+The positive ratio is at most \(-1/2\), and the negative
+squared weight is at most one half. The resulting ratio is at
+most \(-5/12\), also more than \(24/100\) below the benchmark
+because \(\pi>3\). In each case the factor \(1/4\) yields the
+stated coefficient \(6/100\).
+
+The two-central pairs thus give a further \(3/100\) times their
+weighted interaction in addition to the both-order reserve.
+In fact
+\(\mathbb E[|X+Y|^2 1_{\{t,s\in G\}}]\ge 2g\mathbb E[|X|^2
+1_{\{t\in G\}}]\).
+Since \(|X|^2\le2/3\), this supplies the following replacement
+for (WV11), with its other terms unchanged:
+\[
+ \frac3{100}\frac{\gamma Z_0^2}{d}
+   \left(\frac{2g}{2-g}V
+           +2g\left[V-\frac23(1-g)\right]_+\right).              \tag{WV13}
+\]
+Both terms are increasing in \(g\) and in \(V\), so certified
+lower bounds on the two quantities suffice.

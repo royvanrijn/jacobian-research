@@ -5,8 +5,9 @@ The unrestricted inequality
 The exact expansion (B1) in the [continuation note](POSITIVE_CORRELATION_CONTINUATION.md)
 makes it equivalent to \(S_\rho(A)\leq S_\rho(T)\), including for
 partitions far from the simplex. The
-[full-radius trial comparison](THREE_CELL_FULL_RADIUS_TRIAL_EXTENSION.md)
-proves the unrestricted inequality through \(\rho=2611/4000\).
+[central shifted-clipping comparison](THREE_CELL_CENTRAL_SHIFT_BOOTSTRAP.md)
+proves the unrestricted inequality through \(\rho=339/500\)
+and on an unevaluated right neighborhood.
 The independent direct comparison adopted in DG21 holds for every balanced three-cell partition in every
 dimension \(d\geq2\) throughout \(0<\rho\leq61/100\).
 Its [same-label variance proof](THREE_CELL_SAME_LABEL_VARIANCE_PENALTY.md)

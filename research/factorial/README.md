@@ -1074,6 +1074,8 @@ Factorial moment functionals, composition rigidity and Strong Factorial families
 | Pure-cross three-windows at doubled odd primes off the fourth-root axis ratios | Internal result | proved | [Source](image-rigidity/BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md) |
 | Good-prime arithmetic lifting of pure-cross factorial three-windows | Internal result | proved | [Source](image-rigidity/BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md) |
 | Bad-prime bilinear lifts reduce exactly to actual perfect-square clusters | Internal result | proved | [Source](image-rigidity/BILINEAR_PRIME_TERMINAL_THREE_WINDOWS.md) |
+| Exact all-gap total-nonnegativity order of the fixed-shape auxiliary triangle | Internal result | proved | [Source](image-rigidity/FIXED_SHAPE_AUXILIARY_TOTAL_POSITIVITY.md) |
+| A positive rotated quotient can lose Hurwitz total nonnegativity | Internal result | proved | [Source](image-rigidity/FIXED_SHAPE_AUXILIARY_TOTAL_POSITIVITY.md) |
 
 **Computed obligations:** 77 unresolved; 39 resolved within their exact scope.
 

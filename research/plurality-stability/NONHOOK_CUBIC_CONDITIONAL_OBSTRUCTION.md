@@ -104,9 +104,8 @@ appropriate replaced mean. Consequently
 \]
 The first two coordinates are strictly negative for sufficiently
 large cutoffs. This breaks the conditional analogue of (S91f)
-for the unique positive cubic field. The residual integrated
-over the common cutoff, and the spectral gap of the block,
-remain separate questions.
+for the unique positive cubic field. The [integrated cubic proof](SIX_CELL_222_GAP.md) gives the
+full block gap using the regrouping below.
 
 ## An equivalent integrated comparison
 
@@ -134,5 +133,5 @@ terms with repeated indices vanish. Therefore
 Substituting these identities and integrating by parts proves
 the rewrite. The boundary term vanishes by Gaussian decay
 of \(g_0/f_0\) and polynomial bounds for the truncated moments
-at both endpoints. The sign of the regrouped integral remains
-open.
+at both endpoints. The [integrated proof](SIX_CELL_222_GAP.md)
+shows this regrouped integral is nonnegative coordinatewise.

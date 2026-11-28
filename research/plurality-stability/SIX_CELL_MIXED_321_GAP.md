@@ -4,9 +4,11 @@ For the balanced six-cell Gaussian simplex and each fixed \(0<\rho<1\),
 the full \(V_{(3,2,1)}\) interface isotypic component has a positive
 \(L^2\) spectral gap in every ambient dimension \(d\ge5\), with a
 constant independent of \(d\). This controls every multiplicity of
-this shape. It leaves the balanced standard sector and the
-\((2,2,2)\), \((2,2,1,1)\) shapes as the only six-cell blocks with
-all-correlation estimates still to establish.
+this shape. The [cubic](SIX_CELL_222_GAP.md) and
+[quadratic](SIX_CELL_2211_QUADRATIC_GAP.md) proofs give the
+remaining nonstandard six-cell estimates at every positive
+correlation. The balanced standard sector is the remaining
+all-correlation obligation in six cells.
 
 Use the facet conventions of (S67)–(S75) in
 [the interface reduction](SIMPLEX_INTERFACE_SYMMETRY.md). In the

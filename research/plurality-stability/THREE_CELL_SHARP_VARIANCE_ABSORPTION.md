@@ -7,7 +7,7 @@ for profiles that differ. Both can be retained along with the
 actual first angular deficit. In particular the penalty can be included
 in the linear norm test even when the uncorrected scalar operator has
 an adverse direction. The reserved bootstrap below proves the global
-three-cell comparison through 0.648 and gives a positive unevaluated
+three-cell comparison through 0.658 and gives a positive unevaluated
 right neighborhood. The argument uses circular masses and exact score
 transfer cost in place of a global first-moment loss.
 
@@ -745,6 +745,459 @@ uniform score margin. The reference-slice weight
 \(\sqrt t\exp[-3t/4-4\sqrt t]\) still works on the added slab.
 Applying (CT5) at \(81/125\) gives a positive unevaluated
 right neighborhood.
+
+## Projected tilted moments beyond one radial mode
+
+The amplitude test also controls the raw tilted moment after
+clipping the trial. Let \(H=L^2(J'_m\,d\nu;\mathbb R^k)\) as
+in (SV7), \(z=y+g\) with \(y=Awu,\ \|w\|=1\), and
+\(g\perp wu\). Write \(z_*=\Pi_C y\) and \(h=z_*-y\), where
+\(C=\Delta_3-\mathbf1/3\). These estimates hold for any closed
+convex set \(C\) containing zero in a Euclidean ball of radius \(r_*\).
+On an amplitude bin \([A_-,A_+]\) for a profile satisfying
+\(G_0/A\le H_0\), put \(\tau=H_0^2-I_2(A_-)\),
+\(a_1=I_1(A_-)\), using the two expenses from (SV10).
+Then
+\[
+ \|g-h\|_H^2\le A^2\tau,\qquad
+ \langle g-h,wu\rangle_H\ge A a_1.
+\]
+A bin with \(\tau<a_1^2\) is infeasible. If \(d\mu_1\le B J'_m d\nu\),
+the clipped moment estimate is
+\[
+ \|z\|_{L^2(\mu_1)}
+ \le
+ \left(\int\min\{A_+^2|u|^2,r_*^2\}\,d\mu_1\right)^{1/2}
+                 + A_+\sqrt{B\tau}.                       \tag{SV12}
+\]
+The first term uses the nonexpansiveness of the projection,
+which fixes zero. One may take the minimum with (SR19).
+For the clipped integral, each radial panel can use the smaller
+of the upper trial-square integral and \(r_*^2\) times the
+upper tilted mass. The latter also bounds the tail after
+cutoff \(x=L\) in \(x=\sqrt t\), with exact \(\mu_1\)-survival
+probability
+\(\operatorname{erfc}(\sqrt{1+\kappa}L)
+ +2\sqrt{1+\kappa}L e^{-(1+\kappa)L^2}/\sqrt\pi\).
+
+There is a further saving by using the forced projection
+\(\delta=\langle g-h,wu\rangle_H\) in the tilted norm.
+Let \(M_+\ge\int u^2d\mu_1\) with \(M_+<B\). If
+\(a_1^2>\tau M_+/B\), decompose \(g-h=\delta wu+k\),
+\(k\perp wu\), and put \(b=\delta/A\ge a_1\).
+Applying the same two-dimensional multiplier bound as in (SR19)
+to this decomposition gives, with \(M=\int u^2d\mu_1\),
+\[
+ \frac{\|g-h\|_{L^2(\mu_1)}}A
+ \le b\sqrt M+\sqrt{\tau-b^2}\sqrt{B-M}
+ \le a_1\sqrt{M_+}+\sqrt{\tau-a_1^2}\sqrt{B-M_+}.            \tag{SV13}
+\]
+For the first step the residual squared ratio is at most
+\((\tau-b^2)/b^2\le(B-M)/M\) if \(M>0\), exactly the
+hypothesis for (SR19); the zero cases follow by continuity.
+For the second step the expression increases in \(M\) up to
+\(Bb^2/\tau\). After substituting \(M_+\), it decreases in
+\(b\) throughout the remaining feasible range. If the
+condition for (SV13) fails, retain \(\sqrt{B\tau}\) in (SV12).
+The tilted mean bound (SV11) can also be evaluated on each
+amplitude bin with \(A_+\) rather than a global cap, and
+combined with that bin's raw second moment in the quartic
+bound (SV9). A certified minimum over bins is a valid next gain.
+
+### Finite-dimensional adverse subspaces
+
+There is a version for several adverse modes. Let
+\(F:\mathbb R^m\to H\) be isometric, let \(y\in\operatorname{im}F\)
+and \(g\perp\operatorname{im}F\), and again let
+\(z_*=\Pi_C y\), \(h=z_*-y\). Then \(e_*=g-h\) has forced
+coordinates \(c=F^* e_*=-F^*h\) and squared norm bounded above
+by \(\tau=\|g\|_H^2-\|h\|_H^2\). Let \(W\) be the tilted
+density multiplier, \(0\preceq W\preceq BI\).
+For any \(\ell>B\), there is the finite matrix bound
+\[
+ \|g-h\|_{L^2(\mu_1)}^2\le
+ \ell\tau-c^{\mathsf T}
+          \big[F^*(\ell I-W)^{-1}F\big]^{-1}c .              \tag{SV14}
+\]
+In fact, the minimum of \(\langle D e,e\rangle_H\)
+at fixed \(F^*e=c\), with \(D=\ell I-W>0\), is attained at
+\(D^{-1}F(F^*D^{-1}F)^{-1}c\). This follows by orthogonality
+to the kernel of \(F^*\) in the \(D\)-inner product.
+Subtract this minimum from \(\ell\|e_*\|_H^2\).
+If only a lower bound \(a\) on \(|c|\) is known, the
+subtracted term is at least
+\(a^2/\lambda_{\max}(F^*D^{-1}F)\).
+This version retains the whole projected expense while charging
+the tilt by a finite matrix of radial integrals. It works for
+a simplex of any number of labels, with \(r_*=\sqrt{(k-1)/k}\)
+in (SV12); using it to prove a noise stability comparison still
+requires the corresponding angular and scalar bounds.
+
+### Shifts in the prescribed coefficient directions
+
+Before bounding the tilted moment, feasibility itself admits a
+finite-dimensional shift test. Let \(X\subset H\) contain the
+trial directions and any mean representers perpendicular to
+\(g\). For \(v\in X\),
+\[
+ \|g\|_H^2\ \ge\
+     \int \operatorname{dist}(y+v,C)^2 J'_m\,d\nu-\|v\|_H^2 .
+                                                               \tag{SV15}
+\]
+Indeed \(z=y+g\) belongs to \(C\) pointwise and
+\(\|z-y-v\|_H^2=\|g\|_H^2+\|v\|_H^2\). The bound is exact
+if the pointwise projection of \(y+v\) happens to have the
+prescribed trial and mean coefficients. One may optimize over
+the finite-dimensional \(v\). Taking \(v=\eta y\) gives the
+one-mode lower bound
+\(\|g\|_H^2/A^2\ge(1+\eta)^2 I_2((1+\eta)A)-\eta^2\)
+for every \(\eta\ge0\). The current directed runs use the
+explicit projection expenses rather than this optimization.
+
+When the underlying weighted measure is finite and \(C\) is
+bounded, the optimized test is exact, even for a coefficient
+vector on the boundary of feasibility. Put
+\(\mathcal K=\{z:z(t)\in C\text{ almost everywhere}\}\).
+This set is weakly compact in \(H\), since it is bounded,
+convex and norm closed. For the isometry \(F\) onto \(X\)
+define
+\(\Phi(b)=\inf\{\|z-y\|_H^2:z\in\mathcal K,\ F^*z=b\}\),
+with value \(+\infty\) on an empty fiber. Weak compactness
+and lower semicontinuity of the squared norm show that
+\(\Phi\) is proper, convex and lower semicontinuous on the
+finite-dimensional coefficient space. Its convex biconjugate
+formula at \(b=F^*y\), followed by completing the square in
+\(\|z-y\|_H^2-2\lambda\cdot F^*(z-y)\), gives
+\[
+ \Phi(F^*y)
+ =\sup_{\lambda\in\mathbb R^m}\!
+    \left\{\int\operatorname{dist}(y+F\lambda,C)^2J'_m\,d\nu
+                          -|\lambda|^2\right\}.             \tag{SV16}
+\]
+The inner infimum is achieved by pointwise projection.
+Thus the complete finite-dimensional feasibility problem
+for several adverse modes and finitely many balance constraints
+has an exact shifted clipping dual. Equation (SV14) separately
+controls the tilted correction for each such projected profile.
+
+### Directed projected-moment extension through 329/500
+
+The [projection cover](q_projection_cover_648_651.json),
+[clipped-moment cover](q_projection_cover_651_657.json) and
+[tilted-orthogonality cover](q_projection_cover_657_658.json)
+use the same reserved adaptive proof as the cover through
+\(81/125\), starting from gain \(12/25\) on every slab. Each
+successful stage proves the next gain by the quartic bound
+and keeps the actual first angular deficit. The added
+certificate methods are:
+
+- On \([81/125,651/1000]\), the
+  [projection checker](check_q_directmean_bootstrap_proj.py)
+  includes \(I_1^2\) in each amplitude clipping test.
+  Its 169 slabs give a maximum full norm bound \(1.998623\).
+- On \([651/1000,657/1000]\), the
+  [clipped-moment checker](check_q_directmean_bootstrap_clipraw.py)
+  uses (SV12) with 16 amplitude bins, combined with the
+  original tilted estimate (SR19). Its 242 slabs give a
+  maximum full norm bound \(1.998964\).
+- On \([657/1000,329/500]\), the
+  [tilted-orthogonality checker](check_q_directmean_bootstrap_spent.py)
+  uses 32 amplitude bins, (SV13), and the projected
+  tilted mean evaluated at each bin's upper amplitude.
+  Its 73 slabs give a maximum full norm bound \(1.996733\).
+
+Each cover starts with rational width \(1/4000\) and uses
+110-bit Arb, 512 cubic radial panels, 768 clipping panels,
+4096 tilted trial panels, \(N=192\), and \(m=96\).
+The preliminary radial reserve is \(10^{-5}\) and every
+final norm is strictly below \(1999/1000\).
+The receipts concatenate the exact accepted leaves of the
+adjoining runs of each method with identical settings. A full
+local replay reproduced all three receipts byte for byte.
+Replay as follows:
+
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_q_directmean_bootstrap_proj.py --start 81/125 --stop 651/1000 --width 1/4000
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_q_directmean_bootstrap_clipraw.py --start 651/1000 --stop 657/1000 --width 1/4000
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_q_directmean_bootstrap_spent.py --start 657/1000 --stop 329/500 --width 1/4000
+
+Thus the balanced Gaussian comparison holds in every \(d\ge2\)
+for \(0<\rho\le329/500\), with simplex rigidity on the added
+slabs. The shared radial and angular reserves give the
+planar transfer-cost margin there, using
+\(w(t)=\sqrt t\exp[-4t/5-4\sqrt t]\) in the reference-slice
+proof. In fact \(\kappa\le4/5\) and \(\gamma\sqrt2\le4\)
+through the endpoint. The positive right-neighborhood
+continuation from (CT5) and the fixed-mass dimension theorem
+apply as before.
+
+## Signed-direction projected-moment bootstrap
+
+For a sorted centered unit direction \(v\), put
+\(a=-v_3\), \(b=v_1-v_2\). The bounds \(0\le b\le3a\)
+follow from sorting and zero sum. On the ray \(p_*+sv\), \(s\ge0\),
+projection first hits the face \(p_3=0\) at \(3as=1\).
+The affine face projection then has \(p_2=(1-bs)/2\),
+so it hits the vertex when \(bs=1\). The normal directions to
+the first face and along its edge are orthogonal in the centered
+plane. Thus the squared projection distance is
+\[
+ D_v(s)=\tfrac16(3as-1)_+^2+\tfrac12(bs-1)_+^2 .
+\]
+Squared distance to a convex set is differentiable with gradient
+twice point minus projection. Hence, writing \(h_s\) for projection
+minus point, \(-v\cdot h_s=D_v'(s)/2\ge0\). For the projected raw
+norm this gives
+\[
+ |\Pi_\Delta(p_*+sv)-p_*|^2
+  =s^2-sD'_v(s)+D_v(s)
+  =s^2-\tfrac16((3as)^2-1)_+-\tfrac12((bs)^2-1)_+ .
+\]
+Its coefficient on each interval of activity is nonnegative,
+since \(3a^2+b^2=2\), proving the required ray monotonicity.
+For a negative \(\phi\), reflection to the sorted direction
+of \(-v\) replaces \((a,b)\) by
+\(((a+b)/2,(3a-b)/2)\) and \(s\) by \(A|\phi|\).
+All subtracted norm terms and both distance and alignment costs
+are nondecreasing in the relevant nonnegative direction parameters.
+Directed lower bounds on each parameter can therefore be inserted
+together, even if they are attained at different ends of a direction
+interval. A radial panel of uncertain sign contributes nothing to
+the lower clipping costs or to the subtracted raw corrections.
+
+Use the scalar spectral bound and the same reserved bootstrap as
+in (SV12)–(SV13). In a stage which has an adverse radial mode,
+write the centered profile as \(z=A v\phi+g\), with \(v\) a unit
+centered label vector, \(\|\phi\|_J=1\),
+\(\langle g,v\phi\rangle_J=0\) and
+\(\|g\|_J\le A r\). Here \(r\) is the spectral upper bound on
+the residual ratio, including the radial reserve. The case \(A=0\)
+is covered by the negative scalar complement.
+
+For \(h=\Pi_\Delta(p_*+A v\phi)-(p_*+A v\phi)\) and \(k=g-h\),
+projection gives
+\[
+ \|h\|_J^2+\|k\|_J^2\le \|g\|_J^2,\qquad
+ \frac1A\langle k,v\phi\rangle_J
+   =-\frac1A\langle h,v\phi\rangle_J .
+\]
+After sorting \(v\), the [signed projection costs (SA1)–(SA4)](THREE_CELL_SIGNED_AXIS_EXTENSION.md)
+provide lower bounds \(F_1,F_2\) on
+\(A^{-2}\|h\|_J^2\) and \(-A^{-1}\langle h,v\phi\rangle_J\),
+respectively. Use the negative-direction parameters when
+\(\phi<0\). Both exact costs are nondecreasing in \(A\), so
+their bounds at the lower endpoint of an amplitude bin are
+valid over the bin. These two bounds are simultaneous inequalities
+for the same projection. Indeed the first reduces the residual
+budget via the first projection inequality, and the second
+forces its axial coordinate via the second projection identity. They also give the per-direction amplitude
+cap by requiring \(F_1+F_2^2\le r^2\). The direction-free
+cap remains valid as a starting upper bound.
+
+Put \(b=r^2-F_1\). The projected residual satisfies
+\(\|k/A\|_J^2\le b\) and \(\langle k/A,v\phi\rangle_J\ge F_2\).
+A bin with \(b<F_2^2\) is infeasible. Let \(B\) be the upper
+density ratio \(d\mu_1/dJ\) and \(M\) the upper raw trial
+second moment in \(\mu_1\). As in (SV13), the tilted residual
+bound is \(\|k/A\|_{\mu_1}\le\Lambda\), where
+\[
+ \Lambda=
+ \begin{cases}
+   \sqrt{M}F_2+\sqrt{B-M}\sqrt{b-F_2^2}, &F_2^2>bM/B,\\
+   \sqrt{Bb}, &F_2^2\le bM/B .
+ \end{cases}
+\]
+For the first case, the dual linear functional of the
+embedding from the \(J\)-norm into the \(\mu_1\)-norm has
+norm at most \(\sqrt B\) and axial component at most
+\(\sqrt M\). Maximizing its action under the two constraints
+on \(k/A\) gives the displayed formula. This uses the same
+projection estimate as the direction-free bootstrap.
+
+At the upper endpoint \(A_+\) of the amplitude bin, (SA2)
+and the signed radial table also bound
+\(\|\Pi_\Delta(p_*+A v\phi)-p_*\|_{\mu_1}^2\) above by
+\(R_{\rm clip}\). The projected squared norm is nondecreasing
+on each ray, so it can be evaluated at \(A_+\) before subtracting
+the directed lower clipping corrections. Consequently,
+\[
+ \mathbb E_{\mu_1}|z|^2
+ \le \min\left\{
+  A_+^2(\sqrt M+r\sqrt{B-M})^2,\,
+   \big(\sqrt{R_{\rm clip}}+A_+\Lambda\big)^2\right\}.
+\]
+The first term is the original orthogonality estimate, used when
+\(M<B/(1+r^2)\). The directed test subdivides a slab if it
+cannot certify that hypothesis.
+The two moment bounds (SV11) then give the quartic gain
+on this bin. The minimum over the feasible amplitude and
+label-direction bins is a stage gain for all feasible profiles,
+and the same reserved spectral test can be iterated.
+
+The signed tables are evaluated with the same interval-valued
+physical correlation for both nominal endpoints. There is no
+separate anchor scaling in the actual radial trial. The factor
+\(\sqrt{d_{\rm upper}/d_{\rm lower}}\) computed by the shared
+helper encloses 1 and its upper endpoint is safe in the lower
+clipping costs. The upper raw moment used in the clipped
+formula includes the whole half-line. Omitting sign-undetermined
+panels or panels beyond radius 4 from the clipping reductions
+can only weaken the upper bound.
+
+The [directed driver](check_three_cell_signed_projected_moment.py)
+uses the signed-table and projection helper
+functions. It does not use the earlier signed-axis and
+graded-central certificate tests or their receipts.
+
+### Directed signed projected-moment extension through 2661/4000
+
+The [complete signed projected-moment receipt](three_cell_signed_projected_moment_verification.json)
+covers \([329/500,2661/4000]\) by 141 adjacent rational slabs.
+It uses 110-bit Arb, 192 kernel modes, 96 row terms, 512 cubic
+Hermite panels, 768 direction-free clipping panels, 4096 raw
+trial panels, and 2400 signed panels through radius 4, with
+24 direction bins and 32 amplitude bins. The preliminary
+radial reserve is \(10^{-5}\), and the maximum full norm upper
+bound is \(1.998601750\), strictly below \(1999/1000\).
+The three internal replays cover
+\([329/500,661/1000]\), \([661/1000,83/125]\), and
+\([83/125,2661/4000]\). Replay the complete cover with
+
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_signed_projected_moment.py --start 329/500 --stop 2661/4000 --width 1/4000
+
+This proves the balanced Gaussian comparison for every
+\(d\ge2\) through \(\rho=2661/4000\), with equality rigidity
+on the new slab. The retained angular deficit and radial
+reserve give the planar score-relative margin on the new slab.
+The reference-slice argument uses
+\(w(t)=\sqrt t\exp[-t-4\sqrt t]\), since \(\kappa<1\) and
+\(\gamma\sqrt2<4\) throughout. The continuation argument
+gives a positive unevaluated right neighborhood.
+The [corrected signed-axis and graded replay failures](three_cell_signed_graded_corrected_failure.json)
+concern the earlier amplitude-cap route. The verified cover
+here uses a separate projected-moment feasibility comparison.
+
+### Adjoining directed cover through 167/250
+
+The [adjoining signed projected-moment receipt](three_cell_signed_projected_moment_66525_668_verification.json)
+continues the same proof through \([2661/4000,167/250]\).
+The interval comprises 118 adjacent rational slabs with the same
+precision, panel settings and preliminary reserve. Its maximum
+full norm upper bound is \(1.998273324\). Replay with
+
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_signed_projected_moment.py --start 2661/4000 --stop 167/250 --width 1/4000
+
+The directed gain uses the two raw/mean bounds in (SV11) with
+the actual \(\chi\) at each slab. The denominator in \(\chi\)
+is positive throughout this interval since \(\rho<1/\sqrt2\).
+The reference-slice weight \(\sqrt t\exp[-t-4\sqrt t]\) remains
+valid as \(\kappa<1\) and \(\gamma\sqrt2<4\). Thus the unrestricted
+balanced Gaussian comparison holds through \(167/250\),
+with rigidity and a planar score-relative margin on the new
+slab and an unevaluated positive right neighborhood.
+
+## An undamped central reserve in the signed bootstrap
+
+On an amplitude and direction bin use the projected reference
+\(\widehat p=\Pi_\Delta(p_*+A v\phi)\) and the same
+\(k=p-\widehat p\) as in the signed projected-moment comparison.
+Let \(r_*=\sqrt{2/3}\),
+\(b=r^2-F_1\) and \(A\le A_+\), so
+\(\|k\|_J\le A_+\sqrt b\).
+Write \(\ell(p)=\min\{1/4,\min_i p_i\}\). On the centered
+plane every coordinate functional has norm \(r_*\), so
+\(\ell\) is \(r_*\)-Lipschitz. Nonexpansiveness of projection
+at \(p_*\) yields
+\[
+ \ell(\widehat p)\ge L_A(\phi),\qquad
+ L_A(t)=\min\{1/4,(1/3-r_* A_+|t|)_+\}.
+\]
+For any radial set \(E\),
+\[
+ \begin{split}
+ e_0:=\mathbb E_{\mu_1}\ell(p)
+ &\ge \int_E L_A(\phi)\,d\mu_1-r_*\int_E |k|\,d\mu_1\\
+ &\ge \int_E L_A(\phi)\,d\mu_1
+   -r_* A_+\sqrt{b\int_E \frac{d\mu_1}{dJ}\,d\mu_1}.
+ \end{split}                                                    \tag{SC1}
+\]
+The first inequality discards the nonnegative contribution
+outside \(E\). The second is weighted Cauchy–Schwarz.
+This is [(UC7)](THREE_CELL_UNDAMPED_CENTRAL_VARIANCE.md) with the signed distance expense already in \(b\).
+
+On each radial panel in \((0,4]\), bound \(|\phi|\) above by
+\(t_i\), the \(\mu_1\) mass below by \(m_i\), and
+\(\int_{\mathrm{panel}}(d\mu_1/dJ)d\mu_1\) above by \(n_i\).
+The leftmost panel may be omitted. Sort the panels by \(t_i\).
+For a prefix \(E\) with \(r_* A_+t_i\le1/3\),
+\(\int_E L_A(\phi)\,d\mu_1\) is at least
+\(\sum_i m_iL_A(t_i)\). Store the partial sums of \(m_i\),
+\(m_i t_i\), and \(n_i\). A second threshold at
+\(r_* A_+t_i=1/12\) splits this prefix into the constant
+part \(L_A(t_i)=1/4\) and the linear part
+\(L_A(t_i)=1/3-r_* A_+t_i\), so all three terms in (SC1)
+are evaluated directly by these partial sums. Finite allowed
+prefixes suffice for a lower bound. Take their best bound,
+zero, and the moment-only bound \(1/4-2M\) from (UC3).
+
+Use this \(e_0\) lower bound and the previously bounded tilted
+moments \(M=\mathbb E_{\mu_1}|p-p_*|^2\) and
+\(m=|\mathbb E_{\mu_1}(p-p_*)|\) in [(UC6)](THREE_CELL_UNDAMPED_CENTRAL_VARIANCE.md). The coefficient is
+\[
+ \max\{2/3-M+2e_0,\;4/3-2r_*m+2m^2-3M\}
+       +(21\pi^3/1024)e_0.                                  \tag{SC2}
+\]
+The alternatives inside the maximum both use the negative
+Taylor remainder. The final term uses only the positive
+Taylor remainder from (UC2), and the exact first-angular
+deficit is still retained. The stage replaces the old
+scalar gain by the new one. It does not add the preceding
+stage's gain. The quadratic in \(m\) is bounded below
+by evaluation at the certified upper \(m\) if that upper
+is less than \(r_*/2\), and otherwise by its minimum at
+\(r_*/2\). The coefficient can exceed \(4/3\). The retained driver caps
+the certified stage gain at \(4/3\).
+
+One can start the signed amplitude bisection with a completely
+general upper bound even if the earlier direction-free
+clip cannot certify a fixed trial cap. Since
+\(\|\phi\|_J=1\) and \(z=p-p_*\) has \(|z|\le r_*\),
+\[
+ A=|\langle z,\phi\rangle_J|
+             \le r_*\sqrt{\int dJ}.
+\]
+In the same variable \(x\) used in the signed tables,
+\(dJ=x^2Q(x)e^{-\beta x^2}\,dx/(2d)\). For a coefficient
+\(q_n\) of \(Q\), its contribution to \(\int dJ\) is
+\(q_n\Gamma((n+3)/2)/(4d\,\beta^{(n+3)/2})\).
+The resulting directed upper amplitude bounds may then be
+reduced by the same signed clipping and alignment tests.
+
+### Directed central-reserve extension through 84/125
+
+The [central-reserve checker](check_three_cell_signed_central_bootstrap.py)
+and [complete directed receipt](three_cell_signed_central_bootstrap_verification.json)
+cover the contiguous interval \([671/1000,84/125]\).
+Each of the four consecutive subintervals of width \(1/4000\)
+contains eight accepted rational leaves. The largest full norm
+bound is \(1.998473940<1999/1000\), with preliminary radial
+reserve \(10^{-5}\). The calculation keeps 110-bit Arb, 192
+kernel modes, 96 row terms, 512 cubic Hermite panels, 768
+direction-free clipping panels, 4096 raw trial panels, 24
+signed direction bins, 32 amplitude bins and 2400 signed
+panels through radius 4. It tests 12 prefixes in (SC1).
+Replay with
+
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_signed_central_bootstrap.py --start 671/1000 --stop 84/125 --width 1/8000
+
+The [shifted-clipping cover](THREE_CELL_SIGNED_SHIFT_BOOTSTRAP.md)
+supplies the lower interval. The signed central reserve proves
+balanced three-cell Gaussian simplex optimality in all dimensions
+\(d\ge2\) through \(84/125\), with rigidity on the added slab.
+The exact first angular deficit and radial reserve give the
+planar score-relative margin there. Since \(\kappa<1\) and
+\(\gamma\sqrt2<4\), the reference-slice weight
+\(\sqrt t\exp[-t-4\sqrt t]\) remains valid. The margin gives
+an unevaluated positive right neighborhood.
 
 ## Discrete plurality
 

@@ -520,3 +520,531 @@ midpoints constant across fibers. Finite-volume change
 makes that constant zero. Thus the original competitor
 already agrees with the centered rearrangement, and the
 ordered comparison gives equality only at the reference.
+
+## Binary and cyclic changes without ordering assumptions
+
+The same polynomial comparison applies to arbitrary transfers
+between a fixed pair of labels, with all other labels unchanged
+from the simplex. It also applies to changes whose directed
+label transfers contain at most one arrow with any given source
+and at most one arrow with any given destination. There is no
+symmetry or orientation assumption on these changes. In the
+Euclidean case the assertion holds for the Weyl-symmetric
+convolution kernels specified above. For the Gaussian kernel
+the support range and \(cR^{-2}L_\rho\) bound are as in (BC10).
+
+For the binary step work on \(\Omega=T_i\cup T_j\). The cut with
+an endpoint outside \(\Omega\) is unchanged. Use the signed
+unit pair coordinate \(h=(p_i-p_j)/\sqrt2\) and tangential
+coordinate \(z\). Outside \(\Omega\) each normal fiber is a
+centered interval, up to endpoints, because the larger of
+the two incident site scores is their mean plus
+\(|h|/\sqrt2\), while all other scores are independent of \(h\).
+With \(\eta=1_{\{h>0\}}\) the scalar sign proof in (J1) applies,
+keeping also the nonnegative slack as in (BC6).
+
+For \(h>0\), the integral of \(\operatorname{sgn}(h-q_h)\)
+against \(K_e(p,q)\) on the excluded fibers is nonnegative.
+In the conditional distribution of \(q\) given \(p\), replace
+the sign threshold \(h\) by the smaller \(\rho h\).
+On every excluded centered interval, the conditional normal
+density is an even Gaussian centered at \(\rho h\ge0\).
+Reflection about \(\rho h\) shows the portion below the mean
+has at least the mass of the portion above it. The full-space
+sign integral is
+\(\phi_1(ep)[2\Phi((1-\rho)h/a)-1]\le C e^2 h\).
+Thus the harmful contribution of the row integral on \(\Omega\)
+is bounded by \(C e^2|h|\), and the negative \(h\) case follows
+by reflection. For the centered Euclidean displacement kernel,
+the full-space integral is zero and conditional evenness
+gives the same sign on excluded intervals.
+
+To bound the slack, take the local-step chain above with one
+modification: the tangential increments lie in a small ball
+where the increase of the average site score of \(i,j\)
+exceeds that of every other site, by a fixed amount.
+Such increments exist along the average pair direction.
+The half-width of the excluded normal interval therefore
+decreases by at least a fixed amount at each step until it is
+zero. Choose the normal contraction so that the decrease
+in \(|h|\) is less than this fixed amount.
+A point of \(\Omega\) then stays in \(\Omega\) throughout
+the chain. Tangential escape, pair congestion and the lower
+bound on the kernel are unchanged. This gives the same
+polynomial slack, which absorbs the row error in the
+Gaussian physical ball of radius \(\delta\).
+In Euclidean unbounded finite-volume changes, start on a
+bounded subset of positive wrong mass and use the same
+vanishing bound on incorrect terminal points outside \(B_R\).
+
+For a general directed change of the stated class, write
+\(h_U=1_U-1_T=\sum_{i\to j}(e_j-e_i)f_{ij}\), with \(f_{ij}\)
+the transfer indicators. The exact deficit is \(2L-Q\) and
+the linear score cost adds. The coefficient of a cross term
+in \(Q\) is the inner product of two label-transfer vectors.
+Distinct arrows have nonpositive inner product when they
+share neither source nor destination. Since the kernel is
+nonnegative, discarding those cross terms only lowers the
+deficit. Each remaining term is the deficit of its single
+transfer and obeys the binary bound just proved. This extends
+the cyclic comparison (J2) to every cell count and to
+the stated near-one Gaussian radius.
+
+## A fixed-radius junction bound with arbitrary incoming transfers
+
+Let \(T\) be the regular \(k\)-cell simplex partition in
+\(E=\mathbf1^\perp\), \(k\ge3\), and let \(U\) be an ordinary competitor
+whose changes are supported in the active rescaled ball \(B_R\),
+\(R\ge1\). Write
+\[
+ F_{ij}=\{p:T(p)=i,\ U(p)=j\},\qquad
+ h_{ij}(p)=(p_i-p_j)/\sqrt2,\qquad
+ H=\sum_{i\ne j}\int_{F_{ij}}h_{ij}(p)\,dp.
+\]
+For Ornstein--Uhlenbeck noise put \(e=\sqrt{2(1-\rho)}\) and
+\(a=\sqrt{(1+\rho)/2}\), and use the rescaled joint kernel
+\[
+ K_e(p,q)=\phi_1(ep)\phi_a(q-\rho p)
+         =\phi_a(e(p+q)/2)\phi_1(q-p).
+\]
+Let \(\Delta_K\) denote the *ordered* relative cut
+\(\iint K(p,q)(1_{U(p)\ne U(q)}-1_{T(p)\ne T(q)})\,dp\,dq\).
+Then \(S_\rho(T)-S_\rho(U)=e^{k-1}\Delta_{K_e}\).
+Define the unpaid shared-source interaction
+\[
+ B=\sum_i\ \sum_{\substack{j<\ell\\j,\ell\ne i}}
+ \int_{F_{ij}\times F_{i\ell}} K(p,q)
+  1_{\{h_{ij}(p)<h_{ij}(q),\ h_{i\ell}(q)<h_{i\ell}(p)\}}\,dp\,dq .
+ \tag{BR1}
+\]
+There are \(c,\delta>0\), depending only on \(k\), such that for
+\(eR\le\delta\)
+\[
+ \Delta_{K_e}\ge cR^{-2}H-2B.
+ \tag{BR2}
+\]
+The same bound holds for the unit Gaussian Euclidean convolution kernel
+on every \(R\ge1\). In particular the hypotheses permit arbitrarily many
+transfer arrows into a label whenever each source has at most one arrow
+out. They also permit outgoing branching whenever the interaction in
+(BR1) vanishes or is sufficiently small. In the Gaussian case,
+\(L_\rho(U;T)\le C e^{k-1}H\), so the zero-\(B\) class has the same
+fixed-physical-ball relative \(cR^{-2}\) margin as (BC10). All assertions
+allow unbalanced competitors.
+
+### Single-arrow row credit
+
+For each arrow \(i\to j\), let \(\Delta_{ij}\) be the ordered deficit of
+the competitor that performs only this arrow. Changes in the cut with
+one endpoint outside \(\Omega_{ij}=T_i\cup T_j\) vanish. On this domain
+write \(\eta=1_{\{h>0\}},\,m=\eta-1_{F_{ij}}\), \(h=h_{ij}\) and
+\(s(p,q)=\operatorname{sgn}(h(p)-h(q))\). The binary sign identity is
+\[
+ \Delta_{ij}
+  =\iint_{\Omega_{ij}^2}K(p,q)
+       [\,|m(p)-m(q)|-s(p,q)(m(p)-m(q))\,]\,dp\,dq
+       -2\int_{F_{ij}}\int_{\Omega_{ij}} K(p,q)s(p,q)\,dq\,dp.
+ \tag{BR3}
+\]
+Indeed the reference bracket vanishes, while antisymmetry converts
+the signed change into twice its row integral. If \(p\in F_{ij}\)
+and \(q\in T_i\setminus F_{ij}\) has \(h(q)<h(p)\), the bracket is two
+at both \((p,q)\) and \((q,p)\). Therefore the first integral is at
+least \(4A_{ij}\), where
+\[
+ A_{ij}=\int_{F_{ij}\times(T_i\setminus F_{ij})}
+             K(p,q)1_{\{h(q)<h(p)\}}\,dp\,dq .
+\]
+
+For the second part, resolve \(q=z+r n\),
+\(n=(e_i-e_j)/\sqrt2\). At fixed \(z\), the part outside \(\Omega_{ij}\)
+is a centered interval \((-a_z,a_z)\), possibly empty. If
+\(r=h(q)\) is in this interval, and \(b=T(q)\), then
+\(r+a_z=\sqrt2(q_b-q_j)\). This follows since \(q_b\) and
+\((q_i+q_j)/2\) do not depend on \(r\) and
+\(a_z=\sqrt2(q_b-(q_i+q_j)/2)\).
+Fix \(p\in F_{ij}\), and write \(u=h(p)>0\).
+With \(q\) conditioned on \(p\), its normal density is Gaussian
+centered at \(\rho u\). Each \(r>u\) inside \((-a_z,a_z)\) reflects
+about \(u\) to \(2u-r\) in the same interval, below \(u\).
+The density at \(2u-r\) is at least that at \(r\), because its
+distance to the center \(\rho u\) is smaller or equal.
+The remaining below-\(u\) strip is exactly
+\((-a_z,\min(a_z,2u-a_z))\).
+Consequently the excluded part of the sign row is bounded below by
+\[
+ \int_{E\setminus\Omega_{ij}}
+     K(p,q)1_{\{h_{T(q),j}(q)<h_{ij}(p)\}}\,dq .
+ \tag{BR4}
+\]
+The full-space sign row is
+\(\phi_1(ep)[2\Phi((1-\rho)u/a)-1]\le C e^2 u\).
+The Euclidean identity uses center \(u\), so the pairing is exact and
+the full-space row vanishes. Combining with (BR3) gives
+\[
+ \Delta_{ij}\ \ge\ 4 A_{ij}+2 I_{ij}
+                   -Ce^2\int_{F_{ij}}h_{ij},
+ \qquad
+ I_{ij}=\sum_{b\notin\{i,j\}}
+       \int_{F_{ij}\times F_{bj}}K(p,q)
+       1_{\{h_{bj}(q)<h_{ij}(p)\}}\,dp\,dq .
+ \tag{BR5}
+\]
+In the Euclidean case the last term is zero.
+
+### Paying shared destinations and retaining a margin
+
+Write \(1_U-1_T=\sum_{i\ne j}(e_j-e_i)1_{F_{ij}}\).
+The exact expansion \(\Delta_K=2L-Q\), with the linear transfer cost
+\(L\) and quadratic interaction \(Q\), shows that two distinct arrows
+with a shared source or shared destination cost
+\(2\int_{F_{ij}\times F_{b\ell}}K\) once in the expansion of the
+deficit relative to the sum of all single-arrow deficits. All other
+distinct-arrow contributions to the deficit are nonnegative. This uses
+\[
+ (e_j-e_i)\cdot(e_\ell-e_b)
+ =\delta_{j\ell}+\delta_{ib}-\delta_{jb}-\delta_{i\ell}.
+\]
+For a pair with common destination \(j\), the interaction appears exactly
+once in \(\sum_{ij}I_{ij}\), according to which of the two transfer gaps
+is larger. Gap equalities have zero measure, since the difference
+is a nonzero linear function of \((p,q)\). Thus the incoming costs are
+paid by the \(2I_{ij}\) terms. For shared source \(i\), the pair appears
+in \(A_{ij}\) if \(h_{ij}(p)>h_{ij}(q)\), or in \(A_{i\ell}\)
+if \(h_{i\ell}(q)>h_{i\ell}(p)\). If either holds, the full expense can
+be charged to \(2\sum_{ij} A_{ij}\). The other pairs cost \(2B\).
+In particular
+\[
+ \Delta_{K_e}\ge 2\sum_{ij} A_{ij}-Ce^2 H-2B.
+ \tag{BR6}
+\]
+
+For completeness, the remaining binary margin in (BR6) can be proved
+by a chain in the single reference cell. Fix \(i,j\), and write
+\(p=z+h n\) using the normal coordinate above. Start with density
+\(h1_{F_{ij}}\,dp\). In tangential space choose a small open ball \(W\)
+of increments \(w\) with \(w_i=w_j\) and
+\(w_i-w_b>\epsilon\) for every \(b\notin\{i,j\}\), bounded away
+from zero in the direction \(w_*=(e_i+e_j-2\mathbf1/k)/
+|e_i+e_j-2\mathbf1/k|\). Such a ball exists about a small positive
+multiple of \(w_*\). At each step add an independent uniform \(w\in W\)
+to \(z\) and contract \(h\) by an independent \(1-\theta/N\) with
+\(\theta\) uniform on \([1,2]\), where \(N=\lceil C_0(R+1)\rceil\).
+For \(C_0\) sufficiently large, \(h\) stays positive and decreases,
+while \(p_i-p_b\) strictly increases for \(b\notin\{i,j\}\).
+The path stays in \(T_i\), ends outside \(B_R\), stays throughout
+\(B_{C_kR}\), and every step has uniformly bounded length.
+
+For fixed increments, the maps translate \(z\) and contract \(h\) by
+a factor bounded below by \((1-2/N)^N\ge1/16\). The marginal density
+at each step is therefore at most \(C h\), and the conditional
+one-step density at most \(CN/h\). Thus every successive pair has
+joint density at most \(CN\). The path must leave \(F_{ij}\)
+and its first such step is among the pairs of \(A_{ij}\).
+On all paths \(K_e\ge c\exp(-C e^2R^2)\), using the midpoint form
+and bounded displacements. A union bound for the crossing step
+gives \(A_{ij}\ge cR^{-2}\int_{F_{ij}} h\) when \(eR\le1\).
+The same applies to the Euclidean unit Gaussian. Summing in (BR6)
+and decreasing \(\delta\) absorbs the row drift.
+Lastly the reference \(i,j\) scores tie when \(h=0\) by reflection.
+Their uniform rescaled Lipschitz bound and the bounded Gaussian row
+factor yield the stated upper bound on \(L_\rho\). The Gaussian transverse lift for a fixed global outdegree-one class,
+or for slices satisfying the same uniform zero or small-\(B\) condition,
+uses positivity of the transverse OU operator as in the two-block
+comparison. Formula (BR2) itself uses active-space interaction.
+
+### Scope of the remaining expense
+
+For a genuine shared-source event, let \(k=4\) and take \(i=1,j=2,\ell=3\).
+Choose small balls about the centered projections of
+\((2,1,0,-1)\) and \((2,0,1,-1)\), after common scaling to place
+both inside the support ball. Both balls lie in \(T_1\). Assign labels
+2 and 3 to the two balls, respectively. Their cross interaction
+lies entirely in (BR1), with strict inequalities throughout for
+sufficiently small balls. Hence its positive lower bound cannot be
+paid by the two corresponding binary chord contributions described
+above. This is a statement about those terms; the ordinary
+competitor's total deficit is a separate quantity. A general outgoing
+bound needs an additional curvature, row, or joint-label estimate.
+
+The terms discarded in (BR6) can also be kept. Let \(G\) be the
+same-source interaction counted once over pairs complementary to
+(BR1). Let \(N\ge0\) be the contribution to the deficit from pairs
+of distinct arrows whose label-transfer vectors have negative
+inner product. The unused excluded-row credit is
+\[
+ D_{\rm row}=\sum_{i\ne j}
+    \int_{F_{ij}}\int_{E\setminus(T_i\cup T_j)}
+       K(p,q)1_{\{h_{T(q),j}(q)<h_{ij}(p),\ U(q)\ne j\}}\,dq\,dp .
+                                                               \tag{BR7}
+\]
+The binary bracket (BR3) gives exactly \(4A_{ij}\), because it can
+be nonzero only when the flipped point and the other endpoint
+have reference label \(i\). The excluded-row reflection is exact
+for Euclidean convolution by the unit Gaussian. Thus the Euclidean
+identity and Gaussian lower bound are respectively
+\[
+ \begin{split}
+ \Delta_K&=4\sum_{ij}A_{ij}-2G-2B+2D_{\rm row}+N,\\
+ \Delta_{K_e}&\ge4\sum_{ij}A_{ij}-2G-2B+2D_{\rm row}+N-Ce^2H .
+ \end{split}                                                     \tag{BR8}
+\]
+All quantities in each line use its own kernel. The unused strip
+and the negative interaction terms remain available to pay for
+\(B\).
+
+Two classes allow arbitrary incoming and outgoing degrees and still give
+the full relative bound.
+
+First, for each source \(i\) fix an allowed target set \(J_i\) and
+constants \(b_{ij}\). At every changed point of \(T_i\) assign a
+maximizer of \(h_{ij}(p)+b_{ij}\) over \(j\in J_i\). The region
+where changes occur can be arbitrary. For \(p\in F_{ij}\) and
+\(q\in F_{i\ell}\) the two maximization inequalities add to
+\[
+     h_{ij}(p)-h_{ij}(q)+h_{i\ell}(q)-h_{i\ell}(p)\ge0 .
+\]
+The opposed strict inequalities in (BR1) are then impossible and
+\(B=0\).
+
+Second, the margin also holds if every pair counted in (BR1) has
+separation at least \(D_R=C_k\sqrt{\log(2+R)}\), up to a null set.
+For such pairs \(K_e(p,q)\le C\exp(-cD_R^2)\phi_{\sqrt2}(p-q)\)
+by the midpoint formula. The same bound holds for the Euclidean
+kernel. The thick/thin section estimate in
+[(ET4)](EUCLIDEAN_SIMPLEX_JUNCTION_TRANSFER.md) bounds the
+resulting absolute interaction by \(C_k e^{-cD_R^2}H\).
+Increasing the constant in \(D_R\) lets (BR2) absorb it.
+In particular only the pairs with opposed gaps need separation.
+For an ordinary active-space tie or improvement, (BR2) requires
+\(B\ge (c/2)R^{-2}H\).
+
+The \(B\) term can exceed the margin reserved in (BR2) by a growing
+factor even in an ordered example. Fix a small \(\tau>0\), and
+inside \(B_R\) lower the score of one source \(i\) by \(\tau\)
+while keeping every other score unchanged. This is an ordered
+two-block change on the split \(\{i\}\) and its complement.
+Each outgoing transfer lies in a normal strip of width
+\(\tau/\sqrt2\), so \(H\le C_k\tau^2 R^{d-1}\).
+For two distinct rivals \(j,\ell\), choose a tangential patch inside
+the \((i,j,\ell)\) triple face of volume at least \(c_k R^{d-2}\),
+with all spectator gaps at least \(c_k R\). For \(d=2\) the
+tangential space is a point and the spectator condition is vacuous.
+Such a patch for \(d\ge3\) is obtained by scaling an interior ball
+of the triple-face cone inside \(B_{R/2}\). Take two normal pairs
+with raw gaps
+\[
+ (p_i-p_j,p_i-p_\ell)\in[\tau/4,\tau/2]\times[1,2],
+ \qquad
+ (q_i-q_j,q_i-q_\ell)\in[1,2]\times[\tau/4,\tau/2].
+\]
+Their nearest rivals are distinct, their transfers are prescribed
+by the score decrease, and their gaps have the opposing order.
+The two gap coordinates are nonsingular on the normal plane.
+Restrict the tangential separation to at most one, taking the first
+endpoint inside a smaller concentric patch. Both endpoints stay
+in \(B_R\) for \(R\) sufficiently large. The kernel is bounded below
+on these pairs for \(eR\le\delta\), using bounded displacement and
+midpoints of size \(O_k(R)\). It follows that
+\(B\ge c_k\tau^2R^{d-2}\). Consequently \(B/H\ge c_k/R\) on this
+family. A general estimate that tries to absorb \(B\) into just the
+\(R^{-2}H\) term of (BR2) cannot close the argument. In this example
+the ordered theorem supplies the full comparison.
+
+The starting scalar sign identity is the binary calibration in
+[Pagliari, Theorem 2.3 and Lemma 2.4](https://arxiv.org/pdf/1905.00623).
+The strip credit above uses the exact excluded-fiber geometry of the
+simplex and the ordinary transfer expansion. The
+[Lawlor--Morgan local tetrahedral calibration](https://msp.org/pjm/1994/166-1/pjm-v166-n1-p04-p.pdf)
+addresses local area and does not yield this finite-noise row estimate.
+
+## Balanced fractional obstruction for the small physical core
+
+Fix \(k\ge3\) and work in its active space of dimension \(d=k-1\).
+For any fixed physical radius \(r>0\), for all \(\rho\) sufficiently
+close to one the simplex indicators fail to minimize the convex
+componentwise total-variation cut among balanced simplex-valued
+functions that agree with those indicators outside \(B_r\).
+Here the cut is
+\[
+ \mathcal C_\rho(u)=\frac12\sum_{i=1}^k
+       \mathbb E\,|u_i(X)-u_i(Y)|,\qquad |u|_1=1,\quad u_i\ge0 ,
+\]
+for the correlated Gaussian pair in the active space. Balance is
+\(\int u_i\,d\gamma_d=1/k\). The corresponding Euclidean unit
+Gaussian relative cut has a strict fractional improvement with
+bounded support for every \(k\ge3\), as well. This extends the
+planar translation example (J3)–(J4) of the
+[Euclidean three-label comparison](EUCLIDEAN_THREE_CELL_JUNCTION.md#a-fractional-obstruction-to-convex-total-variation-calibration).
+It concerns the convex cut, which agrees with the ordinary cut
+for hard labels.
+
+### Volume-preserving translations with cutoff
+
+Use scaled coordinates \(p=X/e\) and the kernel (BC7), so that
+Gaussian cut differences are \(e^d\) times scaled cut differences.
+Write \(\omega_e(p)=\exp(-e^2|p|^2/2)\), polarize the active space
+with orthonormal coordinates, and fix a vector \(v\) of bounded
+length in that space. Let \(\chi_R\) equal one on \(B_R\), vanish
+outside \(B_{2R}\), and have derivatives of order \(j\le3\) bounded
+by \(C_j R^{-j}\). Define
+\[
+ A_{ab}(p)=\omega_e(p)\chi_R(p)
+              \frac{v_a p_b-p_a v_b}{d-1},\qquad
+ V_a(p)=\omega_e(p)^{-1}\sum_b\partial_b A_{ab}(p).
+\]
+Antisymmetry gives \(\operatorname{div}(\omega_e V)=0\), so the
+smooth compactly supported flow \(F_t\) of \(V\) preserves
+Gaussian volume in scaled coordinates. The same definition
+with \(e=0\) preserves Lebesgue measure. Since
+\(\nabla\log\omega_e=-e^2p\), direct differentiation gives
+\[
+ \|V\|_\infty\le C,\quad
+ \|DV\|_\infty\le C/R,\quad
+ \|D^2V\|_\infty\le C/R^2,\quad
+ |V(p)-v|\le C(eR)^2\quad(p\in B_R),
+\]
+provided \(eR\le\delta_0\). For the first term with no cutoff
+derivative, the identity
+\(\sum_b\partial_b[(v_a p_b-p_a v_b)/(d-1)]=v_a\) was used.
+Terms with \(\nabla\chi_R\) have respectively size \(O(1)\),
+\(O(R^{-1})\), \(O(R^{-2})\). Terms from
+\(\nabla\log\omega_e\) have bounds \(O(e^2R^2)\),
+\(O(e^2R)\), \(O(e^2)\), respectively.
+
+Put \(T(t)=F_tT\) and let \(J(t)\) be its ordinary scaled
+cut minus that of \(T\). For fixed sufficiently small \(|t|\)
+and \(R\ge1\),
+\[
+                         |J(t)|\le C t^2 R^{d-3}.             \tag{BC11}
+\]
+The first derivative is zero. Differentiating the two
+cell-indicator integrals gives the sum of normal speeds
+against the differences of the two incident reference scores
+on the facets. Reflection fixes each facet point and exchanges
+those cells, so the differences vanish. The volume derivatives
+are justified by the divergence theorem on the polyhedral
+cells and the compactly supported smooth flow.
+
+For the second derivative pull back both variables and integrate
+over the fixed differing-label pairs of \(T\).
+Let \(Z_t=F_t(p)-F_t(q)\) and \(W_t=e(F_t(p)+F_t(q))/2\).
+For bounded \(|t|\), \(|Z_t|\) is comparable to \(|p-q|\) by
+the Lipschitz bound and invertibility of the flow. Differentiating
+in \(t\) gives
+\[
+ |\dot Z_t|\le C |p-q|/R,\quad
+ |\ddot Z_t|\le C |p-q|/R^2,\quad
+ |\dot W_t|\le Ce,\quad |\ddot W_t|\le Ce/R .
+\]
+The second displacement estimate uses the Lipschitz norm of
+\(DV\cdot V\), bounded by \(\|D^2V\|\|V\|+\|DV\|^2\).
+The Jacobians have bounded size, and their first and second
+time derivatives are \(O(R^{-1})\) and \(O(R^{-2})\), from
+the log-Jacobian equation with \(\operatorname{div}V\).
+In the kernel \(\phi_a(W_t)\phi_1(Z_t)\), the midpoint
+derivatives are bounded uniformly as functions of \(W_t\),
+with \(a^2=(1+\rho)/2\ge1/2\). The first and second time
+derivatives of this factor are therefore \(O(R^{-1})\) and
+\(O(R^{-2})\) for \(eR\le\delta_0\). Differentiating the
+displacement factor gives a Gaussian times a polynomial in
+\(|p-q|\), with the same powers of \(R^{-1}\).
+Thus the second derivative of the pulled-back kernel, including
+the two Jacobians, is bounded by
+\[
+ C R^{-2}(1+|p-q|^4)e^{-c|p-q|^2}.
+\]
+It vanishes if both points are outside \(B_{2R}\).
+For fixed displacement \(p-q=z\), the differing-label pairs
+meet a strip of width \(2|z|\) about one of the finitely many
+pair planes, since the joining segment crosses such a plane.
+The moving endpoint condition imposes membership of \(p\) in
+\(B_{2R}\) or its translate by \(z\). The corresponding
+volume in the strips is at most \(CR^{d-1}|z|\), uniformly
+in the translate. Integrating in \(z\) gives
+\(|J''(t)|\le C R^{d-3}\) and proves (BC11).
+The same derivation for \(e=0\) uses a constant midpoint factor.
+
+### A strict Jensen gap at an entire triple face
+
+Choose distinct labels \(i,j,l\) and a unit \(v\) such that
+\((v_i-v_j)(v_i-v_l)<0\). In the active space their triple
+tie subspace \(H\) has dimension \(d-2\); the relatively
+open face where the three sites beat the others is
+nonempty. If \(d>2\), take \(z_*\) relatively interior and
+unit in that face and tangential points \(z\) in a
+small fixed-fraction ball in \(H\) about \((R/8)z_*\).
+Its volume is \(cR^{d-2}\). Choose its fraction so that
+the three sites beat all others by \(cR\) there and
+\(|z|\le R/4\), and shrink it by a fixed factor to allow
+each second tangential point in a unit ball about the
+first. If \(d=2\) take the single tangential point,
+with zero-dimensional volume one.
+
+In \(H^\perp\) choose two bounded strips of width \(ct\)
+and fixed positive length along the two open pair rays
+\(i/j\) and \(i/l\) of the normal tripod. The strips
+are separated from the third ray and from the junction.
+They can be centered on their respective pair lines.
+For \(0<t\le t_0\) fixed sufficiently small, on one strip
+the indicator of label \(i\) in \(T(t)\) is one and
+in \(T(-t)\) is zero, while the reverse holds on the
+other strip, after interchanging the strips if necessary.
+Indeed in this region
+\(F_{\pm t}^{-1}(p)=p\mp tv+O(t\delta_0^2)\) by the
+uniform bound on \(V-v\) and by remaining inside \(B_R\).
+The opposite normal projections of \(v\) make the flips
+robust to the latter error when \(\delta_0\) is small.
+The order-one gaps on the strips to the third site,
+and the order-\(R\) gaps to the remaining sites,
+prevent any other label from winning. This holds for
+large \(R\) uniformly in the indicated tangential points.
+
+Let \(u=(1_{T(t)}+1_{T(-t)})/2\).
+On a pair of points from the opposite strips with
+tangential coordinates at distance at most one,
+the label-\(i\) absolute difference is one for each
+deformation and zero for \(u\). The scaled kernel
+is bounded below there: the pair displacement is
+bounded and \(eR\le\delta_0\). Such pairs have product
+volume at least \(c t^2R^{d-2}\). Convexity for every
+other pair and (BC11) consequently give
+\[
+ \mathcal C_e(u)-\mathcal C_e(1_T)
+ \le C t^2 R^{d-3}-c t^2R^{d-2}<0
+\]
+for sufficiently large \(R\), writing \(\mathcal C_e\)
+for the scaled cut (or its relative version).
+Taking \(R=\min(\delta_0,r)/(2e)\) produces the claimed
+Gaussian support and preserves balance by construction.
+The Euclidean conclusion follows by letting \(R\) be large
+with \(e=0\).
+
+### Sharpness of the ordered-ball exponent
+
+The power \(R^{-2}\) in (BC10) is sharp up to constants, even
+for balanced competitors. In the flow for (BC11), choose \(v\)
+constant on each of the two blocks, with their two constants
+distinct, and choose the cutoff radial. The formula for \(V\)
+then has the form
+\(V(p)=a(p)v+b(p)(v\cdot p)p\) with scalar radial coefficients.
+Under the flow every within-block coordinate difference
+satisfies a scalar linear differential equation, so its sign
+is preserved. Thus \(F_tT\) remains in the ordered class.
+It is balanced by preservation of \(\omega_e\)-volume.
+
+For \(R\) large, choose a cross-block reference facet patch
+of \((d-1)\)-volume \(cR^{d-1}\) inside \(B_{R/2}\), away
+from every other facet by a fixed positive fraction of \(R\).
+The direction \(v\) crosses its pair plane. Since
+\(V=v+O((eR)^2)\) on \(B_R\), for small fixed \(t>0\)
+the flow transfers a strip of thickness \(ct\) on this patch.
+Integrating the saturated score margin over a substrip at
+normal distances between \(c't\) and \(ct\), and using
+\(eR\le\delta\), gives \(L\ge c t^2 R^{d-1}\) in scaled units.
+Bound (BC11) gives \(\Delta\le C t^2R^{d-3}\) in the same
+units. The support is \(B_{2R}\), which only changes the
+constants and the admissible small physical radius by fixed
+factors. This yields \(\Delta/L\le C R^{-2}\).
+In Euclidean coordinates the same example uses the weighted
+defect \(\int |g|1_{\{m\ne\eta\}}\) in place of \(L\).

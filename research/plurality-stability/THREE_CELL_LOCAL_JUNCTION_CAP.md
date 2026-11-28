@@ -228,5 +228,51 @@ is constant almost everywhere on the connected disk. On
 larger radii (JC5) applies with any available top-pair slope
 at \(q\), or with \(L_q\) at an all-score tie. This distinction
 does not place a jump or a genuine junction near the origin
-for a general competitor. The argument is an internal analytic
-bound for actual maximizers.
+for a general competitor.
+
+## Square-root entry at a nearest regular jump
+
+Suppose a nearest point \(q\) is on a regular \(i/j\) arc, has
+distance \(h>0\) from the origin, and has positive third-score
+gap \(c\). Choose \(j\) as the pure label inside \(B_h(0)\).
+The tangent at \(q\) is perpendicular to \(q\), because \(q\)
+minimizes distance on the arc. With \(a=a_{ij}\), the gradient
+of \(F=V_i-V_j\) at \(q\) is \(a q/h\). Its sign follows from
+\(F\le0\) on the interior side.
+
+Let \(r=h+\eta\), with \(\eta>0\), and let \(\theta\) denote
+the angle from \(q\) on that circle. Taylor expansion and
+\(1-\cos\theta\le\theta^2/2\) give
+\[
+ F(r,\theta)
+ \ge a\eta-\frac{H\eta^2}{2}
+          -\frac{r(a+Hh)\theta^2}{2}.
+\]
+If \(\eta\le a/H\) and \(|\theta|\le
+\sqrt{a\eta/[2r(a+Hh)]}\), this is strictly positive.
+In that arc \(|x-q|^2\le\eta^2+h\eta/2\). Consequently
+when \(\eta^2+h\eta/2<(c/.75)^2\), the third label is absent
+by the contrast Lipschitz bound, and
+\[
+ p_i(h+\eta)\ge \frac1\pi
+                      \sqrt{\frac{a\eta}{2(h+\eta)(a+Hh)}}.   \tag{JC6}
+\]
+
+For a Lipschitz reference mass \(p_i^{\rm ref}\) of constant
+\(K\), this forces a quantitative residual on both sides of \(h\),
+independently of the reference's own release radius. Choose a
+range \(0<\eta\le\eta_0\) on which (JC6) holds and write its lower
+bound as \(C\sqrt\eta\), using \(h+\eta_0\) in the denominator.
+For \(0<\epsilon\le\min(h/2,\eta_0,C^2/(16K^2))\), omit the last
+restriction if \(K=0\). Since \(p_i(h-\eta)=0\), the two residuals
+at \(h+\eta\) and \(h-\eta\) differ by at least
+\(C\sqrt\eta-2K\eta\ge C\sqrt\eta/2\). Their squared sum is at
+least \(C^2\eta/8\). Integration over
+\(\eta\in[\epsilon/2,\epsilon]\) gives a squared \(L^2(dr)\)
+residual at least \(3C^2\epsilon^2/64\) on the union of the two
+subintervals. This can enter a weighted clipping estimate by
+multiplying by a lower bound for the radial weight there.
+The estimate is conditional on a nearest regular pair jump and
+its third-score gap.
+
+These are internal analytic bounds for actual maximizers.

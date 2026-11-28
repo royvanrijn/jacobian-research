@@ -1,0 +1,14 @@
+{
+  "arithmetic": "exact Fraction arithmetic with 64-bit outward square roots and alternating arctangent bounds",
+  "correlation_domain": "1/2 <= rho < 1",
+  "reflection_tolerance_domain": "0 < epsilon <= 1/50",
+  "checker_sha256": "b93276d980b50787d5a4d8cd31dab028f46548792dbd11cf5c86974b0e92df8a",
+  "strict_bounds": {
+    "degree_one_defect_lower": "1/50",
+    "degree_two_bracket_at_half_lower": "11/250",
+    "degree_three_bracket_at_half_lower": "7/500",
+    "cone_minus_tetra_degree_three_weight_lower": "13/2500",
+    "tetra_remainder_after_four_lower": "1/5"
+  },
+  "status": "verified"
+}

@@ -291,9 +291,9 @@ If $J(z)\ge F_4$, equality forces $z=B(z)$ and the tetrahedral
 moment tuple. Thus there are no non-tetrahedral high-value centroidal
 stationary tuples. The high-value instability, stable equal-radius and
 unequal-radius Hessian endpoints are discharged by this empty-domain
-argument; no new Hessian sign computation is asserted. Classification
-of all lower-valued full-rank stationary tuples remains a separate,
-lower-priority open question.
+argument. The [facet-Laplacian stationary classification](BALANCED_FIRST_MOMENT_STATIONARY_RIGIDITY.md)
+also excludes every lower-valued full-rank centroidal tuple, for any
+fixed number of equal-mass cells.
 
 The published
 [Heilman, *Stable Gaussian minimal bubbles*, Theorem 1.6](https://link.springer.com/article/10.1007/s00526-026-03408-z)

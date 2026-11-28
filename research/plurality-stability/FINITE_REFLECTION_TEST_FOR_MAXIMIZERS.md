@@ -245,7 +245,10 @@ correlation is uniformly Lipschitz on the band for both the head
 and \(S_\rho(1_T)\), using the Hermite series. This is a
 reflection-based sufficient certificate complementary to
 [(B17)](POSITIVE_CORRELATION_CONTINUATION.md#a-finite-test-for-distant-competitors-on-a-correlation-band).
-No sign in (FR4) is established here.
+The [four-cell benchmarks](FOUR_CELL_FR4_BENCHMARK.md) verify
+(FR4) on an explicit small positive band, give a degree-one
+comparison with a first-moment constraint, and exhibit a
+degree-two and degree-three obstructions on the larger-correlation range.
 
 The finite comparison is exhaustive in the limit under strict
 global uniqueness on the band. If it failed along \(N\to\infty\),

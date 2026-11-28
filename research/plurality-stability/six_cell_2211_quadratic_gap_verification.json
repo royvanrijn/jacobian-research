@@ -1,0 +1,28 @@
+{
+  "command": ".venv/bin/python research/plurality-stability/check_six_cell_2211_quadratic_gap.py",
+  "environment": {
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "checker_sha256": "055d02641e1b558ab8ef000b3130ac57881bf58d640ee8989bc0bc521d19b23f",
+  "scope": "Exact rational Young generators, Coxeter relations, polynomial field, all four prefix vectors and direct cutoff limit. Gaussian integration by parts and the operator bound are written proofs.",
+  "prefix_nonzero_monomial_counts": [
+    12,
+    31,
+    30,
+    16
+  ],
+  "direct_cutoff_limit": [
+    -12,
+    -40,
+    -24,
+    264,
+    531,
+    180
+  ],
+  "stdout": [
+    "Positive field polynomials and all four exact prefix vectors verified.",
+    "Nonzero monomials in the four prefix vectors: [12, 31, 30, 16]",
+    "Direct cutoff obstruction: [-12, -40, -24, 264, 531, 180]"
+  ]
+}
