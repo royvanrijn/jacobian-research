@@ -171,11 +171,11 @@ is \(d_\gamma(A,R(\pi_{ij} A))\), where \(\pi_{ij}\) transposes
 the labels. Suppose that at an actual global maximizer \(A\) for
 some \(\rho\in[a,b]\), every edge of some spanning tree has a
 reflection of error at most \(\varepsilon\). Then there are fixed
-constants \(C,\varepsilon_0>0\), depending on \(a,b,k,d\), such that
+constants \(C,\varepsilon_0>0\), depending on \(a,b,k\), such that
 for \(0<\varepsilon<\varepsilon_0\),
 \[
  \inf_{T'\ {\rm simplex}}d_\gamma(A,T')
-     \ \le C \varepsilon^{(1-b)/16}.
+     \ \le C \varepsilon^{(1-b^2)/2}.
  \tag{RG5}
 \]
 The infimum is over orthogonal images and relabelings of the
@@ -205,36 +205,31 @@ changed. This gives
 \(|S_\rho(A)-S_\rho(B)|\le d_\gamma(A,B)\).
 Polarization of \(B\) is balanced, so (RG1) and maximality of \(A\)
 bound the polarized gain by \(\delta\).
-Let \(S_+,S_-\) be the two sign sets of \(s\) on \(H^+\) for \(B\).
-Their total mass is \(1/k\). On the region
-\(|x|,|y|\le R_0\), \(n\cdot x,n\cdot y\ge t_0\) in \(H^+\), the
-Mehler formula gives
+Let \(E,F\) be the majority and minority sign sets on \(H^+\)
+for \(B\), and write \(m=\gamma(F)\). Their total mass is \(1/k\),
+so \(\gamma(E)\ge1/(2k)\). Remove from \(E\) heights below
+\(1/(4k\phi_0)\), and from \(F\) heights below \(m/(2\phi_0)\),
+with \(\phi_0=(2\pi)^{-1/2}\). The retained masses are at least
+\(1/(4k)\) and \(m/2\), respectively. For \(x,y\) in the retained
+product, put \(t=n\cdot x\), \(s=n\cdot y\). The identity
 \[
  M_\rho(x,y)-M_\rho(x,Ry)
-       \ \ge\ 2a t_0^2\,e^{-b R_0^2/(1-b)}.
+  =M_\rho(x,y)\bigl(1-e^{-2\rho ts/(1-\rho^2)}\bigr)
+  \ge c_{a,k}\,m\,M_\rho(x,y)
  \tag{RG6}
 \]
-To see this, factor the common positive kernel into the radial
-factor, the tangential exponential and
-\(2\sinh(\rho(n\cdot x)(n\cdot y)/(1-\rho^2))\).
-The first two factors are at least
-\(\exp[-(\rho^2+\rho)R_0^2/(1-\rho^2)]\), and
-\(\sinh t\ge t\) for \(t\ge0\).
-
-Take \(t_0=\delta^{1/8}\) and
-\(R_0^2=(1-b)\log(1/\delta)/4\). The strip discarded from
-\(H^+\) has mass at most \(\phi_0 t_0\), with
-\(\phi_0=(2\pi)^{-1/2}\). The radial tail has mass at most
-\(2^{d/2}e^{-R_0^2/4}\) by the Gaussian exponential moment.
-Thus the discarded mass is bounded by a constant times
-\(\delta^\eta\), where \(\eta=(1-b)/16\).
-At least one sign set has mass at least \(1/(2k)\); its retained
-mass is at least \(1/(4k)\) for small \(\delta\).
-On the retained sign product the kernel in (RG6) is at least
-\(2a\delta^{1/2}\). The gain bound in (RG1) implies the retained
-minority mass is \(O(\delta^{1/2})\). Hence the full minority
-mass is \(O(\delta^\eta)\). By reflection and the correction
-bound for \(B\), after orienting \(n\) we obtain
+follows from the height bounds and \(0\le m\le1/k\).
+For \(m>0\) apply [Chen–Dafnis–Paouris, Theorem 1(ii)](https://arxiv.org/pdf/1306.2410v2)
+to the retained indicators with
+\(p=(1-b^2)/2\), \(q=(1-b^2)/(1+b^2)\), respectively. The
+covariance domination condition is
+\((1-p)(1-q)=b^2\ge\rho^2\), so the joint probability is at least
+\((1/(4k))^{1/p}(m/2)^{1/q}\). The gain in (RG1) is therefore at
+least \(c_{a,b,k}m^{1+1/q}\). Since the gain is at most \(\delta\),
+and \(1+1/q=2/(1-b^2)\), the minority mass is
+\(O_{a,b,k}(\delta^\eta)\) for \(\eta=(1-b^2)/2\). The zero
+minority case is immediate. Reflection and repair of \(B\) yield,
+after orienting \(n\),
 \[
  \gamma(A_i\cap H^-)+\gamma(A_j\cap H^+)=O(\delta^\eta).
  \tag{RG7}
@@ -246,8 +241,9 @@ for small \(\delta\). Indeed choose a fixed positive height whose
 Gaussian strip has mass at most \(1/(4k)\). The positive-side portion
 of \(B_i\) above that height has mass at least \(1/(2k)\) for small
 \(\delta\), whereas the integral of \(|n\cdot x|\) over its wrong-side
-portion tends to zero by Cauchy–Schwarz. The centroid errors
-\(|b_l(A)-b_l(B)|\) are \(O(\sqrt\delta)\), also by Cauchy–Schwarz.
+portion tends to zero by Cauchy–Schwarz. The centroid errors \(|b_l(A)-b_l(B)|\) are \(O(\sqrt\delta)\)
+by Cauchy–Schwarz against an arbitrary unit-direction projection.
+The constants are independent of the ambient dimension.
 Thus the nonzero unit direction of \(b_i(A)-b_j(A)\) differs from
 \(n\) by \(O(\sqrt\delta)\). The Gaussian measure of the symmetric
 difference of two central halfspaces is their normal angle divided
@@ -296,3 +292,7 @@ This excludes approximate full reflection symmetry in the active
 space. It leaves open the existence of a sufficiently asymmetric
 tied maximizer and the classification of threshold functions
 in (RG4).
+
+For actual maximizers, the [finite reflection test](FINITE_REFLECTION_TEST_FOR_MAXIMIZERS.md)
+reduces the spanning-tree premise to a bound on finitely many
+Hermite coefficients using a uniform score-margin estimate.

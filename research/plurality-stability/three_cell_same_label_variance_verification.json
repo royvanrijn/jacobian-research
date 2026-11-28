@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "precision_bits": 140,
+  "angular": {
+    "unique_minimizer_bracket": [
+      "149/100",
+      "1491/1000"
+    ],
+    "series_order": 40,
+    "pure_slack_constant_lower": 0.19525787424701305,
+    "pure_slack_constant_upper": 0.19525788293827814,
+    "claimed_pure_slack_constant": "781/4000",
+    "left_derivative_upper": -8.691265047213984e-06,
+    "right_derivative_lower": 3.8370553603261154e-05,
+    "averaged_coefficient_lower": 0.034048083170890184,
+    "claimed_averaged_coefficient": "17/500",
+    "negative_control_one_fifth": "rejected at the anchor"
+  },
+  "moment_calibration": {
+    "constant_polynomial_closed_gaussian_moments": 14,
+    "status": "pass"
+  },
+  "proof_source": "THREE_CELL_SAME_LABEL_VARIANCE_PENALTY.md",
+  "proof_source_sha256": "6beee64d669a2ae172d7ec90f5ee0150e2fdaf27565c8b3342b28ec990f358a3",
+  "source_hashes": {
+    "check_three_cell_same_label_variance.py": "5ebdf4212b0fb763fba7c4a822de0704da77325f962ef88417d4209077fda073",
+    "THREE_CELL_SAME_LABEL_VARIANCE_PENALTY.md": "6beee64d669a2ae172d7ec90f5ee0150e2fdaf27565c8b3342b28ec990f358a3",
+    "check_three_cell_sharp_arc_row_extension.py": "4d066de98f4778a75c68163fdfba261f8d2b3614682a713d2a6639f896f3944a",
+    "check_three_cell_sharp_positive_arc_envelope.py": "b7b6ade8ffab6192084713fc564bdba91f44ab65004ab71833da917646cfac72",
+    "check_three_cell_global_scalar_through_half.py": "827b923ff66c2e976527b6489db79d3a1008db87d9ed8e4832f0595671e9f4cb"
+  },
+  "environment": {
+    "python": "3.12.3",
+    "python_flint": "0.9.0"
+  },
+  "assurance": {
+    "internal_directed_verification": true,
+    "independent_replay": false,
+    "formal_verification": false,
+    "external_review": false
+  },
+  "mode_order": 160,
+  "row_order": 32,
+  "radial_limit": 12,
+  "radial_panels_per_slab": 4096,
+  "rho_bounds": [
+    "29/50",
+    "61/100"
+  ],
+  "correlation_slabs": 40,
+  "slab_widths": [
+    "1/8000",
+    "1/4000",
+    "1/2000",
+    "1/1000"
+  ],
+  "max_corrected_norm_upper": 1.998841305686442,
+  "max_leakage_loss_upper": 0.011795792252883611,
+  "max_kernel_tail_upper": 0.0004981642061920867
+}

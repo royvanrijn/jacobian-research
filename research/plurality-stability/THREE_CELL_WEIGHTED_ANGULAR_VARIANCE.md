@@ -70,10 +70,11 @@ $i,k\ne j$,
  \end{split}
 \]
 The last step completes a square for each index distinct from $j$.
-This proves (WV3). The first angular deficit is subtracted from the
-paired angular integral before applying the aligned-arc Taylor
-comparison, as in (SR4)–(SR5). The use of its aligned-arc slack in
-(WV3) therefore leaves that deficit available.
+This proves (WV3). The actual first angular deficit
+$\lambda_a\Delta(u,v)$ is subtracted from the paired angular integral
+before applying the aligned-arc Taylor comparison, as in (SR4)–(SR5).
+The aligned-arc slack in (WV3) leaves that deficit available. The
+scalar term $\lambda_a\Phi(p,q)$ of (SR5) belongs to the Taylor slack.
 
 ## Explicit linear and cubic weights
 
@@ -144,7 +145,8 @@ other $W$ satisfying (WV2) with $L\ge4$.
 
 For the second row, the coefficient on the negative term in (WV3)
 is five. Suppose a feasibility estimate uses $p-p_*=\alpha\phi+g$
-and let $j$ be the median coordinate of $\alpha$. At any radial
+with centered label vectors $\alpha$ and $g$, and let $j$ be the
+median coordinate of $\alpha$. At any radial
 point choose $i\ne j$ with $\alpha_i\phi\ge\alpha_j\phi$, using
 the two extreme coordinates. If $p_j>1/2$, then
 $p_j-p_i\ge2u_j$ since $p_i\le1-p_j$. Thus
@@ -170,7 +172,72 @@ The last term uses (WV7) on $E$. The nonnegative last line of
 (WV3) further retains at least the purity-times-variance reserve
 of (SR7) in $\mu_3$, with coefficient
 \((7/(54\pi^2)-7/1000)(2\rho)^3d\,\Gamma(5/2)^2\).
+
+For a sharper residual estimate let $\widehat p$ be the Euclidean
+projection of $p_*+\alpha\phi$ onto the mass simplex, and put
+$h=\widehat p-(p_*+\alpha\phi)$. The projection inequality gives
+\[
+       \int J_*|p-\widehat p|^2d\nu
+                 \le G^2-\int J_*|h|^2d\nu .                    \tag{WV9}
+\]
+The projection preserves coordinate order because it subtracts a
+common threshold and clips at zero. This threshold is nonnegative
+because the unprojected coordinates sum to one. The proof of (WV7)
+therefore applies to $p-\widehat p$ in place of $g$. On the
+complement of $E$ the projected median is still at most
+$1/2-\delta$. Both terms in (WV8) consequently hold with
+$(G^2-\int J_*|h|^2d\nu)^{1/2}$ in place of $G$. A directed pole
+bound for the clipping expense suffices to use this saving.
+
 This median-label comparison and the unrestricted comparison with
 $L=4$ are two lower bounds on the same slack. Either can be used
 at each feasible amplitude. An all-correlation norm or amplitude
 bound closing the remaining gap is still needed.
+
+## An additional loss when one circular profile is central
+
+Let $H(s)$ be the positive Taylor slack for the linear cosine
+kernel in the [same-label calculation](THREE_CELL_SHARP_VARIANCE_ABSORPTION.md#retaining-the-same-label-cosine-slack).
+For $s=p+q$ with $\min_i s_i\ge1/4$ the following sharper bound
+holds:
+\[
+              H(s)\ge\frac3{100}|s-2p_*|^2 .                   \tag{WV10}
+\]
+For the cosine kernel, let $R(u)$ be its normalized Taylor
+remainder at $2/3$, and set $h=5/12$. Every negative displacement
+has magnitude at most $h$. In the one-negative case the sharp
+arc argument, applied to the cosine, reduces the largest ratio
+to $(2R(-h)+R(h/2))/3$ by equalizing the positive displacements
+and using the increasing isosceles coefficient. In the
+two-negative case the negative ratio is at most $R(-h)$ and their
+squared weight is at most one half. The positive displacement
+$D_+$ is at most $5/6$. The cosine in $R(D_+)$ is at most $-1/2$
+on the first $4/5$ of the Taylor integration interval, which has
+mass $24/25$, and is nonpositive on the rest because its argument
+is at most $3\pi/2$. Thus $R(D_+)\le-12/25$. Compare the larger
+of the one-negative and the two-negative bounds to
+$P_\sharp(\mathrm{id})$.
+The integral of the cosine twice is $(1-\cos(\pi v))/\pi^2$.
+The rational checker bounds the resulting trigonometric values
+using $\cos(\pi/4)=\sqrt2/2$ and
+$\cos(\pi/8)=\sqrt{2+\sqrt2}/2$, and verifies a gap larger than
+$4(3/100)$. The factor $1/4$ from the positive Taylor slack gives
+(WV10).
+
+Let $G$ be the radial set where $1/4\le p_i(t)\le1/2$ for all
+labels, and let $\mu_0=f\nu/Z_0$ be the first damped radial law
+in (SV1). On pairs with one variable in $G$, the dominant-label
+products in (WV1) are zero. The positive slack there can instead
+be bounded below by $ae^{-a}H(p+q)$, by subtracting a linear cosine
+term from the angular exponential as in (SR5). The corresponding
+extra loss, which can be retained together with (WV3), is at least
+\[
+ \frac3{100}\frac{\gamma Z_0^2}{d}\,
+       \mu_0(G)\operatorname{Var}_{\mu_0}(p).                   \tag{WV11}
+\]
+Indeed integrate over ordered pairs with the second variable in
+$G$ and use $Qae^{-a}\ge (\gamma/d) f(t)f(s)$. At each fixed
+second profile the first-profile average of
+$|(p-p_*)+(q-p_*)|^2$ is at least $\operatorname{Var}_{\mu_0}(p)$.
+Only one member of the pair must be central. The quartic reserve
+and the actual first angular moment deficit are both unchanged.

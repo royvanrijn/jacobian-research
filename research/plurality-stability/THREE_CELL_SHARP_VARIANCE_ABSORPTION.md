@@ -6,7 +6,10 @@ slack for two profiles favoring the same label and the quartic slack
 for profiles that differ. Both can be retained along with the
 actual first angular deficit. In particular the penalty can be included
 in the linear norm test even when the uncorrected scalar operator has
-an adverse direction.
+an adverse direction. The reserved bootstrap below proves the global
+three-cell comparison through 0.648 and gives a positive unevaluated
+right neighborhood. The argument uses circular masses and exact score
+transfer cost in place of a global first-moment loss.
 
 Use the notation of the [sharp arc bound](THREE_CELL_SHARP_POSITIVE_ARC_ENVELOPE.md)
 and its [remainders](THREE_CELL_SHARP_SCALAR_REMAINDERS.md).
@@ -529,6 +532,219 @@ bootstrap keeps a positive radial reserve on both branches
 and the exact first angular deficit, the same reference-slice
 argument gives a positive unevaluated right neighborhood
 beyond \(63/100\).
+
+### Hermite and endpoint cover through 253/400
+
+For \([63/100,253/400]\) the same reserved test with
+\(P_1=311/500\) uses a [cubic interpolation module](sharper_hermite_radial_quadrature.py)
+and evaluates the final Gram norm at the right endpoint with
+the diagonal rescaling described above. The preliminary test
+still encloses each whole slab.
+
+For \(F(x)=8d\,e^{-\eta x^2}/Q(x)\) on \([l,r]\), put
+\(T_j=Q^{(j)}(r)/Q(l)\). The positivity of the coefficients
+bounds \(Q^{(j)}(x)/Q(x)\le T_j\) and \(F(x)\le F(l)\).
+Define
+\[
+\begin{split}
+ L_1&=2\eta r+T_1,\qquad L_2=2\eta+T_2+T_1^2,\\
+ L_3&=T_3+3T_1T_2+2T_1^3,\\
+ L_4&=T_4+4T_1T_3+3T_2^2+12T_1^2T_2+6T_1^4 .
+\end{split}
+\]
+These bound the absolute derivatives of \(\log F\) through
+order four. So the fourth derivative of \(F\) is bounded by
+\(F(l)(L_1^4+6L_1^2 L_2+3L_2^2+4L_1L_3+L_4)\).
+The cubic using values and slopes at both endpoints has absolute
+error at most \((r-l)^4/384\) times this bound, by the Hermite
+interpolation remainder. Integrate its four basis polynomials
+and the error bound against each radial monomial. The
+[directed checker](check_three_cell_bootstrap_hermite_right.py)
+uses 512 radial panels, 768 clipping panels, \(m=80,\ N=168\),
+and 110-bit Arb. The [full receipt](three_cell_bootstrap_hermite_right_630_6325_verification.json)
+contains 106 adjacent accepted intervals and an improved full
+norm bound below \(19999/10000\), with the same \(10^{-5}\)
+preliminary reserve.
+
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_bootstrap_hermite_right.py --start 63/100 --stop 253/400 --width 1/2000
+
+The relative margin proof uses
+\(w(t)=\sqrt t\exp[-3t/4-4\sqrt t]\) in place of the previous
+reference-slice lower weight. The explicit radial and angular
+weights dominate it because \(\kappa\le3/4\) and
+\(\gamma\sqrt2\le4\) on this interval. The comparison and
+equality rigidity therefore continue through \(253/400\)
+and on a positive unevaluated right neighborhood.
+
+### Clipping with the radial orthogonality constraint
+
+There is a further lower bound in (SV8) from the orthogonality
+of \(g\). Pointwise let \(y=Awu\) with \(w=\alpha/A\), let
+\(z_*(t)\) be the Euclidean projection of \(y(t)\) onto
+\(\Delta_3-\mathbf1/3\), and put \(g_*=z_*-y\). Projection
+Pythagoras gives \(\|g\|_H^2\ge\|g_*\|_H^2+\|g-g_*\|_H^2\).
+Since \(g\perp wu\) and \(\|wu\|_H=1\), the second term bounds
+\(|\langle g_*,wu\rangle_H|^2\). The projection fixes zero
+and is nonexpansive, so \(-g_*(t)\cdot y(t)\ge0\) and is at least
+\(|y(t)|(|y(t)|-\sqrt{2/3})\) where \(|y(t)|>\sqrt{2/3}\).
+Thus
+\[
+ \frac{G_0^2}{A^2}\ge I_2(A)+ I_1(A)^2,\qquad
+ I_j(A)=\begin{cases}
+ \int J'_m |u|(|u|-\sqrt{2/3}/A)_+\,d\nu,&j=1,\\
+ \int J'_m (|u|-\sqrt{2/3}/A)_+^2\,d\nu,&j=2 .
+ \end{cases}                                                   \tag{SV10}
+\]
+The full proof uses a projection only to justify the extra term;
+both integrals can be lower bounded using the same one-variable
+clip panels. A direction-dependent version replaces \(\sqrt{2/3}\)
+by the support function of \(\Delta_3-\mathbf1/3\) at
+\(\operatorname{sgn}(u(t))w\). Also \(\int g\,d\nu=0\) and
+\(\int u\,d\nu=0\), so if \(1/J'_m\in H\), one can add
+\(|\int g_*\,d\nu|^2/\int (J'_m)^{-1}d\nu\) to the original
+projection inequality before majorizing its terms. These refinements
+do not enter the preceding directed cover.
+
+### Balanced second-moment bootstrap through 0.641
+
+The [two-stage checker](check_three_cell_sharp_variance_bootstrap_SR14_hermite.py)
+uses the sharper tilted-mean expression in (SV9) before replacing
+\(\chi\) by \(1/2\). On \([63/100,641/1000]\), it starts with
+coefficient \(12/25\), clips with \(M\le47/300\), and verifies
+coefficient \(31/50\) using
+\(m\le\sqrt{\chi M/(1+\chi)}\) in the quartic bound.
+With that coefficient the next clip gives \(M\le7/150\),
+which verifies coefficient \(1\). Each stage uses its own row
+weight and the preliminary reserve \(10^{-5}\).
+The scalar bound with the last coefficient is below \(1999/1000\).
+
+The [full cover](three_cell_sharp_variance_bootstrap_hermite_through_641_verification.json)
+has 349 accepted rational slabs, from initial width \(1/1000\).
+The checker uses 110-bit Arb, \(N=192,\ m=96\), 512 cubic
+interpolation panels and 768 clipping panels. It checks the
+tilted mean on each slab with the exact formula for \(\chi\).
+Both preliminary tests and the final Gram norm enclose each
+entire slab, with the analytic tails as in (SV5).
+
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_sharp_variance_bootstrap_SR14_hermite.py --start 63/100 --stop 641/1000 --width 1/1000 --modes 192 --rows 96 --panels 512 --cap 1999/1000
+
+Thus the unrestricted balanced Gaussian comparison holds in
+every \(d\ge2\) for \(0<\rho\le641/1000\), with the regular
+tripod as the only equality case on the added slabs up to
+rotation, labels and null sets. The weight
+\(\sqrt t\exp[-3t/4-4\sqrt t]\) still works through \(641/1000\).
+The radial reserve and exact angular deficit give a uniform
+planar transfer-cost margin on the new interval and a positive,
+unevaluated right neighborhood beyond \(641/1000\).
+
+### Projection of the tilted mean
+
+For further use in the bootstrap, let
+\(w=P_{\rm bal}(f_1/(Z_1 J'_m))\), with \(P_{\rm bal}\) the
+weighted orthogonal projection onto the ordinary-mean-zero
+subspace. The tilted mean of \(z=\alpha u+g\) then satisfies
+\[
+ \left|\int z\,d\mu_1\right|
+ \le A|\langle u,w\rangle_H|
+     +G_0\sqrt{\|w\|_H^2-|\langle u,w\rangle_H|^2}.           \tag{SV11}
+\]
+This uses \(g\perp u\) and the mass constraint.
+The inputs are already in the centered feature calculation:
+\(\|w\|_H^2=(T_2-U_1^2/W)/Z_1^2\) and
+\(\langle u,w\rangle_H=(Gv)_1/(Z_1\sqrt{k_1}\sqrt{v^{\mathsf T}Gv})\),
+with feature index 1 denoting the first nonconstant monomial
+degree. Taking the smaller of (SV11) and the bound from \(\chi\)
+can improve the quartic coefficient in (SV9). The exact
+complementary feature Gram matrix is
+\(G-(Gv)(Gv)^{\mathsf T}/(v^{\mathsf T}Gv)\), whose nonzero
+spectrum is that of \(P_\perp FF^*P_\perp\). It can replace the
+Hilbert–Schmidt bound for the complementary norm in (SV7).
+
+### Projected-mean bootstrap through 129/200
+
+The [projected-mean checker](check_three_cell_sharp_variance_mean_SR19.py)
+uses (SV10) in the clipping test and (SV11) for the tilted mean.
+It also uses the exact two-dimensional multiplier bound (SR19).
+To upper bound \(M_u=\int u^2d\mu_1\), let
+\(B_0\ge\sup d\mu_1/(J'_m d\nu)\) as above. Since
+\(\|u\|_H=1\), one may subtract
+\[
+ \int_{0\le\sqrt t\le2}
+   \left(B_0-\frac{d\mu_1}{J'_m d\nu}\right)u(t)^2 J'_m(t)\,d\nu(t)
+\]
+from \(B_0\). The integrand is nonnegative and is bounded below
+by directed Riemann sums on 1024 panels. If the resulting upper
+bound for \(M_u\) is at most \(B_0/(1+H_0^2)\), (SR19)
+improves the bound for \(M/A^2\) from \(B_0(1+H_0^2)\)
+to \((\sqrt{M_u}+H_0\sqrt{B_0-M_u})^2\), using the upper
+value of \(M_u\). Otherwise use the original coefficient.
+
+On \([641/1000,129/200]\) the stages use \(M\le1/6\) and
+\(M\le7/200\) to increase the variance coefficient from \(12/25\)
+to \(13/20\), then \(11/10\). Both stages keep the reserve
+\(10^{-5}\). The [directed cover](three_cell_sharp_variance_mean_SR19_through_645_verification.json)
+uses 180 accepted rational slabs from width \(1/4000\),
+\(N=204,\ m=104\), 512 cubic radial panels, 768 clipping
+panels and 110-bit Arb. The final norm is below \(1999/1000\).
+
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_sharp_variance_mean_SR19.py
+
+Together these give the unrestricted balanced Gaussian comparison
+through \(129/200\), with simplex rigidity on the added intervals.
+The same enlarged reference-slice weight and the retained angular
+deficit give a uniform score margin, and (CT5) gives a positive
+unevaluated right neighborhood of \(129/200\).
+
+### Adaptive projected-mean bootstrap through 81/125
+
+The [adaptive checker](full_angular_directmean_bootstrap.py)
+uses the exact complementary Gram matrix following (SV11),
+which permits a tighter complementary norm bound in (SV7).
+It chooses the amplitude cap by rational bisection using (SV8).
+For the input \(M_u\) in (SR19), it directly integrates the
+tilted trial square. Writing \(P(x)=\sum_j\sqrt{k_j}v_j x^j\)
+and \(c_0=\sum_j\sqrt{k_j}v_j U_j/W\), this square is
+\[
+ M_u=\frac{32d^2}{Z_1(v^{\mathsf T}Gv)}
+   \int_0^\infty
+    \frac{\big(e^{-\kappa x^2}P(x)-c_0\big)^2
+                       e^{-(1-\kappa)x^2}}{Q(x)^2}\,dx .
+\]
+The checker encloses the integral with 4096 panels on
+\([0,12]\). Beyond 12 it uses
+\((a-b)^2\le2a^2+2b^2\) and the lower bound on \(Q\) by one
+positive monomial. Expanding \(P^2\) in absolute monomials
+then gives explicit Gaussian tails as in (GH8).
+
+Combining this upper bound with (SR19) gives a bound on the
+raw second moment of any profile passing the clip. The
+checker bounds its mean by the smaller of (SV11) and the
+\(\chi\)-bound, and rounds down the resulting directed lower
+bound on the quartic coefficient to a rational multiple of
+\(1/1000\). It verifies that strict lower bound and that the
+coefficient increases before starting the next stage. The
+slab is accepted only when the final directed norm is below
+\(1999/1000\). The stage estimates retain \(10^{-5}\) of
+their weighted squared radial norm in the antecedent.
+
+The [complete cover](three_cell_directmean_bootstrap_645_648_verification.json)
+of \([129/200,81/125]\) consists of 172 accepted rational
+slabs using two to four gain stages each. It uses
+110-bit Arb, 512 cubic radial panels, \(N=192,\ m=96\),
+and 768 clip panels. The three adjoining internal replays
+reproduce the exact list of accepted intervals. The maximum
+directed upper norm bound is \(1.9988760641266756\).
+
+    OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/full_angular_directmean_bootstrap.py --start 129/200 --stop 81/125 --width 1/4000
+
+Thus the balanced Gaussian comparison holds in every
+\(d\ge2\) for \(0<\rho\le81/125\), with simplex equality
+rigidity on the added intervals. The \(10^{-5}\) radial reserve
+and the full actual first angular deficit give the same
+uniform score margin. The reference-slice weight
+\(\sqrt t\exp[-3t/4-4\sqrt t]\) still works on the added slab.
+Applying (CT5) at \(81/125\) gives a positive unevaluated
+right neighborhood.
 
 ## Discrete plurality
 

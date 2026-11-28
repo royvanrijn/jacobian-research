@@ -200,6 +200,7 @@ Formal Weyl lifts, scalar mate obstructions, finite centralizers and exact quant
 | A simultaneous triangular shear realizes the two axial corner sums as total degrees | Internal result | proved | [Source](../jacobian/planar-degree-frontier/PARTIAL_DEGREE_FOURTEEN_AND_WEYL_TRANSFER.md) |
 | Weyl center reduction preserves differential orders and top-coefficient degrees as planar partial data | Internal result | proved | [Source](../jacobian/planar-degree-frontier/PARTIAL_DEGREE_FOURTEEN_AND_WEYL_TRANSFER.md) |
 | Two differential orders through twenty force Weyl generation | Internal result | proved | [Source](../jacobian/planar-degree-frontier/SMALL_PARTIAL_GCD_STANDARD_CORNERS.md) |
+| Two differential orders through twenty-three force Weyl generation | Internal result | proved | [Source](../jacobian/planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY_THREE.md) |
 
 **Computed obligations:** 26 unresolved; 5 resolved within their exact scope.
 

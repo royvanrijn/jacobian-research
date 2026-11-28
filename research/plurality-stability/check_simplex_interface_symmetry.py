@@ -1985,6 +1985,181 @@ def fourth_hook_convexity_certificate():
             'scope': 'Complete exact formal cubic coefficient certificate on all60 orderings of a,b,c,S,T,R with a<b<c and S<T, and all10 orderings for the clipped-pair sign. Nonnegative gap variables cover every admissible real configuration, with coincidences by continuity; the convex-curve hinge extension is the written covering proof. Finite rational controls at k5..k9 check the hinge transports, polarized residual and convex slope decomposition; independent finite product laws at k6 check the all-degree conditional wedge identity. The unrestricted Mills, Gaussian integration, supersolution and full L2/ambient spectral conclusions S92 remain written arguments. No external review, independent replay or formal verification is asserted.'}
 
 
+def mixed_prefix_transport_controls():
+    """Bounded exact Young and conditional first-moment controls for S94."""
+    @lru_cache(None)
+    def tableaux(shape):
+        if not shape:
+            return ((),)
+        result = []
+        for row, length in enumerate(shape):
+            if row+1 < len(shape) and shape[row+1] == length:
+                continue
+            smaller = list(shape)
+            smaller[row] -= 1
+            smaller = tuple(v for v in smaller if v)
+            result.extend(t+((row, length-1),) for t in tableaux(smaller))
+        return tuple(result)
+
+    cases = []
+    for k in range(5, 9):
+        q, shape = k-2, (k-3, 2, 1)
+        tabs = tableaux(shape)
+        d, lookup = len(tabs), {t: i for i, t in enumerate(tabs)}
+        lengths = []
+        for t in tabs:
+            word = sorted(range(k), key=lambda i: t[i])
+            lengths.append(sum(word[i] > word[j] for i in range(k) for j in range(i+1, k)))
+        generators = []
+        for a in range(k-1):
+            columns = []
+            for col, t in enumerate(tabs):
+                axial = (t[a+1][1]-t[a+1][0])-(t[a][1]-t[a][0])
+                column = {col: Q(1, axial)}
+                other = list(t)
+                other[a], other[a+1] = other[a+1], other[a]
+                row = lookup.get(tuple(other))
+                if row is not None:
+                    column[row] = Q(1) if lengths[row] > lengths[col] else 1-Q(1, axial*axial)
+                assert all(v+(i == col) >= 0 for i, v in column.items())
+                columns.append(column)
+            generators.append(columns)
+
+        def act(a, value):
+            result = [Q(0)]*d
+            for col, coefficient in enumerate(value):
+                if coefficient:
+                    for row, weight in generators[a][col].items():
+                        result[row] += weight*coefficient
+            return result
+
+        def word_act(word, value):
+            for a in word:
+                value = act(a, value)
+            return value
+
+        def permutation_act(g, value):
+            work, word = list(g), []
+            for target in range(k):
+                pos = work.index(target)
+                while pos > target:
+                    work[pos-1], work[pos] = work[pos], work[pos-1]
+                    word.append(pos-1)
+                    pos -= 1
+            return word_act(word, value)
+
+        def swap_act(i, j, value):
+            return word_act([*range(i, j), *range(j-2, i-1, -1)], value)
+
+        for col in range(d):
+            unit = [Q(i == col) for i in range(d)]
+            for a in range(k-1):
+                assert act(a, act(a, unit)) == unit
+                if a+1 < k-1:
+                    assert word_act([a, a+1, a], unit) == word_act([a+1, a, a+1], unit)
+                for b in range(a+2, k-1):
+                    assert word_act([a, b], unit) == word_act([b, a], unit)
+        minus = [i for i, t in enumerate(tabs) if t[1] == (1, 0)]
+        seed_input = [Q(i in minus) for i in range(d)]
+        seed = [Q(0)]*d
+        for rest in itertools.permutations(range(3, k)):
+            value = permutation_act((0, 1, 2, *rest), seed_input)
+            seed = [a+b/math.factorial(k-3) for a, b in zip(seed, value)]
+        assert any(seed) and all(v >= 0 for v in seed)
+        assert all(seed[i] == 0 for i in range(d) if i not in minus)
+        columns, transports = [], []
+        for l in range(2, k):
+            value = swap_act(2, l, seed)
+            columns.append([value[i] for i in minus])
+            matrix = [[Q(0)]*len(minus) for i in minus]
+            for col, basis_index in enumerate(minus):
+                unit = [Q(i == basis_index) for i in range(d)]
+                image = swap_act(1, l, unit)
+                for row, index in enumerate(minus):
+                    matrix[row][col] = 2*image[index]
+            transports.append(matrix)
+        apply = lambda matrix, value: [sum(a*b for a, b in zip(row, value)) for row in matrix]
+        prefixes = [[sum(columns[l][i] for l in range(s)) for i in range(len(minus))]
+                    for s in range(1, q+1)]
+        assert prefixes[-1] == [0]*len(minus)
+        assert all(v >= 0 for prefix in prefixes for v in prefix)
+        for l in range(q):
+            assert apply(transports[l], columns[l]) == columns[l]
+            full = [Q(0)]*d
+            for row, index in enumerate(minus):
+                full[index] = columns[l][row]
+            for a in range(2, k-1):
+                target = a-1 if l == a-2 else a-2 if l == a-1 else l
+                moved = act(a, full)
+                assert [moved[index] for index in minus] == columns[target]
+        for row, basis_index in enumerate(minus):
+            t = tabs[basis_index]
+            if t[2] == (0, 1):
+                assert columns[0][row] > 0
+            else:
+                assert t[2] == (2, 0) and columns[0][row] == 0
+            s = t.index((1, 1))-2
+            assert 1 <= s < q and prefixes[s-1][row] > 0
+
+        pair_count = 0
+        for r in range(1, q+1):
+            for s in range(1, q):
+                vs, vr = prefixes[s-1], prefixes[r-1]
+                actual = [Q(0)]*len(minus)
+                for l in range(r):
+                    moved = apply(transports[l], vs)
+                    actual = [a+v-w for a, v, w in zip(actual, vs, moved)]
+                assert all(v >= 0 for v in actual)
+                if r == q:
+                    assert actual == [(q+1)*v for v in vs]
+                for i, basis_index in enumerate(minus):
+                    initial = tabs[basis_index][:r+2]
+                    content = sum(col-row for row, col in initial)
+                    if r <= s:
+                        expected = (Q((r-1)*(r+2), 2)-content)*vs[i]
+                    else:
+                        expected = (Q(r*r-r-2, 2)-content)*vs[i]+s*vr[i]
+                    assert actual[i] == expected
+                    beta = tuple(sum(row == j for row, col in initial) for j in range(len(shape)))
+                    beta = tuple(v for v in beta if v)
+                    if r >= s and beta == (r+1, 1):
+                        assert vs[i] == Q(s, r)*vr[i]
+                pair_count += 1
+
+        def linear(value):
+            return [sum(columns[l][i]*value[l+2] for l in range(q)) for i in range(len(minus))]
+
+        means = [Q(0), Q(0)]+[-Q(i+1) for i in range(q)]
+        f0, u = Q(1), Q(0)
+        f = [f0, f0]+[Q(q-i, 2*q) for i in range(q)]
+        lf = linear(f)
+        uu = linear([a-b for a, b in zip(means, f)])
+        direct = [Q(0)]*len(minus)
+        for l in range(q):
+            y = [u, u]+[means[i+2]-f[i+2] for i in range(q)]
+            y[l+2] = -f0
+            w = [Q(1, 2), Q(1, 2)]+[-Q(i == l) for i in range(q)]
+            cy = [a-2*b*sum(v*t for v, t in zip(w, y)) for a, b in zip(y, w)]
+            value, moved = linear(cy), apply(transports[l], linear(y))
+            direct = [a+f[l+2]/f0*(v-t) for a, v, t in zip(direct, value, moved)]
+        rebuilt = [2*(u+f0)*v/f0 for v in lf]
+        for l in range(q):
+            moved = apply(transports[l], uu)
+            rebuilt = [a+f[l+2]/f0*(v-w) for a, v, w in zip(rebuilt, uu, moved)]
+        assert direct == rebuilt and all(v > 0 for v in direct)
+        if k == 5:
+            moved = apply(transports[-1], prefixes[0])
+            assert min(v-w for v, w in zip(prefixes[0], moved)) < 0
+            assert min(-v for v in prefixes[0]) < 0  # The standard-shape correction cannot be omitted.
+        cases.append({'k': k, 'partition': list(shape), 'Young_dimension': d,
+                      'minus_dimension': len(minus), 'prefix_pairs': pair_count,
+                      'strict_prefix_support_coordinates': len(minus),
+                      'Coxeter_seed_transport_content_and_conditional_controls': 'passed'})
+    return {'cases': cases, 'total_prefix_pairs': sum(c['prefix_pairs'] for c in cases),
+            'unordered_weights_and_missing_standard_cancellation_controls': 'passed',
+            'scope': 'Exact sparse rational Young models for lambda=(k-3,2,1), k5..k8. All generators satisfy Coxeter relations; interval-averaged seeds, standard-family equivariance, strict prefix support, T_l*c_l=c_l, every prefix transport pair, both class-content formulas and the standard-shape cancellation are checked. A rational conditional first-moment example verifies the rewritten Gaussian residual algebra and strict coordinate sign. Controls reject arbitrary unordered nonnegative weights and omission of the standard-shape correction. The all-k Young/Pieri support argument, universal prefix lemma, Mills ordering, Gaussian integration, full compact-operator gap and dimension lift S94 are written mathematics; no finite-cell extrapolation, external review or formal verification is asserted.'}
+
+
 def perimeter_controls():
     import numpy as np
     q = NormalDist().inv_cdf(2/3)
@@ -2038,6 +2213,7 @@ def main():
                          "higher_exterior_hooks": higher_exterior_hook_checks(),
                          "harmonic_hook_moments": harmonic_hook_moment_controls(),
                          "fourth_hook_convexity": fourth_hook_convexity_certificate(),
+                         "mixed_prefix_transport": mixed_prefix_transport_controls(),
                          "representation_hermite_floors": representation_hermite_floor_checks(),
                          "height_standard_reduction": height_standard_reduction_controls(),
                          "five_cell_mixed_certificate": five_cell_mixed_certificate(),

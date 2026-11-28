@@ -84,6 +84,7 @@ Restricted Hessian classes, polynomial graphs and formal termination.
 | A directional twelfth-coefficient bound gives four-variable Hessian inversion | Internal result | proved | [Source](../jacobian/planar-degree-frontier/PARTIAL_DEGREE_FOURTEEN_AND_WEYL_TRANSFER.md) |
 | An eighteenth directional coefficient bound gives four-variable Hessian inversion | Internal result | proved | [Source](../jacobian/planar-degree-frontier/SMALL_PARTIAL_GCD_STANDARD_CORNERS.md) |
 | Directional degrees through twenty give four-variable Hessian inversion | Internal result | proved | [Source](../jacobian/planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY.md) |
+| Directional degrees through twenty-three give four-variable Hessian inversion | Internal result | proved | [Source](../jacobian/planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY_THREE.md) |
 
 **Computed obligations:** 11 unresolved; 3 resolved within their exact scope.
 

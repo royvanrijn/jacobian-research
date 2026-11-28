@@ -387,7 +387,7 @@ inequality. In particular,
  \tag{SN10}
 \]
 In the radial separation this strict inequality gives
-\(\beta>2\); equality in the Gaussian Rayleigh quotient
+\(\beta>2\). Equality in the Gaussian Rayleigh quotient
 therefore requires a radial function. Full-space Hermite
 expansion leaves precisely the span of \(r^2-n\).
 
@@ -562,7 +562,7 @@ absolute value by a finite multiple of the Mehler kernel,
 which is Hilbert–Schmidt by the ambient Hermite expansion
 with squared-norm sum \((1-\rho^2)^{-n}\).
 The diagonal term of (SN2) is bounded below by
-\(p_F/(1-\rho)-1\), using the self-facet row bound in (SN5)
+\(p_F/(1-\rho)-1\), using the self-facet row bound before (SN5)
 and nonnegativity of the adjacent rows. These properties
 persist under compression to \(X\). The bottom of the
 essential spectrum is therefore at least that lower bound.

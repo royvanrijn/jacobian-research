@@ -35,6 +35,24 @@ def minimum_bernstein_coefficient(coefficients, left, right):
     )
 
 
+def verify_centered_partner():
+    pi_lo, pi_hi = Fraction("3.14159"), Fraction("3.14160")
+    root2_lo, root2_hi = Fraction("1.41421"), Fraction("1.41422")
+    root3_lo, root3_hi = Fraction("1.73205"), Fraction("1.73206")
+    cosine_pi8_hi = Fraction("0.92389")
+    assert root2_lo**2 < 2 < root2_hi**2
+    assert root3_lo**2 < 3 < root3_hi**2
+    assert 4 * cosine_pi8_hi**2 > 2 + root2_hi
+
+    h = Fraction(5, 12)
+    negative = 2 * (-(1 + root2_lo) / (2 * pi_hi**2) + h * root3_hi / (2 * pi_lo)) / h**2
+    positive_half = 2 * ((cosine_pi8_hi - Fraction(1, 2)) / pi_lo**2
+                         - h * root3_lo / (4 * pi_hi)) / (h/2)**2
+    positive = -Fraction(12, 25)
+    ratio = max((2 * negative + positive_half) / 3, (negative + positive) / 2, positive)
+    assert (-Fraction(3, 2) / pi_lo**2 - ratio) / 4 > Fraction(3, 100)
+
+
 def verify():
     polynomial = [scaled_moment(order) / factorial(order) for order in range(1, 17)]
     assert polynomial[0] == Fraction(5, 2)
@@ -67,6 +85,7 @@ def verify():
     ):
         assert Fraction(14, 1250) > cubic
         assert (Fraction(14, 1250) - cubic) * 8**2 > (linear - Fraction(7, 5)) / 9
+    verify_centered_partner()
 
     return {
         "status": "pass",
@@ -75,6 +94,7 @@ def verify():
         "interval_width": "1/16",
         "minimum_bernstein_floors_in_millionths": floors,
         "tail_boundary": 8,
+        "one_sided_positive_taylor_coefficient": "3/100",
     }
 
 

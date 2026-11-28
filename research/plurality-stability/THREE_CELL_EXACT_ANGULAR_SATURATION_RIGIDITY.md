@@ -1,6 +1,6 @@
 # Rigidity of simultaneous angular saturation
 
-Fix $0<\rho<1$. If a balanced planar Gaussian noise-stability maximizer attains the exact circular pairing maximum for almost every pair of radii, it is the regular simplex. On a compact interval of positive correlations, nonsimplex maximizers have a uniform positive gap from their own integrated exact circular envelope. Thus a nonsimplex tied maximizer would have to lose stability relative to its envelope. The global inequality remains open.
+Fix $0<\rho<1$. A balanced planar partition in the volume-stable stationary class specified below is the regular simplex if it attains the exact circular pairing maximum for almost every pair of radii. This includes actual Gaussian noise-stability maximizers. On a compact interval of positive correlations, nonsimplex maximizers have a uniform positive gap from their own integrated exact circular envelope. Thus a nonsimplex tied maximizer would have to lose stability relative to its envelope. The global inequality remains open.
 
 The main input is a large-angular-parameter comparison. Two different interior circular mass vectors cannot realize their exact paired maximum by consecutive arcs once the angular parameter is sufficiently large. The comparison is uniform over compact sets of separated interior mass pairs, including pairs agreeing in one coordinate.
 
@@ -56,11 +56,57 @@ At the left boundary of label 3, the narrower label $F_1$ contributes $\ell(t)$.
 \]
 At $d=0$ the formulas agree. The function $\ell$ is strictly positive and convex, so both bounds are strictly larger than $2\ell(0)$. The scaled loss of the reference tends to $2\ell(-|d|/2)\le2\ell(0)$. This is the required contradiction, including the common-coordinate case.
 
+## The volume-stable stationary hypotheses
+
+Let $A=(A_1,A_2,A_3)$ be an ordinary partition of $\mathbb R^2$ with Gaussian masses $1/3$ and locally finite perimeter. Assume that each cell agrees almost everywhere with the strict winner set of an adjusted score
+\[
+ V_i=T_\rho 1_{A_i}-\beta_i,\qquad \beta_i\in\mathbb R.
+\]
+Assume that the regular interfaces are smooth embedded pair arcs, with the two incident cells on opposite sides, and carry all the surface measure of the partition. Orient each regular interface $e=(i,j)$ from $i$ to $j$ with unit normal $N_e$. Write $d_e=e_i-e_j$, $d\nu_e=\phi_2\,d\mathcal H^1$, and
+\[
+ a_e=-\partial_{N_e}(V_i-V_j),\qquad
+ K(e,x;e',y)=(d_e\cdot d_{e'})M_\rho(x,y),
+\]
+where $M_\rho$ is the Mehler kernel relative to Gaussian measure. Here and below interface integrals use the sum of the measures $\nu_e$. The winner rule gives the first-variation condition $T_\rho(1_{A_i}-1_{A_j})=\beta_i-\beta_j$ on each regular arc. As the second-variation hypothesis, require
+\[
+ Q_0(f)=\int a f^2\,d\nu-\langle f,Kf\rangle\ge0
+ \qquad\text{whenever}\qquad Bf=\sum_e d_e\int f_e\,d\nu_e=0
+\]
+for smooth normal speeds compactly supported in the regular arc interiors. It suffices to impose this on finite sums of such local speeds. The map $B$ is the first-order Gaussian volume flux. The pair-level identities are the stationary price conditions used for this constrained form. No global bound on the Euclidean interface length or separate stability assumption for a higher-dimensional cylinder is needed.
+
+Actual balanced planar maximizers meet these hypotheses. The quadratic expansion of noise stability and positivity of $T_\rho$ show that a maximizing partition maximizes the linear assignment functional with scores $U_i=T_\rho 1_{A_i}$ at its prescribed masses. The value of this linear assignment problem on simplex-valued functions is concave in the masses and is attained by an ordinary partition. A supergradient at the interior balanced mass vector supplies the common label prices. Analyticity and injectivity of $T_\rho$ make all pair tie sets null, so the winners are strict almost everywhere. The regular interfaces and the constrained form for actual maximizers are those used in the [maximizer variation argument](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#translation-equations-on-an-unconstrained-space-of-speeds).
+
+**Exclusion of a one-dimensional partition.** If the normals fail to span the plane in surface measure, distributional differentiation of every indicator in a common tangent direction gives zero. The partition then depends on at most one coordinate. Choose coordinates $(y,z)$ so that $z$ is the unused coordinate. A constant partition contradicts the positive masses. Analyticity and injectivity of the one-dimensional convolutions give locally discrete transitions in $y$. Choose a transition at zero if one exists and otherwise the first positive transition $x$, reflecting the coordinate if necessary. Denote the labels immediately to its left and right by $i,j$.
+
+On the line of this transition, test $Q_0$ with a smooth compactly supported odd speed $\zeta(z)$ and set all other speeds to zero. Its volume flux vanishes. Factorization of the Mehler kernel and division by the Gaussian density at $x$ give
+\[
+ a(x)\|\zeta\|_{L^2(\gamma_1)}^2
+ \ge 2\phi_\sigma(x-\rho x)\langle\zeta,T_\rho\zeta\rangle_{\gamma_1},
+ \qquad \sigma=\sqrt{1-\rho^2},
+\]
+where $\phi_\sigma$ is the one-dimensional Gaussian density of standard deviation $\sigma$. Odd cutoffs tending to $z$ in $L^2(\gamma_1)$ give $a(x)\ge 2\rho\phi_\sigma(x-\rho x)$. On the other hand $a(x)$ is the derivative at $x$ of the score of $g=1_{A_j}-1_{A_i}$ in the active coordinate. The corresponding derivative of the score of $s(y)=\operatorname{sgn}(y-x)$ is exactly $2\rho\phi_\sigma(x-\rho x)$. Their difference is
+\[
+ \frac{\rho}{\sigma^2}\int (g(y)-s(y))(y-\rho x)
+                     \phi_\sigma(y-\rho x)\,dy.
+\]
+The integrand is nonpositive on $y>x$ and on $y<\rho x$. It vanishes on $(\rho x,x)$ because label $i$ occupies that interval, by the choice of $x$. The interval is empty if $x=0$. The third label has positive measure outside this interval and gives strict negativity. This contradiction uses only planar stability, with the unused planar coordinate supplying the odd test.
+
+**The interface consequences used below.** With spanning normals, use the [stable-stationary interface argument](THREE_CELL_GLOBAL_INTERFACE_BOUNDS.md#the-same-bounds-for-ordinary-stable-stationary-partitions). Positivity of $a$ almost everywhere follows locally by testing with a nonzero bounded zero-mean speed on a putative positive-measure subset of an arc where $a\le0$. The kernel quadratic form is strictly positive on such a speed. On a compact arc patch, approximation by smooth speeds with a single mean correction justifies that test. The scores are convolutions of bounded indicators, so their first and second derivatives are bounded and their pair contrasts satisfy the complex Gaussian growth bound used in the [polynomial length estimate](THREE_CELL_GLOBAL_INTERFACE_BOUNDS.md#polynomial-growth-of-the-network). The pair-level identities therefore give interface length $O_{A,\rho}(1+R^4)$ in $B_R$. In particular bounded speeds are integrable in the weighted local term and in the Mehler product term, since the joint Gaussian density has strictly positive quadratic decay. The interface graph is connected because a union of cells with no outgoing interface would have zero distributional gradient. Compact regular bumps on a spanning tree then correct the two independent fluxes during approximation of bounded speeds.
+
+In detail, Gaussian integration by parts gives $\rho K s_v=a s_v$ for each translation speed $s_v=v\cdot N$. The bounded-speed approximation extends constrained stability to these speeds when balanced. A nonzero translation has $Q_0(s_v)=-(1-\rho)\|s_v\|_a^2/\rho<0$, with $\|s_v\|_a^2=\int a s_v^2d\nu$. Thus the translation flux map is injective and hence onto the label sum-zero space. Its components are $-\int_{A_i}v\cdot x\,d\gamma_2$, giving the first-moment rank. Subtracting the translation with the same flux from a compact regular speed gives a balanced speed. The identity for translations makes their span orthogonal for $Q_0$ to its $L^2(a\,d\nu)$-orthogonal complement. Nonnegativity on the balanced speed then gives nonnegativity of $Q_0$ on that complementary component. Since $Q^{(1)}=\rho Q_0+(1-\rho)\|\cdot\|_a^2$ vanishes on translations, it is nonnegative as claimed.
+
+Approximation extends $Q^{(1)}\ge0$ to bounded compactly supported speeds. On one edge in a compact set $B$, test with $g_m=\min(m,a_e^{-1})$ restricted to the edge in $B$. Then $a_e g_m^2\le g_m$ and the pair kernel on that edge is at least $2\min_{B\times B}M_\rho$. Consequently
+\[
+ 2\rho\min_{B\times B}M_\rho\left(\int g_m\,d\nu_e\right)^2
+    \le \int g_m\,d\nu_e .
+\]
+Monotone convergence gives the reciprocal-gradient estimate (G20). Its [local analytic jump-arc consequences](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#regular-interface-arcs-and-isolated-triple-junctions) also apply under the winner rule here. A regular jump arc cannot accumulate at a point where its pair-score gradient vanishes. The semianalytic stratification of the three strict winner sets then gives distinct adjusted-score gradients at a genuine triple junction. These consequences use the analytic scores and (G20) together.
+
 ## From simultaneous saturation to the simplex
 
-Suppose an actual balanced planar global maximizer attains its exact pair envelope almost everywhere. Choose the full-measure set of radii where its slices are Lebesgue points as maps into $L^1(S^1)^3$, where the slice agrees almost everywhere with the strict adjusted-score winners, and where the pair equality holds for almost every partner. The strict winner property follows by polar Fubini from the analytic scoring rule. No adjusted pair contrast is identically zero, since injectivity of the positive-correlation Ornstein–Uhlenbeck operator would then make the two indicator functions differ by a constant. Approaching a good radius by partners whose slices converge in $L^1$ gives self-equality, by continuity of the pair value and maximum. Thus almost every slice consists of consecutive arcs, possibly with empty or full labels.
+Suppose a partition under these hypotheses attains its exact pair envelope almost everywhere. Choose the full-measure set of radii where its slices are Lebesgue points as maps into $L^1(S^1)^3$, where the slice agrees almost everywhere with the strict adjusted-score winners, and where the pair equality holds for almost every partner. The strict winner property follows by polar Fubini from the analytic scoring rule. No adjusted pair contrast is identically zero, since injectivity of the positive-correlation Ornstein–Uhlenbeck operator would then make the two indicator functions differ by a constant. Approaching a good radius by partners whose slices converge in $L^1$ gives self-equality, by continuity of the pair value and maximum. Thus almost every slice consists of consecutive arcs, possibly with empty or full labels.
 
-Two-positive and three-positive slices cannot coexist on positive-measure sets by the boundary comparison. If there are only pure and two-positive slices, every label occurring on two-positive slices has a common fixed center, because pairs sharing that label must attain its scalar aligned-arc bound. For two slices with the same two labels both scalar bounds can be attained simultaneously, because both center pairs are antipodal. For distinct two-label types only the shared label contributes. Thus each occurring two-label type requires its two fixed centers to be antipodal. All three types are impossible, and at most two types put all nonconstant centers on a single diameter. Pure slices have zero angular moments. All three Gaussian first moments would therefore be collinear, contrary to [full moment rank at an actual maximizer](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#one-active-dimension-is-impossible). There are consequently three-positive slices on a positive-measure set, and no two-positive slices except on a null set.
+Two-positive and three-positive slices cannot coexist on positive-measure sets by the boundary comparison. If there are only pure and two-positive slices, every label occurring on two-positive slices has a common fixed center, because pairs sharing that label must attain its scalar aligned-arc bound. For two slices with the same two labels both scalar bounds can be attained simultaneously, because both center pairs are antipodal. For distinct two-label types only the shared label contributes. Thus each occurring two-label type requires its two fixed centers to be antipodal. All three types are impossible, and at most two types put all nonconstant centers on a single diameter. Pure slices have zero angular moments. All three Gaussian first moments would therefore be collinear, contrary to the full moment rank just proved. There are consequently three-positive slices on a positive-measure set, and no two-positive slices except on a null set.
 
 Fix one good three-positive partner and discard the null set of radii that do not pair optimally with it. The boundary comparisons show that the remaining three-positive profiles stay uniformly interior on each compact radial interval, and also as $r\downarrow0$. For a contrary sequence, pass to a limit of the consecutive arcs and parameters. A two-positive limit contradicts the two-versus-three comparison by continuity, using the normalized kernel at parameter zero if needed. A pure limit contradicts the separated-maximizer argument for the two small labels. At every compact interval and at the origin the fixed partner keeps the parameters in a compact range.
 
@@ -73,6 +119,20 @@ It follows that almost every radius has three positive labels, uniformly bounded
 The good tail profiles also stay uniformly interior. Otherwise take good radii $r_n\to\infty$ with masses tending to the boundary. For each $r_n$ choose a good partner $s_n$ from its full-measure set of equality partners such that $r_n s_n\to c_0$ for a fixed $c_0>0$. The partner slices converge to the origin arcs, and the parameters tend to a strictly positive finite number. The same two boundary comparisons exclude both two-positive and pure limits for $p(r_n)$.
 
 Choose any interior accumulation point $p_\infty$ of profiles on the good tail radii. For a fixed good radius $r>0$, choose a sequence of its good equality partners tending to infinity whose profiles tend to $p_\infty$. This can be done for almost every $r$ with the same accumulation point: choose $p_\infty$ in the essential tail limit set, namely the intersection over tail cutoffs of the closed supports of the tail profile pushforward measures. These supports are nonempty nested compact sets, uniformly interior for large cutoffs. Each tail neighborhood of this point has a positive-measure preimage, which intersects the full-measure partner set. The angular parameters tend to infinity. If $p(r)\ne p_\infty$, the compact separated large-parameter comparison contradicts equality for these pairs of consecutive arcs. Therefore $p(r)=p_\infty$ almost everywhere. Balance gives $p_\infty=(1/3,1/3,1/3)$, and equal-mass pair equality makes the same three arcs occur at almost every radius. These are the regular simplex sectors.
+
+## Two radial constraints at a pressure-free centered junction
+
+Suppose a balanced partition with the winning-score rule has a genuine triple junction at the origin and all three prices $\beta_i$ are equal. This observation does not require saturation or second-order stability. The adjusted scores agree at the origin by continuity, so $U_i(0)=1/3$ for every label. Set $d=1-\rho^2$, $b_i(r)=p_i(r)-1/3$ and
+\[
+ w_d(r)=d^{-1}\exp[-(d^{-1}-1)r^2/2].
+\]
+Global balance and the conditional Gaussian distribution at the origin give
+\[
+     \int b_i\,d\mu=0,\qquad \int b_i w_d\,d\mu=0.
+\]
+Any nonzero $b_i$ must change sign more than once, in the sense that its nonzero signs cannot separate into just two ordered radial intervals. Indeed $w_d$ is strictly decreasing. If there were a single crossing at $R$, the product $b_i(r)(w_d(r)-w_d(R))$ would have one sign and a nonzero integral, contrary to the two identities. A single sign without a crossing is excluded by global balance.
+
+In the radial variable $t=r^2/2$ with $d\nu(t)=e^{-t}dt$, the second identity makes the coefficient of $z_i(t)=b_i(\sqrt{2t})$ against $f_0(t)=\exp[-\rho^2t/(1-\rho^2)]$ vanish. Thus the degree-zero feature contributes nothing in the positive kernel series of the [sharp scalar radial comparison](THREE_CELL_SHARP_POSITIVE_ARC_ENVELOPE.md#consequences-for-the-radial-operator). These constraints apply whether or not the partition attains its pair envelope.
 
 ## Uniform slack on compact correlation intervals
 

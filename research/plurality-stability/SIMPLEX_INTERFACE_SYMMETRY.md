@@ -32,17 +32,24 @@ Equation (S91) supplies a positive harmonic polynomial field in every
 higher exterior degree and an exact one-dimensional formula for its
 truncated image. The convex clipping argument (S92) settles the fourth
 exterior hook $(k-4,1^4)$ for every $k\ge5$, with the explicit gap
-$\ell\sqrt{1-\rho^2}$. The sufficient comparison remains open in the
-other intermediate exterior degrees.
+$\ell\sqrt{1-\rho^2}$. The [truncated Gaussian determinant
+argument](ALL_EXTERIOR_HOOK_GAPS.md) settles the comparison in
+every exterior degree, completing the higher exterior-hook gaps.
 The four-cell problem reduces
 to one scalar standard-sector inequality. The exact polynomial
 certificate (S74)--(S76) also settles the five-cell $(2,2,1)$ block,
 so five cells reduce to the standard inequality as well.
-These results do not supply
-the missing full active-space gap
-for $k\ge4$ at arbitrary correlation. The remaining higher-cell blocks and
-global optimality remain open. External review and formal verification
-have not occurred.
+The [four-cell](TETRAHEDRAL_STANDARD_GAP.md) and
+[five-cell](FIVE_CELL_A3_BRIDGE.md) standard-sector comparisons
+complete the gap at every positive correlation in those cases.
+The Young-prefix transport proof (S94) settles the complete mixed
+family $(k-3,2,1)$ for every $k\ge5$. The
+[six-cell $(3,2,1)$ certificate](SIX_CELL_MIXED_321_GAP.md)
+provides a separate exact proof in that case. The [explicit initial interval for higher
+cell counts](HIGHER_CELL_INITIAL_INTERFACE_GAP.md) includes
+$0<\rho\le 1/[k(k-1)]$ for every $k\ge6$. The full higher-cell gap
+and global optimality remain open. External review and formal
+verification have not occurred.
 The common compressed-immanant formula (S67)--(S69) gives entrywise
 nonnegative matrix kernels in a fixed Young basis for every cell count
 and every symmetry block. It leaves the remaining spectral bounds explicit.
@@ -3810,9 +3817,9 @@ for every remaining exterior hook:
  \tag{S91e}
 \]
 
-coordinatewise on $W$. The case $p=3$ is proved in (S92) below;
-the intermediate cases $4\le p<q$ remain open. Its correlation
-parameter can be removed exactly.
+coordinatewise on $W$. The case $p=3$ is proved in (S92) below.
+The [all-degree proof](ALL_EXTERIOR_HOOK_GAPS.md) uses the
+following exact removal of the correlation parameter.
 Write $P^{[1]},J_p^{[1]}$ for (S91c) at variance parameter $\sigma=1$,
 and set $z=\rho x/\sigma$. Homogeneity and the substitution
 $u=\sigma v$ give
@@ -3847,10 +3854,10 @@ $\ell\sigma^{-1}(1-\rho^{e-1})$, independently of the ambient
 dimension by the unused-coordinate Hermite factorization.
 At $p=2$, (S73) already proves the strict residual behind the
 non-strict factor $1$. At $p=q\ge3$, the comparison and explicit factor
-are already proved by (S63)--(S66), and (S92) proves $p=3$.
-The remaining intermediate-degree comparison is the obligation;
-positivity and free harmonicity alone do not
-control the truncated adjacent terms in (S91d).
+are proved by (S63)--(S66), and (S92) proves $p=3$.
+The [all-degree comparison](ALL_EXTERIOR_HOOK_GAPS.md)
+controls the truncated adjacent terms in (S91d) through the
+derivative determinant of the truncated Gaussian law.
 
 The exact controls below check selected positive wedge coordinates,
 (S91b), free Gaussian Vandermonde moments, the moment recurrence and
@@ -3873,8 +3880,9 @@ no kernel and satisfies
 
 This includes all $L^2$ multiplicities. At five cells it agrees with
 the sign estimate; the new cases are $k\ge6$. It proves (S91e)--(S91f)
-for $p=3$. The other intermediate exterior degrees and the standard
-constraint are not resolved by this theorem.
+for $p=3$. The [all-degree proof](ALL_EXTERIOR_HOOK_GAPS.md)
+uses the conditional identity (S92a) for every $p$.
+The standard constraint is a separate scalar inequality.
 
 #### Combining the conditional adjacent terms
 
@@ -4104,6 +4112,217 @@ wedge controls. The all-size hinge decomposition, Mills argument,
 Gaussian integrations and complete Hilbert-space spectral passage
 remain written mathematics with internal review only.
 
+### Every cell count: the mixed $(k-3,2,1)$ block
+
+**Theorem S94 (all-cell mixed block).**
+
+For every $k\ge5$, $0<\rho<1$ and $d\ge k-1$, the entire
+$V_{(k-3,2,1)}$ isotypic block has no kernel and a strictly positive
+$L^2$ interface gap $\kappa^{\rm mix}_{k,\rho}>0$, independent of $d$.
+This extends (S74) from five cells to the whole family. The constant
+here is qualitative. The proof controls the full multiplicity space
+by a positive linear field and a Young-basis prefix inequality.
+
+Use an orthonormal Young basis with positive admissible off-diagonal
+generator entries, and restrict to $V_\lambda^-$,
+$\lambda=(k-3,2,1)$. Write $\operatorname{Sym}_I$ for the normalized
+trivial projector on the interval of labels $I$; these projectors are
+entrywise nonnegative by the interval-averaging argument of (S69).
+They are distinct from the sign projectors $E_I$ of (S88).
+Put $q=k-2$ and define
+
+\[
+ c_3=\operatorname{Sym}_{\{4,\ldots,k\}}\mathbf1_{\rm Young},
+ \qquad c_i=R_\lambda((3i))c_3\quad(3\le i\le k),\qquad
+ v_s=\sum_{i=3}^{s+2}c_i\quad(1\le s\le q).
+ \tag{S94a}
+\]
+
+The vector of ones here is on the $(12)$-minus Young coordinates.
+Horizontal Pieri shows that the fixed space used for $c_3$ has
+dimension one. In fact the only three-box initial shape compatible
+with $(12)$-minus and a horizontal strip of the remaining $k-3$
+boxes is $(2,1)$. Its skew-tableau graph is connected, so its
+trivial projector has positive entries there by the argument of (S90).
+Thus $c_3$ is nonzero, is positive at every tableau whose first
+three boxes have shape $(2,1)$, and vanishes on the initial
+$(1,1,1)$ shape.
+
+Under $G_0$, this fixed vector belongs to the standard representation.
+Indeed a point-stabilizer fixed vector can only generate the trivial
+or standard representation, and $V_\lambda^-$ has no $G_0$ trivial
+component by vertical two-strip Pieri. Consequently
+$R(g)c_i=c_{gi}$ and $\sum_i c_i=0$. Also
+$T_ic_i=c_i$: the three-label sign projector kills $c_3$, so (S85)
+gives this at $i=3$, and conjugation gives the other cases.
+In particular
+
+\[
+ v_q=0,\qquad
+ v_s=s\operatorname{Sym}_{\{3,\ldots,s+2\}}c_3\ge0.
+\]
+
+Every minus coordinate is positive in at least one $v_s$, $s<q$.
+To verify this, in its tableau let $t$ be the label in box $(2,2)$
+(row and column numbered from one), and take $s=t-3$.
+The diagram just before that box is added has second row of length
+one, first row of length at least two, and at most one box in the
+third row. Its skew shape beyond the first column $(1,1)$ is a
+horizontal $s$-strip. Averaging labels $3,\ldots,t-1$ has positive
+entries on its connected skew-tableau graph. That graph contains a
+tableau with label $3$ in box $(1,2)$, where $c_3$ is positive,
+while the later filling can be kept fixed. Hence the selected
+$v_s$ coordinate is positive.
+
+Define $Lx=\sum_{i=3}^kc_ix_i$ and $W(x)=Lx$. Then
+$Lp_0=0$, $L\mathbf1=0$, and $W$ is $G_0$-equivariant. On $W$,
+
+\[
+ W(x)=\sum_{s=1}^{q-1}(x_{s+2}-x_{s+3})v_s>0
+\]
+
+in every coordinate. These are positive linear coordinates on the
+full field model, rather than a restriction of the allowed speeds
+to a polynomial subspace.
+
+#### Prefix transport positivity
+
+The following Young-basis fact supplies the uniform argument. For any
+$G_0$ standard family $c_i$ in a minus space whose prefixes $v_s$
+are nonnegative, set
+
+\[
+ B_r=\sum_{l=3}^{r+2}(I-T_l),\qquad1\le r\le q.
+\]
+
+Then
+
+\[
+                    B_rv_s\ge0\qquad(1\le r\le q,\ 1\le s<q).
+ \tag{S94b}
+\]
+
+Let $Z_{r+2}$ be the transposition class sum on labels
+$1,\ldots,r+2$ and $Y_r$ the sum on $3,\ldots,r+2$.
+The same compression as (S89) gives
+$B_r=(r-1)I-Z_{r+2}+Y_r$. The first class sum is diagonal in
+the Young basis, with value $c_\beta$ for the initial diagram
+$\beta$ of size $r+2$.
+
+If $r\le s$, $v_s$ is invariant under the latter $r$-label group.
+Pieri allows only $\beta=(r+1,1)$ and $(r,1,1)$ on its support.
+The diagonal coefficient
+$(r-1)(r+2)/2-c_\beta$ is respectively $0$ and $r+2$.
+This proves (S94b) in this case.
+
+If $s\le r$, the permutation action on the $c_i$ gives
+
+\[
+ Y_rv_s=\frac{r(r-3)}2v_s+s v_r.
+\]
+
+On the initial $\beta$ coordinates, therefore,
+$B_rv_s=(d_r-c_\beta)v_s+s v_r$, with
+$d_r=(r^2-r-2)/2$. Restriction to the latter $r$ labels has only
+trivial and standard components. Vertical two-strip Pieri gives
+the following exhaustive list, omitting invalid partitions:
+
+| $\beta$ | $d_r-c_\beta$ |
+|---|---:|
+| $(r+1,1)$ | $-r$ |
+| $(r,2)$ | $0$ |
+| $(r,1,1)$ | $2$ |
+| $(r-1,2,1)$ | $r+1$ |
+| $(r-1,1,1,1)$ | $r+4$ |
+
+The only negative coefficient cancels exactly. In the
+$(r+1,1)$ minus space the latter $r$-label group acts trivially,
+so averaging it gives $v_s=(s/r)v_r$ in those coordinates.
+All the other coefficients, as well as $v_s,v_r$, are nonnegative.
+This proves (S94b), including the small values of $r$.
+
+In particular, if $\alpha_3\ge\cdots\ge\alpha_k\ge0$ and
+$U=\sum_s\beta_s v_s$ with $\beta_s\ge0$, then
+
+\[
+ \sum_l\alpha_l(I-T_l)U\ge0.
+ \tag{S94c}
+\]
+
+Expand the weight sequence into its constant last value and its
+nonnegative successive prefix differences, and apply (S94b).
+
+#### The Gaussian residual
+
+Apply $L$ to the rotation identity
+$\mathsf K_1y=a_\rho x$ from (S71) and subtract the mixed kernel.
+Since $Lw_l=-c_l$, the resulting exact identity is
+
+\[
+ a_\rho W-\mathsf K_\lambda W
+    =\sum_{l=3}^k\int_{F_{12}}M_l(x,y)
+              \bigl[(I-T_l)Ly+2c_l(y_2-y_l)\bigr]d\nu_{12}(y).
+ \tag{S94d}
+\]
+
+Complete the adjacent Gaussian squares and scale to unit variance
+as in (S91). Common translation of the lifted coordinates does
+not change this linear residual. Take the source means
+$(0,0,m_3,\ldots,m_k)$ with $0>m_3>\cdots>m_k$.
+For fixed top coordinate $u$, put
+$f_i=\lambda(u-m_i)$, $f_0=\lambda(u)$,
+$g=u+f_0>0$ and $U=L(m-f)$, with $L$ acting on the remaining
+coordinates. The conditional means for the other coordinates are
+$m_i-f_i$. In adjacent term $l$, coordinate $l$ instead has mean
+$-f_0$. Its scalar density ratio to the common self density is
+$f_l/f_0$, exactly as in (S92a). The extra multiple of $c_l$
+in $Ly$ is killed by $I-T_l$, because $T_lc_l=c_l$.
+Thus the conditional residual in (S94d), after division by that
+positive common density, is
+
+\[
+ \frac1{f_0}\left[
+        \sum_{l=3}^kf_l(I-T_l)U+2g\,Lf\right]>0.
+ \tag{S94e}
+\]
+
+Here every inequality follows from established scalar facts.
+The sequence $f_3>\cdots>f_k>0$ is strictly ordered.
+The truncated-mean map $m\mapsto m-\lambda(u-m)$ is strictly
+increasing, since its derivative is $1+\lambda'(u-m)>0$.
+Hence $U$ is a positive combination of the $v_s$; the first
+sum in (S94e) is nonnegative by (S94c). Also $Lf$ is strictly
+positive in every coordinate by the prefix support argument,
+and $g>0$ by the positive truncated normal residual mean.
+The Mills derivative and mean bounds have the elementary proof
+given in (S92); no higher-derivative assumption is used here.
+Gaussian integrability permits the conditional calculation and
+integration over $u$, proving that (S94d) is strictly positive
+in every coordinate on the ordered chamber.
+
+The folded mixed kernel is entrywise nonnegative by (S69), and
+the normalized operator
+$T=a_\rho^{-1/2}\mathsf K_\lambda a_\rho^{-1/2}$ is compact and
+self-adjoint. The positive $L^2$ field $\psi=\sqrt{a_\rho}W$
+satisfies $T\psi<\psi$. Pairing $|Tz|\le T|z|$ with $\psi$
+for any nonzero eigenvector gives $|\lambda|<1$.
+Compactness yields $\theta_{k,\rho}=\|T\|<1$, and therefore
+
+\[
+ \mathfrak q_\rho(f)\ge
+       \frac{\ell}{\sigma}(1-\theta_{k,\rho})\|f\|^2
+\]
+
+on this entire active-space block. The unused-coordinate Hermite
+factor multiplies $T$ by $\rho^r$ at degree $r$, so the same
+bound holds in every $d\ge k-1$. This proves (S94).
+
+The exact finite Young models test the seed, strict prefix support,
+compressed transports, class-sum formulas and every prefix pair in
+the stated cell range. The unrestricted Young/Pieri support and
+content arguments, scalar ordering, Gaussian integration and full
+operator conclusion are written proofs, with internal review only.
+
 ## Monotonicity and the other global obligations
 
 **Raw-deficit obstruction.** For every $k\ge2$, the unnormalized
@@ -4140,8 +4359,8 @@ The remaining targets are distinct:
   The complete rotation hook has the all-correlation gap (S56).
   Every nonstandard two-row block has the strict gap (S87), extending
   the $(k-2,2)$ case (S60), and every sign block is
-  settled by (S61)--(S66). The third and fourth exterior hooks are
-  settled by (S73) and (S92), respectively.
+  settled by (S61)--(S66). Every higher exterior hook is settled
+  by the [truncated Gaussian determinant proof](ALL_EXTERIOR_HOOK_GAPS.md).
   The [four-cell](TETRAHEDRAL_STANDARD_GAP.md) and
   [five-cell](FIVE_CELL_A3_BRIDGE.md) comparisons settle (S51) in
   those two cases and complete their full interface gaps. For $k\ge6$
@@ -4153,11 +4372,11 @@ The remaining targets are distinct:
   common scalar spectral reduction for every fixed representation height.
   The highest projection is bounded below on equivariant fields, and
   (S90) specifies its closed physical image and reconstruction.
-  For the remaining exterior hooks, (S91) gives a positive harmonic
-  comparison field and exact one-dimensional Gaussian moment formulas.
-  Its degree-$3$ comparison is settled by (S92); the sufficient
-  intermediate-degree inequalities (S91e) for $p\ge4$ remain open.
-  The required scalar spectral-radius and fixed-space bounds are open;
+  The whole mixed family $(k-3,2,1)$ is settled by (S94), extending
+  the [six-cell $(3,2,1)$ proof](SIX_CELL_MIXED_321_GAP.md).
+  In six cells only $(2,2,2)$ and $(2,2,1,1)$ remain in addition to the standard
+  sector. For higher counts, the corresponding nonhook scalar
+  spectral-radius and fixed-space bounds are open;
   the next simple odd-kernel positivity argument is explicitly false.
   The exact tied-height reduction (S84) supplies a two-variable
   diagnostic kernel with its original mass constraint; its restricted
@@ -4275,8 +4494,8 @@ transported Vandermonde expansion and free Gaussian moments in every
 exterior degree for four through eight cells. Finite product measures
 check the determinant of unnormalized truncated moments, including
 spectator factors, and a formal identity checks the Gaussian moment
-recurrence through order nine. These controls do not prove the
-remaining intermediate-degree truncated supersolution comparisons (S91e).
+recurrence through order nine. The [all-degree truncated supersolution
+comparison](ALL_EXTERIOR_HOOK_GAPS.md) uses a written argument.
 For (S92), all 60 real-variable order types for the clipped-curve
 inequality are expanded as cubic polynomials in nonnegative successive
 gaps, with all 240 nonzero coefficients positive. Ten analogous types
@@ -4287,6 +4506,15 @@ The unrestricted clipping and convex-slope arguments, self-contained
 Mills proof, Gaussian integration and full-block operator conclusion
 are written mathematics; no external review or formal verification
 is inferred from the exact polynomial replay.
+For (S94), sparse rational Young models for $(k-3,2,1)$ at five
+through eight cells check Coxeter relations, the interval-averaged
+seed, remaining-label equivariance, strict prefix support and all
+68 prefix transport pairs. They also check both class-content
+formulas, the exact standard-shape cancellation and the conditional
+first-moment residual. Unordered weights and omission of that
+cancellation are rejected. The unrestricted prefix/support proof,
+Gaussian ordering and integration, full compact-operator gap and
+ambient lift are written arguments with internal review only.
 The analytic operator reduction, OU parity spectra, tensor decomposition,
 dimension lifting, determinant positivity and all-$k$ representation
 argument still require written proof review. The optional

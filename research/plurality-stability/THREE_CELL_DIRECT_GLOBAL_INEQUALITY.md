@@ -4,8 +4,10 @@ The unrestricted inequality
 \(\widetilde Q_\rho(e)\leq2L_\rho(A;T)\) remains open here.
 The exact expansion (B1) in the [continuation note](POSITIVE_CORRELATION_CONTINUATION.md)
 makes it equivalent to \(S_\rho(A)\leq S_\rho(T)\), including for
-partitions far from the simplex. The current explicit direct comparison,
-adopted in DG21, holds for every balanced three-cell partition in every
+partitions far from the simplex. The
+[full-radius trial comparison](THREE_CELL_FULL_RADIUS_TRIAL_EXTENSION.md)
+proves the unrestricted inequality through \(\rho=2611/4000\).
+The independent direct comparison adopted in DG21 holds for every balanced three-cell partition in every
 dimension \(d\geq2\) throughout \(0<\rho\leq61/100\).
 Its [same-label variance proof](THREE_CELL_SAME_LABEL_VARIANCE_PENALTY.md)
 uses the sharp arc envelope, a global angular variance reserve, and
@@ -15,6 +17,8 @@ finite-amplitude comparison through
 \(221/500\): it isolates one adverse radial direction, limits its amplitude
 by feasibility, and pays for its positive contribution with unavoidable
 angular loss. Both arguments are global in partition distance.
+The [variance and bootstrap note](THREE_CELL_SHARP_VARIANCE_ABSORPTION.md)
+records the unconditional variance absorption and its own certified covers.
 The earlier [scalar-threshold argument](THREE_CELL_BEYOND_SCALAR_THRESHOLD.md),
 adopted in DG15 below, crosses the first obstruction to its separated
 scalar criterion qualitatively. It gives no further explicit numerical
@@ -2504,6 +2508,11 @@ It combines the positive slack when two slices favor the same label
 with the separate quartic difference slack. The key cumulative-density
 comparison SLV2 prevents the same-label contribution from being
 weakened by an exponentially small factor.
+The convex Laplace-transform calculation SLV3 also brackets the optimal
+pure same-label linear constant between 0.1952578742 and 0.1952578830.
+Combined with the dominant-label bound SV3, it gives the larger
+all-correlation reserve \(781\rho\pi(1-\rho^2)/32000\) in SLV8.
+The independent radial cover below uses only the smaller reserve.
 
 The resulting corrected radial operator has a directed norm upper
 bound below \(1999/1000\) throughout \([29/50,61/100]\).

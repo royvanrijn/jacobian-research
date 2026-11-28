@@ -25,8 +25,8 @@ for \(\rho\) sufficiently close to one and changes supported in the
 physical active ball \(B_{eR}\). Here \(L_\rho\) is the exact oriented
 OU transfer cost. On each fixed \(R\) one also has
 \(S_\rho(T)-S_\rho(U)\ge c_R |\{U\ne T\}|^2/e^d\), with physical
-Lebesgue measure. The support range in (BC1) grows in noise
-lengths. The comparison still requires the two block orientations.
+Lebesgue measure. The local-step argument (BC10) below extends this comparison to
+a fixed physical ball with a polynomial relative margin.
 
 The argument uses the sign calibration from
 [Pagliari, Theorem 2.3 and Lemma 2.4](https://arxiv.org/pdf/1905.00623).
@@ -275,3 +275,248 @@ original partition. The Euclidean gain is strictly positive
 for a wrong-side region of positive measure: \(b(q)=1\) on
 a positive-measure portion of the infinite reference cell
 on \(H^+\), as the defect has finite measure.
+
+## A local-step comparison up to a fixed physical radius
+
+The two-block domain admits a polynomial comparison. In Gaussian
+notation there are \(c,\delta>0\), depending only on \(k\), such
+that the ordered two-block comparison holds with
+\[
+ S_\rho(T)-S_\rho(U)\ \ge\ c R^{-2} L_\rho(U;T),
+ \qquad 1\le R\le \delta/e,\qquad \{U\ne T\}\subset B_{eR}.
+ \tag{BC10}
+\]
+No balance condition is needed. In particular a fixed physical
+ball of sufficiently small radius is admissible, with a
+transfer-relative margin of order \(e^2\) at that radius.
+The same conditional comparison holds in extra Gaussian
+dimensions under the active support condition. For the reflected
+tetrahedral pair class the margin in this range is \(cR^{-3}\).
+
+Use the chamber and linear function \(g\) from (BC4)–(BC6).
+Write \(Q\) in coordinates \(p=z+(h-g(z))v\), with
+\(z\in Z=Q\cap v^\perp,\ h=g(p)\). Here \(Z\) is a full-dimensional
+open convex cone in \(v^\perp\), of dimension \(d-1\ge1\), and the
+volume element is a constant multiple of \(dz\,dh\). Set
+\(D_\pm=\{m\ne\eta,\ \pm h>0\}\) in \(Q\).
+The following argument uses sequences of short random steps to
+lower bound (BC6).
+
+Choose a unit vector \(z_*\in Z\) and a small ball \(W_0\Subset Z\)
+with \(\inf_{w\in W_0}w\cdot z_*>0\).
+Starting with density \(|h|1_{D_\pm}(p)\,dp\), move by independent
+steps
+\[
+ z\longmapsto z+w,\qquad
+ h\longmapsto(1-\theta/N)h,\qquad
+ w\sim\mathrm{Unif}(W_0),\quad \theta\sim\mathrm{Unif}([1,2]).
+\]
+Take \(N=\lceil C_0(R+1)\rceil\). The cone property keeps all points
+in \(Q\). The final \(z\)-projection along \(z_*\) exceeds \(R\)
+if \(C_0\) is large enough, so the last point lies outside the
+change ball. All points stay within \(C_k R\) of the origin, since
+the initial point lies in \(B_R\) and \(|h|\) decreases.
+The steps have length bounded by a fixed small constant, by
+choosing \(W_0\) small and \(C_0\) large. The sign of \(h\) is
+preserved.
+
+For fixed increments up to any time \(j\le N\), the map in the
+coordinates \((z,h)\) is a translation in \(z\) and a contraction
+of \(h\) by a factor at least \((1-2/N)^N\ge1/16\) for \(N\ge4\).
+Thus the marginal at time \(j\) has density at most \(C|h|\).
+The transition density is at most \(CN/|h|\), because the
+conditional \(h\)-interval has length \(|h|/N\). Therefore every
+pair of successive points has joint density at most \(CN\).
+The initial point is wrong and the terminal point is correct, so
+there is a transition from wrong to correct. For \(h>0\) such a
+transition decreases \(g\) and switches \(m\) from zero to one.
+For \(h<0\) it increases \(g\) and switches \(m\) from one to zero.
+In either case the bracket in (BC6) equals two. Summing over the
+\(N\) possible steps bounds the initial mass by \(CN^2\) times
+the measure of these violating pairs. The pairs used here have
+both points in \(B_{C_kR}\) and bounded small separation.
+
+For (BC7) the kernel on these pairs is bounded below by
+\(c\exp(-C e^2R^2)\): the displacement Gaussian has bounded
+argument and only the midpoint Gaussian sees points of size \(R\).
+Therefore (BC6) is at least
+\[
+ c R^{-2}\exp(-C e^2R^2)
+          \int_{\{m\ne\eta\}\cap Q}|g(p)|\,dp .
+\]
+The translated scores in (BC5) have difference in absolute value
+at most \(C e^2 |g(p)|\), directly from the scaled conditional mean
+\(\rho p-g(p)v\), which lies at distance
+\((1-\rho)|g(p)|/\sqrt2\) from the pair plane, and the uniform
+Lipschitz score bound there. Choose \(\delta\) small enough that
+the row error is at most half the positive term for \(eR\le\delta\).
+The result bounds the exact score cost, by the reference
+Lipschitz estimate used in (BC8). The scaling factor \(e^d\)
+cancels in the comparison. Orbit sorting preserves the average
+score cost by (BC3), so the inequality applies to unsorted
+competitors. The usual positive-operator argument for transverse
+Gaussian slices supplies the ambient lift.
+
+### Weyl-symmetric kernels
+
+The Euclidean statement holds for every integrable, nonnegative,
+even kernel \(k(q-p)\) invariant under the site permutation group
+and bounded below by a positive constant on a ball about zero.
+The translated row identity in (BC5) is exact by translation and
+pair reflection. The short-step comparison therefore gives
+\(c R^{-2}\int |g|1_{\{m\ne\eta\}}\) after folding, for defects
+supported in \(B_R\), \(R\ge1\). For a finite-volume defect with
+unbounded support, start the same chain on a bounded subset
+of positive mass of one \(D_\pm\). The terminal law leaves \(B_R\),
+has uniformly bounded density there and has bounded \(|h|\)
+by the initial bound. Its mass of wrong terminal points
+consequently tends to zero as \(R\to\infty\). Some finite choice
+of \(R\) then forces a positive measure of violating pairs.
+This gives strictness without requiring long-range interactions.
+
+For bounded support one can also allow singular kernels satisfying
+\(\int \min(1,|z|)\,k(z)\,dz<\infty\), with the same symmetries
+and local lower bound. Compare local cuts with pairs restricted
+to those having at least one endpoint in \(B_R\). The reference
+cut is finite, by the strip bound along the finitely many
+reference supporting hyperplanes, and the competitor cut
+may take value \(+\infty\). Apply the preceding bound with
+\(k_M=\min(k,M)\), then use monotone convergence on both
+local cuts. The lower bound for local interacting pairs is
+uniform in sufficiently large \(M\). This includes fractional
+kernels \(c|z|^{-d-s}\) with \(0<s<1\).
+
+A nontranslation-invariant extension uses
+\(K_\epsilon(p,q)=\psi(\epsilon(p+q)/2)k(q-p)\).
+Here \(\psi\ge0\) is site-permutation invariant, bounded and
+\(C^2\) with bounded second derivative, and bounded below on
+a neighborhood of zero. Assume also \(\int |z|k(z)\,dz<\infty\).
+At \(c=g(p)\), change variables from the translated comparison
+partition \(T+cv\) back to \(T\). Write \(b=p-cv,\ a=p+cv\).
+For the pair transposition the normal component of \(b\)
+vanishes, so the reflected displacement factor
+\(k(z-b)\) agrees exactly. Along the pair normal the midpoint
+factor is an even function of that normal coordinate.
+The difference between its values at
+\(\epsilon(a_N+z_N)/2\) and \(\epsilon(a_N-z_N)/2\)
+is at most \(C\epsilon^2|a_Nz_N|\), by the double integral
+of the second derivative and its vanishing when either input
+is zero. Since \(a_N=\sqrt2 c\) and \(z_N=(z-b)_N\), the first
+moment of \(k\) bounds the (BC5) row error by
+\(C\epsilon^2|g(p)|\). On the local-step pairs the kernel has a
+positive uniform lower bound when \(\epsilon R\le\delta\).
+The same absorption therefore gives \(cR^{-2}\int |g|1_{\{m\ne\eta\}}\)
+after folding for \(1\le R\le\delta/\epsilon\).
+
+### Reflected tetrahedral pairs at fixed physical radius
+
+The polynomial comparison extends the reflected-pair step (BC9).
+Work in the positive halfspace of the pair \(i,j\), where \(i\)
+is the correct internal winner. Write \(b=1_{U_i}-1_{U_j}\)
+as in (BC9). After both sorts, let \(L_{\rm ord}\) be the
+score cost of the ordered partition in scaled units. Sorts
+preserve block membership, so the final ordered labels
+can be used when charging defects from either sort.
+For the current sort, the removed score cost is at most
+a constant times the integral of \(\min(n\cdot p,1)\) on
+\(b=-1\) in the positive halfspace. This follows from the
+scaled Lipschitz score bound and reflection, as in (BC9).
+
+Take a fixed small \(\eta>0\). When \(p_i<p_l-\eta\) for some
+label \(l\) outside this pair, the final ordered partition
+still assigns the wrong block, and its exact regret at this
+point is bounded below by a positive constant in scaled units.
+Indeed the winning reference score has gap from \(i\) at least
+\(c\min(p_{\rm win}-p_i,1)\) by the saturated transfer estimate.
+For completeness that estimate follows by integrating on
+\(\rho p+a Z\) with \(Z\) in a fixed compact patch inside the
+winning cone, bounded away from the plane of the two sites.
+The Gaussian mass of the patch is fixed, the translated patch
+stays in the cone, and the difference from the reflected
+density is at least a constant times the minimum of the
+plane distance of \(p\) and one. The row factor
+\(\phi_1(e p)\) is bounded below on the fixed-radius domain.
+Charge all such initial points directly to \(L_{\rm ord}\).
+
+For the other initial points \(p\) let the starting measure be
+\(\min(n\cdot p,1)1_{\{b=-1\}}dp\), restricted to this
+approximate winning region. Choose independent increments
+uniform on a fixed small ball in the interior of \(T_i\),
+with every coordinate gap \(w_i-w_l\ge2\eta\), shrinking
+\(\eta\) if necessary. After the first step the points are
+in \(T_i\) with all gaps at least \(\eta\), and with
+\(n\cdot q\ge c>0\). The \(n\)-coordinate increases.
+After \(N=O(R)\) steps the point lies outside \(B_R\)
+in \(T_i\); thus \(b=+1\). Pairs have bounded separation
+and both points lie within \(CR\). At each step the
+marginal density is bounded by \(C\min(n\cdot p,1)\):
+for each sequence of increments the map is a translation
+increasing this weight. The conditional step density is bounded.
+
+The first transition away from \(b=-1\) either goes to \(+1\)
+or to \(0\). In the former case, charge its joint mass to
+the gain (BC9): for this pair the reflected kernel difference
+is at least \(c\min(n\cdot p,1)\), since \(n\cdot q\ge c\)
+and \(eR\le\delta\). In the latter case the next point lies
+in the deep \(i\)-cone but belongs to the other block, so
+the final ordered regret there is at least a fixed positive
+constant. Charge this mass to \(L_{\rm ord}\) using the
+bounded marginal. Summing over \(O(R)\) steps shows that
+the score cost removed by either sort is at most
+\(CR(\text{agreement gain of that sort}+L_{\rm ord})\).
+The preceding ordered comparison has deficit at least
+\(cR^{-2}L_{\rm ord}\). Add the nonnegative gains of the
+required sorts to obtain the claimed \(cR^{-3}\) bound for
+the original reflected-pair class.
+
+### One ordered block by Euclidean fiber rearrangement
+
+Suppose one block is a pair, \(C=\{i,j\}\), and require only
+reference ordering within its complement \(D\). The labels
+\(i,j\) may occur on either side of their plane. For the
+Euclidean statement, the comparison remains strict for this
+larger class for every integrable radial nonincreasing kernel
+which is positive almost everywhere and has a finite first
+moment. In particular the Euclidean tetrahedral comparison
+only needs the separation of a single prescribed pair.
+
+Slice in the direction of the normal for \(i,j\), with transverse
+coordinate \(s\). All labels within \(D\) have scores whose
+relative order is independent of the normal coordinate. Thus
+each slice has at most three possible labels: the two pair
+labels and the reference winner \(M(s)\) in \(D\). The reference's
+two tails are half-lines and its middle interval, of label
+\(M(s)\), is centered. Apply (J11)–(J13) of
+[the Euclidean three-label comparison](EUCLIDEAN_THREE_CELL_JUNCTION.md#strict-comparison-by-fiber-rearrangement)
+to the two tails. Their signed lengths are well-defined using
+finite-volume change. For each pair of transverse fibers the
+conditional displacement kernel is even in the normal
+coordinate, so averaging the two half-line lower bounds gives
+the corresponding centered-tail bound. For a pair of fibers
+with the same \(D\)-winner, the one-dimensional Riesz
+rearrangement of their \(D\) sets increases agreement under the
+nonincreasing normal kernel. For fibers whose \(D\)-winners
+differ, agreement between their \(D\) labels is zero before and
+after the rearrangement, and the sum of these two binary
+cuts is just their summed lengths. The reduction therefore
+centers the middle interval and fills the two tails without
+increasing cut. It gives a competitor of finite-volume change
+in the ordered two-block class.
+
+In the equality case the two integrated tail inequalities
+must saturate for almost every pair of fibers and almost
+every normal displacement, by positivity of the kernel.
+Choose a sequence of good transverse fibers escaping along
+the open cone where the average site of \(i,j\) strictly
+wins against all sites of \(D\), with the pair-tail defects
+converging to zero in \(L^1\). Such fibers exist by finite
+volume and Fubini. On them the reference middle interval
+is empty and both reference tails have threshold zero.
+Continuity in normal displacement, followed by the same
+translation argument as in (J12), identifies the original
+pair labels on almost every fiber as half-lines. Strict
+convexity of the even averaged normal cost makes their
+midpoints constant across fibers. Finite-volume change
+makes that constant zero. Thus the original competitor
+already agrees with the centered rearrangement, and the
+ordered comparison gives equality only at the reference.

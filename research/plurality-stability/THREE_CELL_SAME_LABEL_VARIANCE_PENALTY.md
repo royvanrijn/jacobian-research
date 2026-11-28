@@ -1,8 +1,10 @@
 # Paying for adverse radial directions with same-label angular loss
 
 The sharp aligned-arc bound has an unconditional variance reserve
-\(17\rho\pi(1-\rho^2)/1000\).  This is more than five times the
-first-feature reserve in [SV1](THREE_CELL_SHARP_VARIANCE_ABSORPTION.md).
+\(17\rho\pi(1-\rho^2)/1000\) by a cumulative-density argument.
+Adopting the stronger dominant-label bound of
+[SV3](THREE_CELL_SHARP_VARIANCE_ABSORPTION.md) also gives the larger
+reserve \(781\rho\pi(1-\rho^2)/32000\), proved in SLV8 below.
 It combines the quartic difference remainder with a stronger positive
 remainder when both circular slices favor the same label.  The reserve
 holds at every amplitude and every \(0<\rho<1\).  It can therefore
@@ -43,7 +45,7 @@ Indeed \(G_a(2)=2I_0(a)\), \(2G_a(1)=M(a)\) and
 
 The aligned-arc reduction is the same one used in the preceding
 all-mass comparisons.  For primary context, Heilman's
-[Theorem A.1 and Appendix A.1, arXiv:2608.00333v1](https://arxiv.org/html/2608.00333v1#A1)
+[Theorem A.1 and Appendix A.1, arXiv:2608.00333v1](https://arxiv.org/html/2608.00333v1)
 give a balanced comparison through \(2/5\) and an all-parameter
 aligned-arc estimate.  The theorem and its parameter restriction were
 inspected.  The sharp coefficient and the additional remainder used here
@@ -116,7 +118,7 @@ increasing differentiable function of \(\cos(\pi v)\).
 For all \(a\ge0\),
 
 \[
-                         D_*(a)\ge\frac{19}{100}a.         \tag{SLV4}
+                         D_*(a)\ge\frac{781}{4000}a.       \tag{SLV4}
 \]
 
 By SLV3 the function
@@ -127,17 +129,22 @@ By SLV3 the function
 \]
 
 extends continuously to zero and is convex on \([0,\infty)\).
-Its integration weight is nonnegative.  At \(a_0=3/2\), the
-directed certificate proves
+Its integration weight is nonnegative. It is strictly convex, since
+its second derivative integrates that weight times \(\cos^2(\pi v)\).
+The directed certificate brackets its unique minimizer by
+\(l=149/100\), \(u=1491/1000\), proving
 
 \[
- F'(a_0)>0.0004618631,\qquad
- F(a_0)-a_0F'(a_0)>0.1945673542>19/100.
+ F'(l)<0<F'(u),\qquad
+ F(l)+(u-l)F'(l)>0.1952578742>781/4000.
 \]
 
-The supporting affine function therefore exceeds \(19/100\)
-on the entire half-line, proving SLV4.  This is an infinite-parameter
-consequence of convexity and a single finite certificate.
+The tangent at \(l\) gives this lower bound on \([l,u]\).
+Outside that interval monotonicity on the respective side of the
+unique minimizer gives no smaller value. This proves SLV4 on the
+entire half-line. The exact best constant in \(D_*(a)\ge ca\)
+is \(c_* =\min_{a\ge0}F(a)\); the same calculation gives
+\(0.1952578742<c_*<0.1952578830\).
 
 For reproducibility, let \(M_n,P_n,U_n\) be the cosine-power moments
 of the probability measures defining \(M,P_\sharp,I_0\), and
@@ -149,7 +156,8 @@ of the probability measures defining \(M,P_\sharp,I_0\), and
 \]
 
 The checker evaluates the series and its derivative through \(n=40\)
-in 140-bit Arb arithmetic.  At \(a_0\) the omitted absolute values
+in 140-bit Arb arithmetic. At either positive anchor \(a_0=l,u\)
+the omitted absolute values
 are bounded by
 
 \[
@@ -157,7 +165,7 @@ are bounded by
  \frac{160a_0^{39}}{41![1-41a_0/(40\cdot42)]},
 \]
 
-respectively.  It also verifies \(F(a_0)<1/5\), rejecting that
+respectively.  It also verifies \(F(l)<1/5\), rejecting that
 larger proposed uniform constant at an actual parameter value.
 
 ## SLV4: An unconditional angular variance reserve
@@ -165,7 +173,7 @@ larger proposed uniform constant at an actual parameter value.
 Let \(p,q\) be independent draws from any probability distribution
 on \(\Delta_3\), and write \(Q=\mathbb E|p|^2\) and
 \(V=\operatorname{Var}(p)\).  For
-\(u_i(p)=(p_i-2/3)_+\), SLV2--SLV4 imply
+\(u_i(p)=(p_i-2/3)_+\), weakening SLV4 to \(19a/100\) gives
 
 \[
  \frac12D_a(p+q)\ge
@@ -326,7 +334,9 @@ cutoff: \(Q(x)\ge Q(12)\) for \(x\ge12\).  In particular, for
               {Q(R)[\eta-(n-1)_+/(2R^2)]}.
 \]
 
-All coefficients of \(Q\) are positive.  This improves the older
+All coefficients of \(Q\) are positive. The integrator also passes
+14 checks against closed Gamma-function Gaussian moments for the
+constant polynomial, including degrees 160 and 320. This improves the older
 first-coefficient-only enclosure, which can manufacture large
 finite-operator bounds when the kernel truncation order is increased.
 The improved enclosure keeps the entire infinite radial domain.
@@ -377,3 +387,62 @@ There is no continuation assumption in this proof and no smallness
 hypothesis on the competitor. The interval \((61/100,1)\) is not
 settled by this certificate; the separate qualitative near-one result
 does not establish an overlap closing that gap.
+
+## SLV8: A larger undamped reserve using the dominant-label bound
+
+The stronger positive slack bound in SV3, whose convolution and
+monotonicity proof is inspected, reads
+
+\[
+ \tfrac12D_a(p+q)\ge2D_*(a)
+        \sum_i(p_i-1/2)_+(q_i-1/2)_+.
+\]
+
+This is an alternative to SLV2, rather than another reserve to add.
+Put \(c=781/4000\), \(u_i=(p_i-1/2)_+\) and
+\(S=\sum_i(\mathbb E u_i)^2\). SLV4 bounds its expectation
+below by \(2caS\).
+
+For \(D=|p-q|^2\), the elementary pointwise bound
+\(D(D-3/2)_+\le4\sum_{i\ne j}u_i(p)u_j(q)\) gives
+
+\[
+ \mathbb E[D(1-D/2)]\ge V/2-4S,
+ \qquad \mathbb E[D(1-D/2)]\ge0.
+\]
+
+To check the pointwise assertion, \(D>3/2\) forces dominant
+coordinates in both profiles with different labels. Writing their
+excesses over \(1/2\) as \(x,y\in[0,1/2]\), the square norms
+give \(D\le1+2x^2+2y^2\le3/2+2xy\), and \(D\le2\).
+Without a dominant label one square norm is at most \(1/2\);
+profiles with the same dominant label belong to a simplex of
+squared diameter \(1/2\). These cases cannot have \(D>3/2\).
+Independence and \(\sum_{i\ne j}(\mathbb E u_i)(\mathbb E u_j)\le2S\)
+then give the displayed expectation inequality.
+
+Combining the separate positive and quartic slacks, and using
+\(c<2/\pi^2\), gives the lower bound
+
+\[
+ a\max\{V/(2\pi^2)-(4/\pi^2-2c)S,\ 2cS\}
+                           \ge \frac c4 aV.
+\]
+
+For \(S\le V/8\) use the first expression; for \(S\ge V/8\)
+use the second. The same radial factor as in SLV7 therefore proves
+the larger unconditional reserve
+
+\[
+                    \beta_\rho^{\rm new}
+                       =\frac{781\rho\pi(1-\rho^2)}{32000}.
+                                                               \tag{SLV12}
+\]
+
+This is slightly stronger than using the coarser \(39/200\)
+lower bound in SV4. The directed radial cover in SLV6 deliberately
+uses only the independently obtained smaller reserve SLV7;
+no unexecuted radial certificate is inferred for the larger gain.
+Parallel scalar and feasibility bootstrap results, with their own
+stronger current correlation range, are maintained in the
+[variance absorption note](THREE_CELL_SHARP_VARIANCE_ABSORPTION.md).

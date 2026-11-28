@@ -12,7 +12,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Topic scope:** Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have native integer, radial-primitive absolute scalar-nonpower witnesses in balanced degree4 and EVERY degree>=6, with the SAME fixed original markerZ surviving EVERY positive order. Every pure radially primitive balanced quintic is safe. Allowing radial factors gives degree-five counterexamples by padding an unsafe quartic. Three or more pairs have witnesses in EVERY balanced degree>=2 with one fixed marker at every order. All polynomial automorphisms preserve the normalized rank-one trace for every n>=2. Further reductions classify noncentral constant affine cubic shapes, exclude unsafe degree5/7 in the entire invariant-zero mixed cubic branch, and prove actual prime-balanced Image counterexamples automatically absolute scalar-nonpower. A constant-invariant/fixed-shape bridge isolates the smooth elliptic j frontier without treating constant j as a constant K(x)-curve. Every hypothetical unsafe exact-height3 degree5/7 member has nonzero discriminant and nonconstant j. The full automorphism orbits of the three specified Hopf seeds now have exact degree spectra: f4 all even degrees>=4, f6 all multiples of3>=6, and f8 the stated odd-multiplier spectrum with first prime11. Every affine reductive homogeneous space now has a normalized trace preserved by all algebraic automorphisms over every characteristic-zero extension. The trace is independent of presentation, preserved by isomorphisms, and compatible with marked normalized algebra trace along arbitrary finite-etale maps within the class; geometric K-action forms need no K-point. Explicit standard rational-form product and quaternion pairs now fail Mathieu over every characteristic-zero field, and EVERY nondegenerate even-dimensional quadratic complement of dimension>=4 has the same fixed-marked all-order failure. Over every formally real field, the standard compact-form factors and scalar torus separately have Mathieu kernels while their product fails, proved by rational Gram/SOS and exact Laurent cancellation. Every isotropic nondegenerate quadratic complement of dimension>=3 over any characteristic-zero field now has explicit all-order fixed-marker Mathieu counterexamples, including an absolutely non-proper-power phase. The seed has exact mixed moments and sharp pure-power and monomial-marker thresholds. A direct uniform normalizer now supplies a regular absolutely unit-nonpower pure phase and ONE fixed marker surviving every positive order on EVERY nondegenerate quadratic complement of dimension>=3 over EVERY characteristic-zero field, with sharp pure-power and monomial-marker thresholds. The normalized Reynolds kernel on a nondegenerate positive-dimensional quadratic complement is now classified over EVERY characteristic-zero field: Mathieu iff dimension<=2 iff no absolute unit-nonpower pure phase with ONE all-orders surviving marker. Within this exact family the global property and strong-witness existence are invariant under every scalar extension. Polyhedral joint-density normalizers give one fixed unit at every order on compact rational torus-normalizer quotients. Radial-wall invariant tests construct rational all-order unit counterexamples from actual nonabelian zero-submersion data. An exact ternary unitary/orthogonal radius law yields rational sharp pure-power and scalar-marker profiles on all specified data and full normalizer quotients. Positive polyhedral strata and actual invariant tests give fixed all-order Laurent units; a principal Weyl-face construction realizes this over every characteristic-zero extension for actual compact rational quotients with nonideal stabilizer Lie algebra. Algebraic reconstruction of actual principal-face densities and conditional finite amplifier certification are recorded with exact-data and full-component symmetry gates. A fixeddegree4 SO3-radius circuit gives explicit unitary-block product counterexamples in every n>=3 and sharp scalar-monomial marker profiles for every sufficient pure family a>=2n-3. The unitary SO3-block family now has a complete eventual scalar Laurent marker classification: the safe space is exactly tK[t^-1]. A terminating exact presentation-to-witness algorithm is proved for promised compact rational nonideal homogeneous inputs. A self-contained Gaussian method obstruction proves eventual positivity for every nonzero real polynomial radial amplifier in the displayed Laurent normalizer. For every characteristic-zero field and positive Laurent rank, the Gaussian_n times Laurent constant-term kernel is Mathieu exactly when n<=2; n>=3 has a native rational quadratic all-order unit counterpair. Exact circular homogenization gives the stated fixed-degree structured Gaussian/nullcone classifications. Native affine Gaussian phases in every Gaussian dimension and Laurent rank have exact pure/eventual/all-marker-safe classification by omission of zero from conv(supp a union supp sum b_i^2), with fixed-power large-prime detections in the opposite case. At positive Laurent rank the universal bounded-Gaussian-degree pure-to-safe implication holds exactly when n<=2 or d<=1. Full-sphere leading binary-form packets and exact-half roots have elementary infinite-nonvanishing obstructions; specified quintic four-root and five-double-root configurations are also excluded using scoped ordinary-prime theorems and locally verified full-End cases. The all-degree sphere phase class P(y)+xS(t) has exact pure/eventual/fullambient-marker classification by P(0)=0 and(P=0 or S=0),with uniform safe cutoff m>deg(marker). Every degree<=6 sphere phase of angular support[-1,1] has exact pure/eventual/full-sphere-marker classification: one-sided with zero height core or isotropic linear; safe members obey m>deg(marker). Newtonfaces reduce genuineQnonzero strippedquintics to exact18/15-dimensional residuals;evenmixedpurequintics requirext4andatleasttwo specifiednegativeleaders. Prime-face residue identities give individualeventualparameterdependence and properPURE/fixedtail parameterimages; explicitresidual andEVENquinticapplications leave finiteorproperalgebraictargets. Local End-case analysis reduces the specified cyclotomic E7/E9 sixfold signature to the absolutely simple full-EndE frontier; any field defining that action containsE. Known ordinary cases and the optional prime-face reverse refinement are tracked separately. Existing computable sphere prefixes and prime-face rigidity combine into algorithms for necessary parameter polynomials and exact finite geometric PURE parameter sets in the specified one-parameter charts. Balanced Prym ordinarity excludes the entire even D=0,BCnonzero quintic chart over every characteristic-zero field; with the old Newton boundary, a genuine mixed even eventual quintic must have nonzero y^5 coefficient. An exact rational chart certificate excludes finite native moment vanishing through14 in the normalized odd-angular D0 quintic slice. Repeated-cubic full-BD even quintic faces are non-eventually-pure; the distinct-root E5-sixfold residual reduces to absolutely simple full EndE5. The eight-coefficient odd-angular quintic family with BC nonzero has an exact sharp native moment14 obstruction, with a separate smooth Q101/number-field prefix13 witness. The seven-term C0 odd-angular quintic family with BD nonzero has an exact sharp native moment12 obstruction, with separate smooth Q103 and number-field prefix11 witnesses. In the exact eight-dimensional even-t/odd-angular stripped quintic subspace, PURE phases are exactly angular one-sided; all such phases are safe against every full quadric-algebra marker.
 
-**Computed obligation progress:** 11 falsified; 45 open; 20 proved / discharged.
+**Computed obligation progress:** 5 falsified; 45 open; 20 proved / discharged; 6 stale.
 
 **Authored scope assessment:** The universal GVC/GMC dimension classifications and Gaussian dimension-degree boundary are claimed closed in their exact domains. Higher-dimensional GMC is refuted by witnesses; general Gaussian extensions is not an unrestricted open GMC claim.
 
@@ -2654,11 +2654,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** There is epsilon>0 such that for every d>=2, every balanced Gaussian three-cell partition has S_rho(A)<=S_rho(T) for 0<rho<=221/500+epsilon. On [11/25,221/500+epsilon], all equality cases are regular cylindrical tripods up to orthogonal maps, labels and null sets. Uses equality in the directed finite-amplitude comparison, strict angular equality, active maximizer compactness, and the all-correlation three-cell interface gap. No explicit increment or overlap with the near-one interval is established.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Internal analytic consequence of the retained directed finite-amplitude proof and variational inputs. The endpoint computation and mathematical assurance retain their original scope.
 
@@ -2878,11 +2878,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2 and every 0<rho<1, an ordinary measurable Gaussian three-cell partition whose labels each occupy one third of almost every circle in a fixed two-plane, at almost every radius and complementary coordinate, has S_rho(A)<=S_rho(T), equivalently Qtilde_rho(e)<=2L_rho(A;T). This includes three-cell partitions equivariant under 120-degree rotation with cyclic label permutation, and arbitrary radius-dependent rotations of equal-angle sectors. It does not cover arbitrary balanced partitions or three-seed cycles inside a four-cell tetrahedron.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-CIRCULAR-BALANCE-COMPARISON (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale); EXT-PIS-FIXED-MEASURE-CIRCULAR-REARRANGEMENT (stale).
 
 **Verification limits:** Internal written argument and source-application check only. The circular comparison uses only fixed-measure rearrangement in the inspected proof of Heilman Lemma6.1; the 1976 original was not inspected. The obstruction is proved by an explicit positive asymptotic coefficient. Standard-library fraction and Simpson controls are normalization diagnostics, not interval certificates, independent replay or an unrestricted partition search.
 
@@ -2892,11 +2892,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For p_i(r)=1/3+t*(1,-1,0)_i*(exp(-r^2/2)-1/2), consecutive arcs define an ordinary balanced planar partition. Dropping the angular Cauchy remainder gives B_rho(A(t))-S_rho(T)=2*t^2*E_rho+o(t^2), where E_rho/(1-rho) tends to (4-2*pi/sqrt(3))/9>0. For every sufficiently large fixed rho<1, this upper bound exceeds the simplex for all sufficiently small nonzero t. This refutes R_rho<=D_rho, not the actual Gaussian simplex comparison.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-ANGULAR-CAUCHY-OBSTRUCTION (stale); SRC-PIS-THREE-CELL-ANGULAR-CAUCHY-OBSTRUCTION (stale).
 
 **Verification limits:** Internal written argument and source-application check only. The circular comparison uses only fixed-measure rearrangement in the inspected proof of Heilman Lemma6.1; the 1976 original was not inspected. The obstruction is proved by an explicit positive asymptotic coefficient. Standard-library fraction and Simpson controls are normalization diagnostics, not interval certificates, independent replay or an unrestricted partition search.
 
@@ -3312,11 +3312,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2, every ordinary measurable Gaussian three-cell partition A with all masses 1/3, and every 0<rho<=21/50, S_rho(A)<=S_rho(T), equivalently Qtilde_rho(1_A-1_T)<=2L_rho(A;T). The new direct certificate covers [2/5,21/50]; the accepted Heilman Theorem A.1 supplies the lower interval. The planar argument is global in partition distance and uses no continuation. Maximizer existence/dimension reduction transfers it to all d>=2. A separate analytic result treats the near-one interval; this certificate does not address intermediate correlations.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale).
 
 **Verification limits:** A full internal 418.39-second run accepted 85 slabs after 166 attempts and enclosed h_plus^2 below 3.999335108. Both imported upstream files and the retained wrapper have the executed SHA-256 bytes. Range and mesh overrides were checked against the analytic tail hypotheses rho<1/2 and1-kappa>0. This supports only the stated cutoff; no all-rho theorem, formal verification, independent replay or external review is inferred.
 
@@ -3326,11 +3326,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** At every correlation in [2/5,21/50], strict radial deficit in DG20 and circular rigidity make the simplex the only balanced Gaussian maximizer up to rotations, labels and null sets in every d>=2. The continuation mechanism forces the first global transition to exceed 21/50.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale).
 
 **Verification limits:** The directed Gaussian interval certificate is a separate scoped prerequisite.
 
@@ -3340,11 +3340,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For fixed 0<rho<=21/50 and epsilon>0, some tau>0 works for all m. A balanced three-candidate rule with all indicator-coordinate influences at most tau has noise stability at most the limiting ternary plurality stability plus epsilon. One may require only a sufficiently low-degree influence. Noise resamples each vote independently with probability 1-rho.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale).
 
 **Verification limits:** The directed Gaussian interval certificate is a separate scoped prerequisite.
 
@@ -3508,11 +3508,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For k>=3, d>=k-1 and 0<rho<1, let A maximize balanced Gaussian noise stability. Join two labels when a linear hyperplane reflection swaps exactly those cells and fixes the remaining labels. In each connected component the centered centroids form a regular simplex, components have orthogonal internal spans, and the only possible label from a given component at each point is its simplex-score winner. A connected graph forces A to be the central regular simplex.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-MAXIMIZER-REFLECTION-COMPONENT-RIGIDITY (stale); SRC-PIS-MAXIMIZER-REFLECTION-COMPONENT-COMPARISONS (stale).
 
 **Verification limits:** Internal derivation and separate audit of the positive odd kernel, transposition propagation and orthogonal spans. The hypotheses concern actual global maximizers.
 
@@ -3522,11 +3522,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For k>=3, d>=k-1 and 0<rho<1, an ordinary balanced Gaussian global maximizer having exactly two connected transposition-reflection components has the internal simplex-score labels of RG2. Its component membership is a measurable extended-real threshold graph along a single direction orthogonal to the two internal spans (the all-trivial fiber case is included). The tetrahedral component sizes are 3+1 and 2+2.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-MAXIMIZER-TWO-REFLECTION-COMPONENT-THRESHOLD (stale); PROOF-PIS-MAXIMIZER-REFLECTION-COMPONENT-RIGIDITY (stale); SRC-PIS-MAXIMIZER-REFLECTION-COMPONENT-COMPARISONS (stale); EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); EXT-PIS-MOSSEL-NEEMAN-TWO-SET-EQUALITY (stale).
 
 **Verification limits:** Internal proof using Borell's comparison and Mossel–Neeman's equality case on the complementary Gaussian fibers. The resulting threshold functions are not classified.
 
@@ -3536,11 +3536,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For fixed k>=3, d>=k-1 and 0<a<=b<1, any ordinary balanced global maximizer at rho in [a,b] admitting a spanning tree of approximate transposition reflections with edge errors at most epsilon has labelled Gaussian distance at most C epsilon^((1-b)/16) to the simplex orbit for sufficiently small epsilon. The constants depend on the fixed dimension, cell count and band.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-MAXIMIZER-SPANNING-REFLECTION-ROBUSTNESS (stale); PROOF-PIS-MAXIMIZER-REFLECTION-COMPONENT-RIGIDITY (stale); SRC-PIS-MAXIMIZER-REFLECTION-COMPONENT-COMPARISONS (stale).
 
 **Verification limits:** Internal reconstruction and audit of RG5–RG7. All mass edits preserve ordinary balance. No numerical constant or proximity result at rho=1 is asserted.
 
@@ -3550,11 +3550,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** In the three-dimensional active space, on each compact correlation band [a,b] inside (0,1), there is a positive error threshold below which no nonsimplex balanced Gaussian global maximizer can realize all edges of any reflection spanning tree. This applies to a nonsimplex tie at a finite first tetrahedral transition.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-TETRAHEDRAL-MAXIMIZER-REFLECTION-DEFECT (stale); PROOF-PIS-MAXIMIZER-SPANNING-REFLECTION-ROBUSTNESS (stale); PROOF-PIS-MAXIMIZER-REFLECTION-COMPONENT-RIGIDITY (stale); SRC-PIS-MAXIMIZER-REFLECTION-COMPONENT-COMPARISONS (stale).
 
 **Verification limits:** Internal use of B11 at fixed k=4 in active dimension three, made uniform by a finite cover. Existence of a sufficiently asymmetric tie remains open.
 
@@ -3564,11 +3564,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For the exact positive radial Kplus,Jplus in DG15 at rho=1/2, the bounded mean-zero function f(t)=exp(-t)+2exp(-16t)-21/34 satisfies <f,Kplus f>/(integral Jplus*f^2)>2.07. Every additive centering preserves that quadratic form. Thus the scalar operator sufficient condition cannot extend to all correlations, even with exact operator norm estimates. This is not a Gaussian partition beating the simplex.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-RADIAL-SCALAR-FAILURE-AT-HALF (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale).
 
 **Verification limits:** Internal mathematical self-audit and full directed witness run only. Exact radial integration removes the infinite numerical domain. The Gram identity and its uniform balanced expansion are written proofs; four rational cases and a rejected nonclosing input are controls, not an unrestricted verification. The corrected profile comparison does not change the global cutoff 21/50 or establish the full positive-correlation theorem. The same checker now also certifies the positive corrected coefficient at 3/5; this is a limitation of the upper-bound strategy, not an improving partition.
 
@@ -3578,11 +3578,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every balanced ordinary planar three-cell partition and fixed0<rho<1, DG6 proves the global upper bound DG29 using an explicit closing-moment penalty Gamma. DG8 supplies a stronger globally valid matrix penalty Gamma_sharp, whose coefficient near balanced profiles is1/8 and is optimal under the individual norm-and-closure constraints. DG9 proves the stronger all-profile bound DG39 using the exact aligned-arc interaction B_a and the mass-dependent cosine secant coefficient c_a(p_i+q_i). These bounds require no stationarity, closeness, or arc hypothesis on the actual angular cells. The explicit profile f=exp(-t)+2exp(-16t)-21/34 strictly loses for sufficiently small multiples at1/2,3/5 and9/10, with arbitrary angular shapes. Uniform nonpositivity of these sufficient upper bounds is not asserted: the elementary criterion fails at3/5, the separated sharp-moment criterion at7/10, and the exact-arc/secant criterion at99/100 for the distinct six-exponential bounded profile in DG9. The separate spectral certificate DG10 raises the unrestricted direct cutoff to11/25; these angular bounds retain their stated sufficient-criterion limitations.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Internal proof audit and full checker run only. DG5-DG8 fixed-correlation radial coefficients use complete interval angular enclosures; DG9 coefficients use exact integral reductions and160-bit Arb evaluation with no quadrature. The new kernel majorant is proved by convexity with the required monotonicity and nonnegativity hypotheses explicit, including complements and a removable secant limit. The quantitative Christ-Iliopoulou theorem was inspected for context, not used as a mathematical premise. No independent replay, formal verification or external review is claimed.
 
@@ -3592,11 +3592,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** At rho=1/2 there is epsilon0>0 such that every ordinary planar three-cell partition with circular masses p(sqrt(2t))=(1/3,1/3,1/3)+epsilon*(1,-1,0)*(exp(-t)+2exp(-16t)-21/34), for 0<|epsilon|<epsilon0, strictly loses noise stability to the simplex. This permits arbitrary measurable angular shapes. Exact mean zero ensures balance, and consecutive arcs show feasibility. The corrected quadratic coefficient is below -0.0038. This is a restricted profile comparison beyond 21/50, not an unrestricted larger correlation interval.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-HALF-CORRELATION-EXPLICIT-PROFILE-COMPARISON (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Internal mathematical self-audit and full directed witness run only. Exact radial integration removes the infinite numerical domain. The Gram identity and its uniform balanced expansion are written proofs; four rational cases and a rejected nonclosing input are controls, not an unrestricted verification. The corrected profile comparison does not change the global cutoff 21/50 or establish the full positive-correlation theorem. The same checker now also certifies the positive corrected coefficient at 3/5; this is a limitation of the upper-bound strategy, not an improving partition.
 
@@ -3704,11 +3704,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For narrow fixed conical tubes along the three simplex rays beyond a large fixed physical R, every distinct ordinary planar partition agreeing with the simplex off the tubes strictly loses for correlations sufficiently close to one. Arbitrary labels and measurable tube changes of unbounded radial support are allowed, with no volume constraints. The disjoint complementary comparison for exterior changes uniformly separated from reference interfaces also holds, without a combined seam estimate.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale).
 
 **Verification limits:** Written proof with internal review and explicit scope.
 
@@ -3718,11 +3718,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** At each fixed positive rho, a balanced planar ordinary partition with stability at least the simplex must either be a simplex or have at least c(1−rho^2) of its squared radial mass deviation inside a finite centered radius R(rho). Explicit residual multipliers bound defects from the centered-arc comparison for every width, with sharper exponential control for interior widths.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof with internal review and explicit scope.
 
@@ -3732,11 +3732,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every fixed K>0, sufficiently near rho=1, all balanced planar partitions with radial squared-error norm H sufficiently small and radial L-infinity error M<=K H satisfy strict simplex comparison unless they are a simplex. No profile derivative or arc hypothesis. Along any aligned nonsimplex sequence of actual near-one maximizers H tends to zero and M/H tends to infinity.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof with internal review and explicit scope.
 
@@ -3774,11 +3774,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2 and rho sufficiently near 1, S_rho(T)-S_rho(A)>=-C sqrt(2(1-rho)) ||gamma(A)-(1/3,1/3,1/3)||^2 for every ordinary three-cell partition. C and the correlation threshold are absolute.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale).
 
 **Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
 
@@ -3788,11 +3788,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For each fixed k>=4 every balanced actual maximizer near rho=1 admits an active-space simplex alignment with transfer cost beyond fourth-score gap R bounded by C_k exp(-c_k min(e R^3,R^2)) times the total for R>=K_k e^(-1/3). Here e=sqrt(2(1-rho)). For k=4 this is radial localization, and a compact growing-ball relative comparison of polynomial strength suffices for exact near-one optimality. No interface regularity is assumed.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale).
 
 **Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
 
@@ -3802,11 +3802,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every fixed k>=4 and all d>=k-1, uniformly near rho=1, if R>=K_k e^(-1/3), e=sqrt(2(1-rho)), changes supported where the normalized largest-to-fourth score gap is at least 8R lose by at least c_k min(e^2 R^2,1) times the score transfer cost. All ordinary partitions are allowed without a mass constraint. For k=4 this covers arbitrary changes solely beyond an active radius of order (1-rho)^(-1/6). Every unrestricted tie or improver has inner loss on {g4<16R} at least a fixed constant times d_R times its far loss on {g4>=16R}.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale).
 
 **Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
 
@@ -3816,11 +3816,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every fixed k>=3 there are K_k,c_k>0, rho_k<1 such that for rho_k<rho<1, e=sqrt(2(1-rho)), R>=K_k e^(-1/3), and every d>=k-1, any ordinary partition changed from the regular simplex only where the largest active simplex score exceeds the third-largest by at least 4*ell*R has S_rho(T)-S_rho(U)>=c_k min(e^2 R^2,1)L_rho(U;T), strictly for a nontrivial change. No balance or target-label restriction. Any unrestricted tie or improvement must have junction regret at least c'_k min(e^2R^2,1)^2 times its separated-region regret. Pure extreme changes beyond an active radius K_k/e also strictly lose. Thin exactly balanced pair changes show that an R-independent relative margin is impossible at R=o(1/e).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale).
 
 **Verification limits:** Internal proof extending binary merging, conditional sorting, the random seam estimate and Gaussian compression. There is no all-competitor near-one conclusion for k>=4.
 
@@ -3830,11 +3830,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** Uniformly near rho=1, with e=sqrt(2(1-rho)), any ordinary planar partition agreeing with the central simplex in a disk of radius R>=K e^(-1/3) has simplex deficit at least c min(e^2 R^2,1) times its linear regret. There is no balance or angular support hypothesis.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale).
 
 **Verification limits:** Written proof with internal review and explicit scope.
 
@@ -3872,11 +3872,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** There is a qualitative rho_*<1 independent of dimension. For rho_*<rho<1 and every d>=2, the central regular simplex globally maximizes Gaussian noise stability among ordinary measurable three-cell partitions with all masses 1/3, and equality is rigid up to rotations, labels and null sets.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale).
 
 **Verification limits:** Analytic proof with internal mathematical review. No external mathematical review or formal verification.
 
@@ -3886,11 +3886,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For each fixed rho in the near-one interval and epsilon>0 there are D and tau>0, uniform in the number of voters, such that any uniform ternary simplex-valued rule with means 1/3 and all degree-D coordinate influences at most tau has stability at most limiting ternary plurality stability plus epsilon. Each vote is independently retained with probability rho and otherwise resampled uniformly.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale).
 
 **Verification limits:** Analytic proof with internal mathematical review. No external mathematical review or formal verification.
 
@@ -3900,11 +3900,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** If any positive correlation has strict global suboptimality of the balanced three-cell simplex, every connected component (a,b) of that strict failure set satisfies 21/50<a<b<1 and admits nonsimplex balanced global ties at both endpoints. This does not assert existence of any strict failure or exclude isolated tied maxima.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale).
 
 **Verification limits:** Analytic proof with internal mathematical review. No external mathematical review or formal verification.
 
@@ -3998,11 +3998,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2, every ordinary measurable Gaussian three-cell partition A with all cell masses1/3, and every0<rho<=11/25, S_rho(A)<=S_rho(T), equivalently Qtilde_rho(1_A-1_T)<=2L_rho(A;T). DG10 proves[21/50,11/25] by a directed isolated-eigenvalue certificate and DG16, with no continuation or closeness assumption on A. DG4 supplies lower correlations; maximizer existence and dimension reduction transfer the planar global comparison to every d>=2. A separate qualitative near-one result is recorded elsewhere. No certified overlap closing all intermediate correlations is established.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale).
 
 **Verification limits:** The full internal run exited0 after524.30seconds:397 accepted covering children,774 attempts,20 HS parent slabs, max spectral upper1.999981001453614. Exact mean-zero trial, weighted origin behavior, Gaussian row reductions, all tail rates and imported range hypotheses are written in DG10. The finite domain uses directed Riemann enclosures and rigorously bounded interpolation of validated Arb integrals. An additional exact Fraction audit verifies the saved cover and all spectral assemblies. This proves only the stated lower interval and does not upgrade mathematical review, formalization or independent replay.
 
@@ -4026,11 +4026,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For each compact correlation interval J in (0,1), some fixed annulus, delta_J>0 and c_J>0 work uniformly on J. Every ordinary balanced planar partition with squared circular-mass deviation at most delta_J on the annulus has simplex deficit at least c_J times the radial deviation weighted by r below the outer cutoff and by one beyond it, with simplex equality rigidity. All inner and outer profiles and all angular shapes may vary. Any nonsimplex tie must exceed the uniform annular squared-deviation threshold in its active plane.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Internal analytic proof with reviewed source application.
 
@@ -4054,11 +4054,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** There exist a fixed u in(11/25,1), a fixed annulus0<a<R<infinity and delta>0 such that if the all-positive-correlation inequality fails in any d>=2, then11/25<rho<u and there is an ordinary balanced planar global maximizer B whose summed squared circular-mass error on[a,R] is greater than delta. Every planar strict improver obeys that same annular lower bound and has summed Gaussian symmetric-difference distance greater than delta from the centered simplex orbit. The constants are qualitative and no numerical overlap of the lower and near-one intervals is asserted. The same input also compares all sufficiently small bounded mean-zero radial profile directions uniformly on every fixed compact positive correlation interval, with arbitrary angular shapes. This is a reduction of the remaining all-partition problem to large annular mass deviations, not their exclusion.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-GLOBAL-FAILURE-ANNULAR-LOCALIZATION (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale); EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale).
 
 **Verification limits:** Read the current near-one core/exterior and exact-comparison arguments, the complete JA1 proof and its squared-mean extension, and the S37 standard-interface gap. Checked the JA4-to-JA6 radial normalization f=r*b against edge measure(2pi)^-1*exp(-r^2/2)dr, the inner/outer/bad-radius estimates, and the actual primary Heilman Lemma6.1 statement and positive c*min(kappa,1) prefactor. DG49 uses these inputs only within their precise scopes. The new result is an internally reviewed analytic reduction; no fresh mathematical computation, independent review or formal verification is claimed.
 
@@ -4124,11 +4124,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** Let r5 be the endpoint of the initial global simplex optimality interval in active R^4. If r5<1, an ordinary balanced nonsimplex global maximizer ties at r5. The all-correlation interface gap eliminates the nonrotational zero-mode alternative. By RG5 and B11, on each compact positive correlation band containing such an endpoint, the tied partition has a positive spanning-tree transposition-reflection defect. No global tie is established or excluded.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-MAXIMIZER-SPANNING-REFLECTION-ROBUSTNESS (stale); PROOF-PIS-MAXIMIZER-REFLECTION-COMPONENT-RIGIDITY (stale); SRC-PIS-MAXIMIZER-REFLECTION-COMPONENT-COMPARISONS (stale).
 
 **Verification limits:** Internal implication in active dimension four. The global five-cell simplex conjecture remains open.
 
@@ -4136,15 +4136,43 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 [The exact Gaussian simplex standard-sector gap limit near correlation one](plurality-stability/STANDARD_SECTOR_NEAR_ONE.md)
 
-**Exact scope:** For each fixed k>=4, the ordinary-balanced Gaussian simplex standard-sector gap g_k obeys lim rho*sigma_rho*g_k(rho)/(2*phi_0*(1-rho))=lambda_k-1>0 as rho increases to one. Here lambda_k is the invariant Gaussian Neumann Rayleigh value on the active facet cone, with ordinary Gaussian mean zero. For k=4,5,6 the exact value is lambda_k=2 by the folded angular comparisons. Gaussian confinement and nonlocal compactness control moving modes through the sharp lower limit. The cutoff for positivity is qualitative.
+**Exact scope:** For each fixed k>=4, the ordinary-balanced Gaussian simplex standard-sector gap g_k obeys lim rho*sigma_rho*g_k(rho)/(2*phi_0*(1-rho))=1 as rho increases to one. The invariant Gaussian Neumann value on the active facet is exactly 2, with radial eigenspace spanned by |x|^2-(k-2). Gaussian confinement controls moving modes. The sector positivity cutoff depends qualitatively on k.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-ALL-CELL-STANDARD-SECTOR-NEAR-ONE (stale); SRC-PIS-STANDARD-SECTOR-NEAR-ONE-CONFINEMENT-AND-LIMIT (stale).
+**Current blockers:** none in declared routes.
 
-**Verification limits:** Internal mathematical audit. The confinement and finite-difference limit are derived here. The exact external Ponce compactness and Andrews–Clutterbuck–Hauer angular gap statements are retained and their hypotheses checked. SN9 transfers the angular Neumann bound from the symmetric-group chamber in five and six cells, with the map and all constants derived explicitly.
+**Verification limits:** Internal mathematical audit. The written proof derives the confinement and finite-difference limit. The pinned Ponce compactness and Edelen–Li Corollary 1.3 hypotheses are checked on the truncated and ordered facet, respectively. The strict ordered angular gap follows by excluding harmonic quadratics using the connected wall normals.
+
+### PIS-ORDERED-TIED-BLOCK-GAUSSIAN-NEUMANN-GAP
+
+[The radial Gaussian Neumann gap on ordered chains of tied coordinate blocks](plurality-stability/STANDARD_SECTOR_NEAR_ONE.md)
+
+**Exact scope:** Fix s>=2 coordinate blocks of positive sizes. In the centered block-constant Euclidean space of dimension s-1, restrict the standard Gaussian to the cone t_1>=...>=t_s of ordered block values. The first positive Neumann Rayleigh value is exactly 2 and its eigenspace is spanned by |x|^2-(s-1). If s>=3 the spherical chamber gap is strictly above 2(s-1). This includes the invariant sorted simplex facet with block sizes (2,1,...,1). The ordered-cone estimate itself applies in any codimension.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal audit of the equality case in Edelen–Li Corollary 1.3 and the linked radial Gaussian calculation. The cases s=2,3 follow respectively by even extension and the acute interval.
+
+### PIS-ALL-CELL-STANDARD-SECTOR-NEAR-ONE-SPECTRUM
+
+[Every fixed limiting standard-sector spectral level near correlation one](plurality-stability/STANDARD_SECTOR_NEAR_ONE.md)
+
+**Exact scope:** For each fixed k>=4 and level index d>=1, the d-th min-max value of the ordinary-balanced standard form normalized as in SN2 converges near rho=1 to the d-th sorted member of beta_j+2m-1 with multiplicity, omitting (j,m)=(0,0). Here beta_j(beta_j+k-4) is the j-th spherical Neumann value on the ordered facet. Near one each fixed finite list consists of discrete eigenvalues. The first is simple, with normalized eigenfunctions converging up to sign to the quadratic radial mode. The radial family contributes 1,3,5,... in the limit.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal audit of the form convergence, compact perturbation, and Gamma-weight polynomial eigenbasis. No finite-correlation level formula or external review is claimed.
 
 ### PIS-FIVE-CELL-INTERFACE-GAP-NEAR-ONE
 
@@ -4152,11 +4180,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** There exists r<1 such that for every r<rho<1 the ordinarily balanced Gaussian five-cell simplex interface form has exactly the rotation kernel and a strictly positive L2 gap independent of ambient d>=4. The standard sector follows from the positive Neumann limit and S76 covers all remaining components. The limiting argument gives a qualitative cutoff. The full interval is covered separately by the A3 bridge.
 
-**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** PROOF-PIS-FIVE-CELL-INTERFACE-GAP-NEAR-ONE (stale); PROOF-PIS-ALL-CELL-STANDARD-SECTOR-NEAR-ONE (stale); SRC-PIS-STANDARD-SECTOR-NEAR-ONE-CONFINEMENT-AND-LIMIT (stale).
+**Current blockers:** none in declared routes.
 
 **Verification limits:** Internal analytic implication. The conclusion concerns local interface stability and does not characterize global maximizing partitions.
 
@@ -4166,11 +4194,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every0<rho<1, every dimension and every ordinary three-cell partition, exchanges of reflected point pairs through any origin hyperplane preserve every circular mass and obey the exact orbit identity DG50 and cut identity DG51. Nonnegative signed cut integrals are equivalent to maximality within that fixed reflection-orbit class; every balanced global maximizer obeys them for every reflection. If at most two unordered pair types occur, orienting both incidence vectors away from their common label increases stability, strictly unless the signs were already constant up to reversal. With all three types, for every fixed0<rho<1 an explicit ordinary balanced planar four-patch construction beats every single orientation per unordered pair type by at least4333*epsilon^2/6400. This falsifies a sorting shortcut, not the simplex inequality.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-REFLECTION-ORBIT-COMPARISON (stale); SRC-PIS-THREE-CELL-REFLECTION-ORIENTATION-FINITE-CERTIFICATE (stale).
 
 **Verification limits:** Internally checked all81 label identities,16 signs,8 type-constant choices and256 cuts in exact Fraction arithmetic. Audited the continuum kernel normalization, explicit gradient bound, positive ball radii, background quantile mass correction and rational4333/6400 margin in DG12. Inspected the actual scalar polarization definition in Bianchi-Gardner-Gronchi-Kiderlen Eq(1),printedp2; it is context only and supplies no three-label theorem. No independent replay, formal verification or external review.
 
@@ -4208,11 +4236,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every fixed0<rho<1, an ordinary balanced planar global maximizer is the centered regular simplex iff every origin reflection has at most two positive-measure unordered reflected label-pair types. Any nonsimplex maximizer therefore has all three types for some reflection. The proof combines DG12 two-type positivity, full moment rank, a measurable Gaussian reflection-order to fixed-axis cap argument, and analytic maximizing scores excluding radial label changes. For any ordinary partition the scalar polarization defect is DG55; on a region K with W>=w>0 and three type masses m_e it is at least2w times the minimum of the three pairwise mass products, by the exact integrated triangle inequality DG56. This defect is not an upper bound comparing the individually polarized sets with the simplex.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-REFLECTION-TRIANGLE-MAXIMIZER-RIGIDITY (stale); PROOF-PIS-THREE-CELL-REFLECTION-ORBIT-COMPARISON (stale); SRC-PIS-THREE-CELL-REFLECTION-ORIENTATION-FINITE-CERTIFICATE (stale).
 
 **Verification limits:** Internally audited the full-rank moment directions, Fubini change of reflection/angle variables for measurable indicators, three fixed-center arc classification, positive first angular harmonic of each score, price assignment and exclusion of radial transitions. Checked weak compactness of the relaxed balanced set, compact positive OU form, purification of its maximizers, norm continuity in rho and strong L2/L1 convergence to ordinary maximizing limits. The finite checker exhausts pointwise identities; it does not certify these analytic steps by sampling. Read the actual primary Brock-Chiacchio-Croce-Mercaldo Theorem2.3; its Lebesgue Lp hypothesis is not assumed for Gaussian cells, and the needed weighted version is proved here. No independent replay, formal verification or external review.
 
@@ -4222,11 +4250,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** There exist a fixed u<1, a finite set of origin reflections in the plane and eta>0 such that every strict failure of the all-positive-correlation three-cell inequality in any dimension has a planar balanced global maximizing representative B at11/25<rho<u for which all three overlaps gamma2(B_i intersect R B_k) are at least eta for one of those reflections. On a common bounded region separated from its reflecting line, each type still has mass at least eta/2, giving a uniform positive scalar polarization defect by DG56. Constants are qualitative. The argument uses DG11 annular separation, DG13 reflection-triangle rigidity and a written strong compactness proof for actual maximizers at compact positive correlation. It does not exclude this remaining class or close the global inequality.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-GLOBAL-FAILURE-FINITE-REFLECTION-WITNESSES (stale); PROOF-PIS-THREE-CELL-REFLECTION-TRIANGLE-MAXIMIZER-RIGIDITY (stale); PROOF-PIS-THREE-CELL-REFLECTION-ORBIT-COMPARISON (stale); SRC-PIS-THREE-CELL-REFLECTION-ORIENTATION-FINITE-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-GLOBAL-FAILURE-ANNULAR-LOCALIZATION (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale); EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale).
 
 **Verification limits:** Internally audited the full-rank moment directions, Fubini change of reflection/angle variables for measurable indicators, three fixed-center arc classification, positive first angular harmonic of each score, price assignment and exclusion of radial transitions. Checked weak compactness of the relaxed balanced set, compact positive OU form, purification of its maximizers, norm continuity in rho and strong L2/L1 convergence to ordinary maximizing limits. The finite checker exhausts pointwise identities; it does not certify these analytic steps by sampling. Read the actual primary Brock-Chiacchio-Croce-Mercaldo Theorem2.3; its Lebesgue Lp hypothesis is not assumed for Gaussian cells, and the needed weighted version is proved here. No independent replay, formal verification or external review.
 
@@ -4250,11 +4278,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For each fixed0<rho<1 there exists an ordinary balanced planar partition A whose Gaussian stability strictly exceeds the supremum over every partition C with the same circular masses and consecutive-arc sections at almost every radius. Competitors may choose arbitrary measurable rotations and either cyclic order at every radius. The construction has a thin inner annulus of balanced masses with two opposite label arcs and a disconnected third label, an outer annulus of half/half/zero masses, and pure radial background chosen for exact balance. An explicit cross gap, outer first-harmonic phase coercivity and a completed-square estimate control all self-interactions and rotations. The counterexample persists with all circular masses uniformly positive. This refutes a universal mass-preserving global arc rearrangement, not simplex optimality or a statement restricted to actual global maximizers. The unregularized example has moment rankone.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-GLOBAL-PROFILE-ARC-REDUCTION-COUNTEREXAMPLE (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Internally checked all factors of2 andpi in the arc/half-circle derivative bound, the first odd Fourier coefficient4/pi^2 in the outer half-circle energy, exact Gaussian radial balance, arbitrary measurable phase control and the completed square. Audited the profile-interior extension: baseline symmetric difference<=2tau, consecutive endpoint projection<=8tau and stability Lipschitz factor2 give gap loss<=20tau. Inspected primary Heilman CorollaryA.3 and its assembly: the independently aligned same-label envelope is an upper bound, not a claimed feasible consecutive partition. The100-bit run certifies only the stated explicitrho1/2 instance and exact six orders. No independent replay, formal verification or external review.
 
@@ -4264,11 +4292,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** Let rho_s be the infimum, over rho in[11/25,1/2], of correlations admitting a bounded mean-zero scalar z with <z,K_rho z>-2 integral J_rho z^2>0, for DG15 radial K_+,J_+. Then11/25<rho_s<1/2 and there exist epsilon,c>0 such that every ordinary balanced planar partition at|rho-rho_s|<epsilon has simplex deficit at least c times its summed J_rho-weighted squared circular-mass deviations. Equality forces the simplex. Direct Gaussian comparison holds for all0<rho<rho_s+epsilon and all d>=2 by maximizer reduction, so Qtilde<=2L on that entire interval. This crosses the first separated scalar obstruction and uses the coupled angular penalty and annular mass theorem, not the fixed-correlation interface-isolation continuation theorem. The threshold and epsilon are implicit: there is no new numerical cutoff or overlap closing the remaining intermediate range. Later ST7-ST8 orbit-distance estimates and the discrete application in the same source are outside this adopted result scope.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-RADIAL-SCALAR-FAILURE-AT-HALF (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Adopted and internally audited ST1-ST6 and the following threshold-neighborhood proof in the parallel source, summarized in DG15. Checked weighted mean-zero density, inverse-weight integrability, HS and norm continuity below1/2, strict cap at11/25 and fixed bounded obstruction at1/2. Audited the null Euler equation, analyticity and isolated zero coordinates, positive Gamma loss on unequal interior pairs, the N_j->0 annular case, strong weighted convergence in the nonzero case, and the Fatou contradiction. Dimension reduction is used for actual maximizers only. This record does not adopt the source later ST7-ST8 or discrete claims. No fresh numerical computation, independent replay, formal verification or external review.
 
@@ -4278,11 +4306,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For the implicit closed cutoff r_1 chosen in the threshold comparison, uniformly on [11/25,r_1] every balanced planar ordinary partition has simplex deficit bounded below by a positive constant times squared Gaussian symmetric-difference distance to the simplex orbit. The proof also controls the exact first-angular-moment compatibility loss. The distance estimate is planar.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-RADIAL-SCALAR-FAILURE-AT-HALF (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Analytic proof with internal audit; imported results retain their existing assurance scopes.
 
@@ -4292,11 +4320,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every fixed 0<rho<=r_1, with the qualitative r_1>11/25 of the extended lower Gaussian interval, and each epsilon>0, some degree D and threshold tau work uniformly for all numbers of uniform ternary voters. A balanced simplex-valued rule with every degree-D label-coordinate influence at most tau has stability at most the ternary plurality limit plus epsilon under independent resampling with probability 1-rho.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-RADIAL-SCALAR-FAILURE-AT-HALF (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Analytic proof with internal audit; imported results retain their existing assurance scopes.
 
@@ -4390,11 +4418,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For each kappa>1/2 the circular convolution kernel e^(kappa cos theta)/I_0(kappa) maps an explicit smooth input with two cyclic sign changes to an output with at least four. This rules out unconditional variation diminution of the angular kernel.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Analytic proof with internal audit; imported results retain their existing assurance scopes.
 
@@ -4404,11 +4432,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** The DG15 uncentered kernel K_+ has strictly positive two-by-two minors on ordered positive t,s arguments for every positive rho<1. At any semidefinite separated scalar parameter in (0,1), weighted compactness, the first exterior-square ground state and the null equation exclude nonzero bounded mean-zero null profiles.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-RADIAL-SCALAR-FAILURE-AT-HALF (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Internal proof audit, with elementary bounds for the mixed logarithmic derivative and a compact positive-kernel spectral argument.
 
@@ -4446,11 +4474,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** If the separated radial scalar form is semidefinite at rho_0 in (0,1), then on a neighborhood of rho_0 the simplex globally maximizes balanced Gaussian three-cell stability in every d>=2, with equality rigidity and uniform relative radial deficit for planar partitions. If rho_0<1/sqrt(2), there is also a planar quadratic orbit-distance bound. Semidefiniteness at any specific new parameter is not asserted.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-RADIAL-SCALAR-FAILURE-AT-HALF (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4460,11 +4488,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For all rho sufficiently close to one the separated scalar quadratic form is positive definite on a space of bounded mean-zero tests of dimension at least c(1-rho^2)^(-1/4). An amendment vanishing when a uniformly bounded number of linear radial moments vanish cannot make the separated form nonpositive near one.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4488,11 +4516,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For each circular mass vector p the sharp penalty in the sum of the three squared angular moment caps is (3/2) sum (p_i-1/3)^2 in sine-squared normalization. Integration gives JA8. For ordinary balanced planar partitions the radial degree-two moment weight is at most [4 log(3/2)^2+(2 log(3/2)-log(3))^2+log(3)^2]/9, with equality attainable among balanced radial partitions. These yield the stability upper bound JA9.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4586,11 +4614,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every compact I=[a,b] inside(0,1), the scalar weight J_+ has the explicit lower bound j_I*min(sqrt(t),1), with j_I stated in RMA1. The uncentered weighted K_+ operator and its ordinary-mean-zero compression are Hilbert-Schmidt compact and continuous on I, with explicit finite HS cap RMA3 valid at every positive correlation. For each eta in(0,2), only uniformly finitely many radial eigenmodes exceed2-eta, and every feasible mass profile splits as RMA4 into this finite adverse part plus a complement with negative gap eta. Projected coefficients lie in a fixed finite ball. This isolates possible positive scalar contribution; it does not itself compare it to angular loss. Every nonzero compressed eigenmode belongs to L2(sqrt(t)dnu), by its Euler equation and the additional weighted Hilbert-Schmidt mapping bound; the angular Hessian gap therefore applies to the isolated adverse modes within its actual domain.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Internally audited the w(u)>=min(u,1)/(64e) integration bounds, conditional perpendicular Gaussian event, all-rho HS exponent and weighted mean constraint. Checked the Hermite residual series, complementary arcs, nonnegative polynomial Fourier coefficients and perturbed assignment argument giving6(n+1) switching points. Verified the local polynomial-envelope Hessian normalization1/12, its JA6-to-S37 limit and the compact-off-diagonal/positive-diagonal proof of finite order uniform on compact correlation intervals. The fixed block is assembled from exact exponential coefficients using160-bit closed quadrant and derivative formulas; this is internal replay, not independent review. Other finite-amplitude directions remain the global obligation. Audited the extra weighted kernel map J^-1 K from L2(Jdnu) to L2(sqrt(t)dnu), including both integrable origin factors, to justify the domain of every adverse eigenmode.
 
@@ -4600,11 +4628,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For each finite angular order n, RMA5-RMA7 give a global upper bound for every ordinary balanced planar partition by extracting a Hermite polynomial of the exponential circular kernel and its exact joint moment deficit. The angular maximum is attained with at most6(n+1) switching points per slice, allowing disconnected cells. For ordertwo the bound dominates DG39 at every profile. On each compact positive correlation interval, some finite angular order n_I has a strictly negative full quadratic radial form, uniformly for every mean-zero direction in the natural L2(sqrt(t)dnu) completion. This follows from convergence to the JA4/JA6 standard-interface Hessian and the S37 gap, with compact off-diagonal kernels and a uniform negative diagonal. The order and gap are qualitative. This proves directional quadratic domination, not the finite-amplitude nonlinear inequality for all profiles.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Internally audited the w(u)>=min(u,1)/(64e) integration bounds, conditional perpendicular Gaussian event, all-rho HS exponent and weighted mean constraint. Checked the Hermite residual series, complementary arcs, nonnegative polynomial Fourier coefficients and perturbed assignment argument giving6(n+1) switching points. Verified the local polynomial-envelope Hessian normalization1/12, its JA6-to-S37 limit and the compact-off-diagonal/positive-diagonal proof of finite order uniform on compact correlation intervals. The fixed block is assembled from exact exponential coefficients using160-bit closed quadrant and derivative formulas; this is internal replay, not independent review. Other finite-amplitude directions remain the global obligation.
 
@@ -4614,11 +4642,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** At exactlyrho99/100, isolate span{f,g} where f is DG21 and g is the exact six-exponential DG9 witness. The old exact-arc/secant quadratic form has one positive eigenvalue in this coefficient space. Retaining the second angular mode gives q^[2](c_f*f+c_g*g)<=-(c_f^2+c_g^2)/30000 for all real coefficients, certified by a160-bit directed matrix plusI/30000. Uniform Taylor control gives one small-profile threshold over all unit radial directions in this span, with arbitrary angular shapes. The coefficient norm is explicitly basis dependent. This does not count all adverse radial modes or assert domination for every finite amplitude.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Internally audited the w(u)>=min(u,1)/(64e) integration bounds, conditional perpendicular Gaussian event, all-rho HS exponent and weighted mean constraint. Checked the Hermite residual series, complementary arcs, nonnegative polynomial Fourier coefficients and perturbed assignment argument giving6(n+1) switching points. Verified the local polynomial-envelope Hessian normalization1/12, its JA6-to-S37 limit and the compact-off-diagonal/positive-diagonal proof of finite order uniform on compact correlation intervals. The fixed block is assembled from exact exponential coefficients using160-bit closed quadrant and derivative formulas; this is internal replay, not independent review. Other finite-amplitude directions remain the global obligation.
 
@@ -4628,11 +4656,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** Every actual balanced planar three-cell maximizer equivariant under a central reflection transposing labels consists of one analytic strictly increasing epigraph height in the folded half-plane and two reflected complementary cells. The cells are connected and there is one genuine junction with distinct tangent lines. The height on x>=0 has positive upper and lower slope bounds and differs by O(1) at infinity from a profile H with H(rho x)=rho H(x).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); EXT-PIS-MOSSEL-NEEMAN-TWO-SET-EQUALITY (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4656,11 +4684,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every fixed positive rho there are nonincreasing folded fiber mass profiles of mean 1/3 and admissible balanced directions along which the noise-stability functional has strictly positive second derivative. This disproves global concavity in the fiber masses even within the reflected epigraph class.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); EXT-PIS-MOSSEL-NEEMAN-TWO-SET-EQUALITY (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4726,11 +4754,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** At a planar balanced maximizer symmetric perturbations of the cross covariance obey CT6–CT8. A nonsimplex maximizer with a genuine junction of three distinct tangent lines admits a nonzero volume-balanced linear speed with strictly negative corresponding directional mixed pairing. This includes the one-reflection class. The derivative of fixed-shape stability is strictly negative for nonzero negative semidefinite cross-covariance perturbations.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); EXT-PIS-MOSSEL-NEEMAN-TWO-SET-EQUALITY (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4754,11 +4782,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** At a reflected balanced planar maximizer the unrestricted odd planar operator has a simple horizontal translation eigenmode above the stability threshold, a simple zero mode given by rotation, and a positive gap on their complement. Its ordered kernel has strict two-by-two positivity. The even sector has at most one unrestricted zero mode. The same quotient argument bounds h'' strictly above by h'(1+h'^2)/x and determines all circle intersections, in particular consecutive labeled arcs for r>|h(0)|.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); EXT-PIS-MOSSEL-NEEMAN-TWO-SET-EQUALITY (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4768,11 +4796,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** Any nonsimplex balanced global maximizer with a central reflection swapping two labels has a height h(x) that is strictly above h(0)+x/sqrt(3) somewhere and strictly below it elsewhere. In particular its slopes range on both sides of 1/sqrt(3).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); EXT-PIS-MOSSEL-NEEMAN-TWO-SET-EQUALITY (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4782,11 +4810,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** A balanced reflected planar maximizer that is not the simplex has curvature of both signs on the right graph. Global convexity or global concavity of its height forces the simplex.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); EXT-PIS-MOSSEL-NEEMAN-TWO-SET-EQUALITY (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4796,11 +4824,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** At a balanced reflected planar maximizer every translated bounded-window tail limit of h is affine. In particular h''(x) tends to zero and h'(x)-h'(rho x) tends to zero. The direction may depend on the sequence.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); EXT-PIS-MOSSEL-NEEMAN-TWO-SET-EQUALITY (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4810,11 +4838,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** A bounded mixed correlation derivative along the reflected maximizing graph forces a linear asymptote. At a reflected tie with D'=D''=0 and an accumulating sequence of simplex-optimal correlations, that mixed derivative is constant and equals -2z phi(z)/(1-rho^2), z=Phi^{-1}((1+beta)/2). Zero pressure forces the simplex. Nonzero pressure fixes the sign of x h'-h and orders the asymptotic slope relative to 1/sqrt(3).
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); EXT-PIS-MOSSEL-NEEMAN-TWO-SET-EQUALITY (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4852,11 +4880,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For each even cutoff at least two and each cutoff congruent to three modulo four, balanced planar partitions arbitrarily close to the simplex beat its cumulative Hermite weight. A single partition can exhibit any finite alternating initial list of odd-cutoff signs by choosing a sufficiently distant swap. The examples strictly lose full noise stability at every positive correlation.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-REFLECTION-ORBIT-COMPARISON (stale); SRC-PIS-THREE-CELL-REFLECTION-ORIENTATION-FINITE-CERTIFICATE (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4964,11 +4992,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** A balanced Gaussian recombination of two source rows while keeping the third cell is optimized by an original or permuted assignment or an independent balanced halfspace split. If all independent splits strictly lose and the source reaches at least the simplex stability, every auxiliary selector with <=2 output choices in each row loses strictly unless it deterministically permutes the source labels.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4978,11 +5006,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** The top nonconstant eigenvalue of the transition matrix of any balanced Gaussian three-cell partition is at most the odd eigenvalue of the balanced parallel three-slab partition. Equality occurs only at such a slab partition and is excluded for actual Gaussian maximizers.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); EXT-PIS-MOSSEL-NEEMAN-TWO-SET-EQUALITY (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -4992,11 +5020,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For any two balanced Gaussian three-label channels of common stability s>=S_rho(T) satisfying the strict independent split cap on every row, every balanced lookup table on their labels has stability <=s, with equality only for a permutation of one input. This holds for every positive correlation. PR7 also gives an explicit anisotropy test.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON (stale); EXT-PIS-MOSSEL-NEEMAN-TWO-SET-EQUALITY (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5020,11 +5048,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2 and every balanced ordinary Gaussian three-cell partition, S_rho(A)<=S_rho(T) for 0<rho<=89/200. On [8859/20000,89/200] equality determines the cylindrical regular tripod. Projected spectral residual, full-cap angular coercivity and unweighted annular assembly on the adjoining slab.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Internal directed run and retained-entry-point replay passed. Complete covering data match after removing elapsed times. Each has 160 spectral panels, eight Hilbert-Schmidt slabs, analytic tails and exact rational endpoints.
 
@@ -5034,11 +5062,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2 and every balanced ordinary Gaussian three-cell partition, S_rho(A)<=S_rho(T) for 0<rho<=447/1000. On [89/200,447/1000] equality determines the cylindrical regular tripod. Projected spectral residual and radius-weighted angular errors on the wider circular-mass cube on the adjoining slab.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Internal directed run and retained-entry-point replay passed. Complete covering data match after removing elapsed times. Each has 160 spectral panels, eight Hilbert-Schmidt slabs, analytic tails and exact rational endpoints.
 
@@ -5048,11 +5076,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** Balanced ordinary Gaussian three-cell partitions in every d>=2 satisfy the simplex inequality for every 0<rho<=107/200. The GH6 and GH9–GH10 extension yields at least 1/200 radial coercivity on [53/100,107/200], with the same simplex tie rigidity.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Internal directed run and retained-entry-point replay agree byte for byte. 80 rational slabs of width 1/16000, 100-bit Arb, 16384 radial panels, 96 modes and 16 row terms.
 
@@ -5062,11 +5090,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** On [11/25,29/50], every balanced ordinary planar three-cell partition admits an oriented simplex with stability deficit at least a uniform positive constant times exact OU transfer cost. The finite-amplitude angular reserve and the separate aligned-arc scalar certificates each preserve a positive angular deficit. A radial reference slice and score-relative exterior bound convert it to score-cost control. The holomorphic score estimate gives a positive unevaluated extension past 29/50 in every d>=2, with equality rigidity.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
 
@@ -5076,11 +5104,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2, every balanced ordinary measurable three-cell Gaussian partition has S_rho(A)<=S_rho(T) for 0<rho<=8859/20000. On [221/500,8859/20000] equality determines the cylindrical regular tripod. FA18-FA21 use full simplex clipping and a stronger annular loss bound with a directed cover of the adjoining slab. No overlap with the near-one interval or conclusion on all positive correlations is asserted.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** The internal directed run and retained-entry-point replay both passed. Their full covering data agree after removing elapsed times. 76 directed spectral panels, four Hilbert-Schmidt slabs, full angular cube and annulus, exact rational endpoints and analytic tails. No independent mathematical review or external replay is claimed.
 
@@ -5090,11 +5118,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2, every ordinary measurable Gaussian three-cell partition A with all masses1/3, and every0<rho<=221/500, S_rho(A)<=S_rho(T), equivalently Qtilde_rho(1_A-1_T)<=2L_rho(A;T). On[11/25,221/500], FA1-FA7 give a direct global finite-amplitude comparison: one explicit weighted radial trial, a uniformly negative orthogonal block, a feasibility cap on the trial amplitude, and unavoidable angular loss that absorbs its scalar contribution. No closeness, stationarity, consecutive-arc or continuation assumption is imposed. DG10 supplies lower correlations; maximizer existence and dimension reduction extend the planar proof to every d>=2. The all-positive-correlation target remains open and no overlap with the qualitative near-one interval is asserted.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Full internal production run exited0 in243.72seconds with all tables rebuilt:100 trial correlation children in4 parents,20 Hilbert-Schmidt parents,10431 attempted angular boxes with4700 accepted and516 infeasible,2048x2048 annular cells, and analytic infinite tails. Directed caps: trial norm[.268,.271], Rayleigh[1.995,2.0031], raw residual squared<=1/50000, Hilbert-Schmidt squared<=217/50. The exact rational correlation-cover audit and Arb feasibility, outside-cube and final determinant checks passed. This is internal computer-assisted proof evidence, not independent replay, formal verification or external review.
 
@@ -5202,11 +5230,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** The first angular moment pairing maximum at any two circular mass vectors equals its norm-and-closure relaxation and the explicit 2x2 dual minimum AM2. Each optimum value is realized using two single arcs and their complement on each circle. All caps need not saturate, as shown by the explicit interior example.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5216,11 +5244,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** When all masses lie between arccos(4/5)/pi and 1/2, the first angular pairing uses the full norm caps. On the cube |p_i-1/3|,|q_i-1/3|<=1/20, the exact first-mode compatibility penalty is at least (3/40)|p-q|^2, analytically.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5230,11 +5258,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** On a small neighborhood of any fixed interior mass vector, the sum of the three pair moment deficits controls the squared failure of transport composition, and hence the squared commutator. Near equal masses this gives an additional quartic penalty for noncollinear directions. Simultaneous pair saturation occurs exactly for a common diagonal-congruence family of cap Grams.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5244,11 +5272,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For each fixed angular order the difference from the corresponding moment of the centered arc is bounded linearly in the first angular cap deficit, uniformly over masses. AM7 gives the squared second-mode tradeoff (4/3)(1-cos^2(pi p)). This gives separate full-cap first and second Procrustes penalties in a neighborhood of balanced masses for c1>c2 with fixed ratio margin, and an effective-cap bound globally for c1>=4c2/3.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5258,11 +5286,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** The exact first Gaussian Hermite loss splits into the circular mass deficit, loss within each circular norm cap, and radial variance of the moment vectors. At a tie these nonnegative costs obey the stated Hermite budget, sharpened at fixed nonnegative deficit slope.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5272,11 +5300,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For a unit centered label vector the pointwise squared distance to the scaled simplex has exact formula AP1. Its integrated pole cost has sharp cubic leading coefficient, minimized along the three simplex vertex directions. Each adverse radial eigenprofile has at most a simple pole in sqrt(t), and its coefficient is one linear constraint on the adverse radial space.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5286,11 +5314,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** On the retained one-direction interval [11/25,221/500], the full simplex constraint reduces the allowable adverse amplitude below 1/200. An analytic narrow-cube angular estimate gives the stronger relative radial deficit AP5 and the displayed negative quadratic upper bound, using the existing directed spectral and radial inputs. No new correlation cutoff is asserted.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5300,11 +5328,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** At any fixed positive correlation, the finite adverse radial space admits the all-profile upper bound AP6 using a compact angular penalty minimization and the exact squared distance of the trial profiles to the mass simplex. Nonpositivity on the resulting finite-dimensional ball would suffice for the full comparison at that correlation. That sign is not asserted for the unresolved correlations.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5384,11 +5412,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every fixed0<rho<1 and every ordinary balanced planar Gaussian three-cell partition, GAC7 improves DG29 at all feasible amplitudes by keeping the same first-angular-moment slice across radii. The actual first-mode deficit has a global rank-one minorant with h_rho(t)=sqrt(t)*exp(-rho*t/(1-rho)) and coefficient2rho/(1-rho^2)^2. For every nonnegative integrable radial weight w and every measurable mass profile, its exact shared-radius rank-one loss is the compact2D matrix-disk optimization GAC5 with pointwise weighted three-point geometric-median supports. The norm-cap support is proved realizable by two arcs and their complement, including boundary masses. For the three half-mass types, the sharp loss is[M^2-2sum(m_e^2)+(2max(m_e)-M)_+^2]/pi^2>=3min(m_e)^2/pi^2, while every independently optimized pair envelope has zero deficit. GAC9 gives a weighted-L1 robust version. This is a stronger global upper bound, not a proof that it dominates every positive radial scalar contribution. The unsquared matrix-disk objective is concave. GAC5a supplies a dual lower-loss certificate from any positive definite matrix field; GAC5b-GAC5c specialize it to three fixed matrices and a closed expression in radial cap integrals and weighted type masses, with no angular optimization. These certificates are valid at arbitrary amplitudes; their required domination of the scalar contribution is still open.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Internal analytic audit of GAC1-GAC9: support extrema, measurable arc approximation, norm duality, boundary and zero cases, exact weighted spin-triangle maximum, mass-transfer robustness and rank-one kernel minorization. No finite experiment substitutes for the unrestricted proof; the final scalar-versus-angular domination remains open. The matrix-field certificate is derived by a squared Frobenius norm and a common scaling optimization. Its three-projector specialization and closed scalar minimum are checked in the written proof, including all zero and endpoint cases.
 
@@ -5398,11 +5426,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every0<b<1, every integer n>=0, every0<rho<=b and every measurable planar circular mass profile p, the global polynomial angular envelope E_n in GAC12 lies above the true prescribed-profile Gaussian optimum minus the simplex value, by at most4/(1-b)^2 * (4b/(1+3b))^(n+1). This is uniform over all amplitudes and all angular shapes. The polynomial head optimizes the same two whole radial fields in every pairing; its nonnegative monotone remainder alone is circularly rearranged. The head supremum can be approached by ordinary pairs with at most6(n+1) switches per circle. The proof uses positivity of the full Gaussian operator, conditional atomlessness, compact bilinear maximization and an explicit integrable geometric Taylor-tail bound on the entire radial axis. It is an approximation theorem, not a sign theorem; the coupled radial optimization and all-positive-correlation target remain open.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Internal analytic audit of GAC10-GAC13 and GAC5: full-domain nonnegative Taylor remainder, exact geometric tail rate, all-profile bilinear comparison, weak compactness and conditional extreme-point argument, and perturbed trig-polynomial switch bound. No sampled correlations or finite amplitude tests are used to establish the uniform theorem. No nonpositivity or all-rho resolution is inferred.
 
@@ -5440,11 +5468,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For arbitrary circular mass profiles with the same pair of equal labels across radii and every nonnegative integrable symmetric radial kernel, EP1 gives the exact shared first angular interaction as a scalar concave maximization with ordinary realizers. EP2 computes the exact separate two-radius maximum. If the weight is strictly positive, EP4 characterizes exact simultaneous saturation by the essential tan half-width ratio being at most three, and EP5 characterizes full caps in the shared objective. The unrestricted Gaussian comparison remains open.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5454,11 +5482,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** All closing first angular moment triples under the three sine caps are feasible for every circular mass vector. There are realizers with at most thirteen intervals after an angle-zero cut and a Borel selection of endpoints. SM2 gives an exact maximum over one common field for every integrable radial kernel, even signed. SM3 controls finite radial approximations uniformly in the kernel and with a weighted mass error. This does not supply the missing Gaussian sign.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5468,11 +5496,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** The exact Gaussian angular Fourier head has uniform stability tail at most (2/3)rho^(n+1), with one compact convex body of actual circular moments per radial slice. Step radial kernels have an explicit uniform additive error. Given a radius of local simplex optimality, finite linear overlap constraints cover the partitions outside that neighborhood. A strict finite comparison gives global uniqueness on a compact correlation interval, and such a finite comparison exists if the simplex is already known to be the unique planar maximizer throughout the interval. No strict certificate has been evaluated on the unresolved bands.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5496,11 +5524,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** AP7–AP9 replace the pointwise clipping of AP6 by its exact strengthening with global balance and prescribed adverse coefficients. A finite-multiplier dual and an elementary projection lower bound apply at every feasible coefficient vector. AP10 gives the exact feasible support function and AP11 identifies the one-mode region as the convex hull of the permutations of the centered first-moment quantile thirds. The sign at unresolved correlations remains open.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5552,11 +5580,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every rho in [11/25,53/100], every ordinary balanced planar partition whose circular masses satisfy |p_i(t)-1/3|<=11/50 almost everywhere has stability at most the simplex, with equality only for the simplex. Arbitrary angular shapes are allowed. The scalar comparison has a directed uniform trace bound <48/25 and a weighted quadratic margin 2/25. This is a restricted mass-profile theorem.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Internal full interval and point replay passed. The 100-bit Arb bounds are applied only within the stated mass cube.
 
@@ -5706,11 +5734,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2, every ordinary balanced measurable Gaussian three-cell partition is no more stable than the regular simplex for 0<rho<=1/2. Equality on [11/25,1/2] forces a cylindrical regular simplex up to rotation, relabeling and null sets. The GH2 arc Taylor inequality applies to all circular masses; moment signs, balance centering and a directed trace tail give a strict global radial comparison. No stationarity, angular shape or proximity assumptions.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Written proof and full directed internal replay. The correlation cover and positive norm margin apply to all profiles.
 
@@ -5720,11 +5748,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2, every ordinary balanced measurable Gaussian three-cell partition is no more stable than the regular simplex for 0<rho<=53/100. Equality on [1/2,53/100] forces a cylindrical regular simplex up to rotation, relabeling and null sets. The positive even row moments give an exponential lower bound, making the high-mode trace tail summable above one half. The all-positive-correlation conjecture is still open.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Written proof and full directed internal replay. The correlation cover and positive norm margin apply to all profiles.
 
@@ -5734,11 +5762,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For fixed 0<rho<=53/100 and epsilon>0, there exist D and tau>0 independent of m such that each balanced simplex-valued rule on the uniform ternary m-cube with degree-D coordinate influences at most tau for all three output coordinates has noise stability at most the ternary plurality limit plus epsilon. Noise retains each coordinate independently with probability rho and otherwise resamples it uniformly.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Internal check of the Gaussian-to-discrete implication.
 
@@ -5846,11 +5874,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every pair of circular partitions at arbitrary masses and every c1,c2>=0, TME3 is a valid explicit two-SPD-matrix upper bound using the sharp one-cell energy support with clipped negative coefficients. TME4 gives a common-slice matrix-field upper bound for the weighted integrated first and second angular moments. The monotone polynomial(1+cos(theta))^2 has a nonnegative shared-radius deficit D2; TME7 adds its rank-one contribution with coefficient2rho^2/(1-rho^2)^3 to GAC7 for every ordinary balanced planar partition and every0<rho<1. The first and second moments remain linked to the same cells. This is a stronger global upper bound, not a proof of its required sign on all partitions.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Internal written proof. The statement retains its exact hypotheses and does not assert the all-correlation scalar-versus-angular sign.
 
@@ -5860,11 +5888,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** On the entire mass cube|p_i-1/3|,|q_i-1/3|<=1/20, every circular partition pair satisfies the two-full-cap-fidelity bound TME8 whenever c1>=4c2>=0. The first cap-fidelity deficit is at least|p-q|^2/10 and the second at least3|p-q|^2/40; the polynomial(1+cos)^2 deficit is at least19|p-q|^2/80. At rho=3/5, every ordinary planar partition with circular masses p_i(t)=1/3+epsilon*v_i*(exp(-t)+2exp(-16t)-21/34), for any centered unit v and every|epsilon|<=1/40, has simplex deficit at least epsilon^2/500, independently of angular shapes. The scalar coefficient is positive. Complete100-bit four-dimensional interval cover and120-bit scalar replay verify the inputs. This restricted-profile finite-amplitude theorem does not establish all-partition optimality at3/5.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Internal full run passed in3.61seconds:66241 attempted boxes,31528 accepted,1593 infeasible, all probability constraints and both matrix coercivities enclosed on full rational boxes. The replayed positive scalar coefficient at3/5 is outweighed by certified first and second costs, leaving upper coefficient below-0.0023683377125. The whole amplitude interval follows analytically from the cube and quadratic dependence. No independent replay, formal verification or external review.
 
@@ -5874,11 +5902,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For the two-equal-mass profiles built from the bounded six-exponential witness g of DG9 at rho99/100 and centered unit label direction(2,-1,-1)/sqrt(6), every sufficiently small nonzero amplitude has a positive exact-arc/secant first-mode upper-bound coefficient, even after all first angular moments are optimized jointly across radii. EP4 supplies one common arc family attaining all exact pair first-mode optima. The coefficient therefore remains E_99/100(g)>1.20298e-6 from DG40. This falsifies nonpositivity of that strengthened sufficient criterion, not actual simplex optimality or every conceivable use of first moments. Stronger angular remainders or higher modes are necessary within this separation.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Internal written proof. The statement retains its exact hypotheses and does not assert the all-correlation scalar-versus-angular sign.
 
@@ -5888,11 +5916,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** At every angular parameter a>=0 the positive centered Taylor ratio has sharp coefficient (2P0+P1)/3, attained at mass sums (0,1,1) and label permutations. The negative coefficient M is still valid on all differences. Folded parity proves positivity of the radial rank-one coefficients and an exponential row lower bound. For a>0 the equality alternatives exclude every nonsimplex balanced profile if the scalar radial form is nonpositive.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5902,11 +5930,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2 the simplex is optimal among ordinary balanced measurable three-cell Gaussian partitions for 0<rho<=11/20. On [53/100,11/20] equality determines the simplex. A strict directed Hilbert–Schmidt block and full positive tail bound apply to all circular profiles.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Directed internal replay passed on the exact correlation interval with all necessary radial tails.
 
@@ -5916,11 +5944,137 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For all 0<rho<1, the difference of the sharp aligned-arc scalar comparison from the actual planar interaction controls the full first angular deficit and either of two explicit rank-one variance losses. The undamped weight mu_1 proportional to sqrt(t) exp(-kappa t) gives gain (6 rho (1-rho^2)/(25 pi)) Var_mu1(p) for all measurable mass profiles. It only changes the first radial feature and the corresponding diagonal term. The damped alternative and the sharp factor 1/2 for its two extracted lower bounds are also explicit. No adverse-mode or amplitude restriction.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
+
+### PIS-THREE-CELL-ITERATED-SHARP-VARIANCE-FEASIBILITY
+
+[Feasibility bootstrap for successive sharp scalar variance gains](plurality-stability/THREE_CELL_SHARP_VARIANCE_ABSORPTION.md)
+
+**Exact scope:** For fixed positive correlation, finite-block projection and simplex clipping can force stronger tilted purity or second-moment estimates in the branch with small scalar deficit. Each accepted stage upgrades the variance gain from the exact quartic bound, replacing any earlier gain. A positive radial reserve on every stage and a strict final norm bound give a uniform score margin by the radial-reference-slice proof. The balance-aware tilted mean gives the explicit higher-gain test SV9 on [29/50,2/3]. The endpoint Gram comparison is an alternative finite-block bound for rho<1/sqrt(2).
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
+
+### PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-81-125
+
+[Direct global three-cell Gaussian simplex inequality through 0.648](plurality-stability/THREE_CELL_SHARP_VARIANCE_ABSORPTION.md)
+
+**Exact scope:** Every ordinary balanced three-cell Gaussian partition in d>=2 has stability at most that of the regular simplex for 0<rho<=81/125. On [129/200,81/125] equality determines a cylindrical regular tripod. Two to four reserved tilted-mean bootstrap stages per slab with exact complementary compression give a uniform planar transfer-cost margin and a positive unevaluated right neighborhood beyond 81/125.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Internal directed cover passed on 172 rational slabs using 110-bit Arb. A second internal run on three adjoining intervals reproduced all finite slab data. All proof stages preserve a radial reserve of 1/100000.
+
+### PIS-THREE-CANDIDATE-DISCRETE-THROUGH-81-125
+
+[Balanced low-influence three-candidate Plurality Is Stablest through 0.648](plurality-stability/THREE_CELL_SHARP_VARIANCE_ABSORPTION.md)
+
+**Exact scope:** For each fixed 0<rho<=81/125 and epsilon>0, a degree D and threshold tau guarantee that every uniform ternary-product rule with mean (1/3,1/3,1/3) and all coordinate-label degree-D influences at most tau has stability at most the limiting plurality stability plus epsilon. The noise independently keeps symbols with probability rho and resamples them otherwise.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
+
+### PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-129-200
+
+[Direct global three-cell Gaussian simplex inequality through 0.645](plurality-stability/THREE_CELL_SHARP_VARIANCE_ABSORPTION.md)
+
+**Exact scope:** For every d>=2 and 0<rho<=129/200 the simplex maximizes stability among ordinary balanced three-cell Gaussian partitions. On [641/1000,129/200] equality is exactly the cylindrical regular tripod. The fixed-gain stages use the directed projected tilted mean, orthogonality-enhanced clipping and the two-dimensional multiplier bound. A uniform planar score margin continues to an unevaluated right neighborhood.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Full internal directed run passed on 180 rational slabs using 110-bit Arb, cubic radial interpolation, analytic tails, projected tilted mean and explicit preliminary reserve.
+
+### PIS-THREE-CANDIDATE-DISCRETE-THROUGH-129-200
+
+[Balanced low-influence three-candidate Plurality Is Stablest through 0.645](plurality-stability/THREE_CELL_SHARP_VARIANCE_ABSORPTION.md)
+
+**Exact scope:** For each fixed 0<rho<=129/200 and epsilon>0, a degree D and threshold tau guarantee that every uniform ternary-product rule with mean (1/3,1/3,1/3) and all coordinate-label degree-D influences at most tau has stability at most the limiting plurality stability plus epsilon. Inputs are independently retained with probability rho and resampled otherwise.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
+
+### PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-641-1000
+
+[Direct global three-cell Gaussian simplex inequality through 0.641](plurality-stability/THREE_CELL_SHARP_VARIANCE_ABSORPTION.md)
+
+**Exact scope:** For every d>=2, the simplex maximizes stability for 0<rho<=641/1000 among ordinary balanced three-cell Gaussian partitions. On [63/100,641/1000] equality determines the cylindrical tripod. Two directed feasibility tests using the mass-balanced tilted mean verify coefficients 31/50 then 1 for the quartic variance penalty. Positive radial and angular reserves give a uniform score margin on the new slab and a positive unevaluated right neighborhood.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Full internal directed cover passed on 349 rational slabs with 110-bit Arb, cubic interpolation, rigorous clipping and analytic tails. The retained-entry-point replay matches its complete receipt byte for byte. A separate retained right-endpoint cover verifies the earlier [63/100,253/400] prefix and replayed byte for byte.
+
+### PIS-THREE-CANDIDATE-DISCRETE-THROUGH-641-1000
+
+[Balanced low-influence three-candidate Plurality Is Stablest through 0.641](plurality-stability/THREE_CELL_SHARP_VARIANCE_ABSORPTION.md)
+
+**Exact scope:** For each fixed 0<rho<=641/1000 and epsilon>0, a degree D and threshold tau guarantee that every uniform ternary-product rule with mean (1/3,1/3,1/3) and all coordinate-label degree-D influences at most tau has stability at most the limiting plurality stability plus epsilon. The noise independently keeps each symbol with probability rho and resamples it otherwise.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
+
+### PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-63-100
+
+[Direct global three-cell Gaussian simplex inequality through 0.630](plurality-stability/THREE_CELL_SHARP_VARIANCE_ABSORPTION.md)
+
+**Exact scope:** For every d>=2, the simplex maximizes Gaussian noise stability for 0<rho<=63/100 among ordinary balanced three-cell partitions. On [623/1000,63/100] equality requires a cylindrical regular tripod. A reserved amplitude test for the preliminary 12/25 variance coefficient forces tilted purity at least 3/5 for profiles in the feasible branch. The stronger operator is strictly below two, yielding a uniform relative planar score margin on the added slab and an unevaluated positive right neighborhood beyond 63/100.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Both directed covers passed, with 18 and 98 correlation slabs. Both retained-entry-point replays match their exact receipts byte for byte. Python 3.12.3, python-flint 0.9.0 and NumPy 1.26.4 with 110-bit Arb.
+
+### PIS-THREE-CANDIDATE-DISCRETE-THROUGH-63-100
+
+[Balanced low-influence three-candidate Plurality Is Stablest through 0.630](plurality-stability/THREE_CELL_SHARP_VARIANCE_ABSORPTION.md)
+
+**Exact scope:** For each fixed 0<rho<=63/100 and epsilon>0, some degree D and threshold tau guarantee that every uniform ternary-product rule with mean (1/3,1/3,1/3) and all coordinate-label degree-D influences at most tau has stability at most the limiting plurality stability plus epsilon. The noise independently keeps each symbol with probability rho and resamples it otherwise.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
 
@@ -5930,11 +6084,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For all d>=2 and 0<rho<=623/1000 the regular simplex maximizes stability among ordinary balanced Gaussian three-cell partitions. On [29/50,623/1000] equality determines a cylindrical regular tripod. The corrected linear scalar norm has uniform margin after extracting undamped variance, and it keeps the first angular deficit. This yields a uniform planar transfer-cost margin on the certified slab and an unevaluated open right neighborhood beyond 623/1000 with rigidity in all dimensions.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Two full internal directed runs passed on adjacent rational intervals with 282 and 96 correlation slabs, respectively. Both retained-entry-point replays match their receipts byte for byte. Python 3.12.3, python-flint 0.9.0 and NumPy 1.26.4, with 110-bit Arb and analytic tails.
 
@@ -5958,11 +6112,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2 the simplex is globally optimal among ordinary balanced measurable three-cell Gaussian partitions for 0<rho<=29/50. On [11/20,29/50] equality determines the simplex. A verified weighted row-sum bound for the centered Gram block, with directed linear interpolation of radial moments and analytic tails, treats all feasible mass profiles. The remaining all-positive-correlation target is open.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Directed internal replay passed on the exact correlation interval with all necessary radial tails.
 
@@ -5972,11 +6126,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For each fixed 0<rho<=29/50 and epsilon>0 there are D and tau>0 independent of m such that a balanced rule from the uniform ternary m-cube to the simplex with all degree-D coordinate influences at most tau has stability at most the ternary plurality limit plus epsilon. Noise retains a coordinate independently with probability rho and otherwise resamples it uniformly.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -5986,11 +6140,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** The sharp aligned-arc scalar bound has a positive term proportional to the minimum joint label mass and an explicit quartic difference term. Splitting off a cosine keeps the exact actual first-mode loss and still retains nonnegative scalar remainders. Positive rank-one minorants give exact mass-purity and tilted-variance penalties at every positive correlation. No all-amplitude sign beyond the proved global interval is asserted.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -6000,11 +6154,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** A positive adverse coefficient can be outweighed by the quartic penalty using an explicit bound on the trial's amplitude and tilted variance. The quadratic residual controls loss from the reference profile, and the pole estimate SR12 caps the amplitude on all feasible profiles. SR13–SR20 add residual-dependent feasibility, variance and transverse purity estimates, and complementary control by the cosine loss.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof and internal audit.
 
@@ -6028,11 +6182,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For every d>=2 and every 0<rho<=3/5, the regular simplex is globally optimal among all ordinary balanced measurable Gaussian three-cell partitions. On [29/50,3/5] equality determines the simplex up to rotation, relabeling and null sets. The sharp scalar operator may have a positive adverse direction, which is outweighed at every feasible amplitude by the rank-one quartic correction. The all-positive-correlation conjecture remains open.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Directed internal replay passed on the entire stated correlation interval, including the analytic tails and all feasible nonzero amplitudes.
 
@@ -6042,11 +6196,11 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Exact scope:** For fixed 0<rho<=3/5 and epsilon>0, there exist D and tau>0 independent of m such that every balanced simplex-valued rule on the uniform ternary m-cube with all degree-D coordinate influences at most tau has stability at most the ternary plurality limit plus epsilon. The noise retains each coordinate independently with probability rho and otherwise resamples it uniformly.
 
-**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
 
 **Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
 
-**Current blockers:** none in declared routes.
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
 
 **Verification limits:** Written proof with internal audit.
 
@@ -6092,6 +6246,370 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Verification limits:** Internal written proof and exact rational replay only. The clipped-curve control covers every real order type via nonnegative gap polynomials; the all-size hinge argument, elementary Mills proof, Gaussian integration, compact-operator inference and ambient Hermite lift remain written mathematics. No independent replay, external review or proof-assistant verification is asserted.
 
+### PIS-THREE-CELL-SHARP-ARC-WEIGHTED-VARIANCE-AND-MEDIAN-RESERVE
+
+[Weighted sharp arc variance and a median-label nonlinear reserve](plurality-stability/THREE_CELL_WEIGHTED_ANGULAR_VARIANCE.md)
+
+**Exact scope:** For every positive correlation and all measurable three-cell radial mass profiles, a nonnegative PSD weight satisfying WV2 supplies a weighted Dirichlet correction plus unused quartic slack. The first linear-cubic weight improves SV1 unconditionally. The second gives a larger correction with a loss on only the median label of a one-mode decomposition. Both leave the actual first angular deficit available. The one-sided positive Taylor reserve WV10–WV11 adds a variance term from pairs with a central profile.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Analytic weighted cancellation and median geometry, with exact rational Bernstein verification of the explicit weights.
+
+### PIS-ALL-CELL-HIGHER-EXTERIOR-HOOK-ALL-CORRELATION-GAP
+
+[Every higher exterior hook has a strict all-correlation interface gap](plurality-stability/ALL_EXTERIOR_HOOK_GAPS.md)
+
+**Exact scope:** For every k>=4, d>=k-1 and 0<rho<1, S91f holds strictly coordinatewise on the ordered facet in every exterior degree 2<=p<=k-2. For p>=3 the full shape (k-p-1,1^(p+1)) gap is at least ell*(1-rho^(p(p-1)/2-1))/sqrt(1-rho^2), independent of d. For p=2 the strict comparison and compactness give a positive gap. The diffusion proof controls all intermediate exterior degrees. The balanced standard and nonhook shapes are separate.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal audit of the weighted first-collision cancellation, stopped Vandermonde estimate, boundary determinant limit, conditional wedge and compact operator. No numerical sample is used as a premise.
+
+### PIS-SIX-CELL-MIXED-321-ALL-CORRELATION-GAP
+
+[The full six-cell (3,2,1) block has a strict all-correlation gap](plurality-stability/SIX_CELL_MIXED_321_GAP.md)
+
+**Exact scope:** For every fixed 0<rho<1 and d>=5, the entire V_(3,2,1) isotypic interface space of the balanced six-cell Gaussian simplex has a positive L2 gap independent of d. A positive linear field and 32 residual immanants use an exhaustive positive-coefficient certificate after strictly totally positive 5-by-5 LDU factorization. The remaining six-cell all-correlation obligations are balanced standard, (2,2,2), and (2,2,1,1).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal audit and exact replay of all 744735 nonzero coefficients. The written proof supplies exhaustive matrix-factor coverage and the full-multiplicity operator implication.
+
+### PIS-HIGHER-CELL-EXPLICIT-INITIAL-INTERFACE-GAP
+
+[A larger explicit full-gap interval for every higher cell count](plurality-stability/HIGHER_CELL_INITIAL_INTERFACE_GAP.md)
+
+**Exact scope:** For each fixed k>=6 and d>=k-1, let p_k be the probability of the full reference facet in the standard pair-plane Gaussian. For 0<rho<=p_k/(2-p_k) the full balanced simplex interface has only its rotational kernel and a positive gap independent of d. The interval includes 0<rho<=1/[k(k-1)]. The proof removes the exact degree-one term from the standard Hermite tail and uses the representation Hermite floor on all other nonrotation, nontwo-row blocks.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internally reviewed direct extension of FV2/FV5 and S77/S80/S81. The endpoint uses the Gaussian facet mass and is inclusive.
+
+### PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-513-800
+
+[Unrestricted balanced three-cell Gaussian simplex inequality through 513/800](plurality-stability/THREE_CELL_EXCESS_PURITY_EXTENSION.md)
+
+**Exact scope:** For every d>=2 and 0<rho<=513/800 the simplex is globally optimal among ordinary balanced measurable Gaussian three-cell partitions. Equality on [3/5,513/800] determines the simplex. The proof combines the unconditional variance gain with only the excess of the conditional quartic correction and verifies all feasible amplitudes.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Full directed 165-slab internal replay passed, including the radial tails and all feasible amplitudes.
+
+### PIS-THREE-CANDIDATE-DISCRETE-THROUGH-513-800
+
+[Balanced low-influence three-candidate Plurality Is Stablest through 513/800](plurality-stability/THREE_CELL_EXCESS_PURITY_EXTENSION.md)
+
+**Exact scope:** For fixed 0<rho<=513/800 and epsilon>0, degree and influence thresholds independent of the electorate size bound the stability of every balanced simplex-valued ternary rule by the plurality limit plus epsilon. The noise retains each coordinate with probability rho and otherwise resamples it uniformly.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Written proof and internal audit.
+
+### PIS-THREE-CELL-DOMINANT-LABEL-CUMULATIVE-SLACK
+
+[Dominant-label cumulative slack and the sharp pure same-label constant](plurality-stability/THREE_CELL_SAME_LABEL_VARIANCE_PENALTY.md)
+
+**Exact scope:** For every a>=0 and every three-vector s in[0,2]^3 with sum2 and max coordinate S>=4/3, its sharp positive Taylor slack D_a(s) is at least(S-1)D_*(a), D_*=M+P_sharp-2I0. The cumulative-density inequality also holds for every increasing differentiable function of cosine. The exact optimal pure same-label linear constant c_*=inf D_*(a)/a has a unique minimizer in[149/100,1491/1000], lies between0.1952578742 and0.1952578830, and exceeds781/4000. The infinite-parameter assertion follows from strict convexity of a positive Laplace transform and a directed degree40 moment certificate at two exact rational anchors.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
+
+**Verification limits:** Internal directed verification only. The pure angular constant uses convexity and two exact rational anchors, not parameter sampling. The independent contiguous radial cover passes on all40 accepted slabs; fourteen Gaussian moments supply an analytic calibration and the false1/5 pure constant is rejected.
+
+### PIS-THREE-CELL-SAME-LABEL-VARIANCE-RESERVE
+
+[A stronger unconditional same-label angular variance reserve at every correlation](plurality-stability/THREE_CELL_SAME_LABEL_VARIANCE_PENALTY.md)
+
+**Exact scope:** For every0<rho<1 and every feasible planar circular mass/shape profile, the sharp aligned-arc scalar upper bound can be decreased by beta_rho Var_mu(p), where beta_rho=781*pi*rho*(1-rho^2)/32000 and mu is proportional to sqrt(t)*exp[-rho^2*t/(1-rho^2)]*exp(-t)dt. The independent cumulative-label proof gives the smaller17*pi*rho*(1-rho^2)/1000 reserve. The two reserves are alternatives, not additive. No balance, amplitude smallness or continuation hypothesis is needed for the angular reserve; no all-rho sign of the corrected scalar operator follows from the reserve alone.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Internal directed verification only. The pure angular constant uses convexity and two exact rational anchors, not parameter sampling. The independent contiguous radial cover passes on all40 accepted slabs; fourteen Gaussian moments supply an analytic calibration and the false1/5 pure constant is rejected.
+
+### PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-61-100
+
+[Independent same-label reserve proof of the unrestricted comparison through61/100](plurality-stability/THREE_CELL_SAME_LABEL_VARIANCE_PENALTY.md)
+
+**Exact scope:** For every d>=2, every ordinary measurable balanced Gaussian three-cell partition A and every0<rho<=61/100, S_rho(A)<=S_rho(T), equivalently Qtilde_rho(1_A-1_T)<=2L_rho(A;T). On[29/50,61/100] equality determines a regular simplex up to rotations, labels and null sets. The independent new directed cover uses only the smaller17*pi*rho*(1-rho^2)/1000 angular variance reserve:40 accepted full rational slabs, corrected norm<1999/1000, including tilted-mean leakage and both infinite tails. Earlier sharp scalar comparison supplies rho<=29/50. This is an independent linear reserve proof, not a claim to exceed the stronger parallel bootstrap interval; all-rho comparison remains open.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Internal directed verification only. The pure angular constant uses convexity and two exact rational anchors, not parameter sampling. The independent contiguous radial cover passes on all40 accepted slabs; fourteen Gaussian moments supply an analytic calibration and the false1/5 pure constant is rejected.
+
+### PIS-ALL-CELL-YOUNG-PREFIX-TRANSPORT-POSITIVITY
+
+[Ordered Young prefixes are preserved by cumulative adjacent transports](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md)
+
+**Exact scope:** In every orthogonal S_k irrep in a Young basis with positive admissible generator entries, let c_i,i3..k, be a G0=S_{3,...,k} standard family in Vminus, with sum_i c_i=0 and v_s=sum_(i3..s+2)c_i entrywise nonnegative, s1..q-1,q=k-2. For T_l=2*Pminus*R((2l))*Pminus and B_r=sum_(l3..r+2)(I-T_l), one has B_r*v_s>=0 for every r1..q and s1..q-1. The proof uses B_r=(r-1)I-Z_(r+2)+Y_r and diagonal initial-shape content. For r<=s the only supported shapes give coefficients0,r+2. For s<=r the coefficients on the Pieri list (r+1,1),(r,2),(r,1,1),(r-1,2,1),(r-1,1,1,1) are -r,0,2,r+1,r+4; invalid shapes are omitted. The negative standard-shape term cancels exactly against s*v_r because v_s=(s/r)*v_r there. Consequently sum_l alpha_l*(I-T_l)*U>=0 for every ordered nonnegative alpha_i and every U in the cone of the v_s. This is a representation-theoretic cone statement; a Gaussian spectral gap requires a suitable positive field and residual separately.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal written proof with bounded exact rational Young controls only. Every prefix pair is checked in the finite k5..k8 models, but the unrestricted support, content and Gaussian operator arguments are written proofs. No finite-cell extrapolation, independent replay, external review or formal verification is asserted.
+
+### PIS-ALL-CELL-MIXED-ALL-CORRELATION-GAP
+
+[The complete mixed (k-3,2,1) family has an all-correlation gap](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md)
+
+**Exact scope:** For every k>=5, d>=k-1 and rho in(0,1), the entire V_(k-3,2,1) cylindrical Gaussian simplex interface isotypic block has no kernel and a positive L2 gap kappa_(k,rho)>0 independent of d. It includes all multiplicities, not only polynomial speeds. In the orthonormal positive Young basis, c3=Sym_{4,...,k}*ones is a nonzero seed supported positively on initial shape(2,1), and c_i=R((3i))*c3 forms a G0 standard family. Its prefixes are nonnegative and cover every minus coordinate: use the prefix ending immediately before the tableau box(2,2). Thus W(x)=sum_i c_i*x_i is strictly positive on the ordered chamber, with L*p0=0 and T_i*c_i=c_i. Applying L to the rotation identity gives the exact residual sum_l int M_l*[(I-T_l)*L*y+2*c_l*(y2-y_l)]. Conditional Gaussian integration at a common top coordinate u makes it a positive scalar times [sum_l f_l*(I-T_l)*L(m-f)+2*(u+f0)*L*f]/f0, where f_l=lambda(u-m_l), lambda=phi/Phi. Both f_l and the truncated means m_l-f_l are strictly ordered; the Young prefix lemma makes the first sum nonnegative and the second term strictly positive. The normalized compact nonnegative folded kernel has norm theta<1, giving gap ell/sigma*(1-theta)>0. Unused Hermite degrees multiply its interaction by rho^r. This supplies a uniform proof for the whole mixed family, recovering the separate five- and six-cell certificates. The standard and remaining other nonhook higher-row blocks are still open for general higher cell counts.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal written proof with bounded exact rational Young controls only. Every prefix pair is checked in the finite k5..k8 models, but the unrestricted support, content and Gaussian operator arguments are written proofs. No finite-cell extrapolation, independent replay, external review or formal verification is asserted.
+
+### PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-2589-4000
+
+[Unrestricted balanced three-cell Gaussian simplex inequality through 2589/4000](plurality-stability/THREE_CELL_PROJECTED_TRIAL_EXTENSION.md)
+
+**Exact scope:** For every d>=2 and 0<rho<=2589/4000, the simplex is optimal among ordinary balanced measurable Gaussian three-cell partitions. On [513/800,2589/4000] equality determines the simplex. Projection and forced trial orthogonality limit the amplitude, and the maximum of two residual Taylor bounds controls all feasible profiles.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Full directed 24-slab internal replay passed; the analytic and interval implications were internally audited.
+
+### PIS-THREE-CANDIDATE-DISCRETE-THROUGH-2589-4000
+
+[Balanced low-influence three-candidate Plurality Is Stablest through 2589/4000](plurality-stability/THREE_CELL_PROJECTED_TRIAL_EXTENSION.md)
+
+**Exact scope:** For fixed 0<rho<=2589/4000 and epsilon>0, degree and influence thresholds independent of electorate size bound the stability of every balanced simplex-valued ternary rule by the limiting plurality stability plus epsilon. The noise retains symbols with probability rho and otherwise resamples uniformly.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Written proof and internal audit.
+
+### PIS-THREE-CELL-HIGH-STABILITY-CIRCULAR-PURITY-FLOOR
+
+[Circular mixing floors for profiles reaching simplex stability](plurality-stability/THREE_CELL_PURITY_OF_HIGH_STABILITY.md)
+
+**Exact scope:** For rho in [63/100,17/25], any balanced ordinary planar three-cell partition reaching simplex stability has circular mixing mass above 119/500 under the ordinary radial law and above 11/80 under the first tilted radial law.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
+
+**Verification limits:** Written proof and internal audit.
+
+### PIS-THREE-CELL-MIXED-PAIR-POSITIVE-TAYLOR-RESERVE
+
+[Positive Taylor reserve for mixed pairs of circular profiles](plurality-stability/THREE_CELL_PURITY_OF_HIGH_STABILITY.md)
+
+**Exact scope:** For every positive angular parameter, the mixed positive-coordinate product gives the extra Taylor lower bound PH10 when the largest coordinate of p+q is at least one. PH11 gives a uniform extension to a largest coordinate of at least 199/200.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale); SRC-PIS-THREE-CELL-DIRECT-POLAR-DEFICIT (stale).
+
+**Verification limits:** Written proof and internal audit.
+
+### PIS-THREE-CELL-STATIONARY-STABLE-EXACT-ANGULAR-SATURATION-RIGIDITY
+
+[Exact angular saturation forces the simplex in the volume-stable stationary class](plurality-stability/THREE_CELL_EXACT_ANGULAR_SATURATION_RIGIDITY.md)
+
+**Exact scope:** For every positive correlation, a balanced ordinary planar partition satisfying the strict adjusted-score winner rule, the stated regular-interface hypotheses and constrained volume stability is a regular simplex if it attains the exact circular pairing maximum for almost every pair of radii.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal audit.
+
+### PIS-THREE-CELL-CENTERED-EQUAL-PRICE-RADIAL-CONSTRAINTS
+
+[Two radial balance constraints at a centered equal-price junction](plurality-stability/THREE_CELL_EXACT_ANGULAR_SATURATION_RIGIDITY.md)
+
+**Exact scope:** At a genuine triple junction at the origin with equal label prices, every ordinary radial deviation has zero mean both under the physical radial law and the Gaussian law tilted to the conditional variance. Every nonzero coordinate deviation has at least two radial sign changes and no degree-zero feature in the positive radial kernel series.
+
+**Authored state:** proved. **Graph state:** stale. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-11-25 (stale); PROOF-PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-21-50 (stale); EXT-PIS-HEILMAN-POSITIVE-ARC-REDUCTION-ALL-PARAMETERS (stale); SRC-PIS-THREE-CELL-POSITIVE-EXTENSION-DIRECTED-CERTIFICATE (stale); SRC-PIS-THREE-CELL-POSITIVE-SPECTRAL-DIRECTED-CERTIFICATE (stale); PROOF-PIS-THREE-CELL-EXPLICIT-ANGULAR-MOMENT-COMPATIBILITY (stale); SRC-PIS-CLOSING-MOMENT-EXPLICIT-GRAM-BOUND (stale); SRC-PIS-THREE-CELL-HALF-RADIAL-WITNESS-CERTIFICATE (stale); SRC-PIS-MEASURE-DEPENDENT-ARC-SECANT-ALGEBRA (stale).
+
+**Verification limits:** Written proof and internal audit.
+
+### PIS-REFLECTION-CHAMBER-JACOBIAN-COMPARISON
+
+[Weighted diffusion contraction for every finite real reflection group character](plurality-stability/REFLECTION_CHAMBER_DIFFUSION_COMPARISON.md)
+
+**Exact scope:** For a W-equivariant additive-noise diffusion on R^n with symmetric drift derivative bounded above by −K_t, each sign character gives a positive folded Jacobian-weighted endpoint measure. The moment of its harmonic product of selected reflecting linear forms contracts by exp(−integral of tr K_t plus the sum of normal quadratic values over selected mirrors). In the scalar case the exponent is n plus the number of selected mirrors.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal mathematical audit of reflection at the first selected wall and comparison for time-dependent equivariant drift.
+
+### PIS-REFLECTION-CHAMBER-SHARP-GAUSSIAN-TILT
+
+[Sharp anisotropic Gaussian tilt contraction in a reflection chamber](plurality-stability/REFLECTION_CHAMBER_DIFFUSION_COMPARISON.md)
+
+**Exact scope:** For W-invariant Gaussian endpoint tilts e^(−V), assume K commutes with W, I+K is positive definite, and V−x^TKx/2 is extended convex with full-dimensional domain. The character-weighted discriminant moment contracts by exactly the sharp factor det(I+K)^(-1) times the product (1+lambda_H)^(-1) over selected mirrors. Equality occurs only for the prescribed quadratic curvature with a W-invariant affine term, up to null sets.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Prékopa Theorem 6 checked against the Gaussian completion of squares; internal audit of sharpness, endpoint limits and equality rigidity.
+
+### PIS-REFLECTION-CHAMBER-RADIAL-TAIL-DOMINATION
+
+[Gaussian radial tail and moment comparison for weighted reflection chambers](plurality-stability/REFLECTION_CHAMBER_DIFFUSION_COMPARISON.md)
+
+**Exact scope:** Under scalar drift contraction kappa_t, the discriminant-weighted measure of every increasing function of squared radius in the moving subspace is bounded by a linear-drift Gaussian comparator in dimension dim Fix(W)^perp plus twice the selected mirror count. Applies to all radial upper tails and even moments. For unit-time Gaussian endpoint tilt under scalar curvature kappa>-1, the endpoint comparator has scale q=(1+kappa)^(-1) and variance q, with the same mass factor q^(n+N).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal audit of the effective dimension, monotone radial heat test and affine equality.
+
+### PIS-GAUSSIAN-TILT-ORDERED-AND-SIGNED-MOMENT-DETERMINANTS
+
+[Sharp ordered and signed Gaussian moment determinant comparisons](plurality-stability/REFLECTION_CHAMBER_DIFFUSION_COMPARISON.md)
+
+**Exact scope:** For a common one-dimensional Gaussian endpoint tilt with curvature lower bound kappa>-1, the kernel −partial_x F_x(y) is totally nonnegative in ordered coordinates. Normalized moment derivative determinants for S_n have factor q^(n(n+1)/2) times the Vandermonde. Even tilts give signed-permutation determinants of even and odd moment derivatives with exact factors q^(n(n+1)) and q^(n^2), respectively. Quadratic tilts attain the bounds.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal audit of ordered signs, moment normalization, and parity. The positive derivative density follows from the flow and conditioning, including hard convex truncation.
+
+### PIS-GAUSSIAN-WINDOW-TWO-BOUNDARY-MOMENT-DETERMINANTS
+
+[Sharp two-boundary derivative determinant for finite Gaussian tilt windows](plurality-stability/REFLECTION_CHAMBER_DIFFUSION_COMPARISON.md)
+
+**Exact scope:** For a common Gaussian tilt on a finite interval, both boundary columns and r consecutive moment derivative columns admit a sharp ordered determinant cap r! B_b(x_1) B_a(x_p) q^(r(r+1)/2) Delta(x_2,...,x_(p-1)), p=r+2. The boundary columns are computed from endpoint limits divided by unnormalized tilt tail mass. Works when the tilt vanishes at its endpoints. The coefficient is sharp over finite windows.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal audit of the two boundary normalizations, orientation and sharp finite-window sequence.
+
+### PIS-ALL-CELL-SIGN-SECTOR-NEAR-ONE-SPECTRUM
+
+[The Gaussian Dirichlet spectrum governs the sign sector near correlation one](plurality-stability/NONSTANDARD_SECTOR_NEAR_ONE.md)
+
+**Exact scope:** For each fixed k>=3 and ambient N>=k-1, each fixed normalized sign-sector level converges near rho=1 to the Gaussian Dirichlet spectrum on the ordered reference facet, shifted by minus one and augmented by unused-coordinate Hermite degrees. For k>=4 the active levels are beta_j^D+2m−1, with beta_j^D from the ordered spherical Dirichlet problem. In k=4 the angular exponents are j*pi/arctan(sqrt(2)); in k=3 the active normalized levels are 0,2,4,... . Fixed-index levels are discrete near one.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Independently audited internally for the determinant normalization, adjacent boundary comparison, sharp gradient limit and ambient tensor degrees.
+
+### PIS-ALL-CELL-TWO-ROW-NEAR-ONE-SPECTRUM
+
+[Near-one equivariant Neumann spectra for every nonstandard two-row block](plurality-stability/NONSTANDARD_SECTOR_NEAR_ONE.md)
+
+**Exact scope:** For k>=4, 2<=p<=floor(k/2), shape (k-p,p) has near-one fixed-index normalized levels converging to beta_j+2m−1 on the active equivariant Gaussian Neumann facet, plus unused Hermite degrees in the cylinder. In the ordered facet the negative sorting-wall trace components have Dirichlet conditions and the other components have Neumann conditions. For k=4 shape (2,2), the active angular exponents are (j+1/2)*pi/arctan(sqrt(2)).
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal audit of vertical two-strip branching, exact scalar identity on the full fiber, restriction to equivariant tests and unused-coordinate min–max.
+
+### PIS-ALL-CELL-NEAR-ONE-FIXED-FIELD-JUNCTION-PENALTY
+
+[Exact leading triple-sign wall penalty for fixed simplex interface fields](plurality-stability/NONSTANDARD_SECTOR_NEAR_ONE.md)
+
+**Exact scope:** For each k>=3 and each fixed smooth compactly supported equivariant simplex facet field, the normalized form times sigma converges near rho=1 to 1/sqrt(3) times the sum of squared triple-sign traces on the top-tie walls with their Gaussian measures. If those traces all vanish, the normalized form converges to the Gaussian gradient form minus the squared norm. The statement is for fixed tests in every symmetry type.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internal check of the bivariate half-quadrant integral, ambient normalization and O(sigma^3) vanishing trace bound.
+
+### PIS-SIX-CELL-222-CUBIC-CONDITIONAL-SUPERSOLUTION-OBSTRUCTION
+
+[The direct positive cubic conditional comparison fails for six-cell shape (2,2,2)](plurality-stability/NONHOOK_CUBIC_CONDITIONAL_OBSTRUCTION.md)
+
+**Exact scope:** For the unique up to scale positive equivariant polynomial field of degree at most three in the (2,2,2) minus space, the unit-variance conditional row residual at untied means (-1,-2,-3,-4), after positive rescaling, tends to (-42,-36,36) as the common cutoff tends to infinity in the actual positive Young basis. Thus the literal cutoff-by-cutoff extension of the hook comparison is false. A separate integration-by-parts identity gives the integrated comparison, whose sign and spectral consequence remain open.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Internally reviewed; an exact rational replay reproduces the Young intertwiner and the limiting residual. The proof is in the displayed matrices and analytic limit.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
@@ -6118,6 +6636,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | EXT-OAKU-WHOLE-INTEGRATION | claim | proved / partial | For a holonomic Weyl left ideal, the full top integration module is presented over the retained Weyl algebra by residue classes of all spatial monomials of degree at most the maximal integer integration b-root and their adapted-basis relations. A root-free b-function gives the zero module. | [moments/vanishing/WHOLE_GAUSSIAN_SOURCE_HOM_AND_EFFECTIVE_CUTOFFS.md](moments/vanishing/WHOLE_GAUSSIAN_SOURCE_HOM_AND_EFFECTIVE_CUTOFFS.md): Section2: Oaku2013 physical pp14-15 before Definition4, Algorithm3 step5; [foundations/extended-geometry/sources/oaku_holonomic_integration_2013.pdf](foundations/extended-geometry/sources/oaku_holonomic_integration_2013.pdf): Physicalp14 whole module before Definition4; p15Algorithm3step5 extracts cyclic ideal later |
 | EXT-PAKOVICH-RATIONAL-DOUBLE-MOMENT-COMPOSITION | claim | proved / partial | Pakovich arXiv0910.2105v1 Section5 Theorem5.1: for rational P,Q overC, rationality of degP consecutive generating functions for curve double moments produces common right factors with a closed transformed curve and pole-side condition. Theorem5.2 treats all sufficiently large double indices. This is a METHOD antecedent with different hypotheses, not a premise or direct instance of the two-marker phase classification. | [foundations/extended-geometry/sources/pakovich_rational_moments_0910_2105v1.pdf](foundations/extended-geometry/sources/pakovich_rational_moments_0910_2105v1.pdf): Actual v1 Section5 Theorems5.1--5.2 printedpp21--22 and adjacent proofs |
 | EXT-PIS-ACH-STRICT-SPHERICAL-NEUMANN-GAP | claim | proved / partial | Andrews–Clutterbuck–Hauer (2020), Theorem 9.1 pp. 296–297: for convex open A in S^(n-1), n>=3, first nonconstant spherical Neumann eigenvalue is at least n-1. Equality is equivalent to the cone having a linear factor. The near-one proof uses the strict consequence on the pointed simplex facet. | [plurality-stability/sources/andrews-clutterbuck-hauer-robin-ground-state-2020.pdf](plurality-stability/sources/andrews-clutterbuck-hauer-robin-ground-state-2020.pdf): Theorem 9.1, printed pp. 296–297; cone equality condition |
+| EXT-PIS-EDELEN-LI-NONOBTUSE-SPHERICAL-NEUMANN | claim | proved / partial | Edelen–Li, arXiv:2608.17194v1, Corollary 1.3. For a non-obtuse spherical simplicial domain in S^q, the first positive Neumann eigenvalue is at least 2(q+1). Equality requires the restriction of a homogeneous harmonic quadratic from R^(q+1). | [plurality-stability/sources/edelen-li-2608.17194v1.pdf](plurality-stability/sources/edelen-li-2608.17194v1.pdf): Corollary 1.3 on p. 3, Definition 1.1, Theorem 1.2 and the proof of Theorem 2.1, including its harmonic quadratic equality case |
 | EXT-PIS-GAUSSIAN-NOISE-SECOND-VARIATION | claim | proved / partial | Heilman arXiv:2209.11216v1, Lemma4.5: the second variation of a multicell noise-stability functional is the double boundary interaction plus the gradient local term and the score-difference acceleration/density term. Applied only to smooth vector fields supported compactly in interiors of tetrahedral facets, where interfaces are smooth. At the tetrahedron, reflection makes the score differences zero on the interfaces, so the acceleration term vanishes. The general formula is used; no assumption of simplex maximality or hyperstability is imported. | [plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md](plurality-stability/MAXIMIZER_PERTURBATIVE_RIGIDITY.md): Closest inspected primary results, general second-variation audit; A uniform full-noise interface gap, K1 and its derivation |
 | EXT-PIS-HEILMAN-BALANCED-PERIMETER-DEFICIT | claim | proved / partial | Published Theorems1.5--1.6 of Stable Gaussian minimal bubbles (2026), at equal masses and w=0: given the balanced first-moment maximization endpoint, the printed surface functional deficit is at least epsilon_k*(F_k-W_1(A)), with epsilon_4=1/400 and a positive dimension-independent existential epsilon_k for k>=5. This imported implication is restricted to balanced data; it assumes no unequal-mass resolution. | [plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md](plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md): Consequences for previous four-cell obligations, Heilman balanced specialization |
 | EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION | claim | proved / partial | Heilman--Tarter, Forum Math Sigma9 e65 (2021), Lemma2.3 and Theorem1.9: for fixed0<rho<1 and positive cell masses maximizers exist; if d>=k-1, a k-cell maximizer is cylindrical over R^(k-1) after rotation and null changes. In particular four-cell maximizers in d>=3 reduce to three dimensions. This is not a reduction of arbitrary individual competitors. | [plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md](plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md): Localization and the remaining full-kernel theorem, Heilman--Tarter application |
@@ -6133,7 +6652,6 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | EXT-TSAI-WALTHER-POLYNOMIAL-HOM | claim | proved / partial | Algorithm 3.3 computes the space of polynomial solutions of a finitely presented holonomic Weyl module over a computable subfield of the complex numbers, equivalently its Hom into the polynomial representation. | [moments/vanishing/GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md](moments/vanishing/GAUSSIAN_FORMAL_COMPLETION_AND_POLYNOMIAL_HOM.md): Section3: math/0007139v1 Sections1-3 Algorithm3.3; [foundations/extended-geometry/sources/tsai_walther_hom_0007139v1.pdf](foundations/extended-geometry/sources/tsai_walther_hom_0007139v1.pdf): Computable subfield of C, Introduction; Section3 Algorithm3.3 full polynomial solutions |
 | GAP-IMAGE-PRACTICAL-PURITY-TELESCOPING-BOUND | gap | open / partial | Develop a certified multivariable telescoping backend and a usable explicit bound on B(d) and B(n,d). Existence and computability are proved; ordinary scalar order and coefficient degrees alone cannot bound delayed formal solutions. The exact two-height class already has an explicit quartic prefix. Classifying safe forms and individual uncovered prime degrees are separate questions. | no pinned source |
 | GAP-PIS-DISTANT-COMPACT-CORE-COERCIVITY | gap | open / partial | For each fixed k>=2 and each positive orbit-distance cutoff eta within the L1 local neighborhood, find R>=2, theta>0 and K>=0 certifying (14) on the compact active-space body of fractional core transfers at the recorded label-change, mass and positive-semidefinite moment tolerances. Require the quantitative absorption condition of (13)-(14). A strict absolute core bound is sufficient. Zhang's qualitative theorem implies existence for large R; the goal is a proof or certified bound independent of that global comparison. | [plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md](plurality-stability/RELATIVE_HERMITE_TAIL_OBSTRUCTION.md): A compact-core test with saturated transfer cost, (12)-(14) |
-| GAP-PIS-HIGHER-HOOK-HARMONIC-SUPERSOLUTION | gap | open / partial | For every k>=7, 4<=p<q=k-2 and z in the ordered facet chamber, prove or refute the coordinatewise unit-variance Gaussian integral inequality S91f for Wp. Scaling is equivalent to S91e at every positive correlation, or to its uniform-in-x pointwise field comparison at one correlation; a spectral gap at one correlation alone is insufficient. The p3 case is now proved for every k by S92, while p2 and p=q are covered by S73 and S63-S66. This remains only a sufficient method for the other exterior hooks, not a necessary condition for S37. No bounded quadrature proves the remaining uniform comparison. | [plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md): S91e-S91f and S92: p3 resolved; remaining sufficient comparisons have 4<=p<q |
 | GAUSSIAN-ANGULAR-MOMENT-OPERATOR-SQUARE-ROOT-DISPLACEMENT | claim | proved / complete | For the normalized even angular moments of W(1+sqrt(s)Z+Z^2)*product Yi^ki, a common-vector bounded self-adjoint realization has displacement at most 4*sqrt(s)+s from s=0. Every such realization has displacement at least 3*sqrt(s)/(32*e) for 0<s<=1/4. The Holder exponent 1/2 is sharp. | [moments/vanishing/GAUSSIAN_ANGULAR_MOMENT_OPERATOR_DISPLACEMENT.md](moments/vanishing/GAUSSIAN_ANGULAR_MOMENT_OPERATOR_DISPLACEMENT.md): Equations (1)–(3), arcsine multiplication upper bound and common-vector telescoping lower bound |
 | GAUSSIAN-ANGULAR-MONOMIAL-EXACT-CONVERGENT-CORE | claim | proved / complete | For all c in C[Z] and positive integer powers of independent ordinary Gaussians, the actual polynomial-time and generic convergent cores of W*c(Z)*product Yi^ki+a0 are exp(a0*t)C[t] and exp(a0*t)C(t). The largest globally regular actual submodule has rank one for a0=0 and rank zero otherwise. | [moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_CONVERGENT_CORE.md](moments/vanishing/GAUSSIAN_MONOMIAL_FIBRE_CONVERGENT_CORE.md): Sections 1 and 2, paritywise algebraicity and Euler denominator clearing |
 | GAUSSIAN-EXCEPTIONAL-WEIGHTED-INITIAL-CI | claim | proved / complete | On the rational chart at W+ZY-Z^3/2, eliminate the first ten moments using their invertible pivot matrix. In the remaining coordinates of weights (3,2,1,3,2,4), the next six moments have respective initial weights 11 through 16 with common zero only at the origin. The exact characteristic-32003 chart proofs lift by homogeneous Macaulay ranks. | [moments/vanishing/GAUSSIAN_EXCEPTIONAL_SIXTEEN_MOMENTS.md](moments/vanishing/GAUSSIAN_EXCEPTIONAL_SIXTEEN_MOMENTS.md): A transverse chart and six formal parameters; weighted initial forms and their certificate; [moments/vanishing/verify_gaussian_exceptional_sixteen_moments.py](moments/vanishing/verify_gaussian_exceptional_sixteen_moments.py): weighted_initials and verify_charts; [moments/vanishing/gaussian_exceptional_sixteen_moment_certificate.json.gz](moments/vanishing/gaussian_exceptional_sixteen_moment_certificate.json.gz): c_zero, five finite-field power identities; [moments/vanishing/gaussian_exceptional_sixteen_moment_verification.json](moments/vanishing/gaussian_exceptional_sixteen_moment_verification.json): rational Jacobian, weights and exact modular checks |
@@ -8193,6 +8711,7 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 | OBN-EXACT-COORDINATE-PURITY-EVALUATION-SAFETY-IFF | claim | proved / partial | GIVENnormalizedleftG-invariantLambda and2<=p<n, forEVERYfink[C,Delta]: pureallorders IFFf(eN)0 IFFallambientO(X)markerssafeeventually. RestrictedsubalgebraresultONLY; no globalMathieupropertyor counterexampleassertion. | [foundations/extended-geometry/ORTHOGONAL_BLOCK_NORMALIZERS_SPHERICAL_BOUNDARY_AND_SAFE_COORDINATES.md](foundations/extended-geometry/ORTHOGONAL_BLOCK_NORMALIZERS_SPHERICAL_BOUNDARY_AND_SAFE_COORDINATES.md): Theorem3;Section5,(7) |
 | OBN-SPHERICAL-IMPLIES-BOUNDARY-PROPOSITION | claim | proved / partial | For1<=p<=n,n>=2, IFactualXsphericalTHENp1ORpn, bycontrapositiveofprovedproperblockobstruction. This is a conditional direction theorem, not a seeded sphericalpredicate. | [foundations/extended-geometry/ORTHOGONAL_BLOCK_NORMALIZERS_SPHERICAL_BOUNDARY_AND_SAFE_COORDINATES.md](foundations/extended-geometry/ORTHOGONAL_BLOCK_NORMALIZERS_SPHERICAL_BOUNDARY_AND_SAFE_COORDINATES.md): Sections3-4 |
 | PFP-SERRE-ASSUMPTION-IMPLIES-NO-RESIDUAL-PHASE | claim | proved / partial | ONLY the implication: IF every abelian variety has positive-density ordinary primes(Serreconjecture),THEN no eventual residual phase exists. The conjecture is NOT a provedleaf and this does not closeglobal5. No ordinaryfailure-impliespurity converse. | [foundations/extended-geometry/PRIME_FACE_PARAMETER_RIGIDITY.md](foundations/extended-geometry/PRIME_FACE_PARAMETER_RIGIDITY.md): Section6,conjecturalcontext |
+| GAP-PIS-HIGHER-HOOK-HARMONIC-SUPERSOLUTION | gap | proved / partial | For each k>=4, 2<=p<=k-2 and ordered facet point, the coordinatewise unit-variance Gaussian comparison S91f holds, strictly in the interior. The previously open intermediate degrees 4<=p<k-2 follow from the derivative determinant comparison in EH2–EH7. The scaling in S91 yields the corresponding all-correlation positive-field comparison. | [plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md](plurality-stability/SIMPLEX_INTERFACE_SYMMETRY.md): S91e–S91f and S92a: exact scaling and conditional wedge identity; [plurality-stability/ALL_EXTERIOR_HOOK_GAPS.md](plurality-stability/ALL_EXTERIOR_HOOK_GAPS.md): EH1: all-degree comparison and gap |
 | PIS-NEGATIVE-VOTING-EXPLICIT-COVARIANCE-CONSTANTS | claim | proved / partial | With k>=ceil(exp(1000)), max Q_ii<=2000/k, and max_i\|kp_i-1\|<=exp(-50), the comparison (VC1) holds with coercivity c=exp(-1201) and quadratic mass-error prefactor C=exp(1500). The prefactor multiplies (log k)^2. | [plurality-stability/NEGATIVE_VOTING_COVARIANCE.md](plurality-stability/NEGATIVE_VOTING_COVARIANCE.md): VC9: explicit early path, slope and absorption constants |
 | PBN-PRIME-EXISTENCE-QUALIFICATION-IFF | claim | proved / partial | For EACH fixed n/prime p, actual balanced-degree-p Image counterexample existence iff existence with absolute scalar-nonpower. Primitivity is imposed on BOTH sides or on NEITHER. This universal qualification proposition supplies no phase, marker or formula. | [foundations/extended-geometry/PRIME_BALANCED_IMAGE_FAILURES_ARE_ABSOLUTELY_NONPOWER.md](foundations/extended-geometry/PRIME_BALANCED_IMAGE_FAILURES_ARE_ABSOLUTELY_NONPOWER.md): Section7, both qualification theorem-proposition directions |
 | PWC-EVERY-STANDARD-Q-RATIONAL-COWEIGHT-ALL-FIELD-PAIR | claim | proved / partial | For EVERY simple type/nonzero rational coweight in prescribed compact ChevalleyQmodel, finite Weyl-productf gives F=p^D(1+t^Dp),H=t^-D on EVERYchar0basechange. All pure moments0, same marked moments rational nonzero EVERYorder, F absolute unit-nonpower/radially primitive. No arbitrary forms. | [foundations/extended-geometry/PIECEWISE_DENSITY_AND_COMPACT_COADJOINT_ALL_ORDER_COUNTEREXAMPLES.md](foundations/extended-geometry/PIECEWISE_DENSITY_AND_COMPACT_COADJOINT_ALL_ORDER_COUNTEREXAMPLES.md): Theorem3;Section10 |
@@ -8764,22 +9283,22 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 - **GAP-PIS-NEARBY-MAXIMIZER-RIGIDITY** (mathematical; proved / discharged): For some eta_*>0 and 0<rho_*<1, every balanced global four-cell maximizer in R^3 with d_4(A)<=eta_* is tetrahedral for every 0<rho<=rho_*. This is now a corollary of the internally proved stronger three-dimensional rigidity theorem, which treats every balanced measurable A with S_rho(A)>=S_rho(T). Independent mathematical review is pending.
 - **VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF** (verification; open): Independently review C3-C12 and the fixed-cell extension A1-A9 in SMALL_POSITIVE_CORRELATION_INTERVAL.md: all-cell interface kernel from M2, tree-bump balance correction, reflection margins, dimension-dependent weighted tails, exact moment gauge, normal-flux limits without junction mass, ell/2 normalization, product-kernel limit, general-k dimension reduction and positive-correlation continuation compactness. Imported first-moment and geometric proofs retain their separate audit limits. The current proof is internal, not independent mathematical or external review. Also audit POSITIVE_CORRELATION_CONTINUATION.md B2-B14: the strict Gaussian exponent window, Hilbert-Schmidt full interaction, rotational mixed nullity, variable facet coefficient and sharp half factor, weak product-kernel convergence, uniform conditional local growth and the refined first-transition alternative. B10 remains a hypothesis outside the small-correlation interval.
 - **GAP-PIS-ALL-CELL-POSITIVE-CORRELATION** (mathematical; open): For every k>=2, d>=k-1 and every 0<rho<1 prove that the balanced regular-simplex Gaussian partition globally maximizes noise stability, with equality rigidity. The fixed-k small-correlation interval is now proved internally under the accepted first-moment input. The full correlation range remains open here. At a finite first continuation endpoint, rule out a nonsimplex tied global maximizer and improving maximizers approaching the simplex orbit. Local stability does not exclude the first mechanism, and the pointwise perimeter limit does not by itself control moving maximizers. The continuation obstruction is now sharpened: at a finite first endpoint there is a nonsimplex tied global maximizer or an additional nonrotational interface zero mode. Under B10, the uniform nearby comparison B11 already handles all measurable changes.
-- **GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL** (mathematical; open): For every fixed k>=2 and every 0<rho<1, establish or refute nonnegativity of the full Gaussian simplex interface form on balanced L2 facet speeds with exactly the geometric rotational kernel. The assertion is proved with dimension-independent gaps for k=3,4,5 at every positive correlation, and is vacuous in the active k=2 space. The four- and five-cell proofs use reflection-chamber comparisons and initial spectral certificates. For k>=6 S83 proves the full form on the explicit initial interval rho<=1/(6*sqrt(3)*k*(k-1)); the standard sector is also proved near one at every fixed k, with the remaining higher-cell blocks still to be controlled. A positive spectral answer still does not rule out a nonsimplex tied global maximizer.
+- **GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL** (mathematical; open): For every fixed k>=2 and 0<rho<1, establish nonnegativity of the full Gaussian simplex interface form on balanced L2 facet speeds with exactly the geometric rotational kernel. For k=3,4,5 the all-correlation gaps are proved, and k=2 is settled by its separate interface argument. For k>=6 the full gap holds through p_k/(2-p_k), where p_k is the Gaussian facet probability. The standard sector has exact normalized limiting gap one near rho=1. Every higher exterior hook, every nonstandard two-row block, and the complete mixed (k-3,2,1) family are controlled at every positive correlation. The remaining standard and nonhook estimates still need proof.
 - **GAP-PIS-THREE-CELL-STANDARD-ALL-CORRELATION** (mathematical; proved / discharged): For every 0<rho<1, S23 holds strictly for every nonzero h in L2(nu) with zero unweighted nu-mean. S34 proves the upper-correlation range rho>1/3; S29 and the elementary G(1/2)<9/16 bound prove the overlapping range rho<=1/2. The full three-cell interface gap now holds for every positive correlation; global ties remain separate.
 - **GAP-PIS-STATIONARY-STABLE-CLASSIFICATION** (mathematical; open): For fixed k>=3 and 0<rho<1, determine whether every balanced stationary partition with nonpositive second variation under all mass-preserving smooth deformations must be simplicial. Specify and justify the admissible regularity and junction hypotheses; prove the regular/equal-mass structure rather than assuming it. Ordinary stationarity and second-variation stability are the target, without importing hyperstability as an unstated extra condition.
 - **GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER** (mathematical; open): For every fixed k>=3 and 0<rho<1 at which the balanced regular simplex is globally optimal, exclude an ordinary balanced nonsimplex partition with the same Gaussian noise stability. In particular rule out this alternative at the endpoint of the initial global optimality interval. A strictly positive simplex interface Hessian only supplies a local exclusion and does not prove this global rigidity.
 - **GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX** (mathematical; open): Determine whether an actual balanced planar three-cell global maximizer at 0<rho<1 can have a positive-area bounded component outside the closure of one strict winner set. The component may contain one or both other labels. The third-negative-direction argument excludes centered disks and some translated circles, with an exclusion also for thin annular trapping. Size, exterior-interaction and angular restrictions leave the unrestricted geometry open.
 - **GAP-PIS-NEAR-ONE-EXACT-OPTIMALITY** (mathematical; open): For every fixed k>=3 prove or refute existence of epsilon_k>0 such that all balanced Gaussian partitions in d>=k-1 have stability at most the regular simplex for 1-epsilon_k<rho<1, with equality rigidity. Quantitative multi-bubble stability must be paired with nonlocal errors relative to moving competitors; the fixed-partition perimeter limit and fixed-b<1 exterior estimates do not settle this statement. CT12 proves strict comparison away from higher junctions for any fixed cell count and a necessary relative junction-loss bound for unrestricted ties or improvers. CT14–CT18 also treat triple junctions with fourth-score separation at the same radius scale and bound the necessary inner loss linearly in d_R. For k=4, arbitrary exterior-only changes beyond order (1-rho)^(-1/6) are excluded. CT19–CT20 give exponential fourth-score localization for actual maximizers, reducing the tetrahedral sign to polynomial-strength coercivity on a growing ball. BC1–BC9 prove a relative comparison for arbitrary block choice with ordered labels inside each block, on balls of order e sqrt(log(1/e)) in physical space. In tetrahedral 2+2 splits reflected pairs also qualify. The unrestricted CT19 core obligation remains.
 - **GAP-PIS-NORMALIZED-DEFICIT-MONOTONICITY** (mathematical; falsified): The candidate universal law says rho -> (S_rho(T)-S_rho(A))/arccos(rho) is nondecreasing on (0,1) for every fixed balanced finite-Gaussian-perimeter k-cell partition A in d>=k-1. FALSIFIED already for k=3,d=2 by the three slabs D5: D9 gives c+beta3*acos(rho)+O(acos(rho)^2), above its limit c near one. This falsifies this precise candidate, not every normalized law or simplex optimality.
-- **GAP-PIS-THREE-CELL-DIRECT-GLOBAL-INEQUALITY** (mathematical; open): For every d>=2, every0<rho<1 and every ordinary balanced Gaussian three-cell partition A, prove Qtilde_rho(1_A-1_T)<=2L_rho(A;T). This is global three-cell Gaussian simplex optimality. The current explicit unrestricted direct comparison is0<rho<=53/100 by GH1-GH10, adopted in DG20. Its sharper all-mass arc envelope and positive radial feature certificate replace the older scalar cutoff; the full all-positive-correlation target remains open. The original finite-amplitude comparison begins with the interval 0<rho<=221/500: DG17/FA1-FA7 certify a global finite-amplitude radial/angular comparison on[11/25,221/500], extending DG10 and DG4. Equal circular masses are settled at every positive correlation. The separate near-one result proves a qualitative interval adjacent to1, but no certified overlap closing the intermediate range is established. In the polar route the exact remaining comparison is R_rho<=D_rho+C_rho. DG5 excludes the scalar all-rho sufficient estimate at1/2. DG6-DG9 retain closure and exact arc interactions and prove restricted profile comparisons, but their sufficient all-profile criteria fail at explicit certified profiles. The complete all-positive-correlation target remains open. The adopted joint-angular theorem now proves the comparison whenever the squared circular-mass deviation is small on a fixed annulus, uniformly on any compact positive correlation interval, with arbitrary angular shapes and arbitrary inner and outer profiles. DG11 combines it with the direct lower and qualitative near-one intervals: any strict failure in any dimension has a planar global maximizer with a definite annular discrepancy in one fixed intermediate correlation range. Excluding those separated profiles remains open. DG12 adds an exact all-reflection cut condition preserving every circular mass. It proves a monotone sorting step for at most two pair types, and falsifies the universal type-constant step with all three types by an explicit balanced construction; it does not close the global inequality. DG13 shows that any nonsimplex actual maximizer must exhibit all three reflected pair types for some reflection. Combined with annular localization and a proved strong compactness argument, every strict failure has a planar maximizing representative detected by a finite fixed family of reflections with uniformly positive masses of all three types. These necessary witnesses and their positive scalar polarization defect are not yet excluded. DG14 proves that even a single ordinary balanced global partition cannot always be replaced nondecreasingly by consecutive arcs at fixed circular masses, for every fixed positive correlation and even uniformly interior mass profiles. It controls radial self-interactions and all measurable rotations, strengthening the earlier bilinear-pair obstruction. A classification restricted to actual global maximizers is not falsified. The current direct lower interval is qualitatively stronger than the explicit11/25 cutoff: ST1-ST6, adopted in DG15, prove comparison for all0<rho<rho_s+epsilon, where11/25<rho_s<1/2 is the first separated scalar obstruction above the certified range and epsilon>0. Strict angular loss of every nonzero scalar null profile and annular coercivity cross that obstruction directly. That qualitative argument alone supplies no numerical endpoint or overlap with the near-one interval. RMA1-RMA4 now isolate a uniformly finite adverse scalar radial space at every compact positive correlation interval, including above1/2. Polynomial angular moment losses give a stronger global upper bound. Some finite angular order dominates the complete radial quadratic space on each compact interval; ordertwo explicitly dominates the old positive direction in span{f,g} at99/100. This is directional domination, not the all-feasible-amplitude nonlinear inequality. FA1-FA7 now realize the nonlinear amplitude program on[11/25,221/500]: feasibility bounds the adverse one-mode amplitude below27/1000 and an annular angular penalty absorbs its positive scalar contribution plus the trial residual. This proves the all-partition direct cutoff221/500; the remaining all-correlation nonlinear comparison is still open. GAC1-GAC9 now retain the same first moment slices across radii via an exact global rank-one optimization. A sharp three-type half-mass loss is positive even when every independently optimized pair deficit vanishes, and remains positive under sufficiently small integrated mass errors. GAC10-GAC13 give a global finite-angular-order envelope with an explicit all-amplitude error uniform over all profiles on each compact correlation range. These results strengthen the global comparison but do not establish the missing scalar-versus-angular sign. The projected FA18-FA21 extension now certifies the explicit cutoff 8859/20000, with equality rigidity on the added slab. The remaining all-correlation problem is open. The all-amplitude GH comparison now proves the explicit cutoff 29/50 with equality rigidity on the added interval. FA9–FA10 now certify 0<rho<=447/1000 using projected residuals and radius-weighted angular errors. FA11 supplies a uniform planar score margin and an unevaluated right neighborhood. FA12 retains the first angular deficit in the separate scalar comparison through 53/100 and proves a uniform score margin with a positive unevaluated right neighborhood. The adjoining scalar slab through 107/200 is directed-certified, with the FA12 relative margin continuing beyond this explicit endpoint. TME1-TME11 now give the sharp all-mass first/second energy tradeoff, global two-mode matrix-field certificates and an extra nonnegative shared polynomial loss. A complete cube certificate makes the angular losses outweigh the positive scalar contribution at3/5 for every centered unit label direction and all|epsilon|<=1/40 of the explicit bounded radial profile. TME6 proves that exact sharing of first moments alone cannot fix DG39 on its equal-pair99/100 witness. The full finite-space/all-amplitude domination remains open. FA13 extends the relative score margin through the independent sharp scalar cutoff 29/50 and yields a positive unevaluated right neighborhood. The sharp quartic finite-amplitude extension reaches 3/5, with equality rigidity on the new interval. SV1–SV5 use the same-label sharp Taylor slack to improve the exact centered linear scalar norm. Full directed covers give 0<rho<=623/1000 and the retained angular reserve continues the result to an unevaluated right neighborhood.
-- **GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL** (mathematical; open): For every 0<rho<1 and d>=2 prove global simplex Gaussian optimality for measurable partitions of masses 1/3 with equality rigidity, then obtain the balanced low-influence discrete plurality corollary. A first global endpoint must exceed the implicit proved lower cutoff above 11/25 and, if below one, must have a nonsimplex tied global maximizer. The projected FA18-FA21 extension now certifies the explicit cutoff 8859/20000, with equality rigidity on the added slab. The remaining all-correlation problem is open. The current explicit global lower-correlation interval reaches 3/5.
+- **GAP-PIS-THREE-CELL-DIRECT-GLOBAL-INEQUALITY** (mathematical; open): For every d>=2, every0<rho<1 and every ordinary balanced Gaussian three-cell partition A, prove Qtilde_rho(1_A-1_T)<=2L_rho(A;T). This is global three-cell Gaussian simplex optimality. The independent same-label reserve proof SLV1-SLV8, adopted in DG21, gives0<rho<=61/100; stronger current scalar/feasibility bootstrap intervals are recorded in THREE_CELL_SHARP_VARIANCE_ABSORPTION.md and the registered endpoint results. The full all-positive-correlation target remains open. The original finite-amplitude comparison begins with the interval 0<rho<=221/500: DG17/FA1-FA7 certify a global finite-amplitude radial/angular comparison on[11/25,221/500], extending DG10 and DG4. Equal circular masses are settled at every positive correlation. The separate near-one result proves a qualitative interval adjacent to1, but no certified overlap closing the intermediate range is established. In the polar route the exact remaining comparison is R_rho<=D_rho+C_rho. DG5 excludes the scalar all-rho sufficient estimate at1/2. DG6-DG9 retain closure and exact arc interactions and prove restricted profile comparisons, but their sufficient all-profile criteria fail at explicit certified profiles. The complete all-positive-correlation target remains open. The adopted joint-angular theorem now proves the comparison whenever the squared circular-mass deviation is small on a fixed annulus, uniformly on any compact positive correlation interval, with arbitrary angular shapes and arbitrary inner and outer profiles. DG11 combines it with the direct lower and qualitative near-one intervals: any strict failure in any dimension has a planar global maximizer with a definite annular discrepancy in one fixed intermediate correlation range. Excluding those separated profiles remains open. DG12 adds an exact all-reflection cut condition preserving every circular mass. It proves a monotone sorting step for at most two pair types, and falsifies the universal type-constant step with all three types by an explicit balanced construction; it does not close the global inequality. DG13 shows that any nonsimplex actual maximizer must exhibit all three reflected pair types for some reflection. Combined with annular localization and a proved strong compactness argument, every strict failure has a planar maximizing representative detected by a finite fixed family of reflections with uniformly positive masses of all three types. These necessary witnesses and their positive scalar polarization defect are not yet excluded. DG14 proves that even a single ordinary balanced global partition cannot always be replaced nondecreasingly by consecutive arcs at fixed circular masses, for every fixed positive correlation and even uniformly interior mass profiles. It controls radial self-interactions and all measurable rotations, strengthening the earlier bilinear-pair obstruction. A classification restricted to actual global maximizers is not falsified. The current direct lower interval is qualitatively stronger than the explicit11/25 cutoff: ST1-ST6, adopted in DG15, prove comparison for all0<rho<rho_s+epsilon, where11/25<rho_s<1/2 is the first separated scalar obstruction above the certified range and epsilon>0. Strict angular loss of every nonzero scalar null profile and annular coercivity cross that obstruction directly. That qualitative argument alone supplies no numerical endpoint or overlap with the near-one interval. RMA1-RMA4 now isolate a uniformly finite adverse scalar radial space at every compact positive correlation interval, including above1/2. Polynomial angular moment losses give a stronger global upper bound. Some finite angular order dominates the complete radial quadratic space on each compact interval; ordertwo explicitly dominates the old positive direction in span{f,g} at99/100. This is directional domination, not the all-feasible-amplitude nonlinear inequality. FA1-FA7 now realize the nonlinear amplitude program on[11/25,221/500]: feasibility bounds the adverse one-mode amplitude below27/1000 and an annular angular penalty absorbs its positive scalar contribution plus the trial residual. This proves the all-partition direct cutoff221/500; the remaining all-correlation nonlinear comparison is still open. GAC1-GAC9 now retain the same first moment slices across radii via an exact global rank-one optimization. A sharp three-type half-mass loss is positive even when every independently optimized pair deficit vanishes, and remains positive under sufficiently small integrated mass errors. GAC10-GAC13 give a global finite-angular-order envelope with an explicit all-amplitude error uniform over all profiles on each compact correlation range. These results strengthen the global comparison but do not establish the missing scalar-versus-angular sign. The projected FA18-FA21 extension now certifies the explicit cutoff 8859/20000, with equality rigidity on the added slab. The remaining all-correlation problem is open. The all-amplitude GH comparison now proves the explicit cutoff 29/50 with equality rigidity on the added interval. FA9–FA10 now certify 0<rho<=447/1000 using projected residuals and radius-weighted angular errors. FA11 supplies a uniform planar score margin and an unevaluated right neighborhood. FA12 retains the first angular deficit in the separate scalar comparison through 53/100 and proves a uniform score margin with a positive unevaluated right neighborhood. The adjoining scalar slab through 107/200 is directed-certified, with the FA12 relative margin continuing beyond this explicit endpoint. TME1-TME11 now give the sharp all-mass first/second energy tradeoff, global two-mode matrix-field certificates and an extra nonnegative shared polynomial loss. A complete cube certificate makes the angular losses outweigh the positive scalar contribution at3/5 for every centered unit label direction and all|epsilon|<=1/40 of the explicit bounded radial profile. TME6 proves that exact sharing of first moments alone cannot fix DG39 on its equal-pair99/100 witness. The full finite-space/all-amplitude domination remains open. FA13 extends the relative score margin through the independent sharp scalar cutoff 29/50 and yields a positive unevaluated right neighborhood. The sharp quartic finite-amplitude extension reaches 3/5, with equality rigidity on the new interval. SV1–SV5 use the same-label sharp Taylor slack to improve the exact centered linear scalar norm. Full directed covers give 0<rho<=623/1000 and the retained angular reserve continues the result to an unevaluated right neighborhood. The reserved SV6–SV9 bootstrap gives a complete extension through 0.630, and the score margin continues to a positive unevaluated right neighborhood. The reserved two-stage tilted second-moment test now certifies 0<rho<=641/1000, with an unevaluated strict continuation. BC1–BC9 address the separate restricted near-one junction problem. The excess-purity comparison extends the unrestricted cutoff to 513/800. SV10–SV11 now give a directed reserved extension through 129/200 and the same right-neighborhood conclusion. Adaptive reserved tilted-mean stages with exact complementary compression now cover 0<rho<=81/125 and an unevaluated right neighborhood. The restricted two-block tetrahedral comparison does not settle the unrestricted near-one problem.
+- **GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL** (mathematical; open): For every 0<rho<1 and d>=2 prove global simplex Gaussian optimality for measurable partitions of masses 1/3 with equality rigidity, then obtain the balanced low-influence discrete plurality corollary. A first global endpoint must exceed the implicit proved lower cutoff above 11/25 and, if below one, must have a nonsimplex tied global maximizer. The projected FA18-FA21 extension now certifies the explicit cutoff 8859/20000, with equality rigidity on the added slab. The remaining all-correlation problem is open. The current explicit global lower-correlation interval reaches 3/5. The current explicit contiguous lower interval reaches 513/800.
 - **GAP-PIS-EUCLIDEAN-THREE-LABEL-JUNCTION-RIGIDITY** (mathematical; proved / discharged): Every planar compact-perturbation minimizer of the unit Euclidean Gaussian convolution cut with three nonempty phases is a regular tripod up to an isometry, labels and null sets. The affine asymptotes and exponential tails reduce it to strict finite-area comparison.
-- **GAP-PIS-POSITIVE-RADIAL-SCALAR-ALL-CORRELATION** (mathematical; falsified): The assertion that <f,Kplus_rho f> <=2 integral Jplus_rho*f^2 dnu for every 0<rho<1 and every bounded mean-zero f in L2(exp(-t)dt) is false. The explicit f=exp(-t)+2exp(-16t)-21/34 at rho=1/2 has quotient>2.07. Additive centering cannot change its quadratic form. This falsifies an optional sufficient method beyond its source range, not any Gaussian partition inequality or Heilman Theorem A.1.
-- **GAP-PIS-EXPLICIT-GAMMA-CRITERION-ALL-CORRELATION** (mathematical; falsified): The assertion that the right side of DG29, with the explicit Gamma of DG26, is nonpositive for every balanced circular mass profile and every 0<rho<1 is false. At rho=3/5, profiles p(sqrt(2t))=1/3+epsilon*(1,-1,0)*(exp(-t)+2exp(-16t)-21/34) are feasible and balanced for small epsilon, and the right side divided by 2epsilon^2 tends to a number in [0.0038888594281296417,0.0043384122595988344]. This does not refute the valid upper bound DG29 or simplex optimality.
-- **GAP-PIS-SHARP-FIRST-MOMENT-CRITERION-ALL-CORRELATION** (mathematical; falsified): The assertion that DG29 with Gamma replaced by the explicit Gamma_sharp of DG34 is nonpositive for all balanced profiles and every0<rho<1 is false. For rho7/10 and p(sqrt(2t))=1/3+epsilon*(1,-1,0)*(exp(-t)+2exp(-16t)-21/34), its right side divided by2epsilon^2 tends to a value in[0.012105848280513554,0.012685028889351772]. DG8 proves that this penalty is exact among first-moment norm-and-closure constraints near balanced profiles. This does not refute DG29 as an upper bound, or the original Gaussian inequality.
-- **GAP-PIS-EXACT-ARC-SECANT-CRITERION-ALL-CORRELATION** (mathematical; falsified): The assertion that the explicit all-profile upper bound E_rho(p) in DG39 is nonpositive for every balanced profile and every0<rho<1 is false. At99/100 let g(t)=sum n_j*(exp(-lambda_j*t)-1/(1+lambda_j))/1000 with lambda(1,4,16,64,256,1024), n(27,37,74,181,145,1000). It is bounded by183/125 and exactly mean zero. The feasible balanced profiles p=1/3+epsilon*(1,-1,0)*g have E_rho(p)/(2epsilon^2) tending to a value in[1.202983953209141e-6,1.2029839532091414e-6]. This refutes a sufficient criterion, not DG39 as an upper bound or simplex optimality.
-- **GAP-PIS-THREE-CELL-TYPE-CONSTANT-POLARIZATION** (mathematical; falsified): The assertion that every ordinary balanced three-cell partition admits a nondecreasing reflection-pair swap choosing one orientation for each unordered label-pair type is false. For every fixed0<rho<1, DG12 specifies a reflection and an ordinary balanced planar partition with types(12,23,31,12) on four reflected patch pairs. The split signs(1,-1,1,-1) beat every type-constant orientation, uniformly by4333*epsilon^2/6400>0. All swaps in this class preserve each circular mass. This does not falsify simplex optimality or the exact all-cut criterion.
-- **GAP-PIS-THREE-CELL-GLOBAL-PROFILE-CONSECUTIVE-ARC-REDUCTION** (mathematical; falsified): For each fixed0<rho<1 there exists an ordinary balanced planar partition A whose Gaussian stability strictly exceeds the supremum over every partition C with the same circular masses and consecutive-arc sections at almost every radius. Competitors may choose arbitrary measurable rotations and either cyclic order at every radius. The construction has a thin inner annulus of balanced masses with two opposite label arcs and a disconnected third label, an outer annulus of half/half/zero masses, and pure radial background chosen for exact balance. An explicit cross gap, outer first-harmonic phase coercivity and a completed-square estimate control all self-interactions and rotations. The counterexample persists with all circular masses uniformly positive. This refutes a universal mass-preserving global arc rearrangement, not simplex optimality or a statement restricted to actual global maximizers. The unregularized example has moment rankone.
+- **GAP-PIS-POSITIVE-RADIAL-SCALAR-ALL-CORRELATION** (mathematical; stale): The assertion that <f,Kplus_rho f> <=2 integral Jplus_rho*f^2 dnu for every 0<rho<1 and every bounded mean-zero f in L2(exp(-t)dt) is false. The explicit f=exp(-t)+2exp(-16t)-21/34 at rho=1/2 has quotient>2.07. Additive centering cannot change its quadratic form. This falsifies an optional sufficient method beyond its source range, not any Gaussian partition inequality or Heilman Theorem A.1.
+- **GAP-PIS-EXPLICIT-GAMMA-CRITERION-ALL-CORRELATION** (mathematical; stale): The assertion that the right side of DG29, with the explicit Gamma of DG26, is nonpositive for every balanced circular mass profile and every 0<rho<1 is false. At rho=3/5, profiles p(sqrt(2t))=1/3+epsilon*(1,-1,0)*(exp(-t)+2exp(-16t)-21/34) are feasible and balanced for small epsilon, and the right side divided by 2epsilon^2 tends to a number in [0.0038888594281296417,0.0043384122595988344]. This does not refute the valid upper bound DG29 or simplex optimality.
+- **GAP-PIS-SHARP-FIRST-MOMENT-CRITERION-ALL-CORRELATION** (mathematical; stale): The assertion that DG29 with Gamma replaced by the explicit Gamma_sharp of DG34 is nonpositive for all balanced profiles and every0<rho<1 is false. For rho7/10 and p(sqrt(2t))=1/3+epsilon*(1,-1,0)*(exp(-t)+2exp(-16t)-21/34), its right side divided by2epsilon^2 tends to a value in[0.012105848280513554,0.012685028889351772]. DG8 proves that this penalty is exact among first-moment norm-and-closure constraints near balanced profiles. This does not refute DG29 as an upper bound, or the original Gaussian inequality.
+- **GAP-PIS-EXACT-ARC-SECANT-CRITERION-ALL-CORRELATION** (mathematical; stale): The assertion that the explicit all-profile upper bound E_rho(p) in DG39 is nonpositive for every balanced profile and every0<rho<1 is false. At99/100 let g(t)=sum n_j*(exp(-lambda_j*t)-1/(1+lambda_j))/1000 with lambda(1,4,16,64,256,1024), n(27,37,74,181,145,1000). It is bounded by183/125 and exactly mean zero. The feasible balanced profiles p=1/3+epsilon*(1,-1,0)*g have E_rho(p)/(2epsilon^2) tending to a value in[1.202983953209141e-6,1.2029839532091414e-6]. This refutes a sufficient criterion, not DG39 as an upper bound or simplex optimality.
+- **GAP-PIS-THREE-CELL-TYPE-CONSTANT-POLARIZATION** (mathematical; stale): The assertion that every ordinary balanced three-cell partition admits a nondecreasing reflection-pair swap choosing one orientation for each unordered label-pair type is false. For every fixed0<rho<1, DG12 specifies a reflection and an ordinary balanced planar partition with types(12,23,31,12) on four reflected patch pairs. The split signs(1,-1,1,-1) beat every type-constant orientation, uniformly by4333*epsilon^2/6400>0. All swaps in this class preserve each circular mass. This does not falsify simplex optimality or the exact all-cut criterion.
+- **GAP-PIS-THREE-CELL-GLOBAL-PROFILE-CONSECUTIVE-ARC-REDUCTION** (mathematical; stale): For each fixed0<rho<1 there exists an ordinary balanced planar partition A whose Gaussian stability strictly exceeds the supremum over every partition C with the same circular masses and consecutive-arc sections at almost every radius. Competitors may choose arbitrary measurable rotations and either cyclic order at every radius. The construction has a thin inner annulus of balanced masses with two opposite label arcs and a disconnected third label, an outer annulus of half/half/zero masses, and pure radial background chosen for exact balance. An explicit cross gap, outer first-harmonic phase coercivity and a completed-square estimate control all self-interactions and rotations. The counterexample persists with all circular masses uniformly positive. This refutes a universal mass-preserving global arc rearrangement, not simplex optimality or a statement restricted to actual global maximizers. The unregularized example has moment rankone.
 - **GAP-PIS-LARGE-ALPHABET-FULL-NEGATIVE-VOTING** (mathematical; proved / discharged): For every k>=ceil(exp(3000)), d>=k-1 and -1/(k-1)<=rho<0, the central regular simplex uniquely minimizes actual same-partition Gaussian noise stability among all measurable fractional k-label assignments with free masses, up to orthogonal maps, labels and null sets.
 
 Tracked obligations from the catalogue:
@@ -13662,6 +14181,34 @@ Tracked obligations from the catalogue:
 
 **Verification limits:** Written argument with internal audit of the formal expansion, Jacobian identities and slope denominators.
 
+### JAC-PLANE-COMMON-PARTIAL-DEGREE-TWENTY-THREE
+
+[Common partial degrees through twenty-three force planar inversion](jacobian/planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY_THREE.md)
+
+**Exact scope:** For characteristic-zero plane Keller pairs, a common-axis partial-degree bound of twenty-three implies invertibility. At the cap twenty-four it also suffices for every degree-twenty-four member to have leading-coefficient degree less than 84 in the other variable. The (14,21) exclusion uses the second polynomial Jacobian identity and exact admission to two previously checked finite systems.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written reduction and internal audit, with exact source certificates for the two admitted finite systems.
+
+### JAC-SEXTIC-QUARTIC-GENERIC-FIBRE-CHART-COEFFICIENT-BOUND
+
+[A quartic polynomial generic-fibre chart with bounded top coefficient suffices for sextic inversion](jacobian/planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY_THREE.md)
+
+**Exact scope:** For a characteristic-zero sextic Keller triple (P,Q,R), suppose a polynomial parametrization over k(t) of the generic fibre R=t has geometric rank two everywhere and degree at most four in a common chart variable v. For its v^4 coefficient vector A(u), every nonzero evaluation P_6(A),Q_6(A) must have u-degree less than 84. This holds whenever deg_u A <= 13. Under these hypotheses the triple is invertible.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written reduction and internal audit, with exact source certificates for the two admitted finite systems.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
@@ -14086,7 +14633,7 @@ Tracked obligations from the catalogue:
 - **GAP-JAC-PLANE-SIX-SHEET-ADMISSION** (mathematical; open): Exclude actual polynomial plane Keller maps of generic sheet degree six. Retain the refined S6 and A6 affine cusp profiles and the full normalization. The two saturated S6 profiles and the A6 case with two unramified primes require nonabelian Orevkov invariant. With one unramified prime A6 requires a unique A1 source singularity over an ordinary cusp, and with zero its sole intrinsic cusp is (2,5). All cases have no proper intermediate field. In the smooth six-sheet cases, the S₆ directional bounds are 7, 7 and 8, with weighted total-degree bounds 8, 8 and 9. A sole-transposition exceptional fold has original longitudinal degree at least 48. The immersed sole-transposition slice strengthens the fold bound to 60, with restriction degrees (8,10) at equality. The immersed A₆ sole 3-cycle branch has composite width at least six and genus at least two. At width six the remaining genus and pole-count pairs are (2,4) and (3,2). In both cuspidal alternating profiles, every width is composite and at least six, the ordinary degree of the ramified curve is at least eight, and no polynomial target frame has coprime widths. The singular width-five genus-two profile is excluded. Marked admission of the mixed symmetric elliptic slices remains open.
 - **GAP-JAC-QUINTIC-INDEPENDENT-LEADING-COMPLETION** (mathematical; proved / discharged): In characteristic zero no polynomial Keller map has degree-five leading vector (z⁵,z³q,zq²), q=x²+yz.
 - **GAP-JAC-QUINTIC-DEPENDENT-QUARTIC-COMPLETION** (mathematical; proved / discharged): Every degree-five three-variable Keller map over a characteristic-zero field is invertible.
-- **GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION** (mathematical; open): Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The last cubic case in the classification has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). The cubic-outer square-cusp sector with k nonzero is invertible. For e nonzero the exceptional constant affine-scalar plane is excluded by its planar degree pair. For e=0 the third component is affine in z. Two affine outputs give a bounded fibre completion; a quadratic middle output is excluded in the noninvertible branch by a residue and a signed weight on the generic fixed-third fibre. The k=0 sector is also invertible when e is nonzero, by axial descent to an affine middle output and the simple-component residue obstruction to its transverse parameter. For k=e=0 the (2,3,5) tuple is uncorrected and at (2,3,6) it is (x^3*z^3,x^5*z+sigma*x^2*z^2,x^6+delta*x^3*z). In particular the first and third z-degrees are 3 and at most 1. The k=e=0 sector with delta nonzero is invertible by the prime-support lift and the affine-coefficient residue analysis. The final k=e=delta=0 cases are settled by excluding the binary and repeated affine third outputs. Thus every tangent-conic cubic outer map in the stated class is invertible. For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. In the shared nonbinary case the first lower z coefficients a,b,c satisfy x^2*a-2*x*b+c proportional to x^3*y, and the highest tuple in (0,-1,1) is (W*z^3,x*W*z^2,x^2*W*z) with W=y*z+a(x,0). For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch is invertible. Its affine-in-z reduction has complete z-degrees (3,2,1); distinct quadratic parameters force inversion by restriction to a common-root plane. Coincident parameters have no Keller completion by the generic-level bracket and a critical-plane obstruction. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. The nonbinary doubled tie at weight 3/2 is also excluded by a divisor-regular slice. The doubled square-member frame with ordinary tuple (x^2*P^2,x^4*P,x^6) is invertible. The remaining axial weight-five corrections are excluded by the transverse lift, and the final transverse degree argument forces a bounded coordinate completion or a squarefree-factor contradiction. The third axial residue excludes the nonbinary smooth-common-factor branch. Together with the binary inversion theorem and the other exclusions, this proves inversion for all quadratic outer maps on a tangent-conic pencil. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case or when the projective quartic ratio is closed. The closed-ratio case passes through (x^6,x^4,C) and the first weighted square. The coprime nonbinary case with nonclosed ratio reduces to quadratic outer forms on a closed conic pencil. In the reduced tangent-conic frame, the p^2*q term of the sextic vanishes. Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven. In the shared nonbinary axial frame the leading-field differentials and the first ordinary axial correction are exact. The second correction requires the two recorded scalar residue equations. A full-rank polynomial generic-fibre parametrization of degree at most three in one chart variable suffices with unrestricted coefficient degrees in the other variable. Constructing such a chart for a surviving family is a separate obligation.
+- **GAP-JAC-THREE-VARIABLE-SEXTIC-INVERSION** (mathematical; open): Prove inversion for three-variable characteristic-zero polynomial Keller maps of ordinary degree six all of whose nonzero linear combinations of target components have degree at least four. Degrees through five and sextic maps admitting a component of degree at most three are settled. A scalar of the form r=g(x)+A(x)v with A nonconstant in an affine source frame is also excluded. A quartic target combination of degree exactly one in an affine source direction also forces inversion. This closes the triple-line, parabolic, tangent-conic and squarefree forms in the quartic affine-source reduction. The ordinary minimum is seven for maps with a nontrivial one-parameter torus action diagonal in affine source and target coordinates. Independent sextic leading parts satisfy the closed-pencil restrictions from the rational leading-pair slice. Line pencils with birational outer map of degree at least four are settled. Cubic outer maps of a line pencil reduce to degree at most five or leading rank at most one. Coprime binary sextic parts reduce to leading rank at most one. For a line pencil with quadratic outer map, a binary quartic common factor reduces sextic leading rank to at most one. Closed pencils of ordinary degree three are excluded. A common divisor regularity argument excludes both ordinary cubic cube pencils and the weighted cube pencil in weights (2,2,3). Coprime leading pairs of mixed degrees satisfy the higher-member singular basepoint restriction and the disjoint tangent obstruction. For cubic outer maps of a tangent-conic pencil, the reduced singular member, immersive square branch and both cusps away from the square are excluded. The last cubic case in the classification has its cusp at the square, where the degree-five corrections are divisible by x^2 and x^3 in the second and third components, respectively. The highest tuple (P^3,P*x^4,x^6) persists in weights (4,5,6), and the next binary reduction in weights (10,15,18) is (y^6,x^4*y^2,x^6+k*x^3*y^2+e*y^4). In weights (10,15,20) the tuple returns to (P^3,P*x^4,x^6+k*x^3*P+e*P^2). The cubic-outer square-cusp sector with k nonzero is invertible. For e nonzero the exceptional constant affine-scalar plane is excluded by its planar degree pair. For e=0 the third component is affine in z. Two affine outputs give a bounded fibre completion; a quadratic middle output is excluded in the noninvertible branch by a residue and a signed weight on the generic fixed-third fibre. The k=0 sector is also invertible when e is nonzero, by axial descent to an affine middle output and the simple-component residue obstruction to its transverse parameter. For k=e=0 the (2,3,5) tuple is uncorrected and at (2,3,6) it is (x^3*z^3,x^5*z+sigma*x^2*z^2,x^6+delta*x^3*z). In particular the first and third z-degrees are 3 and at most 1. The k=e=0 sector with delta nonzero is invertible by the prime-support lift and the affine-coefficient residue analysis. The final k=e=delta=0 cases are settled by excluding the binary and repeated affine third outputs. Thus every tangent-conic cubic outer map in the stated class is invertible. For quadratic outer maps on a tangent-conic pencil, every squarefree common factor outside the pencil is excluded. The reduced in-pencil case g=q=xy is also excluded by a conic reference through degree five, weighted analysis and a collapsed affine line. The doubled common factor g=x^2 with a transverse binary member q(0,y) nonzero has no Keller completion by the transverse Veronese exclusion. The doubled common factor g=x^2 with the reduced binary member q=xy is also excluded, by comparing the quadratic transverse coefficient with the original sextic. The remaining normalized quadratic outer tangent-conic cases have p=xz+y^2, q=x^2, and g=p or g=q. The two binomial axial ties are excluded. The first possible axial ties are at z-weight two for g=p and at z-weight 3/2 for g=q. At these weights the highest tuples are binary of the recorded forms or yield the same complete highest z-tuple (y*z^4,x*y*z^3,x^2*y*z^2) after affine changes. In the shared nonbinary case the first lower z coefficients a,b,c satisfy x^2*a-2*x*b+c proportional to x^3*y, and the highest tuple in (0,-1,1) is (W*z^3,x*W*z^2,x^2*W*z) with W=y*z+a(x,0). For g=p a nontrivial binary tie at weight two is excluded by an elliptic relative differential and the divisorial regularity of a rational slice. When the weight-two tuple is binary, the original ordinary tuple returns in weights (2,3,4). The same binary branch has no tie at z-weight 5/2. The only candidate axial tie at weight three is i*x^2*z^2 in the third output, and i is forced to vanish by the transverse reduction, cusp exclusion and exact quadratic-level bracket. Hence the binary smooth-common-factor branch has no tie through axial weight three, and the tuple at (1,2,3) is (P^3,P^2*x^2,P*x^4). The binary smooth-common-factor branch is invertible. Its affine-in-z reduction has complete z-degrees (3,2,1); distinct quadratic parameters force inversion by restriction to a common-root plane. Coincident parameters have no Keller completion by the generic-level bracket and a critical-plane obstruction. A nontrivial binary tie for g=q would require the mixed tuple (x^2*P^2,x^4*P,x^6+j*x*P^2), with j nonzero, in weights (4,5,6). That tuple is excluded by a transverse-weight calculation and the generic-level bracket of the resulting affine-in-z output. The nonbinary doubled tie at weight 3/2 is also excluded by a divisor-regular slice. The doubled square-member frame with ordinary tuple (x^2*P^2,x^4*P,x^6) is invertible. The remaining axial weight-five corrections are excluded by the transverse lift, and the final transverse degree argument forces a bounded coordinate completion or a squarefree-factor contradiction. The third axial residue excludes the nonbinary smooth-common-factor branch. Together with the binary inversion theorem and the other exclusions, this proves inversion for all quadratic outer maps on a tangent-conic pencil. A nonbinary quartic common factor on a line pencil has transverse degree one, since the transverse-degree-three case collapses an affine line. Profile (6,5,4) is invertible with coprime squarefree lower leading forms, and profile (6,5,5) has no completion with coprime quintic leading forms. Profile (6,4,4) with coprime lower forms is invertible in the binary case or when the projective quartic ratio is closed. The closed-ratio case passes through (x^6,x^4,C) and the first weighted square. The coprime nonbinary case with nonclosed ratio reduces to quadratic outer forms on a closed conic pencil. In the reduced tangent-conic frame, the p^2*q term of the sextic vanishes. Profile (6,5,4) with an irreducible quintic leading form coprime to the quartic is invertible. The squarefree cusp argument excludes its shared quadratic-power alternative and the weighted boundary (W^2,W^3,y^3 z^2) with W=x^2+y. The weighted-square component has a coordinate completion of inverse degree at most four and forces inversion up to ordinary map degree 25 under the same weighted-square hypothesis. In binary profiles (6,5,4) and (6,5,5), ordinary cusps cannot account for all common derivative lines. A separate exclusion applies when both lower components give the fixed-level quadratic chart at every common line and the sextic first has odd contact of order three or five. Any simultaneous reduction of the retained degree-seven example to ordinary degree at most six requires a source automorphism outside the specified flag-triangular class and algebraically dependent highest forms of x_1, y_1, and 2-3*x_1*y_1-x_1^2*z_1. The unrestricted minimum is six or seven. In the shared nonbinary axial frame the leading-field differentials and the first ordinary axial correction are exact. The second correction requires the two recorded scalar residue equations. A full-rank polynomial generic-fibre parametrization of degree at most three in one chart variable suffices with unrestricted coefficient degrees in the other variable. Constructing such a chart for a surviving family is a separate obligation. A quartic polynomial rank-two generic-fibre chart also suffices if the sextic leading forms evaluated at its top coefficient vector have degrees below 84 in the other chart variable.
 - **GAP-JC2-MAX11-GGV-ENDPOINT-INTERFACE** (verification; proved / discharged): Supply PlaneKellerStandardEndpointGCDObstruction from Guccione–Guccione–Valqui Corollary 7.9, or justify its actual large-shear uses. Match Definition 4.3 at both ends of the right face, or give a normalization preserving the numerical gcd needed in the Lean route. The separate restriction on globally minimal B is not an arbitrary-pair substitute.
 - **GAP-JC2-MAX11-COMMON-SOURCE-FRAME** (mathematical; open): For an identified surviving family, exhibit a genuine polynomial source frame and target coordinates with both full partial degrees at most 11 in the same source variable. In the tested immersed fold longitudinal frame and planar (12,42) momentum direction, existing bounds exclude that application. Check the other direction or a different framing under the actual polynomial-source hypotheses.
 - **GAP-JC2-EXTERNAL-CUSP-FILTRATION-TRANSFER** (verification; open): Check the external coprime cusp theorem’s polynomial and Poisson assumptions, then show that a retained Keller cusp sector has pullback scaling the whole normal-form filtration for x^p-y^q with weights (q,p,pq-p-q), or supply an applicable replacement. The reported diagonal classification assumes that scaling for all polynomials.
@@ -15221,6 +15768,20 @@ Tracked obligations from the catalogue:
 **Current blockers:** none in declared routes.
 
 **Verification limits:** Written argument with internal audit of the formal expansion, Jacobian identities and slope denominators.
+
+### HESS-HC4-DIRECTIONAL-DEGREE-TWENTY-THREE
+
+[Directional degrees through twenty-three give four-variable Hessian inversion](jacobian/planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY_THREE.md)
+
+**Exact scope:** Assuming Tang's retained complex structural alternative, a complex four-variable polynomial H with nonzero constant Hessian determinant has invertible gradient if in three independent directions w either D_w^24 H is constant in each, or D_w^25 H is constant and deg D_w^24 H <= 84 in each.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written reduction and internal audit, with exact source certificates for the two admitted finite systems.
 
 ### Supporting statements and targets
 
@@ -33603,6 +34164,20 @@ Tracked obligations from the catalogue:
 **Current blockers:** none in declared routes.
 
 **Verification limits:** Written proof with internal scope audit and pinpointed published inputs.
+
+### DIX-WEYL-COMMON-DIFFERENTIAL-ORDER-TWENTY-THREE
+
+[Two differential orders through twenty-three force Weyl generation](jacobian/planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY_THREE.md)
+
+**Exact scope:** Over characteristic zero a first Weyl pair with nonzero scalar commutator generates when both differential orders are at most twenty-three. A proper pair with one member of order fourteen has fixed-member reduced mate order an odd multiple of seven at least thirty-five.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** complete.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written reduction and internal audit, with exact source certificates for the two admitted finite systems.
 
 ### Supporting statements and targets
 

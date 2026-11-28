@@ -1,4 +1,4 @@
-"""Directed excess-purity trial comparison through correlation 317/500.
+"""Directed excess-purity trial comparison through correlation 513/800.
 
 The proof and replay command are in THREE_CELL_EXCESS_PURITY_EXTENSION.md.
 Floating-point diagonalization chooses dyadic feature coefficients only.
@@ -153,6 +153,7 @@ def residual_gate(e,residual,delta,lo,hi,geometry,steps=128):
     density=(8*arb.pi()/(lo*d_min*(arb(11)/2+arb(24)/25))).upper()
     coefficient=hi*d_min/(2*arb.pi())
     circumradius=arb(2).sqrt()/arb(3).sqrt()
+    mean_ratio=(arb.pi()*d_min**2/(2*(1-2*hi**2).sqrt())-1).upper()
     maximum_gap=-1e5
     worst=0.0
 
@@ -177,9 +178,15 @@ def residual_gate(e,residual,delta,lo,hi,geometry,steps=128):
             second=(raw.sqrt()+b*(density-raw).sqrt())**2
         else:
             second=density*(1+b**2)
-        purity=arb(2)/3-amplitude**2*second
+        raw_upper=(amplitude**2*second).upper()
+        purity=arb(2)/3-raw_upper
+        mean_bound=(mean_ratio*raw_upper/(1+mean_ratio)).sqrt().upper()
+        quartic_factor=1-3*raw_upper
+        if mean_bound<circumradius/2:
+            quartic_factor=arb(4)/3-3*raw_upper-2*circumradius*mean_bound+2*mean_bound**2
+        quartic_factor=max(purity.lower(),quartic_factor.lower())
         spread=variance.sqrt()-(density-variance).sqrt()*b
-        extra=purity-arb(12)/25
+        extra=quartic_factor-arb(12)/25
         # The absorbed variance is already charged in the spectral block.
         excess=coefficient*extra*spread**2 if extra>0 and spread>0 else arb(0)
         gap=upper_float(scalar-excess)
@@ -199,7 +206,7 @@ def certificate(point=None):
     amended=(list(plain[0]),plain[1])
     amended[0][1]+=24/(25*arb.pi()**2)
     quadrature=Quadrature(panels,radius,2*modes)
-    start,stop=Fraction(3,5),Fraction(317,500)
+    start,stop=Fraction(3,5),Fraction(513,800)
     width=Fraction(1,4000)
     if point is not None:
         assert start<=point<=stop

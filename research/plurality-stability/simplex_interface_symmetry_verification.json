@@ -1,6 +1,6 @@
 {
-  "checker_sha256": "b9a2c66f3420328766e4bde1c0019051ae64a70eca5f645e28adcc7f161e3109",
-  "proof_source_sha256": "e1fe30aa90181e534bc6dc7c2380495e5e49608097ceef25e349a0dd01e50d54",
+  "checker_sha256": "3aee869026e1dec038f5246ace2593ebdfa1d0175ae19063d35f975c92c94ee3",
+  "proof_source_sha256": "750be02891d91a76296a7467162652187958c77e429f1444c42c449d8dc91b93",
   "perimeter_proof_source_sha256": "af5505154ccf0dca5ffd157a1c7764474cb46a1b2f27216c9c915ecc1445ac08",
   "exact_checks": {
     "characters": {
@@ -5825,6 +5825,65 @@
       ],
       "omitted_tent_reversed_threshold_and_missing_slope_bound_controls": "passed",
       "scope": "Complete exact formal cubic coefficient certificate on all60 orderings of a,b,c,S,T,R with a<b<c and S<T, and all10 orderings for the clipped-pair sign. Nonnegative gap variables cover every admissible real configuration, with coincidences by continuity; the convex-curve hinge extension is the written covering proof. Finite rational controls at k5..k9 check the hinge transports, polarized residual and convex slope decomposition; independent finite product laws at k6 check the all-degree conditional wedge identity. The unrestricted Mills, Gaussian integration, supersolution and full L2/ambient spectral conclusions S92 remain written arguments. No external review, independent replay or formal verification is asserted."
+    },
+    "mixed_prefix_transport": {
+      "cases": [
+        {
+          "k": 5,
+          "partition": [
+            2,
+            2,
+            1
+          ],
+          "Young_dimension": 5,
+          "minus_dimension": 3,
+          "prefix_pairs": 6,
+          "strict_prefix_support_coordinates": 3,
+          "Coxeter_seed_transport_content_and_conditional_controls": "passed"
+        },
+        {
+          "k": 6,
+          "partition": [
+            3,
+            2,
+            1
+          ],
+          "Young_dimension": 16,
+          "minus_dimension": 8,
+          "prefix_pairs": 12,
+          "strict_prefix_support_coordinates": 8,
+          "Coxeter_seed_transport_content_and_conditional_controls": "passed"
+        },
+        {
+          "k": 7,
+          "partition": [
+            4,
+            2,
+            1
+          ],
+          "Young_dimension": 35,
+          "minus_dimension": 15,
+          "prefix_pairs": 20,
+          "strict_prefix_support_coordinates": 15,
+          "Coxeter_seed_transport_content_and_conditional_controls": "passed"
+        },
+        {
+          "k": 8,
+          "partition": [
+            5,
+            2,
+            1
+          ],
+          "Young_dimension": 64,
+          "minus_dimension": 24,
+          "prefix_pairs": 30,
+          "strict_prefix_support_coordinates": 24,
+          "Coxeter_seed_transport_content_and_conditional_controls": "passed"
+        }
+      ],
+      "total_prefix_pairs": 68,
+      "unordered_weights_and_missing_standard_cancellation_controls": "passed",
+      "scope": "Exact sparse rational Young models for lambda=(k-3,2,1), k5..k8. All generators satisfy Coxeter relations; interval-averaged seeds, standard-family equivariance, strict prefix support, T_l*c_l=c_l, every prefix transport pair, both class-content formulas and the standard-shape cancellation are checked. A rational conditional first-moment example verifies the rewritten Gaussian residual algebra and strict coordinate sign. Controls reject arbitrary unordered nonnegative weights and omission of the standard-shape correction. The all-k Young/Pieri support argument, universal prefix lemma, Mills ordering, Gaussian integration, full compact-operator gap and dimension lift S94 are written mathematics; no finite-cell extrapolation, external review or formal verification is asserted."
     },
     "representation_hermite_floors": {
       "cell_range": [

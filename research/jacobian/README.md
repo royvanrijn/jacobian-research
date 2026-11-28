@@ -350,6 +350,8 @@ Polynomial Keller maps, their fibres, monodromy and boundary geometry.
 | Cubic polynomial charts with bounded top coefficient suffice on a sextic generic fibre | Internal result | proved | [Source](planar-degree-frontier/SMALL_PARTIAL_GCD_STANDARD_CORNERS.md) |
 | Common partial degrees through twenty force planar Keller inversion | Internal result | proved | [Source](planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY.md) |
 | A cubic polynomial generic-fibre chart suffices for sextic Keller inversion | Internal result | proved | [Source](planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY.md) |
+| Common partial degrees through twenty-three force planar inversion | Internal result | proved | [Source](planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY_THREE.md) |
+| A quartic polynomial generic-fibre chart with bounded top coefficient suffices for sextic inversion | Internal result | proved | [Source](planar-degree-frontier/PLANAR_PARTIAL_DEGREE_TWENTY_THREE.md) |
 
 **Computed obligations:** 28 unresolved; 8 resolved within their exact scope.
 

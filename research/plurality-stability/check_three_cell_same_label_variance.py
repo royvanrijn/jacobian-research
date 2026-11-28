@@ -35,31 +35,40 @@ def ball(value):
 def angular_certificate():
     order = 40
     mm, pp = sharp_moments(order)
-    anchor = arb(3) / 2
-    value, derivative = arb(0), arb(0)
-    for n in range(1, order + 1):
-        uniform = arb(comb(n, n // 2)) / 2**n if n % 2 == 0 else arb(0)
-        coefficient = mm[n] + pp[n] - 2 * uniform
-        value += coefficient * anchor**(n - 1) / factorial(n)
-        if n >= 2:
-            derivative += (n - 1) * coefficient * anchor**(n - 2) / factorial(n)
-    error = 4 * anchor**order / factorial(order + 1) / (1 - anchor / (order + 2))
-    derivative_error = 4 * order * anchor**(order - 1) / factorial(order + 1)
-    derivative_error /= 1 - anchor * (order + 1) / (order * (order + 2))
-    value += (-error).union(error)
-    derivative += (-derivative_error).union(derivative_error)
-    tangent = value - anchor * derivative
-    assert derivative > 0 and tangent > arb(19) / 100
+
+    def evaluate(anchor):
+        value, derivative = arb(0), arb(0)
+        for n in range(1, order + 1):
+            uniform = arb(comb(n, n // 2)) / 2**n if n % 2 == 0 else arb(0)
+            coefficient = mm[n] + pp[n] - 2 * uniform
+            value += coefficient * anchor**(n - 1) / factorial(n)
+            if n >= 2:
+                derivative += (n - 1) * coefficient * anchor**(n - 2) / factorial(n)
+        error = 4 * anchor**order / factorial(order + 1) / (1 - anchor / (order + 2))
+        derivative_error = 4 * order * anchor**(order - 1) / factorial(order + 1)
+        derivative_error /= 1 - anchor * (order + 1) / (order * (order + 2))
+        return value + (-error).union(error), derivative + (-derivative_error).union(derivative_error)
+
+    left, right = arb(149) / 100, arb(1491) / 1000
+    left_value, left_derivative = evaluate(left)
+    right_value, right_derivative = evaluate(right)
+    assert left_derivative < 0 and right_derivative > 0
+    minimum_lower = left_value + (right - left) * left_derivative
+    assert minimum_lower > arb(781) / 4000
     # A larger proposed uniform constant is false at this actual anchor.
-    assert value < arb(1) / 5
+    assert left_value < arb(1) / 5
+    assert arb(781) / 4000 < 2 / arb.pi()**2
     coefficient = arb(81) * 19 / (64 * 100)
     minimum = arb(2) / 45 - 1 / (400 * coefficient)
     assert arb.pi()**2 < 10 and minimum > arb(17) / 500
     return {
-        "exponential_anchor": "3/2",
+        "unique_minimizer_bracket": ["149/100", "1491/1000"],
         "series_order": order,
-        "convex_tangent_lower": -upper_float(-tangent),
-        "derivative_lower": -upper_float(-derivative),
+        "pure_slack_constant_lower": -upper_float(-minimum_lower),
+        "pure_slack_constant_upper": upper_float(left_value),
+        "claimed_pure_slack_constant": "781/4000",
+        "left_derivative_upper": upper_float(left_derivative),
+        "right_derivative_lower": -upper_float(-right_derivative),
         "averaged_coefficient_lower": -upper_float(-minimum),
         "claimed_averaged_coefficient": "17/500",
         "negative_control_one_fifth": "rejected at the anchor",

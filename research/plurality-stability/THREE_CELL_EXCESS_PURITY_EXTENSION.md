@@ -1,8 +1,8 @@
-# An unrestricted three-cell comparison through correlation 317/500
+# An unrestricted three-cell comparison through correlation 513/800
 
 Every ordinary balanced Gaussian three-cell partition in dimension
 at least two has noise stability at most that of the simplex for
-$0<\rho\le317/500$. On the added interval $[3/5,317/500]$, equality
+$0<\rho\le513/800$. On the added interval $[3/5,513/800]$, equality
 requires a simplex up to rotation, relabeling and null sets. The
 proof handles all planar circular profiles and all angular shapes.
 Existence and dimension reduction for maximizers apply as in the
@@ -127,23 +127,45 @@ $D_+$, the purity and variance bounds are
  V_1\ge A^2(\sqrt V-r_+\sqrt{B-V})_+^2 .                  \tag{EP3}
 \]
 
+One may improve the quartic coefficient in (EP1) while keeping
+the same absorbed variance credit. Let $m_0=|\mathbb E_{\mu_1}z|$
+and let $U$ be an upper bound on $\mathbb E_{\mu_1}|z|^2$ from
+the raw moment estimate preceding (EP3). By (SR14), the quartic
+expectation divided by $V_1$ is at least
+
+\[
+       \frac43-3U-2\sqrt{2/3}\,m_0+2m_0^2 .                 \tag{EP4}
+\]
+
+Balance and (SR16) give
+$m_0\le\sqrt{\chi U/(1+\chi)}$, where
+$\chi=\pi(1-\rho^2)^2/(2\sqrt{1-2\rho^2})-1$.
+On the certified interval $\chi$ is increasing, since the sign of
+the derivative of its nonconstant part is the sign of $3\rho^2-1$.
+The checker takes its value at $u$. The quadratic in (EP4) is
+minimized at the smaller of the upper bound on $m_0$ and
+$\sqrt{2/3}/2$. The larger of this minimum and the purity lower
+bound in (EP3) gives a lower coefficient for the same quartic
+expectation. Subtract $12/25$ and take the positive part to measure
+the available cost after the variance credit in the scalar operator.
+
 On each of 128 equal intervals $[r_-,r_+]$ from zero to the
 positive scalar root, the checker computes the maximum of
 $e+2Rr-\delta r^2$. It either verifies a negative scalar upper
-bound or compares it to the extra term in (EP1), using (EP3)
-and $u(1-u^2)/(2\pi)\le\omega_1$. This proves strictness for
+bound or compares it to the excess quartic term from (EP3)–(EP4),
+using $u(1-u^2)/(2\pi)\le\omega_1$. This proves strictness for
 every nonuniform mass profile. If $A=0$, (EP2) is strictly
 negative unless the mass profile is uniform. The equal-circle
 rigidity argument then gives the simplex as the only tie.
 
-The checker uses 120-bit Arb enclosures and 136 adjacent rational
+The checker uses 120-bit Arb enclosures and 165 adjacent rational
 correlation slabs of width $1/4000$. The replay command is
 
     OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_three_cell_excess_purity_extension.py
 
 ## Discrete plurality
 
-For every fixed $0<\rho\le317/500$ and $\varepsilon>0$ there
+For every fixed $0<\rho\le513/800$ and $\varepsilon>0$ there
 exist $D$ and $\tau>0$ such that for every $m\ge1$, any balanced
 $f:[3]^m\to\Delta_3$ with $\operatorname{Inf}_i^{\le D}(f_j)\le\tau$
 for all $i,j$ satisfies
