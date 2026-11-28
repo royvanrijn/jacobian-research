@@ -1,0 +1,63 @@
+{
+  "venue": "Hexagon",
+  "submissionUrl": "https://hexagonmath.org/submit",
+  "status": "prepared-locally",
+  "fields": {
+    "title": "Quantitative Gaussian Simplex Stability at Small Positive Correlations",
+    "abstract": "For each fixed number of cells $k\\ge2$, we prove that the central regular-simplex partition maximizes Gaussian noise stability among equal-measure measurable $k$-cell partitions at sufficiently small positive correlations $\\rho$ in dimensions $d\\ge k-1$. The noise stability deficit is bounded below by a positive constant times $\\rho$ times the square of the summed Gaussian symmetric differences from the closest simplex partition. Both the constant and the correlation threshold are independent of the ambient dimension. Zhang's first-moment theorem localizes near maximizers. To prove the positive-correlation bound, we normalize arbitrary label changes by their exact loss against the simplex's Ornstein--Uhlenbeck scores. A Gaussian covariance estimate on the facets bounds the limiting first-moment interaction, and a Hermite expansion controls all remaining directions uniformly in the dimension.",
+    "authors": [
+      {
+        "name": "Roy van Rijn",
+        "orcid": "0009-0000-2808-0645",
+        "affiliation": "Independent researcher"
+      }
+    ],
+    "subject": "math.PR",
+    "crossListSubjects": [
+      "math.MG"
+    ],
+    "mscCodes": [
+      "60G15",
+      "49K21",
+      "28A75"
+    ],
+    "tags": [
+      "Gaussian noise stability",
+      "regular simplex",
+      "standard simplex conjecture",
+      "first moments"
+    ],
+    "aiSystems": [
+      {
+        "provider": "OpenAI",
+        "name": "ChatGPT"
+      },
+      {
+        "provider": "OpenAI",
+        "name": "Codex"
+      }
+    ],
+    "provenance": "ChatGPT (OpenAI) assisted with mathematical arguments, literature checks, exposition, proof review and verification code. OpenAI Codex performed a source-aware proof audit and an isolated reading of the compiled manuscript.",
+    "comments": "9 pages.",
+    "changeNote": "Initial deposit",
+    "license": null,
+    "authorshipMode": null,
+    "textOrigin": null,
+    "humanUnderstanding": null
+  },
+  "contributorToConfirm": [
+    "Confirm the contributor listing, authorship declaration, and authority to deposit.",
+    "Confirm text origin and the extent of human understanding for this edition.",
+    "Select the distribution license. CC BY 4.0 is the precedent from earlier deposits.",
+    "Confirm correctness, community interest, and citations."
+  ],
+  "archive": {
+    "file": "source.zip",
+    "entryPoint": "main.tex",
+    "sha256": "00b973a0859c583b4819658efe3c5ef460b0181fcd2a46b832d541c7bb895336",
+    "texFileCount": 1,
+    "buildCommand": "SOURCE_DATE_EPOCH=1795824000 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=plurality-small-positive-correlations main.tex",
+    "localBuild": "A clean extraction builds without LaTeX warnings in the recorded Ubuntu 24.04 WSL toolchain and reproduces the nine-page review PDF byte for byte.",
+    "reviewRecord": "verification.json"
+  }
+}

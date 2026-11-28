@@ -8,8 +8,6 @@
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
-\theoremstyle{remark}
-\newtheorem{remark}[theorem]{Remark}
 \newcommand{\R}{\mathbb R}
 \newcommand{\E}{\mathbb E}
 \newcommand{\one}{\mathbf 1}
@@ -19,367 +17,291 @@
 \newcommand{\LL}{\mathcal L}
 \newcommand{\HH}{\mathcal H}
 \newcommand{\DD}{\mathcal D}
-\newcommand{\VV}{\mathcal V}
-\newcommand{\RR}{\mathcal R}
 \DeclareMathOperator{\tr}{tr}
-\DeclareMathOperator{\dist}{dist}
-\hypersetup{pdftitle={Plurality Is Stablest for Small Positive Correlations: A Gaussian Simplex Theorem},pdfauthor={Roy van Rijn}}
-\title[Gaussian simplex stability at small correlation]{Plurality Is Stablest for Small Positive Correlations:\\A Gaussian Simplex Theorem}
+\hypersetup{pdftitle={Quantitative Gaussian Simplex Stability at Small Positive Correlations},pdfauthor={Roy van Rijn}}
+\title[Gaussian simplex stability at small correlations]{Quantitative Gaussian Simplex Stability\\at Small Positive Correlations}
 \author{Roy van Rijn}
 \subjclass[2020]{60G15, 49K21, 28A75}
-\keywords{Gaussian noise stability, regular simplex, plurality is stablest, first moments}
+\keywords{Gaussian noise stability, regular simplex, standard simplex conjecture, first moments}
 \date{}
 \begin{document}
 \begin{abstract}
-Zhang proved regular-simplex optimality for the sum of squared Gaussian
-cell first moments for every $k\ge2$, including the $k\ge4$ endpoint.
-Building on his theorem, we prove that, for every fixed $k\ge2$, the central
-regular-simplex partition maximizes Gaussian noise stability among all
-equal-measure measurable $k$-cell partitions in every dimension $d\ge k-1$,
-for all sufficiently small positive correlations. The interval is independent
-of $d$, and equality determines the simplex partition up to orthogonal maps,
-labels and cylindrical extension. Our contribution is the passage from
-first-moment optimality to positive-correlation optimality using compactness
-for measurable label changes normalized by their exact Ornstein--Uhlenbeck
-score loss. Weighted Gaussian tightness yields a limiting facet flux whose
-sharp quadratic cost forces rotationality; moment alignment removes that
-mode. The threshold is qualitative and may depend on the number of cells.
+For each fixed number of cells $k\ge2$, we prove that the central
+regular-simplex partition maximizes Gaussian noise stability among
+equal-measure measurable $k$-cell partitions at sufficiently small
+positive correlations $\rho$ in dimensions $d\ge k-1$. The noise stability deficit is bounded below
+by a positive constant times $\rho$ times the square of the summed Gaussian
+symmetric differences from the closest simplex partition. Both the constant and
+the correlation threshold are independent of the ambient dimension.
+Zhang's first-moment theorem localizes near maximizers. To prove the
+positive-correlation bound, we normalize arbitrary label changes by their
+exact loss against the simplex's Ornstein--Uhlenbeck scores. A Gaussian
+covariance estimate on the facets bounds the limiting first-moment
+interaction, and a Hermite expansion controls all remaining directions
+uniformly in the dimension.
 \end{abstract}
 \maketitle
 
-\section{The theorem and its mechanism}
+\section{The main result}
 
-Two correlated Gaussian observations need not fall in the same cell of a
-partition. Which equal-measure partition makes agreement most likely?
-The Gaussian Standard Simplex Conjecture predicts that the answer is the
-partition into the winning regions of a centered regular simplex. We prove
-this prediction for sufficiently small positive correlation, for each
-fixed number of cells.
+Partition Gaussian space into $k$ cells of equal measure. When two
+Gaussian observations have positive correlation, which partition makes
+them most likely to have the same label? The Gaussian Standard Simplex
+Conjecture predicts that the cells should be the winning regions of a
+centered regular simplex \cite[Conjecture~1.4(i)]{IM}. We prove a
+quantitative form of the comparison near zero correlation.
 
-Let $\ga_d$ be standard Gaussian probability on $\R^d$, with density
-$\phi_d$. For $0<\rho<1$, define
+Write $\ga_d$ for standard Gaussian probability on $\R^d$, with density
+$\phi_d$. For $0<\rho<1$ let
 \[
- T_\rho f(x)=\int f(\rho x+\sqrt{1-\rho^2}\,y)\,d\ga_d(y),\qquad
- S_\rho(A)=\sum_{i=1}^k\int 1_{A_i}T_\rho1_{A_i}\,d\ga_d.
+ T_\rho f(x)=\int f(\rho x+\sqrt{1-\rho^2}\,y)\,d\ga_d(y),
+ \qquad S_\rho(A)=\sum_i\int 1_{A_i}T_\rho1_{A_i}\,d\ga_d.
 \]
-A measurable partition $A=(A_1,\ldots,A_k)$ is \emph{balanced} if
-$\ga_d(A_i)=1/k$ for every $i$. Put $n=k-1$. For vertices
-$v_1,\ldots,v_k$ of a centered regular simplex in $\R^n$, let
+Thus $S_\rho(A)$ is the probability of agreement. A measurable partition
+$A=(A_1,\ldots,A_k)$ is \emph{balanced} when $\ga_d(A_i)=1/k$ for each
+$i$. For $n=k-1$ and $d\ge n$, take the vertices $v_i$ of a centered
+regular simplex in an $n$-dimensional subspace and define
 \[
  T_i=\{x:v_i\cdot x\ge v_j\cdot x\text{ for every }j\}.
 \]
-In higher dimension $T$ denotes the cylindrical extension of this
-partition. All partitions and equality statements are understood modulo
-Gaussian null sets. Write $I_A(x)=i$ when $x\in A_i$.
+For $k=3$ these are three $120^\circ$ sectors, with any remaining
+coordinates unrestricted. We identify partitions up to Gaussian null
+sets. The \emph{simplex orbit} consists of all such labeled partitions
+in $\R^d$. Let
+\[
+ d_k(A)=\inf_{T'\ \text{in the simplex orbit}}
+             \sum_i\ga_d(A_i\triangle T'_i).
+\]
+For fixed $T'$, this sum is twice the probability of different labels.
 
 \begin{theorem}\label{thm:main}
-For every integer $k\ge2$ there exists $\rho_k>0$, independent of
-$d\ge k-1$, such that every balanced measurable $k$-cell partition of
-$\R^d$ satisfies
+For every integer $k\ge2$ there are constants $c_k>0$ and
+$0<\rho_k<1$ such that in every dimension $d\ge k-1$ and for every
+balanced measurable $k$-cell partition $A$,
 \[
- S_\rho(A)\le S_\rho(T)\qquad(0<\rho\le\rho_k).
+ S_\rho(T)-S_\rho(A)\ \ge\ c_k\rho\,d_k(A)^2
+                 \qquad (0<\rho\le\rho_k).
 \]
-Equality holds precisely for orthogonal images and relabelings of the
-cylindrical central regular-simplex partition.
+Equality of noise stabilities holds exactly on the simplex orbit.
 \end{theorem}
 
-The same upper bound holds in dimensions $d<k-1$, by cylindrical
-embedding, and is then strict: equality would require a cell-moment
-matrix of rank $k-1$. No interval uniform over all $k$ is asserted.
+The threshold is qualitative and may depend on $k$. If $d<k-1$,
+cylindrical extension to dimension $k-1$ gives the strict upper bound
+$S_\rho(A)<S_\rho(T)$ for $0<\rho\le\rho_k$, with $T$ in dimension
+$k-1$. The extended partition's cell moments cannot span that space.
 
-The question is the continuous Gaussian problem associated with Plurality
-is Stablest. The two-cell case is classical; see \cite[Introduction]{HT}.
-Heilman \cite{Heilman14} proved the three-cell small-correlation theorem
-in fixed dimension. Heilman--Tarter \cite[Theorem~1.9]{HT} showed that
-every maximizing $k$-cell partition in dimension $d\ge k-1$ is
-cylindrical over $\R^{k-1}$, making the three-cell interval dimension
-independent. Their theorem reduces maximizers, not individual competitors.
-For four cells, the first-moment obstruction to a perturbative extension
-was identified in \cite[Section~8, Conjecture~3]{Heilman14}.
+The two-cell comparison is Borell's inequality
+\cite[Introduction]{HT}. For three cells, Heilman's fixed-dimensional
+small-correlation theorem \cite{Heilman14} and the dimension reduction
+of Heilman--Tarter \cite[Theorems~1.9--1.10]{HT} give a
+dimension-independent interval. Heilman subsequently gave the explicit
+three-cell range $0<\rho\le0.1082$ and a planar deficit bound in terms
+of radial mass imbalance \cite[Theorem~1.5]{Heilman23}.
+Theorem~\ref{thm:main} gives an interval for every fixed cell count and
+controls the full label distance in the ambient space.
+The Gaussian theorem concerns the continuous problem underlying
+low-influence Plurality Is Stablest \cite{IM}.
 
-Zhang's equal-cell first-moment theorem and covariance comparison
-\cite{Zhang} supply that endpoint for every $k$. We give the covariance
-argument, with attribution, in Section~\ref{sec:alignment}; its geometric
-input is the Gaussian multi-bubble theorem of Milman--Neeman
-\cite[Theorem~1.1]{MN}. This paper supplies the nonlinear passage from
-that first-moment endpoint to small positive correlations. A partition
-close in Gaussian measure can still move arbitrarily small amounts of
-mass arbitrarily far away. A second variation for smooth interfaces does
-not by itself compare such partitions.
+\subsection*{How the comparison works}
+The coefficient of $\rho$ in $S_\rho(A)$ is the sum of squared Gaussian
+cell moments. Zhang proved that the simplex maximizes this coefficient
+for every cell count \cite{Zhang}. We include the covariance argument
+for that theorem with attribution. It implies that competitors with
+stability at least $S_\rho(T)-o(\rho)$ approach the simplex orbit as
+$\rho\downarrow0$. An absolute $O(\rho^2)$ error estimate gives too
+little information once the competitor is extremely close.
 
-\subsection*{The right scale for a change of labels}
-Write $e_i=1_{A_i}-1_{T_i}$. The exact comparison is
-\begin{equation}\label{eq:comparison-intro}
- S_\rho(A)-S_\rho(T)=\widetilde Q_\rho(e)-2\LL_\rho(A),
-\end{equation}
-where $\LL_\rho(A)$ is the loss incurred by assigning the labels of
-$A$ to the fixed scores $T_\rho1_{T_i}$, and $\widetilde Q_\rho$ is
-the quadratic interaction of the changes, with constants removed.
-Both terms matter. The first-moment deficit localizes a hypothetical
-competitor, but cannot serve as a uniform scale for its full noise loss;
-Proposition~\ref{prop:obstruction} gives a remote-ball example.
+For the local comparison, keep the simplex scores $T_\rho1_{T_i}$
+fixed while changing labels. The exact stability change is the quadratic
+interaction of the changes minus twice their score loss. Across a facet,
+the two corresponding scores agree, and the slope of their difference
+is asymptotic to $\rho\ell$, where $\ell$ is the distance between the two
+cell moments. The leading cost of moving a thin strip of width $h$ is
+therefore $\rho\ell h^2/2$ per unit Gaussian surface area. This gives the scale for
+arbitrary changes, even those with no smooth boundary. A bound on the
+Gaussian tails and the same strip estimate yield limiting densities on
+the simplex facets. Aligning the cell moments removes infinitesimal
+rotations. The conditional Gaussian covariance on each convex facet
+then bounds the limiting ratio of interaction to score loss by
+$2-2/k$ (Proposition~\ref{prop:local}). All higher Hermite degrees
+contribute a uniformly smaller error, including in directions
+orthogonal to the simplex.
 
-The local picture explains our normalization. Let $t$ be distance into
-an old cell across one of its facets, and let $\ell$ be the common
-distance between adjacent cell moments. For small correlation, the
-score difference is $\rho\ell t$ to first order. Moving a one-sided
-strip of width $h$ therefore costs $\rho\ell h^2/2$ per unit Gaussian
-surface area. Its normalized change of measure is a facet flux of
-density $h$. This elementary strip calculation predicts the quadratic form
+\section{First moments and uniform localization}\label{sec:alignment}
+
+Use $E=\one^\perp\subset\R^k$, the projection $P=I-\one\one^T/k$,
+and the reference covariance $Q_*=P/n$. For a partition let $B$ be the
+matrix with rows $b_i=\int_{A_i}x\,d\ga_d(x)$ and put
+$W_1(A)=\norm B_F^2$, where $\norm{\cdot}_F$ denotes the Frobenius norm.
+The sum of the rows is zero. Write
 \[
- Q(f)=\ell\norm{f}_{\HH}^2-\norm{\DD f}_F^2:
+ F=\frac{(\E\max_{i\le k}Z_i)^2}{n},
 \]
-the first term is the cost of moving mass and the second its first-moment
-interaction. Quantitative moment alignment shows that $Q$ is nonnegative
-and its only zero modes are rotations.
+where the $Z_i$ are independent standard normals.
 
-To pass from strips to arbitrary measurable changes, we normalize by
-$s^2=\LL_\rho(A)/\rho$. A weighted Gaussian estimate keeps the
-normalized transfer measures tight, even if $s$ is smaller than every
-power of $\rho$. Their limiting facet flux satisfies
-$\norm{\DD f}_F^2\ge2\ge\ell\norm{f}_{\HH}^2$ and must therefore
-be rotational. Choosing the closest regular cell-moment matrix makes
-its moment change exactly orthogonal to rotations. This yields the
-contradiction.
-
-Switching-surface curvature is an established second-order method;
-Christof--Wachsmuth \cite[Theorems~4.4 and~6.12]{CW} give general
-conditions for local quadratic growth. Their explicit bang-bang theorem
-assumes a bounded domain, a scalar constraint and a regular switching
-surface. The Gaussian multicell setting also has unbounded tails and
-rotational degeneracy. We prove the needed compactness and flux estimates
-directly in Sections~\ref{sec:tails}--\ref{sec:compactness}.
-
-\section{First moments and quantitative alignment}\label{sec:alignment}
-
-Fix $k$ and put $n=k-1$. Constants below may depend on $k$, but not on
-an ambient dimension $d\ge n$. Let
-\[
- P=I-\one\one^T/k,\quad E=\one^\perp\subset\R^k,\quad Q_*=P/n,
- \qquad F=\frac{(\E\max_{i\le k}Z_i)^2}{n},
-\]
-where the $Z_i$ are independent standard normals. For a partition let
-$B$ have rows $b_i=\int_{A_i}x\,d\ga_d$; then
-$W_1(A)=\norm B_F^2$ and $\sum_i b_i=0$.
-The regular moment orbit is
-$\mathcal M_d=\{B_*:B_*B_*^T=FQ_*\}$. Every member is the moment
-matrix of its central regular winning partition.
-
-For centered positive semidefinite $Q$, define the balanced score value
-\[
- \mathcal C(Q)=\inf_{\lambda\in\R^k}
- \left\{k^{-1}\sum_i\lambda_i+\E\max_i(Y_i-\lambda_i)\right\},
- \qquad Y\sim N(0,Q).
-\]
-Here centered means $Q\one=0$. When $Q$ is positive on $E$, minimizing
-prices make the affine winning cells have masses $1/k$. Write
-$\ell_{ij}$ for the score-site distance, $A_{ij}$ for the ordinary
-Gaussian facet area, and $w_{ij}=A_{ij}/\ell_{ij}$.
-
-\begin{proposition}[Zhang \cite{Zhang}]\label{prop:zhang}
-Every balanced measurable Gaussian partition satisfies $W_1(A)\le F$.
-Equality holds precisely for central regular-simplex partitions and their
-cylindrical extensions; it is impossible below dimension $n$.
-For every centered trace-one $Q\succeq0$, set $Q_t=Q_*+t(Q-Q_*)$.
-Then
-\begin{equation}\label{eq:cov-deficit}
- F-\mathcal C(Q)^2=\int_0^1\frac{D(t)}{t^2}\,dt,\qquad
- D(t)=\frac2n\left[\sum_{e<f}w_e(t)w_f(t)(\ell_e(t)-\ell_f(t))^2
-                         +S(t)^2-S_*^2\right],
-\end{equation}
-where $e,f$ range over distinct unordered label pairs,
-$S(t)=\sum_{i<j}A_{ij}(t)\ge S_*=\sqrt{nF/2}$, and all weights
-are positive for $t<1$.
+\begin{proposition}\label{prop:zhang}
+One has $W_1(A)\le F$ for every balanced partition. For $d\ge n$,
+equality holds exactly on the simplex orbit, and the label distance
+to the simplex with moment matrix closest to $B$ tends to zero as
+$W_1(A)\to F$, uniformly in $d$. For $d<n$ the inequality is strict.
 \end{proposition}
 
 \begin{proof}
-We follow \cite[Sections~2--5]{Zhang}. Two facts include singular
-covariances: $\mathcal C(sQ)=\sqrt s\,\mathcal C(Q)$, and
-$\mathcal C$ is continuous. For the latter, couple $Q^{1/2}G$ and
-$\widehat Q^{1/2}G$; the expected norm of their difference bounds the
-difference of the two price objectives uniformly in the prices.
-
-For full rank on $E$, the score-difference map is nonsingular. Balancing
-prices exist: in the gauge $\sum_i\lambda_i=0$, the objective is at
-least $-\min_i\lambda_i$ and is coercive. Its gradient gives the mass
-errors. Each pair has a positive facet, and the price Hessian is the
-weighted Laplacian $L$, with edge weights $w_{ij}$. Thus prices are
-unique and smooth in the zero-sum gauge. The same score coordinates
-turn the facet domains into fixed polyhedra; Gaussian domination gives
-continuity of the weights and smoothness of the score integrals.
-
-For a score matrix $M$ with $MM^T=Q$, Gaussian flux gives its winning
-moment matrix $LM$. Truncation at large balls justifies flux on these
-unbounded cells. The envelope derivative and this identity give
-\begin{equation}\label{eq:cov-derivative}
- \mathcal C(Q)=\tr(LQ)=\sum_{i<j}w_{ij}\ell_{ij}^2,
- \qquad d\mathcal C(Q)[H]=\tfrac12\tr(LH).
-\end{equation}
-Indeed write $H=MAM^T$, $A=A^T$, and use
-$M(t)=M(I+tA)^{1/2}$; its derivative is $MA/2$.
-
-For $Q_*$, regular scores have distribution
-$(Z_i-\overline Z)/\sqrt n$, so $\mathcal C(Q_*)=\sqrt F$.
-Symmetry in \eqref{eq:cov-derivative} gives $L_*=\sqrt F P$ and
-$S_*=\sqrt{nF/2}$. The Gaussian multi-bubble theorem
-\cite[Theorem~1.1]{MN} gives $S\ge S_*$ for the balanced cells in
-dimension $n$; its cell-count hypothesis is exactly $k=n+1$.
-Perimeter here is the sum of interface areas, half the sum of individual
-cell perimeters. Weighted Cauchy--Schwarz now yields
+We use Zhang's balanced assignment value \cite[Sections~2--5]{Zhang}.
+For $Q\succeq0$ with $Q\one=0$ let
 \[
- \mathcal C(Q)\tr L\ge2S^2\ge nF.
+ C(Q)=\inf_{\lambda\in\R^k}
+ \left\{\frac{1}{k}\sum_i\lambda_i+
+                      \E\max_i(Y_i-\lambda_i)\right\},\qquad
+ Y\sim N(0,Q).
 \]
-Along $Q_t$, write $C(t)=\mathcal C(Q_t)$ and $h(t)=C(t)^2-F$.
-Equation~\eqref{eq:cov-derivative} gives
-\begin{gather*}
- tC'(t)=\tfrac12(C(t)-\tr L_t/n),\qquad
- D(t)=C(t)\tr L_t/n-F,\\
- (h(t)/t)'=-D(t)/t^2\le0.
-\end{gather*}
-Expanding the weighted Cauchy difference gives exactly $D(t)$ in
-\eqref{eq:cov-deficit}. Since $L_*=\sqrt F P$ and
-$\tr(Q-Q_*)=0$, we have $C'(0)=0$ and $h(t)/t\to0$ at zero.
-Integration and continuity at $t=1$ prove the identity, including its
-improper endpoint, and $\mathcal C(Q)\le\sqrt F$.
-Equality forces all pair distances equal at an interior time, hence
-$Q=Q_*$. Centered trace-one equal-distance scores have Gram matrix
-$P/n$; for $k=2$ the covariance domain is already this singleton.
+It is nonnegative (the maximum dominates the average), homogeneous
+of degree $1/2$, and continuous even at singular
+$Q$. Coupling the scores via the same standard Gaussian bounds the
+change of the objective uniformly in $\lambda$ by the expected norm
+of the score change. For $Q$ positive on $E$, represent $Y=Mx$ in
+dimension $n$ with $MM^T=Q$. On the gauge $\sum_i\lambda_i=0$ the
+objective is at least $-\min_i\lambda_i$, hence a minimizer exists.
+Differentiation in the prices gives equal masses, since ties have
+measure zero. Each pair of winning cells has a genuine facet:
+the map $x\mapsto Mx$ is onto $E$, so each prescribed strict ordering
+between the tied pair and the remaining labels occurs on a relatively
+open portion of their tie plane. Any two minimizing price vectors
+give the same winners almost everywhere, by testing the balanced
+assignment of one vector against the objective of the other. Different
+price differences for a pair would shift its cutoff and change the
+winner on an open set where the other scores are lower. Thus the
+normalized minimizer is unique, and it varies continuously with $M$
+by coercivity and continuity of the objective.
 
-Finally the original labels give a feasible balanced assignment:
-$W_1(A)\le\mathcal C(BB^T)$. If $W_1(A)>0$, homogeneity gives
-$\sqrt{W_1(A)}\le\mathcal C(BB^T/W_1(A))\le\sqrt F$.
-Equality forces regular score covariance and assignment equality.
-Regular balancing prices are equal by symmetry, ties are null, and the
-labels must be the regular winners. Their actual moment matrix follows
-from the flux identity above. Rank excludes equality when $d<n$.
-\end{proof}
-
-\begin{proposition}\label{prop:alignment}
-There are $L,K<\infty$ such that, for every balanced partition in
-$d\ge n$, a closest $B_*\in\mathcal M_d$ satisfies
-\begin{equation}\label{eq:alignment}
- \norm{B-B_*}_F^2\le L\delta,\qquad
- \sum_i\ga_d(A_i\triangle T_i)\le K\sqrt\delta,
- \qquad \delta=F-W_1(A).
-\end{equation}
-Here $T$ is the winning partition of $b_i^*\cdot x$. The same choice
-has $B-B_*\perp T_{B_*}\mathcal M_d$.
-\end{proposition}
-
-\begin{proof}
-We first obtain covariance coercivity. For $0\le t\le1/2$, every
-eigenvalue of $Q_t$ on $E$ lies in $[1/(2n),1]$. This is a compact
-set inside the positive cone. The continuous positive facet weights
-therefore have a common lower bound $\alpha>0$.
-Put $H=Q-Q_*$, $d_{ij}=(e_i-e_j)^TH(e_i-e_j)$ and $q=k(k-1)/2$.
-Then $\ell_{ij}(t)^2=2/n+td_{ij}$, $\ell_{ij}(t)\le\sqrt2$, and
-$\sum_{i<j}d_{ij}=0$. If $D_H$ has these off-diagonal entries and
-zero diagonal, $H=-PD_HP/2$. Consequently
+Let $\ell_{ij}$ be the distance between score sites and $A_{ij}$ the
+Gaussian area of their winning facet. Let $L$ be the graph Laplacian
+on the labels with weights $w_{ij}=A_{ij}/\ell_{ij}$. Gaussian
+integration by parts gives the winning moment matrix $LM$, since the
+outward normal for cell $i$ on its facet with $j$ is
+$(M_j-M_i)/\ell_{ij}$. The boundary integral on a bounding sphere
+tends to zero. Evaluating the score at the balanced winners gives
 \[
- \sum_{e<f}(d_e-d_f)^2=q\sum_e d_e^2\ge2q\norm H_F^2,
- \qquad (\ell_e(t)-\ell_f(t))^2\ge t^2(d_e-d_f)^2/8.
+ C(Q)=\tr(LQ)=\sum_{i<j}w_{ij}\ell_{ij}^2,\qquad
+ dC(Q)[H]=\tfrac12\tr(LH).
 \]
-Keeping $0<t<1/2$ in \eqref{eq:cov-deficit} proves
-\begin{equation}\label{eq:cov-coercivity}
- F-\mathcal C(Q)^2\ge\beta\norm{Q-Q_*}_F^2,
- \qquad \beta=q\alpha^2/(4n)>0.
-\end{equation}
-For $k=2$ the right side is zero, so the same conclusion holds.
+For the derivative write $H=MKM^T$ with $K$ symmetric and vary the
+sites by $M(I+tK)^{1/2}$. Differentiation at the unique minimizing
+prices gives the envelope derivative from the winning moments.
+Indeed, the difference of the minimum values is bounded using the
+minimizing price vector at each endpoint, and the two derivatives
+agree in the limit by continuity of the prices and nullity of ties.
 
-Write $W=\norm B_F^2$. Feasible assignment and homogeneity give
-$\norm{BB^T/W-Q_*}_F^2\le\delta/\beta$ when $W>0$.
-Choose the closest regular matrix by singular value decomposition.
-For the $n$ singular values $s_j$ of $B$ and $a=\sqrt{F/n}$,
+At $Q_*$ the scores have the law of
+$(Z_i-\overline Z)/\sqrt n$, so $C(Q_*)=\sqrt F$.
+Symmetry gives $L_*=\sqrt F P$. Thus the regular score partition has
+moment Gram matrix $L_*Q_*L_*=FQ_*$, and its sum of Gaussian facet
+areas is $S_*=\sqrt{nF/2}$. The Gaussian multi-bubble theorem
+\cite[Theorem~1.1]{MN} in dimension $n$ gives
+$\sum_{i<j}A_{ij}\ge S_*$ for the balanced winners. The perimeter counts
+each interface once. For $k=2$ the trace-one covariance is already
+$Q_*$, so the following comparison is immediate in that case.
+
+For centered trace-one $Q$ and $s>0$, put $g(s)=C(Q+sQ_*)^2$.
+The derivative formula and weighted Cauchy--Schwarz give
 \[
- \norm{B-B_*}_F^2=\sum_j(s_j-a)^2
- \le\frac nF\norm{BB^T-FQ_*}_F^2
- \le(1+nF/\beta)\delta.
+ g'(s)=C(Q+sQ_*)\frac{\tr L}{n}
+ \ \ge\ \frac{2}{n}\left(\sum_{i<j}A_{ij}\right)^2\ \ge F.
 \]
-Here the covariance difference splits orthogonally into its trace and
-trace-zero parts. Complete right singular vectors if $B$ has deficient
-rank; if $W=0$, the squared distance is simply $F=\delta$.
+If $Q\ne Q_*$ the first inequality is strict: all weights are positive,
+and equal pair distances of centered sites would give a scalar multiple
+of $P$. By homogeneity and the derivative at $Q_*$,
+$g(s)=Fs+F+o(1)$ as $s\to\infty$. Hence $g(s)-Fs$ increases to $F$,
+and continuity at zero proves $C(Q)^2\le F$, strictly off $Q_*$.
 
-The regret against these same regular scores is exactly
+Using the labels of $A$ as a balanced assignment gives
+$W_1(A)\le C(BB^T)$. When $W_1(A)>0$, scaling gives
+$\sqrt{W_1(A)}\le C(BB^T/W_1(A))\le\sqrt F$.
+If $W_1(A)=F$, the covariance is regular and equality in the assignment
+requires the original labels to be the regular winners almost
+everywhere. The prices are equal by symmetry and the winning labels
+are unique off the pair planes. The regular Gram matrix has rank $n$,
+which excludes equality for $d<n$.
+
+For localization, the centered trace-one covariance set is compact.
+If $W_1(A)\to F$, the last bounds and strict optimality of $Q_*$ force
+$BB^T\to FQ_*$, independently of $d$. Every matrix with Gram matrix
+$FQ_*$ is the moment matrix of a simplex. If $B_*$ is closest to $B$
+among these matrices, singular value decomposition gives
+$\norm{B-B_*}_F^2=\sum_{j=1}^{n}(s_j(B)-\sqrt{F/n})^2\to0$.
+Here the singular values are padded by zeros when needed, and $d\ge n$
+permits completion of the right singular vectors.
+
+For later use, the linear score regret against the winners of $B_*$
+is exactly
 \begin{equation}\label{eq:linear-regret}
- r=\int(\max_i b_i^*\cdot x-b_{I_A(x)}^*\cdot x)d\ga_d
-   =F-\ip{B_*}{B}_F
-   =\tfrac12(\delta+\norm{B-B_*}_F^2).
+ \int(\max_i b_i^*\cdot x-b_{I_A(x)}^*\cdot x)\,d\ga_d(x)
+    =F-\ip{B_*}{B}_F=\tfrac12(F-W_1(A)+\norm{B-B_*}_F^2),
 \end{equation}
-Let $g$ be the gap between the largest and second-largest regular scores.
-Each pairwise difference is normal with standard deviation
-$\ell=\sqrt{2F/n}$, so a union bound gives $\ga_d(g\le u)\le Mu$
-for a constant $M$ depending only on $k$. If
-$\eta=\ga_d(I_A\ne I_T)$, then $\eta\le Mu+r/u$.
-Minimizing in $u$ and using total symmetric difference $2\eta$ proves
-\eqref{eq:alignment}. Orthogonality follows by differentiating squared
-distance along the regular moment orbit at its minimum.
+where $I_A$ is the label assigned by $A$. The mass where the top two
+regular scores differ by at most $u>0$ is at most $C_k u$, by a union
+bound over nondegenerate one-dimensional Gaussian pair differences.
+If the integral in \eqref{eq:linear-regret} is $r$, the changed-label
+mass is at most $C_k u+r/u$. This proves uniform localization.
 \end{proof}
 
-\section{The interface form and its rotational kernel}\label{sec:interface}
+\section{The aligned facet inequality}\label{sec:interface}
 
-We now work in $\R^n$, with $k$ fixed. Let
-$n_{ij}=(b_i^*-b_j^*)/\ell$, $H_{ij}=n_{ij}^\perp$,
-$F_{ij}=T_i\cap T_j$, and $d\nu_{ij}=\phi_n d\mathcal H^{n-1}$
-on the pair plane. Use the same measure on its facet. Let $f_{ij}$ be
-outward speed of $T_i$, with velocity $-f_{ij}n_{ij}$, and put
-$f_{ji}=-f_{ij}$. Define
-\[
- \HH=\bigoplus_{i<j}L^2(F_{ij},\nu_{ij}),\qquad
- \HH_0=\{f:\sum_{j\ne i}\int f_{ij}d\nu_{ij}=0\text{ for every }i\},
- \qquad (\DD f)_i=\sum_{j\ne i}\int x f_{ij}d\nu_{ij}.
-\]
-The map $\DD$ is bounded and finite rank, by Gaussian facet second
-moments. For skew $\Omega$ write
-\[
- f^\Omega_{ij}=-(\Omega x)\cdot n_{ij},\qquad
- \RR=\{f^\Omega\},\qquad
- \VV=\{\text{matrices with rows }\Omega b_i^*\}.
-\]
-In dimension one, pair planes are points with their zero-dimensional
-Gaussian surface measure, and $\HH_0=\{0\}$.
+Identify the simplex span with $E$ and write $x\in E$ for the active
+coordinates. If $e_i$ are the coordinate vectors in $\R^k$, the regular
+moment rows are $b_i^*=aPe_i$ with $a=\sqrt{F/n}$. Put
+$p_{ij}=e_i-e_j$, $n_{ij}=p_{ij}/\sqrt2$, and $\ell=\sqrt2a$. The pair
+plane $H_{ij}$ is $n_{ij}^{\perp}$ in $E$, the common facet is
+$F_{ij}=T_i\cap T_j$ in $E$, and $d\nu_{ij}=\phi_n\,d\mathcal H^{n-1}$ on
+$H_{ij}$, where $\mathcal H^{n-1}$ is Hausdorff measure. The common facet
+area $v=\nu_{ij}(F_{ij})$ satisfies $\ell=kv$: Gaussian flux gives
+$b_i^*=v\sum_{j\ne i}n_{ij}=kvPe_i/\sqrt2$.
+
+For facet densities $f=(f_{ij})_{i<j}$ in
+$\HH=\bigoplus_{i<j}L^2(F_{ij},\nu_{ij})$, set $f_{ji}=-f_{ij}$.
+Call them balanced if $\sum_{j\ne i}\int f_{ij}\,d\nu_{ij}=0$ for
+every $i$. Define the moment matrix $\DD f$ by
+$(\DD f)_i=\sum_{j\ne i}\int x f_{ij}\,d\nu_{ij}$. Its rows belong to
+$E$ and sum to zero.
 
 \begin{lemma}\label{lem:interface}
-On $\HH_0$, $Q(f)=\ell\norm f_\HH^2-\norm{\DD f}_F^2$ is
-nonnegative and its kernel is exactly $\RR$, of dimension $n(n-1)/2$.
-It has a positive gap modulo that kernel.
+For balanced $f$ with $\DD f$ symmetric,
+\[
+ \norm{\DD f}_F^2\ \le\ (1-1/k)\ell\norm f_\HH^2.
+\]
 \end{lemma}
 
 \begin{proof}
-The one-dimensional assertion is immediate. Otherwise begin with smooth
-speeds compactly supported in facet interiors and satisfying the linear
-mass conditions. Their interface motions admit exact balance: correct
-the $O(t^2)$ mass errors using $n$ fixed facet bumps whose label pairs
-form a spanning tree. The mass derivative has rank $n$, so the implicit
-function theorem gives corrections with zero initial speed.
-Boundary differentiation yields
-\begin{equation}\label{eq:moment-variation}
- B'(0)=\DD f,\qquad -\tfrac12 W_1''(0)=Q(f).
-\end{equation}
-Indeed $(b_i^*-b_j^*)\cdot x$ vanishes on the facet and its derivative
-under velocity $-f_{ij}n_{ij}$ is $-\ell f_{ij}$. Acceleration terms
-are multiplied by the vanishing score, while differentiation of the
-squared moments contributes $2\norm{\DD f}_F^2$.
-Proposition~\ref{prop:zhang} now gives $Q\ge0$.
+Put $H=\DD f$. By symmetry under permutations preserving the unordered
+pair, the mean of $x$ under $\nu_{ij}/v$ on $F_{ij}$ is
+$\alpha P(e_i+e_j)$ for a constant $\alpha$ common to the pairs. The
+mean of $p_{ij}^THx$ is therefore $\alpha(H_{ii}-H_{jj})$. These mean
+terms cancel when paired with the densities by balance.
 
-For this deformation $B(t)=B_*+t\DD f+O(t^2)$ and
-$F-W_1(A(t))=t^2Q(f)+o(t^2)$. Apply Proposition~\ref{prop:alignment}
-and take the first-order distance to the smooth moment orbit:
-\begin{equation}\label{eq:tangent-alignment}
- \dist_F(\DD f,\VV)^2\le LQ(f).
-\end{equation}
-These smooth balanced speeds are dense in $\HH_0$: truncate and smooth
-on facet interiors, then correct their converging linear mass errors by
-the same fixed bumps. Thus both conclusions extend by continuity.
+The covariance of the Gaussian on the pair plane conditioned on
+$F_{ij}$ is bounded by the identity on the plane. Indeed, in plane
+coordinates its log moment generating function is
+$|u|^2/2+\log Z(u)-\log Z(0)$, where
+$Z(u)=\int_{F_{ij}}\phi_{n-1}(x-u)\,dx$. The Gaussian integrand with
+the facet indicator is jointly log concave, so $Z$ is log concave by
+Prékopa's marginal theorem \cite[Theorem~6]{Prekopa}. Differentiate
+twice at zero. If $n=1$ the pair plane is a point and the covariance
+is zero.
 
-Rotations preserve masses and $W_1$, so $Q(f^\Omega)=0$ and
-$\DD f^\Omega$ has rows $\Omega b_i^*$. Gaussian integrability
-justifies these identities by truncation. If $Q(f)=0$,
-\eqref{eq:tangent-alignment} supplies $u\in\RR$ with $\DD u=\DD f$.
-A nonnegative quadratic form has zero mixed pairing with its kernel;
-hence $Q(f-u)=0$. Since $\DD(f-u)=0$, this forces $f=u$.
-The moment vectors span $\R^n$, proving the dimension claim. Finally
-the operator of $Q$ on $\HH_0$ is $\ell I$ minus a finite-rank
-operator, so its nonzero spectrum is bounded away from zero.
+Writing $\Pi_{ij}$ for projection onto $H_{ij}$, Cauchy--Schwarz after
+subtracting the means gives
+\[
+ \norm H_F^2=\sum_{i<j}\int f_{ij}\,p_{ij}^{T}Hx\,d\nu_{ij}
+ \le \norm f_\HH
+      \left(v\sum_{i<j}|\Pi_{ij}Hp_{ij}|^2\right)^{1/2}.
+\]
+The unprojected sum is $k\norm H_F^2$, since
+$\sum_{i<j}p_{ij}p_{ij}^T=kP$. The removed sum is
+$\tfrac12\sum_{i<j}(p_{ij}^THp_{ij})^2$. If $J$ is the matrix with
+entries $J_{ij}=p_{ij}^THp_{ij}$ and zero diagonal, then
+$H=-PJP/2$ by centering. Hence the removed sum is at least
+$\norm H_F^2$. Squaring the inequality and using $v=\ell/k$ proves
+the claim, with the case $H=0$ immediate.
 \end{proof}
 
 \section{Exact score loss and weighted transfer bounds}\label{sec:tails}
@@ -410,6 +332,7 @@ Cone scaling, with $m=\rho x/\sigma$, gives
  U_{\rho,ij}(x)=\int_{T_i}[\phi_n(y-m)-\phi_n(Gy-m)]dy,
  \qquad \frac{\phi_n(Gy-m)}{\phi_n(y-m)}=e^{-2m_Ny_N}.
 \]
+Here the subscript $N$ denotes the $n_{ij}$ component.
 For $m\in T_i$ the integrand is nonnegative. Fix a ball $D$ in the
 interior of $T_i$ with $z_N\ge a>0$ on $D$ and $\ga_n(D)=p>0$.
 Since $m+D\subset T_i$, restriction to this ball gives
@@ -423,21 +346,26 @@ The Mehler kernel relative to $\ga_n\otimes\ga_n$ is
  \exp\!\left(\frac{2\rho x\cdot y-\rho^2(|x|^2+|y|^2)}{2(1-\rho^2)}\right).
 \end{equation}
 Its value and correlation derivative at zero are $1$ and $x\cdot y$.
-Its first spatial derivatives are Gaussian dominated for $x$ in compact
-sets and small $\rho$. Taylor expansion and the cell moments give the
-claimed gradient limit.
+Also $\rho^{-1}\nabla_x M_\rho=(y-\rho x)M_\rho/(1-\rho^2)$ tends
+to $y$ uniformly on compact products. For $x$ in a fixed compact
+set and $\rho$ small it is bounded by a constant times
+$(1+|y|)e^{|y|^2/16}$. Integrating gives the locally uniform gradient
+limit for the scores.
 \end{proof}
 
-For any partition define the ordered transfers
-$h_{ij}=1_{T_i\cap A_j}$, $i\ne j$, and
-$e_i=\sum_{j\ne i}(h_{ji}-h_{ij})=1_{A_i}-1_{T_i}$. Its exact score
-loss is
+In the active space let $0\le h_{ij}\le1$ be supported in $T_i$
+for $i\ne j$, and set $e_i=\sum_{j\ne i}(h_{ji}-h_{ij})$.
+For actual label changes $h_{ij}=1_{T_i\cap A_j}$ and
+$e_i=1_{A_i}-1_{T_i}$. Define the score loss by
 \begin{equation}\label{eq:regret-cost}
- \LL_\rho(A)=\sum_{i\ne j}\int U_{\rho,ij}h_{ij}d\ga_n
+ L_\rho(h)=\sum_{i\ne j}\int U_{\rho,ij}h_{ij}d\ga_n
  \ge c_T\rho\sum_{i\ne j}\int\min\{n_{ij}\cdot x,1\}h_{ij}d\ga_n,
 \end{equation}
 because $\min\{\rho t/\sigma,1\}\ge\rho\min\{t,1\}$.
-The loss is positive whenever $A\ne T$ modulo null sets.
+The loss of a partition is denoted by $\LL_\rho(A;T)$, and is
+positive whenever $A\ne T$ modulo null sets. In dimension $d>n$ the
+scores still depend only on the active coordinates, so the full loss
+is the integral of the slice losses against the transverse Gaussian.
 
 \begin{lemma}\label{lem:weighted}
 Let $w(x)=(1+|x|^2)e^{|x|^2/16}$. Uniformly over unit vectors $u$
@@ -475,15 +403,15 @@ the global constant.
 \end{proof}
 
 \begin{lemma}\label{lem:kernel}
-For $0<\rho\le1/16$, $L_\rho=(M_\rho-1)/\rho$ satisfies
+For $0<\rho\le1/16$, $K_\rho=(M_\rho-1)/\rho$ satisfies
 \begin{equation}\label{eq:kernel-weight}
- |L_\rho(x,y)|\le Cw(x)w(y).
+ |K_\rho(x,y)|\le Cw(x)w(y).
 \end{equation}
 It converges to $x\cdot y$ uniformly on compact products.
 \end{lemma}
 
 \begin{proof}
-Use $L_\rho=\int_0^1\partial_rM_r|_{r=s\rho}ds$.
+Use $K_\rho=\int_0^1\partial_rM_r|_{r=s\rho}ds$.
 The derivative is a quadratic polynomial with bounded coefficients
 times $M_r$, and \eqref{eq:mehler} gives
 $M_r\le C\exp[(|x|^2+|y|^2)/34]$ on this range.
@@ -491,46 +419,46 @@ The weight $w(x)w(y)$ dominates their product. The derivative at zero
 gives the compact limit.
 \end{proof}
 
-Let $\Pi_0v=\int v\,d\ga_n$ and put
-$\widetilde Q_\rho(v)=\sum_i\ip{v_i}{(T_\rho-\Pi_0)v_i}_{L^2(\ga_n)}$.
-For balanced $A$, quadratic expansion gives
+In any dimension let $\Pi_0$ be projection onto constants and write
+$\widetilde Q_\rho(e)=\sum_i\langle e_i,(T_\rho-\Pi_0)e_i\rangle$,
+with the inner product in the ambient Gaussian $L^2$ space.
+For balanced $A$ and $T$, each $e_i$ has mean zero.
+Expanding $S_\rho(A)$ about $T$ gives
 \begin{equation}\label{eq:comparison}
- S_\rho(A)-S_\rho(T)=\widetilde Q_\rho(e)-2\LL_\rho(A).
+ S_\rho(A)-S_\rho(T)=\widetilde Q_\rho(e)-2\LL_\rho(A;T).
 \end{equation}
 
 \begin{corollary}\label{cor:exterior}
-For all partitions and $0<\rho\le1/16$,
+For active transfers as above, uniformly for $0<\rho\le1/16$ and $R\ge2$,
 \begin{equation}\label{eq:tv-tail}
  \left(\sum_i\int_{|x|>R}w|e_i|d\ga_n\right)^2
- \le C\beta(R)\LL_\rho(A)/\rho.
+ \le C_k\beta(R)L_\rho(h)/\rho.
 \end{equation}
-The corresponding global bound has a finite constant. Also
-$\widetilde Q_\rho(e)/\rho\le C(\sum_i\int w|e_i|d\ga_n)^2$.
+The same estimate holds with no tail restriction and a finite
+constant. Both estimates also hold with $\sum_{i\ne j}h_{ij}$
+in place of $\sum_i|e_i|$.
 \end{corollary}
 
 \begin{proof}
-Since $\sum_i|e_i|=2\sum_{i\ne j}h_{ij}$ pointwise, sum
-Lemma~\ref{lem:weighted} over ordered transfers and use
-\eqref{eq:regret-cost}. The interaction bound is
-Lemma~\ref{lem:kernel} integrated against $e_i\ga_n$ in both variables.
+Sum Lemma~\ref{lem:weighted} over ordered transfers and use
+\eqref{eq:regret-cost} and $\sum_i|e_i|\le2\sum_{i\ne j}h_{ij}$.
 \end{proof}
 
-\section{From measurable transfers to facet fluxes}\label{sec:compactness}
+\section{Limits of measurable transfers}\label{sec:compactness}
 
-The following proposition is the nonlinear step. There is no regularity
-assumption on the perturbed partitions.
+The next proposition converts arbitrary small label changes, including
+averages of changes in higher dimension, into densities on the facets.
 
 \begin{proposition}\label{prop:compactness}
-Let $\rho_m\downarrow0$ and let balanced partitions $A^{(m)}$ of
-$\R^n$ approach $T$ in Gaussian label measure. Suppose
-$s_m^2=\LL_{\rho_m}(A^{(m)})/\rho_m>0$ and $s_m\to0$.
-Along a subsequence there is $f\in\HH_0$ such that
-\begin{equation}\label{eq:flux-liminf}
- 1\ge\frac\ell2\norm f_\HH^2,\qquad
- \frac{\widetilde Q_{\rho_m}(e^{(m)})}{\rho_ms_m^2}
-       \longrightarrow\norm{\DD f}_F^2.
-\end{equation}
-If $B_m-B_*\perp\VV$ for every $m$, then $\DD f\perp\VV$.
+Let $\rho_m\to0$ through positive values and let $h^{(m)}$ be active
+transfers as in Section~\ref{sec:tails}, with induced changes
+$e_i^{(m)}$ of mean zero. Suppose $s_m^2=L_{\rho_m}(h^{(m)})/\rho_m$
+is positive and tends to zero. Along a subsequence there are balanced
+facet densities $f\in\HH$ such that
+\[
+ \frac{\ell}{2}\norm f_\HH^2\le1,\qquad
+ s_m^{-1}\int x e_i^{(m)}(x)d\ga_n(x)\longrightarrow(\DD f)_i.
+\]
 \end{proposition}
 
 \begin{proof}
@@ -575,10 +503,10 @@ ordered limits use the same surface measure. Then
  \mu_{m,i}\rightharpoonup\mu_i
        =\sum_{j\ne i}f_{ij}\nu_{ij}|_{F_{ij}}.
 \end{equation}
-The weighted tails pass total masses and first moments. Balance gives
-$f\in\HH_0$, and the asserted moment orthogonality passes to $\DD f$.
+The weighted tails allow passage to the limit in masses and first moments.
+The zero means give balance and the limiting moments are the rows of $\DD f$.
 
-\smallskip\noindent\emph{The cost is at least half the squared flux.}
+\smallskip\noindent\emph{The sharp normal cost.}
 Fix a compact tangential cutoff $0\le\chi\le1$ and $0<b<1$.
 Exact vanishing on the pair plane and local gradient convergence give
 \[
@@ -594,7 +522,7 @@ The density bound is
        \ge\frac{(m_{m,ij}^b(z))^2}{2\phi_0}.
 \]
 Discard nonnegative loss outside the cylinders and divide by
-$\rho_ms_m^2=\LL_{\rho_m}(A^{(m)})$ to obtain explicitly
+$\rho_ms_m^2=L_{\rho_m}(h^{(m)})$ to obtain explicitly
 \[
  1\ge\frac{\ell-o(1)}2\sum_{i\ne j}
        \int\chi(z)\left(\frac{m_{m,ij}^b(z)}{s_m\phi_0}\right)^2d\nu_{ij}(z).
@@ -611,98 +539,117 @@ Weak lower semicontinuity and exhaustion by the cutoffs give
 The last step uses $(\theta_{ji}-\theta_{ij})^2\le
 \theta_{ij}^2+\theta_{ji}^2$. The factor is exactly $\ell/2$ because
 $d\nu_{ij}=\phi_0d\ga_{n-1}$.
-
-\smallskip\noindent\emph{Only the first-moment interaction survives.}
-The normalized interaction can be written as
-\[
- \sum_i\iint L_{\rho_m}(x,y)d\mu_{m,i}(x)d\mu_{m,i}(y).
-\]
-Insert continuous compact cutoffs in both variables. On their product,
-$L_{\rho_m}\to x\cdot y$ uniformly, and the resulting finite sum of
-products of first moments converges by \eqref{eq:measure-limit}.
-The omitted terms are bounded by \eqref{eq:kernel-weight} and
-\eqref{eq:normalized-tightness}, uniformly in $m$. Letting the cutoffs
-exhaust space, and using $|x|\le w(x)$, gives
-\[
- \sum_i\iint L_{\rho_m}(x,y)d\mu_{m,i}(x)d\mu_{m,i}(y)
-   \longrightarrow\sum_i\left|\int x\,d\mu_i\right|^2
-   =\norm{\DD f}_F^2.
-\]
-This proves \eqref{eq:flux-liminf}.
 \end{proof}
 
-\section{The contradiction and dimension reduction}
+\section{The comparison in every dimension}\label{sec:comparison}
 
-\begin{theorem}\label{thm:rigidity}
-For each fixed $k\ge2$, there is $\rho_k>0$ such that every balanced
-partition $A$ of $\R^{k-1}$ with $S_\rho(A)\ge S_\rho(T)$ and
-$0<\rho\le\rho_k$ is a regular-simplex partition.
-\end{theorem}
+For a given $A$, choose the reference simplex $T$ with moment matrix
+closest to $B$. Rotate its active space to $E$ and write the ambient
+space as $E\oplus\R^{d-n}$, with points $(x,z)$. The active block of
+$B-B_*$ is symmetric and its transverse block is zero. To see this,
+differentiate squared distance at the closest matrix along orthogonal
+rotations. Active rotations give all skew matrices on $E$ as tangent
+vectors. Rotations mixing $E$ and $E^\perp$ give every centered
+transverse block, because $B_*$ is $a$ times the identity on $E$.
+Orthogonality to these directions gives the two assertions.
+
+\begin{proposition}\label{prop:local}
+For each $0<c<2/k$ there are $\eta,\rho_0,C>0$ depending only on $k,c$
+such that every balanced $A$ in $d\ge n$ with $d_k(A)<\eta$ satisfies,
+for $0<\rho\le\rho_0$ and the closest moment reference $T$,
+\[
+ S_\rho(T)-S_\rho(A)\ \ge\ c\LL_\rho(A;T)\
+                         \ge\ C\rho\,d_k(A)^2.
+\]
+\end{proposition}
 
 \begin{proof}
-Otherwise choose $\rho_m\downarrow0$ and nonsimplex partitions
-$A^{(m)}$ with $S_{\rho_m}(A^{(m)})\ge S_{\rho_m}(T)$.
-The Hermite expansion and Parseval give
+Consider a sequence with $d_k(A)\to0$ and $\rho\to0$, allowing the
+dimension to vary. Its aligned label distance tends to zero. Indeed,
+choose simplices $T^0$ approaching $A$ in label measure. Projection of
+each indicator difference onto the first Hermite degree shows
 \[
- S_\rho(A)=1/k+\rho W_1(A)+R_\rho(A),\qquad
- 0\le R_\rho(A)\le(1-1/k)\rho^2.
+ \norm{B-B_{T^0}}_F^2\le\sum_i\ga_d(A_i\triangle T_i^0),\qquad
+ \norm{B_*-B_{T^0}}_F\le 2\norm{B-B_{T^0}}_F .
 \]
-Thus $0\le\delta_m=F-W_1(A^{(m)})\le(1-1/k)\rho_m$.
-Choose the closest regular moment matrix and rotate it to $B_*$.
-Proposition~\ref{prop:alignment} gives simultaneously
-\begin{equation}\label{eq:gauge}
- \ga_n(I_{A^{(m)}}\ne I_T)\to0,\qquad B_m-B_*\perp\VV.
-\end{equation}
-Rotations preserve balance and noise stability.
+By \eqref{eq:linear-regret} the score regret of $T^0$ against $B_*$
+is $\tfrac12\norm{B_*-B_{T^0}}_F^2$. The same Gaussian strip bound
+therefore makes the label distance from $T^0$ to $T$ tend to zero,
+uniformly in $d$.
 
-The score loss is positive, since the aligned partition is not $T$.
-Set $s_m^2=\LL_{\rho_m}(A^{(m)})/\rho_m$.
-Equations~\eqref{eq:comparison} and Corollary~\ref{cor:exterior} give
-\begin{equation}\label{eq:scale}
- s_m^2\le\frac{\widetilde Q_{\rho_m}(e^{(m)})}{2\rho_m}
- \le C\left(\sum_i\int w|e_i^{(m)}|d\ga_n\right)^2\longrightarrow0.
+We can restrict to $A\ne T$. Put $s^2=\LL_\rho(A;T)/\rho>0$.
+By Lemma~\ref{lem:kernel}, $|U_{\rho,ij}(x)|/\rho\le C_k w(x)$
+because the score difference has zero constant term. The changed-label
+mass tends to zero and $w$ is integrable in the fixed active space,
+so $s\to0$. Average the transfers $h_{ij}(x,z)$ over $z$. These
+averages retain their cost, take values in $[0,1]$, and are supported
+in $T_i$. Proposition~\ref{prop:compactness} then gives balanced facet
+densities $f$, with $\ell\norm f_\HH^2\le2$. The active first moments
+of $e/s$ converge to $\DD f$, which is symmetric by the moment
+alignment.
+
+It remains to control the full interaction in \eqref{eq:comparison}.
+Set $J_i(z)=s^{-1}\int w(x)|e_i(x,z)|\,d\ga_n(x)$.
+Apply Corollary~\ref{cor:exterior} in each slice and integrate in $z$.
+Since $w\ge1$, Cauchy--Schwarz in $z$ also bounds the changed mass:
+\begin{equation}\label{eq:distance-cost}
+ \sum_i\norm{J_i}_2^2\le C_k,\qquad
+ \sum_i\ga_d(A_i\triangle T_i)\le s\sum_i\norm{J_i}_2\le C_k s.
 \end{equation}
-Here \eqref{eq:gauge} and integrability of $w$ imply the last limit.
-Proposition~\ref{prop:compactness} now supplies a flux with
+The $L^2$ norms of $J_i$ are taken in the transverse Gaussian space.
+
+For $r=1/16$ the active Mehler kernel satisfies
+$M_r(x,y)\le C_k w(x)w(y)$, by \eqref{eq:mehler}. If $u_{i,p,q}$
+is the component of $e_i/s$ of Hermite degree $p$ in $x$ and $q$ in
+$z$, then
 \[
- \norm{\DD f}_F^2\ge2\ge\ell\norm f_\HH^2,
- \qquad f\in\HH_0,\quad\DD f\perp\VV.
+ \sum_{i,p,q} r^p\norm{u_{i,p,q}}_2^2
+ =\sum_i\int\big\langle e_i(\cdot,z)/s,
+                 T_r(e_i(\cdot,z)/s)\big\rangle_{L^2(\ga_n)}
+            d\ga_{d-n}(z)
+ \le C_k\sum_i\norm{J_i}_2^2.
 \]
-Hence $Q(f)\le0$. Lemma~\ref{lem:interface} forces $Q(f)=0$ and
-$f\in\RR$, so $\DD f\in\VV$. Orthogonality then gives
-$\DD f=0$, contradicting its squared norm being at least $2$.
+In $\widetilde Q_\rho(e)/(\rho s^2)$ the weight of a term of total
+degree $p+q\ge2$ is
+$\rho^{p+q-1}\le \rho r^{p+q-2}\le(\rho/r^2)r^p$ for $\rho\le r$.
+Thus all such terms together are $O_k(\rho)$. The constant term is removed and
+the transverse first moments vanish by the choice of $B_*$. The
+active first moments are consequently the only surviving interaction.
+Along the extracted subsequence, Lemma~\ref{lem:interface} gives
+\[
+ \frac{\widetilde Q_\rho(e)}{\LL_\rho(A;T)}
+      \longrightarrow\norm{\DD f}_F^2\le 2(1-1/k).
+\]
+If the claimed first inequality failed for every $\eta,\rho_0$, we
+could choose a sequence as above with interaction divided by loss
+greater than $2-c$, by \eqref{eq:comparison}. Its limit contradicts
+$c<2/k$. Choose $\rho_0\le r$. The second inequality follows from
+\eqref{eq:distance-cost}, whose constant is uniform on this range.
 \end{proof}
 
 \begin{proof}[Proof of Theorem~\ref{thm:main}]
-A maximizer exists at each fixed positive correlation with the prescribed
-masses. For completeness, the fractional feasible set
+For any balanced partition, the Hermite expansion gives
 \[
- \{(u_i)\in L^2(\ga_d)^k:0\le u_i\le1,\ \sum_i u_i=1,
-                                  \ \int u_i d\ga_d=1/k\}
+ S_\rho(A)=\frac1k+\rho W_1(A)+R_\rho(A),\qquad
+ 0\le R_\rho(A)\le(1-1/k)\rho^2 .
 \]
-is weakly compact, and $T_\rho$ is compact: its Hermite eigenspaces have
-finite multiplicity and eigenvalues $\rho^m\to0$. The quadratic objective
-is therefore weakly continuous. A fractional maximizer must be ordinary.
-Otherwise two components are bounded away from both zero and one on a
-set of positive measure. A nonzero bounded mean-zero $g$ on that set gives
-feasible perturbations $u\pm\varepsilon g(e_i-e_j)$ whose average
-objective is larger, since $\ip g{T_\rho g}>0$ by the positive Hermite
-eigenvalues. This proves existence without dropping the mass constraints.
-
-By Heilman--Tarter \cite[Theorem~1.9]{HT}, every maximizer in $d\ge n$
-is cylindrical over $\R^n$ after rotation. In their notation the required
-cell-count condition is $k\le d+1$, exactly our range. The reduced
-partition has the same masses and stability, so
-Theorem~\ref{thm:rigidity} makes it a simplex for $0<\rho\le\rho_k$.
-Every equality case is itself a maximizer and undergoes the same reduction.
+Fix the neighborhood $d_k(A)<\eta$ from Proposition~\ref{prop:local}.
+Outside it, uniform localization in Proposition~\ref{prop:zhang}
+gives a constant $\epsilon>0$ with $F-W_1(A)\ge\epsilon$. There the
+Hermite estimate gives $S_\rho(T)-S_\rho(A)\ge\rho\epsilon/2$ for all
+sufficiently small $\rho$. Since $d_k(A)\le2$, this gives the required
+quadratic bound outside the neighborhood. Proposition~\ref{prop:local}
+gives it inside. For fixed $d$ the simplex orbit is compact in label
+distance: the orthogonal group is compact and convergence of rotations
+gives convergence of labels off the limiting pair planes. Hence zero
+distance is equivalent to being a simplex partition.
 \end{proof}
 
-\section{Why the first-moment deficit is a different scale}
+\section{A tail example}
 
-The threshold in Theorem~\ref{thm:main} is qualitative, and the proof
-does not compare partitions at every positive correlation. A separate
-limitation explains the use of exact score loss rather than first-moment
-deficit.
+The first-moment deficit localizes near maximizers, but the local
+stability bound uses a different scale. An exchange far inside two
+cells explains why.
 
 \begin{proposition}\label{prop:obstruction}
 Fix $k\ge2$ and $0<\rho<1$. There is no $c(\rho)>0$ such that
@@ -740,20 +687,17 @@ or location.
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,
 exposition, proof review and verification code.
 
-\enlargethispage{2\baselineskip}
 \begin{thebibliography}{9}
 \raggedright
-\bibitem{CW}
-C.~Christof and G.~Wachsmuth,
-\emph{No-gap second-order conditions via a directional curvature functional},
-SIAM J. Optim. \textbf{28} (2018), 2097--2130.
-\href{https://doi.org/10.1137/17M1140418}{doi:10.1137/17M1140418}.
-Theorem numbering refers to \href{https://arxiv.org/abs/1707.07579v2}{arXiv:1707.07579v2}.
-
 \bibitem{Heilman14}
 S.~Heilman, \emph{Euclidean partitions optimizing noise stability},
-Electron. J. Probab. \textbf{19} (2014), no.~71, 1--37.
+Electron. J. Probab. \textbf{19} (2014), 1--37.
 \href{https://doi.org/10.1214/EJP.v19-3083}{doi:10.1214/EJP.v19-3083}.
+
+\bibitem{Heilman23}
+S.~Heilman, \emph{Three candidate plurality is stablest for correlations
+at most $1/10$}, preprint, 2023,
+\href{https://arxiv.org/abs/2306.03312v3}{arXiv:2306.03312v3}.
 
 \bibitem{HT}
 S.~Heilman and A.~Tarter,
@@ -761,17 +705,26 @@ S.~Heilman and A.~Tarter,
 Forum Math. Sigma \textbf{9} (2021), e65.
 \href{https://doi.org/10.1017/fms.2021.56}{doi:10.1017/fms.2021.56}.
 
+\bibitem{IM}
+M.~Isaksson and E.~Mossel, \emph{Maximally stable Gaussian partitions
+with discrete applications}, Israel J. Math. \textbf{189} (2012), 347--396.
+\href{https://doi.org/10.1007/s11856-011-0181-7}{doi:10.1007/s11856-011-0181-7}.
+
 \bibitem{MN}
 E.~Milman and J.~Neeman,
 \emph{The Gaussian double-bubble and multi-bubble conjectures},
 Ann. of Math. (2) \textbf{195} (2022), 89--206.
 \href{https://doi.org/10.4007/annals.2022.195.1.2}{doi:10.4007/annals.2022.195.1.2}.
 
+\bibitem{Prekopa}
+A.~Pr\'ekopa, \emph{On logarithmic concave measures and functions},
+Acta Sci. Math. (Szeged) \textbf{34} (1973), 335--343.
+\href{https://acta.bibl.u-szeged.hu/14411/}{Journal archive}.
+
 \bibitem{Zhang}
-Y.~Zhang (mxym/math research project),
-\emph{Equal Gaussian cells: the sharp simplex first-moment theorem},
-preprint, 8 October 2026,
-\href{https://github.com/mxym/math/releases/tag/gaussian-balanced-simplex-all-k-v1}{\texttt{github.com/mxym/math}},
-release \texttt{gaussian-balanced-simplex-all-k-v1}.
+Y.~Zhang, \emph{Equal Gaussian cells: the sharp simplex first-moment
+theorem}, preprint, 8 October 2026,
+\href{https://github.com/mxym/math/releases/tag/gaussian-balanced-simplex-all-k-v1}
+{\texttt{github.com/mxym/math}}, release \texttt{gaussian-balanced-simplex-all-k-v1}.
 \end{thebibliography}
 \end{document}

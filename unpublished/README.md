@@ -6,7 +6,7 @@ Drafts and standalone notes with their current review status.
 
 | Paper | Status |
 |---|---|
-| [Plurality Is Stablest for Small Positive Correlations: A Gaussian Simplex Theorem](plurality-small-positive-correlations/) | ready for specialist review |
+| [Quantitative Gaussian Simplex Stability at Small Positive Correlations](plurality-small-positive-correlations/) | ready for specialist review |
 | [A genus-three hyperelliptic curve with rational Jacobian three-torsion of rank three](genus-three-rational-three-torsion/) | ready for specialist review |
 | [Finite Tests for Mixed Moments of Regular Functions](finite-tests-for-mixed-moments/) | draft |
 | [Relative Frobenius norms and density-one ordinary reduction](cm-newton-polygon-constraints/) | ready for review |

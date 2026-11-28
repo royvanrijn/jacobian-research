@@ -823,6 +823,32 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Every fixed finite-label consistency level admits globally unrealizable PSD kernels | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_TRIANGLE_STRENGTHENINGS.md) |
 | Four-point agreement rules out a leading gain for finite-shell tangents with signed varying slopes | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_VARIABLE_SLOPE_RADIAL_DUAL.md) |
 | A single compact facet admits a strict local comparison for PSD triangle agreement | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_COMPACT_FACET_LOCAL_COMPARISON.md) |
+| Overlapping label consistency glues the constant-direction ribbon model into balanced partitions | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_MULTI_FACET_COUNTEREXAMPLE.md) |
+| Label-indexed pair positivity recovers the signed simplex form on compact facet strips | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_LABEL_PAIR_COMPACT_FACETS_LOCAL_COMPARISON.md) |
+| Bare balanced label-indexed PSD is strictly larger than the simplex value at every positive correlation | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_LABEL_PAIR_PSD_GLOBAL_OBSTRUCTION.md) |
+| Fixing the exterior of a large disk permits a strict label-pair objective gap | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_LABEL_PAIR_PSD_GLOBAL_OBSTRUCTION.md) |
+| Compatible four-point or separate five-point tests control variable-direction ribbons | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_RIBBON_TRIPLE_LIFT.md) |
+| A thin bounded tube including the junction admits strict label-pair PSD comparison | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_LABEL_PAIR_COMPACT_FACETS_LOCAL_COMPARISON.md) |
+| Finite Brownian posterior histories leave a strict simplex supermartingale gap | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_POSTERIOR_HISTORY_ENDPOINT_CONSISTENCY.md) |
+| A single noise-stability tie under the posterior lift forces a simplex maximizer | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_POSTERIOR_LIFT_STABILITY.md) |
+| The near-identity posterior lift has a strict leading stability loss at any nonsimplex maximizer | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_POSTERIOR_LIFT_STABILITY.md) |
+| Small posterior lifts all lie in the strict simplex comparison region | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_POSTERIOR_LIFT_STABILITY.md) |
+| Only centered simplices have stationary posterior lifts | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_POSTERIOR_LIFT_STATIONARY_RIGIDITY.md) |
+| Variable fiber orientations do not allow a posterior lift to tie a nonsimplex maximizer | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_POSTERIOR_LIFT_AFFINE_PRICE_RIGIDITY.md) |
+| The posterior lift reduces Gaussian perimeter and improves stability for fixed inputs near one | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_POSTERIOR_LIFT_PERIMETER_IMPROVEMENT.md) |
+| Small posterior lifts contract score regret independently of the ambient dimension | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_POSTERIOR_LIFT_SMALL_S_CONTRACTION.md) |
+| The score prices of small-noise maximizers converge to perimeter pressures | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_ALL_CELL_SMALL_NOISE_PRESSURES.md) |
+| Small-noise maximizers have full ties and degree one on normal fibers | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_NEAR_ONE_JUNCTION_DEGREE_AND_COMPONENTS.md) |
+| Small bounded component groups cannot remain isolated near one | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_NEAR_ONE_JUNCTION_DEGREE_AND_COMPONENTS.md) |
+| Microscopic limits at small-noise ties minimize the free Euclidean Gaussian cut | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_NEAR_ONE_JUNCTION_DEGREE_AND_COMPONENTS.md) |
+| An extra-coordinate variation destabilizes every balanced planar cone with four or more labels | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_PLANAR_CONICAL_CYCLE_INSTABILITY.md) |
+| Homogeneous planar Euclidean Gaussian cut minimizers have at most three phases | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_PLANAR_CONICAL_CYCLE_INSTABILITY.md) |
+| Actual Gaussian maximizers cannot contain an orthogonal product branch | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_ORTHOGONAL_PRODUCT_EXCLUSION.md) |
+| Even-cell half-size pair-only binary merge relaxations strictly gain | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_BALANCED_BINARY_MERGE_RECONSTRUCTION.md) |
+| Joint binary merges improve the independent scalar stability bound uniformly in dimension | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_BALANCED_BINARY_MERGE_RECONSTRUCTION.md) |
+| Euclidean Gaussian-cut minimizers have at most three phases in a plane and four in three dimensions | Internal result | proved | [Source](../plurality-stability/EUCLIDEAN_GAUSSIAN_CUT_PHASE_DIMENSION.md) |
+| Every large-scale perimeter limit of a four-phase Euclidean Gaussian-cut minimizer in three dimensions is a regular tetrahedral cone | Internal result | proved | [Source](../plurality-stability/EUCLIDEAN_GAUSSIAN_CUT_PHASE_DIMENSION.md) |
+| Full near-one ties have uniformly many independent local score directions | Internal result | proved | [Source](../plurality-stability/EUCLIDEAN_GAUSSIAN_CUT_PHASE_DIMENSION.md) |
 
 **Computed obligations:** 45 unresolved; 32 resolved within their exact scope.
 

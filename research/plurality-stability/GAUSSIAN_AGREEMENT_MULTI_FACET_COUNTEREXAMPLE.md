@@ -282,3 +282,62 @@ slow-cutoff test (MW4) for this symmetric family is \(1-4c\);
 the negative limit uses \(c>1/4\). Thus this particular
 instability mechanism is excluded by the five-point anchor
 test.
+
+## Consistent label laws on the whole ribbon model
+
+In the feature model (MW1), allow separate bounded profiles
+\(b_e\) with zero Gaussian arclength means and with both signs
+present in positive measure on every ribbon. The unit feature
+direction \(u_e\) is constant along each ribbon, but its three
+mutual cosines \(c_{ef}\) are arbitrary. For this model,
+pointwise level-five consistency forces the entire agreement
+kernel to be a finite mixture of genuine balanced partitions.
+
+Indeed, using either sign of each ribbon in the level-five
+test replaces \(c_{ef}\) by \(\eta_e\eta_f c_{ef}\) for any
+\(\eta\in\{-1,1\}^3\). Hence
+\[
+ 1-2\sum_{e<f}\eta_e\eta_f c_{ef}\ge0
+              \qquad\text{for every }\eta\in\{-1,1\}^3.         \tag{MW5}
+\]
+For a random sign string \(R\), give the string \(\eta\)
+probability equal to the left-hand side of (MW5) divided
+by eight. This is a probability law, with each sign mean zero
+and \(\mathbb E R_eR_f=-2c_{ef}\). Use the original hard
+labels outside the strips. On cyclically oriented ribbon
+\(e=ij\), assign label \(i\) when \(R_e\operatorname{sgn}b_e(s)=1\)
+and label \(j\) otherwise. The symmetric widths and
+\(\int b_e\,d\nu=0\) preserve the three masses for every
+sign string. Two points on the same ribbon agree exactly
+when their profile signs match. On distinct ribbons with
+profile signs \(s_e,s_f\), the common label requires
+opposite cyclic binary signs, so the agreement probability
+is \((1-s_es_f\mathbb E R_eR_f)/4\), the value of the feature
+kernel. The anchor agreements follow from the zero sign
+means. This proves the mixture representation on all
+points. At every fixed positive correlation its objective
+is at most the simplex value for sufficiently thin compact
+strips, by the ordinary measurable local comparison.
+[Measurable local comparison](GAUSSIAN_SIMPLEX_DIMENSION_FREE_LOCAL_GROWTH.md)
+
+Compatible four-point laws on overlapping tuples already
+imply (MW5) in this model. For any chosen signs on the three
+ribbons, write \(A_j=1/4+c_j/2\) and \(B_j=1/4-c_j/2\)
+for the three cross agreements with matching and reversed
+chosen signs, where \(c_1\) refers to \(12,13\).
+Consider anchor \(1\) and the chosen states of \(12,13\).
+If their all-equal probability is \(t\), their all-distinct
+probability is \(2t-A_1\), since the three pair agreements
+sum to \(1+A_1\). Adding the reversed state of \(23\)
+gives zero agreement with the anchor. On the all-distinct
+event it must therefore agree with one of the other two
+states, so \(2t-A_1\le B_2+B_3\).
+Instead add the reversed state of \(12\). Its agreement
+with the anchor, of probability \(1/2\), is the complement
+of the anchor's agreement with the original state of
+\(12\), because those two ribbon states never agree.
+Its overlap with the event that the anchor agrees with
+the chosen state of \(13\) is at most \(B_1\). Thus
+\(t\ge1/2-B_1\). Shared triple marginals give the same \(t\)
+in both laws. The two bounds imply
+\(c_1+c_2+c_3\le1/2\). Apply them to all choices of signs.

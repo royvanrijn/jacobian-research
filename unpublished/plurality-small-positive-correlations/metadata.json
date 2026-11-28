@@ -1,25 +1,24 @@
 {
-  "title": "Plurality Is Stablest for Small Positive Correlations: A Gaussian Simplex Theorem",
+  "title": "Quantitative Gaussian Simplex Stability at Small Positive Correlations",
   "author": {
     "name": "Roy van Rijn",
     "orcid": "0009-0000-2808-0645"
   },
-  "summary": "For each fixed number of cells, proves a dimension-independent qualitative interval of small positive correlations on which the balanced regular-simplex partition maximizes Gaussian noise stability, with equality rigidity.",
+  "summary": "For each fixed number of cells, proves a Gaussian noise stability deficit bounded below by a constant times correlation times squared label distance to the simplex orbit, on a dimension-independent qualitative interval.",
   "published": false,
   "status": "ready-for-review",
   "source": "main.tex",
   "pdf": "plurality-small-positive-correlations.pdf",
   "source_archive": "source.zip",
   "source_bundle": "source.zip",
-  "build": "SOURCE_DATE_EPOCH=1795737600 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=plurality-small-positive-correlations main.tex",
-  "verification": "Analytic all-cell proof, including the attributed first-moment covariance argument, with published geometric inputs. Warning-free LaTeX build and all-page visual inspection of the attribution revision; the earlier PDF-only review and current archive reproduction are recorded in verification.json. No external specialist review or formal verification.",
+  "build": "SOURCE_DATE_EPOCH=1795824000 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=plurality-small-positive-correlations main.tex",
+  "verification": "Standalone analytic proof using the attributed first-moment covariance argument, Milman–Neeman Gaussian multi-bubbles and Prékopa marginal log concavity. The clean source archive reproduces the nine-page PDF byte for byte. Source-aware audit and isolated PDF-only reading are recorded in verification.json.",
   "verification_record": "verification.json",
   "next_steps": [
-    "Obtain specialist mathematical review of the covariance path, moment alignment and measurable-transfer compactness proof.",
-    "Complete the historical comparison for the fixed-cell extension before selecting a submission venue."
+    "Obtain specialist mathematical review of the covariance localization, aligned facet inequality, measurable transfer limit and transverse Hermite estimate."
   ],
-  "catalogued_on": "2026-11-27",
-  "abstract": "Zhang proved regular-simplex optimality for the sum of squared Gaussian\ncell first moments for every $k\\ge2$, including the $k\\ge4$ endpoint.\nBuilding on his theorem, we prove that, for every fixed $k\\ge2$, the central\nregular-simplex partition maximizes Gaussian noise stability among all\nequal-measure measurable $k$-cell partitions in every dimension $d\\ge k-1$,\nfor all sufficiently small positive correlations. The interval is independent\nof $d$, and equality determines the simplex partition up to orthogonal maps,\nlabels and cylindrical extension. Our contribution is the passage from\nfirst-moment optimality to positive-correlation optimality using compactness\nfor measurable label changes normalized by their exact Ornstein--Uhlenbeck\nscore loss. Weighted Gaussian tightness yields a limiting facet flux whose\nsharp quadratic cost forces rotationality; moment alignment removes that\nmode. The threshold is qualitative and may depend on the number of cells.",
+  "catalogued_on": "2026-11-28",
+  "abstract": "For each fixed number of cells $k\\ge2$, we prove that the central\nregular-simplex partition maximizes Gaussian noise stability among\nequal-measure measurable $k$-cell partitions at sufficiently small\npositive correlations $\\rho$ in dimensions $d\\ge k-1$. The noise stability deficit is bounded below\nby a positive constant times $\\rho$ times the square of the summed Gaussian\nsymmetric differences from the closest simplex partition. Both the constant and\nthe correlation threshold are independent of the ambient dimension.\nZhang's first-moment theorem localizes near maximizers. To prove the\npositive-correlation bound, we normalize arbitrary label changes by their\nexact loss against the simplex's Ornstein--Uhlenbeck scores. A Gaussian\ncovariance estimate on the facets bounds the limiting first-moment\ninteraction, and a Hermite expansion controls all remaining directions\nuniformly in the dimension.",
   "abstract_format": "latex",
   "abstract_source": "main.tex",
   "resource_type": {
@@ -28,11 +27,13 @@
     "subtype": "preprint"
   },
   "mathematical_status_nodes": [
-    "PIS-ALL-CELL-SMALL-CORRELATION-OPTIMALITY",
-    "PIS-FIXED-CELL-SMALL-CORRELATION-RIGIDITY"
+    "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP",
+    "PIS-DIMENSION-INDEPENDENT-MEASURABLE-LOCAL-COMPARISON",
+    "PIS-ALL-CELL-SMALL-CORRELATION-OPTIMALITY"
   ],
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,
-  "submitted": false
+  "submitted": false,
+  "hexagon_metadata": "hexagon-metadata.json"
 }

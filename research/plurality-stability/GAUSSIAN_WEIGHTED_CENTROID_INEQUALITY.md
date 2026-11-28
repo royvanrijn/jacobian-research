@@ -376,19 +376,26 @@ steps. One may use the first lift when the original ambient
 dimension is below \(n\).
 [Dimension-independent Gaussian label distance](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md#gaussian-margin-and-partition-distance)
 
-This gives a reduction for the three-cell value theorem. For
-any fixed \(s\in(0,1)\), it suffices that every actual maximizer
-at the tested positive correlation admit a nondecreasing
-iteration step \(A\mapsto\mathcal L_sA\) for ordinary noise
-stability. In fact the lifted partition would also be a
-maximizer. Iteration would then give maximizing partitions
-arbitrarily close to a regular simplex in Gaussian label
-distance. Uniform local simplex rigidity across ambient
-dimensions would force some iterate to be a simplex, which
-would force the original partition to be a simplex by (WC6).
-The monotonicity of full noise stability needed for this
-reduction remains open.
-[Uniform local simplex isolation](GAUSSIAN_SIMPLEX_DIMENSION_FREE_LOCAL_GROWTH.md#uniform-repair-and-comparison)
+For an actual balanced three-cell maximizer, one nondecreasing
+noise-stability step at any \(0<s<1\) would suffice. Equality
+of the two values makes the lift itself a maximizer, hence
+two-dimensional by dimension reduction. Invariance in the
+remaining directions then forces affine model prices, and the
+stationary affine-fan theorem identifies the lift as a simplex.
+Equality in (WC6) identifies the input as a simplex. The
+single-step comparison on actual maximizers is equivalent to
+their simplex classification.
+[Equality rigidity and the near-identity comparison](GAUSSIAN_POSTERIOR_LIFT_STABILITY.md)
+
+The behavior on ordinary inputs depends on the scale. The lift
+strictly decreases the perimeter of each finite-perimeter
+nonsimplicial partition. For fixed input and lift parameter,
+this gives a strict stability gain sufficiently near correlation
+one. At a fixed correlation in
+\(((\sqrt7-1)/3,1)\), a balanced planar partition with a distant
+polygonal modification gives a strict loss as \(s\uparrow1\).
+[Perimeter improvement](GAUSSIAN_POSTERIOR_LIFT_PERIMETER_IMPROVEMENT.md)
+[Balanced polygonal counterexample](GAUSSIAN_POSTERIOR_LIFT_BALANCED_COUNTEREXAMPLE.md)
 
 ## Uniqueness of the sharp local posterior metric
 
