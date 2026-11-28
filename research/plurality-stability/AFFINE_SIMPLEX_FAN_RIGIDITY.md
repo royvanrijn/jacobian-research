@@ -129,6 +129,88 @@ orthogonal transformation, so all pair distances coincide.
 The common apex is zero and the resulting sites form a regular
 simplex.
 
+## Centering balanced polyhedral cones from one correlation
+
+Let \(A\) be a balanced finite polyhedral partition conical about
+\(p\in\mathbb R^d\). The cells may be unions of chambers of a finite
+hyperplane arrangement through \(p\). Suppose that at one
+\(\rho\in(0,1)\) the scores \(T_\rho1_{A_i}-\beta_i\) agree on
+each shared open facet. Then \(A\) is conical about the origin
+up to null sets.
+
+Fix a shared open facet of \(A_i,A_j\) on \(p+H\), with unit
+normal \(n\) into \(A_i\) on that facet. Put
+\(\sigma=\sqrt{1-\rho^2}\) and
+\[
+ h(t,y)=1_{A_i-p}(tn+y)-1_{A_j-p}(tn+y),\qquad
+ a=\frac{\rho-1}{\sigma}\,p\cdot n,\qquad w=\Phi(a),
+ \quad y\in H.
+\]
+The Gaussian score contrast is constant on all of \(p+H\)
+by real analyticity. At \(x\in p+H\) its conditional normal
+mean in the coordinates \((Y-p)/\sigma\) is \(a\); its
+conditional tangential mean ranges over \(H\) as \(x\)
+ranges over \(p+H\). Since \(h\) is homogeneous of degree
+zero, this implies the ordinary tangential Gaussian
+convolution of \(K_a\) is constant, where
+\[
+            K_a(y)=\int_{\mathbb R}h(t,y)\phi(t-a)\,dt .
+\]
+Gaussian convolution is injective on bounded functions.
+Indeed a constant convolution gives the same Laplace
+transform for \(K_a\,d\gamma_H\) as for the constant
+times \(d\gamma_H\). Hence \(K_a\) is constant almost
+everywhere. On almost every tangential ray \(s y\), this
+holds for almost every \(s>0\) by polar Fubini. It then
+holds for all \(s>0\) on those rays, since
+\[
+             K_a(sy)=\int h(t/s,y)\phi(t-a)\,dt
+\]
+is continuous in \(s>0\) for a finite step function
+\(h(\,\cdot\,,y)\). A ray in the relative interior of the
+active facet can be chosen from this full-measure family.
+On such a ray \(h(t/s,y)\to\operatorname{sgn}(t)\) as
+\(s\to\infty\) for \(t\ne0\), so the constant is \(2w-1\).
+When \(d=1\) the tangential space is a point and the same
+value follows directly from the two half-rays.
+
+Suppose \(a\ne0\). On almost every fixed tangential ray,
+the function of the normal coordinate \(t\) is a finite
+step function. Write its distinct finite breakpoints
+as \(b\), with jumps \(\Delta_b h\). Differentiate the
+finite sum of Gaussian interval probabilities in
+\(K_a(sy)\) to obtain
+\[
+        \sum_b (\Delta_b h)b\,\phi(sb-a)=0\qquad(s>0).
+\]
+For distinct nonzero signed \(b\), the functions
+\(\phi(sb-a)\) are linearly independent. As \(s\to\infty\),
+order them by increasing \(b^2\) and, for equal \(b^2\),
+decreasing \(ab\). Because \(a\ne0\), the first term
+decays strictly more slowly than the others. Its coefficient
+must vanish, and iteration removes all terms. Thus
+\(h(\,\cdot\,,y)\) can only jump at zero. Write \(h_+(y)\)
+and \(h_-(y)\) for its two values in \(\{-1,0,1\}\). They obey
+\[
+                 w h_+(y)+(1-w)h_-(y)=2w-1 .
+\]
+
+Under the original Gaussian law of \(x-p\), the normal
+coordinate is independent of the tangential coordinate,
+with positive-half probability \(q=\Phi(-p\cdot n)\).
+Since \(a=-(p\cdot n)\sqrt{(1-\rho)/(1+\rho)}\), if
+\(w>1/2\) then \(q>w\). The positive weighted sum at \(w\)
+requires either \(h_+=1\), or \((h_+,h_-)=(0,1)\).
+In both cases \(q h_++(1-q)h_->0\). If \(w<1/2\),
+reflect the normal coordinate and reverse the two signs
+to find \(q h_++(1-q)h_-<0\). Integrating over the
+tangential Gaussian in either case contradicts
+\(\gamma_d(A_i)=\gamma_d(A_j)\). Therefore \(p\cdot n=0\)
+on every active facet. The radial distributional derivative
+\(x\cdot D1_{A_i}\) vanishes, as the perimeter measure is
+carried by these facets. The indicators are consequently
+constant along almost every ray from the origin.
+
 ## Harmonic Taylor terms for general conical winners
 
 Suppose instead that a measurable partition of positive cell masses

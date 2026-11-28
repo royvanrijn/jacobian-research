@@ -241,6 +241,74 @@ window for all large \(n\). Taking its radius above
 \(d_{i,\infty}(x)>0\). Thus the pure parts of the limiting
 map are these open sets up to null sets.
 
+## Exact interior distances and bounded thick components
+
+Retain the pure open phases \(V_i=\{d_{i,\infty}>0\}\) and put
+\(C_i=c_i/(1-\rho)\). The limit in (OT8) is the actual
+interior distance of the pure phase:
+\[
+      d_{i,\infty}(x)=\operatorname{dist}(x,V_i^c),
+      \qquad
+      D_i(X)\le \operatorname{dist}(X,V_i^c)+C_i.          \tag{OT10}
+\]
+Indeed \(d_{i,\infty}\) is 1-Lipschitz, vanishes on \(V_i^c\),
+and is therefore at most the interior distance. If a closed
+ball centered at \(x\) is contained in \(V_i\), the uniform
+convergence of \(d_{i,n}\) on the ball implies it is contained
+in the \(i\)-th rescaled strict winner for all sufficiently
+large \(n\). Thus the limit of the distances at \(x\) is at
+least the ball radius. The complement is nonempty. For
+example, if \(0\in V_i\), its openness and dilation invariance
+would give \(V_i=\mathbb R^d\). The local uniform convergence
+would then give \(D_i(0)=+\infty\), since the rescaled distance
+at zero would converge to a positive number. In fact
+\(d_{i,n}(0)=\rho^n D_i(0)\to0\) by positive masses of the other
+labels. Finally (OT8) gives \(d_{i,0}-C_i\le d_{i,\infty}\),
+which proves the second assertion in (OT10). Thus any piece
+of label \(i\) outside its pure dilated phase has inradius
+at each of its points at most \(C_i\).
+
+There is an obstruction to fitting a thick connected region
+inside a bounded component of \(O_i\). Let \(K\) be any nonempty
+connected measurable subset of \(\{D_i>C_i\}\) lying in such a
+component. Then the sets \(\rho^{-n}K\), \(n\ge0\), are pairwise
+disjoint and lie in \(O_i\). Membership follows by repeated
+application of (OT8). If two copies intersected, scaling back
+would give \(K\cap\rho^{-m}K\ne\varnothing\) for some \(m\ge1\).
+The union of the connected sets \(\rho^{-jm}K\), \(j\ge0\),
+would then be connected and contain \(K\). It would also be
+unbounded, since \(K\) contains a nonzero point. The possibility
+\(K=\{0\}\) is excluded by \(\{D_i>C_i\}\subset V_i\) and
+\(0\notin V_i\). Thus such an overlap is impossible.
+
+Write \(x=e^t\omega\) in log-polar coordinates. For each
+\(\omega\) for which the fiber is measurable, the sets of
+\(t\)-values in the copies of \(K\) are translates by
+\(-n\log\rho\). Their disjointness means the fiber is
+injective modulo \(\log(1/\rho)\). Its length is therefore
+at most \(\log(1/\rho)\). Integration in \(\omega\) gives
+\[
+                  \int_K |x|^{-d}\,dx
+                 \le |S^{d-1}|\log(1/\rho).               \tag{OT11}
+\]
+This estimate treats arbitrary connected thick regions,
+without an assumption about the shape of their boundary.
+
+As a ball case, if \(B_R(p)\subset O_i\) and
+\[
+             R>C_i,\qquad
+             R-C_i\ \ge\ \frac{1-\rho}{1+\rho}|p|,        \tag{OT12}
+\]
+then the component containing the ball is unbounded. Indeed
+(OT8) gives an \(i\)-ball at \(\rho^{-n}p\) of radius
+\(R_n=C_i+\rho^{-n}(R-C_i)\) for each \(n\ge0\).
+The distance between consecutive centers is
+\(\rho^{-n-1}(1-\rho)|p|\). By (OT12) their radii sum to
+strictly more than this, including in the equality case
+because \(C_i>0\). The union is connected and unbounded.
+Thin components and separated dilated copies of thick
+regions are compatible with these inequalities.
+
 ## Perimeter growth required by fractional limits
 
 Suppose the original cells have locally finite perimeter and

@@ -785,6 +785,44 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Every cell of a nonsimplex maximizing exact-line partition is disconnected | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXACT_LINE_GEOMETRY.md) |
 | Exact adjusted reference lines force both cyclic transfer orientations | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXACT_LINE_GEOMETRY.md) |
 | Stationary compact simplex discrepancies with consecutive circular slices are simplicial | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXACT_LINE_GEOMETRY.md) |
+| A balanced shape derivative detects every fixed nonsimplex three-cell maximizer in degree one | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_STATIONARY_CORRELATION_WITNESS.md) |
+| Every fixed full-rank nonsimplex maximizer has a degree-one stationary witness | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_STATIONARY_CORRELATION_WITNESS.md) |
+| Uniformly finite stationary correlations and necessary mixed shape derivatives at contact | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_STATIONARY_CORRELATION_WITNESS.md) |
+| Stationary shape witnesses bound first-order regret and the motion of nearby winners | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_STATIONARY_CORRELATION_WITNESS.md) |
+| Approximate agreement on a finite simplex core recognizes balanced stationary winners | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_FINITE_SIMPLEX_GERM_PROPAGATION.md) |
+| A large finite translated obtuse tripod core forces the regular simplex | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_FINITE_SIMPLEX_GERM_PROPAGATION.md) |
+| A local translated tripod germ and finite circular arc structure force global equality | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_FINITE_SIMPLEX_GERM_PROPAGATION.md) |
+| The sharp many-sample agreement optimum is twice the halfspace contribution asymptotically | Internal result | proved | [Source](../plurality-stability/MULTI_SAMPLE_SIMPLEX_COUNTEREXAMPLE.md) |
+| Balanced rules with vanishing voter influences beat plurality for many correlated tallies | Internal result | proved | [Source](../plurality-stability/MULTI_SAMPLE_SIMPLEX_COUNTEREXAMPLE.md) |
+| Approximate obtuse tripod scores force an exact regular simplex exterior | Internal result | proved | [Source](../plurality-stability/THREE_CELL_APPROXIMATE_EXTERIOR_RIGIDITY.md) |
+| Two approximate binary half-plane ends suffice with a connected common winner | Internal result | proved | [Source](../plurality-stability/THREE_CELL_APPROXIMATE_EXTERIOR_RIGIDITY.md) |
+| An explicit bound counts bounded mixed components surrounded by one label | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ISOLATED_SUBCLUSTERS.md) |
+| An enclosed Jordan pocket has a necessary mean squared radius | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ISOLATED_SUBCLUSTERS.md) |
+| A bounded winner component needs an interior challenger seam or dormant boundary contribution | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ISOLATED_SUBCLUSTERS.md) |
+| A sublinear one-crossing end straightens without a slope assumption | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ISOLATED_END_RIGIDITY.md) |
+| The outward distance limit is the exact pure-phase interior distance | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_OUTWARD_THRESHOLD_LIMIT.md) |
+| A thick connected region of a bounded component has disjoint outward copies | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_OUTWARD_THRESHOLD_LIMIT.md) |
+| Exact exterior discrete dilation symmetry forces a finite radial network | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_EVENTUAL_DILATION_RIGIDITY.md) |
+| A discrete exterior with three active labels has three or six centered equal sectors | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_EVENTUAL_DILATION_RIGIDITY.md) |
+| A single exact global dilation forces conicality and three-cell simplex rigidity | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_EVENTUAL_DILATION_RIGIDITY.md) |
+| A six-sector exterior forces at least sixteen genuine junctions | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_EVENTUAL_DILATION_RIGIDITY.md) |
+| A six-sector exterior forces more than two arcs on some circular slices | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_FINITE_SIMPLEX_GERM_PROPAGATION.md) |
+| Central and exterior parts of the six-sector rotation mode interact negatively | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_EVENTUAL_DILATION_RIGIDITY.md) |
+| A tangential six-sector tie has strictly positive fixed-shape deficit curvature | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_EVENTUAL_DILATION_RIGIDITY.md) |
+| A simplicial posterior lift gives a sharp entropy and centroid tradeoff | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_WEIGHTED_CENTROID_INEQUALITY.md) |
+| Conditional shared-noise first response obeys a sharp weighted comparison | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_WEIGHTED_CENTROID_INEQUALITY.md) |
+| Iteration of the simplicial posterior lift contracts the first-moment deficit | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_WEIGHTED_CENTROID_INEQUALITY.md) |
+| The radial-cut triangle witness fails both positive semidefiniteness and four-point consistency | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_TRIANGLE_RELAXATION.md) |
+| Finite three-label consistency relaxations converge to the true balanced Gaussian optimum | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_TRIANGLE_DISCRETIZATION.md) |
+| One angular PSD mode or the four-point constraints block the symmetric median two-type tangent | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_TRIANGLE_STRENGTHENINGS.md) |
+| The discrete median-cut tangent requires at least 93 equal angular bins | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_TRIANGLE_GRID_WITNESS.md) |
+| The PSD agreement relaxation is exact on the constant angular mean face | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_PSD_MIXED_RADIUS.md) |
+| Four-point agreement bounds the mixed-radius angular mean defect | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_PSD_MIXED_RADIUS.md) |
+| The Mehler angular derivative obstructs an independent-radius triangle certificate | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_FACTORIZED_ANGULAR_CERTIFICATE_OBSTRUCTION.md) |
+| Four-point agreement rules out a common-slope leading gain on arbitrary finite radial shells | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_TRIANGLE_STRENGTHENINGS.md) |
+| Every fixed finite-label consistency level admits globally unrealizable PSD kernels | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_TRIANGLE_STRENGTHENINGS.md) |
+| Four-point agreement rules out a leading gain for finite-shell tangents with signed varying slopes | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_VARIABLE_SLOPE_RADIAL_DUAL.md) |
+| A single compact facet admits a strict local comparison for PSD triangle agreement | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_AGREEMENT_COMPACT_FACET_LOCAL_COMPARISON.md) |
 
 **Computed obligations:** 45 unresolved; 32 resolved within their exact scope.
 

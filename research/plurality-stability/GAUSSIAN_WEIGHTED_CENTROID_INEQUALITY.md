@@ -195,6 +195,201 @@ As \(t\to\infty\), \(p_t\to\bar p\) pointwise, and boundedness
 and continuity of \(I\) at \(\bar p\) give the limit in
 (WC5). Nonnegativity and strictness follow from (WC1).
 
+## A sharp posterior entropy and centroid tradeoff
+
+Let \(A\) be an ordinary balanced Gaussian partition, \(T\) the
+regular simplex, and \(n=k-1\). Write \(\pi=\mathbf1/k\),
+\(I_*=I(\pi)\), and \(P\) for orthogonal projection onto the
+label plane \(H\). For \(0<s<1\) put \(p(x)=T_s1_A(x)\),
+\(J_s=\mathbb E I(p(X))\), and \(\overline L=\mathbb E L_{p(X)}\).
+Let \(W_1(A)=\|M_A\|_F^2\) and
+\(\Delta=W_1(T)-W_1(A)\). Then
+
+\[
+ s^2 W_1(A)+\frac12\|\overline L\|_F^2\le W_1(T),
+ \qquad W_1(T)=\frac{2I_*^2}{n}.
+ \tag{WC6}
+\]
+
+Equality holds exactly for regular simplex partitions, with the
+usual cylindrical extension and symmetries. The inequality is
+valid in every finite ambient dimension, with strictness when
+the dimension is below \(n\). The all-cell statement imports
+the balanced first-moment theorem with the source-audit scope
+given in the repository. [Balanced simplex first-moment
+comparison](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md#external-endpoint-and-application-audit).
+
+For the proof, add an independent standard Gaussian \(Z\) on \(H\).
+Assign \((x,z)\) the label of the translated model simplex of masses
+\(p(x)\) evaluated at \(z\). This is an ordinary balanced partition
+with conditional masses \(p(x)\), using the continuous model price
+map in the interior mass simplex. Its first-moment matrix has an
+\(x\) block \(sM_A\), by self-adjointness and \(T_s x=sx\).
+The \(z\) block is \(\overline L/\sqrt2\), by the fixed-fiber
+Gaussian flux identity. Apply the balanced first-moment comparison
+to the lifted partition. For model masses \(\pi\), the facet
+Laplacian is \((2I_*/n)P\) by symmetry and trace, which gives the
+stated value of \(W_1(T)\).
+
+If \(A\) is a regular simplex, the lift is the same winning rule
+on \(sO x+\sqrt{1-s^2}z\), with \(O\) a coisometry onto \(H\).
+Conversely, equality forces the lift to be a centered regular
+simplex. Each of its pair facets in a fixed \(z\) fiber contains
+an open portion of the model pair hyperplane. Thus the label
+components of the simplex site differences are positive multiples
+of \(e_i-e_j\). Consistency around label triangles gives a common
+multiple, and the equal site distances give a scalar row Gram
+matrix for the \(x\) parts of the sites. The lifted price map
+is therefore linear and, unless constant, a scalar multiple
+of a coisometry. Constant prices would make \(p\) constant and
+contradict injectivity of \(T_s\). The nonconstant case makes
+\(p=T_r1_{T'}\) for some centered simplex \(T'\) and \(0<r<1\).
+The semigroup law and injectivity force \(r=s\) and \(A=T'\):
+if \(r\ne s\), one of the two ordinary partitions would be
+a strictly smoothed indicator tuple. This is the same geometric
+identification as for the entropy equality case.
+[Rigidity of the simplicial lift and model price
+map](GAUSSIAN_SCORE_SUPPORT_FLOW.md#sharp-comparison-along-the-indicator-flow).
+
+Since \(\operatorname{tr}\overline L=2J_s\), (WC6) gives
+
+\[
+ \frac{2}{n}\big[J_s^2-(1-s^2)I_*^2\big]
+ +\frac12\left\|\overline L-\frac{2J_s}{n}P\right\|_F^2
+ \le s^2\Delta .
+ \tag{WC7}
+\]
+
+In particular the integrated posterior metric deficit in (WC5)
+has a dimension-independent upper bound from the ordinary first
+moments. With \(\tau=-\log s\), one obtains
+
+\[
+ 0\le
+ \int_\tau^\infty
+       \frac{e^{-2t}\mathbb E D_t}{(1-e^{-2t})^{3/2}}\,dt
+   =\frac{J_s}{\sqrt{1-s^2}}-I_*
+ \le \frac{n s^2\Delta}{4I_*(1-s^2)} .
+ \tag{WC8}
+\]
+
+Indeed (WC5) makes the middle expression nonnegative. Drop the
+matrix term in (WC7), divide by \(1-s^2\), and factor the
+difference of squares, whose other factor is at least \(2I_*\).
+The bound controls an integrated perimeter-profile deficit.
+The ordinary noise-stability deficit involves the Euclidean
+quadratic variation of the posterior.
+
+## The linear response to correlation in the label coordinates
+
+Use the same lift and give the independently sampled Gaussian
+coordinate blocks correlations \(\alpha\) in \(x\) and \(\beta\)
+in \(z\), with no cross correlations between blocks. At
+\(\beta=0\) the agreement of the lift is \(S_{s^2\alpha}(A)\).
+Its derivative in \(\beta\) there is
+
+\[
+ \frac12\mathbb E\,\operatorname{tr}(\overline L(U)^2),
+ \qquad
+ \overline L(U)=\mathbb E[L_{p(\sqrt\alpha\,U+\sqrt{1-\alpha}\,V)}\mid U],
+ \tag{WC9}
+\]
+
+where \(U,V\) are independent standard Gaussians. Indeed only
+the first \(z\)-chaos contributes, with the model centroid
+matrix \(L_{p(x)}/\sqrt2\). Conditioning the two correlated
+\(x\) observations on their common \(U\) gives the formula.
+For the original lift that assigns \(s x+\sqrt{1-s^2}\,z\)
+according to \(A\), the first \(z\)-chaos coefficient instead
+is \((1-s^2)S'_{s^2\alpha}(A)\), since the whole agreement then
+equals \(S_{s^2\alpha+(1-s^2)\beta}(A)\). In this original
+lift the auxiliary Gaussian has the ambient dimension of
+\(A\); the model lift uses \(n\) label coordinates.
+
+There is a sharp conditional comparison in the profile metric.
+Let \(0\le\alpha<1\), put \(q(U)=T_{s\sqrt\alpha}1_A(U)\)
+and \(\theta^2=s^2(1-\alpha)/(1-s^2\alpha)\), and write \(M(U)\)
+for the centroid matrix of \(A\) after conditioning on the
+shared \(U\) and standardizing its Gaussian source. Then
+
+\[
+ \frac12\operatorname{tr}\big(L_{q(U)}^{-1}\overline L(U)^2\big)
+ \ \ge\ \frac{(\mathbb E[I(p(x))\mid U])^2}{I(q(U))}
+ \ \ge\ (1-\theta^2)I(q(U))
+ \ \ge\ (1-\theta^2)\operatorname{tr}
+                    \big(L_{q(U)}^{-1}M(U)M(U)^{\mathsf T}\big).
+ \tag{WC10}
+\]
+
+The first inequality is matrix Cauchy–Schwarz between
+\(L_{q(U)}^{-1/2}\overline L(U)\) and \(L_{q(U)}^{1/2}\), using
+the trace identities. The second is (PF4) for the standardized
+conditional source with posterior multiplier \(\theta\). The
+last is (WC1). The original lift has conditional first
+\(z\)-chaos matrix \(\sqrt{1-\theta^2}M(U)\), by Gaussian
+linear regression, so the two ends of (WC10) measure the
+corresponding model and original conditional responses.
+The regular simplex attains equality, since replacing its
+conditional partitions by translated model simplices gives
+its original lift after identifying the active \(z\) coordinates.
+[Conditional sharp entropy
+comparison](GAUSSIAN_SCORE_SUPPORT_FLOW.md#sharp-comparison-along-the-indicator-flow).
+
+At \(\alpha=0\), \(q(U)=\pi\) and the metric is scalar, so
+(WC10) gives ordinary derivative domination, strict for
+nonsimplex \(A\). More explicitly (WC5), the Laplacian trace
+identity, and Jensen's inequality give the lower bound
+\((1-s^2)W_1(T)\) on (WC9) for every \(\alpha\). Hence the
+model derivative strictly exceeds the original one whenever
+\(s^2\alpha\le 2/3\) and
+\[
+ 2 s^2\alpha\big(1-1/k-W_1(A)\big)<\Delta .
+\]
+Here \(m(s^2\alpha)^{m-1}\le2s^2\alpha\) for every \(m\ge2\)
+bounds the higher Hermite terms of \(S'_{s^2\alpha}(A)\).
+For general \(\alpha\), (WC10) has the observation-dependent
+weight \(L_{q(U)}^{-1}\), whereas the agreement derivative
+in (WC9) uses the Euclidean metric. The higher powers of
+\(\beta\) also enter the pair objective.
+
+## Iteration improves first moments
+
+Write \(\mathcal L_sA\) for the ordinary balanced partition
+constructed in the proof of (WC6). Its moment deficit contracts:
+\[
+       0\le W_1(T)-W_1(\mathcal L_sA)
+               \le s^2\bigl[W_1(T)-W_1(A)\bigr].          \tag{WC11}
+\]
+Indeed \(\operatorname{tr}\overline L=2J_s\) and (WC5) give
+\(\|\overline L\|_F^2/2\ge 2J_s^2/n\ge (1-s^2)W_1(T)\).
+Use the two centroid blocks of the lift. Both bounds in (WC11)
+are strict for a nonsimplex partition, by the equality
+characterizations in (WC5) and (WC6).
+
+In particular, fix any \(s\in(0,1)\) and iterate the lift, adding
+fresh label coordinates on every application. The first-moment
+deficits decrease at least geometrically by (WC11). The
+dimension-independent first-moment stability theorem makes
+the summed Gaussian label distances to the regular simplex
+orbit at most a constant times \(s^m\sqrt{\Delta}\) after \(m\)
+steps. One may use the first lift when the original ambient
+dimension is below \(n\).
+[Dimension-independent Gaussian label distance](QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md#gaussian-margin-and-partition-distance)
+
+This gives a reduction for the three-cell value theorem. For
+any fixed \(s\in(0,1)\), it suffices that every actual maximizer
+at the tested positive correlation admit a nondecreasing
+iteration step \(A\mapsto\mathcal L_sA\) for ordinary noise
+stability. In fact the lifted partition would also be a
+maximizer. Iteration would then give maximizing partitions
+arbitrarily close to a regular simplex in Gaussian label
+distance. Uniform local simplex rigidity across ambient
+dimensions would force some iterate to be a simplex, which
+would force the original partition to be a simplex by (WC6).
+The monotonicity of full noise stability needed for this
+reduction remains open.
+[Uniform local simplex isolation](GAUSSIAN_SIMPLEX_DIMENSION_FREE_LOCAL_GROWTH.md#uniform-repair-and-comparison)
+
 ## Uniqueness of the sharp local posterior metric
 
 Fix an interior mass vector \(p\) and use the label

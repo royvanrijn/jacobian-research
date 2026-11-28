@@ -14,7 +14,9 @@ conditions on the position of either kind of component. Every
 centered disk pocket of a balanced maximizer gives a third
 negative direction. The circular-interface test also excludes
 some translated circles and persists for pockets with boundaries
-trapped in sufficiently thin annuli.
+trapped in sufficiently thin annuli. The number of surrounded
+components contained in a fixed disk is uniformly bounded, with
+an explicit disk in which there are none.
 
 Use the normals, the interface measure, the weight $a$, and the
 quadratic forms from the [maximizer analysis](THREE_CELL_GLOBAL_OBSTRUCTIONS.md).
@@ -193,6 +195,213 @@ exponential on the left. A strict inequality in the opposite
 direction in (IC5) rules out a sequence with $d\downarrow0$.
 When there is only one inside label, the stronger coefficient
 in (IC7) gives the stated $\rho^2/\exp(1)$ threshold.
+
+## A count of bounded surrounded components
+
+Fix an exterior label \(j\) and take any finite collection
+\(S_1,\ldots,S_N\) of bounded components of
+\(\mathbb R^2\setminus\overline{O_j}\). Write
+\(\Gamma_\ell=\partial^* S_\ell\), \(L_\ell=\mathcal H^1(\Gamma_\ell)\),
+and \(\Gamma=\bigcup_\ell\Gamma_\ell\). Set
+\[
+ \Delta_\Gamma=\sup_{x,y\in\Gamma}|x-\rho y|,\qquad
+ c=\frac32 .
+\]
+One can use \(c=2\) when all the outer interfaces meet the
+same inside label. The collection satisfies
+\[
+ \sum_{\ell=1}^N\frac{L_\ell^2}{|S_\ell|}
+     <\frac{8\pi\rho^2}{c\,e}
+                \exp\!\left(\frac{\Delta_\Gamma^2}{2\sigma^2}\right).
+                                                               \tag{PC1}
+\]
+In particular, the number of such components contained in a
+disk \(B_R(p)\) is finite and obeys
+\[
+ N<\frac{2\rho^2}{c\,e}
+       \exp\!\left(\frac{((1-\rho)|p|+(1+\rho)R)^2}{2\sigma^2}\right)
+                                                               \tag{PC2}
+\]
+when \(N>0\). If the bound is at most one, there is no
+such component. For one component the stronger shape
+exclusion is
+\[
+ \frac{\Delta_{\partial^*S}^2}{2\sigma^2}>
+       \log\!\left(\frac{c\,e}{8\pi\rho^2}
+                              \frac{L^2}{|S|}\right).           \tag{PC3}
+\]
+
+The local analytic stratification of the strict winners
+and their closures gives locally finite perimeter for
+these sets. The open set \(\mathbb R^2\setminus\overline{O_j}\)
+is locally decomposed into components of this stratification.
+On a one-dimensional boundary stratum of \(S_\ell\), the
+component occupies one open side. The other side has strict
+wins of \(j\), since the stratum belongs to \(\overline{O_j}\).
+Refine the strata to the actual adjacent winners so that
+the interior side has a fixed label \(i\ne j\). These are
+regular reduced pair arcs. Points of the boundary outside
+these arcs have zero \(\mathcal H^1\)-measure, by local
+analytic stratification and the regular-wall description.
+The outer boundaries of distinct components are disjoint
+in surface measure because each such boundary arc has
+label \(j\) on its exterior side.
+[Regular interfaces and local analytic stratification](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#regular-interface-arcs-and-isolated-triple-junctions)
+
+Apply Euclidean divergence to \(\nabla(V_i-V_j)\) on each
+inside phase \(S_\ell\cap A_i\), and sum over \(i\ne j\).
+The outer normal derivative on \(\Gamma_\ell\) is \(-a\)
+and the sum of the two derivatives at each internal
+interface is also \(-a\). The absolute Euclidean Laplacian
+of each pair contrast is at most
+\(4\rho^2/(e\sigma^2)\) by the conditional Gaussian
+calculation in (IC6). The bound is strict at every point
+because the pair indicator contrast vanishes on the third
+cell, which has positive conditional probability and
+\(\big||Z|^2-2\big|>0\) almost everywhere. It follows that
+\[
+ \int_{\Gamma_\ell}a\,ds<\frac{4\rho^2}{e\sigma^2}|S_\ell|,
+ \qquad
+ \int_{\Gamma_\ell}a^{-1}ds>
+                   \frac{e\sigma^2}{4\rho^2}
+                             \frac{L_\ell^2}{|S_\ell|}.          \tag{PC4}
+\]
+The second inequality uses Cauchy–Schwarz.
+
+On \(\Gamma\) choose the speed \(f=(a\phi_2)^{-1}\),
+oriented out of the corresponding component, and extend
+it by zero to the other interfaces. The reciprocal-gradient
+bound (G20) and the positive minimum of \(\phi_2\) on the
+compact family of boundaries put \(f\) in \(L^2(a\,d\nu)\).
+Compact speeds supported in regular interface interiors
+are dense in this space, and the interaction has a
+continuous extension there by (G1). The weighted pairing
+of \(f\) with any translation \(s_v\) is
+\(\sum_\ell\int_{\Gamma_\ell}v\cdot N\,ds=0\) by Euclidean
+divergence. Thus \(Q_0(f)\ge0\) by the translation-complement
+index bound. This use of the index bound applies to the
+weighted limit of regular speeds.
+[The translation complement and finite negative index](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#negative-index-and-the-higher-hermite-blocks-at-a-maximizer)
+[Reciprocal-gradient control, G20](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#regular-interface-arcs-and-isolated-triple-junctions)
+
+Write \(d\mu=a^{-1}ds\) on \(\Gamma\). The oriented
+label vectors are \(e_i-e_j\) for \(i\ne j\). Their
+projection on the common direction
+\((e_{i_1}+e_{i_2})/2-e_j\) is constant with squared norm
+\(3/2\), and the orthogonal part contributes nonnegative
+Mehler energy. For a single pair type the full squared
+norm is two. Consequently \(Q_0(f)\ge0\) gives
+\[
+ \int_\Gamma\phi_2^{-1}\,d\mu
+      \ge c\iint_{\Gamma^2} M_\rho(x,y)\,d\mu(x)d\mu(y).
+\]
+The factor \(\phi_2(x)M_\rho(x,y)\) is the conditional
+Gaussian density at \(x\) given \(y\), hence is at least
+\((2\pi\sigma^2)^{-1}\exp(-\Delta_\Gamma^2/(2\sigma^2))\).
+Substitution and cancellation bound \(\mu(\Gamma)\) by
+\((2\pi\sigma^2/c)\exp(\Delta_\Gamma^2/(2\sigma^2))\).
+Now (PC4) gives (PC1). The planar isoperimetric inequality
+and the disk bound on \(|x-\rho y|\) yield (PC2), first
+for every finite subcollection and thus for the full
+family. Taking one component gives (PC3).
+
+There is a different radius bound when \(\partial S\)
+is a single rectifiable Jordan curve of length \(L\).
+Put \(m_2=L^{-1}\int_{\partial S}|x|^2ds\),
+\(\kappa=(1-\rho)/(2(1+\rho))\), and \(P(z)=2\Phi(z)-1\).
+Then
+\[
+          \kappa m_2>
+          \log\!\left(\frac{c\,P(e\sqrt{\pi/(2\rho)})}
+                            {2\sqrt\rho}\right).               \tag{PC5}
+\]
+Indeed use \(f=\phi_2^{-1/2}\) on the boundary in
+\(Q^{(1)}\ge0\) with the same orientation and label
+projection. This gives \(\int a\,ds\ge c\rho\iint
+k_\rho\,ds_xds_y\) for the normalized joint kernel in
+(NT4). The arclength chord estimate there applies to
+any rectifiable Jordan curve. Use the first bound in
+(PC4) and \(\int a\,ds<\sqrt{2/\pi}\rho L/\sigma\),
+strict by the missing third label in the normal derivative
+bound. The ensuing two bounds for \(e^{-\kappa m_2}\)
+are \(2\sqrt\rho/[cP(\ell)]\) and
+\(2\rho\sqrt{2/\pi}\,\ell/[ceP(\ell)]\) with
+\(\ell=L\sqrt\rho/(2\sigma)\). Their minimum is maximized
+at their intersection \(\ell=e\sqrt{\pi/(2\rho)}\),
+which gives (PC5).
+[The arclength chord bound, NT4](THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md#a-radius-bound-for-compact-dormant-walls)
+
+## The interior challenger equality in a bounded cell component
+
+Let \(S\) be any bounded connected component of one strict
+winner \(O_i\), with the other labels denoted by \(j,k\).
+Write \(\Gamma=\partial^*S\), \(L=\mathcal H^1(\Gamma)\) and
+\(\Delta_\Gamma=\sup_{x,y\in\Gamma}|x-\rho y|\) as before.
+Inside \(S\), let \(D\) consist of the regular stratum arcs
+where the sign of \(V_j-V_k\) changes. Neither challenger
+wins on these interior arcs. At a regular boundary point
+let \(a\) be the outward slope of the actual pair in the
+sense of (G1). Let \(\widetilde a\) be the outward slope
+against the larger challenger on the inside, with the
+same sign convention as \(a\). The slopes agree away
+from dormant three-score ties. The following bound allows
+either or both other labels on the exterior:
+\[
+ \int_D |\nabla(V_j-V_k)|\,ds+\int_\Gamma(a-\widetilde a)\,ds
+ \ \ge\
+   \frac{3L^2}{4\pi\sigma^2}
+       \exp\!\left(-\frac{\Delta_\Gamma^2}{2\sigma^2}\right)
+          -\frac{4\rho^2}{e\sigma^2}|S| .                       \tag{PC6}
+\]
+When the dormant ties on the outer wall have zero
+arclength, a positive right-hand side requires an
+interior challenger equality with positive weighted length.
+
+Use the speed \(f=(a\phi_2)^{-1}\) on \(\Gamma\).
+Its translation pairing vanishes by Euclidean divergence,
+and its oriented label vectors now have a common inside
+label. Their common projection still has squared length
+\(3/2\). Thus the argument for (PC1) through the reciprocal
+gradient bound gives
+\[
+ \int_\Gamma a^{-1}ds\le
+       \frac{4\pi\sigma^2}{3}
+                     \exp(\Delta_\Gamma^2/(2\sigma^2)).
+\]
+By Cauchy–Schwarz, \(\int_\Gamma a\,ds\) is at least the first
+term on the right of (PC6).
+
+For the divergence step, split \(S\) into the regions
+\(S_j\), \(S_k\) where the indicated challenger has the
+higher score. Integrate the ordinary Laplacian of
+\(V_i-V_j\) on \(S_j\) and that of \(V_i-V_k\) on \(S_k\).
+The summed outward derivative on \(\Gamma\) is
+\(-\widetilde a\). If both challengers are tied on the
+boundary, the one with smaller outward derivative of
+its score has the larger score on the inside to first
+order. The actual exterior winner has the larger
+outward derivative to first order. Both slopes are
+measured relative to \(V_i\), so
+\(\widetilde a\le a\). If the first derivatives coincide,
+the choice has no effect on the formula. On \(D\), the outward derivative from the
+\(S_j\) side plus the outward derivative from the \(S_k\)
+side is \(+|\nabla(V_j-V_k)|\). To see the sign, the outward
+normal from \(S_j\) goes from positive to negative values
+of \(V_j-V_k\), and the difference of the two integrated
+contrasts is \(V_k-V_j\). The terms vanish wherever this
+pair gradient is zero. Lower-dimensional junction sets
+have no surface contribution by local analytic
+stratification. Consequently
+\[
+ \int_\Gamma \widetilde a\,ds
+  =\int_D |\nabla(V_j-V_k)|\,ds
+        -\int_{S_j}\Delta(V_i-V_j)\,dx
+        -\int_{S_k}\Delta(V_i-V_k)\,dx .
+\]
+Each Laplacian has absolute bound \(4\rho^2/(e\sigma^2)\)
+as in (PC4). Adding the outer slope deficit yields (PC6).
+These two contributions are the terms absent from the
+surrounded-component area estimate.
 
 ## Exterior interaction required by a single-label pocket
 

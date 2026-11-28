@@ -3,10 +3,12 @@
 Fix \(0<r<1\), put \(\sigma^2=1-r^2\), and let \(p_\sigma\)
 denote the centered normal density with variance \(\sigma^2\).
 Consider a stationary planar partition. In an orthonormal
-coordinate system about the Gaussian origin, suppose the
-\(i/j\) interface in \(\{t>S,\ |z|<m t\}\) is a bounded
-continuous graph \(z=h(t)\), with just its two labels on the
-two sides within this wedge. Write \(\beta\) for the pressure
+coordinate system about the Gaussian origin, suppose almost
+every vertical section of \(\{t>S,\ |z|<m t\}\) has one switch
+between labels \(i,j\) at \(z=h(t)\), with
+\(\operatorname*{ess\,sup}_{t>R}|h(t)|/t\to0\).
+The sublinear graph theorem first gives an analytic
+representative with bounded height. Write \(\beta\) for the pressure
 of the lower label minus the upper, and let \(b\) solve
 \(\beta=2\Phi((1-r)b/\sigma)-1\).
 
@@ -24,6 +26,7 @@ height equation decays at a strictly faster Gaussian rate
 than \(\kappa\). In a network with one bounded affine-direction
 graph per pair, this separates the leading effect of an acute
 neighboring arm from the nonlinear height terms.
+[Boundedness of sublinear isolated wedge graphs](THREE_CELL_ISOLATED_END_RIGIDITY.md#every-sublinear-isolated-graph-is-bounded)
 
 ## A wedge error and the rate it permits
 

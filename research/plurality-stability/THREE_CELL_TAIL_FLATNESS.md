@@ -2,15 +2,15 @@
 
 Fix a balanced planar three-cell Gaussian maximizer at \(0<r<1\).
 Suppose that in an orthonormal coordinate system about the Gaussian
-origin the entire interface in a half-plane \(x>S\) is a bounded
-continuous graph \(y=h(x)\). One label occupies the region below the
-graph and another occupies the region above it. Then the graph is
-exactly the straight ray \(h=b\) on a tail, where \(b\) is the offset
-determined by the pair pressure. The proof uses only the constant
-pair-score equation on this graph. It also applies to a sublinear
-isolated graph with uniformly bounded oscillation on unit intervals,
-since the bounded-end theorem first gives bounded height in that case.
-[Bounded isolated ends](THREE_CELL_ISOLATED_END_RIGIDITY.md)
+origin almost every vertical section of a half-plane \(x>S\)
+has one switch between the same two labels at \(y=h(x)\), with
+\(\operatorname*{ess\,sup}_{x>R}|h(x)|/x\to0\). Then the interface
+is exactly the straight ray \(h=b\) on a tail, where \(b\)
+is the offset determined by the pair pressure. The sublinear
+graph theorem first gives an analytic representative with
+bounded height. The straightening proof uses the constant
+pair-score equation on this graph.
+[Boundedness of sublinear isolated graphs](THREE_CELL_ISOLATED_END_RIGIDITY.md#every-sublinear-isolated-graph-is-bounded)
 
 The pressure equation yields a quadratic residual in the transformed
 height at the observation point, with a further term that is linear

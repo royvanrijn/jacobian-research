@@ -15,7 +15,11 @@ stationary winner and so does not require global maximality. The
 radius is independent of the ambient dimension. If \(A\) depends
 only on \(Px\), the same conclusion holds when \(A\) is sufficiently
 close to \(T\) in Gaussian measure on \(C_R\) and every adjusted
-pair equality holds on its full reference plane.
+pair equality holds on its full reference plane. In active dimension
+two, balanced stationary winners close to a regular tripod on the
+finite disk are centered simplexes even without those score
+identities. The comparison also allows a tripod with a bounded
+vertex and nonacute opening angles uniformly below \(\pi\).
 
 For three-cell planar maximizers with the three exact adjusted
 reference score lines, this rules out all partitions into
@@ -122,6 +126,145 @@ This argument uses stationarity through the winner rule and
 the exact pair-plane identities. An energy tail bound for
 arbitrary distant competitors does not give these identities.
 
+## Approximate core recognition for balanced winners
+
+Let \(n=k-1\), and suppose the simplex has a positive interface
+gap in the moment gauge at every correlation in \(J\). This
+holds for \(k=3\). There is \(\varepsilon>0\) such that a
+balanced adjusted-score winner on \(\mathbb R^n\) at
+\(\rho\in J\) that differs from \(T\) on Gaussian mass at most
+\(\varepsilon\) in \(B_{R_0(k,J)}\) is a centered regular
+simplex. No exact identities for its scores are required.
+[Local rigidity of adjusted-score winners and the three-cell gap](LOCAL_GAUSSIAN_SCORE_WINNER_RIGIDITY.md)
+
+Otherwise take nonsimplex winners with core discrepancy
+tending to zero and correlations \(\rho_m\to r\in J\).
+Their indicator vectors \(f^{(m)}\) have a subsequence
+converging weakly in summed Gaussian \(L^2\) to a balanced
+fractional partition \(f\). Normalize the prices to sum to
+zero. Every label wins on positive measure, and every
+unadjusted score belongs to \([0,1]\), so price differences
+are bounded by one. Pass to a subsequence with convergent
+prices. The Hermite eigenvalues \(\rho^\ell\), with finite
+multiplicity at each degree, show that \(T_r\) is compact
+in fixed dimension and \(T_{\rho_m}\to T_r\) in operator
+norm. Thus the adjusted scores \(V_i^{(m)}\) converge in
+\(L^2\) to \(V_i=T_rf_i-\beta_i\).
+
+The winner identity passes by weak–strong convergence:
+\[
+ 0=\lim_m\int\sum_i f_i^{(m)}
+             \bigl(\max_jV_j^{(m)}-V_i^{(m)}\bigr)\,d\gamma_n
+   =\int\sum_i f_i\bigl(\max_jV_j-V_i\bigr)\,d\gamma_n .
+\]
+The limit \(f\) agrees with the reference indicators on the
+core, so each \(f_i-f_j\) is nonconstant. Injectivity of
+\(T_r\) implies that each \(V_i-V_j\) is nonconstant.
+These contrasts are real analytic, so their ties have
+Gaussian measure zero. The limit identity then makes
+\(f\) an ordinary winner. Since \(f\) and the original
+indicator vectors all have squared norm one, convergence
+is strong. Exact core propagation gives \(f=1_T\)
+globally. Local winner rigidity at \(r\) makes the
+original partitions simplexes for all sufficiently large
+\(m\), a contradiction.
+
+## A finite translated tripod core
+
+In the plane let \(T^p\) be a partition into three sectors
+with a common vertex \(p\) and opening angles in
+\([\pi/2,\pi-\theta]\), with \(\theta>0\). Fix \(P_0<\infty\).
+There is \(R_1=R_1(P_0,\theta,J)\) such that an adjusted-score
+winner agreeing with \(T^p\) on \(B_{R_1}(p)\), for \(|p|\le P_0\),
+agrees with it on the whole plane. It follows that \(p=0\)
+and all three openings are \(2\pi/3\). This conclusion
+requires only stationarity. For balanced adjusted-score
+winners there is also \(\varepsilon>0\) such that discrepancy
+at most \(\varepsilon\) on \(B_{R_1}(p)\) forces a centered
+regular simplex, without assuming any score equalities.
+[Centering of stationary affine fans](AFFINE_SIMPLEX_FAN_RIGIDITY.md#centering-from-the-stationary-facet-equations)
+
+Fix an ordered pair \(i,j\). Let \(n\) be its inward unit
+normal for \(T_i^p\), \(\tau\) its unit tangent pointing
+out along the reference ray, and \(H\) its full affine line.
+For \(x\in T_i^p\), set \(t=(x-p)\cdot n\) and
+\(u=(x-p)\cdot\tau\). Write \(c_i=-\cot\alpha_i\), where
+\(\alpha_i\) is the opening of \(T_i^p\), and similarly
+write \(c_j=-\cot\alpha_j\). Then \(t\ge0\), \(u\ge-c_i t\),
+and \(0\le c_i,c_j\le\cot\theta\). The normalized conditional
+normal and tangential means of \(Y-p\) are
+\[
+ A_0=-\frac{1-\rho}{\sigma}\,p\cdot n,\qquad
+ A=A_0+\frac{\rho t}{\sigma},\qquad
+ B=\frac{\rho u-(1-\rho)p\cdot\tau}{\sigma}.
+\]
+The unadjusted reference contrast is
+\[
+ D(A,B)=
+ \mathbb E_{V\sim N(A,1)}
+       [1_{\{V>0\}}\Phi(B+c_i V)-1_{\{V<0\}}\Phi(B-c_j V)] .
+\]
+Projection onto \(H\) replaces \(A\) by \(A_0\) and leaves
+\(B\) fixed. The integrand as a function of \(V\) is
+nondecreasing on each side of zero and has a jump
+of size \(2\Phi(B)\) at zero. Differentiating its convolution
+therefore gives \(\partial_A D(A,B)\ge 2\phi(A)\Phi(B)\).
+There is \(\eta=\eta(P_0,\theta,J)>0\) such that
+\[
+ D(A,B)-D(A_0,B)\ \ge\ \eta\min(t,1).                     \tag{FG4}
+\]
+For bounded \(t\), the sector inequality bounds \(B\) below
+and \(A,A_0\) stay in a compact interval. The first term in
+the derivative then gives a positive uniform lower bound.
+For \(t\ge1\) and \(B\) bounded below, integrate that term
+over \([A_0,A_0+a]\). For the remaining range, the sector
+inequality gives \(B+c_i A\ge-C\) uniformly. When \(t\) is sufficiently
+large, \(A>0\) and the part of the expectation with
+\(A\le V\le A+1\) is at least
+\(\mathbb P(0\le Z\le1)\Phi(-C)>0\) for a standard Gaussian
+\(Z\). The negative part has size at most \(\Phi(-A)\).
+Take the threshold on \(t\) large enough to make this
+negative part at most one quarter of the positive lower
+bound. Also \(D(A_0,B)\to0\) as \(B\to-\infty\) uniformly
+for bounded \(A_0\), by the Gaussian tail bound. Taking
+the lower threshold on \(B\) sufficiently negative
+gives (FG4) in the remaining range.
+
+Agreement on \(B_R(p)\) makes the actual adjusted contrast
+zero on \(H\) by analyticity. At any \(x\in B_{\lambda R}(p)\)
+it consequently equals the reference increment in (FG4)
+plus \(T_\rho f_{ij}(x)-T_\rho f_{ij}(\Pi_H x)\), where
+\(f_{ij}\) is the actual minus reference indicator contrast.
+For \(Y=\rho x+\sigma Z\), the event \(|Y-p|>R\) implies
+\(|Z|\ge hR-P_0\). For \(R\ge2P_0/h\) the estimates (FG2)
+and (FG3) thus hold on these translated disks with
+\(p_R=\mathbb P(|Z|\ge hR/2)\). Take \(R_1\ge1\) large
+enough that the error coefficient is less than \(\eta\).
+Then (FG4) forces the reference labels on the larger
+disk, and iteration yields global agreement. A planar
+tripod with openings less than \(\pi\) has affinely
+independent sites. Its three cyclic inward pair normals
+have a strictly positive linear dependence, since the rays
+do and the normals are obtained by a common quarter-turn.
+Scale the normals according to this dependence and integrate
+them as cyclic site differences. The three affine score
+differences then have the required signs relative to \(p\).
+The adjusted Gaussian scores agree on every facet of this
+fan, so stationary affine-fan rigidity applies.
+
+For the approximate claim, take a sequence with discrepancy
+tending to zero and pass to limiting reference rays and
+bounded vertices \(p_m\to p_*\).
+On every disk compactly contained in \(B_{R_1}(p_*)\),
+the reference indicators converge in measure and the
+local discrepancies tend to zero. The weak limit in the
+preceding compactness proof therefore agrees with \(T^{p_*}\)
+on the full core. The same nonconstant-contrast argument
+again gives an ordinary winner and strong convergence.
+Exact translated propagation and affine centering give
+\(p_*=0\) and the global simplex in the limit. Local winner
+rigidity gives the desired contradiction.
+
 ## Consecutive circular arcs force the planar simplex
 
 Let \(k=3\), \(d=2\), and assume actual balanced maximality
@@ -196,6 +339,151 @@ The argument leaves open whether arbitrary maximizing
 partitions have exact adjusted reference score planes,
 and whether the necessary nonconsecutive slices can
 occur at a maximizer with those planes.
+
+### Small translated tripod germs and finite circular slices
+
+Fix \(0<\delta<R_1(P_0,\theta,J)\) and a reference tripod
+from the preceding translated-core theorem. A planar
+maximizer is a centered regular simplex if it has this
+tripod on \(B_\delta(p)\) and has one arc per label on
+almost every circle centered at \(p\) of radius below \(R_1\).
+Both hypotheses may be approximate. There is a uniform
+\(\varepsilon>0\) such that the result holds when the
+changed-label mass is at most \(\varepsilon\) against the
+reference tripod on \(B_\delta(p)\), and also at most
+\(\varepsilon\) on \(B_{R_1}(p)\) against some partition
+with those one-arc slices.
+
+The exact germ makes the contrasts zero on all three
+affine lines. Its vertex is a genuine triple junction,
+so all three pair gradients are nonzero there by (G20)
+and its junction consequence. Apply the circular
+propagation argument about \(p\). At a nonexceptional
+radius, when all widths are between zero and \(\pi\),
+the endpoint of each pair is at one of the two
+intersections with its affine line, apart from the
+discrete zeros of the normal derivatives. The three
+forward rays have a unique dependence up to scale
+with all coefficients positive. Reversing only some
+of them gives a mixed-sign dependence and hence
+puts the selected rays in an open half-plane. Their
+angular gaps then include one greater than \(\pi\).
+Thus the slice is the reference tripod or its antipode
+about \(p\). Both have the reference widths. The
+angular continuity and the reciprocal-gradient argument
+at an exceptional circle give the core on \(B_{R_1}(p)\).
+Apply translated-core propagation.
+
+For the approximate statement pass to a strongly
+convergent sequence of maximizers with discrepancies
+tending to zero, along with convergent vertices and
+reference rays. The limit has the exact small germ.
+Writing each disk as \(x=p_m+z\) puts the comparator
+slices on a common family of circles. On this bounded
+region Gaussian mass and Lebesgue measure are comparable.
+Local \(L^1\) convergence of the shifted indicators
+follows from strong compactness and continuity of
+translations in \(L^1_{\mathrm{loc}}\). Hence the circular
+comparators converge in \(L^1\) on the disk to the
+recentered limit. Fubini gives an angular \(L^1\)
+convergent subsequence at almost every radius. Compactness
+of the arc family gives the one-arc property there.
+The exact assertion and local winner rigidity then rule
+out nonsimplex members of the original sequence.
+
+## A six-sector exterior forces extra circular arcs
+
+Suppose a balanced planar maximizer agrees outside a compact
+set with the centered cone \(C\) of six equal sectors whose
+labels repeat in cyclic order. Then on a set of radii of
+positive measure, at least one circular label slice is
+not a union of at most two arcs up to angular null sets.
+This condition follows from stationarity and stability
+without a bound on the size of the compact discrepancy.
+[The six-sector alternative under eventual dilation symmetry](GAUSSIAN_EVENTUAL_DILATION_RIGIDITY.md#centering-and-the-exterior-labels)
+
+Each pair is adjacent along two opposite exterior rays.
+Its adjusted score contrast therefore vanishes on their
+full supporting line by analyticity. Its normal derivative
+along the line is analytic and not identically zero, since
+the exterior rays are actual regular walls. A radius is
+exceptional if some pair contrast vanishes identically on
+its circle. These radii are locally finite in \((0,\infty)\):
+for each pair the contrast is nonzero on some fixed radial
+direction for all sufficiently large radii, and its
+restriction there is analytic. No sufficiently large
+radius is exceptional, since the active reference rays
+have nonzero pair gradient there by (G20) and the contrast
+already vanishes on the supporting line. At every
+nonexceptional radius the angular winner partition varies
+continuously in angular \(L^1\), by persistence of the
+strict winners and dominated convergence.
+[Nonvanishing gradient on active walls, G20](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#regular-interface-arcs-and-isolated-triple-junctions)
+
+Consider a slice with at most two arcs per label that is
+sufficiently close in angular \(L^1\) to \(C\). Its two
+arcs for each label must be close to the two corresponding
+reference arcs, including at their endpoints. Indeed,
+along a sequence tending in \(L^1\) to the reference,
+compactness of the arc centers and lengths gives limits
+of both arcs. A nondegenerate limiting arc is contained
+in one reference component. Both positive-length
+components must be covered, so both limiting arcs are
+nondegenerate and equal their respective components.
+This proves the endpoint assertion and excludes the
+spectator label on neighborhoods of both antipodal
+intersections of each pair line with the circle.
+
+Away from the discrete radii where the pair normal
+derivatives vanish at a line intersection, the two
+incident labels switch at each of these points. The
+angular derivative of their contrast is nonzero there
+and the spectator is absent in a neighborhood. This
+forces all six reference endpoints. At most two arcs
+per label permit at most six endpoints in total, and
+closeness to \(C\) fixes the labels between them. The
+slice therefore equals \(C\).
+
+If the two-arc property holds almost everywhere, start
+in the exterior and work inward on the interval beyond
+the largest exceptional radius, or on \((0,\infty)\)
+when none exists. The radii with slices sufficiently
+close to \(C\) form an open set. On it the preceding
+pinning gives exact agreement almost everywhere and
+then everywhere by continuity. This set is therefore
+closed in the same interval, and agreement holds
+throughout it. At a positive lower endpoint \(s_0\)
+take the pair that ties on the exceptional circle and
+intersect it with an active reference ray. The contrast
+vanishes on both the line and the circle, whose
+tangents at the intersection are independent. Its
+gradient vanishes there. Along the active ray from
+above, the score Hessian bound gives
+\(a(s)\le C_0(s-s_0)\), contradicting integrability of
+\(a^{-1}\) in (G20). There is consequently no such
+endpoint, and the partition equals \(C\) everywhere.
+The cells of \(C\) are antipodal and have zero first
+moments. Their nonzero translation speeds are then
+balanced and make the quadratic form \(Q_0\) strictly
+negative, contrary to stability.
+[Translation instability of repeated conical labels](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#convex-and-conical-maximizers)
+
+If the exterior agreement holds beyond a fixed radius \(R\)
+and the correlation belongs to a compact positive band, the
+preceding obstruction is uniform. Measure the angular \(L^1\)
+distance at each \(s<R\) from the class of partitions into at
+most two arcs per label, then integrate against the Gaussian
+radial measure. The resulting distance is uniformly bounded
+away from zero for these maximizers. Otherwise align all
+exterior cones by rotations and relabeling and take a strongly
+convergent subsequence of maximizers. The limit still has the
+same exterior. The slice distance is measurable, by compact
+parametrization of the arc centers and lengths, and its
+integral is Lipschitz in the summed Gaussian label distance.
+Thus the limit has at most two arcs per label almost
+everywhere inside \(R\), and it already has that property
+outside \(R\). This contradicts the preceding argument.
+[Strong compactness across positive correlations](POSITIVE_CORRELATION_CONTINUATION.md)
 
 ## Spherically convex slices propagate an exact germ for all cell counts
 

@@ -8,8 +8,9 @@ graph and a second fills the region above it, up to null sets.
 
 - A bounded end has a finite transverse limit determined by its pair
   pressure, and \(h'(x)\to0\).
-- A sublinear end with uniformly bounded oscillation on unit intervals
-  is bounded.
+- Every sublinear isolated graph is bounded and has bounded slope.
+  It suffices to have one switch on almost every vertical section
+  of a fixed opening wedge about the graph direction.
 - An end converging to a finite transverse limit from one side is a
   straight ray, as is an eventually monotone sublinear end or an
   eventually periodic end.
@@ -110,40 +111,160 @@ limit in absolute value gives \(\limsup|e|\le r\limsup|e|\).
 Boundedness then implies \(h(x)\to b\). In particular a periodic
 tail, which is bounded by continuity, must be constant.
 
-## Sublinear ends with bounded local oscillation or monotonicity
+## Every sublinear isolated graph is bounded
 
-Here sublinearity means \(h(x)=o(x)\). For sufficiently large \(x\),
-choose fixed \(R,C>0\) such that the conditional rectangle
-\(|s-rx|\le R\), \(|t-rh(x)|\le C\) lies in \(s>S\) and has probability
-greater than \((1+|\beta|)/2\). The rectangle cannot lie entirely on
-one label side of the graph. Otherwise the expectation of \(f\) would
-have absolute value greater than \(|\beta|\), contrary to stationarity.
-Consequently \(rh(x)\) lies between the infimum of \(h\) on the
-horizontal interval minus \(C\) and its supremum plus \(C\).
+Suppose that on almost every vertical section of the wedge
+\(s>S,\ |t|<m s\), for some fixed \(m>0\), the same lower and upper
+labels switch once at a measurable height \(h(s)\). Assume
+\(\operatorname*{ess\,sup}_{s>R}|h(s)|/s\to0\) as \(R\to\infty\).
+The stationary winner rule yields an analytic representative
+of \(h\) on a tail. That representative and its slope are
+bounded there. The same conclusion follows if the pair
+equation at \(h\) is supplied directly almost everywhere
+with a constant pressure \(\beta\in(-1,1)\).
 
-If the oscillation of \(h\) on each unit interval is uniformly bounded,
-chaining across intervals on \([rx-R,rx+R]\) gives
-\(|h(rx)-rh(x)|\le C_1\). Thus for all sufficiently large \(x\) and
-every integer \(n\ge1\),
+For a wedge, use the two-label graph throughout \(s>S\)
+in the first term of (IE1). The error is the conditional
+integral of a bounded discrepancy supported on \(s\le S\)
+or \(|t|\ge m s\). For observation points with \(|y|\le m x/2\),
+the conditional mean \((rx,ry)\) is at distance at least
+\(c x\) from this support for large \(x\). The error and its
+first derivatives are therefore \(O(e^{-c' x^2})\), since
+the first derivatives insert a linear Gaussian factor.
+This also covers the full half-plane case.
 
+Let \(A(x,y)\) be the integral of
+\(\psi'(h(s)-ry)p_\sigma(s-rx)\) over \(s>S\).
+For \(|y|\le\varepsilon x\), the part with
+\(|s-rx|\le1\) bounds \(A(x,y)\) below by
+\(c_A e^{-C_A\varepsilon^2 x^2}\) for sufficiently
+large \(x\), by essential sublinearity. The constants
+can be chosen independently of \(\varepsilon\).
+Take \(0<\varepsilon<m/2\) so small that the last
+exponent is smaller than the wedge-error exponent.
+Then \(\partial_y U=-rA(x,y)+O(e^{-c' x^2})<0\)
+throughout \(|y|\le\varepsilon x\) on a tail.
+At \(y=\pm\varepsilon x\) the contrast tends to
+\(\mp1\), respectively, by (IE1) and sublinearity
+on \(|s-rx|\le rx/2\). Thus the pressure equation
+has a unique analytic height in this narrower wedge.
+At almost every original section the winner inequalities
+and continuity in \(y\) give equality at its switch
+height. The two heights agree there. Continuity of
+the analytic representative now gives ordinary
+sublinearity from the essential bound.
+
+On the analytic graph write \(A(x)=A(x,h(x))\).
+Restricting its integral to \(|s-rx|\le1\) gives
+\(A(x)\ge\exp[-o(x^2)]\): the argument \(h(s)-rh(x)\)
+is uniformly \(o(x)\) there and \(\psi'\) is a Gaussian
+density times a positive constant.
+
+Fix \(0<\ell<r<u<1\). In the partial \(x\)-derivative
+of (IE1), the contribution from \(s\notin[\ell x,ux]\)
+is \(O(e^{-c_1x^2})\) by the Gaussian tail and
+\(|\psi|\le1\). Integrate by parts in \(s\) only on
+\([\ell x,ux]\), where \(h\) is analytic for large \(x\).
+The two endpoint terms are Gaussian-small as well. Thus
+on the graph,
 \[
- |h(x)|\le r^n|h(x/r^n)|+\frac{C_1}{1-r}.
+ \partial_x U(x,h(x))
+ =r\int_{\ell x}^{ux}
+    h'(s)\psi'(h(s)-rh(x))p_\sigma(s-rx)\,ds
+       +O(e^{-c_1x^2}).
 \]
+The positive weight in this integral has mass at most
+\(A(x)\). Differentiating the wall equation and dividing
+by \(-\partial_y U\) now gives
+\[
+ |h'(x)|\le (1+Ce^{-c_2x^2})
+                   \sup_{\ell x\le s\le ux}|h'(s)|
+                         +Ce^{-c_2x^2} .                     \tag{IE6}
+\]
+Choose \(X\) so that (IE6) holds for \(x\ge X\) and
+\(\ell X\) lies in the analytic tail. For
+\(Xu^{-j}\le x\le Xu^{-(j+1)}\), the comparison interval
+is contained in \([\ell X,Xu^{-j}]\). Writing
+\(M_j=\sup_{\ell X\le s\le Xu^{-j}}|h'(s)|\), we obtain
+\[
+ M_{j+1}+1\le
+  (1+C e^{-c_2X^2u^{-2j}})(M_j+1).
+\]
+The factors have a finite product, proving the slope bound.
 
-Sublinearity makes the first term tend to zero. This proves boundedness
-and hence convergence to \(b\) with \(h'\to0\).
+Choose fixed \(R,C_0>0\) so that the conditional rectangle
+\(|s-rx|\le R,\ |t-rh(x)|\le C_0\) has probability greater
+than \((1+|\beta|)/2\). It lies in the wedge for all
+sufficiently large \(x\) by sublinearity. It cannot lie
+entirely on one label side, since then the magnitude of
+the pair contrast would exceed \(|\beta|\). The slope
+bound on \([rx-R,rx+R]\) therefore gives
+\(|h(rx)-rh(x)|\le C_1\) for a constant \(C_1\).
+Iterating outward yields
+\[
+ |h(x)|\le r^n |h(x/r^n)|+C_1/(1-r).
+\]
+The first term tends to zero by sublinearity. The bounded-end
+argument now gives \(h'(x)\to0\) and \(h(x)\to b\), with
+\(\psi((1-r)b)=\beta\), in either the half-plane or the wedge.
 
-For an eventually monotone \(h\), reflect the vertical coordinate and
-exchange the two labels if necessary to take \(h\) nondecreasing.
-The rectangle bound then gives \(h(rx-R)\le rh(x)+C\). With
-\(t=x+R/(1-r)\) and \(H(t)=h(t-R/(1-r))-C/(1-r)\), this reads
-\(H(rt)\le r H(t)\) for all sufficiently large \(t\). If \(h\to+\infty\),
-choose \(t_0\) sufficiently large that \(H(t_0)>0\). Iterating the
-inequality at \(t_0 r^{-n}\) yields
-\(H(t_0r^{-n})/(t_0r^{-n})\ge H(t_0)/t_0>0\) for all \(n\). This
-contradicts sublinearity. A nondecreasing tail is bounded below, so
-its limit is finite. It approaches that limit from one side, to
-which the following argument applies.
+## A binary stationary strip with three walls
+
+Stationarity and a macroscopic half-plane limit do not
+supply the one-crossing hypothesis. There is a balanced
+binary adjusted-score winner with three parallel walls
+at every \(0<\rho<1\). Let \(f_a\) be the odd sign
+function on the line that is \(-1\) on \((0,a)\) and
+\(+1\) on \((a,\infty)\). In a plane use this same rule
+in the normal coordinate, independently of the
+longitudinal coordinate. Write \(U_a=T_\rho f_a\) for
+its odd raw contrast and \(Q=1-\Phi\).
+At observation \(a\), with \(u=a/\sigma\), the probability
+of label \(+1\) is
+\[
+       p(u)=Q((1-\rho)u)+Q(\rho u)-Q((1+\rho)u).
+\]
+Here \(p(0)=1/2\), \(p'(0)=\rho\phi(0)>0\), and
+\(p(u)\to0\) as \(u\to\infty\). Hence \(U_a(a)=0\)
+for some \(a>0\). In fact the root is unique: the ratio
+\(p'(u)/\phi((1+\rho)u)\) is
+\[
+ (1+\rho)-(1-\rho)e^{2\rho u^2}-\rho e^{(1+2\rho)u^2/2},
+\]
+which decreases strictly from \(\rho\) to \(-\infty\).
+Thus \(p\) first increases and then decreases.
+
+For this \(a\), the three zeros of \(U_a\) at \(-a,0,a\)
+are simple and are its only real zeros. To verify the
+zero bound directly, remove the nonzero Gaussian factor
+from the convolution. The remaining function is the
+bilateral Laplace transform of \(f_a(t)\phi_\sigma(t)\).
+Four real zeros of this transform, counted with
+multiplicity, would give a four-dimensional real span of
+functions \(t^j e^{\lambda t}\) orthogonal to
+\(f_a(t)\phi_\sigma(t)\,dt\). At a zero of multiplicity
+\(m\), use the \(j=0,\ldots,m-1\) derivatives.
+Any nonzero function in this span has at most three
+real zeros counted with multiplicity. To see this for
+an exponential polynomial, divide by the exponential
+of its first exponent and differentiate as many times
+as the multiplicity of that exponent. Rolle's theorem
+and induction on the number of distinct exponents
+reduce the assertion to polynomials. Forcing the span
+element to vanish at \(-a,0,a\) therefore gives exactly
+these three simple zeros and the same sign as \(f_a\)
+up to an overall sign. It cannot be orthogonal, a
+contradiction.
+
+As \(U_a\) is positive at large positive arguments,
+its signs now agree with \(f_a\) everywhere off the
+three walls. Oddness makes the labels balanced and
+the winner rule holds with equal prices. At every
+macroscopic dilation the rule converges to the two
+ordinary half-planes, while the physical strip
+retains three straight walls. This binary stationary
+example leaves open whether such multiple layers can
+occur on an end of a three-cell global maximizer.
 
 ## A one-sided approach forces exact straightness
 
