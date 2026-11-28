@@ -151,3 +151,107 @@ This excludes all sufficiently close competitors, including
 ones lacking equal adjacent angular arcs. No size-independent
 neighborhood or conclusion about arbitrary compact networks
 follows from this comparison.
+
+## A stationary common ray forces equal adjacent widths
+
+Consider a planar partition whose circular slices consist of
+three consecutive arcs in one cyclic order. Suppose the
+boundary between labels \(1,2\) lies on a fixed forward ray
+at almost every radius. Set the angle of that ray to zero.
+Write the two adjacent arcs as
+\[
+        (0,a(s)+d(s)),\qquad (-a(s)+d(s),0).
+\]
+The third label occupies the complement. Assume labels \(1,2\)
+have equal Gaussian masses and the partition is stationary
+under bounded measurable rotations of circles centered at the
+Gaussian origin. If the two adjacent widths \(a+d,a-d\)
+belong almost everywhere to \([A,B]\subset(0,\pi)\) with
+\[
+                  B-A<\min\{A,2(\pi-B)\},                 \tag{ST1}
+\]
+then \(d=0\) almost everywhere. For instance the interval
+\([\pi/2,4\pi/5]\) satisfies (ST1) and contains the simplex
+width \(2\pi/3\). The comparison allows arbitrary measurable
+widths in this interval and every \(0<\rho<1\).
+
+Use the three endpoint angles
+\[
+ e_0(s,\lambda)=0,\qquad
+ e_+(s,\lambda)=a(s)+\lambda d(s),\qquad
+ e_-(s,\lambda)=-a(s)+\lambda d(s),\qquad 0\le\lambda\le1.
+\]
+Let \(v_p\) be the label incidence vector for moving endpoint
+\(p\) in the positive direction. The three vectors have
+\(v_p\cdot v_p=2\) and \(v_p\cdot v_q=-1\) for \(p\ne q\),
+since the three endpoints separate the three label pairs.
+Define the mixed curvature
+\[
+ C_\lambda(s,t)=\frac1{(2\pi)^2}
+    \sum_{\substack{p\in\{0,+,-\}\\q\in\{+,-\}}}
+  (v_p\cdot v_q)\,k_\kappa\bigl(e_p(s,\lambda)-e_q(t,\lambda)\bigr),
+ \qquad \kappa=\frac{\rho st}{1-\rho^2}.                    \tag{ST2}
+\]
+It is the mixed derivative of the angular pairing, first for
+rotation of the slice at \(s\) and second for displacing both
+its partner's outer endpoints by the same increment. Each
+endpoint derivative supplies \(1/(2\pi)\). The angular pairing
+is invariant under a common rotation, so differentiation with
+respect to the first slice's own outer displacement and its
+own rotation gives \(-C_\lambda(t,s)\).
+
+For a fixed \(q=+\) or \(q=-\), the distance on the circle
+between its two corresponding endpoints is at most \(B-A\).
+The distance from \(e_q(t,\lambda)\) to the central endpoint
+at radius \(s\) is at least \(A\), and to the opposite endpoint
+at radius \(s\) is at least \(\min\{2A,2(\pi-B)\}\). All
+interpolated widths remain in \([A,B]\). Under (ST1), the
+matched endpoint is strictly closer than both unmatched
+endpoints. The kernel \(k_\kappa\) strictly decreases with
+circular distance for each \(\kappa>0\). The sum of the
+three terms for this fixed \(q\) in (ST2) is therefore
+strictly positive. Thus \(C_\lambda(s,t)>0\) for positive
+radii and all \(\lambda\).
+
+Write \(T(d)(s)\) for the integral against
+\(P_\rho(s,t)d\mu(t)\) of the angular pairing derivative
+when the first slice is rotated and both rotations are
+evaluated at zero. Reflection at \(d=0\) exchanges the
+first two labels and fixes the third, so \(T(0)=0\). The
+endpoint derivatives give
+\[
+ \frac{d}{d\lambda}T(\lambda d)(s)
+   =\int P_\rho(s,t)\left[
+           C_\lambda(s,t)d(t)-C_\lambda(t,s)d(s)
+                      \right]d\mu(t).                     \tag{ST3}
+\]
+For rotations at any bounded speed \(b\), the derivative
+of Gaussian stability is \(2\int b(s)T(d)(s)d\mu(s)\).
+These differentiation and integration steps are valid on the
+whole radial half-line. The absolute endpoint interactions are
+dominated, including both radial densities, by a constant
+times
+\[
+ s t\exp\!\left[-\frac{s^2+t^2}{2(1+\rho)}\right]ds\,dt.
+\]
+Indeed bound each \(P_\rho(s,t)k_\kappa(u)\) by
+\(P_\rho(s,t)e^\kappa/I_0(\kappa)\), then use \(2st\le s^2+t^2\)
+in the joint Gaussian exponent.
+
+Multiply (ST3) by \(\operatorname{sgn}d(s)\) and integrate.
+Symmetry of \(P_\rho\) and exchange of the radial variables
+give
+\[
+ -\iint P_\rho(s,t) C_\lambda(s,t)
+       \bigl(|d(t)|-\operatorname{sgn}(d(s))d(t)\bigr)
+                                      \,d\mu(s)d\mu(t).     \tag{ST4}
+\]
+Equal Gaussian masses of the two labels give \(\int d\,d\mu=0\).
+If \(d\) were nonzero, both its positive and negative sets
+would have positive radial measure. On the product of
+those sets the integrand inside the minus sign is strictly
+positive. Integrating (ST4) over \(\lambda\) would give
+\(\int\operatorname{sgn}(d)T(d)\,d\mu<0\). This contradicts
+stationarity, and proves equal adjacent widths. In
+particular reflection in the common ray exchanges the first
+two labels throughout the plane.

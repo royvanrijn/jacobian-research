@@ -755,6 +755,36 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Many source oscillations can coexist with a strict one-ray spectral gap | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md) |
 | Compact right contact forces a uniformly positive cumulative spectator violation | Internal result | proved | [Source](../plurality-stability/THREE_CELL_SPECTATOR_CUMULATIVE_ORDER.md) |
 | Reference score winners and exact line constraints do not force cumulative order | Internal result | proved | [Source](../plurality-stability/THREE_CELL_SPECTATOR_CUMULATIVE_ORDER.md) |
+| A uniform pair margin gives a unique perturbed global phase on an annulus | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ANGULAR_SYNCHRONIZATION.md) |
+| Near-balanced annular widths admit an exact joint angular maximizer over all slice shapes | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ANGULAR_SYNCHRONIZATION.md) |
+| Genuinely two-dimensional balanced width perturbations pay a quartic angular synchronization loss | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ANGULAR_SYNCHRONIZATION.md) |
+| A fixed exterior pins the exact annular angular optimum | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ANGULAR_SYNCHRONIZATION.md) |
+| Cyclic unequal-width triangles have an exact joint solution for all angular harmonics | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ANGULAR_ROTATION_CYCLES.md) |
+| The three cyclic arc preferences at equal angular parameters are compatible at exactly one positive parameter | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ANGULAR_ROTATION_CYCLES.md) |
+| A stationary common radial ray enforces equal adjacent widths in a finite width range | Internal result | proved | [Source](../plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md) |
+| Connected circular slices propagate the exact centered germ and exclude compact defects | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ANGULAR_SYNCHRONIZATION.md) |
+| Nonsimplex right contacts need a uniform radial mass of slices far from consecutive arcs | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ANGULAR_SYNCHRONIZATION.md) |
+| Distant fixed Gaussian competitors have a uniform finite correlation contact order | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_FIXED_PARTITION_CONTACT_BOUNDS.md) |
+| Every fixed nonsimplex competitor has finitely many positive-correlation contacts | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_FIXED_PARTITION_CONTACT_BOUNDS.md) |
+| Balanced Gaussian optimality implies deterministic plurality optimality at the same correlation | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_DISCRETE_STABILITY_TRANSFER.md) |
+| A sufficiently large simplex cylinder forces equality for a stationary Gaussian winner | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_FINITE_SIMPLEX_GERM_PROPAGATION.md) |
+| Every planar exact-score-line nonsimplex maximizer has angular slices far from consecutive arcs | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_FINITE_SIMPLEX_GERM_PROPAGATION.md) |
+| Spherically convex slices propagate an exact simplex germ or exterior for all cell counts | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_FINITE_SIMPLEX_GERM_PROPAGATION.md) |
+| An arbitrary-mass simplex uniquely maximizes the perimeter-weighted Gaussian centroid norm | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_WEIGHTED_CENTROID_INEQUALITY.md) |
+| An exact deficit identity characterizes the sharp posterior perimeter comparison | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_WEIGHTED_CENTROID_INEQUALITY.md) |
+| The sharp local centroid metric is unique and excludes a matched mass-only calibration | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_WEIGHTED_CENTROID_INEQUALITY.md) |
+| A Gaussian graph lift yields the functional multi-bubble perimeter inequality | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_SCORE_SUPPORT_FLOW.md) |
+| The all-cell posterior perimeter comparison is sharp under conditioning | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_SCORE_SUPPORT_FLOW.md) |
+| Gaussian perimeter gives an explicit all-cell upper bound for ordinary noise stability | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_SCORE_SUPPORT_FLOW.md) |
+| An adaptive ordinary-label posterior beats the simplex while satisfying every two-time perimeter comparison | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_POSTERIOR_PARTITION_COMPATIBILITY.md) |
+| A bounded restart leaves a quantitative fixed-endpoint defect at any later time | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_POSTERIOR_PARTITION_COMPATIBILITY.md) |
+| Fractional exterior phases require density-one logarithmically super-volume perimeter | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_OUTWARD_PERIMETER_GROWTH.md) |
+| A stationary planar score network has at most cubic growth of interface length | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_OUTWARD_PERIMETER_GROWTH.md) |
+| A noncompact discrepancy with exact planes and small pressures has radially recurring thick defects | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_DEFECT_RADIAL_RECURRENCE.md) |
+| A locally clean thick annulus forces an exact simplex exterior | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_DEFECT_RADIAL_RECURRENCE.md) |
+| Every cell of a nonsimplex maximizing exact-line partition is disconnected | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXACT_LINE_GEOMETRY.md) |
+| Exact adjusted reference lines force both cyclic transfer orientations | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXACT_LINE_GEOMETRY.md) |
+| Stationary compact simplex discrepancies with consecutive circular slices are simplicial | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXACT_LINE_GEOMETRY.md) |
 
 **Computed obligations:** 45 unresolved; 32 resolved within their exact scope.
 

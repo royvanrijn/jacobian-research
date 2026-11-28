@@ -269,3 +269,167 @@ are nonnegative. This is a loss relative to the pair
 envelope at the prescribed profile. Its comparison with
 the entire radial gain and its effectiveness for arbitrary
 first-contact profiles remain open.
+
+## The cyclic width example in the first harmonic
+
+Use increasing angular order for the labels and center the wide arc
+at zero. For the widths \((1/2,1/4,1/4)\), the vector of first
+coefficients \(\pi\int e^{i\theta}1_{A_j}(\theta)\,d\theta/(2\pi)\)
+is
+\[
+  v=\left(1,\frac{-1+i}{2},\frac{-1-i}{2}\right).
+\]
+The other templates have vectors \((v_3,v_1,v_2)\) and
+\((v_2,v_3,v_1)\). With the directed coupling \(\sum_j v_{ij}\bar
+v_{i+1,j}\), all three cyclic couplings equal \(b=-1+3i/2\), so
+\[
+                         b^3=\frac{368+72i}{64}.
+\]
+Changing an angular origin multiplies the neighboring couplings
+by inverse phases and preserves the product. Reversing the Fourier
+convention conjugates it. The nonzero cyclic error has absolute
+angle \(d=\arctan(9/46)<\pi/2\).
+
+For arbitrary positive edge amplitudes \(a_i\), the three errors
+in the first-harmonic pairing \(\sum_i a_i\cos e_i\) sum to \(d\)
+modulo \(2\pi\). Take the errors in \([-\pi,\pi]\). The circle
+triangle inequality gives \(\sum_i |e_i|\ge d\), so one can
+choose nonnegative errors of sum \(d\), each at most the original
+absolute error. This improves any tuple with \(\sum_i |e_i|>d\).
+The strict concavity of cosine on \([0,d]\) gives a unique optimum
+in this branch. All its errors are positive, since transferring
+a small amount from a positive error to a zero error has positive
+first variation. The exact loss from optimizing the three edges
+independently is
+\[
+ \sum_i a_i\left(1-\sqrt{1-(\lambda/a_i)^2}\right),\qquad
+  \sum_i\arcsin(\lambda/a_i)=d,
+ \qquad 0<\lambda<(\min_i a_i)\sin d.
+\]
+Equal amplitudes \(a_i=a\) give \(3a[1-\cos(d/3)]\).
+
+This first-harmonic optimum has an exact semidefinite certificate.
+Gauge the coupling matrix by the optimal phases. Its directed
+edges are now \(c_i+i\lambda\), where \(c_i=a_i\cos e_i\).
+Imaginary row sums cancel, and the diagonal-minus-matrix slack
+is \(L(c)-i\lambda J\). Here \(L(c)\) is the real weighted
+triangle Laplacian and \(J_{12}=J_{23}=J_{31}=1\), \(J=-J^{\mathsf
+T}\). On the orthogonal complement of the constants, \(L(c)\)
+is at least \(3(\min_i a_i)\cos d\) and \(\|iJ\|=\sqrt3\).
+The displayed bound on \(\lambda\) and \(\tan d=9/46<\sqrt3\)
+give a positive gap on that complement. The deterministic
+angular synchronization certificate therefore proves uniqueness
+of the optimizer of the semidefinite relaxation.
+[Deterministic synchronization certificate](THREE_CELL_ANGULAR_SYNCHRONIZATION.md#a-certificate-for-all-harmonics)
+
+## Exact rotation optimization for the full angular kernel
+
+The same three templates permit an all-harmonic comparison.
+Prescribe cyclic shifts of \((p,(1-p)/2,(1-p)/2)\), where
+\(1/3<p\le1/2\). Put \(A=2\pi p\), \(B=\pi(1-p)\),
+\(\delta=(A-B)/2\) and \(c=(A+B)/2=B+\delta\). Thus
+\(0<\delta\le\pi/4\), \(B\ge2\delta\) and \(B+2\delta\le\pi\).
+Write \(F_{\kappa;a,b}(y)\) for the pairing of arcs of lengths
+\(a,b\) at center separation \(y\) against the circular Gaussian
+kernel \(K_\kappa(t)=e^{\kappa\cos t}/I_0(\kappa)\). In the
+wide-centered convention a directed pair with phase difference
+\(u\) has the full profile
+\[
+ G_\kappa(x)=2F_{\kappa;A,B}(x)+F_{\kappa;B,B}(x-\delta),
+                     \qquad x=u+c.
+\]
+Indeed the centers of the three arcs are \(0,c,-c\). The cyclic
+shift makes the two wide–narrow separations \(u+c\), and the
+narrow–narrow separation \(u-2c\equiv x-\delta\).
+The three variables obey \(\sum_i x_i\equiv\delta\pmod{2\pi}\),
+since \(3c\equiv\delta\).
+
+Each \(F_{\kappa;a,b}\) is even and strictly decreases with
+circular distance to zero. For a given cyclic triple \(x_i\)
+write \(d_{0,i}\) and \(d_{\delta,i}\) for its distances to
+zero and \(\delta\). The \(y_i\in[-\delta,\delta]\) whose
+distances to both centers are no larger fill the intervals
+\[
+ \max(-\delta,\delta-d_{\delta,i})
+           \ \le y_i\le\ \min(\delta,d_{0,i}).
+\]
+The intervals are nonempty by the circle triangle inequality.
+The same inequality gives \(\sum_i d_{0,i}\ge\delta\) and
+\(\sum_i d_{\delta,i}\ge2\delta\). After capping each summand
+at \(\delta\) and \(2\delta\), respectively, both bounds still
+hold. The sum of the interval lower endpoints is at most
+\(\delta\), and the upper sum is at least \(\delta\). One can
+therefore replace the triple by such \(y_i\) with sum exactly
+\(\delta\) and weakly improve every edge. Any original angle
+outside \([-\delta,\delta]\) modulo \(2\pi\) gives strict
+improvement on its edge.
+
+The arc overlap formula, for \(a+b\le2\pi\), gives
+\[
+ F'_{\kappa;a,b}(y)
+ =-C\int_{|a-b|/2}^{(a+b)/2}
+               [K_\kappa(y-v)-K_\kappa(y+v)]\,dv
+\]
+with a common \(C>0\). This proves strict decrease on
+\((0,\pi)\) and gives, writing \(K=K_\kappa\),
+\[
+ -G_\kappa''(x)/C =
+ 4K(x-\delta)+2K(x+\delta)
+       -3K(x-c)-2K(x+c)-K(x+B-\delta)>0
+\]
+for \(|x|\le\delta\). In fact each \(K(x\pm\delta)\)
+is at least both \(K(x\pm c)\) by the distance bounds
+\(2\delta\le B\) and \(B+2\delta\le\pi\), with
+\(K(x-\delta)>K(x-c)\). Also \(K(x+\delta)\ge
+K(x+B-\delta)\). Hence with any positive edge weights and
+possibly different \(\kappa_i>0\), the exact joint rotation
+optimum is the unique solution of the strictly concave
+problem on \([-\delta,\delta]^3\) with \(\sum_i y_i=\delta\).
+Equal edge weights and equal \(\kappa\) give \(y_i=\delta/3\)
+for all \(\kappa>0\). These equal-parameter triples are a
+circular comparison. Distinct Gaussian radii generally give
+unequal \(\kappa_i\), which the constrained problem also
+allows.
+
+Each unconstrained edge has a unique preferred \(x_\kappa\in
+(0,\delta)\). Projecting into \([0,\delta]\) decreases both
+circular distances, and the derivative has opposite signs at
+its endpoints. If \(m_i=\min_{|x|\le\delta}(-G_{\kappa_i}''(x))>0\)
+and \(w_i>0\) are the edge weights, the joint loss satisfies
+\[
+ \sum_i w_iG_{\kappa_i}(x_{\kappa_i})
+       -\max_{\sum x_i\equiv\delta}\sum_iw_iG_{\kappa_i}(x_i)
+ \ \ge\
+ \frac{(\delta-\sum_i x_{\kappa_i})^2}
+                       {2\sum_i(w_i m_i)^{-1}} .
+\]
+This follows from the concavity bound for each edge on the
+clipped interval and weighted Cauchy–Schwarz.
+
+For common \(\kappa\) the preferred angles are compatible at
+exactly one \(\kappa>0\). Write \(h=\delta/3\) and \(P=2\pi/3\).
+Up to a positive normalization, \(G_\kappa'(h)\) equals
+\[
+ 2\int_0^{2h} e^{\kappa\cos t}\,dt
+ -2\int_{2h}^{4h} e^{\kappa\cos t}\,dt
+ -\int_{P-4h}^P e^{\kappa\cos t}\,dt
+ +2\int_P^{P+2h} e^{\kappa\cos t}\,dt .
+\]
+The intervals are ordered since \(h\le\pi/12\). In the variable
+\(\cos t\) this is a bilateral Laplace transform of an integrable
+compactly supported density with two sign changes. The
+[Laplace-transform zero count](THREE_CELL_TRANSVERSE_SOURCE_OSCILLATION.md#the-count-on-a-full-reference-line)
+uses differentiation and Rolle's theorem and applies to this
+density. The transform vanishes at zero with negative derivative.
+Indeed the first-harmonic terms are proportional to
+\(2ab\cos x+b^2\cos(x-\delta)\), where \(a=\sin(A/2)\)
+and \(b=\sin(B/2)\) satisfy \(a=2b\cos(B/2)>b\), and their
+derivative at \(h\) is \(2b\sin h(b\cos h-a)<0\).
+For large positive \(\kappa\) the first positive integral
+dominates, since it contains angles strictly closer to zero
+than any negative term. The zero count gives a unique simple
+positive root. Thus \(x_\kappa<h\) below it and \(x_\kappa>h\)
+above it, by strict concavity. The all-harmonic pair preferences
+are incompatible on either side of the root even though the
+first-harmonic cyclic product itself is independent of
+\(\kappa\).
