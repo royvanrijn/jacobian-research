@@ -6,7 +6,7 @@
   },
   "summary": "For fixed k>=3 and positive equicorrelation, proves the Gaussian many-observation agreement supremum is twice the mass-1/k halfspace probability asymptotically, uniformly in dimension. Gives the simplex exponent gap and exactly balanced discrete witnesses.",
   "published": false,
-  "status": "ready-for-review",
+  "status": "submission-pending",
   "source": "main.tex",
   "pdf": "gaussian-many-sample-agreement.pdf",
   "source_archive": "source.zip",
@@ -34,5 +34,12 @@
   "independent_replay": false,
   "formal_verification": false,
   "external_review": false,
-  "submitted": false
+  "submitted": true,
+  "submission": {
+    "venue": "Hexagon",
+    "reserved_identifier": "hexagon:2611.01282v1",
+    "status": "compiling",
+    "updated_on": "2026-11-28",
+    "status_source": "Contributor-reported Hexagon dashboard"
+  }
 }

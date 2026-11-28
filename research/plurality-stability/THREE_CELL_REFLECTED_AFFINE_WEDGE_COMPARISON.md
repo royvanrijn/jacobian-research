@@ -144,3 +144,122 @@ comparison. The result compares affine folded graphs at
 finite amplitude. General reflected maximizing graphs
 can have nonconstant slope, so their exclusion requires
 an additional argument.
+
+## A one-sign obstruction for a curved graph
+
+Suppose a continuous reflected balanced stationary graph
+has height \(h(x)=\ell(x)+u(x)\) on the right, where
+\(\ell(x)=mx+b\), \(m\ge0\), and \(u(x)\to0\) as \(x\to\infty\).
+At a nonsimplex graph the following two possibilities are excluded:
+\[
+m\ge m_* \ \text{and}\ u(x)\ge0\ \text{for every }x\ge0,
+\qquad
+m\le m_* \ \text{and}\ u(x)\le0\ \text{for every }x\ge0.
+\tag{6}
+\]
+In these comparisons the residual need not be monotone.
+
+Let \(F_h=T_\rho(1_{A_3(h)}-1_{A_1(h)})\) for the reflected
+partition with height \(h\). If \(p_\sigma(t)=\phi(t/\sigma)/\sigma\),
+conditioning on the horizontal source gives
+\[
+F_h(x,y)=
+\int_0^\infty [2p_\sigma(s-\rho x)+p_\sigma(s+\rho x)]
+     Q((h(s)-\rho y)/\sigma)\,ds
+     -\Phi(\rho x/\sigma).
+\tag{7}
+\]
+The horizontal source is in the right half-plane with
+probability \(\Phi(\rho x/\sigma)\), where the pair contrast
+is \(2\) times the third-cell probability minus one.
+On the left the contrast is just the third-cell probability.
+As \(x\to\infty\), formula (7) on the graph tends to the
+binary affine value \(\lambda=2\Phi(-(1-\rho)b/
+(\sigma\sqrt{1+m^2}))-1\). The reflected source contribution
+vanishes, and a typical right horizontal source tends
+to infinity where \(u\to0\). Stationarity makes this
+limiting value the score on the entire graph.
+
+For the affine graph, write its score as
+\(F_\ell(x,\ell(x))=\lambda+C(\rho x/\sigma)\) as in (4),
+now without assuming balance of \(\ell\). Put \(\ell_t=\ell+tu\).
+Subtracting the two scores and integrating the derivative
+of (7) along \(\ell_t\) gives
+\[
+Z(x)\bigl[\rho u(x)-Pu(x)\bigr]=-C(\rho x/\sigma),
+\quad Pu(x)=\frac{1}{Z(x)}\int_0^\infty L(x,s)u(s)\,ds,
+\quad Z(x)=\int_0^\infty L(x,s)\,ds ,
+\tag{8}
+\]
+where
+\[
+L(x,s)=[2p_\sigma(s-\rho x)+p_\sigma(s+\rho x)]
+       \int_0^1 p_\sigma(\ell_t(s)-\rho\ell_t(x))\,dt .
+\]
+The kernel \(L\) is continuous and strictly positive. The
+normalization \(Z(x)\) has a uniform positive lower bound:
+restrict to \(s\in[\rho x,\rho x+1]\), on which
+\(m(s-\rho x)+(1-\rho)b+t(u(s)-\rho u(x))\) is uniformly
+bounded. Thus the transition density of \(P\) is bounded
+above by a constant times \(p_\sigma(s-\rho x)\), since
+\(p_\sigma(s+\rho x)\le p_\sigma(s-\rho x)\) for \(x,s\ge0\).
+In particular a chain with transition \(P\) satisfies
+\(\mathbb E[S_{n+1}\mid S_n=x]\le \rho x+C_0\), uniformly
+in \(x\). For any fixed starting point its successive means
+are bounded. Markov's inequality therefore places at least
+half of each successive law in one fixed compact interval.
+By strict positive continuity of the kernel, that interval
+has a common positive transition probability into any fixed
+positive-length subinterval. If \(u\ge0\) is continuous and
+nonzero, choose that subinterval where \(u\) is bounded below
+by a positive number. It follows that \(P^n u(x)\) is bounded
+below by a positive number for every \(n\ge1\) at the fixed
+starting point.
+
+Now suppose \(m\ge m_*\) and \(u\ge0\). Balance of \(h\)
+forces \(b\le b(m)\le0\), since replacing \(h\) by \(\ell\)
+weakly increases the third-cell measure. The first inequality
+is strict if \(u\ne0\). Formula (5), which remains valid with
+this intercept, gives \(C'>0\) unless \(m=m_*\) and \(b=0\).
+As \(C(z)\to0\), this gives \(C<0\) for every finite \(z\).
+Equation (8) implies \(Pu<\rho u\), hence
+\(P^n u(x)\le \rho^n u(x)\) for every \(n\). This contradicts
+the preceding lower bound when \(u\ne0\). If \(u=0\),
+stationarity itself forces \(C=0\), hence \(m=m_*\) and
+\(b=0\) under balance. For \(m\le m_*\) and \(u\le0\) the
+intercept inequalities reverse, \(C>0\) outside the simplex,
+and the same argument applies to \(-u\). This proves (6).
+
+## An isolated affine tail of slope at most one
+
+For an actual reflected maximizer, suppose the graph has an
+affine asymptote \(h(x)=mx+b+o(1)\) with \(0\le m\le1\).
+Rotate coordinates so the longitudinal coordinate is
+\(t=(x+my)/\sqrt{1+m^2}\) along the right asymptote.
+On cell 2, where \(x<0\) and \(y<h(|x|)\), one has
+\[
+t\le\frac{-(1-m^2)|x|+mb+o(1)}{\sqrt{1+m^2}}
+\qquad (x\to-\infty).
+\]
+Consequently cell 2 and the downward axis interface have
+longitudinal coordinate bounded above. On the right graph
+the coordinate \(t=(x+mh(x))/\sqrt{1+m^2}\) is strictly
+increasing to infinity by the
+[reflected graph theorem](THREE_CELL_REFLECTION_REDUCTION.md).
+Thus in a full forward half-plane every transverse fiber has
+exactly one switch between labels 1 and 3. Its transverse
+height is \((h(x)-mx)/\sqrt{1+m^2}\), which is bounded on
+the tail. This verifies the hypotheses of the
+[exact straightening theorem for bounded isolated
+ends](THREE_CELL_TAIL_FLATNESS.md).
+The right tail is exactly straight, so analyticity makes the
+entire right graph affine. The stability comparison above
+then identifies the simplex.
+
+For example, a one-sided bound on the fixed-shape correlation
+derivative along the right graph forces a linear tail phase
+and such an affine asymptote by
+[(CR9) and the pressure correction](THREE_CELL_REFLECTED_CONSTANT_CORRELATION_RIGIDITY.md#the-two-possibilities-for-the-derivative-at-infinity).
+This implication still requires the resulting slope to be
+at most one. The cases of a nonlinear tail phase and a
+steep affine tail remain open in this comparison.

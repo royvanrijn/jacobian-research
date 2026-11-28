@@ -1,6 +1,8 @@
 # Quantitative Gaussian Simplex Stability at Small Positive Correlations
 
-Roy van Rijn · revised 28 November 2026 · prepared for specialist review
+**Hexagon submission under review.** Reserved `hexagon:2611.01281v1`. Updated November 28, 2026.
+
+Roy van Rijn · revised 28 November 2026
 
 For every fixed $k\ge2$, the partition $T$ of a centered regular simplex maximizes
 Gaussian noise stability among balanced measurable $k$-cell partitions for
@@ -64,14 +66,13 @@ The [verification record](verification.json) documents the current build,
 layout inspection and the contributor-reported review of commit
 `dd646006`, with its findings and the changes made in response.
 Specialist mathematical review, independent mathematical replay, formal
-verification and submission remain outstanding.
+verification remain outstanding.
 
 ## Hexagon submission
 
-Open the [Hexagon submission form](https://hexagonmath.org/submit) with ORCID
-and upload [source.zip](source.zip). Its only entry is `main.tex`, with
-the bibliography included. The archive reproduces the nine-page review PDF.
-The same form values are available as [Hexagon metadata](hexagon-metadata.json).
+The local [source.zip](source.zip) contains `main.tex` with its bibliography
+and reproduces the nine-page review PDF. The prepared form values below
+are also available as [Hexagon metadata](hexagon-metadata.json).
 [Hexagon deposit guidance](https://hexagonmath.org/about)
 
 | Field | Value |
@@ -100,8 +101,3 @@ For each fixed number of cells $k\ge2$, we prove that the partition defined by a
 ```text
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks, exposition, proof review and verification code. OpenAI Codex performed a source-aware proof audit and an isolated reading of the compiled manuscript.
 ```
-
-Confirm the contributor and authorship entries, text origin, extent of
-human understanding, and rights at deposit. Choose the distribution
-license there. CC BY 4.0 matches the author's earlier Hexagon deposits.
-[Prior deposit](https://hexagonmath.org/2611.00596v1)

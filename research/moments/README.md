@@ -861,6 +861,15 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Every compact simplex defect has strict radial exchanges in every label | Internal result | proved | [Source](../plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md) |
 | Only a simplex or its antipode can have a finite directional-product difference from the reference | Internal result | proved | [Source](../plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md) |
 | At a right contact bounded complementary cuts have a uniform power-loss bound | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md) |
+| Gaussian winner charts strictly dissipate nonconstant horizontal periodic modes | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_PERIODIC_INTERFACE_TAIL_OBSTRUCTION.md) |
+| A stationary Gaussian tail cannot persistently approximate compact nonconstant periodic templates | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_PERIODIC_INTERFACE_TAIL_OBSTRUCTION.md) |
+| Separated positive-volume pockets in a fixed Gaussian strip have summable reciprocal distances | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_ISOLATED_POCKET_STRIP_DENSITY.md) |
+| A distant pocket requires exterior nonhost interaction near its contracted center | Internal result | proved | [Source](../plurality-stability/THREE_CELL_DISTANT_POCKET_CONTRACTION.md) |
+| A reflected stationary graph cannot stay on the indicated side of its affine asymptote | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md) |
+| A reflected maximizing graph with affine tail slope at most one is the simplex | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md) |
+| In the absence of a common circle a pair wall at a spectator radius is circular | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md) |
+| A noncollinear junction without a common circle forces a circular wall and radial separation | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md) |
+| Without a common circle a collinear cusp brackets the centered circle | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md) |
 
 **Computed obligations:** 45 unresolved; 32 resolved within their exact scope.
 

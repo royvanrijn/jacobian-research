@@ -130,7 +130,7 @@ For a row, the linearized equation is
 \]
 These expressions define the exact matrix without symbolic differentiation
 or numerical tolerances. The
-[retained checker](../../unpublished/genus-three-rational-three-torsion/verify_arithmetic.py)
+[retained checker](../../results/genus-three-rational-three-torsion/verify_arithmetic.py)
 also tests persistence of each known base involution,
 \[
  \frac{2t+2}{t-2},\qquad\frac{2-t}{t+1},\qquad-\frac2t.

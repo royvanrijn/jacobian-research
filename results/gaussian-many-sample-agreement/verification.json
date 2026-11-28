@@ -3,8 +3,8 @@
   "review_basis": "Source-aware internal audit of the retained analytic argument and the manuscript, primary reference verification, clean source archive reproduction, and all-page rendering.",
   "source_files": {
     "main.tex": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
-    "README.md": "0fe0bfba7fa367aec9096cfa2f06a38ff21d88e2dff9bea5b568631beab46a63",
-    "metadata.json": "c8fb05e2d7560920ec2615cfa488bacf29d0f93d19442603e17c53c3a5aff8d6"
+    "README.md": "53a1e44f716cd06bff1f6c25547b15d2d09c98bc2d266adc93672936da0b66bb",
+    "metadata.json": "3e8608f2965accc6a9aeb97429ba789c3db2055195193df45246aedd90954b03"
   },
   "pdf": {
     "path": "gaussian-many-sample-agreement.pdf",
@@ -64,7 +64,12 @@
     "performed": false
   },
   "submission": {
-    "submitted": false
+    "submitted": true,
+    "venue": "Hexagon",
+    "reserved_identifier": "hexagon:2611.01282v1",
+    "status": "compiling",
+    "updated_on": "2026-11-28",
+    "status_source": "Contributor-reported Hexagon dashboard"
   },
   "isolated_pdf_only_reading": {
     "performed": true,

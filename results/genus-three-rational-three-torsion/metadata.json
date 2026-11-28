@@ -5,7 +5,7 @@
     "orcid": "0009-0000-2808-0645"
   },
   "summary": "An explicit genus-three curve has full rational Mordell–Weil group [3,6,12] of order 216 and exactly eight rational points; prime-to-three isogenies transfer Selmer and Sha groups on every quadratic twist.",
-  "status": "ready-for-review",
+  "status": "submission-pending",
   "published": false,
   "catalogued_on": "2026-11-27",
   "source": "main.tex",
@@ -40,5 +40,13 @@
     "verification.json": "verification.json",
     "SHA256SUMS.txt": "SHA256SUMS.txt",
     "verify_arithmetic.py": "verify_arithmetic.py"
+  },
+  "submitted": true,
+  "submission": {
+    "venue": "Hexagon",
+    "reserved_identifier": "hexagon:2611.01278v1",
+    "status": "under-review",
+    "updated_on": "2026-11-28",
+    "status_source": "Contributor-reported Hexagon dashboard"
   }
 }

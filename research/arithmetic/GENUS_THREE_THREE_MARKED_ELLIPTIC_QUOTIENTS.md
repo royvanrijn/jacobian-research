@@ -479,7 +479,7 @@ eight stated points. This is an exhaustive elliptic-fibre argument.
 
 **The two-primary upper bound.** At 7 the whole Sylow two-subgroup is
 \((\mathbb Z/4)^2\). A short exact certificate in the
-[arithmetic checker](../../unpublished/genus-three-rational-three-torsion/verify_arithmetic.py)
+[arithmetic checker](../../results/genus-three-rational-three-torsion/verify_arithmetic.py)
 uses the reductions of
 \[
  I=[\infty_- -\infty_+],\quad P=[(0,4)-\infty_+],\quad
@@ -537,7 +537,7 @@ Thus its order is eight and the claimed invariant factors follow.
 
 The exact replay is
 ```sh
-sage -python unpublished/genus-three-rational-three-torsion/verify_arithmetic.py
+sage -python results/genus-three-rational-three-torsion/verify_arithmetic.py
 ```
 from the repository root. SageMath 10.9 internally replayed the proved
 elliptic rank bounds, torsion enumeration, fibres, principal divisors,

@@ -26,9 +26,11 @@
   ],
   "submission": {
     "venue": "Hexagon",
-    "reserved_identifier": "hexagon:2611.01063v1",
-    "status": "processing",
-    "updated_on": "2026-11-25"
+    "reserved_identifier": "hexagon:2611.01063v2",
+    "status": "under-review",
+    "updated_on": "2026-11-28",
+    "previous_reserved_identifier": "hexagon:2611.01063v1",
+    "revision_note": "The author confirmed the revised submission. The tracked PDF and source archive are the November 25 local edition. The exact v2 upload remains unverified."
   },
   "source_bundle": "strong-factorial-binomials-hexagon-source.zip"
 }

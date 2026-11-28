@@ -1,6 +1,8 @@
 # Asymptotically Optimal Partitions for Agreement of Many Gaussian Samples
 
-Roy van Rijn · prepared for specialist review
+**Hexagon submission compiling.** Reserved `hexagon:2611.01282v1`. Updated November 28, 2026.
+
+Roy van Rijn
 
 Fix \(k\ge3\) and \(0<\rho<1\). When \(m\) standard Gaussian observations
 have cross covariance \(\rho I_d\), the supremal probability of unanimous
@@ -37,5 +39,4 @@ SOURCE_DATE_EPOCH=1795824000 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonst
 ```
 
 The source archive contains only the compilation entry point and its embedded
-bibliography. The theorem uses no computational evidence. This edition is
-unsubmitted and available for specialist review.
+bibliography. The theorem uses no computational evidence.

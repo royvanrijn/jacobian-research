@@ -1,9 +1,11 @@
 # The Strong Factorial Conjecture for Univariate Binomials
 
-**Hexagon submission processing.** Reserved `hexagon:2611.01063v1`. Updated November 25, 2026.
+**Hexagon submission under review.** Reserved `hexagon:2611.01063v2`.
+Updated November 28, 2026. The author confirmed the revised submission.
+The files below document the November 25 local edition.
 
 [PDF](strong-factorial-binomials.pdf) · [LaTeX source](main.tex) ·
-[Hexagon source ZIP](strong-factorial-binomials-hexagon-source.zip) ·
+[Local Hexagon source ZIP](strong-factorial-binomials-hexagon-source.zip) ·
 [Electronic supplement](supplement/README.md) ·
 [Metadata](metadata.json) · [Verification record](verification.json)
 

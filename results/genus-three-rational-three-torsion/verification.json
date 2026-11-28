@@ -162,5 +162,13 @@
       "cwd": "research",
       "result": "Interrupted after ten minutes without completion, in test_dependency_catalogue.py:test_squarefree_quartic_bounds_retire_only_with_the_full_exclusion, during graph.evaluate(distinct_blockers=True). No complete suite pass is claimed."
     }
-  ]
+  ],
+  "submission": {
+    "submitted": true,
+    "venue": "Hexagon",
+    "reserved_identifier": "hexagon:2611.01278v1",
+    "status": "under-review",
+    "updated_on": "2026-11-28",
+    "status_source": "Contributor-reported Hexagon dashboard"
+  }
 }

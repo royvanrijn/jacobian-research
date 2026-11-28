@@ -4327,8 +4327,8 @@
           "checker": null,
           "artifact_hash": null,
           "evidence": [
-            "../unpublished/plurality-small-positive-correlations/main.tex",
-            "../unpublished/plurality-small-positive-correlations/verification.json"
+            "../results/plurality-small-positive-correlations/main.tex",
+            "../results/plurality-small-positive-correlations/verification.json"
           ],
           "proof_type": "written analytic proof using explicit imported first-moment inputs",
           "independent_replay": false,
@@ -4339,7 +4339,7 @@
           "verification_note": "Internal written proof and normalization/scope self-audit. The external first-moment preprint and its M2-M3/G2 deductions retain their existing assurance limits. Independent mathematical review of the relative exterior estimate, normal-flux lower bound and weighted kernel limit is an open verification task. No finite experiment proves this result; no explicit numerical rho_0, all-positive-correlation theorem, formal proof, submission or release is asserted. The current article establishes the four-cell conclusion as a specialization of the dimension-uniform quadratic gap. See its verification record for edition-specific review. No external specialist review, formal verification, submission or publication is inferred.",
           "sources": [
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
               "locator": "Specialization k=4 of thm:main"
             }
@@ -4416,7 +4416,7 @@
           "verification_note": "Internal analytic proof. Review the conditional Gaussian covariance application, exact active and transverse moment gauge, sharp averaged normal-flux cost and dimension-uniform Hermite estimate.",
           "sources": [
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
               "locator": "Dimension-independent local score-loss comparison"
             }
@@ -4431,8 +4431,8 @@
           "checker": null,
           "artifact_hash": null,
           "evidence": [
-            "../unpublished/plurality-small-positive-correlations/main.tex",
-            "../unpublished/plurality-small-positive-correlations/verification.json"
+            "../results/plurality-small-positive-correlations/main.tex",
+            "../results/plurality-small-positive-correlations/verification.json"
           ],
           "proof_type": "written analytic proof",
           "independent_replay": false,
@@ -4443,7 +4443,7 @@
           "verification_note": "Internal analytic proofs. Review the dimension-uniform local comparison and both proofs of qualitative localization: fractional equality in the research note and compact covariance with the accompanying moment and label alignment in the article.",
           "sources": [
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
               "locator": "Main theorem and global quadratic comparison"
             }
@@ -4467,7 +4467,7 @@
           "verification_note": "Internal mathematical derivation and self-audit only. No finite computation certifies the analytic result. Accepted external first-moment and published dimension-reduction inputs retain their separate assurance scopes. Independent mathematical review remains open.",
           "sources": [
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
               "locator": "Equality in thm:main"
             }
@@ -16199,7 +16199,7 @@
           "verification_note": "Written proof and internal mathematical audit.",
           "sources": [
             {
-              "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+              "path": "../results/gaussian-many-sample-agreement/main.tex",
               "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
               "locator": "Companion proof in thm:agreement"
             }
@@ -16223,7 +16223,7 @@
           "verification_note": "Written proof and internal mathematical audit.",
           "sources": [
             {
-              "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+              "path": "../results/gaussian-many-sample-agreement/main.tex",
               "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
               "locator": "Companion proof in thm:voting"
             }
@@ -17357,6 +17357,159 @@
           "scope": "Fix actual co-maximizers at a right contact with the generic simplex orientation. If one changed part is contained in a fixed ball and the complementary changed mass has a fixed positive lower bound, the two-output deficit is bounded below by a positive constant times the same power of the bounded changed mass as in CM1, for all balanced cuts of this kind.",
           "state": "proved",
           "canonical_source": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-STATIONARY-PERIODIC-INTERFACE-TAIL-DISSIPATION",
+          "title": "Gaussian winner charts strictly dissipate nonconstant horizontal periodic modes",
+          "scope": "For ordinary stationary Gaussian winners at any positive correlation, periodic source and observation charts with the observation labels present in the source satisfy a pressure-adjusted nonnegative energy dissipation under dilation. Strict horizontal Fourier loss is summable along such a chart chain. A fixed asymptotically periodic tail must be independent of the outward coordinate, including reciprocal integer correlations.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/GAUSSIAN_PERIODIC_INTERFACE_TAIL_OBSTRUCTION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-STATIONARY-COMPACT-PERIODIC-TEMPLATE-TAIL-EXCLUSION",
+          "title": "A stationary Gaussian tail cannot persistently approximate compact nonconstant periodic templates",
+          "scope": "With every label present in each template, frequencies bounded above and bounded away from zero, and a compact horizontally nonconstant template family, no outward tail can approach those periodic charts at each large center. In particular this excludes slowly modulated cyclic stripes of bounded positive frequency on a widening transverse neighborhood.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/GAUSSIAN_PERIODIC_INTERFACE_TAIL_OBSTRUCTION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-STATIONARY-ISOLATED-POCKET-STRIP-DENSITY",
+          "title": "Separated positive-volume pockets in a fixed Gaussian strip have summable reciprocal distances",
+          "scope": "For stationary Gaussian winners, bounded-diameter isolated nonhost pockets of uniformly positive physical volume and essential clearance from other nonhost material, with centers in a fixed-width strip, have summable reciprocal horizontal positions when those positions are uniformly separated. A compactness argument gives a uniform smoothed horizontal derivative cost, and fixed-strip logarithmic dissipation sums those costs.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/GAUSSIAN_ISOLATED_POCKET_STRIP_DENSITY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-DISTANT-POCKET-CONTRACTED-CENTER",
+          "title": "A distant pocket requires exterior nonhost interaction near its contracted center",
+          "scope": "For an actual planar three-cell maximizer the exterior Gaussian interaction law of a bounded allowable pocket fill, tilted by inverse one-dimensional marginal density in the outward direction, has radial displacement second moment less than 1-rho squared relative to rho X, under DC1. The transverse projection has an explicit variance bound. At least half the tilted interaction lies within a bounded radius of rho p for bounded-diameter distant pockets, and within sublinear distance for sublinear diameters. The infinitesimal identity does not require positive clearance.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_DISTANT_POCKET_CONTRACTION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-REFLECTED-AFFINE-TAIL-ONE-SIGN-OBSTRUCTION",
+          "title": "A reflected stationary graph cannot stay on the indicated side of its affine asymptote",
+          "scope": "For a balanced reflected stationary graph with affine tail slope m and continuous residual vanishing at infinity, the residual cannot be everywhere nonnegative for m at least the simplex slope or everywhere nonpositive for m at most that slope, except for the centered simplex. Affine score signs and recurrence of the positive height transition kernel yield the contradiction.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-REFLECTED-AFFINE-TAIL-SLOPE-AT-MOST-ONE-RIGIDITY",
+          "title": "A reflected maximizing graph with affine tail slope at most one is the simplex",
+          "scope": "For an actual balanced reflected three-cell maximizer with a finite affine intercept and tail residual tending to zero, slope at most one separates the other wing into a bounded longitudinal region after rotation. The exact isolated-end theorem then makes the right wing affine and the affine wedge comparison identifies the simplex.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-COMMON-CIRCLE-CIRCULAR-WALL-TEST",
+          "title": "In the absence of a common circle a pair wall at a spectator radius is circular",
+          "scope": "If no centered circle meets all three strict winners of an actual planar three-cell maximizer, any regular pair arc over radii where the spectator is present lies on a centered circle. The pair-score equality continues on that full circle, and its possible radii are locally finite including at the origin.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-NO-COMMON-CIRCLE-RADIAL-MOAT",
+          "title": "A noncollinear junction without a common circle forces a circular wall and radial separation",
+          "scope": "If no centered circle meets all three strict winners, every noncollinear genuine triple lies away from the origin with a centered circular pair wall. Its two paired labels are absent from opposite neighboring annuli, and radial overlap puts positive mass of at least one of them on the other side of a missing annulus, independently of the local component. This mass is at least half the radial overlap.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-NO-COMMON-CIRCLE-CUSP-JETS",
+          "title": "Without a common circle a collinear cusp brackets the centered circle",
+          "scope": "If no centered circle meets all three strict winners, a collinear genuine triple cannot lie at zero. Away from zero its cusp is tangent to the centered circle, and the two walls on each active side bracket its radius. At a cusp of order q their radial Taylor coefficients vanish through order q−1.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
           "checker": null,
           "artifact_hash": null,
           "evidence": [],
@@ -91683,8 +91836,8 @@
           "scope": "The explicit squarefree octic in HG1 defines a smooth genus-three hyperelliptic curve over Q. Its Jacobian is rationally isogenous to the product of three specified marked elliptic curves and has rational 3-torsion (Z/3)^3. Each fixed elliptic twist has generic rank one. The three norm functions are geometrically independent modulo cubes.",
           "canonical_source": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
           "evidence": [
-            "../unpublished/genus-three-rational-three-torsion/README.md",
-            "../unpublished/genus-three-rational-three-torsion/metadata.json"
+            "../results/genus-three-rational-three-torsion/README.md",
+            "../results/genus-three-rational-three-torsion/metadata.json"
           ],
           "checker": "arithmetic/verify_genus_three_marked_elliptic_quotients.py",
           "artifact_hash": "sha256:544ddfddbe7debd36945a48afb25378df6f8f547035aa1524b066c5b95f84ddf",
@@ -91698,7 +91851,7 @@
           "verification_note": "Written sign quotient and degree-eight push-pull computation, with exact branch, map, invariant and pairwise nonisogeny checks. This exhibits the property asked about after Theorem 9 of Levin–Yan–Wiljanen.",
           "sources": [
             {
-              "path": "../unpublished/genus-three-rational-three-torsion/main.tex",
+              "path": "../results/genus-three-rational-three-torsion/main.tex",
               "sha256": "36176318b10ac2ab88bba0ff7f62fd52ea1f90604c7ac1b05c4ecd8a21a112a0",
               "locator": "thm:main; lem:quartic (existence and explicit maps; generic twist ranks are not extracted)"
             }
@@ -92240,8 +92393,8 @@
           "scope": "For either HG1 or MO1, the degree-eight quotient maps give dual pullback and pushforward isogenies of degree 2^9 with composites [8]. For every rational quadratic twist d and every n>=1, Sel_(3^n)(J^d) and Sha(J^d)[3^n] identify with the direct sums for the three specified elliptic twists, respecting local Kummer conditions; full three-primary Sha also identifies. No Sha finiteness assumption.",
           "canonical_source": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
           "evidence": [
-            "../unpublished/genus-three-rational-three-torsion/README.md",
-            "../unpublished/genus-three-rational-three-torsion/metadata.json"
+            "../results/genus-three-rational-three-torsion/README.md",
+            "../results/genus-three-rational-three-torsion/metadata.json"
           ],
           "checker": null,
           "artifact_hash": null,
@@ -92255,7 +92408,7 @@
           "verification_note": "Written polarization, sign orthogonality, push-pull and local/global Kummer proof HG5; Sage 10.9 replays the displayed maps and their degrees only. No Selmer computation, independent replay, formal verification or external review.",
           "sources": [
             {
-              "path": "../unpublished/genus-three-rational-three-torsion/main.tex",
+              "path": "../results/genus-three-rational-three-torsion/main.tex",
               "sha256": "36176318b10ac2ab88bba0ff7f62fd52ea1f90604c7ac1b05c4ecd8a21a112a0",
               "locator": "thm:descent (HG1 curve only; the MO1 branch remains in the canonical research proof)"
             }
@@ -93881,9 +94034,9 @@
           "scope": "For the fixed HG1 smooth genus-three curve over Q, C(Q) consists exactly of (-1,+/-9),(0,+/-4),(2,+/-36),infinity_+,infinity_-. Its full Mordell–Weil group is finite with invariant factors [3,6,12], order 216 and conductor 243000. The two-primary part is [2,4], not the order-16 reduction upper bound.",
           "canonical_source": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
           "evidence": [
-            "../unpublished/genus-three-rational-three-torsion/verify_arithmetic.py"
+            "../results/genus-three-rational-three-torsion/verify_arithmetic.py"
           ],
-          "checker": "../unpublished/genus-three-rational-three-torsion/verify_arithmetic.py",
+          "checker": "../results/genus-three-rational-three-torsion/verify_arithmetic.py",
           "artifact_hash": "sha256:915477535f6920aee9c19d16badbd75311a492936e5361722f14934a43ceaef3",
           "proof_type": "written+exact_certificate",
           "independent_replay": false,
@@ -93896,11 +94049,11 @@
           "sources": [
             {
               "path": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
-              "sha256": "79dccdd05ff9c3dece4ef70ad5b6a188fd791999bf43e68f445517bd5486a851",
+              "sha256": "8cf04717178903555960209ff0ee39215c54bc723f6694417b85b70e08fd4c2e",
               "locator": "Theorem HG6"
             },
             {
-              "path": "../unpublished/genus-three-rational-three-torsion/main.tex",
+              "path": "../results/genus-three-rational-three-torsion/main.tex",
               "sha256": "36176318b10ac2ab88bba0ff7f62fd52ea1f90604c7ac1b05c4ecd8a21a112a0",
               "locator": "thm:arithmetic and Section 5"
             }
@@ -93913,9 +94066,9 @@
           "scope": "For the explicit monic degree-(8;2,6,2) marked-norm equations g_i^2-f*l_i^2=c_i*q_i^3 through HG1, the 36-by-41 coefficient Jacobian has rank 36 over Q; its tangent space and its f-image have dimension five. For each of the three known moving base involutions, the preserving tangent subspace has dimension three. This yields formal symmetry-breaking directions, not rational simple specializations or an infinite rational family.",
           "canonical_source": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
           "evidence": [
-            "../unpublished/genus-three-rational-three-torsion/verify_arithmetic.py"
+            "../results/genus-three-rational-three-torsion/verify_arithmetic.py"
           ],
-          "checker": "../unpublished/genus-three-rational-three-torsion/verify_arithmetic.py",
+          "checker": "../results/genus-three-rational-three-torsion/verify_arithmetic.py",
           "artifact_hash": "sha256:915477535f6920aee9c19d16badbd75311a492936e5361722f14934a43ceaef3",
           "proof_type": "written+exact_certificate",
           "independent_replay": false,
@@ -93928,7 +94081,7 @@
           "sources": [
             {
               "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-              "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+              "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
               "locator": "Proposition HG7"
             }
           ]
@@ -94009,7 +94162,7 @@
           "sources": [
             {
               "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-              "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+              "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
               "locator": "Theorem HG8: explicit covers, dual isogenies and MCT16 consequence"
             }
           ]
@@ -94232,7 +94385,7 @@
           "sources": [
             {
               "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-              "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+              "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
               "locator": "Proposition HG9"
             }
           ],
@@ -94261,7 +94414,7 @@
           "sources": [
             {
               "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-              "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+              "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
               "locator": "Proposition HG10"
             }
           ]
@@ -94439,7 +94592,7 @@
           "sources": [
             {
               "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-              "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+              "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
               "locator": "Theorem HG11"
             }
           ]
@@ -94466,7 +94619,7 @@
           "sources": [
             {
               "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-              "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+              "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
               "locator": "Proposition HG12"
             }
           ]
@@ -317148,7 +317301,7 @@
         "sources": [
           {
             "path": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
-            "sha256": "79dccdd05ff9c3dece4ef70ad5b6a188fd791999bf43e68f445517bd5486a851",
+            "sha256": "8cf04717178903555960209ff0ee39215c54bc723f6694417b85b70e08fd4c2e",
             "locator": "HG1, focused primary-literature comparison after the proof"
           }
         ],
@@ -318765,7 +318918,7 @@
         "sources": [
           {
             "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-            "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+            "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
             "locator": "Open construction targets after HG7"
           }
         ],
@@ -318786,7 +318939,7 @@
         "sources": [
           {
             "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-            "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+            "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
             "locator": "Open construction targets after HG7"
           }
         ],
@@ -318807,7 +318960,7 @@
         "sources": [
           {
             "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-            "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+            "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
             "locator": "Open construction targets after HG7"
           }
         ],
@@ -318828,7 +318981,7 @@
         "sources": [
           {
             "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-            "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+            "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
             "locator": "Open construction targets after HG7"
           }
         ],
@@ -319241,7 +319394,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+            "path": "../results/plurality-small-positive-correlations/main.tex",
             "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "Specialization k=4 of prop:obstruction"
           }
@@ -320068,7 +320221,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+            "path": "../results/plurality-small-positive-correlations/main.tex",
             "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "thm:main"
           }
@@ -320089,7 +320242,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+            "path": "../results/plurality-small-positive-correlations/main.tex",
             "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "prop:zhang"
           }
@@ -320110,7 +320263,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+            "path": "../results/plurality-small-positive-correlations/main.tex",
             "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "lem:interface"
           }
@@ -320131,7 +320284,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+            "path": "../results/plurality-small-positive-correlations/main.tex",
             "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "lem:margin"
           }
@@ -320152,7 +320305,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+            "path": "../results/plurality-small-positive-correlations/main.tex",
             "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "lem:weighted"
           }
@@ -320173,7 +320326,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+            "path": "../results/plurality-small-positive-correlations/main.tex",
             "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "lem:kernel"
           }
@@ -320194,7 +320347,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+            "path": "../results/plurality-small-positive-correlations/main.tex",
             "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "cor:exterior"
           }
@@ -320215,7 +320368,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+            "path": "../results/plurality-small-positive-correlations/main.tex",
             "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "prop:compactness"
           }
@@ -320236,7 +320389,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+            "path": "../results/plurality-small-positive-correlations/main.tex",
             "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "prop:local"
           }
@@ -320257,7 +320410,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+            "path": "../results/plurality-small-positive-correlations/main.tex",
             "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "prop:obstruction"
           }
@@ -320300,7 +320453,7 @@
         "sources": [
           {
             "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-            "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+            "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
             "locator": "HG11 and the exact full-torsion target in the primary comparison"
           }
         ],
@@ -321532,7 +321685,7 @@
         "id": "GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX",
         "kind": "gap",
         "title": "Exclude bounded pockets surrounded by one cell at three-cell maximizers",
-        "scope": "Determine whether an actual balanced planar three-cell global maximizer at 0<rho<1 can have a positive-area bounded component outside the closure of one strict winner set. The component may contain one or both other labels. The third-negative-direction argument excludes centered disks and some translated circles, with an exclusion also for thin annular trapping. Size, exterior-interaction and angular restrictions leave the unrestricted geometry open. The dormant-wall thin-layer test gives the same-pair norm bound and explicit necessary radius conditions for compact dormant walls. This does not resolve arbitrary pockets. Compact simplex discrepancies must have three spectator imbalances. A singleton outermost facet requires a collinear four-arm cusp with the stated leading ratio; multiple exposures remain possible. CTurn1–CTurn4 force a quantitative amount of backward travel on a compact three-arc theta network. Such networks with unrestricted turning and general enclosed components remain open. On compact theta networks the rotational cut form has an exact endpoint-flux compression. Whole-arm cuts at unequal vertex radii yield only the original rotation. Sufficiently many regular nodal cuts on a fixed geometry give instability near the local limit. At arbitrary correlation, theta networks with two exterior graphs must have thick middle folds, and theta networks confined between the junction abscissae must have thick folds on at least one arm. The general enclosed-component index argument is open. A finite-amplitude radial rotation excludes the class with two equal adjacent arcs on each Gaussian circle and both corresponding cells bounded, including arbitrarily winding profiles in that class. Coupling two translation directions on the three theta arms bounds an oriented cross-agreement derivative by the real cut margin. An explicit bound now counts mixed surrounded regions in any bounded disk and excludes individual shapes by area, perimeter and placement. This does not rule out all mixed pockets or pockets escaping to infinity. General bounded strict winners must instead supply a quantified contribution from interior challenger equality or a dormant outer-wall slope difference. A bounded component cannot contain a connected thick region meeting one of its own outward dilates. The exact outward interior-distance identity gives a separate pointwise inradius bound for regions outside the associated pure exterior phase. In the near-one regime, a quantitative comparison excludes bounded isolated groups separated by a fixed positive distance. The general all-correlation topology problem remains open.",
+        "scope": "Determine whether an actual balanced planar three-cell global maximizer at 0<rho<1 can have a positive-area bounded component outside the closure of one strict winner set. The component may contain one or both other labels. The third-negative-direction argument excludes centered disks and some translated circles, with an exclusion also for thin annular trapping. Size, exterior-interaction and angular restrictions leave the unrestricted geometry open. The dormant-wall thin-layer test gives the same-pair norm bound and explicit necessary radius conditions for compact dormant walls. This does not resolve arbitrary pockets. Compact simplex discrepancies must have three spectator imbalances. A singleton outermost facet requires a collinear four-arm cusp with the stated leading ratio; multiple exposures remain possible. CTurn1–CTurn4 force a quantitative amount of backward travel on a compact three-arc theta network. Such networks with unrestricted turning and general enclosed components remain open. On compact theta networks the rotational cut form has an exact endpoint-flux compression. Whole-arm cuts at unequal vertex radii yield only the original rotation. Sufficiently many regular nodal cuts on a fixed geometry give instability near the local limit. At arbitrary correlation, theta networks with two exterior graphs must have thick middle folds, and theta networks confined between the junction abscissae must have thick folds on at least one arm. The general enclosed-component index argument is open. A finite-amplitude radial rotation excludes the class with two equal adjacent arcs on each Gaussian circle and both corresponding cells bounded, including arbitrarily winding profiles in that class. Coupling two translation directions on the three theta arms bounds an oriented cross-agreement derivative by the real cut margin. An explicit bound now counts mixed surrounded regions in any bounded disk and excludes individual shapes by area, perimeter and placement. This does not rule out all mixed pockets or pockets escaping to infinity. General bounded strict winners must instead supply a quantified contribution from interior challenger equality or a dormant outer-wall slope difference. A bounded component cannot contain a connected thick region meeting one of its own outward dilates. The exact outward interior-distance identity gives a separate pointwise inradius bound for regions outside the associated pure exterior phase. In the near-one regime, a quantitative comparison excludes bounded isolated groups separated by a fixed positive distance. The general all-correlation topology problem remains open. Bounded distant fills require exterior interaction near the contracted center under a tilted law. Positive-volume separated pockets in a fixed strip have summable reciprocal positions.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -321674,6 +321827,21 @@
             "path": "plurality-stability/GAUSSIAN_NEAR_ONE_JUNCTION_DEGREE_AND_COMPONENTS.md",
             "sha256": "c7f0371a9f126091ad3bf955403618a7e8e223186501dc9c45568af82d257bb8",
             "locator": "No small bounded island far from the rest of its label, JD2–JD5"
+          },
+          {
+            "path": "plurality-stability/GAUSSIAN_ISOLATED_POCKET_STRIP_DENSITY.md",
+            "sha256": "7eedf44ba7ea0da39ae9cc1e7892fb704b13c9567b10e97c8187062c5f8e1f46",
+            "locator": "A uniform derivative cost for a pocket, PS1–PS3"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_DISTANT_POCKET_CONTRACTION.md",
+            "sha256": "dffe79db0e253c24771bb8934b239ee81dee62e4f2eedef7abf15796fcd9af67",
+            "locator": "Setup and statement through Transverse projection, DC1–DC7"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
+            "sha256": "44b348e326145b13f820c2c973df6d0830b78635dbb07cc38570aed33fcd1471",
+            "locator": "Noncollinear junctions produce radial separation, RJ2"
           }
         ],
         "next_action": "For a general single-label pocket, control the exterior trace and translation projection in IC9, or extend the first extra-block circle test beyond thin annuli. A two-label pocket retains signed interactions across its internal interface and needs a separate estimate."
@@ -321682,7 +321850,7 @@
         "id": "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
         "kind": "gap",
         "title": "Exclude a nonsimplex global maximizer tied with the simplex",
-        "scope": "For every fixed k>=3 and 0<rho<1 at which the balanced regular simplex is globally optimal, exclude an ordinary balanced nonsimplex partition with the same Gaussian noise stability. In particular rule out this alternative at the endpoint of the initial global optimality interval. A strictly positive simplex interface Hessian only supplies a local exclusion and does not prove this global rigidity. The full-rank affine fan alternative is excluded at every positive correlation by stationary score rigidity. General non-affine and rank-deficient candidates remain in scope. Reflected three-cell tangential ties approached by simplex-optimal correlations must have strictly positive fixed-partition deficit curvature. The moving tangential competitors and the balanced pair patches satisfy FC1–FC3. A connected semialgebraic maximizer with only one unbounded cell must have a compact curved theta graph with projection backtracking. The discrete affine, isolated-end and compact exterior-potential tests exclude additional classes of actual maximizing contacts. They leave unclassified networks and nonlinear oscillatory ends open. Connected strict winners with a semialgebraic jump network have been classified. Connectivity and semialgebraicity are not known for arbitrary maximizing contacts. Central score transversality narrows possible degenerations of the network to collinear triple equalities or a two-label arc identically tied with its absent label. Every bounded isolated graph end is straight by shifted-contour Gaussian rate improvement. An affine-separated pair already forces connected strict winners above 2/3. A centered affine-separated finite-height graph is symmetric when one half-profile is monotone or the proper junction level has odd endpoint orders. An asymmetric graph must cross its reflection at least three times. Exclusive-fiber graphs with a convex height have been classified. Exclusive-fiber graphs with finite switch sets already have one separating line. A reflected maximizer with an eventually convex tail is simplicial. The smooth reflected tail phase controls the correlation derivative but need not yet be linear. Pointwise-distinct triples of maximizing assignments including a simplex cannot contain a nonsimplex competitor. A candidate in the transition range cannot have two convex cells, or have both an affine-separated pair and a convex cell. In the exclusive-fiber finite-height class, one algebraic outer arc or another exclusive label pair forces the simplex. A reflected nonsimplex eventually concave end requires slope above (1+sqrt(1+rho²))/rho. The local simplex value has an exact measurable quadratic expansion in the masses. A nonsimplex tie with unequal prices, or with zero prices and excessive mass curvature, forces coexistence at nearby unequal quotas if the simplex is unique immediately to the left. Joint covariance and quota perturbations can detect a tie with unequal pressures or covariance derivatives. A strict contracted fourth-moment discrepancy is necessary at a nonsimplex first contact. The local simplex branch has an exact second-order covariance–quota envelope with nonzero mixed coefficient. These supply measurable joint perturbation tests for first-order-matched candidates. Compact buffered regular subarcs cannot supply the full measurable response of a positive-curvature tangential tie. A nonsimplex affine-separated graph without reflection requires infinitely many crossings. Three straight isolated ends give an exterior simplex and enforce strict tilted degree-one loss for any compact discrepancy. Under connected strict winners, the jump graph has only the three classified finite topologies, with no assumption about the geometry at infinity. Connectedness and an asymptotic classification of curved ends remain open. Three bounded isolated ends reduce the candidate to a compact simplex discrepancy, which requires bounded receiving components of every label. Two strictly obtuse bounded isolated ends already force zero prices and exclude higher-order contact. The existence of these ends and compact-core exclusion remain open in general. Two strictly obtuse bounded isolated ends with a connected common winner force the simplex when the third backward interface is a single continuous graph. In exact three-end bounded wedge networks, positively spanning directions force a centered simplex exterior or reflection, excluding higher-order ties there. A compact discrepancy has no spectator bisector, and a uniquely exposed outermost discrepancy must be an interior four-arm cusp. General non-graph ends and compact discrepancies remain unresolved. The two obtuse full-half-plane ends suffice with a connected common winner. A common wedge at infinity or an exactly conical exterior yields simplex exterior without a third graph. Higher-order contact is excluded throughout exact-three bounded wedge geometry. General curved or disconnected tails, compact discrepancies and ordinary first contacts remain unresolved. Three sufficiently long central pair arms force a strict derivative advantage at a nonsimplex maximizer and cannot occur at a right-accumulating tie or a maximum of the strict advantage. Compact projection constraints alone permit ordinary balanced asymmetric annular discrepancies. Nonsimplex compact maximizing shapes have only finitely many stationary scaling-correlation pairs in their affine orbit. The simplex-weighted perimeter gives a strict right-contact test, whose required lower bound is false for arbitrary balanced partitions. General last-endpoint maximizers remain unclassified. Balanced off-center Y shapes can satisfy arbitrarily high finite-order stationary score jets at the vertex. A nonsimplex right contact has at most two sufficiently long central pair arms, with or without a common junction. An annulus of sufficient width crossed by all three winners then needs a genuine junction. Accumulating failure components force an ordinary nonsimplex tangential tie, but the scalar Hermite and covariance constraints alone allow such accumulation in a compact abstract family. For the exterior interface, the index bound gives almost stability, and compactness is equivalent to vanishing critical reciprocal-gradient mass in unit balls. Any failure thereof produces a critical maximal tie in a dilation-linked local limit. Nondegenerate extrema do not carry limiting critical mass. The limit equations alone allow infinitely many walls. Finite ends and the unrestricted theta instability remain open. Realizing every fixed exterior chart in one balanced partition still leaves the moving central chart independent under the limiting winner equations alone. A tangential nonsimplex tie has strictly smaller positive pair-interface Mehler energy than the simplex. Zero-price candidates with the three exact reference score lines require all three mismatch types on every reference mirror. The full outward orbit has an almost-everywhere finite equilibrium limit. Fractional phases would force superquadratic planar interface growth. In the compact-discrepancy branch a nonsimplex right contact needs a uniformly positive cumulative spectator violation in a bounded window. Even a strict single-ray spectral gap and the three exact line identities permit source oscillations without the defect's own winner equation. A compact discrepancy cannot have consecutive circular slices almost everywhere. A nonsimplex right contact with exact lines must keep a positive angular L1 distance from the consecutive-arc class on a positive measure of radii in a fixed annulus. A finite simplex cylinder implies full stationary rigidity. Spherically convex compact discrepancies are excluded in every active dimension. Planar nonsimplex actual maximizers with exact adjusted reference lines require uniformly nonconsecutive slices without a derivative or exterior hypothesis. Every nonsimplex exact-line planar maximizer has all three cells disconnected, with uniform component mass and both transfer orientations. With small pressures, any unbounded exact-line defect has thick recurrence on one ray. A clean thick annulus forces exact exterior agreement. Compact stationary defects with consecutive circular slices are excluded even without stability. An arbitrary nonsimplex actual maximizer has a nonzero holomorphic balanced shape witness. The same fixed shape has uniformly finitely many stationary correlations on compact bands and any nearby stationary shape must move by at least a power of the correlation displacement. A sufficiently accurate regular simplex core already forces global equality for an ordinary balanced stationary winner. Uniformly accurate obtuse exterior tripod scores already force an exact regular simplex exterior, with no exact initial lines. Two accurate binary tails suffice for global rigidity if the common cell is connected. Noncompact defects from an obtuse tripod need positive-volume unit balls arbitrarily far away. An isolated full-half-plane end with measurable one-crossing and essentially sublinear height straightens without an oscillation or slope hypothesis. Exact exterior discrete scale invariance forces finitely many rays, and a three-label exterior then has three or six centered sectors. An actual balanced maximizer with three exterior labels and one connected cell is simplicial in this branch. The six-sector exterior requires at least four strict-winner components per label and sixteen genuine junctions. It needs extra circular arcs and positive intermediate compensation for a strictly negative central-to-exterior rotation interaction. A tangential tie in that branch has positive fixed-shape curvature. In the three-cell case, co-maximizers cannot have a nontrivial zero-cost complementary cut in distinct active planes. At right contacts, a generic same-plane orientation of the simplex likewise makes every nontrivial balanced complementary cut strictly lose. Two finite straight segments starting at zero on a convex cell also force the simplex. In the plane, a nonsimplex maximizer's difference from a centered simplex cannot satisfy any finite directional product equation.",
+        "scope": "For every fixed k>=3 and 0<rho<1 at which the balanced regular simplex is globally optimal, exclude an ordinary balanced nonsimplex partition with the same Gaussian noise stability. In particular rule out this alternative at the endpoint of the initial global optimality interval. A strictly positive simplex interface Hessian only supplies a local exclusion and does not prove this global rigidity. The full-rank affine fan alternative is excluded at every positive correlation by stationary score rigidity. General non-affine and rank-deficient candidates remain in scope. Reflected three-cell tangential ties approached by simplex-optimal correlations must have strictly positive fixed-partition deficit curvature. The moving tangential competitors and the balanced pair patches satisfy FC1–FC3. A connected semialgebraic maximizer with only one unbounded cell must have a compact curved theta graph with projection backtracking. The discrete affine, isolated-end and compact exterior-potential tests exclude additional classes of actual maximizing contacts. They leave unclassified networks and nonlinear oscillatory ends open. Connected strict winners with a semialgebraic jump network have been classified. Connectivity and semialgebraicity are not known for arbitrary maximizing contacts. Central score transversality narrows possible degenerations of the network to collinear triple equalities or a two-label arc identically tied with its absent label. Every bounded isolated graph end is straight by shifted-contour Gaussian rate improvement. An affine-separated pair already forces connected strict winners above 2/3. A centered affine-separated finite-height graph is symmetric when one half-profile is monotone or the proper junction level has odd endpoint orders. An asymmetric graph must cross its reflection at least three times. Exclusive-fiber graphs with a convex height have been classified. Exclusive-fiber graphs with finite switch sets already have one separating line. A reflected maximizer with an eventually convex tail is simplicial. The smooth reflected tail phase controls the correlation derivative but need not yet be linear. Pointwise-distinct triples of maximizing assignments including a simplex cannot contain a nonsimplex competitor. A candidate in the transition range cannot have two convex cells, or have both an affine-separated pair and a convex cell. In the exclusive-fiber finite-height class, one algebraic outer arc or another exclusive label pair forces the simplex. A reflected nonsimplex eventually concave end requires slope above (1+sqrt(1+rho²))/rho. The local simplex value has an exact measurable quadratic expansion in the masses. A nonsimplex tie with unequal prices, or with zero prices and excessive mass curvature, forces coexistence at nearby unequal quotas if the simplex is unique immediately to the left. Joint covariance and quota perturbations can detect a tie with unequal pressures or covariance derivatives. A strict contracted fourth-moment discrepancy is necessary at a nonsimplex first contact. The local simplex branch has an exact second-order covariance–quota envelope with nonzero mixed coefficient. These supply measurable joint perturbation tests for first-order-matched candidates. Compact buffered regular subarcs cannot supply the full measurable response of a positive-curvature tangential tie. A nonsimplex affine-separated graph without reflection requires infinitely many crossings. Three straight isolated ends give an exterior simplex and enforce strict tilted degree-one loss for any compact discrepancy. Under connected strict winners, the jump graph has only the three classified finite topologies, with no assumption about the geometry at infinity. Connectedness and an asymptotic classification of curved ends remain open. Three bounded isolated ends reduce the candidate to a compact simplex discrepancy, which requires bounded receiving components of every label. Two strictly obtuse bounded isolated ends already force zero prices and exclude higher-order contact. The existence of these ends and compact-core exclusion remain open in general. Two strictly obtuse bounded isolated ends with a connected common winner force the simplex when the third backward interface is a single continuous graph. In exact three-end bounded wedge networks, positively spanning directions force a centered simplex exterior or reflection, excluding higher-order ties there. A compact discrepancy has no spectator bisector, and a uniquely exposed outermost discrepancy must be an interior four-arm cusp. General non-graph ends and compact discrepancies remain unresolved. The two obtuse full-half-plane ends suffice with a connected common winner. A common wedge at infinity or an exactly conical exterior yields simplex exterior without a third graph. Higher-order contact is excluded throughout exact-three bounded wedge geometry. General curved or disconnected tails, compact discrepancies and ordinary first contacts remain unresolved. Three sufficiently long central pair arms force a strict derivative advantage at a nonsimplex maximizer and cannot occur at a right-accumulating tie or a maximum of the strict advantage. Compact projection constraints alone permit ordinary balanced asymmetric annular discrepancies. Nonsimplex compact maximizing shapes have only finitely many stationary scaling-correlation pairs in their affine orbit. The simplex-weighted perimeter gives a strict right-contact test, whose required lower bound is false for arbitrary balanced partitions. General last-endpoint maximizers remain unclassified. Balanced off-center Y shapes can satisfy arbitrarily high finite-order stationary score jets at the vertex. A nonsimplex right contact has at most two sufficiently long central pair arms, with or without a common junction. An annulus of sufficient width crossed by all three winners then needs a genuine junction. Accumulating failure components force an ordinary nonsimplex tangential tie, but the scalar Hermite and covariance constraints alone allow such accumulation in a compact abstract family. For the exterior interface, the index bound gives almost stability, and compactness is equivalent to vanishing critical reciprocal-gradient mass in unit balls. Any failure thereof produces a critical maximal tie in a dilation-linked local limit. Nondegenerate extrema do not carry limiting critical mass. The limit equations alone allow infinitely many walls. Finite ends and the unrestricted theta instability remain open. Realizing every fixed exterior chart in one balanced partition still leaves the moving central chart independent under the limiting winner equations alone. A tangential nonsimplex tie has strictly smaller positive pair-interface Mehler energy than the simplex. Zero-price candidates with the three exact reference score lines require all three mismatch types on every reference mirror. The full outward orbit has an almost-everywhere finite equilibrium limit. Fractional phases would force superquadratic planar interface growth. In the compact-discrepancy branch a nonsimplex right contact needs a uniformly positive cumulative spectator violation in a bounded window. Even a strict single-ray spectral gap and the three exact line identities permit source oscillations without the defect's own winner equation. A compact discrepancy cannot have consecutive circular slices almost everywhere. A nonsimplex right contact with exact lines must keep a positive angular L1 distance from the consecutive-arc class on a positive measure of radii in a fixed annulus. A finite simplex cylinder implies full stationary rigidity. Spherically convex compact discrepancies are excluded in every active dimension. Planar nonsimplex actual maximizers with exact adjusted reference lines require uniformly nonconsecutive slices without a derivative or exterior hypothesis. Every nonsimplex exact-line planar maximizer has all three cells disconnected, with uniform component mass and both transfer orientations. With small pressures, any unbounded exact-line defect has thick recurrence on one ray. A clean thick annulus forces exact exterior agreement. Compact stationary defects with consecutive circular slices are excluded even without stability. An arbitrary nonsimplex actual maximizer has a nonzero holomorphic balanced shape witness. The same fixed shape has uniformly finitely many stationary correlations on compact bands and any nearby stationary shape must move by at least a power of the correlation displacement. A sufficiently accurate regular simplex core already forces global equality for an ordinary balanced stationary winner. Uniformly accurate obtuse exterior tripod scores already force an exact regular simplex exterior, with no exact initial lines. Two accurate binary tails suffice for global rigidity if the common cell is connected. Noncompact defects from an obtuse tripod need positive-volume unit balls arbitrarily far away. An isolated full-half-plane end with measurable one-crossing and essentially sublinear height straightens without an oscillation or slope hypothesis. Exact exterior discrete scale invariance forces finitely many rays, and a three-label exterior then has three or six centered sectors. An actual balanced maximizer with three exterior labels and one connected cell is simplicial in this branch. The six-sector exterior requires at least four strict-winner components per label and sixteen genuine junctions. It needs extra circular arcs and positive intermediate compensation for a strictly negative central-to-exterior rotation interaction. A tangential tie in that branch has positive fixed-shape curvature. In the three-cell case, co-maximizers cannot have a nontrivial zero-cost complementary cut in distinct active planes. At right contacts, a generic same-plane orientation of the simplex likewise makes every nontrivial balanced complementary cut strictly lose. Two finite straight segments starting at zero on a convex cell also force the simplex. In the plane, a nonsimplex maximizer's difference from a centered simplex cannot satisfy any finite directional product equation. Two-sided deviations or a steep slope are required in the reflected affine-tail regimes of the exact folded score comparison. If the three labels never occur on one centered circle, any noncollinear triple forces an exact circular wall and a disconnected radial satellite.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -323399,6 +323567,31 @@
             "path": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
             "sha256": "61f3035c04b3e71c9039729dddf6e034fa8173ba40ad8a9373971b89e894e599",
             "locator": "Right-contact consequence following CM3"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md",
+            "sha256": "acdf7a9e7f6cf7081d765db456048f384a48917ee97c5743016dd99307f0f47f",
+            "locator": "Balance and the stability derivative and Monotonicity of the folded score, (1)–(5)"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md",
+            "sha256": "acdf7a9e7f6cf7081d765db456048f384a48917ee97c5743016dd99307f0f47f",
+            "locator": "A one-sign obstruction for a curved graph, (6)–(8)"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md",
+            "sha256": "acdf7a9e7f6cf7081d765db456048f384a48917ee97c5743016dd99307f0f47f",
+            "locator": "An isolated affine tail of slope at most one"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
+            "sha256": "44b348e326145b13f820c2c973df6d0830b78635dbb07cc38570aed33fcd1471",
+            "locator": "Noncollinear junctions produce radial separation, RJ2"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
+            "sha256": "44b348e326145b13f820c2c973df6d0830b78635dbb07cc38570aed33fcd1471",
+            "locator": "Collinear junctions bracket a centered circle, RJ3"
           }
         ],
         "next_action": "Exclude a nonsimplex tie in the unresolved intermediate range. The tied shape must have a uniformly positive dilation residual and annular mass error. At tangential endpoint contact, balanced dilation provides a curvature or radial-moment obstruction. Exact simultaneous circular saturation now forces the simplex. The remaining candidate has positive integrated angular envelope slack, uniformly on compact correlation intervals. Prove that this or another structural deficit exceeds any positive relaxed gain for a nonsimplex tied competitor. For a compact discrepancy, try to establish the cumulative tilted spectator order by a mass-preserving transfer coupled across actual winning regions. Source identities and individual score-ray tests do not imply the needed ordering. In the compact branch either force circular connectivity of actual winners or use the uniform disconnected-slice witness in a comparison that changes shapes and retains the mass constraints. Determine whether actual maximality rules out the thick radial recurrence in the exact-line branch, or produces a clean annulus and then excludes the remaining disconnected compact competitors. Control a moving nonsimplex branch or derive finite approximate tripod geometry from unrestricted global maximality. The fixed-shape witness does not bound the number of moving contacts."
@@ -325074,7 +325267,7 @@
         "id": "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
         "kind": "goal",
         "title": "Balanced three-cell Standard Simplex Conjecture at every positive correlation",
-        "scope": "Prove global Gaussian simplex optimality and equality rigidity for balanced measurable three-cell partitions in every d>=2 at every 0<rho<1, then obtain the balanced low-influence three-candidate plurality corollary. The explicit lower interval reaches 339/500, and the exact near-one result gives a qualitative interval adjacent to one. Closing the remaining intermediate range requires excluding a nonsimplex maximizer tied at a transition correlation. The unrestricted optimal value equals the supremum over balanced conical partitions across finite dimensions. Every adjacent conical plateau has the simplex value. Plateaus in arbitrarily large dimensions would force the unrestricted simplex value. This remains open at general correlations. Axial conical optimizers are excluded and the radial spectator class has an exact asymptotic value loss. Neither result gives a plateau for unrestricted conical values. Near-maximizers are compact modulo embeddings in arbitrary ambient dimensions. Unrestricted conical optima have the same first-order loss as radial spectator optima. Any sequence approaching a nonsimplex planar maximizer pays its strictly positive radial dilation coefficient at order 1/n, without assumptions on angular slice masses. This yields the asymptotic rate for a suboptimal simplex. The dimension-independent global comparison remains open. Measurable local growth is uniform over all ambient dimensions on compact interior bands. Combined with first-order conical comparison it gives the exact scaled delay of a possible conical transition behind a planar one. A planar nonsimplex tie is still possible under these restrictions. The ordinary centroid condition together with every sharp two-time posterior perimeter inequality still permits an incompatible adaptive rule beating simplex agreement. A valid argument must retain the common endpoint restriction or use actual score geometry. The triangle-only agreement relaxation is false as a global proof route. The fractional obstruction is outside the class of ordinary partitions. Even imposing PSD and every four-point three-label convex-hull test leaves a strict relaxed objective gap above the simplex near one. The three-ribbon witness is fractional and fails finite label consistency at level five before rotation averaging. Bare unanchored label-pair positivity strictly overestimates the simplex at every positive correlation. This is a relaxation obstruction even in the plane, not a new ordinary correlation interval. The posterior lift can tie an actual maximizer at one nontrivial scale only when the input is a simplex. Establishing such a step at general correlations requires new global control on actual maximizers. Nontrivial balanced complementary patches of actual co-maximizers in distinct planes are strictly suboptimal. At a right contact, generic appropriately labeled simplex orientations give the same strictness for cuts in the common plane. These restrictions concern recombination and leave the existence of nonsimplex ties open.",
+        "scope": "Prove global Gaussian simplex optimality and equality rigidity for balanced measurable three-cell partitions in every d>=2 at every 0<rho<1, then obtain the balanced low-influence three-candidate plurality corollary. The explicit lower interval reaches 339/500, and the exact near-one result gives a qualitative interval adjacent to one. Closing the remaining intermediate range requires excluding a nonsimplex maximizer tied at a transition correlation. The unrestricted optimal value equals the supremum over balanced conical partitions across finite dimensions. Every adjacent conical plateau has the simplex value. Plateaus in arbitrarily large dimensions would force the unrestricted simplex value. This remains open at general correlations. Axial conical optimizers are excluded and the radial spectator class has an exact asymptotic value loss. Neither result gives a plateau for unrestricted conical values. Near-maximizers are compact modulo embeddings in arbitrary ambient dimensions. Unrestricted conical optima have the same first-order loss as radial spectator optima. Any sequence approaching a nonsimplex planar maximizer pays its strictly positive radial dilation coefficient at order 1/n, without assumptions on angular slice masses. This yields the asymptotic rate for a suboptimal simplex. The dimension-independent global comparison remains open. Measurable local growth is uniform over all ambient dimensions on compact interior bands. Combined with first-order conical comparison it gives the exact scaled delay of a possible conical transition behind a planar one. A planar nonsimplex tie is still possible under these restrictions. The ordinary centroid condition together with every sharp two-time posterior perimeter inequality still permits an incompatible adaptive rule beating simplex agreement. A valid argument must retain the common endpoint restriction or use actual score geometry. The triangle-only agreement relaxation is false as a global proof route. The fractional obstruction is outside the class of ordinary partitions. Even imposing PSD and every four-point three-label convex-hull test leaves a strict relaxed objective gap above the simplex near one. The three-ribbon witness is fractional and fails finite label consistency at level five before rotation averaging. Bare unanchored label-pair positivity strictly overestimates the simplex at every positive correlation. This is a relaxation obstruction even in the plane, not a new ordinary correlation interval. The posterior lift can tie an actual maximizer at one nontrivial scale only when the input is a simplex. Establishing such a step at general correlations requires new global control on actual maximizers. Nontrivial balanced complementary patches of actual co-maximizers in distinct planes are strictly suboptimal. At a right contact, generic appropriately labeled simplex orientations give the same strictness for cuts in the common plane. These restrictions concern recombination and leave the existence of nonsimplex ties open. Stationary winner tails cannot have persistent fixed-period oscillations; their score derivatives are logarithmically integrable in fixed strips. A distant pocket requires exterior interaction near its contracted center. If no centered circle contains all three strict winners, a noncollinear triple forces an exact circular wall and a radial moat, and collinear cusps match the circle to low order. Reflected affine wedges are strictly optimized at the simplex, and a reflected maximizing graph with an affine asymptote of slope at most one is simplicial.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -326766,6 +326959,61 @@
             "path": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
             "sha256": "61f3035c04b3e71c9039729dddf6e034fa8173ba40ad8a9373971b89e894e599",
             "locator": "Right-contact consequence following CM3"
+          },
+          {
+            "path": "plurality-stability/GAUSSIAN_PERIODIC_INTERFACE_TAIL_OBSTRUCTION.md",
+            "sha256": "21d30f386515eb2d52066aa9a96234468822ada1bcfebac1efc2a72693182bbb",
+            "locator": "Periodic profiles and horizontal smoothing through A fixed periodic tail, PT1–PT6"
+          },
+          {
+            "path": "plurality-stability/GAUSSIAN_PERIODIC_INTERFACE_TAIL_OBSTRUCTION.md",
+            "sha256": "21d30f386515eb2d52066aa9a96234468822ada1bcfebac1efc2a72693182bbb",
+            "locator": "Slowly modulated stripes and compact variable templates, PT7"
+          },
+          {
+            "path": "plurality-stability/GAUSSIAN_PERIODIC_INTERFACE_TAIL_OBSTRUCTION.md",
+            "sha256": "21d30f386515eb2d52066aa9a96234468822ada1bcfebac1efc2a72693182bbb",
+            "locator": "Horizontal dissipation in a fixed strip, PT8–PT9"
+          },
+          {
+            "path": "plurality-stability/GAUSSIAN_ISOLATED_POCKET_STRIP_DENSITY.md",
+            "sha256": "7eedf44ba7ea0da39ae9cc1e7892fb704b13c9567b10e97c8187062c5f8e1f46",
+            "locator": "A uniform derivative cost for a pocket, PS1–PS3"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_DISTANT_POCKET_CONTRACTION.md",
+            "sha256": "dffe79db0e253c24771bb8934b239ee81dee62e4f2eedef7abf15796fcd9af67",
+            "locator": "Setup and statement through Transverse projection, DC1–DC7"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md",
+            "sha256": "acdf7a9e7f6cf7081d765db456048f384a48917ee97c5743016dd99307f0f47f",
+            "locator": "Balance and the stability derivative and Monotonicity of the folded score, (1)–(5)"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md",
+            "sha256": "acdf7a9e7f6cf7081d765db456048f384a48917ee97c5743016dd99307f0f47f",
+            "locator": "A one-sign obstruction for a curved graph, (6)–(8)"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md",
+            "sha256": "acdf7a9e7f6cf7081d765db456048f384a48917ee97c5743016dd99307f0f47f",
+            "locator": "An isolated affine tail of slope at most one"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
+            "sha256": "44b348e326145b13f820c2c973df6d0830b78635dbb07cc38570aed33fcd1471",
+            "locator": "Regular pair arcs in radii met by the spectator, RJ1"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
+            "sha256": "44b348e326145b13f820c2c973df6d0830b78635dbb07cc38570aed33fcd1471",
+            "locator": "Noncollinear junctions produce radial separation, RJ2"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
+            "sha256": "44b348e326145b13f820c2c973df6d0830b78635dbb07cc38570aed33fcd1471",
+            "locator": "Collinear junctions bracket a centered circle, RJ3"
           }
         ],
         "next_action": "Bridge the intermediate correlations between the implicit lower extension and the exact near-one interval. The separated scalar form has growing positive index near one, so a uniformly bounded collection of radial moments cannot repair it. Use the joint angular constraints at intermediate correlations or exclude the required first tie by its interface geometry."
@@ -329523,7 +329771,7 @@
             "locator": "Dimension-independent local comparison, L1-L3"
           },
           {
-            "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+            "path": "../results/plurality-small-positive-correlations/main.tex",
             "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "Normal flux and quantitative comparison, prop:local and thm:main"
           }
@@ -334855,7 +335103,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+            "path": "../results/gaussian-many-sample-agreement/main.tex",
             "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
             "locator": "thm:agreement"
           }
@@ -334875,7 +335123,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+            "path": "../results/gaussian-many-sample-agreement/main.tex",
             "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
             "locator": "prop:simplex"
           }
@@ -334895,7 +335143,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+            "path": "../results/gaussian-many-sample-agreement/main.tex",
             "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
             "locator": "lem:posterior-powers"
           }
@@ -334915,7 +335163,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+            "path": "../results/gaussian-many-sample-agreement/main.tex",
             "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
             "locator": "lem:separation"
           }
@@ -334935,7 +335183,7 @@
         "dependency_coverage": "partial",
         "sources": [
           {
-            "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+            "path": "../results/gaussian-many-sample-agreement/main.tex",
             "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
             "locator": "thm:voting"
           }
@@ -334956,6 +335204,36 @@
             "path": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
             "sha256": "61f3035c04b3e71c9039729dddf6e034fa8173ba40ad8a9373971b89e894e599",
             "locator": "Regret at both inputs and A sublevel estimate for the combined regret, CM1–CM3"
+          }
+        ]
+      },
+      {
+        "id": "PIS-STATIONARY-FIXED-STRIP-LOGARITHMIC-SCORE-DISSIPATION",
+        "title": "Stationary Gaussian scores have logarithmically integrable horizontal derivatives in fixed strips",
+        "scope": "For any fixed positive correlation, chosen direction and nonzero horizontal derivative order, arbitrary ordinary stationary winner partitions have Cesaro mean squared score derivatives tending to zero in the product of the horizontal Lebesgue line and the transverse Gaussian. These squared derivatives are integrable with horizontal weight ds/s above one, by cutoff dilation dissipation and the horizontal-Fourier, transverse-Hermite multiplier comparison.",
+        "kind": "claim",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "sources": [
+          {
+            "path": "plurality-stability/GAUSSIAN_PERIODIC_INTERFACE_TAIL_OBSTRUCTION.md",
+            "sha256": "21d30f386515eb2d52066aa9a96234468822ada1bcfebac1efc2a72693182bbb",
+            "locator": "Horizontal dissipation in a fixed strip, PT8–PT9"
+          }
+        ]
+      },
+      {
+        "id": "PIS-THREE-CELL-REFLECTED-AFFINE-WEDGE-MONOTONICITY",
+        "title": "Balanced reflected affine wedges are strictly optimized at the simplex slope",
+        "scope": "For every positive correlation the noise stability of the balanced reflected affine wedge family with nonnegative slope strictly increases up to slope 1/sqrt(3) and strictly decreases after it. The exact folded score monotonicity controls the sign of the volume-corrected stability derivative at all amplitudes.",
+        "kind": "claim",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "sources": [
+          {
+            "path": "plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md",
+            "sha256": "acdf7a9e7f6cf7081d765db456048f384a48917ee97c5743016dd99307f0f47f",
+            "locator": "Balance and the stability derivative and Monotonicity of the folded score, (1)–(5)"
           }
         ]
       }
@@ -516478,7 +516756,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
-          "sha256": "79dccdd05ff9c3dece4ef70ad5b6a188fd791999bf43e68f445517bd5486a851",
+          "sha256": "8cf04717178903555960209ff0ee39215c54bc723f6694417b85b70e08fd4c2e",
           "locator": "Theorem HG1"
         }
       },
@@ -516493,7 +516771,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
-          "sha256": "79dccdd05ff9c3dece4ef70ad5b6a188fd791999bf43e68f445517bd5486a851",
+          "sha256": "8cf04717178903555960209ff0ee39215c54bc723f6694417b85b70e08fd4c2e",
           "locator": "Proposition HG3"
         }
       },
@@ -516510,7 +516788,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
-          "sha256": "79dccdd05ff9c3dece4ef70ad5b6a188fd791999bf43e68f445517bd5486a851",
+          "sha256": "8cf04717178903555960209ff0ee39215c54bc723f6694417b85b70e08fd4c2e",
           "locator": "Theorem HG2"
         }
       },
@@ -516526,7 +516804,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
-          "sha256": "79dccdd05ff9c3dece4ef70ad5b6a188fd791999bf43e68f445517bd5486a851",
+          "sha256": "8cf04717178903555960209ff0ee39215c54bc723f6694417b85b70e08fd4c2e",
           "locator": "Corollary HG4"
         }
       },
@@ -517356,7 +517634,7 @@
         "dependency_coverage": "complete",
         "proof": {
           "path": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
-          "sha256": "79dccdd05ff9c3dece4ef70ad5b6a188fd791999bf43e68f445517bd5486a851",
+          "sha256": "8cf04717178903555960209ff0ee39215c54bc723f6694417b85b70e08fd4c2e",
           "locator": "Theorem HG5, dual degree 2^9 and local Kummer compatibility"
         }
       },
@@ -519961,7 +520239,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
-          "sha256": "79dccdd05ff9c3dece4ef70ad5b6a188fd791999bf43e68f445517bd5486a851",
+          "sha256": "8cf04717178903555960209ff0ee39215c54bc723f6694417b85b70e08fd4c2e",
           "locator": "HG6: proved elliptic ranks, full rational fibres, finite Sylow certificate and 17-obstruction"
         }
       },
@@ -519975,7 +520253,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-          "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+          "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
           "locator": "HG7: three independent norm identities, coefficient Jacobian and moving-involution matrices"
         }
       },
@@ -520082,7 +520360,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-          "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+          "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
           "locator": "HG8: smoothness for all rational R!=0, degree-two push–pull, all-local Kummer transfer and MCT16"
         }
       },
@@ -520587,7 +520865,7 @@
         "conclusion": "PIS-FOUR-CELL-SMALL-CORRELATION-OPTIMALITY",
         "status": "proved",
         "proof": {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "Specialization k=4 of thm:main"
         },
@@ -520602,7 +520880,7 @@
         "conclusion": "PIS-NO-FIRST-MOMENT-RELATIVE-NOISE-VALUE-GAP",
         "status": "proved",
         "proof": {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "Specialization k=4 of prop:obstruction"
         },
@@ -520895,7 +521173,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-          "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+          "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
           "locator": "HG9: pro-two Tate image and fixed nonzero mod-two vector"
         }
       },
@@ -520909,7 +521187,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-          "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+          "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
           "locator": "HG10: equation (11), normalization and complete rational/conic classification"
         }
       },
@@ -521426,7 +521704,7 @@
         "conclusion": "PIS-PAPER-SIMPLEX-MAIN",
         "status": "proved",
         "proof": {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "thm:main"
         },
@@ -521441,7 +521719,7 @@
         "conclusion": "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP",
         "status": "proved",
         "proof": {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "thm:main"
         },
@@ -521455,7 +521733,7 @@
         "conclusion": "PIS-DIMENSION-INDEPENDENT-MEASURABLE-LOCAL-COMPARISON",
         "status": "proved",
         "proof": {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "prop:local"
         },
@@ -521473,7 +521751,7 @@
         "conclusion": "PIS-PAPER-SIMPLEX-LOCAL",
         "status": "proved",
         "proof": {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "prop:local"
         },
@@ -521487,7 +521765,7 @@
         "conclusion": "PIS-PAPER-SIMPLEX-FIRST-MOMENT",
         "status": "proved",
         "proof": {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "prop:zhang"
         },
@@ -521502,7 +521780,7 @@
         "conclusion": "PIS-PAPER-SIMPLEX-INTERFACE",
         "status": "proved",
         "proof": {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "lem:interface"
         },
@@ -521518,7 +521796,7 @@
         "conclusion": "PIS-PAPER-SIMPLEX-TRANSFER",
         "status": "proved",
         "proof": {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "cor:exterior"
         },
@@ -521535,7 +521813,7 @@
         "conclusion": "PIS-PAPER-SIMPLEX-FLUX",
         "status": "proved",
         "proof": {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "prop:compactness"
         },
@@ -521550,7 +521828,7 @@
         "conclusion": "PIS-ALL-CELL-SMALL-CORRELATION-OPTIMALITY",
         "status": "proved",
         "proof": {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "thm:main, equality"
         },
@@ -521564,7 +521842,7 @@
         "conclusion": "PIS-FIXED-CELL-SMALL-CORRELATION-RIGIDITY",
         "status": "proved",
         "proof": {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "thm:main in d=k-1"
         },
@@ -521580,7 +521858,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-          "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+          "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
           "locator": "HG11: two norm identities, congruence reductions, absolute simplicity and nonconstant invariant"
         }
       },
@@ -521594,7 +521872,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-          "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+          "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
           "locator": "HG12: integral norm, exact resultants, simultaneous Hensel neighbourhood and all-prime valuation proof"
         }
       },
@@ -537031,7 +537309,7 @@
         "status": "proved",
         "dependency_coverage": "partial",
         "proof": {
-          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "path": "../results/gaussian-many-sample-agreement/main.tex",
           "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
           "locator": "thm:agreement"
         }
@@ -537046,7 +537324,7 @@
         "status": "proved",
         "dependency_coverage": "partial",
         "proof": {
-          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "path": "../results/gaussian-many-sample-agreement/main.tex",
           "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
           "locator": "prop:simplex"
         }
@@ -537060,7 +537338,7 @@
         "status": "proved",
         "dependency_coverage": "partial",
         "proof": {
-          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "path": "../results/gaussian-many-sample-agreement/main.tex",
           "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
           "locator": "lem:separation"
         }
@@ -537075,7 +537353,7 @@
         "status": "proved",
         "dependency_coverage": "partial",
         "proof": {
-          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "path": "../results/gaussian-many-sample-agreement/main.tex",
           "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
           "locator": "thm:voting"
         }
@@ -537089,7 +537367,7 @@
         "status": "proved",
         "dependency_coverage": "partial",
         "proof": {
-          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "path": "../results/gaussian-many-sample-agreement/main.tex",
           "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
           "locator": "thm:agreement"
         }
@@ -537103,7 +537381,7 @@
         "status": "proved",
         "dependency_coverage": "partial",
         "proof": {
-          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "path": "../results/gaussian-many-sample-agreement/main.tex",
           "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
           "locator": "thm:voting"
         }
@@ -537121,6 +537399,136 @@
           "path": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
           "sha256": "61f3035c04b3e71c9039729dddf6e034fa8173ba40ad8a9373971b89e894e599",
           "locator": "Right-contact consequence following CM3"
+        }
+      },
+      {
+        "id": "PROOF-PIS-STATIONARY-PERIODIC-INTERFACE-TAIL-DISSIPATION",
+        "premises": [
+          "PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN"
+        ],
+        "conclusion": "PIS-STATIONARY-PERIODIC-INTERFACE-TAIL-DISSIPATION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/GAUSSIAN_PERIODIC_INTERFACE_TAIL_OBSTRUCTION.md",
+          "sha256": "21d30f386515eb2d52066aa9a96234468822ada1bcfebac1efc2a72693182bbb",
+          "locator": "Periodic profiles and horizontal smoothing through A fixed periodic tail, PT1–PT6"
+        }
+      },
+      {
+        "id": "PROOF-PIS-STATIONARY-COMPACT-PERIODIC-TEMPLATE-TAIL-EXCLUSION",
+        "premises": [
+          "PIS-STATIONARY-PERIODIC-INTERFACE-TAIL-DISSIPATION"
+        ],
+        "conclusion": "PIS-STATIONARY-COMPACT-PERIODIC-TEMPLATE-TAIL-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/GAUSSIAN_PERIODIC_INTERFACE_TAIL_OBSTRUCTION.md",
+          "sha256": "21d30f386515eb2d52066aa9a96234468822ada1bcfebac1efc2a72693182bbb",
+          "locator": "Slowly modulated stripes and compact variable templates, PT7"
+        }
+      },
+      {
+        "id": "PROOF-PIS-STATIONARY-ISOLATED-POCKET-STRIP-DENSITY",
+        "premises": [
+          "PIS-STATIONARY-FIXED-STRIP-LOGARITHMIC-SCORE-DISSIPATION"
+        ],
+        "conclusion": "PIS-STATIONARY-ISOLATED-POCKET-STRIP-DENSITY",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/GAUSSIAN_ISOLATED_POCKET_STRIP_DENSITY.md",
+          "sha256": "7eedf44ba7ea0da39ae9cc1e7892fb704b13c9567b10e97c8187062c5f8e1f46",
+          "locator": "A uniform derivative cost for a pocket, PS1–PS3"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-DISTANT-POCKET-CONTRACTED-CENTER",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS"
+        ],
+        "conclusion": "PIS-THREE-CELL-DISTANT-POCKET-CONTRACTED-CENTER",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_DISTANT_POCKET_CONTRACTION.md",
+          "sha256": "dffe79db0e253c24771bb8934b239ee81dee62e4f2eedef7abf15796fcd9af67",
+          "locator": "Setup and statement through Transverse projection, DC1–DC7"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-REFLECTED-AFFINE-TAIL-ONE-SIGN-OBSTRUCTION",
+        "premises": [
+          "PIS-THREE-CELL-REFLECTED-AFFINE-WEDGE-MONOTONICITY"
+        ],
+        "conclusion": "PIS-THREE-CELL-REFLECTED-AFFINE-TAIL-ONE-SIGN-OBSTRUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md",
+          "sha256": "acdf7a9e7f6cf7081d765db456048f384a48917ee97c5743016dd99307f0f47f",
+          "locator": "A one-sign obstruction for a curved graph, (6)–(8)"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-REFLECTED-AFFINE-TAIL-SLOPE-AT-MOST-ONE-RIGIDITY",
+        "premises": [
+          "PIS-THREE-CELL-SINGLE-REFLECTION-MONOTONE-GRAPH",
+          "PIS-THREE-CELL-BOUNDED-ISOLATED-END-EXACT-STRAIGHTENING",
+          "PIS-THREE-CELL-REFLECTED-AFFINE-WEDGE-MONOTONICITY"
+        ],
+        "conclusion": "PIS-THREE-CELL-REFLECTED-AFFINE-TAIL-SLOPE-AT-MOST-ONE-RIGIDITY",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md",
+          "sha256": "acdf7a9e7f6cf7081d765db456048f384a48917ee97c5743016dd99307f0f47f",
+          "locator": "An isolated affine tail of slope at most one"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-COMMON-CIRCLE-CIRCULAR-WALL-TEST",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+        ],
+        "conclusion": "PIS-THREE-CELL-COMMON-CIRCLE-CIRCULAR-WALL-TEST",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
+          "sha256": "44b348e326145b13f820c2c973df6d0830b78635dbb07cc38570aed33fcd1471",
+          "locator": "Regular pair arcs in radii met by the spectator, RJ1"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-NO-COMMON-CIRCLE-RADIAL-MOAT",
+        "premises": [
+          "PIS-THREE-CELL-COMMON-CIRCLE-CIRCULAR-WALL-TEST",
+          "PIS-THREE-CELL-NONEXCLUSIVE-RADIAL-MAXIMIZER-LABELS",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+        ],
+        "conclusion": "PIS-THREE-CELL-NO-COMMON-CIRCLE-RADIAL-MOAT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
+          "sha256": "44b348e326145b13f820c2c973df6d0830b78635dbb07cc38570aed33fcd1471",
+          "locator": "Noncollinear junctions produce radial separation, RJ2"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-NO-COMMON-CIRCLE-CUSP-JETS",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+        ],
+        "conclusion": "PIS-THREE-CELL-NO-COMMON-CIRCLE-CUSP-JETS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
+          "sha256": "44b348e326145b13f820c2c973df6d0830b78635dbb07cc38570aed33fcd1471",
+          "locator": "Collinear junctions bracket a centered circle, RJ3"
         }
       }
     ],
@@ -600001,7 +600409,7 @@
               ]
             },
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "locator": "bibitem IM",
               "role": "context",
               "nodes": [
@@ -600010,7 +600418,7 @@
               "application_locator": "Conjecture 1.4(i), the balanced Gaussian question, and the connection to discrete plurality."
             },
             {
-              "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+              "path": "../results/gaussian-many-sample-agreement/main.tex",
               "locator": "bibitem IM",
               "role": "mathematical_input",
               "nodes": [
@@ -600089,7 +600497,7 @@
               "role": "mathematical_input"
             },
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "locator": "bibitem Heilman23",
               "role": "context",
               "nodes": [
@@ -618227,7 +618635,7 @@
               ]
             },
             {
-              "path": "../unpublished/genus-three-rational-three-torsion/main.tex",
+              "path": "../results/genus-three-rational-three-torsion/main.tex",
               "locator": "bibitem LYW (Theorem 9 and following question, printed p. 13)",
               "role": "context",
               "nodes": [
@@ -620027,7 +620435,7 @@
               ]
             },
             {
-              "path": "../unpublished/genus-three-rational-three-torsion/main.tex",
+              "path": "../results/genus-three-rational-three-torsion/main.tex",
               "locator": "bibitem HLP (Proposition 14; classical gluing context, with direct proof in the present paper)",
               "role": "context",
               "nodes": [
@@ -620857,7 +621265,7 @@
               ]
             },
             {
-              "path": "../unpublished/genus-three-rational-three-torsion/main.tex",
+              "path": "../results/genus-three-rational-three-torsion/main.tex",
               "locator": "bibitem MR (Theorem 1.1 and Remark 1.2; full torsion and geometric simplicity comparison)",
               "role": "context",
               "nodes": [
@@ -621798,7 +622206,7 @@
               ]
             },
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "locator": "bibitem Zhang",
               "role": "context",
               "nodes": [
@@ -621885,7 +622293,7 @@
               "role": "mathematical_input"
             },
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "locator": "bibitem MN",
               "role": "mathematical_input",
               "nodes": [
@@ -622111,7 +622519,7 @@
               ]
             },
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "locator": "bibitem HT",
               "role": "context",
               "nodes": [
@@ -622378,7 +622786,7 @@
               ]
             },
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "locator": "bibitem Heilman14",
               "role": "context",
               "nodes": [
@@ -622640,7 +623048,7 @@
               ]
             },
             {
-              "path": "../unpublished/genus-three-rational-three-torsion/main.tex",
+              "path": "../results/genus-three-rational-three-torsion/main.tex",
               "locator": "bibitem PS (thm:arithmetic proof; Section 5, Proposition 5.1 and (8))",
               "role": "mathematical_input",
               "nodes": [
@@ -623456,7 +623864,7 @@
               ]
             },
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "locator": "bibitem Heilman26",
               "role": "context",
               "nodes": [
@@ -624365,7 +624773,7 @@
               "role": "mathematical_input"
             },
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "locator": "bibitem Prekopa",
               "role": "mathematical_input",
               "nodes": [
@@ -626296,7 +626704,7 @@
               ]
             },
             {
-              "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+              "path": "../results/gaussian-many-sample-agreement/main.tex",
               "locator": "bibitem Prekopa",
               "role": "mathematical_input",
               "nodes": [
@@ -626508,7 +626916,7 @@
           "verification_basis": "Checked Theorem 3.1 in the original paper for a fixed Gaussian-measure set hit at prescribed times of a stationary Ornstein–Uhlenbeck process. The identical-cell cases for two or many samples also follow by the Gaussian rearrangement comparison stated and proved in Isaksson–Mossel.",
           "uses": [
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "path": "../results/plurality-small-positive-correlations/main.tex",
               "locator": "bibitem Borell",
               "role": "context",
               "nodes": [
@@ -626517,7 +626925,7 @@
               "application_locator": "Theorem 3.1 and the two-time application to a balanced binary partition."
             },
             {
-              "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+              "path": "../results/gaussian-many-sample-agreement/main.tex",
               "locator": "bibitem Borell",
               "role": "context",
               "nodes": [
@@ -627097,12 +627505,12 @@
           "bibitems": 18
         },
         {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "bibitems": 9
         },
         {
-          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "path": "../results/gaussian-many-sample-agreement/main.tex",
           "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
           "bibitems": 3
         }
@@ -634560,7 +634968,7 @@
           "proof_sources": [
             {
               "path": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
-              "sha256": "79dccdd05ff9c3dece4ef70ad5b6a188fd791999bf43e68f445517bd5486a851",
+              "sha256": "8cf04717178903555960209ff0ee39215c54bc723f6694417b85b70e08fd4c2e",
               "locator": "HG1 proof, focused primary-literature comparison, and HG5"
             },
             {
@@ -635105,7 +635513,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Retained collection/tooling information; it asserts no independent mathematical result.",
-          "sha256": "2f18abb9c824e90d00614280959a79ded208c3707fb203d582635414e49f9421"
+          "sha256": "f493bf1a2d76ece193d0432a519c4dd924003e7970185d82bed7f1fc26ab9f47"
         },
         {
           "path": "../results/eisenstein-pointwise-counts/README.md",
@@ -640569,7 +640977,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Manuscript or supplement information and reproducibility instructions.",
-          "sha256": "03ed1601447e8ce0885be369d6fb1a08893ca86333e7cabf6566a77e130c5965"
+          "sha256": "14af1329b8c3eed6f5e73a63c9d77a2804d4924f51838cd39f46fafcd83f3dcc"
         },
         {
           "path": "../results/strong-factorial-binomials/arithmetic.tex",
@@ -640691,7 +641099,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Manuscript or supplement information and reproducibility instructions.",
-          "sha256": "fed24a4958d326dd01b1bbbcb4465c13c7126ce9b9fc5c22e8e41dcca9f1c01c"
+          "sha256": "bd68b1d8fd7ee4b23b1fec1a9d0a8dc01eb62297dde363d46cbe24d60e65e661"
         },
         {
           "path": "../results/strong-factorial-binomials/pade.tex",
@@ -641247,7 +641655,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Submission edition source, exact finite verification, or review material for the primitive balanced-degree spectrum and its ordinary-reduction theorem.",
-          "sha256": "54a084818705ff3fc9f9131df036958cb4c1a112fc394737b08953eff9638a47",
+          "sha256": "f94b9abf0d75ee9e5e57e57883b9111b56aec924e70022e51f0e5c3025e40197",
           "unmapped_statements": []
         },
         {
@@ -842491,7 +842899,7 @@
         },
         {
           "path": "arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md",
-          "sha256": "79dccdd05ff9c3dece4ef70ad5b6a188fd791999bf43e68f445517bd5486a851",
+          "sha256": "8cf04717178903555960209ff0ee39215c54bc723f6694417b85b70e08fd4c2e",
           "role": "proof",
           "claims": [
             "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",
@@ -846044,8 +846452,8 @@
           "explanation": "Exact upstream limited literature screen required by the retained manuscript link. Its priority and source-read scope are historical upstream assertions, not an exhaustive local certification."
         },
         {
-          "path": "../unpublished/genus-three-rational-three-torsion/README.md",
-          "sha256": "e18da7f66eb52594880e48fdca6b0f07c4fa392003c41afd9f98428f63c3f354",
+          "path": "../results/genus-three-rational-three-torsion/README.md",
+          "sha256": "0f3cca1af43d892fe0ed8b4d6c15db4bea345dac75feda979fd1137d6bac976d",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -846054,8 +846462,8 @@
           "explanation": "Standalone manuscript build, edition or review information; no mathematical assurance upgrade."
         },
         {
-          "path": "../unpublished/genus-three-rational-three-torsion/SHA256SUMS.txt",
-          "sha256": "b4b990ba00ef8b4bb215b64ecd9e833141fc8f89b05985b6197c58ea874d3548",
+          "path": "../results/genus-three-rational-three-torsion/SHA256SUMS.txt",
+          "sha256": "cd2db79906cce1bd758dca76fbbb74bc495d116f83a342655211f9cbd12bc908",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -846064,7 +846472,7 @@
           "explanation": "Standalone manuscript build, edition or review information; no mathematical assurance upgrade."
         },
         {
-          "path": "../unpublished/genus-three-rational-three-torsion/genus-three-rational-three-torsion-source.zip",
+          "path": "../results/genus-three-rational-three-torsion/genus-three-rational-three-torsion-source.zip",
           "sha256": "c30ed6d5bb43b2004a29a9705985b1d5ce2bd5c1596f44167b79286cd1f79231",
           "claims": [
             "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",
@@ -846078,7 +846486,7 @@
           "explanation": "Current compiled paper or reproducible source and checker bundle for the extracted result; no external review implied."
         },
         {
-          "path": "../unpublished/genus-three-rational-three-torsion/genus-three-rational-three-torsion.pdf",
+          "path": "../results/genus-three-rational-three-torsion/genus-three-rational-three-torsion.pdf",
           "sha256": "5d8683e909b518fed9d0ff0e4632af39765e3ace2a9c90ce0893d91d6daeffe4",
           "claims": [
             "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",
@@ -846092,7 +846500,7 @@
           "explanation": "Current compiled paper or reproducible source and checker bundle for the extracted result; no external review implied."
         },
         {
-          "path": "../unpublished/genus-three-rational-three-torsion/main.tex",
+          "path": "../results/genus-three-rational-three-torsion/main.tex",
           "sha256": "36176318b10ac2ab88bba0ff7f62fd52ea1f90604c7ac1b05c4ecd8a21a112a0",
           "claims": [
             "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",
@@ -846149,8 +846557,8 @@
           "explanation": "Standalone HG1 existence theorem and HG5 transfer restricted to its curve; the generic-rank assertions and MO1 branch remain in the research proof. Includes HG6 full rational arithmetic."
         },
         {
-          "path": "../unpublished/genus-three-rational-three-torsion/metadata.json",
-          "sha256": "45351a4e05bafe184ba4144bcdbc4aba2278aa1d9c5b2058d2ac07308f808c6a",
+          "path": "../results/genus-three-rational-three-torsion/metadata.json",
+          "sha256": "422936c7878600a16bcf75fc27711fbe5da8df125bbcf3ab51415cfe45977a0c",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -846159,8 +846567,8 @@
           "explanation": "Standalone manuscript build, edition or review information; no mathematical assurance upgrade."
         },
         {
-          "path": "../unpublished/genus-three-rational-three-torsion/verification.json",
-          "sha256": "54661374ebeeb360dedba8255ad993dc8931a438b88406dbdec530430a9fb624",
+          "path": "../results/genus-three-rational-three-torsion/verification.json",
+          "sha256": "614b7ffbc67780dea5c47db427e3bbdf6fd706ab1a6a1adcbab5906d9abe2588",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -846169,7 +846577,7 @@
           "explanation": "Standalone manuscript build, edition or review information; no mathematical assurance upgrade."
         },
         {
-          "path": "../unpublished/genus-three-rational-three-torsion/verify_construction.py",
+          "path": "../results/genus-three-rational-three-torsion/verify_construction.py",
           "sha256": "dd3d7081ef67dd6a096c21ba6e5b8bc98b9909a72f2ee57ce1b0863ad538f9e6",
           "claims": [
             "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE"
@@ -846700,7 +847108,7 @@
         },
         {
           "path": "arithmetic/GENUS_THREE_MARKED_TORSION_DEFORMATIONS.md",
-          "sha256": "ffa57bae0cdf6250ec81112b8421099f18f29a96f998c56ddd7569cb91c1d608",
+          "sha256": "784e0798ec3c337ad476d35841cf12a223f0bacbb87d47a7ebe958381900fddb",
           "role": "proof",
           "claims": [
             "ARITH-GENUS-THREE-MARKED-NORM-SMOOTH-DEFORMATIONS",
@@ -846791,7 +847199,7 @@
           "explanation": "Exact marked-norm fixture and smooth tangent calculation, with separate global construction obligations and concrete local/real compatibility constraints. HG8 constructs a Mordell-compatible elliptic times genus-two gluing and transfers unbounded Sha; companion rank control remains open. HG9 records the rational-isogeny obstruction to odd full torsion; HG10 completely classifies and excludes the repeated marked-factor chart from the rational-conic infinite-family route. HG11 gives an infinite geometrically simple rational-Weierstrass family with exact [3,3]; HG12 gives explicit simultaneous all-prime virtuality for its two directions. All original three-direction and exact [6,6] goals remain open."
         },
         {
-          "path": "../unpublished/genus-three-rational-three-torsion/verify_arithmetic.py",
+          "path": "../results/genus-three-rational-three-torsion/verify_arithmetic.py",
           "sha256": "915477535f6920aee9c19d16badbd75311a492936e5361722f14934a43ceaef3",
           "role": "evidence",
           "claims": [
@@ -847275,7 +847683,7 @@
           "explanation": "Printed source excerpt with the exact ordinary real quadratic class-number normalization."
         },
         {
-          "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "path": "../results/plurality-small-positive-correlations/main.tex",
           "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "role": "manuscript",
           "claims": [
@@ -847402,7 +847810,7 @@
           "explanation": "Standalone dimension-uniform quantitative Gaussian simplex comparison for each fixed cell count. The article gives the attributed first-moment localization, aligned facet covariance gap, sharp averaged transfer cost, transverse Hermite estimate and reflected-ball obstruction."
         },
         {
-          "path": "../unpublished/plurality-small-positive-correlations/plurality-small-positive-correlations.pdf",
+          "path": "../results/plurality-small-positive-correlations/plurality-small-positive-correlations.pdf",
           "sha256": "ec158bc3b1da98555d10ed0539ac5629559aac26f9a04d9357b564310eb2fed8",
           "role": "evidence",
           "claims": [
@@ -847414,7 +847822,7 @@
           "explanation": "Current quantitative simplex manuscript bundle and edition-specific evidence. External review and formal verification remain separate."
         },
         {
-          "path": "../unpublished/plurality-small-positive-correlations/source.zip",
+          "path": "../results/plurality-small-positive-correlations/source.zip",
           "sha256": "cbbc3257d85d737b8f9131112863807a3d38e2f2a5ea28154be7410a8a7aac17",
           "role": "evidence",
           "claims": [
@@ -847426,8 +847834,8 @@
           "explanation": "Current quantitative simplex manuscript bundle and edition-specific evidence. External review and formal verification remain separate."
         },
         {
-          "path": "../unpublished/plurality-small-positive-correlations/README.md",
-          "sha256": "2f4506413a39a293df6f126871f51df8186b627ed3f5333469e6bb8f4cb25e26",
+          "path": "../results/plurality-small-positive-correlations/README.md",
+          "sha256": "224178ef487f53e2354b24c8774888d3bbd7bf4beb3d85e4beb0632bcf2abf19",
           "role": "documentation",
           "claims": [
             "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP"
@@ -847438,8 +847846,8 @@
           "explanation": "Current quantitative simplex manuscript bundle and edition-specific evidence. External review and formal verification remain separate."
         },
         {
-          "path": "../unpublished/plurality-small-positive-correlations/metadata.json",
-          "sha256": "142a40d0648d92a43f3f57c6b273c9da4e7c4da32bb188426ec976ad3fc773c3",
+          "path": "../results/plurality-small-positive-correlations/metadata.json",
+          "sha256": "c6871966c67336576a5b11dd299ca86bd1aca6394910504989975c658b13e717",
           "role": "evidence",
           "claims": [
             "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP"
@@ -847450,8 +847858,8 @@
           "explanation": "Current quantitative simplex manuscript bundle and edition-specific evidence. External review and formal verification remain separate."
         },
         {
-          "path": "../unpublished/plurality-small-positive-correlations/verification.json",
-          "sha256": "d180b67e0a76fc423854d30722af3847761b6e9c5eb87bab152fae840772dc6e",
+          "path": "../results/plurality-small-positive-correlations/verification.json",
+          "sha256": "d5afcc56c5900f3aff14db281b0b7c07232b6248a9a7afebc26f0377c8a8d39e",
           "role": "evidence",
           "claims": [
             "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP"
@@ -847464,8 +847872,8 @@
           "explanation": "Current quantitative simplex manuscript bundle and edition-specific evidence. External review and formal verification remain separate."
         },
         {
-          "path": "../unpublished/plurality-small-positive-correlations/hexagon-metadata.json",
-          "sha256": "af94c4164a859609be2c67fd843bed64763aec95179699fbb0856a3a027f56bc",
+          "path": "../results/plurality-small-positive-correlations/hexagon-metadata.json",
+          "sha256": "b0e3abee69d1a1d13b1594d05935a158061c14426332877b2f8a7bc4debd0bb7",
           "role": "evidence",
           "claims": [
             "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP"
@@ -847476,7 +847884,7 @@
           "explanation": "Copy-ready Hexagon form metadata and the reproducible TeX-only archive for the current quantitative simplex manuscript."
         },
         {
-          "path": "../unpublished/plurality-small-positive-correlations/SHA256SUMS.txt",
+          "path": "../results/plurality-small-positive-correlations/SHA256SUMS.txt",
           "sha256": "12dd40ae7aa8df06897a964018403b7548834b044d96db8a64557e6c8ede6c1d",
           "role": "evidence",
           "claims": [
@@ -863215,7 +863623,7 @@
           "explanation": "Analytic proof of a stated rigidity or strict comparison for Gaussian noise stability."
         },
         {
-          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "path": "../results/gaussian-many-sample-agreement/main.tex",
           "role": "manuscript",
           "dependencies": [
             "EXT-PIS-ISAKSSON-MOSSEL-EXCHANGEABLE-GAUSSIANS",
@@ -863285,8 +863693,8 @@
           ]
         },
         {
-          "path": "../unpublished/gaussian-many-sample-agreement/README.md",
-          "sha256": "0fe0bfba7fa367aec9096cfa2f06a38ff21d88e2dff9bea5b568631beab46a63",
+          "path": "../results/gaussian-many-sample-agreement/README.md",
+          "sha256": "53a1e44f716cd06bff1f6c25547b15d2d09c98bc2d266adc93672936da0b66bb",
           "role": "documentation",
           "claims": [
             "PIS-ALL-CELL-SHARP-MANY-SAMPLE-AGREEMENT",
@@ -863299,7 +863707,7 @@
           "explanation": "Current many-sample manuscript bundle and edition-specific evidence."
         },
         {
-          "path": "../unpublished/gaussian-many-sample-agreement/SHA256SUMS.txt",
+          "path": "../results/gaussian-many-sample-agreement/SHA256SUMS.txt",
           "sha256": "4bfb44d70bf5f44db45f388aa76b1d4b9ebd224e6015a4ce7e317a95feb18e96",
           "role": "evidence",
           "claims": [
@@ -863313,7 +863721,7 @@
           "explanation": "Current many-sample manuscript bundle and edition-specific evidence."
         },
         {
-          "path": "../unpublished/gaussian-many-sample-agreement/gaussian-many-sample-agreement.pdf",
+          "path": "../results/gaussian-many-sample-agreement/gaussian-many-sample-agreement.pdf",
           "sha256": "fbdc7b682e89859232763bb9d75504c383c771d3473a6b0c95885b3e74c308bd",
           "role": "evidence",
           "claims": [
@@ -863327,8 +863735,8 @@
           "explanation": "Current many-sample manuscript bundle and edition-specific evidence."
         },
         {
-          "path": "../unpublished/gaussian-many-sample-agreement/metadata.json",
-          "sha256": "c8fb05e2d7560920ec2615cfa488bacf29d0f93d19442603e17c53c3a5aff8d6",
+          "path": "../results/gaussian-many-sample-agreement/metadata.json",
+          "sha256": "3e8608f2965accc6a9aeb97429ba789c3db2055195193df45246aedd90954b03",
           "role": "evidence",
           "claims": [
             "PIS-ALL-CELL-SHARP-MANY-SAMPLE-AGREEMENT",
@@ -863341,7 +863749,7 @@
           "explanation": "Current many-sample manuscript bundle and edition-specific evidence."
         },
         {
-          "path": "../unpublished/gaussian-many-sample-agreement/source.zip",
+          "path": "../results/gaussian-many-sample-agreement/source.zip",
           "sha256": "29ea8e78d52a5c35e8fc30e13e0a19b0c3dd0a1b4c913b7fb5ede820ba39e308",
           "role": "evidence",
           "claims": [
@@ -863355,8 +863763,8 @@
           "explanation": "Current many-sample manuscript bundle and edition-specific evidence."
         },
         {
-          "path": "../unpublished/gaussian-many-sample-agreement/verification.json",
-          "sha256": "c80a45a7e42b62130d50a79370eb38e5f37eaa819841ee1790206b17a87601a7",
+          "path": "../results/gaussian-many-sample-agreement/verification.json",
+          "sha256": "a02caf223408cc4761e0d1c8cfa8abc1382e943ad4f0f56a88eaa224aa525164",
           "role": "evidence",
           "claims": [
             "PIS-ALL-CELL-SHARP-MANY-SAMPLE-AGREEMENT",
@@ -863398,6 +863806,173 @@
               ]
             }
           ]
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md",
+          "sha256": "44b348e326145b13f820c2c973df6d0830b78635dbb07cc38570aed33fcd1471",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-COMMON-CIRCLE-CIRCULAR-WALL-TEST",
+            "PIS-THREE-CELL-NO-COMMON-CIRCLE-RADIAL-MOAT",
+            "PIS-THREE-CELL-NO-COMMON-CIRCLE-CUSP-JETS"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+            "PIS-THREE-CELL-COMMON-CIRCLE-CIRCULAR-WALL-TEST",
+            "PIS-THREE-CELL-NONEXCLUSIVE-RADIAL-MAXIMIZER-LABELS"
+          ],
+          "gaps": [
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX"
+          ],
+          "statements": [
+            {
+              "locator": "Regular pair arcs in radii met by the spectator, RJ1",
+              "nodes": [
+                "PIS-THREE-CELL-COMMON-CIRCLE-CIRCULAR-WALL-TEST"
+              ]
+            },
+            {
+              "locator": "Noncollinear junctions produce radial separation, RJ2",
+              "nodes": [
+                "PIS-THREE-CELL-NO-COMMON-CIRCLE-RADIAL-MOAT"
+              ]
+            },
+            {
+              "locator": "Collinear junctions bracket a centered circle, RJ3",
+              "nodes": [
+                "PIS-THREE-CELL-NO-COMMON-CIRCLE-CUSP-JETS"
+              ]
+            }
+          ],
+          "explanation": "Analytic restrictions on stationary Gaussian score winners and actual three-cell maximizers."
+        },
+        {
+          "path": "plurality-stability/GAUSSIAN_PERIODIC_INTERFACE_TAIL_OBSTRUCTION.md",
+          "sha256": "21d30f386515eb2d52066aa9a96234468822ada1bcfebac1efc2a72693182bbb",
+          "role": "proof",
+          "claims": [
+            "PIS-STATIONARY-PERIODIC-INTERFACE-TAIL-DISSIPATION",
+            "PIS-STATIONARY-COMPACT-PERIODIC-TEMPLATE-TAIL-EXCLUSION",
+            "PIS-STATIONARY-FIXED-STRIP-LOGARITHMIC-SCORE-DISSIPATION"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN",
+            "PIS-STATIONARY-PERIODIC-INTERFACE-TAIL-DISSIPATION"
+          ],
+          "gaps": [
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL"
+          ],
+          "statements": [
+            {
+              "locator": "Periodic profiles and horizontal smoothing through A fixed periodic tail, PT1–PT6",
+              "nodes": [
+                "PIS-STATIONARY-PERIODIC-INTERFACE-TAIL-DISSIPATION"
+              ]
+            },
+            {
+              "locator": "Slowly modulated stripes and compact variable templates, PT7",
+              "nodes": [
+                "PIS-STATIONARY-COMPACT-PERIODIC-TEMPLATE-TAIL-EXCLUSION"
+              ]
+            },
+            {
+              "locator": "Horizontal dissipation in a fixed strip, PT8–PT9",
+              "nodes": [
+                "PIS-STATIONARY-FIXED-STRIP-LOGARITHMIC-SCORE-DISSIPATION"
+              ]
+            }
+          ],
+          "explanation": "Analytic restrictions on stationary Gaussian score winners and actual three-cell maximizers."
+        },
+        {
+          "path": "plurality-stability/GAUSSIAN_ISOLATED_POCKET_STRIP_DENSITY.md",
+          "sha256": "7eedf44ba7ea0da39ae9cc1e7892fb704b13c9567b10e97c8187062c5f8e1f46",
+          "role": "proof",
+          "claims": [
+            "PIS-STATIONARY-ISOLATED-POCKET-STRIP-DENSITY"
+          ],
+          "dependencies": [
+            "PIS-STATIONARY-FIXED-STRIP-LOGARITHMIC-SCORE-DISSIPATION"
+          ],
+          "gaps": [
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
+            "GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX"
+          ],
+          "statements": [
+            {
+              "locator": "A uniform derivative cost for a pocket, PS1–PS3",
+              "nodes": [
+                "PIS-STATIONARY-ISOLATED-POCKET-STRIP-DENSITY"
+              ]
+            }
+          ],
+          "explanation": "Analytic restrictions on stationary Gaussian score winners and actual three-cell maximizers."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_DISTANT_POCKET_CONTRACTION.md",
+          "sha256": "dffe79db0e253c24771bb8934b239ee81dee62e4f2eedef7abf15796fcd9af67",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-DISTANT-POCKET-CONTRACTED-CENTER"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS"
+          ],
+          "gaps": [
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
+            "GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX"
+          ],
+          "statements": [
+            {
+              "locator": "Setup and statement through Transverse projection, DC1–DC7",
+              "nodes": [
+                "PIS-THREE-CELL-DISTANT-POCKET-CONTRACTED-CENTER"
+              ]
+            }
+          ],
+          "explanation": "Analytic restrictions on stationary Gaussian score winners and actual three-cell maximizers."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_REFLECTED_AFFINE_WEDGE_COMPARISON.md",
+          "sha256": "acdf7a9e7f6cf7081d765db456048f384a48917ee97c5743016dd99307f0f47f",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-REFLECTED-AFFINE-WEDGE-MONOTONICITY",
+            "PIS-THREE-CELL-REFLECTED-AFFINE-TAIL-ONE-SIGN-OBSTRUCTION",
+            "PIS-THREE-CELL-REFLECTED-AFFINE-TAIL-SLOPE-AT-MOST-ONE-RIGIDITY"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-REFLECTED-AFFINE-WEDGE-MONOTONICITY",
+            "PIS-THREE-CELL-SINGLE-REFLECTION-MONOTONE-GRAPH",
+            "PIS-THREE-CELL-BOUNDED-ISOLATED-END-EXACT-STRAIGHTENING"
+          ],
+          "gaps": [
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER"
+          ],
+          "statements": [
+            {
+              "locator": "Balance and the stability derivative and Monotonicity of the folded score, (1)–(5)",
+              "nodes": [
+                "PIS-THREE-CELL-REFLECTED-AFFINE-WEDGE-MONOTONICITY"
+              ]
+            },
+            {
+              "locator": "A one-sign obstruction for a curved graph, (6)–(8)",
+              "nodes": [
+                "PIS-THREE-CELL-REFLECTED-AFFINE-TAIL-ONE-SIGN-OBSTRUCTION"
+              ]
+            },
+            {
+              "locator": "An isolated affine tail of slope at most one",
+              "nodes": [
+                "PIS-THREE-CELL-REFLECTED-AFFINE-TAIL-SLOPE-AT-MOST-ONE-RIGIDITY"
+              ]
+            }
+          ],
+          "explanation": "Analytic restrictions on stationary Gaussian score winners and actual three-cell maximizers."
         }
       ]
     },
@@ -874583,211 +875158,211 @@
           ]
         },
         {
-          "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "entrypoint": "../results/plurality-small-positive-correlations/main.tex",
+          "source_path": "../results/plurality-small-positive-correlations/main.tex",
           "locator": "proof of prop:compactness; reference cor:exterior at line 495",
           "conclusion": "PIS-PAPER-SIMPLEX-FLUX",
-          "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "conclusion_path": "../results/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-TRANSFER",
-          "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "dependency_path": "../results/plurality-small-positive-correlations/main.tex",
           "reference": "cor:exterior",
-          "proof_locator": "proof of prop:compactness beginning at ../unpublished/plurality-small-positive-correlations/main.tex:487",
+          "proof_locator": "proof of prop:compactness beginning at ../results/plurality-small-positive-correlations/main.tex:487",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-FLUX"
           ]
         },
         {
-          "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "entrypoint": "../results/plurality-small-positive-correlations/main.tex",
+          "source_path": "../results/plurality-small-positive-correlations/main.tex",
           "locator": "proof of prop:local; reference prop:compactness at line 617",
           "conclusion": "PIS-PAPER-SIMPLEX-LOCAL",
-          "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "conclusion_path": "../results/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-FLUX",
-          "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "dependency_path": "../results/plurality-small-positive-correlations/main.tex",
           "reference": "prop:compactness",
-          "proof_locator": "proof of prop:local beginning at ../unpublished/plurality-small-positive-correlations/main.tex:597",
+          "proof_locator": "proof of prop:local beginning at ../results/plurality-small-positive-correlations/main.tex:597",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-LOCAL"
           ]
         },
         {
-          "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "entrypoint": "../results/plurality-small-positive-correlations/main.tex",
+          "source_path": "../results/plurality-small-positive-correlations/main.tex",
           "locator": "proof of prop:local; reference lem:interface at line 657",
           "conclusion": "PIS-PAPER-SIMPLEX-LOCAL",
-          "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "conclusion_path": "../results/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-INTERFACE",
-          "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "dependency_path": "../results/plurality-small-positive-correlations/main.tex",
           "reference": "lem:interface",
-          "proof_locator": "proof of prop:local beginning at ../unpublished/plurality-small-positive-correlations/main.tex:597",
+          "proof_locator": "proof of prop:local beginning at ../results/plurality-small-positive-correlations/main.tex:597",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-LOCAL"
           ]
         },
         {
-          "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "entrypoint": "../results/plurality-small-positive-correlations/main.tex",
+          "source_path": "../results/plurality-small-positive-correlations/main.tex",
           "locator": "proof of prop:local; reference lem:kernel at line 612",
           "conclusion": "PIS-PAPER-SIMPLEX-LOCAL",
-          "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "conclusion_path": "../results/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-KERNEL",
-          "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "dependency_path": "../results/plurality-small-positive-correlations/main.tex",
           "reference": "lem:kernel",
-          "proof_locator": "proof of prop:local beginning at ../unpublished/plurality-small-positive-correlations/main.tex:597",
+          "proof_locator": "proof of prop:local beginning at ../results/plurality-small-positive-correlations/main.tex:597",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-LOCAL"
           ]
         },
         {
-          "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "entrypoint": "../results/plurality-small-positive-correlations/main.tex",
+          "source_path": "../results/plurality-small-positive-correlations/main.tex",
           "locator": "proof of prop:local; reference cor:exterior at line 635",
           "conclusion": "PIS-PAPER-SIMPLEX-LOCAL",
-          "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "conclusion_path": "../results/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-TRANSFER",
-          "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "dependency_path": "../results/plurality-small-positive-correlations/main.tex",
           "reference": "cor:exterior",
-          "proof_locator": "proof of prop:local beginning at ../unpublished/plurality-small-positive-correlations/main.tex:597",
+          "proof_locator": "proof of prop:local beginning at ../results/plurality-small-positive-correlations/main.tex:597",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-LOCAL"
           ]
         },
         {
-          "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "entrypoint": "../results/plurality-small-positive-correlations/main.tex",
+          "source_path": "../results/plurality-small-positive-correlations/main.tex",
           "locator": "proof of thm:main; reference prop:zhang at line 676",
           "conclusion": "PIS-PAPER-SIMPLEX-MAIN",
-          "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "conclusion_path": "../results/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-FIRST-MOMENT",
-          "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "dependency_path": "../results/plurality-small-positive-correlations/main.tex",
           "reference": "prop:zhang",
-          "proof_locator": "proof of thm:main beginning at ../unpublished/plurality-small-positive-correlations/main.tex:669",
+          "proof_locator": "proof of thm:main beginning at ../results/plurality-small-positive-correlations/main.tex:669",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-MAIN"
           ]
         },
         {
-          "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "entrypoint": "../results/plurality-small-positive-correlations/main.tex",
+          "source_path": "../results/plurality-small-positive-correlations/main.tex",
           "locator": "proof of thm:main; reference prop:local at line 675",
           "conclusion": "PIS-PAPER-SIMPLEX-MAIN",
-          "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "conclusion_path": "../results/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-LOCAL",
-          "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "dependency_path": "../results/plurality-small-positive-correlations/main.tex",
           "reference": "prop:local",
-          "proof_locator": "proof of thm:main beginning at ../unpublished/plurality-small-positive-correlations/main.tex:669",
+          "proof_locator": "proof of thm:main beginning at ../results/plurality-small-positive-correlations/main.tex:669",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-MAIN"
           ]
         },
         {
-          "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "entrypoint": "../results/plurality-small-positive-correlations/main.tex",
+          "source_path": "../results/plurality-small-positive-correlations/main.tex",
           "locator": "proof of thm:main; reference prop:local at line 680",
           "conclusion": "PIS-PAPER-SIMPLEX-MAIN",
-          "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "conclusion_path": "../results/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-LOCAL",
-          "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "dependency_path": "../results/plurality-small-positive-correlations/main.tex",
           "reference": "prop:local",
-          "proof_locator": "proof of thm:main beginning at ../unpublished/plurality-small-positive-correlations/main.tex:669",
+          "proof_locator": "proof of thm:main beginning at ../results/plurality-small-positive-correlations/main.tex:669",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-MAIN"
           ]
         },
         {
-          "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "entrypoint": "../results/plurality-small-positive-correlations/main.tex",
+          "source_path": "../results/plurality-small-positive-correlations/main.tex",
           "locator": "proof of cor:exterior; reference lem:weighted at line 466",
           "conclusion": "PIS-PAPER-SIMPLEX-TRANSFER",
-          "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "conclusion_path": "../results/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-WEIGHTED",
-          "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
+          "dependency_path": "../results/plurality-small-positive-correlations/main.tex",
           "reference": "lem:weighted",
-          "proof_locator": "proof of cor:exterior beginning at ../unpublished/plurality-small-positive-correlations/main.tex:465",
+          "proof_locator": "proof of cor:exterior beginning at ../results/plurality-small-positive-correlations/main.tex:465",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-TRANSFER"
           ]
         },
         {
-          "entrypoint": "../unpublished/genus-three-rational-three-torsion/main.tex",
-          "source_path": "../unpublished/genus-three-rational-three-torsion/main.tex",
+          "entrypoint": "../results/genus-three-rational-three-torsion/main.tex",
+          "source_path": "../results/genus-three-rational-three-torsion/main.tex",
           "locator": "proof of thm:arithmetic; reference thm:main at line 416",
           "conclusion": "ARITH-GENUS-THREE-FULL-RATIONAL-ARITHMETIC",
-          "conclusion_path": "../unpublished/genus-three-rational-three-torsion/main.tex",
+          "conclusion_path": "../results/genus-three-rational-three-torsion/main.tex",
           "dependency": "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",
-          "dependency_path": "../unpublished/genus-three-rational-three-torsion/main.tex",
+          "dependency_path": "../results/genus-three-rational-three-torsion/main.tex",
           "reference": "thm:main",
-          "proof_locator": "proof of thm:arithmetic beginning at ../unpublished/genus-three-rational-three-torsion/main.tex:379",
+          "proof_locator": "proof of thm:arithmetic beginning at ../results/genus-three-rational-three-torsion/main.tex:379",
           "routes": [
             "ARITH-GENUS-THREE-FULL-RATIONAL-ARITHMETIC-PROOF"
           ]
         },
         {
-          "entrypoint": "../unpublished/gaussian-many-sample-agreement/main.tex",
-          "source_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "entrypoint": "../results/gaussian-many-sample-agreement/main.tex",
+          "source_path": "../results/gaussian-many-sample-agreement/main.tex",
           "locator": "proof of thm:agreement; reference lem:posterior-powers at line 258",
           "conclusion": "PIS-PAPER-MANY-SAMPLE-AGREEMENT",
-          "conclusion_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "conclusion_path": "../results/gaussian-many-sample-agreement/main.tex",
           "dependency": "PIS-PAPER-MANY-SAMPLE-POSTERIOR-POWERS",
-          "dependency_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "dependency_path": "../results/gaussian-many-sample-agreement/main.tex",
           "reference": "lem:posterior-powers",
-          "proof_locator": "proof of thm:agreement beginning at ../unpublished/gaussian-many-sample-agreement/main.tex:235",
+          "proof_locator": "proof of thm:agreement beginning at ../results/gaussian-many-sample-agreement/main.tex:235",
           "routes": [
             "PIS-ARTICLE-MANY-SAMPLE-AGREEMENT"
           ]
         },
         {
-          "entrypoint": "../unpublished/gaussian-many-sample-agreement/main.tex",
-          "source_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "entrypoint": "../results/gaussian-many-sample-agreement/main.tex",
+          "source_path": "../results/gaussian-many-sample-agreement/main.tex",
           "locator": "proof of thm:agreement; reference lem:separation at line 236",
           "conclusion": "PIS-PAPER-MANY-SAMPLE-AGREEMENT",
-          "conclusion_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "conclusion_path": "../results/gaussian-many-sample-agreement/main.tex",
           "dependency": "PIS-PAPER-MANY-SAMPLE-SEPARATION",
-          "dependency_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "dependency_path": "../results/gaussian-many-sample-agreement/main.tex",
           "reference": "lem:separation",
-          "proof_locator": "proof of thm:agreement beginning at ../unpublished/gaussian-many-sample-agreement/main.tex:235",
+          "proof_locator": "proof of thm:agreement beginning at ../results/gaussian-many-sample-agreement/main.tex:235",
           "routes": [
             "PIS-ARTICLE-MANY-SAMPLE-AGREEMENT"
           ]
         },
         {
-          "entrypoint": "../unpublished/gaussian-many-sample-agreement/main.tex",
-          "source_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "entrypoint": "../results/gaussian-many-sample-agreement/main.tex",
+          "source_path": "../results/gaussian-many-sample-agreement/main.tex",
           "locator": "proof of prop:simplex; reference lem:posterior-powers at line 181",
           "conclusion": "PIS-PAPER-MANY-SAMPLE-SIMPLEX-EXPONENT",
-          "conclusion_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "conclusion_path": "../results/gaussian-many-sample-agreement/main.tex",
           "dependency": "PIS-PAPER-MANY-SAMPLE-POSTERIOR-POWERS",
-          "dependency_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "dependency_path": "../results/gaussian-many-sample-agreement/main.tex",
           "reference": "lem:posterior-powers",
-          "proof_locator": "proof of prop:simplex beginning at ../unpublished/gaussian-many-sample-agreement/main.tex:149",
+          "proof_locator": "proof of prop:simplex beginning at ../results/gaussian-many-sample-agreement/main.tex:149",
           "routes": [
             "PIS-ARTICLE-MANY-SAMPLE-SIMPLEX-EXPONENT"
           ]
         },
         {
-          "entrypoint": "../unpublished/gaussian-many-sample-agreement/main.tex",
-          "source_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "entrypoint": "../results/gaussian-many-sample-agreement/main.tex",
+          "source_path": "../results/gaussian-many-sample-agreement/main.tex",
           "locator": "proof of thm:voting; reference thm:agreement at line 327",
           "conclusion": "PIS-PAPER-MANY-SAMPLE-VOTING",
-          "conclusion_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "conclusion_path": "../results/gaussian-many-sample-agreement/main.tex",
           "dependency": "PIS-PAPER-MANY-SAMPLE-AGREEMENT",
-          "dependency_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "dependency_path": "../results/gaussian-many-sample-agreement/main.tex",
           "reference": "thm:agreement",
-          "proof_locator": "proof of thm:voting beginning at ../unpublished/gaussian-many-sample-agreement/main.tex:283",
+          "proof_locator": "proof of thm:voting beginning at ../results/gaussian-many-sample-agreement/main.tex:283",
           "routes": [
             "PIS-ARTICLE-MANY-SAMPLE-VOTING"
           ]
         },
         {
-          "entrypoint": "../unpublished/gaussian-many-sample-agreement/main.tex",
-          "source_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "entrypoint": "../results/gaussian-many-sample-agreement/main.tex",
+          "source_path": "../results/gaussian-many-sample-agreement/main.tex",
           "locator": "proof of thm:voting; reference prop:simplex at line 327",
           "conclusion": "PIS-PAPER-MANY-SAMPLE-VOTING",
-          "conclusion_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "conclusion_path": "../results/gaussian-many-sample-agreement/main.tex",
           "dependency": "PIS-PAPER-MANY-SAMPLE-SIMPLEX-EXPONENT",
-          "dependency_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "dependency_path": "../results/gaussian-many-sample-agreement/main.tex",
           "reference": "prop:simplex",
-          "proof_locator": "proof of thm:voting beginning at ../unpublished/gaussian-many-sample-agreement/main.tex:283",
+          "proof_locator": "proof of thm:voting beginning at ../results/gaussian-many-sample-agreement/main.tex:283",
           "routes": [
             "PIS-ARTICLE-MANY-SAMPLE-VOTING"
           ]

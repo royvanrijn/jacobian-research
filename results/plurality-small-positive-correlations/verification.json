@@ -3,9 +3,9 @@
   "review_basis": "Targeted revision in response to the contributor's review of commit dd646006. The contribution scope and proof estimates are preserved.",
   "source_files": {
     "main.tex": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
-    "README.md": "2f4506413a39a293df6f126871f51df8186b627ed3f5333469e6bb8f4cb25e26",
-    "metadata.json": "142a40d0648d92a43f3f57c6b273c9da4e7c4da32bb188426ec976ad3fc773c3",
-    "hexagon-metadata.json": "af94c4164a859609be2c67fd843bed64763aec95179699fbb0856a3a027f56bc"
+    "README.md": "224178ef487f53e2354b24c8774888d3bbd7bf4beb3d85e4beb0632bcf2abf19",
+    "metadata.json": "c6871966c67336576a5b11dd299ca86bd1aca6394910504989975c658b13e717",
+    "hexagon-metadata.json": "b0e3abee69d1a1d13b1594d05935a158061c14426332877b2f8a7bc4debd0bb7"
   },
   "pdf": {
     "path": "plurality-small-positive-correlations.pdf",
@@ -83,7 +83,12 @@
     "performed": false
   },
   "submission": {
-    "submitted": false
+    "submitted": true,
+    "venue": "Hexagon",
+    "reserved_identifier": "hexagon:2611.01281v1",
+    "status": "under-review",
+    "updated_on": "2026-11-28",
+    "status_source": "Contributor-reported Hexagon dashboard"
   },
   "remaining_obligations": [
     "Obtain external specialist review of the complete written proof."

@@ -1,5 +1,7 @@
 # A genus-three hyperelliptic curve with rational Jacobian three-torsion of rank three
 
+**Hexagon submission under review.** Reserved `hexagon:2611.01278v1`. Updated November 28, 2026.
+
 This standalone paper extracts the genus-three existence result from
 [HG1 and HG5](../../research/arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md).
 Its main theorem gives an explicit hyperelliptic genus-three curve over
@@ -18,11 +20,10 @@ version of HG6.
 [Metadata](metadata.json) · [Verification record](verification.json) ·
 [Checksums](SHA256SUMS.txt)
 
-The manuscript is prepared for specialist review. The mathematical claims
-retain the repository's written-proof status and internal checking scope.
-External review, independent replay, formal verification and historical
-priority are unestablished. The PDF-only blind-reader test is unperformed.
-There is no submission or public deposit.
+The mathematical claims retain the repository's written-proof status and
+internal checking scope. External specialist review, independent replay,
+formal verification and historical priority remain open. The PDF-only
+blind-reader test is unperformed.
 
 This extraction is the current presentation priority for HG1/HG5.
 Further class-group counts, conductor refinements, cubic covers or
@@ -43,6 +44,9 @@ sage -python verify_construction.py
 sage -python verify_arithmetic.py
 sha256sum -c SHA256SUMS.txt
 ```
+
+The source and checker ZIP preserves the bundled preparation records.
+The submission status and updated checksums are recorded beside the ZIP.
 
 The source requires standard AMS, Geometry, Microtype, Xcolor and Hyperref
 packages. The exact checker was run with SageMath 10.9. It has no
