@@ -7146,6 +7146,104 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Verification limits:** Internal check of spectator contents and of the remaining standard and rotation families. The near-one cutoff is qualitative.
 
+### PIS-SIX-CELL-STANDARD-INTERFACE-GAP-THROUGH-7-10
+
+[Six-cell standard-sector interface gap through correlation 7/10](plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md)
+
+**Exact scope:** For six cells, every 0<rho<=7/10 and every ordinarily balanced invariant standard-sector facet speed in active dimension five, the standard interface gap is at least ell/1000. The directed weighted finite-rank certificate covers five exact adjacent slabs and accounts for the ordinary balance in its weighted Gram matrix.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Five exact adjacent directed slabs, 512-bit Arb/Acb and degree bounds 6 through 14. Exact matrix weights, trace reserves, source digests and replay were checked internally.
+
+### PIS-SIX-CELL-FULL-INTERFACE-GAP-THROUGH-7-10
+
+[Full six-cell Gaussian simplex interface gap through correlation 7/10](plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md)
+
+**Exact scope:** For every fixed 0<rho<=7/10 and d>=5, the balanced six-cell simplex interface form on L2 facet speeds is positive with a dimension-independent gap modulo the geometric rotation kernel. The result combines the directed standard sector with the previously proved all-correlation nonstandard sectors, then applies the ambient lift.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
+
+### PIS-SIX-CELL-DIRECTED-STATIONARY-GAP-RATIO
+
+[Directed lower bounds for the six-cell stationary-gap ratio](plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md)
+
+**Exact scope:** The invariant stationary-gap ratio gap_{S4}(P_rho)/((1-rho) E_mu(D_rho) E_mu(1/D_rho)) is strictly greater than one throughout 0<rho<=1/3, at rho=1/2, and at rho=13/20. The directed exact point lower bounds exceed 1.04904 at 1/5, 1.06910 at 1/2 and 1.02122 at 13/20.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Exact rational point replays with retained directed trace and row-moment enclosures. The small-correlation interval follows analytically from the first contiguous slab and the improved mass correction.
+
+### PIS-SIX-CELL-STATIONARY-GAP-COMPARISON
+
+[Reversible stationary-gap comparison for the six-cell standard sector](plurality-stability/SIX_CELL_REVERSIBLE_CHAIN.md)
+
+**Exact scope:** The exact Gaussian versus stationary balance correction is E_mu(D) E_mu(1/D)<117/100. The measured chain uses the invariant positive folded kernel. A continuous block projection estimate and an ambient Hermite finite-rank tail bound for the stationary operator give rigorous ways to certify the sufficient ratio. Its true limit as rho tends to one is 2. Exploratory finite test values do not certify the intermediate stationary gap.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
+
+### PIS-SIX-CELL-AXIAL-METROPOLIS-COMPARISON
+
+[Axial transport and a shorter Metropolis comparison for the six-cell facet](plurality-stability/SIX_CELL_REVERSIBLE_CHAIN.md)
+
+**Exact scope:** The raw-gap map from A4 to the ordered six-cell facet stretches only one axis. It gives the exact conductance ratio to a Metropolis chain based on the folded OU proposal. That ratio tends to zero on diagonal rays. A proposal with smaller isotropic variance is globally dominated by an explicit positive factor of conductance. A quantitative gap for that proposal remains a separate input.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
+
+### PIS-THREE-CELL-COMPACT-THETA-TURNING-BOUND
+
+[A quantitative stability obstruction to nearly monotone compact three-arc networks](plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md)
+
+**Exact scope:** For an actual balanced planar three-cell maximizer whose full jump graph is a compact theta network, the first transverse block yields a strict signed three-vertex Laplacian inequality. At least two signed interarc Mehler pairings must be negative. This gives a quantitative lower bound on total backward travel along the common chord and a stronger bound when two arcs have no backward travel.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
+
+### PIS-ALL-CELL-NEAR-ONE-WINNER-DENSITY-OUTGOING-LOCALIZATION
+
+[Winning-phase density confines outgoing transfers of actual near-one maximizers](plurality-stability/THREE_CELL_EXTERIOR_TUBES.md)
+
+**Exact scope:** For each fixed k>=3 and bounded physical compact set in active dimension k-1, every winning phase has positive volume density for radii from a fixed multiple of the noise length to a fixed small physical radius. Consequently each actual transfer gap on the compact set is bounded by C(e+L^(1/(k-1))). The bounded-region opposing outgoing interaction is supported up to a Gaussian relative tail error in a shrinking tube where three reference scores are close.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof, internally audited. Independent mathematical review remains pending.
+
 ### PIS-SIX-CELL-UNWEIGHTED-REFLECTION-CHAMBER-TARGET
 
 [Only A4 can be the target of the six-cell unweighted pointwise chamber comparison](plurality-stability/SIX_CELL_REFLECTION_CHAMBER_TARGETS.md)
@@ -9783,6 +9881,496 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 [Possible planar and finite conical transitions have an exact scaled separation](plurality-stability/GAUSSIAN_SIMPLEX_DIMENSION_FREE_LOCAL_GROWTH.md)
 
 **Exact scope:** If r0 is the finite endpoint of the initial unrestricted simplex-optimal interval, the initial conical endpoint in dimension 2+n obeys n(r_cone-r0) -> tau_*>0, possibly infinity. DL7 is the infimum of dilation loss divided by fixed-shape slope advantage over the tied planar maximizers with positive advantage. For every smaller finite positive offset the simplex is the unique conical maximizer throughout the scaled interval.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-ORIGIN-ARM-DERIVATIVE-LOWER-BOUND
+
+[Three interface arms from the origin give a global simplex derivative bound](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md)
+
+**Exact scope:** If a balanced planar maximizing partition has an unbounded rectifiable arc of each pair from the Gaussian origin, its fixed-shape correlation derivative is at least the simplex derivative, with equality only for the simplex. OA2–OA5 compare unorientated surface interactions pointwise in arclength, allowing all other components and arbitrary curvature.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-ORIENTED-SURFACE-CALIBRATION-GAP
+
+[Constant edge speeds have a uniform strict translation residual off the simplex](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md)
+
+**Exact scope:** On each compact positive-correlation band, for every nonsimplex balanced planar maximizer there is a uniform positive gap between its derivative and the constant-edge calibrated surface interaction. A vanishing residual makes the limiting edge normal field a convex gradient through reciprocal-gradient control and distributional convergence of the partition indicators.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-CENTRAL-LONG-ARMS-RIGHT-CONTACT-EXCLUSION
+
+[Long central interface arms exclude a nonsimplex tie from the right](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md)
+
+**Exact scope:** Uniformly on compact positive-correlation bands, sufficiently long arcs of all three pair types starting sufficiently near the Gaussian origin give a strict derivative advantage over the simplex at any nonsimplex global maximizer. Such a shape cannot occur at a tie approached from the right by simplex-optimal correlations, in particular a last strict-failure endpoint, or at an interior maximum of the strict advantage.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-COMPACT-GAUSSIAN-DIRECTION-RADIUS-PURIFICATION
+
+[Finite directional and sectorwise radial Gaussian data admit ordinary realizations](plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md)
+
+**Exact scope:** On a fixed centered disk, a fractional finite-label assignment can be purified to an ordinary assignment preserving finitely many entire directional pushforwards at any prescribed finite Gaussian variances, sectorwise radial profiles, and arbitrary finite scalar linear integrals. Weighted translations and an irrational rotation construct null perturbations on every fractional zone.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-COMPACT-DISCREPANCY-ORDINARY-PROJECTION-OBSTRUCTION
+
+[Ordinary compact discrepancies realize all tilted slice identities and three spectator imbalances](plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md)
+
+**Exact scope:** At each positive correlation there is an ordinary balanced discrepancy obeying all three CD1 projections with three nonzero spectator imbalances and pairwise distinct angular masses on a positive-measure set of radii. It equals the simplex outside an arbitrarily small annulus, and its zero-price scores still select the reference simplex. Projection identities and exact inner and outer simplex geometry leave the nonlinear winner rule as a separate condition.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-RIGHT-CONTACT
+
+[The simplex score-weighted perimeter bounds the derivative at a right contact](plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md)
+
+**Exact scope:** WC1 expresses the correlation derivative at an actual maximizer as the supremum of a surface tensor energy over unit-bounded interface fields. WC3 and its rigidity case imply a uniformly strict weighted-perimeter deficit on compact correlation bands for nonsimplex maximizers of no greater derivative, including right ties. WC4 identifies the required comparison as a control of the correlation-regret derivative by normal misalignment.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-UNRESTRICTED-OBSTRUCTION
+
+[Concentric balanced cells disprove the unrestricted weighted-perimeter bound](plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md)
+
+**Exact scope:** For a balanced disk, annulus and exterior partition, the simplex-score-weighted perimeter remains bounded near one uniformly over orientations, whereas the simplex derivative diverges. Every fixed finite-perimeter partition giving zero surface mass to centered lines has weighted perimeter little-oh of the simplex derivative, uniformly over orientations.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-COMPACT-DISCREPANCY-ENTIRE-DILATION-DEFICIT
+
+[The compact-defect fixed-variance dilation deficit is entire with strict endpoint signs](plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md)
+
+**Exact scope:** For an actual nonsimplex planar maximizer with simplex exterior, scaling with sqrt(1-t^2) fixes its conditional source variance. The rescaled relative deficit divided by 1-t^2 is entire, has positive initial derivative, and equals a strictly positive Euclidean compact-defect comparison at one. FV5 bounds its zeros uniformly over compact correlation bands and bounded supports.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-COMPACT-DISCREPANCY-DILATION-PATH-CURVATURE
+
+[Fixed-variance scaling strictly decreases compact-defect contact curvature](plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md)
+
+**Exact scope:** At a nonsimplex tied maximizer with simplex exterior, the rescaled path has the same unnormalized first deficit derivative as the fixed shape at the tie and strictly smaller second derivative. FV6–FV7 give the exact difference in the weighted dilation form. The rescaling need not preserve balance away from the tie.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-COMPACT-DISCREPANCY-FINITE-AFFINE-STATIONARY-ORBIT
+
+[A compact nonsimplex maximizing shape gives finitely many stationary affine images and correlations](plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md)
+
+**Exact scope:** Any stationary affine image of a fixed nonsimplex maximizer with simplex exterior is a centered similarity of it. After factoring orthogonal transformations there are only finitely many positive scaling-correlation pairs whose actual interfaces satisfy the stationary pair-score equations, even if their means differ. The proof uses exterior reflections, the finite list of tilted projection variances, and analyticity at a regular off-line interface point.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-OFF-CENTER-BALANCED-FINITE-SCORE-JETS
+
+[Every prescribed finite set of stationary score jets permits an off-center Y junction](plurality-stability/THREE_CELL_OFF_CENTER_JUNCTION_JETS.md)
+
+**Exact scope:** At each fixed positive correlation and finite order m, a balanced ordinary Y partition can have any sufficiently small nonzero vertex displacement, exact regular tripod germ there, original simplex exterior, three unpriced scores equal at the vertex, and all three germ tangential jets through order m zero. A nonzero order m+1 derivative makes global stationarity fail. Independent standard and tilted Gaussian wall moments yield the finite-dimensional implicit construction.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-LONG-CENTRAL-SAME-PAIR-ARC-EXCLUSION
+
+[Long two-sided arcs of one pair cannot pass near the Gaussian origin](plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md)
+
+**Exact scope:** On every compact positive correlation band, a maximizer with positive cell masses, uniformly bounded below, cannot contain a same-pair regular embedded arc of sufficiently large length in both directions from a point sufficiently close to the origin. The arclength comparison allows arbitrary curvature and arbitrarily many other components. The centered complete straight line is a special case.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-PAIR-INTERFACE-OMISSION-NOISE-BOUND
+
+[A retained part of a central pair path obeys a one-dimensional noise boundary bound](plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md)
+
+**Exact scope:** PA6 bounds the one-dimensional Ornstein–Uhlenbeck interaction of retained arclength parameters by the normalized pair-score derivative. PA7 forces a positive omitted Gaussian mass on any sufficiently central path whose retained part is a regular same-pair interface. The omitted portions can be disconnected or of other pair types.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-COMPLETE-DORMANT-LINE-OFFSET-BOUND
+
+[A complete dormant straight line must have a quantitatively noncentral offset](plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md)
+
+**Exact scope:** For a complete straight line of actual pair interface with dormant third score c_j, PA1 gives a strict explicit bound on its offset b by the centered-band derivative extremum and the two-sided insertion inequality. The bound concerns an actual dormant wall, not an inactive score equality line.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-RIGHT-TIE-AT-MOST-TWO-LONG-CENTRAL-ARMS
+
+[A right-accumulating nonsimplex tie has at most two long central pair arms](plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md)
+
+**Exact scope:** On compact positive correlation bands, at most two pairwise disjoint sufficiently long regular arms can start sufficiently close to the origin at a nonsimplex right-accumulating tied maximizer. PA8 excludes a repeated pair by joining two arclength parameters in the comparison, while OA8 excludes three distinct pair types. The arms need not share a junction or pair type.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-RIGHT-TIE-THREE-WINNER-ANNULUS-JUNCTION
+
+[A sufficiently long central annulus crossed by all three winners must contain a triple junction](plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md)
+
+**Exact scope:** At a nonsimplex right-accumulating tie, if each strict-winner set has an inner-to-outer path across an annulus starting in the central disk and wider than the long-arm threshold, then there is a genuine triple junction in the closed annulus. Otherwise the three winner crosscuts force three disjoint long pair arcs by rectangle separation.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-TWO-ENDPOINT-SCALAR-HERMITE-OBSTRUCTION
+
+[Endpoint signs, nonnegative Hermite weights and perimeter-order tails permit any failure interval](plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md)
+
+**Exact scope:** EP1–EP2 construct an abstract nonnegative Hermite-weight profile with the simplex constant and total mass, strict degree-one loss, positive perimeter-order deficit near one, and strict advantage exactly on any prescribed interior interval. Both contact orders can be chosen to be arbitrary odd positive integers. This is a scalar obstruction, not a partition.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-GAUSSIAN-L2-ENDPOINT-PROFILE-COVARIANCE-OBSTRUCTION
+
+[Compact Gaussian L2 models preserve the covariance tests and can have accumulating failure intervals](plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md)
+
+**Exact scope:** EP3 realizes the abstract contact profiles with exact mean, label-coordinate orthogonality, sum one and stochastic scalar transition matrices. The covariance response is orthogonally invariant and strictly trace-free subharmonic, and the covariance majorization comparisons persist on a rotation-closed envelope. Strong compactness and uniform separation from the simplex still allow infinitely many prescribed accumulating failure intervals in this model. Its functions cannot be [0,1]-valued.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-FAILURE-INTERVAL-ACCUMULATION-TANGENTIAL-TIE
+
+[Accumulating strict failure intervals force an ordinary nonsimplex tangential tie](plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md)
+
+**Exact scope:** Under the known initial and near-one intervals, any accumulation of distinct strict failure components gives a nonsimplex balanced tied planar maximizer with equal first derivative and nonnegative fixed-shape simplex deficit curvature. EP5 also gives width at least 2 eta/K whenever a fixed tied competitor has inward slope advantage at least eta and K bounds the second deficit derivative on the component closure.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-COMPACT-DISCREPANCY-EXACT-CENTRAL-TRIPOD
+
+[Compact simplex discrepancies have an exact centered simplex or antipodal germ](plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md)
+
+**Exact scope:** A balanced planar maximizer agreeing with a centered simplex outside a compact set agrees near the origin with that simplex or its antipode. The germ radius is uniform on compact positive-correlation bands, with no common bound on the discrepancy support. Any exact straight active pair segment lies on its reference line.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-ANTIPODAL-COMPACT-GERM-JUNCTION-COUNT
+
+[An antipodal compact germ forces a genuine junction on each reference half-ray](plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md)
+
+**Exact scope:** In a maximizing compact simplex discrepancy, a reverse central orientation requires at least six extra genuine triples besides the origin. An excursion with both sign crossings in the preserved orientation also creates two junctions on the affected half-ray. At a nonsimplex right tie at least one of the three exact germ arms reaches a genuine junction within a uniform arclength.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-THETA-ROTATION-CUT-MATRIX
+
+[Exact mass-constrained rotational cut matrix on compact theta networks](plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md)
+
+**Exact scope:** Piecewise multiples of the rotational Jacobi speed have a signed Mehler Laplacian and endpoint-density mass columns. If the junction radii differ, whole-arm cuts leave only rotation after mass balance. One internal cut and three cuts at common radius give respectively scalar and three-dimensional reductions modulo rotation.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-THETA-ROTATION-NEAR-LOCAL-CUT
+
+[Four connected rotation-cut pieces give a negative direction near the local limit](plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md)
+
+**Exact scope:** For a fixed compact embedded theta geometry with at least four connected components after cutting at selected regular finite-order sign changes of the rotation, the mass-balanced cut matrix has a negative direction for sufficiently large r below one at which that shape satisfies the stationary equations. The threshold depends on the cut geometry and requires uniform quantitative control for varying shapes.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-THETA-THIN-MIDDLE-FOLD-EXCLUSION
+
+[A compact theta with exterior graphs must have thick middle folds](plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md)
+
+**Exact scope:** If both exterior arcs of an actual compact theta maximizer are graphs over one axis, the spread of the middle crossings must exceed 2 sqrt(2 log 2) sqrt(1-r^2) on a set of positive projected Gaussian measure. The proof supplies an explicit strictly negative balanced planar direction under the excluded width condition. In a fixed disk and on a compact positive correlation band the thick-fiber measure has a uniform positive lower bound. The width threshold is sharp for each isolated alternating Gaussian pairing.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-THETA-ALL-THIN-FOLDS-EXCLUSION
+
+[Compact theta arms confined between the junctions must have thick folds](plurality-stability/THREE_CELL_THETA_ALL_THIN_FOLDS.md)
+
+**Exact scope:** If all three arms lie between the junction abscissae for some axis and all per-arm vertical crossing spreads on almost every fiber are at most sqrt(1-r^2)/10, an explicit mass-preserving planar speed is strictly unstable. All arms may backtrack. At an actual balanced maximizer lying in a fixed disk on a compact interior correlation band, at least one arm exceeds this width on a uniformly positive measure of abscissae.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-AFFINE-ROTATION-CUT-MASS-REPAIR
+
+[An affine rotation gives an exact mass repair for a two-piece sign flip](plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md)
+
+**Exact scope:** The rotational cut form for a shifted center is a signed Mehler Laplacian with a translation correction on its diagonal. The two mass equations for a sign flip reduce to a two-by-two system; a solution produces a balanced variation whose energy is the signed cross interaction minus an explicit nonnegative translation penalty.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-THETA-BALANCED-NULL-CUT-ANALYTICITY
+
+[Balanced zero modes are analytic along each regular theta arc](plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md)
+
+**Exact scope:** At an actual compact theta maximizer a balanced zero mode satisfies the surface equation with a fixed label multiplier. The analytic Gaussian transform and positive analytic regular score gradients give analytic continuation along each arc. A balanced cut of an affine rotation with genuinely different coefficients inside a nonzero analytic arc therefore has strictly positive second variation.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-EXTERIOR-INDEX-BOUND
+
+[The exterior ordinary variation has an exponentially vanishing negative error](plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md)
+
+**Exact scope:** For actual balanced planar three-cell maximizers, the weighted ordinary Hessian is bounded below by the negative contribution from projection onto the two translations. On exterior speeds the relative negative error tends to zero at a Gaussian rate, uniformly on compact interior correlation bands, with no mass restriction on the speeds.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-CRITICAL-MEASURE-COMPACTNESS
+
+[A critical reciprocal-gradient measure characterizes Gaussian interface compactness](plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md)
+
+**Exact scope:** The stationary interaction is unitarily conjugate to a translation-invariant Gaussian matrix kernel against a critical reciprocal-gradient interface measure with uniformly bounded unit-ball masses. The interaction is compact exactly when these unit-ball masses vanish at infinity. This condition gives exterior weighted coercivity with constant tending to one.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN
+
+[Escaping Gaussian interface windows have dilation-linked limits](plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md)
+
+**Exact scope:** The conditional winner rule links translated local limits at consecutive points of the contraction orbit, with smooth score convergence. Failure of exterior compactness produces a nonzero translated limiting measure supported on critical maximal pair ties in one chart. The limiting measure retains nonnegative ordinary second variation.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-EXTERIOR-CRITICAL-TIE-COAREA
+
+[Nondegenerate score extrema cannot carry limiting critical interface mass](plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md)
+
+**Exact scope:** The critical reciprocal-gradient measure cannot concentrate at a definite-Hessian limiting tie. At a nondegenerate saddle with the third score strictly lower, concentration requires a doubly exponentially small, nonzero critical contrast value in the translated exact scores. The estimates follow from uniform local coarea in the definite and indefinite quadratic coordinates.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-EXTERIOR-PERIODIC-LIMIT-CHAIN
+
+[The dilation-chain winner equations admit infinitely many parallel walls](plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md)
+
+**Exact scope:** At equal prices a bi-infinite chain of periodic three-label stripe profiles with changing frequency satisfies the exact translated winner equations. The pair gradients in each fixed chart are nonzero on the walls, so local score nondegeneracy and finite-window weighted stability alone do not give a wall count for the abstract chain. No actual global Gaussian maximizer realizing the chain is asserted.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-SINGLE-PARTITION-EXTERIOR-CENTRAL-WINDOW-OBSTRUCTION
+
+[Fixed exterior and moving central windows can be prescribed independently](plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md)
+
+**Exact scope:** A single exactly balanced partition can realize a given ordinary two-sided score chain as all its fixed-index exterior limits, with smooth convergence of their smoothed scores, and have an independently prescribed bounded central profile encountered at a moving index. The construction prescribes disjoint balls of vanishing Gaussian total tail mass. The resulting partition is not assumed stationary or maximizing.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-SEMICIRCLE-RADIAL-TWIST-INSTABILITY
+
+[A nonconstant radial twist in a semicircle is infinitesimally unstable](plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md)
+
+**Exact scope:** For the equal adjacent arc class, if the angles lie essentially in a closed semicircle, a nonconstant angle yields a strictly increasing first variation of stability under a smooth mass-preserving radial rotation, except for the antipodal-only case. In that case a smooth radial rotation gives strictly positive second derivative of stability.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical audit.
+
+### PIS-THREE-CELL-EQUAL-ADJACENT-ARC-BOUNDED-CELLS-EXCLUSION
+
+[Radial alignment excludes two bounded cells in the equal adjacent arc class](plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md)
+
+**Exact scope:** A balanced three-cell global maximizer whose radial slices have two equal adjacent arcs cannot have both corresponding cells bounded. Pairwise radial alignment forces a common reflection transposing those cells, so the reflection reduction makes every cell unbounded. A measurable neighborhood of any given genuinely twisted template is also excluded at fixed positive correlation.
 
 **Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
 
@@ -12478,12 +13066,12 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 - **GAP-PIS-NEARBY-MAXIMIZER-RIGIDITY** (mathematical; proved / discharged): For some eta_*>0 and 0<rho_*<1, every balanced global four-cell maximizer in R^3 with d_4(A)<=eta_* is tetrahedral for every 0<rho<=rho_*. This is now a corollary of the internally proved stronger three-dimensional rigidity theorem, which treats every balanced measurable A with S_rho(A)>=S_rho(T). Independent mathematical review is pending.
 - **VERIFY-PIS-NORMAL-FLUX-SMALL-CORRELATION-PROOF** (verification; open): Independently review C3-C12 and the fixed-cell extension A1-A9 in SMALL_POSITIVE_CORRELATION_INTERVAL.md: all-cell interface kernel from M2, tree-bump balance correction, reflection margins, dimension-dependent weighted tails, exact moment gauge, normal-flux limits without junction mass, ell/2 normalization, product-kernel limit, general-k dimension reduction and positive-correlation continuation compactness. Imported first-moment and geometric proofs retain their separate audit limits. The current proof is internal, not independent mathematical or external review. Also audit POSITIVE_CORRELATION_CONTINUATION.md B2-B14: the strict Gaussian exponent window, Hilbert-Schmidt full interaction, rotational mixed nullity, variable facet coefficient and sharp half factor, weak product-kernel convergence, uniform conditional local growth and the refined first-transition alternative. B10 remains a hypothesis outside the small-correlation interval.
 - **GAP-PIS-ALL-CELL-POSITIVE-CORRELATION** (mathematical; open): For every k>=2, d>=k-1 and every 0<rho<1 prove that the balanced regular-simplex Gaussian partition globally maximizes noise stability, with equality rigidity. The fixed-k small-correlation interval is now proved internally under the accepted first-moment input. The full correlation range remains open here. At a finite first continuation endpoint, rule out a nonsimplex tied global maximizer and improving maximizers approaching the simplex orbit. Local stability does not exclude the first mechanism, and the pointwise perimeter limit does not by itself control moving maximizers. The continuation obstruction is now sharpened: at a finite first endpoint there is a nonsimplex tied global maximizer or an additional nonrotational interface zero mode. Under B10, the uniform nearby comparison B11 already handles all measurable changes.
-- **GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL** (mathematical; open): For every fixed k>=2 and 0<rho<1, establish nonnegativity of the full Gaussian simplex interface form on balanced L2 facet speeds with exactly the geometric rotational kernel. For k=3,4,5 the all-correlation gaps are proved, and k=2 has its separate interface argument. For k>=6 the full gap holds through p_k/(2-p_k), where p_k is the Gaussian facet probability. For k=6 and k=7 the full gap also holds sufficiently near one. The standard sector has normalized near-one limit one at each fixed k>=4. Every nonstandard six-cell block, every higher exterior hook, every nonstandard two-row block, and the mixed (k-3,2,1) family are controlled at all positive correlations.
+- **GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL** (mathematical; open): For every fixed k>=2 and 0<rho<1, establish nonnegativity of the full Gaussian simplex interface form on balanced L2 facet speeds with exactly the geometric rotational kernel. For k=3,4,5 the all-correlation gaps are proved, and k=2 has its separate interface argument. For k>=6 the full gap holds through p_k/(2-p_k), where p_k is the Gaussian facet probability. For k=6 and k=7 the full gap also holds sufficiently near one. The standard sector has normalized near-one limit one at each fixed k>=4. Every nonstandard six-cell block, every higher exterior hook, every nonstandard two-row block, and the mixed (k-3,2,1) family are controlled at all positive correlations. The six-cell gap now holds throughout 0<rho<=7/10, with a dimension-independent gap modulo rotations. The sufficient stationary gap comparison also holds through 1/3 and at the three certified test points. The full all-correlation question remains open.
 - **GAP-PIS-THREE-CELL-STANDARD-ALL-CORRELATION** (mathematical; proved / discharged): For every 0<rho<1, S23 holds strictly for every nonzero h in L2(nu) with zero unweighted nu-mean. S34 proves the upper-correlation range rho>1/3; S29 and the elementary G(1/2)<9/16 bound prove the overlapping range rho<=1/2. The full three-cell interface gap now holds for every positive correlation; global ties remain separate.
 - **GAP-PIS-STATIONARY-STABLE-CLASSIFICATION** (mathematical; open): For fixed k>=3 and 0<rho<1, determine whether every balanced stationary partition with nonpositive second variation under all mass-preserving smooth deformations must be simplicial. Specify and justify the admissible regularity and junction hypotheses; prove the regular/equal-mass structure rather than assuming it. Ordinary stationarity and second-variation stability are the target, without importing hyperstability as an unstated extra condition. Full-rank affine fans are classified in every cell count, and centered conical winners in the active plane are classified under the stated extra-coordinate stability hypothesis. A local score-winner classification holds near a simplex wherever its interface gap is known. For three cells, ordinary stable score winners are classified at sufficiently small positive correlation under the stated regularity hypotheses. The dormant-score point tests concern actual global maximizers and rule out a central dormant interior tie. The semialgebraic rigidity result assumes actual global maximality and connected strict winners.
-- **GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER** (mathematical; open): For every fixed k>=3 and 0<rho<1 at which the balanced regular simplex is globally optimal, exclude an ordinary balanced nonsimplex partition with the same Gaussian noise stability. In particular rule out this alternative at the endpoint of the initial global optimality interval. A strictly positive simplex interface Hessian only supplies a local exclusion and does not prove this global rigidity. The full-rank affine fan alternative is excluded at every positive correlation by stationary score rigidity. General non-affine and rank-deficient candidates remain in scope. Reflected three-cell tangential ties approached by simplex-optimal correlations must have strictly positive fixed-partition deficit curvature. The moving tangential competitors and the balanced pair patches satisfy FC1–FC3. A connected semialgebraic maximizer with only one unbounded cell must have a compact curved theta graph with projection backtracking. The discrete affine, isolated-end and compact exterior-potential tests exclude additional classes of actual maximizing contacts. They leave unclassified networks and nonlinear oscillatory ends open. Connected strict winners with a semialgebraic jump network have been classified. Connectivity and semialgebraicity are not known for arbitrary maximizing contacts. Central score transversality narrows possible degenerations of the network to collinear triple equalities or a two-label arc identically tied with its absent label. Every bounded isolated graph end is straight by shifted-contour Gaussian rate improvement. An affine-separated pair already forces connected strict winners above 2/3. A centered affine-separated finite-height graph is symmetric when one half-profile is monotone or the proper junction level has odd endpoint orders. An asymmetric graph must cross its reflection at least three times. Exclusive-fiber graphs with a convex height have been classified. Exclusive-fiber graphs with finite switch sets already have one separating line. A reflected maximizer with an eventually convex tail is simplicial. The smooth reflected tail phase controls the correlation derivative but need not yet be linear. Pointwise-distinct triples of maximizing assignments including a simplex cannot contain a nonsimplex competitor. A candidate in the transition range cannot have two convex cells, or have both an affine-separated pair and a convex cell. In the exclusive-fiber finite-height class, one algebraic outer arc or another exclusive label pair forces the simplex. A reflected nonsimplex eventually concave end requires slope above (1+sqrt(1+rho²))/rho. The local simplex value has an exact measurable quadratic expansion in the masses. A nonsimplex tie with unequal prices, or with zero prices and excessive mass curvature, forces coexistence at nearby unequal quotas if the simplex is unique immediately to the left. Joint covariance and quota perturbations can detect a tie with unequal pressures or covariance derivatives. A strict contracted fourth-moment discrepancy is necessary at a nonsimplex first contact. The local simplex branch has an exact second-order covariance–quota envelope with nonzero mixed coefficient. These supply measurable joint perturbation tests for first-order-matched candidates. Compact buffered regular subarcs cannot supply the full measurable response of a positive-curvature tangential tie. A nonsimplex affine-separated graph without reflection requires infinitely many crossings. Three straight isolated ends give an exterior simplex and enforce strict tilted degree-one loss for any compact discrepancy. Under connected strict winners, the jump graph has only the three classified finite topologies, with no assumption about the geometry at infinity. Connectedness and an asymptotic classification of curved ends remain open. Three bounded isolated ends reduce the candidate to a compact simplex discrepancy, which requires bounded receiving components of every label. Two strictly obtuse bounded isolated ends already force zero prices and exclude higher-order contact. The existence of these ends and compact-core exclusion remain open in general. Two strictly obtuse bounded isolated ends with a connected common winner force the simplex when the third backward interface is a single continuous graph. In exact three-end bounded wedge networks, positively spanning directions force a centered simplex exterior or reflection, excluding higher-order ties there. A compact discrepancy has no spectator bisector, and a uniquely exposed outermost discrepancy must be an interior four-arm cusp. General non-graph ends and compact discrepancies remain unresolved. The two obtuse full-half-plane ends suffice with a connected common winner. A common wedge at infinity or an exactly conical exterior yields simplex exterior without a third graph. Higher-order contact is excluded throughout exact-three bounded wedge geometry. General curved or disconnected tails, compact discrepancies and ordinary first contacts remain unresolved.
-- **GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX** (mathematical; open): Determine whether an actual balanced planar three-cell global maximizer at 0<rho<1 can have a positive-area bounded component outside the closure of one strict winner set. The component may contain one or both other labels. The third-negative-direction argument excludes centered disks and some translated circles, with an exclusion also for thin annular trapping. Size, exterior-interaction and angular restrictions leave the unrestricted geometry open. The dormant-wall thin-layer test gives the same-pair norm bound and explicit necessary radius conditions for compact dormant walls. This does not resolve arbitrary pockets. Compact simplex discrepancies must have three spectator imbalances. A singleton outermost facet requires a collinear four-arm cusp with the stated leading ratio; multiple exposures remain possible.
-- **GAP-PIS-NEAR-ONE-EXACT-OPTIMALITY** (mathematical; open): For every fixed k>=3 prove or refute existence of epsilon_k>0 such that all balanced Gaussian partitions in d>=k-1 have stability at most the regular simplex for 1-epsilon_k<rho<1, with equality rigidity. Quantitative multi-bubble stability must be paired with nonlocal errors relative to moving competitors; the fixed-partition perimeter limit and fixed-b<1 exterior estimates do not settle this statement. CT12 proves strict comparison away from higher junctions for any fixed cell count and a necessary relative junction-loss bound for unrestricted ties or improvers. CT14–CT18 also treat triple junctions with fourth-score separation at the same radius scale and bound the necessary inner loss linearly in d_R. For k=4, arbitrary exterior-only changes beyond order (1-rho)^(-1/6) are excluded. CT19–CT20 give exponential fourth-score localization for actual maximizers, reducing the tetrahedral sign to polynomial-strength coercivity on a growing ball. BC1–BC9 prove a relative comparison for arbitrary block choice with ordered labels inside each block, on balls of order e sqrt(log(1/e)) in physical space. In tetrahedral 2+2 splits reflected pairs also qualify. The unrestricted CT19 core obligation remains. BC10 extends the ordered and reflected classes to a fixed small physical ball with polynomial margins, and also controls ordinary binary and cyclic transfer graphs with at most one arrow entering or leaving each label. BC11 gives an exactly balanced obstruction to the convex componentwise fractional cut on that scale. The unrestricted ordinary core comparison remains open. BR1–BR8 pay every shared-destination interaction and leave a single shared-source residual. Ordinary ET7 covers a sufficiently small noise-scale ball without transfer restrictions. ET1 transfers Euclidean coercivity relative to exact cost, with an explicit radius-dependent error.
+- **GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER** (mathematical; open): For every fixed k>=3 and 0<rho<1 at which the balanced regular simplex is globally optimal, exclude an ordinary balanced nonsimplex partition with the same Gaussian noise stability. In particular rule out this alternative at the endpoint of the initial global optimality interval. A strictly positive simplex interface Hessian only supplies a local exclusion and does not prove this global rigidity. The full-rank affine fan alternative is excluded at every positive correlation by stationary score rigidity. General non-affine and rank-deficient candidates remain in scope. Reflected three-cell tangential ties approached by simplex-optimal correlations must have strictly positive fixed-partition deficit curvature. The moving tangential competitors and the balanced pair patches satisfy FC1–FC3. A connected semialgebraic maximizer with only one unbounded cell must have a compact curved theta graph with projection backtracking. The discrete affine, isolated-end and compact exterior-potential tests exclude additional classes of actual maximizing contacts. They leave unclassified networks and nonlinear oscillatory ends open. Connected strict winners with a semialgebraic jump network have been classified. Connectivity and semialgebraicity are not known for arbitrary maximizing contacts. Central score transversality narrows possible degenerations of the network to collinear triple equalities or a two-label arc identically tied with its absent label. Every bounded isolated graph end is straight by shifted-contour Gaussian rate improvement. An affine-separated pair already forces connected strict winners above 2/3. A centered affine-separated finite-height graph is symmetric when one half-profile is monotone or the proper junction level has odd endpoint orders. An asymmetric graph must cross its reflection at least three times. Exclusive-fiber graphs with a convex height have been classified. Exclusive-fiber graphs with finite switch sets already have one separating line. A reflected maximizer with an eventually convex tail is simplicial. The smooth reflected tail phase controls the correlation derivative but need not yet be linear. Pointwise-distinct triples of maximizing assignments including a simplex cannot contain a nonsimplex competitor. A candidate in the transition range cannot have two convex cells, or have both an affine-separated pair and a convex cell. In the exclusive-fiber finite-height class, one algebraic outer arc or another exclusive label pair forces the simplex. A reflected nonsimplex eventually concave end requires slope above (1+sqrt(1+rho²))/rho. The local simplex value has an exact measurable quadratic expansion in the masses. A nonsimplex tie with unequal prices, or with zero prices and excessive mass curvature, forces coexistence at nearby unequal quotas if the simplex is unique immediately to the left. Joint covariance and quota perturbations can detect a tie with unequal pressures or covariance derivatives. A strict contracted fourth-moment discrepancy is necessary at a nonsimplex first contact. The local simplex branch has an exact second-order covariance–quota envelope with nonzero mixed coefficient. These supply measurable joint perturbation tests for first-order-matched candidates. Compact buffered regular subarcs cannot supply the full measurable response of a positive-curvature tangential tie. A nonsimplex affine-separated graph without reflection requires infinitely many crossings. Three straight isolated ends give an exterior simplex and enforce strict tilted degree-one loss for any compact discrepancy. Under connected strict winners, the jump graph has only the three classified finite topologies, with no assumption about the geometry at infinity. Connectedness and an asymptotic classification of curved ends remain open. Three bounded isolated ends reduce the candidate to a compact simplex discrepancy, which requires bounded receiving components of every label. Two strictly obtuse bounded isolated ends already force zero prices and exclude higher-order contact. The existence of these ends and compact-core exclusion remain open in general. Two strictly obtuse bounded isolated ends with a connected common winner force the simplex when the third backward interface is a single continuous graph. In exact three-end bounded wedge networks, positively spanning directions force a centered simplex exterior or reflection, excluding higher-order ties there. A compact discrepancy has no spectator bisector, and a uniquely exposed outermost discrepancy must be an interior four-arm cusp. General non-graph ends and compact discrepancies remain unresolved. The two obtuse full-half-plane ends suffice with a connected common winner. A common wedge at infinity or an exactly conical exterior yields simplex exterior without a third graph. Higher-order contact is excluded throughout exact-three bounded wedge geometry. General curved or disconnected tails, compact discrepancies and ordinary first contacts remain unresolved. Three sufficiently long central pair arms force a strict derivative advantage at a nonsimplex maximizer and cannot occur at a right-accumulating tie or a maximum of the strict advantage. Compact projection constraints alone permit ordinary balanced asymmetric annular discrepancies. Nonsimplex compact maximizing shapes have only finitely many stationary scaling-correlation pairs in their affine orbit. The simplex-weighted perimeter gives a strict right-contact test, whose required lower bound is false for arbitrary balanced partitions. General last-endpoint maximizers remain unclassified. Balanced off-center Y shapes can satisfy arbitrarily high finite-order stationary score jets at the vertex. A nonsimplex right contact has at most two sufficiently long central pair arms, with or without a common junction. An annulus of sufficient width crossed by all three winners then needs a genuine junction. Accumulating failure components force an ordinary nonsimplex tangential tie, but the scalar Hermite and covariance constraints alone allow such accumulation in a compact abstract family. For the exterior interface, the index bound gives almost stability, and compactness is equivalent to vanishing critical reciprocal-gradient mass in unit balls. Any failure thereof produces a critical maximal tie in a dilation-linked local limit. Nondegenerate extrema do not carry limiting critical mass. The limit equations alone allow infinitely many walls. Finite ends and the unrestricted theta instability remain open. Realizing every fixed exterior chart in one balanced partition still leaves the moving central chart independent under the limiting winner equations alone.
+- **GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX** (mathematical; open): Determine whether an actual balanced planar three-cell global maximizer at 0<rho<1 can have a positive-area bounded component outside the closure of one strict winner set. The component may contain one or both other labels. The third-negative-direction argument excludes centered disks and some translated circles, with an exclusion also for thin annular trapping. Size, exterior-interaction and angular restrictions leave the unrestricted geometry open. The dormant-wall thin-layer test gives the same-pair norm bound and explicit necessary radius conditions for compact dormant walls. This does not resolve arbitrary pockets. Compact simplex discrepancies must have three spectator imbalances. A singleton outermost facet requires a collinear four-arm cusp with the stated leading ratio; multiple exposures remain possible. CTurn1–CTurn4 force a quantitative amount of backward travel on a compact three-arc theta network. Such networks with unrestricted turning and general enclosed components remain open. On compact theta networks the rotational cut form has an exact endpoint-flux compression. Whole-arm cuts at unequal vertex radii yield only the original rotation. Sufficiently many regular nodal cuts on a fixed geometry give instability near the local limit. At arbitrary correlation, theta networks with two exterior graphs must have thick middle folds, and theta networks confined between the junction abscissae must have thick folds on at least one arm. The general enclosed-component index argument is open. A finite-amplitude radial rotation excludes the class with two equal adjacent arcs on each Gaussian circle and both corresponding cells bounded, including arbitrarily winding profiles in that class.
+- **GAP-PIS-NEAR-ONE-EXACT-OPTIMALITY** (mathematical; open): For every fixed k>=3 prove or refute existence of epsilon_k>0 such that all balanced Gaussian partitions in d>=k-1 have stability at most the regular simplex for 1-epsilon_k<rho<1, with equality rigidity. Quantitative multi-bubble stability must be paired with nonlocal errors relative to moving competitors; the fixed-partition perimeter limit and fixed-b<1 exterior estimates do not settle this statement. CT12 proves strict comparison away from higher junctions for any fixed cell count and a necessary relative junction-loss bound for unrestricted ties or improvers. CT14–CT18 also treat triple junctions with fourth-score separation at the same radius scale and bound the necessary inner loss linearly in d_R. For k=4, arbitrary exterior-only changes beyond order (1-rho)^(-1/6) are excluded. CT19–CT20 give exponential fourth-score localization for actual maximizers, reducing the tetrahedral sign to polynomial-strength coercivity on a growing ball. BC1–BC9 prove a relative comparison for arbitrary block choice with ordered labels inside each block, on balls of order e sqrt(log(1/e)) in physical space. In tetrahedral 2+2 splits reflected pairs also qualify. The unrestricted CT19 core obligation remains. BC10 extends the ordered and reflected classes to a fixed small physical ball with polynomial margins, and also controls ordinary binary and cyclic transfer graphs with at most one arrow entering or leaving each label. BC11 gives an exactly balanced obstruction to the convex componentwise fractional cut on that scale. The unrestricted ordinary core comparison remains open. BR1–BR8 pay every shared-destination interaction and leave a single shared-source residual. Ordinary ET7 covers a sufficiently small noise-scale ball without transfer restrictions. ET1 transfers Euclidean coercivity relative to exact cost, with an explicit radius-dependent error. WD1–WD3 give uniform winning-phase density and confine the bounded-region outgoing interaction to shrinking neighborhoods where three reference scores are close, up to a Gaussian relative tail error.
 - **GAP-PIS-NORMALIZED-DEFICIT-MONOTONICITY** (mathematical; falsified): The candidate universal law says rho -> (S_rho(T)-S_rho(A))/arccos(rho) is nondecreasing on (0,1) for every fixed balanced finite-Gaussian-perimeter k-cell partition A in d>=k-1. FALSIFIED already for k=3,d=2 by the three slabs D5: D9 gives c+beta3*acos(rho)+O(acos(rho)^2), above its limit c near one. This falsifies this precise candidate, not every normalized law or simplex optimality.
 - **GAP-PIS-THREE-CELL-DIRECT-GLOBAL-INEQUALITY** (mathematical; open): For every d>=2, every0<rho<1 and every ordinary balanced Gaussian three-cell partition A, prove Qtilde_rho(1_A-1_T)<=2L_rho(A;T). This is global three-cell Gaussian simplex optimality. The independent same-label reserve proof SLV1-SLV8, adopted in DG21, gives0<rho<=61/100; stronger current scalar/feasibility bootstrap intervals are recorded in THREE_CELL_SHARP_VARIANCE_ABSORPTION.md and the registered endpoint results. The full all-positive-correlation target remains open. The original finite-amplitude comparison begins with the interval 0<rho<=221/500: DG17/FA1-FA7 certify a global finite-amplitude radial/angular comparison on[11/25,221/500], extending DG10 and DG4. Equal circular masses are settled at every positive correlation. The separate near-one result proves a qualitative interval adjacent to1, but no certified overlap closing the intermediate range is established. In the polar route the exact remaining comparison is R_rho<=D_rho+C_rho. DG5 excludes the scalar all-rho sufficient estimate at1/2. DG6-DG9 retain closure and exact arc interactions and prove restricted profile comparisons, but their sufficient all-profile criteria fail at explicit certified profiles. The complete all-positive-correlation target remains open. The adopted joint-angular theorem now proves the comparison whenever the squared circular-mass deviation is small on a fixed annulus, uniformly on any compact positive correlation interval, with arbitrary angular shapes and arbitrary inner and outer profiles. DG11 combines it with the direct lower and qualitative near-one intervals: any strict failure in any dimension has a planar global maximizer with a definite annular discrepancy in one fixed intermediate correlation range. Excluding those separated profiles remains open. DG12 adds an exact all-reflection cut condition preserving every circular mass. It proves a monotone sorting step for at most two pair types, and falsifies the universal type-constant step with all three types by an explicit balanced construction; it does not close the global inequality. DG13 shows that any nonsimplex actual maximizer must exhibit all three reflected pair types for some reflection. Combined with annular localization and a proved strong compactness argument, every strict failure has a planar maximizing representative detected by a finite fixed family of reflections with uniformly positive masses of all three types. These necessary witnesses and their positive scalar polarization defect are not yet excluded. DG14 proves that even a single ordinary balanced global partition cannot always be replaced nondecreasingly by consecutive arcs at fixed circular masses, for every fixed positive correlation and even uniformly interior mass profiles. It controls radial self-interactions and all measurable rotations, strengthening the earlier bilinear-pair obstruction. A classification restricted to actual global maximizers is not falsified. The current direct lower interval is qualitatively stronger than the explicit11/25 cutoff: ST1-ST6, adopted in DG15, prove comparison for all0<rho<rho_s+epsilon, where11/25<rho_s<1/2 is the first separated scalar obstruction above the certified range and epsilon>0. Strict angular loss of every nonzero scalar null profile and annular coercivity cross that obstruction directly. That qualitative argument alone supplies no numerical endpoint or overlap with the near-one interval. RMA1-RMA4 now isolate a uniformly finite adverse scalar radial space at every compact positive correlation interval, including above1/2. Polynomial angular moment losses give a stronger global upper bound. Some finite angular order dominates the complete radial quadratic space on each compact interval; ordertwo explicitly dominates the old positive direction in span{f,g} at99/100. This is directional domination, not the all-feasible-amplitude nonlinear inequality. FA1-FA7 now realize the nonlinear amplitude program on[11/25,221/500]: feasibility bounds the adverse one-mode amplitude below27/1000 and an annular angular penalty absorbs its positive scalar contribution plus the trial residual. This proves the all-partition direct cutoff221/500; the remaining all-correlation nonlinear comparison is still open. GAC1-GAC9 now retain the same first moment slices across radii via an exact global rank-one optimization. A sharp three-type half-mass loss is positive even when every independently optimized pair deficit vanishes, and remains positive under sufficiently small integrated mass errors. GAC10-GAC13 give a global finite-angular-order envelope with an explicit all-amplitude error uniform over all profiles on each compact correlation range. These results strengthen the global comparison but do not establish the missing scalar-versus-angular sign. The projected FA18-FA21 extension now certifies the explicit cutoff 8859/20000, with equality rigidity on the added slab. The remaining all-correlation problem is open. The all-amplitude GH comparison now proves the explicit cutoff 29/50 with equality rigidity on the added interval. FA9–FA10 now certify 0<rho<=447/1000 using projected residuals and radius-weighted angular errors. FA11 supplies a uniform planar score margin and an unevaluated right neighborhood. FA12 retains the first angular deficit in the separate scalar comparison through 53/100 and proves a uniform score margin with a positive unevaluated right neighborhood. The adjoining scalar slab through 107/200 is directed-certified, with the FA12 relative margin continuing beyond this explicit endpoint. TME1-TME11 now give the sharp all-mass first/second energy tradeoff, global two-mode matrix-field certificates and an extra nonnegative shared polynomial loss. A complete cube certificate makes the angular losses outweigh the positive scalar contribution at3/5 for every centered unit label direction and all|epsilon|<=1/40 of the explicit bounded radial profile. TME6 proves that exact sharing of first moments alone cannot fix DG39 on its equal-pair99/100 witness. The full finite-space/all-amplitude domination remains open. FA13 extends the relative score margin through the independent sharp scalar cutoff 29/50 and yields a positive unevaluated right neighborhood. The sharp quartic finite-amplitude extension reaches 3/5, with equality rigidity on the new interval. SV1–SV5 use the same-label sharp Taylor slack to improve the exact centered linear scalar norm. Full directed covers give 0<rho<=623/1000 and the retained angular reserve continues the result to an unevaluated right neighborhood. The reserved SV6–SV9 bootstrap gives a complete extension through 0.630, and the score margin continues to a positive unevaluated right neighborhood. The reserved two-stage tilted second-moment test now certifies 0<rho<=641/1000, with an unevaluated strict continuation. BC1–BC9 address the separate restricted near-one junction problem. The excess-purity comparison extends the unrestricted cutoff to 513/800. SV10–SV11 now give a directed reserved extension through 129/200 and the same right-neighborhood conclusion. Adaptive reserved tilted-mean stages with exact complementary compression now cover 0<rho<=81/125 and an unevaluated right neighborhood. The restricted two-block tetrahedral comparison does not settle the unrestricted near-one problem. The full-radius trial comparison certifies the unrestricted interval through 2611/4000. The projected-moment proofs certify 0<rho<=329/500 and an unevaluated strict right neighborhood. The proposed signed-axis and graded central higher covers had an invalid clipping-origin bound and fail corrected replay. The independent signed projected-moment method certifies the unrestricted interval through 2661/4000 and an unevaluated right neighborhood, using a different feasibility inequality from the earlier invalidated graded cover. The adjoining signed projected-moment cover raises the current explicit unrestricted cutoff to 167/250 and retains a strict right neighborhood. The signed shifted-clipping bootstrap certifies the unrestricted interval through 671/1000. The signed central-reserve cover extends the current unrestricted pure-correlation comparison through 84/125 and gives an unevaluated positive right neighborhood. The central shifted-clipping bootstrap certifies the unrestricted interval through 339/500.
 - **GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL** (mathematical; open): Prove global Gaussian simplex optimality and equality rigidity for balanced measurable three-cell partitions in every d>=2 at every 0<rho<1, then obtain the balanced low-influence three-candidate plurality corollary. The explicit lower interval reaches 339/500, and the exact near-one result gives a qualitative interval adjacent to one. Closing the remaining intermediate range requires excluding a nonsimplex maximizer tied at a transition correlation. The unrestricted optimal value equals the supremum over balanced conical partitions across finite dimensions. Every adjacent conical plateau has the simplex value. Plateaus in arbitrarily large dimensions would force the unrestricted simplex value. This remains open at general correlations. Axial conical optimizers are excluded and the radial spectator class has an exact asymptotic value loss. Neither result gives a plateau for unrestricted conical values. Near-maximizers are compact modulo embeddings in arbitrary ambient dimensions. Unrestricted conical optima have the same first-order loss as radial spectator optima. Any sequence approaching a nonsimplex planar maximizer pays its strictly positive radial dilation coefficient at order 1/n, without assumptions on angular slice masses. This yields the asymptotic rate for a suboptimal simplex. The dimension-independent global comparison remains open. Measurable local growth is uniform over all ambient dimensions on compact interior bands. Combined with first-order conical comparison it gives the exact scaled delay of a possible conical transition behind a planar one. A planar nonsimplex tie is still possible under these restrictions.

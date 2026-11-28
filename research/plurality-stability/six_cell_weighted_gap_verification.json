@@ -1,0 +1,183 @@
+{
+  "status": "pass",
+  "standard_cover": {
+    "status": "pass",
+    "python": "3.12.3",
+    "python_flint": "0.9.0",
+    "precision_bits": 512,
+    "epsilon": "1/1000",
+    "ratio_target": "1",
+    "slabs": [
+      {
+        "left": "0",
+        "right": "1/3",
+        "degree": 6,
+        "size": 26,
+        "normalized_factor": "1",
+        "trace_exponent": 2,
+        "trace": "[0.343296912378 +/- 3.33e-13]",
+        "norm_bound": "[0.585915448147 +/- 3.14e-13]",
+        "operator_tail_bound": "[0.00916096977453 +/- 3.59e-15]",
+        "normalized_interaction_upper": "[0.589122948763 +/- 2.13e-13]",
+        "mass_mismatch_upper": "117/100",
+        "stationary_ratio_lower": "[0.854700854701 +/- 1.46e-13]"
+      },
+      {
+        "left": "1/3",
+        "right": "1/2",
+        "degree": 8,
+        "size": 52,
+        "normalized_factor": "1",
+        "trace_exponent": 4,
+        "trace": "[0.734443151298 +/- 8.00e-14]",
+        "norm_bound": "[0.925741101865 +/- 3.33e-13]",
+        "operator_tail_bound": "[0.0260872928345 +/- 8.78e-15]",
+        "normalized_interaction_upper": "[0.926752574384 +/- 2.56e-14]",
+        "mass_mismatch_upper": "117/100",
+        "stationary_ratio_lower": "[0.886003173340 +/- 1.61e-13]"
+      },
+      {
+        "left": "1/2",
+        "right": "3/5",
+        "degree": 10,
+        "size": 93,
+        "normalized_factor": "1",
+        "trace_exponent": 4,
+        "trace": "[0.837673331413 +/- 2.58e-14]",
+        "norm_bound": "[0.956684356020 +/- 3.84e-13]",
+        "operator_tail_bound": "[0.0403814103013 +/- 1.66e-14]",
+        "normalized_interaction_upper": "[0.957476818456 +/- 3.68e-13]",
+        "mass_mismatch_upper": "117/100",
+        "stationary_ratio_lower": "[0.891045454311 +/- 2.04e-13]"
+      },
+      {
+        "left": "3/5",
+        "right": "13/20",
+        "degree": 12,
+        "size": 154,
+        "normalized_factor": "1",
+        "trace_exponent": 4,
+        "trace": "[0.831742763184 +/- 2.62e-13]",
+        "norm_bound": "[0.954986555885 +/- 7.86e-14]",
+        "operator_tail_bound": "[0.0379864980671 +/- 3.35e-14]",
+        "normalized_interaction_upper": "[0.955741472437 +/- 9.41e-14]",
+        "mass_mismatch_upper": "117/100",
+        "stationary_ratio_lower": "[0.911442556705 +/- 1.79e-13]"
+      },
+      {
+        "left": "13/20",
+        "right": "7/10",
+        "degree": 14,
+        "size": 240,
+        "normalized_factor": "1",
+        "trace_exponent": 8,
+        "trace": "[0.814790886106 +/- 1.48e-13]",
+        "norm_bound": "[0.974722004221 +/- 3.61e-13]",
+        "operator_tail_bound": "[0.0452940900058 +/- 1.21e-14]",
+        "normalized_interaction_upper": "[0.974892226032 +/- 4.16e-13]",
+        "mass_mismatch_upper": "117/100",
+        "stationary_ratio_lower": "[0.894554464173 +/- 2.11e-13]"
+      }
+    ],
+    "source_sha256": {
+      "check_six_cell_weighted_gap.py": "8e11f042c7fe2b97c12f3547b01e54d3af1ca71a7dcab79a1dbf3bdbf6b05678",
+      "check_tetrahedral_standard_gap.py": "37d7bc58dfe8e125bc70ffe8c8cc3b68882a918966846d61c1530470e3a68738",
+      "check_tetrahedral_weighted_gap.py": "c32516f201e12a838f6148006f46c686bc7f822602ad7e5719781524d8c33020"
+    }
+  },
+  "stationary_points": [
+    {
+      "status": "pass",
+      "python": "3.12.3",
+      "python_flint": "0.9.0",
+      "precision_bits": 512,
+      "epsilon": "1/1000",
+      "ratio_target": "1079/1000",
+      "slabs": [
+        {
+          "left": "1/5",
+          "right": "1/5",
+          "degree": 7,
+          "size": 37,
+          "normalized_factor": "171/250",
+          "trace_exponent": 2,
+          "trace": "[0.485625484199 +/- 2.61e-13]",
+          "norm_bound": "[0.696868340649 +/- 2.66e-13]",
+          "operator_tail_bound": "[8.54828411601e-5 +/- 3.92e-17]",
+          "normalized_interaction_upper": "[0.475986989219 +/- 6.48e-14]",
+          "mass_mismatch_upper": "69/64",
+          "stationary_ratio_lower": "[1.04904649525 +/- 3.59e-12]"
+        }
+      ],
+      "source_sha256": {
+        "check_six_cell_weighted_gap.py": "8e11f042c7fe2b97c12f3547b01e54d3af1ca71a7dcab79a1dbf3bdbf6b05678",
+        "check_tetrahedral_standard_gap.py": "37d7bc58dfe8e125bc70ffe8c8cc3b68882a918966846d61c1530470e3a68738",
+        "check_tetrahedral_weighted_gap.py": "c32516f201e12a838f6148006f46c686bc7f822602ad7e5719781524d8c33020"
+      }
+    },
+    {
+      "status": "pass",
+      "python": "3.12.3",
+      "python_flint": "0.9.0",
+      "precision_bits": 512,
+      "epsilon": "1/1000",
+      "ratio_target": "117/100",
+      "slabs": [
+        {
+          "left": "1/2",
+          "right": "1/2",
+          "degree": 10,
+          "size": 93,
+          "normalized_factor": "83/100",
+          "trace_exponent": 4,
+          "trace": "[0.664645404783 +/- 4.62e-13]",
+          "norm_bound": "[0.902916317411 +/- 1.02e-13]",
+          "operator_tail_bound": "[0.00652182320862 +/- 2.81e-15]",
+          "normalized_interaction_upper": "[0.749150789748 +/- 7.68e-14]",
+          "mass_mismatch_upper": "117/100",
+          "stationary_ratio_lower": "[1.06910188910 +/- 4.34e-12]"
+        }
+      ],
+      "source_sha256": {
+        "check_six_cell_weighted_gap.py": "8e11f042c7fe2b97c12f3547b01e54d3af1ca71a7dcab79a1dbf3bdbf6b05678",
+        "check_tetrahedral_standard_gap.py": "37d7bc58dfe8e125bc70ffe8c8cc3b68882a918966846d61c1530470e3a68738",
+        "check_tetrahedral_weighted_gap.py": "c32516f201e12a838f6148006f46c686bc7f822602ad7e5719781524d8c33020"
+      }
+    },
+    {
+      "status": "pass",
+      "python": "3.12.3",
+      "python_flint": "0.9.0",
+      "precision_bits": 512,
+      "epsilon": "1/1000",
+      "ratio_target": "117/100",
+      "slabs": [
+        {
+          "left": "13/20",
+          "right": "13/20",
+          "degree": 14,
+          "size": 240,
+          "normalized_factor": "1181/1300",
+          "trace_exponent": 4,
+          "trace": "[0.945631208052 +/- 6.03e-14]",
+          "norm_bound": "[0.986121548774 +/- 4.02e-13]",
+          "operator_tail_bound": "[0.0160492954333 +/- 3.57e-14]",
+          "normalized_interaction_upper": "[0.895090117124 +/- 5.47e-14]",
+          "mass_mismatch_upper": "117/100",
+          "stationary_ratio_lower": "[1.02122447831 +/- 3.47e-12]"
+        }
+      ],
+      "source_sha256": {
+        "check_six_cell_weighted_gap.py": "8e11f042c7fe2b97c12f3547b01e54d3af1ca71a7dcab79a1dbf3bdbf6b05678",
+        "check_tetrahedral_standard_gap.py": "37d7bc58dfe8e125bc70ffe8c8cc3b68882a918966846d61c1530470e3a68738",
+        "check_tetrahedral_weighted_gap.py": "c32516f201e12a838f6148006f46c686bc7f822602ad7e5719781524d8c33020"
+      }
+    }
+  ],
+  "replay_commands": [
+    "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_six_cell_weighted_gap.py --slabs 5",
+    "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_six_cell_weighted_gap.py --start 1/5 --stop 1/5 --degree 7 --ratio-target 1079/1000",
+    "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_six_cell_weighted_gap.py --start 1/2 --stop 1/2 --degree 10 --ratio-target 117/100",
+    "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_six_cell_weighted_gap.py --start 13/20 --stop 13/20 --degree 14 --ratio-target 117/100"
+  ]
+}

@@ -503,6 +503,13 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Rectangular Young blocks admit a quantitative neighboring-shape compression | Internal result | proved | [Source](../plurality-stability/RECTANGULAR_SHAPE_BRANCH_COMPARISON.md) |
 | Moving simplex interface spectra converge to mixed wall Gaussian problems | Internal result | proved | [Source](../plurality-stability/MIXED_WALL_SECTOR_LIMIT.md) |
 | The full six- and seven-cell balanced interface gaps hold sufficiently near correlation one | Internal result | proved | [Source](../plurality-stability/MIXED_WALL_SECTOR_LIMIT.md) |
+| Six-cell standard-sector interface gap through correlation 7/10 | Internal result | proved | [Source](../plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md) |
+| Full six-cell Gaussian simplex interface gap through correlation 7/10 | Internal result | proved | [Source](../plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md) |
+| Directed lower bounds for the six-cell stationary-gap ratio | Internal result | proved | [Source](../plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md) |
+| Reversible stationary-gap comparison for the six-cell standard sector | Internal result | proved | [Source](../plurality-stability/SIX_CELL_REVERSIBLE_CHAIN.md) |
+| Axial transport and a shorter Metropolis comparison for the six-cell facet | Internal result | proved | [Source](../plurality-stability/SIX_CELL_REVERSIBLE_CHAIN.md) |
+| A quantitative stability obstruction to nearly monotone compact three-arc networks | Internal result | proved | [Source](../plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md) |
+| Winning-phase density confines outgoing transfers of actual near-one maximizers | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXTERIOR_TUBES.md) |
 | Only A4 can be the target of the six-cell unweighted pointwise chamber comparison | Internal result | proved | [Source](../plurality-stability/SIX_CELL_REFLECTION_CHAMBER_TARGETS.md) |
 | The raw four-cell FR4 test has an inverse-square degree floor | Internal result | proved | [Source](../plurality-stability/FOUR_CELL_FR4_BENCHMARK.md) |
 | A first-moment distance constraint removes the simplex tuple from the bad FR4 set | Internal result | proved | [Source](../plurality-stability/FOUR_CELL_FR4_BENCHMARK.md) |
@@ -692,6 +699,41 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | A fixed positive angle interval below the acute threshold is excluded | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ACUTE_ANGLE_SEPARATION.md) |
 | Three-cell measurable local stability is uniform over all ambient dimensions | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_SIMPLEX_DIMENSION_FREE_LOCAL_GROWTH.md) |
 | Possible planar and finite conical transitions have an exact scaled separation | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_SIMPLEX_DIMENSION_FREE_LOCAL_GROWTH.md) |
+| Three interface arms from the origin give a global simplex derivative bound | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) |
+| Constant edge speeds have a uniform strict translation residual off the simplex | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) |
+| Long central interface arms exclude a nonsimplex tie from the right | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) |
+| Finite directional and sectorwise radial Gaussian data admit ordinary realizations | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md) |
+| Ordinary compact discrepancies realize all tilted slice identities and three spectator imbalances | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md) |
+| The simplex score-weighted perimeter bounds the derivative at a right contact | Internal result | proved | [Source](../plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md) |
+| Concentric balanced cells disprove the unrestricted weighted-perimeter bound | Internal result | proved | [Source](../plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md) |
+| The compact-defect fixed-variance dilation deficit is entire with strict endpoint signs | Internal result | proved | [Source](../plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md) |
+| Fixed-variance scaling strictly decreases compact-defect contact curvature | Internal result | proved | [Source](../plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md) |
+| A compact nonsimplex maximizing shape gives finitely many stationary affine images and correlations | Internal result | proved | [Source](../plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md) |
+| Every prescribed finite set of stationary score jets permits an off-center Y junction | Internal result | proved | [Source](../plurality-stability/THREE_CELL_OFF_CENTER_JUNCTION_JETS.md) |
+| Long two-sided arcs of one pair cannot pass near the Gaussian origin | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md) |
+| A retained part of a central pair path obeys a one-dimensional noise boundary bound | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md) |
+| A complete dormant straight line must have a quantitatively noncentral offset | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md) |
+| A right-accumulating nonsimplex tie has at most two long central pair arms | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md) |
+| A sufficiently long central annulus crossed by all three winners must contain a triple junction | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md) |
+| Endpoint signs, nonnegative Hermite weights and perimeter-order tails permit any failure interval | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md) |
+| Compact Gaussian L2 models preserve the covariance tests and can have accumulating failure intervals | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md) |
+| Accumulating strict failure intervals force an ordinary nonsimplex tangential tie | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md) |
+| Compact simplex discrepancies have an exact centered simplex or antipodal germ | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md) |
+| An antipodal compact germ forces a genuine junction on each reference half-ray | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md) |
+| Exact mass-constrained rotational cut matrix on compact theta networks | Internal result | proved | [Source](../plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md) |
+| Four connected rotation-cut pieces give a negative direction near the local limit | Internal result | proved | [Source](../plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md) |
+| A compact theta with exterior graphs must have thick middle folds | Internal result | proved | [Source](../plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md) |
+| Compact theta arms confined between the junctions must have thick folds | Internal result | proved | [Source](../plurality-stability/THREE_CELL_THETA_ALL_THIN_FOLDS.md) |
+| An affine rotation gives an exact mass repair for a two-piece sign flip | Internal result | proved | [Source](../plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md) |
+| Balanced zero modes are analytic along each regular theta arc | Internal result | proved | [Source](../plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md) |
+| The exterior ordinary variation has an exponentially vanishing negative error | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md) |
+| A critical reciprocal-gradient measure characterizes Gaussian interface compactness | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md) |
+| Escaping Gaussian interface windows have dilation-linked limits | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md) |
+| Nondegenerate score extrema cannot carry limiting critical interface mass | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md) |
+| The dilation-chain winner equations admit infinitely many parallel walls | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md) |
+| Fixed exterior and moving central windows can be prescribed independently | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md) |
+| A nonconstant radial twist in a semicircle is infinitesimally unstable | Internal result | proved | [Source](../plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md) |
+| Radial alignment excludes two bounded cells in the equal adjacent arc class | Internal result | proved | [Source](../plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md) |
 
 **Computed obligations:** 45 unresolved; 32 resolved within their exact scope.
 

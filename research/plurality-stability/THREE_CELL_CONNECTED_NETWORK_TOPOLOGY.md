@@ -539,3 +539,108 @@ obtain the necessary condition
            \kappa|p|^2+(\kappa+\rho/\sigma^2)v
                         >\log(3e/\rho^2).                  \tag{NT5}
 \]
+
+## A quantitative turning test for a compact three-arc network
+
+Suppose that the entire jump graph of a balanced planar maximizer
+is the compact three-arc network of the one-unbounded-winner case.
+Let \(p,q\) be its two distinct vertices and let
+\(\Gamma_1,\Gamma_2,\Gamma_3\) denote the arcs directed from \(p\)
+to \(q\). Set \(\ell=|q-p|>0\), \(u=(q-p)/\ell\), and \(v=Ju\)
+for a right-angle rotation \(J\). Use \(N_i=J\tau_i\), where
+\(\tau_i\) is the unit tangent in each chosen direction. These
+orientations make the three label vectors cyclic, up to
+simultaneous reversal. Indeed the arcs cross a small circle around
+\(p\) once each in the outgoing direction. Their left and right
+labels occur cyclically along that circle. Thus the distinct label
+vectors have dot product \(-1\). Write
+\[
+ s_i=v\cdot N_i=u\cdot\tau_i,\qquad
+ C_{ij}=\iint_{\Gamma_i\times\Gamma_j}M_\rho(x,y)
+           s_i(x)s_j(y)\,d\nu_i(x)d\nu_j(y)\quad (i\ne j).
+\]
+Let
+\[
+ A_i=\int_{\Gamma_i} a_i N_iN_i^{\mathsf T}\,d\nu_i,\quad
+ A=\sum_i A_i,\quad
+ D_v=\operatorname{diag}(v^{\mathsf T}A_i v)_{i=1}^3
+           -\big[(A_i v)^{\mathsf T}A^{-1}A_j v\big]_{i,j=1}^3 .
+\]
+The weighted Laplacian \(L_w\) on three vertices with off-diagonal
+weights \(w_{ij}=-C_{ij}\) satisfies
+\[
+                       \rho L_w\succeq (1-\rho)D_v,
+ \qquad  D_v\succ 0\ \text{on }\mathbf 1^\perp .
+ \tag{CTurn1}
+\]
+The order relation concerns real symmetric forms. The weights
+themselves may have either sign. For the proof let \(s_v=v\cdot N\)
+on the full graph and put \(f=c_i s_v\) on \(\Gamma_i\).
+The [translation identity (G2)](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#translation-equations-on-an-unconstrained-space-of-speeds), multiplied by \(c_i^2s_i\)
+and symmetrized, gives
+\[
+ Q^{(1)}(f)=\rho\sum_{i<j} w_{ij}(c_i-c_j)^2 .
+\]
+The translation projection of \(f\) is the translation with vector
+\(A^{-1}\sum_i c_i A_i v\). Hence its squared residual is
+\(c^{\mathsf T}D_v c\), proving the first relation by (G17).
+If this residual is zero, some \(z\) satisfies
+\((c_i v-z)\cdot N_i=0\) on each arc. At least one arc is
+nonstraight, since all straight arcs between the same endpoints
+have the same image. The normals of a nonstraight arc span the
+plane. Hence \(z=c_i v\) on that arc, and all other \(c_j\) must
+equal \(c_i\) because \(\int_{\Gamma_j} v\cdot N_j\,ds=\ell>0\).
+This proves strictness on the centered subspace. All these
+speeds belong to the weighted space by compact analyticity of
+the network and bounded score gradients. The two consequences
+of the finite-index argument used here are precisely (G2) and
+(G17). Their translation input is [Heilman–Tarter, Lemma 5.4](https://doi.org/10.1017/fms.2021.56).
+
+In particular, each row sum of incident weights is positive.
+Thus at least two of the three \(C_{ij}\) are strictly negative.
+If \(C_{12}>0\), positive definiteness of the weighted Laplacian
+also implies
+\[
+ C_{12}<\frac{(-C_{13})(-C_{23})}{-C_{13}-C_{23}}.
+ \tag{CTurn2}
+\]
+Here \(C_{13},C_{23}<0\) by the row inequalities. To see (CTurn2),
+fix \(c_1=1,c_2=0\) and minimize the displayed Laplacian quadratic
+in \(c_3\). The two positive weights give their series conductance.
+Strict positivity forces that conductance to exceed \(C_{12}\).
+
+Let \(P_i=\int_{\Gamma_i}(s_i)_+\,ds\) and
+\(N_i^-=\int_{\Gamma_i}(s_i)_-\,ds\), where \(ds\) is Euclidean
+arclength and \(r_-=\max\{-r,0\}\). Then \(P_i-N_i^-=\ell\)
+for each arc. Let \(0<m<M<\infty\) be lower and upper bounds
+for \(M_\rho(x,y)\phi_2(x)\phi_2(y)\) on the compact network
+squared. On each pair, its constant part \(m\) contributes
+\(m\ell^2\), and the negative part of the remaining product
+of signed speeds gives
+\[
+ C_{ij}\ge m\ell^2-(M-m)
+      \big[\ell(N_i^-+N_j^-)+2N_i^-N_j^-\big].
+ \tag{CTurn3}
+\]
+The trace of \(L_w\) is positive by (CTurn1), so
+\(\sum_{i<j}C_{ij}<0\). Summing (CTurn3) and using
+\(\sum_{i<j}N_i^- N_j^-\le (\sum_iN_i^-)^2/3\) yields
+\[
+   \frac{\sum_i N_i^-}{\ell}>
+        \frac32\left(\sqrt{1+\frac{2m}{M-m}}-1\right).
+ \tag{CTurn4}
+\]
+If two arcs have no backward travel in the chord direction,
+say \(N_1^-=N_2^-=0\), then \(C_{12}\ge m\ell^2>0\) and
+\[
+ -C_{13},-C_{23}\le \ell[(M-m)N_3^- -m\ell].
+\]
+The series conductance is at most half this common upper
+bound. By (CTurn2), the third arc satisfies
+\(N_3^->3m\ell/(M-m)\). For instance, if the whole graph lies
+in a fixed ball of radius \(R\) centered at the Gaussian origin,
+the bivariate Gaussian joint density gives \(m/M\ge
+\exp[-R^2/(1-\rho)]\). The graph cannot be made of three arcs
+whose backward travel is arbitrarily small relative to the
+common chord under this fixed-radius hypothesis. The test
+leaves compact networks with sufficient backward travel open.

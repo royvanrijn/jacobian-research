@@ -11128,6 +11128,141 @@
           "verification_note": "Internal check of spectator contents and of the remaining standard and rotation families. The near-one cutoff is qualitative."
         },
         {
+          "id": "PIS-SIX-CELL-STANDARD-INTERFACE-GAP-THROUGH-7-10",
+          "title": "Six-cell standard-sector interface gap through correlation 7/10",
+          "state": "proved",
+          "scope": "For six cells, every 0<rho<=7/10 and every ordinarily balanced invariant standard-sector facet speed in active dimension five, the standard interface gap is at least ell/1000. The directed weighted finite-rank certificate covers five exact adjacent slabs and accounts for the ordinary balance in its weighted Gram matrix.",
+          "canonical_source": "plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md",
+          "checker": "plurality-stability/check_six_cell_weighted_gap.py",
+          "artifact_hash": "sha256:8e11f042c7fe2b97c12f3547b01e54d3af1ca71a7dcab79a1dbf3bdbf6b05678",
+          "evidence": [
+            "plurality-stability/six_cell_weighted_gap_verification.json",
+            "plurality-stability/check_tetrahedral_standard_gap.py",
+            "plurality-stability/check_tetrahedral_weighted_gap.py"
+          ],
+          "proof_type": "written comparison with directed interval certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "verification_note": "Five exact adjacent directed slabs, 512-bit Arb/Acb and degree bounds 6 through 14. Exact matrix weights, trace reserves, source digests and replay were checked internally.",
+          "replay_commands": [
+            "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_six_cell_weighted_gap.py --slabs 5"
+          ]
+        },
+        {
+          "id": "PIS-SIX-CELL-FULL-INTERFACE-GAP-THROUGH-7-10",
+          "title": "Full six-cell Gaussian simplex interface gap through correlation 7/10",
+          "state": "proved",
+          "scope": "For every fixed 0<rho<=7/10 and d>=5, the balanced six-cell simplex interface form on L2 facet speeds is positive with a dimension-independent gap modulo the geometric rotation kernel. The result combines the directed standard sector with the previously proved all-correlation nonstandard sectors, then applies the ambient lift.",
+          "canonical_source": "plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written analytic proof",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "verification_note": "Written proof, internally audited. Independent mathematical review remains pending."
+        },
+        {
+          "id": "PIS-SIX-CELL-DIRECTED-STATIONARY-GAP-RATIO",
+          "title": "Directed lower bounds for the six-cell stationary-gap ratio",
+          "state": "proved",
+          "scope": "The invariant stationary-gap ratio gap_{S4}(P_rho)/((1-rho) E_mu(D_rho) E_mu(1/D_rho)) is strictly greater than one throughout 0<rho<=1/3, at rho=1/2, and at rho=13/20. The directed exact point lower bounds exceed 1.04904 at 1/5, 1.06910 at 1/2 and 1.02122 at 13/20.",
+          "canonical_source": "plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md",
+          "checker": "plurality-stability/check_six_cell_weighted_gap.py",
+          "artifact_hash": "sha256:8e11f042c7fe2b97c12f3547b01e54d3af1ca71a7dcab79a1dbf3bdbf6b05678",
+          "evidence": [
+            "plurality-stability/six_cell_weighted_gap_verification.json",
+            "plurality-stability/check_tetrahedral_standard_gap.py",
+            "plurality-stability/check_tetrahedral_weighted_gap.py"
+          ],
+          "proof_type": "written comparison with directed interval certificate",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "verification_note": "Exact rational point replays with retained directed trace and row-moment enclosures. The small-correlation interval follows analytically from the first contiguous slab and the improved mass correction.",
+          "replay_commands": [
+            "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_six_cell_weighted_gap.py --start 1/5 --stop 1/5 --degree 7 --ratio-target 1079/1000",
+            "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_six_cell_weighted_gap.py --start 1/2 --stop 1/2 --degree 10 --ratio-target 117/100",
+            "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_six_cell_weighted_gap.py --start 13/20 --stop 13/20 --degree 14 --ratio-target 117/100"
+          ]
+        },
+        {
+          "id": "PIS-SIX-CELL-STATIONARY-GAP-COMPARISON",
+          "title": "Reversible stationary-gap comparison for the six-cell standard sector",
+          "state": "proved",
+          "scope": "The exact Gaussian versus stationary balance correction is E_mu(D) E_mu(1/D)<117/100. The measured chain uses the invariant positive folded kernel. A continuous block projection estimate and an ambient Hermite finite-rank tail bound for the stationary operator give rigorous ways to certify the sufficient ratio. Its true limit as rho tends to one is 2. Exploratory finite test values do not certify the intermediate stationary gap.",
+          "canonical_source": "plurality-stability/SIX_CELL_REVERSIBLE_CHAIN.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written analytic proof",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "verification_note": "Written proof, internally audited. Independent mathematical review remains pending."
+        },
+        {
+          "id": "PIS-SIX-CELL-AXIAL-METROPOLIS-COMPARISON",
+          "title": "Axial transport and a shorter Metropolis comparison for the six-cell facet",
+          "state": "proved",
+          "scope": "The raw-gap map from A4 to the ordered six-cell facet stretches only one axis. It gives the exact conductance ratio to a Metropolis chain based on the folded OU proposal. That ratio tends to zero on diagonal rays. A proposal with smaller isotropic variance is globally dominated by an explicit positive factor of conductance. A quantitative gap for that proposal remains a separate input.",
+          "canonical_source": "plurality-stability/SIX_CELL_REVERSIBLE_CHAIN.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written analytic proof",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "verification_note": "Written proof, internally audited. Independent mathematical review remains pending."
+        },
+        {
+          "id": "PIS-THREE-CELL-COMPACT-THETA-TURNING-BOUND",
+          "title": "A quantitative stability obstruction to nearly monotone compact three-arc networks",
+          "state": "proved",
+          "scope": "For an actual balanced planar three-cell maximizer whose full jump graph is a compact theta network, the first transverse block yields a strict signed three-vertex Laplacian inequality. At least two signed interarc Mehler pairings must be negative. This gives a quantitative lower bound on total backward travel along the common chord and a stronger bound when two arcs have no backward travel.",
+          "canonical_source": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written analytic proof",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "verification_note": "Written proof, internally audited. Independent mathematical review remains pending."
+        },
+        {
+          "id": "PIS-ALL-CELL-NEAR-ONE-WINNER-DENSITY-OUTGOING-LOCALIZATION",
+          "title": "Winning-phase density confines outgoing transfers of actual near-one maximizers",
+          "state": "proved",
+          "scope": "For each fixed k>=3 and bounded physical compact set in active dimension k-1, every winning phase has positive volume density for radii from a fixed multiple of the noise length to a fixed small physical radius. Consequently each actual transfer gap on the compact set is bounded by C(e+L^(1/(k-1))). The bounded-region opposing outgoing interaction is supported up to a Gaussian relative tail error in a shrinking tube where three reference scores are close.",
+          "canonical_source": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "written analytic proof",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "dependency_coverage": "partial",
+          "verification_note": "Written proof, internally audited. Independent mathematical review remains pending."
+        },
+        {
           "id": "PIS-SIX-CELL-UNWEIGHTED-REFLECTION-CHAMBER-TARGET",
           "title": "Only A4 can be the target of the six-cell unweighted pointwise chamber comparison",
           "state": "proved",
@@ -14402,6 +14537,601 @@
           "scope": "If r0 is the finite endpoint of the initial unrestricted simplex-optimal interval, the initial conical endpoint in dimension 2+n obeys n(r_cone-r0) -> tau_*>0, possibly infinity. DL7 is the infimum of dilation loss divided by fixed-shape slope advantage over the tied planar maximizers with positive advantage. For every smaller finite positive offset the simplex is the unique conical maximizer throughout the scaled interval.",
           "state": "proved",
           "canonical_source": "plurality-stability/GAUSSIAN_SIMPLEX_DIMENSION_FREE_LOCAL_GROWTH.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-ORIGIN-ARM-DERIVATIVE-LOWER-BOUND",
+          "title": "Three interface arms from the origin give a global simplex derivative bound",
+          "scope": "If a balanced planar maximizing partition has an unbounded rectifiable arc of each pair from the Gaussian origin, its fixed-shape correlation derivative is at least the simplex derivative, with equality only for the simplex. OA2–OA5 compare unorientated surface interactions pointwise in arclength, allowing all other components and arbitrary curvature.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-ORIENTED-SURFACE-CALIBRATION-GAP",
+          "title": "Constant edge speeds have a uniform strict translation residual off the simplex",
+          "scope": "On each compact positive-correlation band, for every nonsimplex balanced planar maximizer there is a uniform positive gap between its derivative and the constant-edge calibrated surface interaction. A vanishing residual makes the limiting edge normal field a convex gradient through reciprocal-gradient control and distributional convergence of the partition indicators.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-CENTRAL-LONG-ARMS-RIGHT-CONTACT-EXCLUSION",
+          "title": "Long central interface arms exclude a nonsimplex tie from the right",
+          "scope": "Uniformly on compact positive-correlation bands, sufficiently long arcs of all three pair types starting sufficiently near the Gaussian origin give a strict derivative advantage over the simplex at any nonsimplex global maximizer. Such a shape cannot occur at a tie approached from the right by simplex-optimal correlations, in particular a last strict-failure endpoint, or at an interior maximum of the strict advantage.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-COMPACT-GAUSSIAN-DIRECTION-RADIUS-PURIFICATION",
+          "title": "Finite directional and sectorwise radial Gaussian data admit ordinary realizations",
+          "scope": "On a fixed centered disk, a fractional finite-label assignment can be purified to an ordinary assignment preserving finitely many entire directional pushforwards at any prescribed finite Gaussian variances, sectorwise radial profiles, and arbitrary finite scalar linear integrals. Weighted translations and an irrational rotation construct null perturbations on every fractional zone.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-COMPACT-DISCREPANCY-ORDINARY-PROJECTION-OBSTRUCTION",
+          "title": "Ordinary compact discrepancies realize all tilted slice identities and three spectator imbalances",
+          "scope": "At each positive correlation there is an ordinary balanced discrepancy obeying all three CD1 projections with three nonzero spectator imbalances and pairwise distinct angular masses on a positive-measure set of radii. It equals the simplex outside an arbitrarily small annulus, and its zero-price scores still select the reference simplex. Projection identities and exact inner and outer simplex geometry leave the nonlinear winner rule as a separate condition.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-RIGHT-CONTACT",
+          "title": "The simplex score-weighted perimeter bounds the derivative at a right contact",
+          "scope": "WC1 expresses the correlation derivative at an actual maximizer as the supremum of a surface tensor energy over unit-bounded interface fields. WC3 and its rigidity case imply a uniformly strict weighted-perimeter deficit on compact correlation bands for nonsimplex maximizers of no greater derivative, including right ties. WC4 identifies the required comparison as a control of the correlation-regret derivative by normal misalignment.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-UNRESTRICTED-OBSTRUCTION",
+          "title": "Concentric balanced cells disprove the unrestricted weighted-perimeter bound",
+          "scope": "For a balanced disk, annulus and exterior partition, the simplex-score-weighted perimeter remains bounded near one uniformly over orientations, whereas the simplex derivative diverges. Every fixed finite-perimeter partition giving zero surface mass to centered lines has weighted perimeter little-oh of the simplex derivative, uniformly over orientations.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-COMPACT-DISCREPANCY-ENTIRE-DILATION-DEFICIT",
+          "title": "The compact-defect fixed-variance dilation deficit is entire with strict endpoint signs",
+          "scope": "For an actual nonsimplex planar maximizer with simplex exterior, scaling with sqrt(1-t^2) fixes its conditional source variance. The rescaled relative deficit divided by 1-t^2 is entire, has positive initial derivative, and equals a strictly positive Euclidean compact-defect comparison at one. FV5 bounds its zeros uniformly over compact correlation bands and bounded supports.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-COMPACT-DISCREPANCY-DILATION-PATH-CURVATURE",
+          "title": "Fixed-variance scaling strictly decreases compact-defect contact curvature",
+          "scope": "At a nonsimplex tied maximizer with simplex exterior, the rescaled path has the same unnormalized first deficit derivative as the fixed shape at the tie and strictly smaller second derivative. FV6–FV7 give the exact difference in the weighted dilation form. The rescaling need not preserve balance away from the tie.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-COMPACT-DISCREPANCY-FINITE-AFFINE-STATIONARY-ORBIT",
+          "title": "A compact nonsimplex maximizing shape gives finitely many stationary affine images and correlations",
+          "scope": "Any stationary affine image of a fixed nonsimplex maximizer with simplex exterior is a centered similarity of it. After factoring orthogonal transformations there are only finitely many positive scaling-correlation pairs whose actual interfaces satisfy the stationary pair-score equations, even if their means differ. The proof uses exterior reflections, the finite list of tilted projection variances, and analyticity at a regular off-line interface point.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-OFF-CENTER-BALANCED-FINITE-SCORE-JETS",
+          "title": "Every prescribed finite set of stationary score jets permits an off-center Y junction",
+          "scope": "At each fixed positive correlation and finite order m, a balanced ordinary Y partition can have any sufficiently small nonzero vertex displacement, exact regular tripod germ there, original simplex exterior, three unpriced scores equal at the vertex, and all three germ tangential jets through order m zero. A nonzero order m+1 derivative makes global stationarity fail. Independent standard and tilted Gaussian wall moments yield the finite-dimensional implicit construction.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_OFF_CENTER_JUNCTION_JETS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-LONG-CENTRAL-SAME-PAIR-ARC-EXCLUSION",
+          "title": "Long two-sided arcs of one pair cannot pass near the Gaussian origin",
+          "scope": "On every compact positive correlation band, a maximizer with positive cell masses, uniformly bounded below, cannot contain a same-pair regular embedded arc of sufficiently large length in both directions from a point sufficiently close to the origin. The arclength comparison allows arbitrary curvature and arbitrarily many other components. The centered complete straight line is a special case.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-PAIR-INTERFACE-OMISSION-NOISE-BOUND",
+          "title": "A retained part of a central pair path obeys a one-dimensional noise boundary bound",
+          "scope": "PA6 bounds the one-dimensional Ornstein–Uhlenbeck interaction of retained arclength parameters by the normalized pair-score derivative. PA7 forces a positive omitted Gaussian mass on any sufficiently central path whose retained part is a regular same-pair interface. The omitted portions can be disconnected or of other pair types.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-COMPLETE-DORMANT-LINE-OFFSET-BOUND",
+          "title": "A complete dormant straight line must have a quantitatively noncentral offset",
+          "scope": "For a complete straight line of actual pair interface with dormant third score c_j, PA1 gives a strict explicit bound on its offset b by the centered-band derivative extremum and the two-sided insertion inequality. The bound concerns an actual dormant wall, not an inactive score equality line.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-RIGHT-TIE-AT-MOST-TWO-LONG-CENTRAL-ARMS",
+          "title": "A right-accumulating nonsimplex tie has at most two long central pair arms",
+          "scope": "On compact positive correlation bands, at most two pairwise disjoint sufficiently long regular arms can start sufficiently close to the origin at a nonsimplex right-accumulating tied maximizer. PA8 excludes a repeated pair by joining two arclength parameters in the comparison, while OA8 excludes three distinct pair types. The arms need not share a junction or pair type.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-RIGHT-TIE-THREE-WINNER-ANNULUS-JUNCTION",
+          "title": "A sufficiently long central annulus crossed by all three winners must contain a triple junction",
+          "scope": "At a nonsimplex right-accumulating tie, if each strict-winner set has an inner-to-outer path across an annulus starting in the central disk and wider than the long-arm threshold, then there is a genuine triple junction in the closed annulus. Otherwise the three winner crosscuts force three disjoint long pair arcs by rectangle separation.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-TWO-ENDPOINT-SCALAR-HERMITE-OBSTRUCTION",
+          "title": "Endpoint signs, nonnegative Hermite weights and perimeter-order tails permit any failure interval",
+          "scope": "EP1–EP2 construct an abstract nonnegative Hermite-weight profile with the simplex constant and total mass, strict degree-one loss, positive perimeter-order deficit near one, and strict advantage exactly on any prescribed interior interval. Both contact orders can be chosen to be arbitrary odd positive integers. This is a scalar obstruction, not a partition.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-GAUSSIAN-L2-ENDPOINT-PROFILE-COVARIANCE-OBSTRUCTION",
+          "title": "Compact Gaussian L2 models preserve the covariance tests and can have accumulating failure intervals",
+          "scope": "EP3 realizes the abstract contact profiles with exact mean, label-coordinate orthogonality, sum one and stochastic scalar transition matrices. The covariance response is orthogonally invariant and strictly trace-free subharmonic, and the covariance majorization comparisons persist on a rotation-closed envelope. Strong compactness and uniform separation from the simplex still allow infinitely many prescribed accumulating failure intervals in this model. Its functions cannot be [0,1]-valued.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-FAILURE-INTERVAL-ACCUMULATION-TANGENTIAL-TIE",
+          "title": "Accumulating strict failure intervals force an ordinary nonsimplex tangential tie",
+          "scope": "Under the known initial and near-one intervals, any accumulation of distinct strict failure components gives a nonsimplex balanced tied planar maximizer with equal first derivative and nonnegative fixed-shape simplex deficit curvature. EP5 also gives width at least 2 eta/K whenever a fixed tied competitor has inward slope advantage at least eta and K bounds the second deficit derivative on the component closure.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-COMPACT-DISCREPANCY-EXACT-CENTRAL-TRIPOD",
+          "title": "Compact simplex discrepancies have an exact centered simplex or antipodal germ",
+          "scope": "A balanced planar maximizer agreeing with a centered simplex outside a compact set agrees near the origin with that simplex or its antipode. The germ radius is uniform on compact positive-correlation bands, with no common bound on the discrepancy support. Any exact straight active pair segment lies on its reference line.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-ANTIPODAL-COMPACT-GERM-JUNCTION-COUNT",
+          "title": "An antipodal compact germ forces a genuine junction on each reference half-ray",
+          "scope": "In a maximizing compact simplex discrepancy, a reverse central orientation requires at least six extra genuine triples besides the origin. An excursion with both sign crossings in the preserved orientation also creates two junctions on the affected half-ray. At a nonsimplex right tie at least one of the three exact germ arms reaches a genuine junction within a uniform arclength.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-THETA-ROTATION-CUT-MATRIX",
+          "title": "Exact mass-constrained rotational cut matrix on compact theta networks",
+          "scope": "Piecewise multiples of the rotational Jacobi speed have a signed Mehler Laplacian and endpoint-density mass columns. If the junction radii differ, whole-arm cuts leave only rotation after mass balance. One internal cut and three cuts at common radius give respectively scalar and three-dimensional reductions modulo rotation.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-THETA-ROTATION-NEAR-LOCAL-CUT",
+          "title": "Four connected rotation-cut pieces give a negative direction near the local limit",
+          "scope": "For a fixed compact embedded theta geometry with at least four connected components after cutting at selected regular finite-order sign changes of the rotation, the mass-balanced cut matrix has a negative direction for sufficiently large r below one at which that shape satisfies the stationary equations. The threshold depends on the cut geometry and requires uniform quantitative control for varying shapes.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-THETA-THIN-MIDDLE-FOLD-EXCLUSION",
+          "title": "A compact theta with exterior graphs must have thick middle folds",
+          "scope": "If both exterior arcs of an actual compact theta maximizer are graphs over one axis, the spread of the middle crossings must exceed 2 sqrt(2 log 2) sqrt(1-r^2) on a set of positive projected Gaussian measure. The proof supplies an explicit strictly negative balanced planar direction under the excluded width condition. In a fixed disk and on a compact positive correlation band the thick-fiber measure has a uniform positive lower bound. The width threshold is sharp for each isolated alternating Gaussian pairing.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-THETA-ALL-THIN-FOLDS-EXCLUSION",
+          "title": "Compact theta arms confined between the junctions must have thick folds",
+          "scope": "If all three arms lie between the junction abscissae for some axis and all per-arm vertical crossing spreads on almost every fiber are at most sqrt(1-r^2)/10, an explicit mass-preserving planar speed is strictly unstable. All arms may backtrack. At an actual balanced maximizer lying in a fixed disk on a compact interior correlation band, at least one arm exceeds this width on a uniformly positive measure of abscissae.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_THETA_ALL_THIN_FOLDS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-AFFINE-ROTATION-CUT-MASS-REPAIR",
+          "title": "An affine rotation gives an exact mass repair for a two-piece sign flip",
+          "scope": "The rotational cut form for a shifted center is a signed Mehler Laplacian with a translation correction on its diagonal. The two mass equations for a sign flip reduce to a two-by-two system; a solution produces a balanced variation whose energy is the signed cross interaction minus an explicit nonnegative translation penalty.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-THETA-BALANCED-NULL-CUT-ANALYTICITY",
+          "title": "Balanced zero modes are analytic along each regular theta arc",
+          "scope": "At an actual compact theta maximizer a balanced zero mode satisfies the surface equation with a fixed label multiplier. The analytic Gaussian transform and positive analytic regular score gradients give analytic continuation along each arc. A balanced cut of an affine rotation with genuinely different coefficients inside a nonzero analytic arc therefore has strictly positive second variation.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-EXTERIOR-INDEX-BOUND",
+          "title": "The exterior ordinary variation has an exponentially vanishing negative error",
+          "scope": "For actual balanced planar three-cell maximizers, the weighted ordinary Hessian is bounded below by the negative contribution from projection onto the two translations. On exterior speeds the relative negative error tends to zero at a Gaussian rate, uniformly on compact interior correlation bands, with no mass restriction on the speeds.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-CRITICAL-MEASURE-COMPACTNESS",
+          "title": "A critical reciprocal-gradient measure characterizes Gaussian interface compactness",
+          "scope": "The stationary interaction is unitarily conjugate to a translation-invariant Gaussian matrix kernel against a critical reciprocal-gradient interface measure with uniformly bounded unit-ball masses. The interaction is compact exactly when these unit-ball masses vanish at infinity. This condition gives exterior weighted coercivity with constant tending to one.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN",
+          "title": "Escaping Gaussian interface windows have dilation-linked limits",
+          "scope": "The conditional winner rule links translated local limits at consecutive points of the contraction orbit, with smooth score convergence. Failure of exterior compactness produces a nonzero translated limiting measure supported on critical maximal pair ties in one chart. The limiting measure retains nonnegative ordinary second variation.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-EXTERIOR-CRITICAL-TIE-COAREA",
+          "title": "Nondegenerate score extrema cannot carry limiting critical interface mass",
+          "scope": "The critical reciprocal-gradient measure cannot concentrate at a definite-Hessian limiting tie. At a nondegenerate saddle with the third score strictly lower, concentration requires a doubly exponentially small, nonzero critical contrast value in the translated exact scores. The estimates follow from uniform local coarea in the definite and indefinite quadratic coordinates.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-EXTERIOR-PERIODIC-LIMIT-CHAIN",
+          "title": "The dilation-chain winner equations admit infinitely many parallel walls",
+          "scope": "At equal prices a bi-infinite chain of periodic three-label stripe profiles with changing frequency satisfies the exact translated winner equations. The pair gradients in each fixed chart are nonzero on the walls, so local score nondegeneracy and finite-window weighted stability alone do not give a wall count for the abstract chain. No actual global Gaussian maximizer realizing the chain is asserted.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-SINGLE-PARTITION-EXTERIOR-CENTRAL-WINDOW-OBSTRUCTION",
+          "title": "Fixed exterior and moving central windows can be prescribed independently",
+          "scope": "A single exactly balanced partition can realize a given ordinary two-sided score chain as all its fixed-index exterior limits, with smooth convergence of their smoothed scores, and have an independently prescribed bounded central profile encountered at a moving index. The construction prescribes disjoint balls of vanishing Gaussian total tail mass. The resulting partition is not assumed stationary or maximizing.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-SEMICIRCLE-RADIAL-TWIST-INSTABILITY",
+          "title": "A nonconstant radial twist in a semicircle is infinitesimally unstable",
+          "scope": "For the equal adjacent arc class, if the angles lie essentially in a closed semicircle, a nonconstant angle yields a strictly increasing first variation of stability under a smooth mass-preserving radial rotation, except for the antipodal-only case. In that case a smooth radial rotation gives strictly positive second derivative of stability.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical audit."
+        },
+        {
+          "id": "PIS-THREE-CELL-EQUAL-ADJACENT-ARC-BOUNDED-CELLS-EXCLUSION",
+          "title": "Radial alignment excludes two bounded cells in the equal adjacent arc class",
+          "scope": "A balanced three-cell global maximizer whose radial slices have two equal adjacent arcs cannot have both corresponding cells bounded. Pairwise radial alignment forces a common reflection transposing those cells, so the reflection reduction makes every cell unbounded. A measurable neighborhood of any given genuinely twisted template is also excluded at fixed positive correlation.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
           "checker": null,
           "artifact_hash": null,
           "evidence": [],
@@ -316444,10 +317174,64 @@
         "next_action": "Reconstruct the quantitative core and tail comparisons and the exact angular equality at 221/500."
       },
       {
+        "id": "SRC-PIS-SIX-CELL-STATIONARY-GAP-EXPLORATORY-PROBE",
+        "kind": "source",
+        "topic": "moments",
+        "origin": "internal",
+        "status": "partial",
+        "title": "Exploratory six-cell stationary-gap probes",
+        "scope": "Two scrambled Sobol Ritz runs and two importance-weighted folded Nystrom runs at each of rho=0.2,0.35,0.5,0.65,0.8,0.9. Reported ratios and tail diagnostics have no directed error enclosure.",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "plurality-stability/probe_six_cell_reversible_chain.py",
+            "sha256": "fee0af551a6779e3d07fbb21e78a26b1d88371f6568a9b27949a9300441cc849",
+            "locator": "Exploratory two-method probe"
+          },
+          {
+            "path": "plurality-stability/six_cell_reversible_chain_probe.json",
+            "sha256": "bc03958fb49ae7f1f2710c10a15d83d5ee4e0887aecbb2ebaa9aa3c2b1abe4b4",
+            "locator": "Retained four runs and package versions"
+          }
+        ]
+      },
+      {
+        "id": "SRC-PIS-SIX-CELL-WEIGHTED-STANDARD-DIRECTED-COVER-THROUGH-7-10",
+        "kind": "source",
+        "topic": "moments",
+        "origin": "internal",
+        "status": "proved",
+        "title": "Five directed six-cell standard-sector slabs and three stationary-gap points",
+        "scope": "The five contiguous slabs cover [0,7/10] exactly in the finite-rank form. Three scalar-rho calculations certify the sufficient Markov gap ratio at 1/5, 1/2 and 13/20 with directed norms and an explicit mass correction.",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "plurality-stability/six_cell_weighted_gap_verification.json",
+            "sha256": "978abf1b513ebeed43f8d0d1722cc20b6e884d1850f395d9e02b6225fd22ede8",
+            "locator": "Five exact interval traces and three exact point bounds"
+          },
+          {
+            "path": "plurality-stability/check_six_cell_weighted_gap.py",
+            "sha256": "8e11f042c7fe2b97c12f3547b01e54d3af1ca71a7dcab79a1dbf3bdbf6b05678",
+            "locator": "Retained directed checker"
+          },
+          {
+            "path": "plurality-stability/check_tetrahedral_standard_gap.py",
+            "sha256": "37d7bc58dfe8e125bc70ffe8c8cc3b68882a918966846d61c1530470e3a68738",
+            "locator": "Pinned exact Hermite inputs"
+          },
+          {
+            "path": "plurality-stability/check_tetrahedral_weighted_gap.py",
+            "sha256": "c32516f201e12a838f6148006f46c686bc7f822602ad7e5719781524d8c33020",
+            "locator": "Pinned exact Hermite inputs"
+          }
+        ]
+      },
+      {
         "id": "GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL",
         "kind": "gap",
         "title": "The Gaussian simplex full-interface kernel at arbitrary positive correlation",
-        "scope": "For every fixed k>=2 and 0<rho<1, establish nonnegativity of the full Gaussian simplex interface form on balanced L2 facet speeds with exactly the geometric rotational kernel. For k=3,4,5 the all-correlation gaps are proved, and k=2 has its separate interface argument. For k>=6 the full gap holds through p_k/(2-p_k), where p_k is the Gaussian facet probability. For k=6 and k=7 the full gap also holds sufficiently near one. The standard sector has normalized near-one limit one at each fixed k>=4. Every nonstandard six-cell block, every higher exterior hook, every nonstandard two-row block, and the mixed (k-3,2,1) family are controlled at all positive correlations.",
+        "scope": "For every fixed k>=2 and 0<rho<1, establish nonnegativity of the full Gaussian simplex interface form on balanced L2 facet speeds with exactly the geometric rotational kernel. For k=3,4,5 the all-correlation gaps are proved, and k=2 has its separate interface argument. For k>=6 the full gap holds through p_k/(2-p_k), where p_k is the Gaussian facet probability. For k=6 and k=7 the full gap also holds sufficiently near one. The standard sector has normalized near-one limit one at each fixed k>=4. Every nonstandard six-cell block, every higher exterior hook, every nonstandard two-row block, and the mixed (k-3,2,1) family are controlled at all positive correlations. The six-cell gap now holds throughout 0<rho<=7/10, with a dimension-independent gap modulo rotations. The sufficient stationary gap comparison also holds through 1/3 and at the three certified test points. The full all-correlation question remains open.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -316529,9 +317313,19 @@
             "path": "plurality-stability/SIX_CELL_REFLECTION_CHAMBER_TARGETS.md",
             "sha256": "39ca773aa8a843e129658a14be26b67c79896d2dd4bbf2a0720b9dc9ead86956",
             "locator": "Restrictions on the unweighted standard-sector comparison"
+          },
+          {
+            "path": "plurality-stability/SIX_CELL_REVERSIBLE_CHAIN.md",
+            "sha256": "92245126880a9d73db4843125719b27fa00c7ae85ea5b35427bf58f2f2e1f3a0",
+            "locator": "MC1–MC5 and axial Metropolis comparison"
+          },
+          {
+            "path": "plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md",
+            "sha256": "1fb04251756313df249dabe310c2a4254a88449c197efd9c2a7b66d0e37395ba",
+            "locator": "Directed standard-sector gap through 7/10 and stationary-ratio lower bounds"
           }
         ],
-        "next_action": "In six cells, only (S51) for the balanced standard sector at intermediate correlation remains. Under the unweighted radius-preserving same-correlation comparison, A4 is the sole candidate and its elementary worst-row bound is insufficient. Seek a sharper ordinary-balance comparison, possibly using the weighted mass Schur criterion. At larger k, seek the remaining standard and nonhook estimates outside the explicit initial, near-one and Hermite-floor ranges. The mixed-wall result gives moving-field limits for the three-row family and for small triple-sign projector sums. Global exclusion of a nonsimplex tie is a separate problem."
+        "next_action": "Bridge the six-cell standard sector above 7/10 to the qualitative near-one theorem. The invariant stationary gap has the sufficient normalized limit two near one. Seek an explicit intermediate bound by a sharper directed tail, continuous comparison or mass-weighted block decomposition. Higher cell counts retain their separate unresolved standard and nonhook sectors."
       },
       {
         "id": "SRC-MIXED-HURWITZ-ISOLATION-WRITTEN-PROOF",
@@ -318204,7 +318998,7 @@
         "id": "GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX",
         "kind": "gap",
         "title": "Exclude bounded pockets surrounded by one cell at three-cell maximizers",
-        "scope": "Determine whether an actual balanced planar three-cell global maximizer at 0<rho<1 can have a positive-area bounded component outside the closure of one strict winner set. The component may contain one or both other labels. The third-negative-direction argument excludes centered disks and some translated circles, with an exclusion also for thin annular trapping. Size, exterior-interaction and angular restrictions leave the unrestricted geometry open. The dormant-wall thin-layer test gives the same-pair norm bound and explicit necessary radius conditions for compact dormant walls. This does not resolve arbitrary pockets. Compact simplex discrepancies must have three spectator imbalances. A singleton outermost facet requires a collinear four-arm cusp with the stated leading ratio; multiple exposures remain possible.",
+        "scope": "Determine whether an actual balanced planar three-cell global maximizer at 0<rho<1 can have a positive-area bounded component outside the closure of one strict winner set. The component may contain one or both other labels. The third-negative-direction argument excludes centered disks and some translated circles, with an exclusion also for thin annular trapping. Size, exterior-interaction and angular restrictions leave the unrestricted geometry open. The dormant-wall thin-layer test gives the same-pair norm bound and explicit necessary radius conditions for compact dormant walls. This does not resolve arbitrary pockets. Compact simplex discrepancies must have three spectator imbalances. A singleton outermost facet requires a collinear four-arm cusp with the stated leading ratio; multiple exposures remain possible. CTurn1–CTurn4 force a quantitative amount of backward travel on a compact three-arc theta network. Such networks with unrestricted turning and general enclosed components remain open. On compact theta networks the rotational cut form has an exact endpoint-flux compression. Whole-arm cuts at unequal vertex radii yield only the original rotation. Sufficiently many regular nodal cuts on a fixed geometry give instability near the local limit. At arbitrary correlation, theta networks with two exterior graphs must have thick middle folds, and theta networks confined between the junction abscissae must have thick folds on at least one arm. The general enclosed-component index argument is open. A finite-amplitude radial rotation excludes the class with two equal adjacent arcs on each Gaussian circle and both corresponding cells bounded, including arbitrarily winding profiles in that class.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -318229,12 +319023,12 @@
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "Inserting the dormant label along a wall, NT1–NT3"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "A radius bound for compact dormant walls, NT4–NT5"
           },
           {
@@ -318246,6 +319040,61 @@
             "path": "plurality-stability/THREE_CELL_OUTERMOST_COMPACT_DEFECT.md",
             "sha256": "22af4dfb52614449251ad0fca26ca9da1c76d17471584419fb02ef7ebe2fdfdf",
             "locator": "Location and linear geometry and Matched first terms of the slice lengths"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
+            "locator": "CTurn1–CTurn4, a compact three-arc turning obstruction"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+            "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+            "locator": "The exact matrix and its mass constraints, TC1–TC3 and TC5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+            "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+            "locator": "Sign control when cuts outnumber the constraints, TC4"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+            "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+            "locator": "A balanced geometric theta with only two rotation cuts"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+            "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+            "locator": "Signed intersections on a vertical fiber; An exact threshold for alternating Gaussian pairings; A strictly negative mass-preserving second variation, TF1–TF2"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ALL_THIN_FOLDS.md",
+            "sha256": "0b166c3ba10788f14d97cbe9c43fe290aa8638b8c70b1cc6e3e05a77c482e164",
+            "locator": "Signed crossings of each arm through A positive measure of thick fibers, TA1"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+            "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+            "locator": "Affine centers for rotational cuts, TF3–TF4"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+            "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+            "locator": "Analytic continuation for balanced null cuts, TF5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+            "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+            "locator": "Alignment on a pair of circles, RU1"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+            "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+            "locator": "Infinitesimal rotation within a semicircle"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+            "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+            "locator": "Consequence for winding compact networks, RU2"
           }
         ],
         "next_action": "For a general single-label pocket, control the exterior trace and translation projection in IC9, or extend the first extra-block circle test beyond thin annuli. A two-label pocket retains signed interactions across its internal interface and needs a separate estimate."
@@ -318254,7 +319103,7 @@
         "id": "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
         "kind": "gap",
         "title": "Exclude a nonsimplex global maximizer tied with the simplex",
-        "scope": "For every fixed k>=3 and 0<rho<1 at which the balanced regular simplex is globally optimal, exclude an ordinary balanced nonsimplex partition with the same Gaussian noise stability. In particular rule out this alternative at the endpoint of the initial global optimality interval. A strictly positive simplex interface Hessian only supplies a local exclusion and does not prove this global rigidity. The full-rank affine fan alternative is excluded at every positive correlation by stationary score rigidity. General non-affine and rank-deficient candidates remain in scope. Reflected three-cell tangential ties approached by simplex-optimal correlations must have strictly positive fixed-partition deficit curvature. The moving tangential competitors and the balanced pair patches satisfy FC1–FC3. A connected semialgebraic maximizer with only one unbounded cell must have a compact curved theta graph with projection backtracking. The discrete affine, isolated-end and compact exterior-potential tests exclude additional classes of actual maximizing contacts. They leave unclassified networks and nonlinear oscillatory ends open. Connected strict winners with a semialgebraic jump network have been classified. Connectivity and semialgebraicity are not known for arbitrary maximizing contacts. Central score transversality narrows possible degenerations of the network to collinear triple equalities or a two-label arc identically tied with its absent label. Every bounded isolated graph end is straight by shifted-contour Gaussian rate improvement. An affine-separated pair already forces connected strict winners above 2/3. A centered affine-separated finite-height graph is symmetric when one half-profile is monotone or the proper junction level has odd endpoint orders. An asymmetric graph must cross its reflection at least three times. Exclusive-fiber graphs with a convex height have been classified. Exclusive-fiber graphs with finite switch sets already have one separating line. A reflected maximizer with an eventually convex tail is simplicial. The smooth reflected tail phase controls the correlation derivative but need not yet be linear. Pointwise-distinct triples of maximizing assignments including a simplex cannot contain a nonsimplex competitor. A candidate in the transition range cannot have two convex cells, or have both an affine-separated pair and a convex cell. In the exclusive-fiber finite-height class, one algebraic outer arc or another exclusive label pair forces the simplex. A reflected nonsimplex eventually concave end requires slope above (1+sqrt(1+rho²))/rho. The local simplex value has an exact measurable quadratic expansion in the masses. A nonsimplex tie with unequal prices, or with zero prices and excessive mass curvature, forces coexistence at nearby unequal quotas if the simplex is unique immediately to the left. Joint covariance and quota perturbations can detect a tie with unequal pressures or covariance derivatives. A strict contracted fourth-moment discrepancy is necessary at a nonsimplex first contact. The local simplex branch has an exact second-order covariance–quota envelope with nonzero mixed coefficient. These supply measurable joint perturbation tests for first-order-matched candidates. Compact buffered regular subarcs cannot supply the full measurable response of a positive-curvature tangential tie. A nonsimplex affine-separated graph without reflection requires infinitely many crossings. Three straight isolated ends give an exterior simplex and enforce strict tilted degree-one loss for any compact discrepancy. Under connected strict winners, the jump graph has only the three classified finite topologies, with no assumption about the geometry at infinity. Connectedness and an asymptotic classification of curved ends remain open. Three bounded isolated ends reduce the candidate to a compact simplex discrepancy, which requires bounded receiving components of every label. Two strictly obtuse bounded isolated ends already force zero prices and exclude higher-order contact. The existence of these ends and compact-core exclusion remain open in general. Two strictly obtuse bounded isolated ends with a connected common winner force the simplex when the third backward interface is a single continuous graph. In exact three-end bounded wedge networks, positively spanning directions force a centered simplex exterior or reflection, excluding higher-order ties there. A compact discrepancy has no spectator bisector, and a uniquely exposed outermost discrepancy must be an interior four-arm cusp. General non-graph ends and compact discrepancies remain unresolved. The two obtuse full-half-plane ends suffice with a connected common winner. A common wedge at infinity or an exactly conical exterior yields simplex exterior without a third graph. Higher-order contact is excluded throughout exact-three bounded wedge geometry. General curved or disconnected tails, compact discrepancies and ordinary first contacts remain unresolved.",
+        "scope": "For every fixed k>=3 and 0<rho<1 at which the balanced regular simplex is globally optimal, exclude an ordinary balanced nonsimplex partition with the same Gaussian noise stability. In particular rule out this alternative at the endpoint of the initial global optimality interval. A strictly positive simplex interface Hessian only supplies a local exclusion and does not prove this global rigidity. The full-rank affine fan alternative is excluded at every positive correlation by stationary score rigidity. General non-affine and rank-deficient candidates remain in scope. Reflected three-cell tangential ties approached by simplex-optimal correlations must have strictly positive fixed-partition deficit curvature. The moving tangential competitors and the balanced pair patches satisfy FC1–FC3. A connected semialgebraic maximizer with only one unbounded cell must have a compact curved theta graph with projection backtracking. The discrete affine, isolated-end and compact exterior-potential tests exclude additional classes of actual maximizing contacts. They leave unclassified networks and nonlinear oscillatory ends open. Connected strict winners with a semialgebraic jump network have been classified. Connectivity and semialgebraicity are not known for arbitrary maximizing contacts. Central score transversality narrows possible degenerations of the network to collinear triple equalities or a two-label arc identically tied with its absent label. Every bounded isolated graph end is straight by shifted-contour Gaussian rate improvement. An affine-separated pair already forces connected strict winners above 2/3. A centered affine-separated finite-height graph is symmetric when one half-profile is monotone or the proper junction level has odd endpoint orders. An asymmetric graph must cross its reflection at least three times. Exclusive-fiber graphs with a convex height have been classified. Exclusive-fiber graphs with finite switch sets already have one separating line. A reflected maximizer with an eventually convex tail is simplicial. The smooth reflected tail phase controls the correlation derivative but need not yet be linear. Pointwise-distinct triples of maximizing assignments including a simplex cannot contain a nonsimplex competitor. A candidate in the transition range cannot have two convex cells, or have both an affine-separated pair and a convex cell. In the exclusive-fiber finite-height class, one algebraic outer arc or another exclusive label pair forces the simplex. A reflected nonsimplex eventually concave end requires slope above (1+sqrt(1+rho²))/rho. The local simplex value has an exact measurable quadratic expansion in the masses. A nonsimplex tie with unequal prices, or with zero prices and excessive mass curvature, forces coexistence at nearby unequal quotas if the simplex is unique immediately to the left. Joint covariance and quota perturbations can detect a tie with unequal pressures or covariance derivatives. A strict contracted fourth-moment discrepancy is necessary at a nonsimplex first contact. The local simplex branch has an exact second-order covariance–quota envelope with nonzero mixed coefficient. These supply measurable joint perturbation tests for first-order-matched candidates. Compact buffered regular subarcs cannot supply the full measurable response of a positive-curvature tangential tie. A nonsimplex affine-separated graph without reflection requires infinitely many crossings. Three straight isolated ends give an exterior simplex and enforce strict tilted degree-one loss for any compact discrepancy. Under connected strict winners, the jump graph has only the three classified finite topologies, with no assumption about the geometry at infinity. Connectedness and an asymptotic classification of curved ends remain open. Three bounded isolated ends reduce the candidate to a compact simplex discrepancy, which requires bounded receiving components of every label. Two strictly obtuse bounded isolated ends already force zero prices and exclude higher-order contact. The existence of these ends and compact-core exclusion remain open in general. Two strictly obtuse bounded isolated ends with a connected common winner force the simplex when the third backward interface is a single continuous graph. In exact three-end bounded wedge networks, positively spanning directions force a centered simplex exterior or reflection, excluding higher-order ties there. A compact discrepancy has no spectator bisector, and a uniquely exposed outermost discrepancy must be an interior four-arm cusp. General non-graph ends and compact discrepancies remain unresolved. The two obtuse full-half-plane ends suffice with a connected common winner. A common wedge at infinity or an exactly conical exterior yields simplex exterior without a third graph. Higher-order contact is excluded throughout exact-three bounded wedge geometry. General curved or disconnected tails, compact discrepancies and ordinary first contacts remain unresolved. Three sufficiently long central pair arms force a strict derivative advantage at a nonsimplex maximizer and cannot occur at a right-accumulating tie or a maximum of the strict advantage. Compact projection constraints alone permit ordinary balanced asymmetric annular discrepancies. Nonsimplex compact maximizing shapes have only finitely many stationary scaling-correlation pairs in their affine orbit. The simplex-weighted perimeter gives a strict right-contact test, whose required lower bound is false for arbitrary balanced partitions. General last-endpoint maximizers remain unclassified. Balanced off-center Y shapes can satisfy arbitrarily high finite-order stationary score jets at the vertex. A nonsimplex right contact has at most two sufficiently long central pair arms, with or without a common junction. An annulus of sufficient width crossed by all three winners then needs a genuine junction. Accumulating failure components force an ordinary nonsimplex tangential tie, but the scalar Hermite and covariance constraints alone allow such accumulation in a compact abstract family. For the exterior interface, the index bound gives almost stability, and compactness is equivalent to vanishing critical reciprocal-gradient mass in unit balls. Any failure thereof produces a critical maximal tie in a dilation-linked local limit. Nondegenerate extrema do not carry limiting critical mass. The limit equations alone allow infinitely many walls. Finite ends and the unrestricted theta instability remain open. Realizing every fixed exterior chart in one balanced partition still leaves the moving central chart independent under the limiting winner equations alone.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -319169,22 +320018,22 @@
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "The local graph and its three faces through One unbounded strict winner"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "One unbounded strict winner"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "Straight arcs give affine separation"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "Finitely many strict-winner components suffice for a finite graph"
           },
           {
@@ -319229,22 +320078,22 @@
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "Finitely many strict-winner components suffice for a finite graph, converse using dormant ties"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "A dormant score along an entire interface component"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "Inserting the dormant label along a wall, NT1–NT3"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "A radius bound for compact dormant walls, NT4–NT5"
           },
           {
@@ -319386,6 +320235,191 @@
             "path": "plurality-stability/GAUSSIAN_SIMPLEX_DIMENSION_FREE_LOCAL_GROWTH.md",
             "sha256": "3d9f54ba56c8c8efbf6e5f5b4e6eb0517e7c6a47f46c7c47e7ab05b438a9ad5f",
             "locator": "Exact conical delay at a possible first planar tie, DL7–DL8"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+            "sha256": "f1b40b2fe25a6cb8fbb36a9618ed19bdef3babe150dfba4da9b8be972ea8417c",
+            "locator": "An unoriented surface bound from stability and A pointwise arclength comparison, OA1–OA5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+            "sha256": "f1b40b2fe25a6cb8fbb36a9618ed19bdef3babe150dfba4da9b8be972ea8417c",
+            "locator": "A uniform strict term from the translation gap, OA6–OA7"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+            "sha256": "f1b40b2fe25a6cb8fbb36a9618ed19bdef3babe150dfba4da9b8be972ea8417c",
+            "locator": "Arcs close to the origin and endpoint implications, OA8 and the finite-arm estimate"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md",
+            "sha256": "f8daec9943f9d33216ddbc7fd1699c59e1c7866c8b7b266ed2c9985c64ef11b8",
+            "locator": "Which constraints can be preserved through Radial constraints and ordinary realization"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md",
+            "sha256": "f8daec9943f9d33216ddbc7fd1699c59e1c7866c8b7b266ed2c9985c64ef11b8",
+            "locator": "The annular examples and their score winner"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md",
+            "sha256": "ed5c4be20f46abdc9e71fa5d7e19e04d07fa0301ed30d49059729447916fb4ab",
+            "locator": "A direction supremum for the correlation derivative through The exact deficit for the weighted perimeter, WC1–WC4"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md",
+            "sha256": "ed5c4be20f46abdc9e71fa5d7e19e04d07fa0301ed30d49059729447916fb4ab",
+            "locator": "The unrestricted weighted perimeter comparison fails near one"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+            "sha256": "961e7b4e3966003fb3f16a85aa25205d567fe84907c2e64967e717de7a8d0c1a",
+            "locator": "Entire deficit and its endpoint values, FV1–FV5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+            "sha256": "961e7b4e3966003fb3f16a85aa25205d567fe84907c2e64967e717de7a8d0c1a",
+            "locator": "Fixed and rescaled derivatives at a tie, FV6–FV7"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+            "sha256": "961e7b4e3966003fb3f16a85aa25205d567fe84907c2e64967e717de7a8d0c1a",
+            "locator": "Finitely many stationary parameters in an affine orbit, FV8"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_OFF_CENTER_JUNCTION_JETS.md",
+            "sha256": "e2afb76c5f97faea0dfa5064cfff6e89f0d4d2b6036f5c2da230fd25e99b9784",
+            "locator": "A family of genuine Y partitions and Independent wall moments for the score jets, OJ1–OJ3"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+            "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+            "locator": "Comparison by arclength, PA2–PA5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+            "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+            "locator": "A one-dimensional comparison with missing interface portions, PA6–PA7"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+            "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+            "locator": "The offset bound for a dormant straight wall, PA1"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+            "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+            "locator": "Two separate arms of one pair and the right-contact count, PA8"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+            "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+            "locator": "An annulus crossed by all three strict winners"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+            "sha256": "6efd422a43b79787c0454fe0d48337230c344fdba0a9ed7925336f2345dd924f",
+            "locator": "Exact normalization and contact signs, EP1–EP2"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+            "sha256": "6efd422a43b79787c0454fe0d48337230c344fdba0a9ed7925336f2345dd924f",
+            "locator": "A Gaussian tuple and its matrix covariance response and The abstract profile obstruction persists under compactness, EP3"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+            "sha256": "6efd422a43b79787c0454fe0d48337230c344fdba0a9ed7925336f2345dd924f",
+            "locator": "Accumulation and width of actual failure intervals, EP4–EP5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md",
+            "sha256": "2c04e2105b7febb75a4a3989cf3de6692e649437037be3fb3582e26ec0e466fd",
+            "locator": "Exact germ and uniform radius, CG1, and Other straight active segments lie on their reference lines"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md",
+            "sha256": "2c04e2105b7febb75a4a3989cf3de6692e649437037be3fb3582e26ec0e466fd",
+            "locator": "Genuine triple points on the reference lines, CG2 and the right-contact restriction"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+            "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+            "locator": "The exact matrix and its mass constraints, TC1–TC3 and TC5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+            "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+            "locator": "Sign control when cuts outnumber the constraints, TC4"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+            "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+            "locator": "A balanced geometric theta with only two rotation cuts"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+            "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+            "locator": "Signed intersections on a vertical fiber; An exact threshold for alternating Gaussian pairings; A strictly negative mass-preserving second variation, TF1–TF2"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ALL_THIN_FOLDS.md",
+            "sha256": "0b166c3ba10788f14d97cbe9c43fe290aa8638b8c70b1cc6e3e05a77c482e164",
+            "locator": "Signed crossings of each arm through A positive measure of thick fibers, TA1"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+            "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+            "locator": "Affine centers for rotational cuts, TF3–TF4"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+            "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+            "locator": "Analytic continuation for balanced null cuts, TF5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+            "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+            "locator": "Exterior stability up to a vanishing error, EI1"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+            "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+            "locator": "The critical measure for compactness, EI2–EI4"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+            "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+            "locator": "The dilation chain at infinity, EI5–EI8"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+            "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+            "locator": "Nondegenerate critical points and the critical measure, EI9–EI10"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+            "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+            "locator": "A periodic chain with three labels"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+            "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+            "locator": "Fixed exterior windows and a central window of the same partition, EI11"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+            "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+            "locator": "Alignment on a pair of circles, RU1"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+            "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+            "locator": "Infinitesimal rotation within a semicircle"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+            "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+            "locator": "Consequence for winding compact networks, RU2"
           }
         ],
         "next_action": "Exclude a nonsimplex tie in the unresolved intermediate range. The tied shape must have a uniformly positive dilation residual and annular mass error. At tangential endpoint contact, balanced dilation provides a curvature or radial-moment obstruction. Exact simultaneous circular saturation now forces the simplex. The remaining candidate has positive integrated angular envelope slack, uniformly on compact correlation intervals. Prove that this or another structural deficit exceeds any positive relaxed gain for a nonsimplex tied competitor."
@@ -319404,7 +320438,7 @@
         "sources": [
           {
             "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
-            "sha256": "ef0b8de00392fa73c73c10b6e3738191618e8bc4851e26c5072ab7e250dc9531",
+            "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
             "locator": "Changes away from higher junctions for any cell count; thin balanced changes"
           }
         ],
@@ -319414,7 +320448,7 @@
         "id": "GAP-PIS-NEAR-ONE-EXACT-OPTIMALITY",
         "kind": "gap",
         "title": "Exact fixed-cell simplex optimality in a correlation interval ending at one",
-        "scope": "For every fixed k>=3 prove or refute existence of epsilon_k>0 such that all balanced Gaussian partitions in d>=k-1 have stability at most the regular simplex for 1-epsilon_k<rho<1, with equality rigidity. Quantitative multi-bubble stability must be paired with nonlocal errors relative to moving competitors; the fixed-partition perimeter limit and fixed-b<1 exterior estimates do not settle this statement. CT12 proves strict comparison away from higher junctions for any fixed cell count and a necessary relative junction-loss bound for unrestricted ties or improvers. CT14–CT18 also treat triple junctions with fourth-score separation at the same radius scale and bound the necessary inner loss linearly in d_R. For k=4, arbitrary exterior-only changes beyond order (1-rho)^(-1/6) are excluded. CT19–CT20 give exponential fourth-score localization for actual maximizers, reducing the tetrahedral sign to polynomial-strength coercivity on a growing ball. BC1–BC9 prove a relative comparison for arbitrary block choice with ordered labels inside each block, on balls of order e sqrt(log(1/e)) in physical space. In tetrahedral 2+2 splits reflected pairs also qualify. The unrestricted CT19 core obligation remains. BC10 extends the ordered and reflected classes to a fixed small physical ball with polynomial margins, and also controls ordinary binary and cyclic transfer graphs with at most one arrow entering or leaving each label. BC11 gives an exactly balanced obstruction to the convex componentwise fractional cut on that scale. The unrestricted ordinary core comparison remains open. BR1–BR8 pay every shared-destination interaction and leave a single shared-source residual. Ordinary ET7 covers a sufficiently small noise-scale ball without transfer restrictions. ET1 transfers Euclidean coercivity relative to exact cost, with an explicit radius-dependent error.",
+        "scope": "For every fixed k>=3 prove or refute existence of epsilon_k>0 such that all balanced Gaussian partitions in d>=k-1 have stability at most the regular simplex for 1-epsilon_k<rho<1, with equality rigidity. Quantitative multi-bubble stability must be paired with nonlocal errors relative to moving competitors; the fixed-partition perimeter limit and fixed-b<1 exterior estimates do not settle this statement. CT12 proves strict comparison away from higher junctions for any fixed cell count and a necessary relative junction-loss bound for unrestricted ties or improvers. CT14–CT18 also treat triple junctions with fourth-score separation at the same radius scale and bound the necessary inner loss linearly in d_R. For k=4, arbitrary exterior-only changes beyond order (1-rho)^(-1/6) are excluded. CT19–CT20 give exponential fourth-score localization for actual maximizers, reducing the tetrahedral sign to polynomial-strength coercivity on a growing ball. BC1–BC9 prove a relative comparison for arbitrary block choice with ordered labels inside each block, on balls of order e sqrt(log(1/e)) in physical space. In tetrahedral 2+2 splits reflected pairs also qualify. The unrestricted CT19 core obligation remains. BC10 extends the ordered and reflected classes to a fixed small physical ball with polynomial margins, and also controls ordinary binary and cyclic transfer graphs with at most one arrow entering or leaving each label. BC11 gives an exactly balanced obstruction to the convex componentwise fractional cut on that scale. The unrestricted ordinary core comparison remains open. BR1–BR8 pay every shared-destination interaction and leave a single shared-source residual. Ordinary ET7 covers a sufficiently small noise-scale ball without transfer restrictions. ET1 transfers Euclidean coercivity relative to exact cost, with an explicit radius-dependent error. WD1–WD3 give uniform winning-phase density and confine the bounded-region outgoing interaction to shrinking neighborhoods where three reference scores are close, up to a Gaussian relative tail error.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -319459,7 +320493,7 @@
           },
           {
             "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
-            "sha256": "ef0b8de00392fa73c73c10b6e3738191618e8bc4851e26c5072ab7e250dc9531",
+            "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
             "locator": "Exact exterior comparison in three conical tubes"
           },
           {
@@ -319474,7 +320508,7 @@
           },
           {
             "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
-            "sha256": "ef0b8de00392fa73c73c10b6e3738191618e8bc4851e26c5072ab7e250dc9531",
+            "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
             "locator": "Arbitrary changes beyond a growing exterior radius, CT10–CT11"
           },
           {
@@ -319484,12 +320518,12 @@
           },
           {
             "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
-            "sha256": "ef0b8de00392fa73c73c10b6e3738191618e8bc4851e26c5072ab7e250dc9531",
+            "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
             "locator": "CT12-CT13: separated third-score region and required junction loss"
           },
           {
             "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
-            "sha256": "ef0b8de00392fa73c73c10b6e3738191618e8bc4851e26c5072ab7e250dc9531",
+            "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
             "locator": "Changes away from four-label junctions, CT14–CT18"
           },
           {
@@ -319511,6 +320545,11 @@
             "path": "plurality-stability/EUCLIDEAN_SIMPLEX_JUNCTION_TRANSFER.md",
             "sha256": "f36c53761132287639b256e723606058765a499c95d940428ce09226129ce800",
             "locator": "ET1–ET7 and physical-scale compatibility"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
+            "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
+            "locator": "WD1–WD5, density and outgoing localization"
           }
         ],
         "next_action": "Control the opposing outgoing transfer interaction by the unused excluded-row surplus and negative arrow interactions, or supply an unrestricted junction estimate. The existing CT19 radius is physical; a direct small-noise-scale bridge also needs stronger localization or a relative estimate valid on a larger support."
@@ -321511,22 +322550,22 @@
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "The local graph and its three faces through One unbounded strict winner"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "One unbounded strict winner"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "Straight arcs give affine separation"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "Finitely many strict-winner components suffice for a finite graph"
           },
           {
@@ -321571,22 +322610,22 @@
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "Finitely many strict-winner components suffice for a finite graph, converse using dormant ties"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "A dormant score along an entire interface component"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "Inserting the dormant label along a wall, NT1–NT3"
           },
           {
             "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-            "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+            "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
             "locator": "A radius bound for compact dormant walls, NT4–NT5"
           },
           {
@@ -321758,6 +322797,191 @@
             "path": "plurality-stability/GAUSSIAN_SIMPLEX_DIMENSION_FREE_LOCAL_GROWTH.md",
             "sha256": "3d9f54ba56c8c8efbf6e5f5b4e6eb0517e7c6a47f46c7c47e7ab05b438a9ad5f",
             "locator": "Exact conical delay at a possible first planar tie, DL7–DL8"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+            "sha256": "f1b40b2fe25a6cb8fbb36a9618ed19bdef3babe150dfba4da9b8be972ea8417c",
+            "locator": "An unoriented surface bound from stability and A pointwise arclength comparison, OA1–OA5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+            "sha256": "f1b40b2fe25a6cb8fbb36a9618ed19bdef3babe150dfba4da9b8be972ea8417c",
+            "locator": "A uniform strict term from the translation gap, OA6–OA7"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+            "sha256": "f1b40b2fe25a6cb8fbb36a9618ed19bdef3babe150dfba4da9b8be972ea8417c",
+            "locator": "Arcs close to the origin and endpoint implications, OA8 and the finite-arm estimate"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md",
+            "sha256": "f8daec9943f9d33216ddbc7fd1699c59e1c7866c8b7b266ed2c9985c64ef11b8",
+            "locator": "Which constraints can be preserved through Radial constraints and ordinary realization"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md",
+            "sha256": "f8daec9943f9d33216ddbc7fd1699c59e1c7866c8b7b266ed2c9985c64ef11b8",
+            "locator": "The annular examples and their score winner"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md",
+            "sha256": "ed5c4be20f46abdc9e71fa5d7e19e04d07fa0301ed30d49059729447916fb4ab",
+            "locator": "A direction supremum for the correlation derivative through The exact deficit for the weighted perimeter, WC1–WC4"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md",
+            "sha256": "ed5c4be20f46abdc9e71fa5d7e19e04d07fa0301ed30d49059729447916fb4ab",
+            "locator": "The unrestricted weighted perimeter comparison fails near one"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+            "sha256": "961e7b4e3966003fb3f16a85aa25205d567fe84907c2e64967e717de7a8d0c1a",
+            "locator": "Entire deficit and its endpoint values, FV1–FV5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+            "sha256": "961e7b4e3966003fb3f16a85aa25205d567fe84907c2e64967e717de7a8d0c1a",
+            "locator": "Fixed and rescaled derivatives at a tie, FV6–FV7"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+            "sha256": "961e7b4e3966003fb3f16a85aa25205d567fe84907c2e64967e717de7a8d0c1a",
+            "locator": "Finitely many stationary parameters in an affine orbit, FV8"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_OFF_CENTER_JUNCTION_JETS.md",
+            "sha256": "e2afb76c5f97faea0dfa5064cfff6e89f0d4d2b6036f5c2da230fd25e99b9784",
+            "locator": "A family of genuine Y partitions and Independent wall moments for the score jets, OJ1–OJ3"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+            "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+            "locator": "Comparison by arclength, PA2–PA5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+            "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+            "locator": "A one-dimensional comparison with missing interface portions, PA6–PA7"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+            "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+            "locator": "The offset bound for a dormant straight wall, PA1"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+            "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+            "locator": "Two separate arms of one pair and the right-contact count, PA8"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+            "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+            "locator": "An annulus crossed by all three strict winners"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+            "sha256": "6efd422a43b79787c0454fe0d48337230c344fdba0a9ed7925336f2345dd924f",
+            "locator": "Exact normalization and contact signs, EP1–EP2"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+            "sha256": "6efd422a43b79787c0454fe0d48337230c344fdba0a9ed7925336f2345dd924f",
+            "locator": "A Gaussian tuple and its matrix covariance response and The abstract profile obstruction persists under compactness, EP3"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+            "sha256": "6efd422a43b79787c0454fe0d48337230c344fdba0a9ed7925336f2345dd924f",
+            "locator": "Accumulation and width of actual failure intervals, EP4–EP5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md",
+            "sha256": "2c04e2105b7febb75a4a3989cf3de6692e649437037be3fb3582e26ec0e466fd",
+            "locator": "Exact germ and uniform radius, CG1, and Other straight active segments lie on their reference lines"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md",
+            "sha256": "2c04e2105b7febb75a4a3989cf3de6692e649437037be3fb3582e26ec0e466fd",
+            "locator": "Genuine triple points on the reference lines, CG2 and the right-contact restriction"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+            "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+            "locator": "The exact matrix and its mass constraints, TC1–TC3 and TC5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+            "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+            "locator": "Sign control when cuts outnumber the constraints, TC4"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+            "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+            "locator": "A balanced geometric theta with only two rotation cuts"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+            "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+            "locator": "Signed intersections on a vertical fiber; An exact threshold for alternating Gaussian pairings; A strictly negative mass-preserving second variation, TF1–TF2"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ALL_THIN_FOLDS.md",
+            "sha256": "0b166c3ba10788f14d97cbe9c43fe290aa8638b8c70b1cc6e3e05a77c482e164",
+            "locator": "Signed crossings of each arm through A positive measure of thick fibers, TA1"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+            "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+            "locator": "Affine centers for rotational cuts, TF3–TF4"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+            "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+            "locator": "Analytic continuation for balanced null cuts, TF5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+            "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+            "locator": "Exterior stability up to a vanishing error, EI1"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+            "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+            "locator": "The critical measure for compactness, EI2–EI4"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+            "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+            "locator": "The dilation chain at infinity, EI5–EI8"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+            "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+            "locator": "Nondegenerate critical points and the critical measure, EI9–EI10"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+            "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+            "locator": "A periodic chain with three labels"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+            "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+            "locator": "Fixed exterior windows and a central window of the same partition, EI11"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+            "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+            "locator": "Alignment on a pair of circles, RU1"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+            "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+            "locator": "Infinitesimal rotation within a semicircle"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+            "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+            "locator": "Consequence for winding compact networks, RU2"
           }
         ],
         "next_action": "Bridge the intermediate correlations between the implicit lower extension and the exact near-one interval. The separated scalar form has growing positive index near one, so a uniformly bounded collection of radial moments cannot repair it. Use the joint angular constraints at intermediate correlations or exclude the required first tie by its interface geometry."
@@ -322858,7 +324082,7 @@
         "sources": [
           {
             "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
-            "sha256": "ef0b8de00392fa73c73c10b6e3738191618e8bc4851e26c5072ab7e250dc9531",
+            "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
             "locator": "Binary fiber sorting, use of Borell theorem as stated in Mossel–Neeman Theorem 1.1"
           },
           {
@@ -329174,6 +330398,70 @@
             "path": "plurality-stability/THREE_CELL_ONE_STRAIGHT_END_REFLECTION.md",
             "sha256": "a2308354c35195d47848148e9cb9dd4f10340bfc6f93ef75c2e582c6b6cc36d6",
             "locator": "A compact contrast cannot vanish on a curved flat end, scalar Laplace transform argument"
+          }
+        ]
+      },
+      {
+        "id": "SRC-PIS-COMPACT-GAUSSIAN-DIRECTION-RADIUS-PURIFICATION",
+        "kind": "source",
+        "title": "Weighted translation and rotation null perturbations",
+        "scope": "A direct proof constructs compact null perturbations in fractional zones and takes extreme points.",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md",
+            "sha256": "f8daec9943f9d33216ddbc7fd1699c59e1c7866c8b7b266ed2c9985c64ef11b8",
+            "locator": "Which constraints can be preserved through Radial constraints and ordinary realization"
+          }
+        ]
+      },
+      {
+        "id": "SRC-PIS-THREE-CELL-OFF-CENTER-BALANCED-FINITE-SCORE-JETS",
+        "kind": "source",
+        "title": "Every prescribed finite set of stationary score jets permits an off-center Y junction",
+        "scope": "At each fixed positive correlation and finite order m, a balanced ordinary Y partition can have any sufficiently small nonzero vertex displacement, exact regular tripod germ there, original simplex exterior, three unpriced scores equal at the vertex, and all three germ tangential jets through order m zero. A nonzero order m+1 derivative makes global stationarity fail. Independent standard and tilted Gaussian wall moments yield the finite-dimensional implicit construction.",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "plurality-stability/THREE_CELL_OFF_CENTER_JUNCTION_JETS.md",
+            "sha256": "e2afb76c5f97faea0dfa5064cfff6e89f0d4d2b6036f5c2da230fd25e99b9784",
+            "locator": "A family of genuine Y partitions and Independent wall moments for the score jets, OJ1–OJ3"
+          }
+        ]
+      },
+      {
+        "id": "PIS-THREE-CELL-THETA-ROTATION-CUT-COUNT-OBSTRUCTION",
+        "title": "Backtracking and transverse openings alone do not give disconnected rotation cut pieces",
+        "scope": "An exactly balanced smooth compact geometric theta has transverse vertex openings, all three arcs backtrack in every linear projection, and the rotation has exactly two interior zeros whose removal leaves the graph connected. No Gaussian stationary score equations are imposed on this example.",
+        "kind": "claim",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "sources": [
+          {
+            "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+            "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+            "locator": "A balanced geometric theta with only two rotation cuts"
+          }
+        ]
+      },
+      {
+        "id": "PIS-THREE-CELL-EQUAL-ADJACENT-ARC-RADIAL-ALIGNMENT",
+        "title": "Two equal adjacent angular arcs favor common radial orientation",
+        "scope": "At every positive correlation, angular slices consisting of two equal adjacent arcs and their complement maximize every paired-radius angular interaction at a common orientation. On radii where both arc widths are positive, equality forces identical angles modulo 2 pi. Aligning circles preserves all Gaussian cell masses exactly.",
+        "kind": "claim",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "sources": [
+          {
+            "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+            "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+            "locator": "Alignment on a pair of circles, RU1"
           }
         ]
       }
@@ -518845,7 +520133,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
-          "sha256": "ef0b8de00392fa73c73c10b6e3738191618e8bc4851e26c5072ab7e250dc9531",
+          "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
           "locator": "Binary threshold graphs, Binary fiber sorting and elimination of the extra label, and Passing from the binary references to the tripod, CT1–CT9"
         }
       },
@@ -518998,7 +520286,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
-          "sha256": "ef0b8de00392fa73c73c10b6e3738191618e8bc4851e26c5072ab7e250dc9531",
+          "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
           "locator": "Arbitrary changes beyond a growing exterior radius, CT10–CT11"
         }
       },
@@ -521809,7 +523097,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
-          "sha256": "ef0b8de00392fa73c73c10b6e3738191618e8bc4851e26c5072ab7e250dc9531",
+          "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
           "locator": "CT19–CT20, weighted volume-preserving truncation and conditional growing-ball reduction"
         }
       },
@@ -521864,7 +523152,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
-          "sha256": "ef0b8de00392fa73c73c10b6e3738191618e8bc4851e26c5072ab7e250dc9531",
+          "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
           "locator": "CT14–CT18: tangent compression, cubic drift, reflected reference and two randomized seams"
         }
       },
@@ -521898,7 +523186,7 @@
         "status": "proved",
         "proof": {
           "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
-          "sha256": "ef0b8de00392fa73c73c10b6e3738191618e8bc4851e26c5072ab7e250dc9531",
+          "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
           "locator": "CT12-CT13: guarded normal fibers, randomized score-gap seam, regime of the radius and ambient lift"
         },
         "dependency_coverage": "partial"
@@ -525592,6 +526880,119 @@
         }
       },
       {
+        "id": "PROOF-PIS-SIX-CELL-STANDARD-INTERFACE-GAP-THROUGH-7-10",
+        "premises": [
+          "PIS-FIVE-CELL-INTERFACE-GAP-THROUGH-41-50",
+          "SRC-PIS-SIX-CELL-WEIGHTED-STANDARD-DIRECTED-COVER-THROUGH-7-10"
+        ],
+        "conclusion": "PIS-SIX-CELL-STANDARD-INTERFACE-GAP-THROUGH-7-10",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md",
+          "sha256": "1fb04251756313df249dabe310c2a4254a88449c197efd9c2a7b66d0e37395ba",
+          "locator": "Exact finite-rank comparison through 7/10 and complete adjacent directed cover"
+        }
+      },
+      {
+        "id": "PROOF-PIS-SIX-CELL-FULL-INTERFACE-GAP-THROUGH-7-10",
+        "premises": [
+          "PIS-SIX-CELL-STANDARD-INTERFACE-GAP-THROUGH-7-10",
+          "PIS-ALL-CELL-ACTIVE-GAP-DIMENSION-LIFT",
+          "PIS-ALL-CELL-ROTATION-HOOK-ALL-CORRELATION-GAP",
+          "PIS-ALL-CELL-NONSTANDARD-TWO-ROW-ALL-CORRELATION-GAP",
+          "PIS-ALL-CELL-HIGHER-EXTERIOR-HOOK-ALL-CORRELATION-GAP",
+          "PIS-SIX-CELL-MIXED-321-ALL-CORRELATION-GAP",
+          "PIS-SIX-CELL-2211-ALL-CORRELATION-GAP",
+          "PIS-SIX-CELL-222-ALL-CORRELATION-GAP"
+        ],
+        "conclusion": "PIS-SIX-CELL-FULL-INTERFACE-GAP-THROUGH-7-10",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md",
+          "sha256": "1fb04251756313df249dabe310c2a4254a88449c197efd9c2a7b66d0e37395ba",
+          "locator": "Six-cell full gap by the standard and all nonstandard sectors and S42"
+        }
+      },
+      {
+        "id": "PROOF-PIS-SIX-CELL-DIRECTED-STATIONARY-GAP-RATIO",
+        "premises": [
+          "PIS-SIX-CELL-STATIONARY-GAP-COMPARISON",
+          "PIS-ALL-CELL-STANDARD-SECTOR-NEAR-ONE-SPECTRUM",
+          "SRC-PIS-SIX-CELL-WEIGHTED-STANDARD-DIRECTED-COVER-THROUGH-7-10"
+        ],
+        "conclusion": "PIS-SIX-CELL-DIRECTED-STATIONARY-GAP-RATIO",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md",
+          "sha256": "1fb04251756313df249dabe310c2a4254a88449c197efd9c2a7b66d0e37395ba",
+          "locator": "Sharper mass correction and directed stationary-gap bounds"
+        }
+      },
+      {
+        "id": "PROOF-PIS-SIX-CELL-STATIONARY-GAP-COMPARISON",
+        "premises": [
+          "PIS-SIX-CELL-UNWEIGHTED-REFLECTION-CHAMBER-TARGET",
+          "PIS-ALL-CELL-STANDARD-SECTOR-NEAR-ONE-SPECTRUM"
+        ],
+        "conclusion": "PIS-SIX-CELL-STATIONARY-GAP-COMPARISON",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/SIX_CELL_REVERSIBLE_CHAIN.md",
+          "sha256": "92245126880a9d73db4843125719b27fa00c7ae85ea5b35427bf58f2f2e1f3a0",
+          "locator": "MC1–MC5, ordinary balance, directed tails and the near-one limit"
+        }
+      },
+      {
+        "id": "PROOF-PIS-SIX-CELL-AXIAL-METROPOLIS-COMPARISON",
+        "premises": [
+          "PIS-SIX-CELL-STATIONARY-GAP-COMPARISON",
+          "PIS-SIX-CELL-UNWEIGHTED-REFLECTION-CHAMBER-TARGET"
+        ],
+        "conclusion": "PIS-SIX-CELL-AXIAL-METROPOLIS-COMPARISON",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/SIX_CELL_REVERSIBLE_CHAIN.md",
+          "sha256": "92245126880a9d73db4843125719b27fa00c7ae85ea5b35427bf58f2f2e1f3a0",
+          "locator": "Axial transport to a Metropolis proposal on the A4 chamber"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-COMPACT-THETA-TURNING-BOUND",
+        "premises": [
+          "PIS-THREE-CELL-CONNECTED-WINNER-INTERFACE-TOPOLOGY",
+          "PIS-THREE-CELL-MAXIMIZER-EXTRINSIC-GAP-AND-FLUX"
+        ],
+        "conclusion": "PIS-THREE-CELL-COMPACT-THETA-TURNING-BOUND",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
+          "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
+          "locator": "CTurn1–CTurn4, signed interarc Laplacian and backward travel"
+        }
+      },
+      {
+        "id": "PROOF-PIS-ALL-CELL-NEAR-ONE-WINNER-DENSITY-OUTGOING-LOCALIZATION",
+        "premises": [
+          "PIS-ALL-CELL-NEAR-ONE-FOURTH-SCORE-EXPONENTIAL-LOCALIZATION",
+          "PIS-EUCLIDEAN-SIMPLEX-JUNCTION-TRANSFER",
+          "PIS-ALL-CELL-NEAR-ONE-ARBITRARY-INCOMING-TRANSFERS"
+        ],
+        "conclusion": "PIS-ALL-CELL-NEAR-ONE-WINNER-DENSITY-OUTGOING-LOCALIZATION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
+          "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
+          "locator": "WD1–WD5, winner density and near-tube outgoing restriction"
+        }
+      },
+      {
         "id": "PROOF-PIS-SIX-CELL-UNWEIGHTED-REFLECTION-CHAMBER-TARGET",
         "premises": [
           "EXT-PIS-COXETER-FINITE-REFLECTION-CLASSIFICATION",
@@ -527911,7 +529312,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-          "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+          "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
           "locator": "The local graph and its three faces through One unbounded strict winner"
         }
       },
@@ -527926,7 +529327,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-          "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+          "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
           "locator": "One unbounded strict winner"
         }
       },
@@ -527943,7 +529344,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-          "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+          "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
           "locator": "Straight arcs give affine separation"
         }
       },
@@ -527958,7 +529359,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-          "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+          "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
           "locator": "Finitely many strict-winner components suffice for a finite graph"
         }
       },
@@ -528103,7 +529504,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-          "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+          "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
           "locator": "Finitely many strict-winner components suffice for a finite graph, converse using dormant ties"
         }
       },
@@ -528119,7 +529520,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-          "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+          "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
           "locator": "A dormant score along an entire interface component"
         }
       },
@@ -528137,7 +529538,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-          "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+          "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
           "locator": "Inserting the dormant label along a wall, NT1–NT3"
         }
       },
@@ -528152,7 +529553,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-          "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+          "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
           "locator": "A radius bound for compact dormant walls, NT4–NT5"
         }
       },
@@ -528692,6 +530093,547 @@
           "path": "plurality-stability/GAUSSIAN_SIMPLEX_DIMENSION_FREE_LOCAL_GROWTH.md",
           "sha256": "3d9f54ba56c8c8efbf6e5f5b4e6eb0517e7c6a47f46c7c47e7ab05b438a9ad5f",
           "locator": "Exact conical delay at a possible first planar tie, DL7–DL8"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-ORIGIN-ARM-DERIVATIVE-LOWER-BOUND",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+        ],
+        "conclusion": "PIS-THREE-CELL-ORIGIN-ARM-DERIVATIVE-LOWER-BOUND",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+          "sha256": "f1b40b2fe25a6cb8fbb36a9618ed19bdef3babe150dfba4da9b8be972ea8417c",
+          "locator": "An unoriented surface bound from stability and A pointwise arclength comparison, OA1–OA5"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-ORIENTED-SURFACE-CALIBRATION-GAP",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-EXTRINSIC-GAP-AND-FLUX",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+          "PIS-POSITIVE-CORRELATION-MAXIMIZER-COMPACTNESS",
+          "PIS-THREE-CELL-DIMENSION-FREE-MEASURABLE-LOCAL-GROWTH",
+          "PIS-THREE-CELL-CONVEX-OR-CONICAL-MAXIMIZER-RIGIDITY"
+        ],
+        "conclusion": "PIS-THREE-CELL-ORIENTED-SURFACE-CALIBRATION-GAP",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+          "sha256": "f1b40b2fe25a6cb8fbb36a9618ed19bdef3babe150dfba4da9b8be972ea8417c",
+          "locator": "A uniform strict term from the translation gap, OA6–OA7"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-CENTRAL-LONG-ARMS-RIGHT-CONTACT-EXCLUSION",
+        "premises": [
+          "PIS-THREE-CELL-ORIGIN-ARM-DERIVATIVE-LOWER-BOUND",
+          "PIS-THREE-CELL-ORIENTED-SURFACE-CALIBRATION-GAP",
+          "PIS-THREE-CELL-NEAR-ONE-EXACT-OPTIMALITY",
+          "PIS-POSITIVE-CORRELATION-MAXIMIZER-COMPACTNESS",
+          "PIS-THREE-CELL-DIMENSION-FREE-MEASURABLE-LOCAL-GROWTH"
+        ],
+        "conclusion": "PIS-THREE-CELL-CENTRAL-LONG-ARMS-RIGHT-CONTACT-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+          "sha256": "f1b40b2fe25a6cb8fbb36a9618ed19bdef3babe150dfba4da9b8be972ea8417c",
+          "locator": "Arcs close to the origin and endpoint implications, OA8 and the finite-arm estimate"
+        }
+      },
+      {
+        "id": "PROOF-PIS-COMPACT-GAUSSIAN-DIRECTION-RADIUS-PURIFICATION",
+        "premises": [
+          "SRC-PIS-COMPACT-GAUSSIAN-DIRECTION-RADIUS-PURIFICATION"
+        ],
+        "conclusion": "PIS-COMPACT-GAUSSIAN-DIRECTION-RADIUS-PURIFICATION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md",
+          "sha256": "f8daec9943f9d33216ddbc7fd1699c59e1c7866c8b7b266ed2c9985c64ef11b8",
+          "locator": "Which constraints can be preserved through Radial constraints and ordinary realization"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-COMPACT-DISCREPANCY-ORDINARY-PROJECTION-OBSTRUCTION",
+        "premises": [
+          "PIS-COMPACT-GAUSSIAN-DIRECTION-RADIUS-PURIFICATION",
+          "PIS-THREE-CELL-COMPACT-DISCREPANCY-FRACTIONAL-SLICE-OBSTRUCTION"
+        ],
+        "conclusion": "PIS-THREE-CELL-COMPACT-DISCREPANCY-ORDINARY-PROJECTION-OBSTRUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md",
+          "sha256": "f8daec9943f9d33216ddbc7fd1699c59e1c7866c8b7b266ed2c9985c64ef11b8",
+          "locator": "The annular examples and their score winner"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-RIGHT-CONTACT",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+          "PIS-THREE-CELL-MAXIMIZER-EXTRINSIC-GAP-AND-FLUX",
+          "PIS-THREE-CELL-SIMPLEX-SCORE-CORRELATION-RATE",
+          "PIS-POSITIVE-CORRELATION-MAXIMIZER-COMPACTNESS",
+          "PIS-THREE-CELL-DIMENSION-FREE-MEASURABLE-LOCAL-GROWTH"
+        ],
+        "conclusion": "PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-RIGHT-CONTACT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md",
+          "sha256": "ed5c4be20f46abdc9e71fa5d7e19e04d07fa0301ed30d49059729447916fb4ab",
+          "locator": "A direction supremum for the correlation derivative through The exact deficit for the weighted perimeter, WC1–WC4"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-UNRESTRICTED-OBSTRUCTION",
+        "premises": [
+          "PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-RIGHT-CONTACT"
+        ],
+        "conclusion": "PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-UNRESTRICTED-OBSTRUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md",
+          "sha256": "ed5c4be20f46abdc9e71fa5d7e19e04d07fa0301ed30d49059729447916fb4ab",
+          "locator": "The unrestricted weighted perimeter comparison fails near one"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-COMPACT-DISCREPANCY-ENTIRE-DILATION-DEFICIT",
+        "premises": [
+          "PIS-THREE-CELL-COMPACT-SIMPLEX-DISCREPANCY-TILTED-MOMENT-LOSS",
+          "PIS-THREE-CELL-EUCLIDEAN-STRICT-FINITE-AREA-COMPARISON",
+          "PIS-POSITIVE-CORRELATION-MAXIMIZER-COMPACTNESS",
+          "PIS-THREE-CELL-DIMENSION-FREE-MEASURABLE-LOCAL-GROWTH"
+        ],
+        "conclusion": "PIS-THREE-CELL-COMPACT-DISCREPANCY-ENTIRE-DILATION-DEFICIT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+          "sha256": "961e7b4e3966003fb3f16a85aa25205d567fe84907c2e64967e717de7a8d0c1a",
+          "locator": "Entire deficit and its endpoint values, FV1–FV5"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-COMPACT-DISCREPANCY-DILATION-PATH-CURVATURE",
+        "premises": [
+          "PIS-THREE-CELL-COMPACT-DISCREPANCY-ENTIRE-DILATION-DEFICIT",
+          "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+          "PIS-THREE-CELL-COMPACT-SIMPLEX-DISCREPANCY-BOUNDED-LABELS"
+        ],
+        "conclusion": "PIS-THREE-CELL-COMPACT-DISCREPANCY-DILATION-PATH-CURVATURE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+          "sha256": "961e7b4e3966003fb3f16a85aa25205d567fe84907c2e64967e717de7a8d0c1a",
+          "locator": "Fixed and rescaled derivatives at a tie, FV6–FV7"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-COMPACT-DISCREPANCY-FINITE-AFFINE-STATIONARY-ORBIT",
+        "premises": [
+          "PIS-THREE-CELL-COMPACT-DISCREPANCY-FINITE-STATIONARY-CORRELATIONS",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+        ],
+        "conclusion": "PIS-THREE-CELL-COMPACT-DISCREPANCY-FINITE-AFFINE-STATIONARY-ORBIT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+          "sha256": "961e7b4e3966003fb3f16a85aa25205d567fe84907c2e64967e717de7a8d0c1a",
+          "locator": "Finitely many stationary parameters in an affine orbit, FV8"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-OFF-CENTER-BALANCED-FINITE-SCORE-JETS",
+        "premises": [
+          "SRC-PIS-THREE-CELL-OFF-CENTER-BALANCED-FINITE-SCORE-JETS"
+        ],
+        "conclusion": "PIS-THREE-CELL-OFF-CENTER-BALANCED-FINITE-SCORE-JETS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_OFF_CENTER_JUNCTION_JETS.md",
+          "sha256": "e2afb76c5f97faea0dfa5064cfff6e89f0d4d2b6036f5c2da230fd25e99b9784",
+          "locator": "A family of genuine Y partitions and Independent wall moments for the score jets, OJ1–OJ3"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-LONG-CENTRAL-SAME-PAIR-ARC-EXCLUSION",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+        ],
+        "conclusion": "PIS-THREE-CELL-LONG-CENTRAL-SAME-PAIR-ARC-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+          "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+          "locator": "Comparison by arclength, PA2–PA5"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-PAIR-INTERFACE-OMISSION-NOISE-BOUND",
+        "premises": [
+          "PIS-THREE-CELL-LONG-CENTRAL-SAME-PAIR-ARC-EXCLUSION"
+        ],
+        "conclusion": "PIS-THREE-CELL-PAIR-INTERFACE-OMISSION-NOISE-BOUND",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+          "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+          "locator": "A one-dimensional comparison with missing interface portions, PA6–PA7"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-COMPLETE-DORMANT-LINE-OFFSET-BOUND",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+          "PIS-THREE-CELL-DORMANT-WALL-THIN-LAYER-TEST"
+        ],
+        "conclusion": "PIS-THREE-CELL-COMPLETE-DORMANT-LINE-OFFSET-BOUND",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+          "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+          "locator": "The offset bound for a dormant straight wall, PA1"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-RIGHT-TIE-AT-MOST-TWO-LONG-CENTRAL-ARMS",
+        "premises": [
+          "PIS-THREE-CELL-LONG-CENTRAL-SAME-PAIR-ARC-EXCLUSION",
+          "PIS-THREE-CELL-CENTRAL-LONG-ARMS-RIGHT-CONTACT-EXCLUSION"
+        ],
+        "conclusion": "PIS-THREE-CELL-RIGHT-TIE-AT-MOST-TWO-LONG-CENTRAL-ARMS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+          "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+          "locator": "Two separate arms of one pair and the right-contact count, PA8"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-RIGHT-TIE-THREE-WINNER-ANNULUS-JUNCTION",
+        "premises": [
+          "PIS-THREE-CELL-RIGHT-TIE-AT-MOST-TWO-LONG-CENTRAL-ARMS",
+          "PIS-THREE-CELL-CONNECTED-WINNER-INTERFACE-TOPOLOGY",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+        ],
+        "conclusion": "PIS-THREE-CELL-RIGHT-TIE-THREE-WINNER-ANNULUS-JUNCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+          "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+          "locator": "An annulus crossed by all three strict winners"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-TWO-ENDPOINT-SCALAR-HERMITE-OBSTRUCTION",
+        "premises": [
+          "PIS-THREE-CELL-NOISE-VALUE-JUNCTION-TERM"
+        ],
+        "conclusion": "PIS-THREE-CELL-TWO-ENDPOINT-SCALAR-HERMITE-OBSTRUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+          "sha256": "6efd422a43b79787c0454fe0d48337230c344fdba0a9ed7925336f2345dd924f",
+          "locator": "Exact normalization and contact signs, EP1–EP2"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-GAUSSIAN-L2-ENDPOINT-PROFILE-COVARIANCE-OBSTRUCTION",
+        "premises": [
+          "PIS-THREE-CELL-TWO-ENDPOINT-SCALAR-HERMITE-OBSTRUCTION",
+          "PIS-GAUSSIAN-COVARIANCE-LOG-MAJORIZATION",
+          "PIS-GAUSSIAN-COVARIANCE-EIGENVALUE-MAJORIZATION"
+        ],
+        "conclusion": "PIS-THREE-CELL-GAUSSIAN-L2-ENDPOINT-PROFILE-COVARIANCE-OBSTRUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+          "sha256": "6efd422a43b79787c0454fe0d48337230c344fdba0a9ed7925336f2345dd924f",
+          "locator": "A Gaussian tuple and its matrix covariance response and The abstract profile obstruction persists under compactness, EP3"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-FAILURE-INTERVAL-ACCUMULATION-TANGENTIAL-TIE",
+        "premises": [
+          "PIS-THREE-CELL-STRICT-FAILURE-INTERVAL-TIED-ENDPOINTS",
+          "PIS-POSITIVE-CORRELATION-MAXIMIZER-COMPACTNESS",
+          "PIS-THREE-CELL-DIMENSION-FREE-MEASURABLE-LOCAL-GROWTH"
+        ],
+        "conclusion": "PIS-THREE-CELL-FAILURE-INTERVAL-ACCUMULATION-TANGENTIAL-TIE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+          "sha256": "6efd422a43b79787c0454fe0d48337230c344fdba0a9ed7925336f2345dd924f",
+          "locator": "Accumulation and width of actual failure intervals, EP4–EP5"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-COMPACT-DISCREPANCY-EXACT-CENTRAL-TRIPOD",
+        "premises": [
+          "PIS-THREE-CELL-COMPACT-SIMPLEX-DISCREPANCY-TILTED-MOMENT-LOSS",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+          "PIS-THREE-CELL-MAXIMAL-TIE-GRADIENT-SEPARATION"
+        ],
+        "conclusion": "PIS-THREE-CELL-COMPACT-DISCREPANCY-EXACT-CENTRAL-TRIPOD",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md",
+          "sha256": "2c04e2105b7febb75a4a3989cf3de6692e649437037be3fb3582e26ec0e466fd",
+          "locator": "Exact germ and uniform radius, CG1, and Other straight active segments lie on their reference lines"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-ANTIPODAL-COMPACT-GERM-JUNCTION-COUNT",
+        "premises": [
+          "PIS-THREE-CELL-COMPACT-DISCREPANCY-EXACT-CENTRAL-TRIPOD",
+          "PIS-THREE-CELL-CENTRAL-LONG-ARMS-RIGHT-CONTACT-EXCLUSION",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+        ],
+        "conclusion": "PIS-THREE-CELL-ANTIPODAL-COMPACT-GERM-JUNCTION-COUNT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md",
+          "sha256": "2c04e2105b7febb75a4a3989cf3de6692e649437037be3fb3582e26ec0e466fd",
+          "locator": "Genuine triple points on the reference lines, CG2 and the right-contact restriction"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-THETA-ROTATION-CUT-MATRIX",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+          "PIS-THREE-CELL-CONNECTED-WINNER-INTERFACE-TOPOLOGY"
+        ],
+        "conclusion": "PIS-THREE-CELL-THETA-ROTATION-CUT-MATRIX",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+          "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+          "locator": "The exact matrix and its mass constraints, TC1–TC3 and TC5"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-THETA-ROTATION-NEAR-LOCAL-CUT",
+        "premises": [
+          "PIS-THREE-CELL-THETA-ROTATION-CUT-MATRIX"
+        ],
+        "conclusion": "PIS-THREE-CELL-THETA-ROTATION-NEAR-LOCAL-CUT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+          "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+          "locator": "Sign control when cuts outnumber the constraints, TC4"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-THETA-THIN-MIDDLE-FOLD-EXCLUSION",
+        "premises": [
+          "PIS-THREE-CELL-COMPACT-THETA-TURNING-BOUND",
+          "PIS-THREE-CELL-GLOBAL-FLUX-MATRIX",
+          "PIS-THREE-CELL-MAXIMIZER-EXTRINSIC-GAP-AND-FLUX"
+        ],
+        "conclusion": "PIS-THREE-CELL-THETA-THIN-MIDDLE-FOLD-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+          "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+          "locator": "Signed intersections on a vertical fiber; An exact threshold for alternating Gaussian pairings; A strictly negative mass-preserving second variation, TF1–TF2"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-THETA-ALL-THIN-FOLDS-EXCLUSION",
+        "premises": [
+          "PIS-THREE-CELL-THETA-THIN-MIDDLE-FOLD-EXCLUSION",
+          "PIS-THREE-CELL-COMPACT-THETA-TURNING-BOUND",
+          "PIS-THREE-CELL-MAXIMIZER-EXTRINSIC-GAP-AND-FLUX"
+        ],
+        "conclusion": "PIS-THREE-CELL-THETA-ALL-THIN-FOLDS-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_THETA_ALL_THIN_FOLDS.md",
+          "sha256": "0b166c3ba10788f14d97cbe9c43fe290aa8638b8c70b1cc6e3e05a77c482e164",
+          "locator": "Signed crossings of each arm through A positive measure of thick fibers, TA1"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-AFFINE-ROTATION-CUT-MASS-REPAIR",
+        "premises": [
+          "PIS-THREE-CELL-THETA-ROTATION-CUT-MATRIX",
+          "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS"
+        ],
+        "conclusion": "PIS-THREE-CELL-AFFINE-ROTATION-CUT-MASS-REPAIR",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+          "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+          "locator": "Affine centers for rotational cuts, TF3–TF4"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-THETA-BALANCED-NULL-CUT-ANALYTICITY",
+        "premises": [
+          "PIS-THREE-CELL-THETA-ROTATION-CUT-MATRIX",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+          "PIS-THREE-CELL-GLOBAL-FLUX-MATRIX"
+        ],
+        "conclusion": "PIS-THREE-CELL-THETA-BALANCED-NULL-CUT-ANALYTICITY",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+          "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+          "locator": "Analytic continuation for balanced null cuts, TF5"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-EXTERIOR-INDEX-BOUND",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-EXTRINSIC-GAP-AND-FLUX",
+          "PIS-THREE-CELL-GLOBAL-INTERFACE-LENGTH",
+          "PIS-POSITIVE-CORRELATION-MAXIMIZER-COMPACTNESS"
+        ],
+        "conclusion": "PIS-THREE-CELL-EXTERIOR-INDEX-BOUND",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+          "locator": "Exterior stability up to a vanishing error, EI1"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-CRITICAL-MEASURE-COMPACTNESS",
+        "premises": [
+          "PIS-THREE-CELL-EXTERIOR-INDEX-BOUND",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+          "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS"
+        ],
+        "conclusion": "PIS-THREE-CELL-CRITICAL-MEASURE-COMPACTNESS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+          "locator": "The critical measure for compactness, EI2–EI4"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN",
+        "premises": [
+          "PIS-THREE-CELL-CRITICAL-MEASURE-COMPACTNESS",
+          "PIS-THREE-CELL-EXTERIOR-INDEX-BOUND",
+          "PIS-THREE-CELL-GLOBAL-INTERFACE-LENGTH"
+        ],
+        "conclusion": "PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+          "locator": "The dilation chain at infinity, EI5–EI8"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-EXTERIOR-CRITICAL-TIE-COAREA",
+        "premises": [
+          "PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+        ],
+        "conclusion": "PIS-THREE-CELL-EXTERIOR-CRITICAL-TIE-COAREA",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+          "locator": "Nondegenerate critical points and the critical measure, EI9–EI10"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-EXTERIOR-PERIODIC-LIMIT-CHAIN",
+        "premises": [
+          "PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN"
+        ],
+        "conclusion": "PIS-THREE-CELL-EXTERIOR-PERIODIC-LIMIT-CHAIN",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+          "locator": "A periodic chain with three labels"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-SINGLE-PARTITION-EXTERIOR-CENTRAL-WINDOW-OBSTRUCTION",
+        "premises": [
+          "PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN",
+          "PIS-THREE-CELL-EXTERIOR-PERIODIC-LIMIT-CHAIN"
+        ],
+        "conclusion": "PIS-THREE-CELL-SINGLE-PARTITION-EXTERIOR-CENTRAL-WINDOW-OBSTRUCTION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+          "locator": "Fixed exterior windows and a central window of the same partition, EI11"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-SEMICIRCLE-RADIAL-TWIST-INSTABILITY",
+        "premises": [
+          "PIS-THREE-CELL-EQUAL-ADJACENT-ARC-RADIAL-ALIGNMENT"
+        ],
+        "conclusion": "PIS-THREE-CELL-SEMICIRCLE-RADIAL-TWIST-INSTABILITY",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+          "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+          "locator": "Infinitesimal rotation within a semicircle"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-EQUAL-ADJACENT-ARC-BOUNDED-CELLS-EXCLUSION",
+        "premises": [
+          "PIS-THREE-CELL-EQUAL-ADJACENT-ARC-RADIAL-ALIGNMENT",
+          "PIS-THREE-CELL-SINGLE-REFLECTION-MONOTONE-GRAPH"
+        ],
+        "conclusion": "PIS-THREE-CELL-EQUAL-ADJACENT-ARC-BOUNDED-CELLS-EXCLUSION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+          "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+          "locator": "Consequence for winding compact networks, RU2"
         }
       }
     ],
@@ -617425,6 +619367,93 @@
               "nodes": [
                 "PIS-GAUSSIAN-CONE-SPECTATOR-ANGULAR-SLICE-COMPARISON"
               ]
+            }
+          ]
+        },
+        {
+          "id": "HUTCHINGS-MORGAN-RITORE-ROS-DOUBLE-BUBBLE",
+          "title": "Proof of the Double Bubble Conjecture",
+          "citation": "Michael Hutchings, Frank Morgan, Manuel Ritoré and Antonio Ros, Annals of Mathematics 155 (2002), 459–489.",
+          "urls": [
+            "https://math.berkeley.edu/~hutching/pub/bubble/bubble.pdf",
+            "https://annals.math.princeton.edu/2002/155-2/p04"
+          ],
+          "verification": "source_read",
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+              "locator": "Introduction and comparison with Proposition 5.2",
+              "nodes": [
+                "PIS-THREE-CELL-THETA-ROTATION-CUT-MATRIX"
+              ],
+              "role": "context"
+            },
+            {
+              "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+              "locator": "Analytic continuation for balanced null cuts",
+              "nodes": [
+                "PIS-THREE-CELL-THETA-BALANCED-NULL-CUT-ANALYTICITY"
+              ],
+              "role": "context"
+            }
+          ]
+        },
+        {
+          "id": "WANG-WEI-ALLEN-CAHN-FINITE-ENDS",
+          "title": "Finite Morse index implies finite ends",
+          "citation": "Kelei Wang and Juncheng Wei, Communications on Pure and Applied Mathematics 72 (2019), 1044–1119.",
+          "urls": [
+            "https://arxiv.org/pdf/1705.06831",
+            "https://doi.org/10.1002/cpa.21812"
+          ],
+          "verification": "source_read",
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+              "locator": "Introduction, Theorem 2.1, Lemma 3.2 and Propositions 5.1–5.2",
+              "nodes": [
+                "PIS-THREE-CELL-EXTERIOR-INDEX-BOUND",
+                "PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN"
+              ],
+              "role": "context"
+            }
+          ]
+        },
+        {
+          "id": "DIACONIS-SALOFF-COSTE-REVERSIBLE-MARKOV-CHAINS",
+          "title": "Comparison Theorems for Reversible Markov Chains",
+          "citation": "Persi Diaconis and Laurent Saloff-Coste, Annals of Applied Probability 3 (1993), 696–730.",
+          "urls": [
+            "https://www2.stat.duke.edu/~scs/Courses/Stat376/Papers/ConvergeRates/ComparisonReversMC_DiaconisSalaffCoste_AAP1993.pdf"
+          ],
+          "verification": "source_read",
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "plurality-stability/SIX_CELL_REVERSIBLE_CHAIN.md",
+              "locator": "Continuous projection and a directed tail bound, Theorem 2.3",
+              "nodes": [],
+              "role": "context"
+            }
+          ]
+        },
+        {
+          "id": "JERRUM-SON-TETALI-VIGODA-DECOMPOSABLE-CHAINS",
+          "title": "Elementary bounds on Poincaré and log-Sobolev constants for decomposable Markov chains",
+          "citation": "Mark Jerrum, Jung-Bae Son, Prasad Tetali and Eric Vigoda, Annals of Applied Probability 14 (2004), 1741–1765.",
+          "urls": [
+            "https://webspace.maths.qmul.ac.uk/m.jerrum/papers/AAP021.pdf"
+          ],
+          "verification": "source_read",
+          "local_sources": [],
+          "uses": [
+            {
+              "path": "plurality-stability/SIX_CELL_REVERSIBLE_CHAIN.md",
+              "locator": "Continuous projection and a directed tail bound, Theorem 1 and Corollary 3",
+              "nodes": [],
+              "role": "context"
             }
           ]
         }
@@ -841291,7 +843320,7 @@
         },
         {
           "path": "plurality-stability/THREE_CELL_EXTERIOR_TUBES.md",
-          "sha256": "ef0b8de00392fa73c73c10b6e3738191618e8bc4851e26c5072ab7e250dc9531",
+          "sha256": "5021002b8bc64c19d8caf90b055c153afd51690837f6927f701278cc5df36e9b",
           "role": "proof",
           "claims": [
             "EXT-PIS-BORELL-TWO-SET-GAUSSIAN-COMPARISON",
@@ -841299,7 +843328,8 @@
             "PIS-THREE-CELL-NEAR-ONE-UNRESTRICTED-GROWING-EXTERIOR",
             "PIS-ALL-CELL-NEAR-ONE-SEPARATED-EXTERIOR-COMPARISON",
             "PIS-ALL-CELL-NEAR-ONE-THREE-LABEL-EXTERIOR-COMPARISON",
-            "PIS-ALL-CELL-NEAR-ONE-FOURTH-SCORE-EXPONENTIAL-LOCALIZATION"
+            "PIS-ALL-CELL-NEAR-ONE-FOURTH-SCORE-EXPONENTIAL-LOCALIZATION",
+            "PIS-ALL-CELL-NEAR-ONE-WINNER-DENSITY-OUTGOING-LOCALIZATION"
           ],
           "dependencies": [
             "SRC-PIS-SCALAR-GRAPH-DEFICIT-IDENTITY",
@@ -841308,7 +843338,10 @@
             "PIS-THREE-CELL-NEAR-ONE-QUADRATIC-MASS-PENALTY",
             "PIS-THREE-CELL-NEAR-ONE-MOVING-COMPACTNESS",
             "EXT-PIS-MILMAN-NEEMAN-GAUSSIAN-MULTIBUBBLE",
-            "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION"
+            "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION",
+            "PIS-ALL-CELL-NEAR-ONE-FOURTH-SCORE-EXPONENTIAL-LOCALIZATION",
+            "PIS-EUCLIDEAN-SIMPLEX-JUNCTION-TRANSFER",
+            "PIS-ALL-CELL-NEAR-ONE-ARBITRARY-INCOMING-TRANSFERS"
           ],
           "gaps": [
             "GAP-PIS-NEAR-ONE-EXACT-OPTIMALITY",
@@ -841325,6 +843358,12 @@
               "locator": "CT19–CT20 and growing-ball reduction",
               "nodes": [
                 "PIS-ALL-CELL-NEAR-ONE-FOURTH-SCORE-EXPONENTIAL-LOCALIZATION"
+              ]
+            },
+            {
+              "locator": "WD1–WD5, winning density and outgoing localization",
+              "nodes": [
+                "PIS-ALL-CELL-NEAR-ONE-WINNER-DENSITY-OUTGOING-LOCALIZATION"
               ]
             }
           ],
@@ -848273,6 +850312,157 @@
           ]
         },
         {
+          "path": "plurality-stability/SIX_CELL_WEIGHTED_STANDARD_GAP.md",
+          "sha256": "1fb04251756313df249dabe310c2a4254a88449c197efd9c2a7b66d0e37395ba",
+          "role": "proof",
+          "claims": [
+            "PIS-SIX-CELL-STANDARD-INTERFACE-GAP-THROUGH-7-10",
+            "PIS-SIX-CELL-FULL-INTERFACE-GAP-THROUGH-7-10",
+            "PIS-SIX-CELL-DIRECTED-STATIONARY-GAP-RATIO",
+            "SRC-PIS-SIX-CELL-WEIGHTED-STANDARD-DIRECTED-COVER-THROUGH-7-10"
+          ],
+          "dependencies": [
+            "PIS-FIVE-CELL-INTERFACE-GAP-THROUGH-41-50",
+            "PIS-SIX-CELL-STATIONARY-GAP-COMPARISON",
+            "PIS-ALL-CELL-STANDARD-SECTOR-NEAR-ONE-SPECTRUM",
+            "PIS-ALL-CELL-ACTIVE-GAP-DIMENSION-LIFT",
+            "PIS-ALL-CELL-ROTATION-HOOK-ALL-CORRELATION-GAP",
+            "PIS-ALL-CELL-NONSTANDARD-TWO-ROW-ALL-CORRELATION-GAP",
+            "PIS-ALL-CELL-HIGHER-EXTERIOR-HOOK-ALL-CORRELATION-GAP",
+            "PIS-SIX-CELL-MIXED-321-ALL-CORRELATION-GAP",
+            "PIS-SIX-CELL-2211-ALL-CORRELATION-GAP",
+            "PIS-SIX-CELL-222-ALL-CORRELATION-GAP"
+          ],
+          "gaps": [
+            "GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL"
+          ],
+          "statements": [
+            {
+              "locator": "Directed finite-rank certificate in six cells",
+              "nodes": [
+                "PIS-SIX-CELL-STANDARD-INTERFACE-GAP-THROUGH-7-10",
+                "PIS-SIX-CELL-FULL-INTERFACE-GAP-THROUGH-7-10",
+                "SRC-PIS-SIX-CELL-WEIGHTED-STANDARD-DIRECTED-COVER-THROUGH-7-10"
+              ]
+            },
+            {
+              "locator": "Sharper mass and directed stationary-ratio bounds",
+              "nodes": [
+                "PIS-SIX-CELL-DIRECTED-STATIONARY-GAP-RATIO"
+              ]
+            }
+          ],
+          "explanation": "Weighted finite-rank gap for six cells through 7/10, ambient lift, and stationary point and interval lower bounds."
+        },
+        {
+          "path": "plurality-stability/check_six_cell_weighted_gap.py",
+          "sha256": "8e11f042c7fe2b97c12f3547b01e54d3af1ca71a7dcab79a1dbf3bdbf6b05678",
+          "role": "evidence",
+          "claims": [
+            "SRC-PIS-SIX-CELL-WEIGHTED-STANDARD-DIRECTED-COVER-THROUGH-7-10",
+            "PIS-SIX-CELL-STANDARD-INTERFACE-GAP-THROUGH-7-10",
+            "PIS-SIX-CELL-DIRECTED-STATIONARY-GAP-RATIO"
+          ],
+          "dependencies": [
+            "PIS-FIVE-CELL-INTERFACE-GAP-THROUGH-41-50",
+            "PIS-SIX-CELL-STATIONARY-GAP-COMPARISON"
+          ],
+          "gaps": [
+            "GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL"
+          ],
+          "statements": [],
+          "explanation": "Directed Hermite and weighted four-dimensional Gram calculation."
+        },
+        {
+          "path": "plurality-stability/six_cell_weighted_gap_verification.json",
+          "sha256": "978abf1b513ebeed43f8d0d1722cc20b6e884d1850f395d9e02b6225fd22ede8",
+          "role": "evidence",
+          "claims": [
+            "SRC-PIS-SIX-CELL-WEIGHTED-STANDARD-DIRECTED-COVER-THROUGH-7-10",
+            "PIS-SIX-CELL-STANDARD-INTERFACE-GAP-THROUGH-7-10",
+            "PIS-SIX-CELL-DIRECTED-STATIONARY-GAP-RATIO"
+          ],
+          "dependencies": [
+            "PIS-FIVE-CELL-INTERFACE-GAP-THROUGH-41-50",
+            "PIS-SIX-CELL-STATIONARY-GAP-COMPARISON"
+          ],
+          "gaps": [
+            "GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL"
+          ],
+          "statements": [],
+          "explanation": "Complete five-slab and three-point directed receipt with source pins."
+        },
+        {
+          "path": "plurality-stability/SIX_CELL_REVERSIBLE_CHAIN.md",
+          "sha256": "92245126880a9d73db4843125719b27fa00c7ae85ea5b35427bf58f2f2e1f3a0",
+          "role": "proof",
+          "claims": [
+            "PIS-SIX-CELL-STATIONARY-GAP-COMPARISON",
+            "PIS-SIX-CELL-AXIAL-METROPOLIS-COMPARISON",
+            "SRC-PIS-SIX-CELL-STATIONARY-GAP-EXPLORATORY-PROBE"
+          ],
+          "dependencies": [
+            "PIS-SIX-CELL-UNWEIGHTED-REFLECTION-CHAMBER-TARGET",
+            "PIS-ALL-CELL-STANDARD-SECTOR-NEAR-ONE-SPECTRUM"
+          ],
+          "gaps": [
+            "GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL"
+          ],
+          "statements": [
+            {
+              "locator": "MC1–MC5",
+              "nodes": [
+                "PIS-SIX-CELL-STATIONARY-GAP-COMPARISON"
+              ]
+            },
+            {
+              "locator": "Axial transport to a Metropolis proposal on the A4 chamber",
+              "nodes": [
+                "PIS-SIX-CELL-AXIAL-METROPOLIS-COMPARISON"
+              ]
+            },
+            {
+              "locator": "Intermediate-correlation estimates",
+              "nodes": [
+                "SRC-PIS-SIX-CELL-STATIONARY-GAP-EXPLORATORY-PROBE"
+              ]
+            }
+          ],
+          "explanation": "Stationary balance, continuous finite compression, exact axial transport, and exploratory ratio comparisons."
+        },
+        {
+          "path": "plurality-stability/probe_six_cell_reversible_chain.py",
+          "sha256": "fee0af551a6779e3d07fbb21e78a26b1d88371f6568a9b27949a9300441cc849",
+          "role": "evidence",
+          "claims": [
+            "SRC-PIS-SIX-CELL-STATIONARY-GAP-EXPLORATORY-PROBE"
+          ],
+          "dependencies": [
+            "PIS-SIX-CELL-STATIONARY-GAP-COMPARISON"
+          ],
+          "gaps": [
+            "GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL"
+          ],
+          "statements": [],
+          "explanation": "Exploratory gap-ratio computation with distinct Ritz and Nystrom discretizations. No directed error enclosure."
+        },
+        {
+          "path": "plurality-stability/six_cell_reversible_chain_probe.json",
+          "sha256": "bc03958fb49ae7f1f2710c10a15d83d5ee4e0887aecbb2ebaa9aa3c2b1abe4b4",
+          "role": "evidence",
+          "claims": [
+            "SRC-PIS-SIX-CELL-STATIONARY-GAP-EXPLORATORY-PROBE"
+          ],
+          "dependencies": [
+            "PIS-SIX-CELL-STATIONARY-GAP-COMPARISON"
+          ],
+          "gaps": [
+            "GAP-PIS-ALL-CELL-POSITIVE-CORRELATION-INTERFACE-KERNEL"
+          ],
+          "statements": [],
+          "explanation": "Exploratory gap-ratio computation with distinct Ritz and Nystrom discretizations. No directed error enclosure."
+        },
+        {
           "path": "plurality-stability/SIX_CELL_REFLECTION_CHAMBER_TARGETS.md",
           "sha256": "39ca773aa8a843e129658a14be26b67c79896d2dd4bbf2a0720b9dc9ead86956",
           "role": "proof",
@@ -850449,7 +852639,7 @@
         },
         {
           "path": "plurality-stability/THREE_CELL_CONNECTED_NETWORK_TOPOLOGY.md",
-          "sha256": "4c92c1269c5e81ef142caeb052c048bc51c902b9bea4f43d6c61d4b8f2feba8b",
+          "sha256": "76bc65dae7f80dc12eb13be8128f88f0b5f1936ed99d54d905ac639d50c71dcd",
           "role": "proof",
           "claims": [
             "PIS-THREE-CELL-CONNECTED-WINNER-INTERFACE-TOPOLOGY",
@@ -850459,7 +852649,8 @@
             "PIS-THREE-CELL-FINITE-JUMP-GRAPH-STRICT-WINNER-COMPONENTS",
             "PIS-THREE-CELL-DORMANT-WALL-COMPONENT-PROPAGATION",
             "PIS-THREE-CELL-DORMANT-WALL-THIN-LAYER-TEST",
-            "PIS-THREE-CELL-COMPACT-DORMANT-WALL-MEAN-RADIUS-BOUND"
+            "PIS-THREE-CELL-COMPACT-DORMANT-WALL-MEAN-RADIUS-BOUND",
+            "PIS-THREE-CELL-COMPACT-THETA-TURNING-BOUND"
           ],
           "dependencies": [
             "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
@@ -850532,6 +852723,12 @@
               "locator": "A radius bound for compact dormant walls, NT4–NT5",
               "nodes": [
                 "PIS-THREE-CELL-COMPACT-DORMANT-WALL-MEAN-RADIUS-BOUND"
+              ]
+            },
+            {
+              "locator": "CTurn1–CTurn4, quantitative compact-network turning test",
+              "nodes": [
+                "PIS-THREE-CELL-COMPACT-THETA-TURNING-BOUND"
               ]
             }
           ],
@@ -851217,6 +853414,548 @@
             }
           ],
           "explanation": "Analytic bounds for Gaussian maximizers and conical approximations."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_COMPACT_PROJECTION_PURIFICATION.md",
+          "sha256": "f8daec9943f9d33216ddbc7fd1699c59e1c7866c8b7b266ed2c9985c64ef11b8",
+          "role": "proof",
+          "claims": [
+            "PIS-COMPACT-GAUSSIAN-DIRECTION-RADIUS-PURIFICATION",
+            "PIS-THREE-CELL-COMPACT-DISCREPANCY-ORDINARY-PROJECTION-OBSTRUCTION"
+          ],
+          "dependencies": [
+            "SRC-PIS-COMPACT-GAUSSIAN-DIRECTION-RADIUS-PURIFICATION",
+            "PIS-COMPACT-GAUSSIAN-DIRECTION-RADIUS-PURIFICATION",
+            "PIS-THREE-CELL-COMPACT-DISCREPANCY-FRACTIONAL-SLICE-OBSTRUCTION"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL"
+          ],
+          "statements": [
+            {
+              "locator": "Which constraints can be preserved through Radial constraints and ordinary realization",
+              "nodes": [
+                "PIS-COMPACT-GAUSSIAN-DIRECTION-RADIUS-PURIFICATION"
+              ]
+            },
+            {
+              "locator": "The annular examples and their score winner",
+              "nodes": [
+                "PIS-THREE-CELL-COMPACT-DISCREPANCY-ORDINARY-PROJECTION-OBSTRUCTION"
+              ]
+            }
+          ],
+          "explanation": "Analytic conditions and counterexamples for three-cell Gaussian rigidity."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_FIXED_VARIANCE_PATH.md",
+          "sha256": "961e7b4e3966003fb3f16a85aa25205d567fe84907c2e64967e717de7a8d0c1a",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-COMPACT-DISCREPANCY-ENTIRE-DILATION-DEFICIT",
+            "PIS-THREE-CELL-COMPACT-DISCREPANCY-DILATION-PATH-CURVATURE",
+            "PIS-THREE-CELL-COMPACT-DISCREPANCY-FINITE-AFFINE-STATIONARY-ORBIT"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-COMPACT-SIMPLEX-DISCREPANCY-TILTED-MOMENT-LOSS",
+            "PIS-THREE-CELL-EUCLIDEAN-STRICT-FINITE-AREA-COMPARISON",
+            "PIS-POSITIVE-CORRELATION-MAXIMIZER-COMPACTNESS",
+            "PIS-THREE-CELL-DIMENSION-FREE-MEASURABLE-LOCAL-GROWTH",
+            "PIS-THREE-CELL-COMPACT-DISCREPANCY-ENTIRE-DILATION-DEFICIT",
+            "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+            "PIS-THREE-CELL-COMPACT-SIMPLEX-DISCREPANCY-BOUNDED-LABELS",
+            "PIS-THREE-CELL-COMPACT-DISCREPANCY-FINITE-STATIONARY-CORRELATIONS",
+            "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL"
+          ],
+          "statements": [
+            {
+              "locator": "Entire deficit and its endpoint values, FV1–FV5",
+              "nodes": [
+                "PIS-THREE-CELL-COMPACT-DISCREPANCY-ENTIRE-DILATION-DEFICIT"
+              ]
+            },
+            {
+              "locator": "Fixed and rescaled derivatives at a tie, FV6–FV7",
+              "nodes": [
+                "PIS-THREE-CELL-COMPACT-DISCREPANCY-DILATION-PATH-CURVATURE"
+              ]
+            },
+            {
+              "locator": "Finitely many stationary parameters in an affine orbit, FV8",
+              "nodes": [
+                "PIS-THREE-CELL-COMPACT-DISCREPANCY-FINITE-AFFINE-STATIONARY-ORBIT"
+              ]
+            }
+          ],
+          "explanation": "Analytic conditions and counterexamples for three-cell Gaussian rigidity."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md",
+          "sha256": "f1b40b2fe25a6cb8fbb36a9618ed19bdef3babe150dfba4da9b8be972ea8417c",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-ORIGIN-ARM-DERIVATIVE-LOWER-BOUND",
+            "PIS-THREE-CELL-ORIENTED-SURFACE-CALIBRATION-GAP",
+            "PIS-THREE-CELL-CENTRAL-LONG-ARMS-RIGHT-CONTACT-EXCLUSION"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+            "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+            "PIS-THREE-CELL-MAXIMIZER-EXTRINSIC-GAP-AND-FLUX",
+            "PIS-POSITIVE-CORRELATION-MAXIMIZER-COMPACTNESS",
+            "PIS-THREE-CELL-DIMENSION-FREE-MEASURABLE-LOCAL-GROWTH",
+            "PIS-THREE-CELL-CONVEX-OR-CONICAL-MAXIMIZER-RIGIDITY",
+            "PIS-THREE-CELL-ORIGIN-ARM-DERIVATIVE-LOWER-BOUND",
+            "PIS-THREE-CELL-ORIENTED-SURFACE-CALIBRATION-GAP",
+            "PIS-THREE-CELL-NEAR-ONE-EXACT-OPTIMALITY"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL"
+          ],
+          "statements": [
+            {
+              "locator": "An unoriented surface bound from stability and A pointwise arclength comparison, OA1–OA5",
+              "nodes": [
+                "PIS-THREE-CELL-ORIGIN-ARM-DERIVATIVE-LOWER-BOUND"
+              ]
+            },
+            {
+              "locator": "A uniform strict term from the translation gap, OA6–OA7",
+              "nodes": [
+                "PIS-THREE-CELL-ORIENTED-SURFACE-CALIBRATION-GAP"
+              ]
+            },
+            {
+              "locator": "Arcs close to the origin and endpoint implications, OA8 and the finite-arm estimate",
+              "nodes": [
+                "PIS-THREE-CELL-CENTRAL-LONG-ARMS-RIGHT-CONTACT-EXCLUSION"
+              ]
+            }
+          ],
+          "explanation": "Analytic conditions and counterexamples for three-cell Gaussian rigidity."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_WEIGHTED_PERIMETER_CONTACT.md",
+          "sha256": "ed5c4be20f46abdc9e71fa5d7e19e04d07fa0301ed30d49059729447916fb4ab",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-RIGHT-CONTACT",
+            "PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-UNRESTRICTED-OBSTRUCTION"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+            "PIS-THREE-CELL-MAXIMIZER-EXTRINSIC-GAP-AND-FLUX",
+            "PIS-THREE-CELL-SIMPLEX-SCORE-CORRELATION-RATE",
+            "PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-RIGHT-CONTACT",
+            "PIS-POSITIVE-CORRELATION-MAXIMIZER-COMPACTNESS",
+            "PIS-THREE-CELL-DIMENSION-FREE-MEASURABLE-LOCAL-GROWTH"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL"
+          ],
+          "statements": [
+            {
+              "locator": "A direction supremum for the correlation derivative through The exact deficit for the weighted perimeter, WC1–WC4",
+              "nodes": [
+                "PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-RIGHT-CONTACT"
+              ]
+            },
+            {
+              "locator": "The unrestricted weighted perimeter comparison fails near one",
+              "nodes": [
+                "PIS-THREE-CELL-SIMPLEX-WEIGHTED-PERIMETER-UNRESTRICTED-OBSTRUCTION"
+              ]
+            }
+          ],
+          "explanation": "Analytic conditions and counterexamples for three-cell Gaussian rigidity."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_OFF_CENTER_JUNCTION_JETS.md",
+          "sha256": "e2afb76c5f97faea0dfa5064cfff6e89f0d4d2b6036f5c2da230fd25e99b9784",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-OFF-CENTER-BALANCED-FINITE-SCORE-JETS"
+          ],
+          "dependencies": [
+            "SRC-PIS-THREE-CELL-OFF-CENTER-BALANCED-FINITE-SCORE-JETS"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL"
+          ],
+          "statements": [
+            {
+              "locator": "A family of genuine Y partitions and Independent wall moments for the score jets, OJ1–OJ3",
+              "nodes": [
+                "PIS-THREE-CELL-OFF-CENTER-BALANCED-FINITE-SCORE-JETS"
+              ]
+            }
+          ],
+          "explanation": "Analytic conditions and counterexamples for three-cell Gaussian rigidity."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_COMPACT_DEFECT_CENTRAL_TRIPOD.md",
+          "sha256": "2c04e2105b7febb75a4a3989cf3de6692e649437037be3fb3582e26ec0e466fd",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-COMPACT-DISCREPANCY-EXACT-CENTRAL-TRIPOD",
+            "PIS-THREE-CELL-ANTIPODAL-COMPACT-GERM-JUNCTION-COUNT"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-COMPACT-SIMPLEX-DISCREPANCY-TILTED-MOMENT-LOSS",
+            "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+            "PIS-THREE-CELL-MAXIMAL-TIE-GRADIENT-SEPARATION",
+            "PIS-THREE-CELL-COMPACT-DISCREPANCY-EXACT-CENTRAL-TRIPOD",
+            "PIS-THREE-CELL-CENTRAL-LONG-ARMS-RIGHT-CONTACT-EXCLUSION"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL"
+          ],
+          "statements": [
+            {
+              "locator": "Exact germ and uniform radius, CG1, and Other straight active segments lie on their reference lines",
+              "nodes": [
+                "PIS-THREE-CELL-COMPACT-DISCREPANCY-EXACT-CENTRAL-TRIPOD"
+              ]
+            },
+            {
+              "locator": "Genuine triple points on the reference lines, CG2 and the right-contact restriction",
+              "nodes": [
+                "PIS-THREE-CELL-ANTIPODAL-COMPACT-GERM-JUNCTION-COUNT"
+              ]
+            }
+          ],
+          "explanation": "Analytic restrictions on three-cell Gaussian rigidity and endpoint arguments."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_ENDPOINT_HERMITE_PROFILE_OBSTRUCTION.md",
+          "sha256": "6efd422a43b79787c0454fe0d48337230c344fdba0a9ed7925336f2345dd924f",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-TWO-ENDPOINT-SCALAR-HERMITE-OBSTRUCTION",
+            "PIS-THREE-CELL-GAUSSIAN-L2-ENDPOINT-PROFILE-COVARIANCE-OBSTRUCTION",
+            "PIS-THREE-CELL-FAILURE-INTERVAL-ACCUMULATION-TANGENTIAL-TIE"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-NOISE-VALUE-JUNCTION-TERM",
+            "PIS-THREE-CELL-TWO-ENDPOINT-SCALAR-HERMITE-OBSTRUCTION",
+            "PIS-GAUSSIAN-COVARIANCE-LOG-MAJORIZATION",
+            "PIS-GAUSSIAN-COVARIANCE-EIGENVALUE-MAJORIZATION",
+            "PIS-THREE-CELL-STRICT-FAILURE-INTERVAL-TIED-ENDPOINTS",
+            "PIS-POSITIVE-CORRELATION-MAXIMIZER-COMPACTNESS",
+            "PIS-THREE-CELL-DIMENSION-FREE-MEASURABLE-LOCAL-GROWTH"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL"
+          ],
+          "statements": [
+            {
+              "locator": "Exact normalization and contact signs, EP1–EP2",
+              "nodes": [
+                "PIS-THREE-CELL-TWO-ENDPOINT-SCALAR-HERMITE-OBSTRUCTION"
+              ]
+            },
+            {
+              "locator": "A Gaussian tuple and its matrix covariance response and The abstract profile obstruction persists under compactness, EP3",
+              "nodes": [
+                "PIS-THREE-CELL-GAUSSIAN-L2-ENDPOINT-PROFILE-COVARIANCE-OBSTRUCTION"
+              ]
+            },
+            {
+              "locator": "Accumulation and width of actual failure intervals, EP4–EP5",
+              "nodes": [
+                "PIS-THREE-CELL-FAILURE-INTERVAL-ACCUMULATION-TANGENTIAL-TIE"
+              ]
+            }
+          ],
+          "explanation": "Analytic restrictions on three-cell Gaussian rigidity and endpoint arguments."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md",
+          "sha256": "211c0a1ccb54a2bf8796d1d8510506c0cc9d3a3bb907b04a35a30631aee40b1a",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-LONG-CENTRAL-SAME-PAIR-ARC-EXCLUSION",
+            "PIS-THREE-CELL-PAIR-INTERFACE-OMISSION-NOISE-BOUND",
+            "PIS-THREE-CELL-COMPLETE-DORMANT-LINE-OFFSET-BOUND",
+            "PIS-THREE-CELL-RIGHT-TIE-AT-MOST-TWO-LONG-CENTRAL-ARMS",
+            "PIS-THREE-CELL-RIGHT-TIE-THREE-WINNER-ANNULUS-JUNCTION"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+            "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+            "PIS-THREE-CELL-LONG-CENTRAL-SAME-PAIR-ARC-EXCLUSION",
+            "PIS-THREE-CELL-DORMANT-WALL-THIN-LAYER-TEST",
+            "PIS-THREE-CELL-CENTRAL-LONG-ARMS-RIGHT-CONTACT-EXCLUSION",
+            "PIS-THREE-CELL-RIGHT-TIE-AT-MOST-TWO-LONG-CENTRAL-ARMS",
+            "PIS-THREE-CELL-CONNECTED-WINNER-INTERFACE-TOPOLOGY"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL"
+          ],
+          "statements": [
+            {
+              "locator": "Comparison by arclength, PA2–PA5",
+              "nodes": [
+                "PIS-THREE-CELL-LONG-CENTRAL-SAME-PAIR-ARC-EXCLUSION"
+              ]
+            },
+            {
+              "locator": "A one-dimensional comparison with missing interface portions, PA6–PA7",
+              "nodes": [
+                "PIS-THREE-CELL-PAIR-INTERFACE-OMISSION-NOISE-BOUND"
+              ]
+            },
+            {
+              "locator": "The offset bound for a dormant straight wall, PA1",
+              "nodes": [
+                "PIS-THREE-CELL-COMPLETE-DORMANT-LINE-OFFSET-BOUND"
+              ]
+            },
+            {
+              "locator": "Two separate arms of one pair and the right-contact count, PA8",
+              "nodes": [
+                "PIS-THREE-CELL-RIGHT-TIE-AT-MOST-TWO-LONG-CENTRAL-ARMS"
+              ]
+            },
+            {
+              "locator": "An annulus crossed by all three strict winners",
+              "nodes": [
+                "PIS-THREE-CELL-RIGHT-TIE-THREE-WINNER-ANNULUS-JUNCTION"
+              ]
+            }
+          ],
+          "explanation": "Analytic restrictions on three-cell Gaussian rigidity and endpoint arguments."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md",
+          "sha256": "be453bf9af5c656251a6352e45ded306900fec3f934b01ffd2f5022fc59e6649",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-EXTERIOR-INDEX-BOUND",
+            "PIS-THREE-CELL-CRITICAL-MEASURE-COMPACTNESS",
+            "PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN",
+            "PIS-THREE-CELL-EXTERIOR-CRITICAL-TIE-COAREA",
+            "PIS-THREE-CELL-EXTERIOR-PERIODIC-LIMIT-CHAIN",
+            "PIS-THREE-CELL-SINGLE-PARTITION-EXTERIOR-CENTRAL-WINDOW-OBSTRUCTION"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-MAXIMIZER-EXTRINSIC-GAP-AND-FLUX",
+            "PIS-THREE-CELL-GLOBAL-INTERFACE-LENGTH",
+            "PIS-POSITIVE-CORRELATION-MAXIMIZER-COMPACTNESS",
+            "PIS-THREE-CELL-EXTERIOR-INDEX-BOUND",
+            "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+            "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+            "PIS-THREE-CELL-CRITICAL-MEASURE-COMPACTNESS",
+            "PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN",
+            "PIS-THREE-CELL-EXTERIOR-PERIODIC-LIMIT-CHAIN"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL"
+          ],
+          "statements": [
+            {
+              "locator": "Exterior stability up to a vanishing error, EI1",
+              "nodes": [
+                "PIS-THREE-CELL-EXTERIOR-INDEX-BOUND"
+              ]
+            },
+            {
+              "locator": "The critical measure for compactness, EI2–EI4",
+              "nodes": [
+                "PIS-THREE-CELL-CRITICAL-MEASURE-COMPACTNESS"
+              ]
+            },
+            {
+              "locator": "The dilation chain at infinity, EI5–EI8",
+              "nodes": [
+                "PIS-THREE-CELL-EXTERIOR-DILATION-CHAIN"
+              ]
+            },
+            {
+              "locator": "Nondegenerate critical points and the critical measure, EI9–EI10",
+              "nodes": [
+                "PIS-THREE-CELL-EXTERIOR-CRITICAL-TIE-COAREA"
+              ]
+            },
+            {
+              "locator": "A periodic chain with three labels",
+              "nodes": [
+                "PIS-THREE-CELL-EXTERIOR-PERIODIC-LIMIT-CHAIN"
+              ]
+            },
+            {
+              "locator": "Fixed exterior windows and a central window of the same partition, EI11",
+              "nodes": [
+                "PIS-THREE-CELL-SINGLE-PARTITION-EXTERIOR-CENTRAL-WINDOW-OBSTRUCTION"
+              ]
+            }
+          ],
+          "explanation": "Analytic stability restrictions on Gaussian interface topology."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_THETA_ALL_THIN_FOLDS.md",
+          "sha256": "0b166c3ba10788f14d97cbe9c43fe290aa8638b8c70b1cc6e3e05a77c482e164",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-THETA-ALL-THIN-FOLDS-EXCLUSION"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-THETA-THIN-MIDDLE-FOLD-EXCLUSION",
+            "PIS-THREE-CELL-COMPACT-THETA-TURNING-BOUND",
+            "PIS-THREE-CELL-MAXIMIZER-EXTRINSIC-GAP-AND-FLUX"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
+            "GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX"
+          ],
+          "statements": [
+            {
+              "locator": "Signed crossings of each arm through A positive measure of thick fibers, TA1",
+              "nodes": [
+                "PIS-THREE-CELL-THETA-ALL-THIN-FOLDS-EXCLUSION"
+              ]
+            }
+          ],
+          "explanation": "Analytic stability restrictions on Gaussian interface topology."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_THETA_ROTATION_CUT_MATRIX.md",
+          "sha256": "87c8b9bdf178383d3add04f81dd26646f93d30158b27a427f0f8c04ca03ea089",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-THETA-ROTATION-CUT-MATRIX",
+            "PIS-THREE-CELL-THETA-ROTATION-NEAR-LOCAL-CUT",
+            "PIS-THREE-CELL-THETA-ROTATION-CUT-COUNT-OBSTRUCTION"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+            "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+            "PIS-THREE-CELL-CONNECTED-WINNER-INTERFACE-TOPOLOGY",
+            "PIS-THREE-CELL-THETA-ROTATION-CUT-MATRIX"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
+            "GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX"
+          ],
+          "statements": [
+            {
+              "locator": "The exact matrix and its mass constraints, TC1–TC3 and TC5",
+              "nodes": [
+                "PIS-THREE-CELL-THETA-ROTATION-CUT-MATRIX"
+              ]
+            },
+            {
+              "locator": "Sign control when cuts outnumber the constraints, TC4",
+              "nodes": [
+                "PIS-THREE-CELL-THETA-ROTATION-NEAR-LOCAL-CUT"
+              ]
+            },
+            {
+              "locator": "A balanced geometric theta with only two rotation cuts",
+              "nodes": [
+                "PIS-THREE-CELL-THETA-ROTATION-CUT-COUNT-OBSTRUCTION"
+              ]
+            }
+          ],
+          "explanation": "Analytic stability restrictions on Gaussian interface topology."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md",
+          "sha256": "117a02a70d1b1b4c9fbb6776ce0214c6a22b0343ccc0f403effbf99c3fc91fa3",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-THETA-THIN-MIDDLE-FOLD-EXCLUSION",
+            "PIS-THREE-CELL-AFFINE-ROTATION-CUT-MASS-REPAIR",
+            "PIS-THREE-CELL-THETA-BALANCED-NULL-CUT-ANALYTICITY"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-COMPACT-THETA-TURNING-BOUND",
+            "PIS-THREE-CELL-GLOBAL-FLUX-MATRIX",
+            "PIS-THREE-CELL-MAXIMIZER-EXTRINSIC-GAP-AND-FLUX",
+            "PIS-THREE-CELL-THETA-ROTATION-CUT-MATRIX",
+            "PIS-THREE-CELL-MAXIMIZER-TRANSLATION-CUTS",
+            "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
+            "GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX"
+          ],
+          "statements": [
+            {
+              "locator": "Signed intersections on a vertical fiber; An exact threshold for alternating Gaussian pairings; A strictly negative mass-preserving second variation, TF1–TF2",
+              "nodes": [
+                "PIS-THREE-CELL-THETA-THIN-MIDDLE-FOLD-EXCLUSION"
+              ]
+            },
+            {
+              "locator": "Affine centers for rotational cuts, TF3–TF4",
+              "nodes": [
+                "PIS-THREE-CELL-AFFINE-ROTATION-CUT-MASS-REPAIR"
+              ]
+            },
+            {
+              "locator": "Analytic continuation for balanced null cuts, TF5",
+              "nodes": [
+                "PIS-THREE-CELL-THETA-BALANCED-NULL-CUT-ANALYTICITY"
+              ]
+            }
+          ],
+          "explanation": "Analytic stability restrictions on Gaussian interface topology."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md",
+          "sha256": "5dfe28748c426d2898634f34d92ab5ed8bbe5a323d9907ca517ee4b487e34cc4",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-EQUAL-ADJACENT-ARC-RADIAL-ALIGNMENT",
+            "PIS-THREE-CELL-SEMICIRCLE-RADIAL-TWIST-INSTABILITY",
+            "PIS-THREE-CELL-EQUAL-ADJACENT-ARC-BOUNDED-CELLS-EXCLUSION"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-EQUAL-ADJACENT-ARC-RADIAL-ALIGNMENT",
+            "PIS-THREE-CELL-SINGLE-REFLECTION-MONOTONE-GRAPH"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
+            "GAP-PIS-THREE-CELL-ENCLOSED-COMPONENT-INDEX"
+          ],
+          "statements": [
+            {
+              "locator": "Alignment on a pair of circles, RU1",
+              "nodes": [
+                "PIS-THREE-CELL-EQUAL-ADJACENT-ARC-RADIAL-ALIGNMENT"
+              ]
+            },
+            {
+              "locator": "Infinitesimal rotation within a semicircle",
+              "nodes": [
+                "PIS-THREE-CELL-SEMICIRCLE-RADIAL-TWIST-INSTABILITY"
+              ]
+            },
+            {
+              "locator": "Consequence for winding compact networks, RU2",
+              "nodes": [
+                "PIS-THREE-CELL-EQUAL-ADJACENT-ARC-BOUNDED-CELLS-EXCLUSION"
+              ]
+            }
+          ],
+          "explanation": "Finite-amplitude and infinitesimal mass-preserving rotations of Gaussian circles."
         }
       ]
     },

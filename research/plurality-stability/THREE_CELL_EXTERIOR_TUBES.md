@@ -1015,3 +1015,199 @@ proves the assertion. Hence a lower bound
 supported in these balls, for some fixed \(p\) and the radius
 constant corresponding to \(B>p\), would imply exact
 tetrahedral optimality and equality rigidity near one.
+
+## Volume density and outgoing transfers of actual maximizers
+
+Fix \(k\ge3\), work in active dimension \(d=k-1\), and let
+\(A^\rho\) maximize balanced Gaussian noise stability. Set
+\(e=\sqrt{2(1-\rho)}\), \(a^2=(1+\rho)/2\). Align the reference
+simplex \(T\) so \(A^\rho\to T\) in Gaussian measure as
+\(\rho\uparrow1\), by the compactness step of
+[(CT19)](#exponential-localization-for-actual-maximizers).
+That step uses [Milman–Neeman, Theorems 1.1 and 1.2](https://arxiv.org/html/1805.10961v3),
+with \(k=d+1\) and positive prescribed masses. The simplex
+facet approximation also gives \(1-S_\rho(A^\rho)=O_k(e)\).
+
+For every fixed bounded physical set \(K\), the following
+statements hold uniformly for \(\rho\) sufficiently close to one.
+
+1. At every adjusted-score winning point \(x\in K\) of label \(i\),
+   \[
+     |A_i^\rho\cap B_s(x)|\ge c_K s^d
+              \qquad(R_0 e\le s\le r_0).                       \tag{WD1}
+   \]
+   In particular the closed winner sets converge locally in
+   distance to their reference simplex cells.
+2. Write \(L=L_\rho(A^\rho;T)\) for exact OU score transfer
+   cost. In simplex coordinates on \(\mathbf1^\perp\), a point
+   \(x\in K\cap T_i\) where label \(j\) is a winner satisfies
+   \[
+                 x_i-x_j\le C_K(e+L^{1/d}).                   \tag{WD2}
+   \]
+   Let \(B_K\) be the opposing outgoing interaction in [(BR1)](TWO_BLOCK_SIMPLEX_JUNCTION.md#a-fixed-radius-junction-bound-with-arbitrary-incoming-transfers)
+   restricted to transfers in \(K\), and let \(g_3\) be the
+   raw largest-to-third coordinate gap. Then
+   \[
+     e^d B_K\le
+       C_K L_\rho\big(A^\rho;T;\ K\cap
+            \{g_3\le C_K(e+L^{1/d})+CDe\}\big)
+            +C_K e^{-cD^2}L
+                    \qquad(D\ge1).                           \tag{WD3}
+   \]
+   The notation with a final set argument restricts the
+   integration defining \(L_\rho\) to that set. For
+   \(D\) a sufficiently large multiple of \(\sqrt{\log(1/e)}\),
+   only the shrinking higher-junction tubes can supply
+   an outgoing expense appreciable relative to \(L\).
+### Local comparison after volume repair
+
+At a maximizer, first variation along convex combinations of
+fixed-mass fractional label profiles gives linear optimality
+at its masses. The finite concave linear-assignment value as
+a function of the masses admits a supporting plane there.
+Hence the cells choose the largest of
+\(T_\rho1_{A_i^\rho}-\beta_i\), with centered prices \(\beta\),
+as in the [pointwise winner argument](MAXIMIZER_PERTURBATIVE_RIGIDITY.md#assignment-and-the-exact-information-supplied-by-global-maximality).
+For use in that argument, fractional fixed-mass partitions
+may be weak-star approximated by ordinary partitions of the
+same masses using nonatomic subdivision of small cells.
+Ties have measure zero, since distinct adjusted score
+differences are nonconstant real analytic. A constant OU
+image of an indicator difference would force the difference
+itself to be constant, by its Hermite expansion.
+
+For each edge of a label spanning tree, choose two small,
+mutually disjoint physical patches in its reference facet
+interior. Take all patches separated. A compact normal bump
+on one patch from each edge gives an invertible \(k-1\)
+column mass derivative at \(T\). The columns are nonzero
+multiples of tree incidence vectors. Choose \(r_0>0\) so
+small that for any center in \(K\) one can choose one patch
+from each edge a uniformly positive distance from the ball
+\(B_{r_0}\) about that center. The volume derivative columns
+for \(A^\rho\) converge to those for \(T\) by the bulk formula
+\(\int_{A_i^\rho}\mathrm{div}(\phi_1 V)\,dx\)
+and Gaussian measure convergence. Second mass derivatives
+are uniformly bounded by smooth density pullback. Hence an
+ordinary change inside \(B_{r_0}\) can be volume-corrected
+by these remote flows with parameters
+\(O(\gamma(A^\rho\ne U))\). The finite choice of families
+makes the inverses uniform. Take \(r_0\) small enough that
+every change has mass error in the inversion radius.
+
+The derivative of the disagreement of the original \(A^\rho\)
+along these small fixed-support flows is \(O(e)\). This is
+the pullback estimate in the [microscopic planar proof](THREE_CELL_NEAR_ONE.md#blow-ups-of-moving-maximizers-minimize-the-euclidean-cut),
+and it works in dimension \(d\). In the joint density write
+\(w=(x+y)/2,\ z=(y-x)/e\). Whenever the derivative is nonzero,
+one endpoint lies in a fixed compact set, so
+\(|w|\le C+e|z|/2\). The parameter derivatives of the density
+and the Jacobians are bounded by \(C(1+|z|^2)\) times the
+density at the flow endpoints. For small fixed parameters
+the flow is uniformly bi-Lipschitz with derivative close
+to the identity. The difference exponent has a fixed
+Gaussian reserve compared to the joint density at noise
+length \(2e\). It absorbs both the polynomial and the
+midpoint change \(O(1+e|z|+e^2|z|^2)\) in the exponent.
+The Hermite inequality
+\(1-(1-2e^2)^m\le4[1-(1-e^2/2)^m]\)
+bounds original disagreement at \(2e\) by \(O(e)\).
+Stationarity of \(N_\rho+2\beta\cdot m\), tested on the
+invertible family, therefore gives \(|\beta|=O(e)\).
+Here \(N_\rho=1-S_\rho\) and \(m\) is the vector of cell
+masses.
+
+The repair effect on \(N_\rho(U)\) differs from its effect
+on \(N_\rho(A^\rho)\) only at pairs with one changed endpoint
+and one endpoint in the remote flow patches. Their separation
+is uniformly positive, so their joint measure is
+\(O(\gamma(A^\rho\ne U)e^{-c/e^2})\), by conditioning on
+the changed endpoint. Optimality after the repair gives
+\[
+     N_\rho(A^\rho)\le N_\rho(U)+C_K e\,\gamma(A^\rho\ne U)
+                                                               \tag{WD5}
+\]
+for every ordinary change supported in such a ball. No
+interface regularity is required.
+
+### Phase density and the outgoing interaction
+
+In coordinates of length \(e\) centered at \(x\in K\), the
+joint density divided by \(e^d\) is
+\(W(u,v)=\phi_a(x+e(u+v)/2)G(v-u)\), where \(G=\phi_1\)
+is the Euclidean unit Gaussian kernel. It satisfies
+\(W\le C G\) everywhere and \(W\ge c_K>0\) on
+\(|u|\le r_0/e,\ |v-u|\le1\). Let \(E=A_i^{\rho,e}\cap B_r\),
+\(V(r)=|E|\), and write
+\(C(r)=\int_{E\times(A_i^{\rho,e}\setminus B_r)} W\).
+Recolor \(E\) to any other label \(j\). The ordered cut
+difference divided by \(2e^d\) is
+\(C(r)-\int_{E\times A_j^{\rho,e}}W\).
+Summing the bounds from (WD5) gives
+\(P_W(E):=\int_{E\times E^c}W\le k C(r)+CeV(r)\).
+
+A unit-scale smooth mollification \(v\) of \(1_E\) has
+\(\|v-1_E\|_1+\|\nabla v\|_1\le C P_W(E)\), using the
+unit-displacement lower kernel bound on pairs of which one
+belongs to \(E\). If the approximation error is at most
+\(V(r)/4\), \(v\) is at least \(1/2\) on a subset of \(E\)
+of volume at least \(V(r)/2\). The \(L^1\) Sobolev inequality
+then gives \(\|\nabla v\|_1\ge c V(r)^{(d-1)/d}\).
+Otherwise the approximation error is at least \(V(r)/4\).
+Thus \(P_W(E)\ge c\min(V(r),V(r)^{(d-1)/d})\).
+Choose \(r_0\) small enough to absorb \(CeV(r)\) since
+\(eV(r)^{1/d}\le C r_0\).
+
+Integrating from \(R/2\) to \(R\) gives
+\(V(R)\ge c R\min(V(R/2),V(R/2)^{(d-1)/d})\).
+Indeed each pair in \(C(r)\) contributes for an interval
+of radii of length at most \(|v-u|\), and
+\(\int_{R/2}^R C(r)dr\le C V(R)\) by the Gaussian first
+absolute moment. The starting mass \(V(R_0)\) is bounded
+below uniformly at a winner point. Its conditional Gaussian
+score is at least \(1/(2k)\), since the prices are \(O(e)\)
+and the unadjusted scores sum to one. In the scaled coordinates
+the conditional Gaussian has bounded density and mean
+\(O_K(e)\), and a fixed \(R_0\) captures all but \(1/(4k)\)
+of its probability. Iterating the recurrence at dyadic radii,
+the ratio \(V(R)/R^d\) has a positive lower bound because
+each step replaces the preceding ratio by at least a fixed
+positive multiple of its power \((d-1)/d\). Monotonicity
+interpolates between dyadic radii. This proves (WD1).
+Distance convergence follows by applying it to a hypothetical
+winner point a fixed positive distance from \(T_i\), and the
+reverse distance follows by measure convergence on balls in
+the interior of \(T_i\).
+
+For (WD2), if \(g=x_i-x_j\ge C e\), a ball of radius
+\(s=\min(r_0,cg)\) about \(x\) still has gap at least \(g/2\)
+from coordinate \(i\) to \(j\) and satisfies \(s\ge R_0e\).
+Every actual label-\(j\) point there pays transfer cost
+bounded below by a positive constant. In fact if \(b\) is
+the reference winner at \(y\), the pair score against \(j\)
+is at least \(c\min((y_b-y_j)/e,1)\). Use reflection between
+\(b,j\). In the conditional Gaussian at \(\rho y\), restrict
+to a size-\(e\) displacement patch inside \(T_b\) with
+\(b,j\) gap at least \(ce\). The patch added to \(\rho y\)
+stays in \(T_b\), and the reflected kernel ratio is at most
+\(\exp(-c(y_b-y_j)/e)\). This proves the saturated bound.
+By (WD1) the points paying the bound have volume at least
+\(cs^d\), and hence \(L\ge c_K s^d\).
+The case \(s=r_0\) is excluded as \(L\to0\) by Gaussian
+measure convergence. This proves (WD2).
+
+If two transfers share their old label \(i\), but their new
+labels are \(j,\ell\), then at \(x,y\) separated by at most
+\(De\), both \(x_i-x_j\) and \(x_i-x_\ell\) are at most
+\(C_K(e+L^{1/d})+\sqrt2 De\), by (WD2) and the pair-gap
+Lipschitz bound. The same holds at \(y\). Thus both are in
+the tube in (WD3). Their interaction is bounded by the
+integrated saturated pair-gap weight on this tube in
+scaled units, via the thin-section and thick-set estimates
+in [(ET4)](EUCLIDEAN_SIMPLEX_JUNCTION_TRANSFER.md).
+For \(|x-y|>De\), the original scaled kernel is bounded by
+\(Ce^{-cD^2}\) times a widened Gaussian convolution and
+the same estimates apply on all transfers in \(K\).
+Multiplication by \(e^d\), the saturated score bound and
+the lower bound on the Gaussian physical marginal on \(K\)
+convert these estimates to (WD3).
