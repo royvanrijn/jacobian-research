@@ -164,6 +164,231 @@ there is a uniformly positive omitted Gaussian mass whenever
 nearly fill the pair interface on the Gaussian arclength
 scale even if the omissions occur in many separate places.
 
+## The transverse source in the pair-wall inequality
+
+Suppose the scores of labels \(i,j\) agree on their full centered
+reference line. Use coordinates \((t,v)\) along and normal to the
+line. Let \(q(t)\) be the spectator's transverse mass with respect to
+\(V\sim N(0,\sigma^2)\), and let \(P_s\) denote expectation in
+\(t\sim N(rs,\sigma^2)\). The tilted slice identity (CD1) makes the
+other two transverse masses both \((1-q(t))/2\) for almost every \(t\).
+Set
+\[
+ \Gamma(u)=\frac{\phi_1(\Phi^{-1}((1+u)/2))}{\phi_1(0)},\qquad
+ m(t)=\frac{\mathbb E[V(1_{A_i}-1_{A_j})(t,V)]}
+                    {2\sigma\phi_1(0)} .
+\]
+Put \(\Gamma(1)=0\) by continuity. For a portion \(E\) of the line
+that is an actual regular \(i,j\) interface, the normalized slope
+in (PA6) is
+\[
+                  g(s)=|P_sm|\le P_s\Gamma(q).
+                                                            \tag{PA9}
+\]
+The equality is Gaussian differentiation in the observer's normal
+coordinate. The inequality follows by placing the two equal-mass
+transverse sets in the opposite Gaussian tails to maximize the
+absolute signed first moment.
+[The exact tilted slice identity (CD1)](THREE_CELL_COMPACT_SIMPLEX_DISCREPANCY.md#every-label-must-receive-a-bounded-discrepancy)
+
+There is a quantitative version. For each \(s\) choose a sign
+\(\epsilon_s\) with \(\epsilon_s P_sm=|P_sm|\). Let
+\(\Delta_i(t;s)\) and \(\Delta_j(t;s)\) be the \(N(0,\sigma^2)\)
+masses of the symmetric differences from the two tails that
+maximize \(\epsilon_s m(t)\). The upper tail is assigned to \(i\)
+when \(\epsilon_s=1\), and to \(j\) when \(\epsilon_s=-1\).
+Then
+\[
+ \Gamma(P_sq)-g(s)\ \ge\
+ \frac{\pi}{4}\left(\operatorname{Var}_{P_s}q+
+            P_s[\Delta_i(\,\cdot\,;s)^2+\Delta_j(\,\cdot\,;s)^2]\right).
+                                                            \tag{PA10}
+\]
+Indeed, writing \(z=\Phi^{-1}((1+u)/2)\) gives
+\(\Gamma''(u)=-1/(4\phi_1(0)\phi_1(z))\le-\pi/2\).
+Thus the loss from Jensen's inequality is at least
+\((\pi/4)\operatorname{Var}_{P_s}q\), including endpoint values by
+continuity. For the tail estimate, suppose a set differs from a
+tail of the same mass by symmetric difference \(\Delta\). On each
+side of the tail threshold there is a displaced mass \(\Delta/2\).
+Since the Gaussian density is at most \(D=\phi_1(0)/\sigma\),
+its distance integral from the threshold is at least
+\((\Delta/2)^2/(2D)\) on each side. This is the integral obtained by
+placing the mass at density \(D\) immediately next to the threshold.
+The first-moment loss is therefore at least \(\Delta^2/(4D)\).
+Sum over the two labels, divide by \(2\sigma\phi_1(0)\), and
+average with \(P_s\). This proves (PA10).
+
+Substituting (PA9) into (PA6) yields the source-only condition
+\[
+ \int_E P_s\Gamma(q)\,h(s)^2\,d\gamma_1(s)
+       \ge \langle h,T_r^{(1)}h\rangle_{\gamma_1},
+       \qquad h=1_Eh.
+                                                            \tag{PA11}
+\]
+For \(h=1_E\), the right side of (PA7) is at least
+\(\int_E[1-\Gamma(P_s q)]\,d\gamma_1(s)\) plus the integral of the
+two terms in (PA10). Thus the one-pair test measures variance of
+the unsmoothed spectator profile and departure from the same
+transverse ordering on nearby slices.
+
+## Source oscillations with a strict one-pair gap
+
+For each fixed \(0<r<1\), ordinary balanced partitions can differ
+from the simplex on arbitrarily small compact sets, satisfy all
+three tilted slice identities, and have arbitrarily many source
+sign changes for all three spectators. Their scores choose the
+reference simplex and satisfy a strict (PA6) on each reference
+winner ray using their own score slopes. The changed cells fail
+the winner equation, so these tests are on score interfaces.
+
+For spectator \(k\), orient \(t\) opposite its reference center and
+choose \(v\) so that near the upper spectator boundary the cone is
+\(v<-\sqrt3t\). The reference profile for \(t<0\) is
+\(q_T(t)=2\Phi(-\sqrt3 t/\sigma)-1\). Its threshold \(q_T=1/3\)
+occurs at \(t_*=-\sigma\Phi^{-1}(2/3)/\sqrt3<0\). For small
+\(d>0\), choose any finite sequence of disjoint ordered intervals
+\(I_\ell\) in \(|t-t_*|<d^2\). At each interval use the box
+\[
+ t\in I_\ell,\qquad v+\sqrt3t\in[d,11d/10]
+                    \quad\text{or}\quad[-11d/10,-d],
+\]
+alternating the choice. Exchange the labels of the two incident
+cones on each box and on all its images under the six symmetries
+of the reference simplex, acting on points and labels together.
+The boxes lie strictly on one side of the upper ray between \(k\)
+and a neighbor. Reflection in that ray takes
+\(t\) to \(t-(\sqrt3/2)(v+\sqrt3t)\). Thus its image near the same
+ray misses every \(I_\ell\). Reflection in the \(t\)-axis gives
+the lower copy and preserves \(k\) and \(t\). The remaining two
+images are near the pair ray of the two other labels and do not
+change the spectator. These copies are disjoint up to null sets.
+On each of the two spectator rays, the unreflected boxes are
+disjoint by their \(t\)-intervals, and the reflected boxes are
+their isometric images with disjoint \(t\)-range from the originals.
+On the remaining ray the same disjointness follows by rotation.
+
+The resulting assignment is equivariant, so its Gaussian masses
+are equal and reflection gives all three slice identities.
+For \(t\in I_\ell\), it changes \(q_T(t)\) by a quantity of
+alternating sign and magnitude at least \(c_r d\), from the two
+copies at the same \(t\). The reference error
+\(|q_T(t)-1/3|\) is \(O_r(d^2)\), so the new profile alternates
+sides of the threshold on the successive intervals. The three
+sources are rotations of this example.
+
+The total changed area is \(O(d^3)\) since the intervals have
+summed length at most \(2d^2\). Each score difference and its
+first derivatives change uniformly by \(O_r(d^3)\) by convolution
+with the Gaussian kernel. The score difference perturbation
+vanishes on the corresponding full pair line. Integrating the
+normal derivative from the line sharpens the bound to
+\(O_r(d^3)\min\{\operatorname{dist}(x,L_{ij}),1\}\).
+The saturated reference margin on each winning sector then
+preserves its winner.
+[Saturated reference score margin](POSITIVE_CORRELATION_CONTINUATION.md#relative-exterior-control-below-every-fixed-correlation-bound)
+
+At the reference simplex, the difference between the left and
+right sides of (PA6) for a single ray is bounded below by
+\(c'_r\|h\|_{L^2(\gamma_1)}^2\) with \(c'_r>0\).
+Apply (S37) in one extra coordinate \(z\) to the balanced speed
+\(zh(s)\) supported on that ray. The rotations in its degree-one
+block have the form \(z\,b\cdot N\) for a fixed planar vector \(b\).
+The three rays have equal Gaussian surface mass, and their unit
+normals satisfy \(\sum_e N_e N_e^{\mathsf T}=(3/2)I\).
+At most two thirds of the squared norm of such a rotation lies
+on one ray. Cauchy–Schwarz then bounds the squared projection of
+the test speed onto rotations by two thirds of its own squared
+norm. The normalization in (PA6) divides the corresponding
+first extra-coordinate form by the positive constant \(\Lambda_r\).
+This proves the strict one-pair bound. Since the perturbed slopes
+\(g\) differ uniformly by \(O_r(d^3)\), the same bound with a
+smaller constant holds on their score rays for small \(d\).
+Thus the exact slice identities, reference score winners, and
+the entire family of one-ray tests permit arbitrarily many
+transverse source oscillations.
+[Three-cell simplex gap modulo rotations (S37)](SIMPLEX_INTERFACE_SYMMETRY.md#reflected-kernels-close-the-three-cell-spectral-problem)
+
+## A strict one-pair gap even with spectator excursions
+
+For each fixed \(0<r<1\), the tests on the individual score
+lines also permit genuine excursions of the spectator score
+on all three forward rays. Take the partition \(A^R\) equal
+to the antipodal simplex on \(R<|x|<2R\) and to the reference
+simplex elsewhere. Its mass is equal for each label and it
+has all three full pair-score equalities, by the rotational
+and reflection symmetries of the reference simplex. Along each
+forward ray at \(s=3R/(2r)\), the conditional Gaussian lies
+with probability tending to one in the annulus and in the
+central angular part of the antipodal spectator sector.
+Thus the score difference \(h(s)=U_i(s,0)-U_k(s,0)\) tends
+to \(-1\) there. It is positive near zero on this ray for
+large \(R\) and eventually positive again because the defect
+is compact.
+
+Let \(E_R=\{s:h(s)>0\}\) on one full line, and on \(E_R\)
+use its normalized pair slope \(g_R\) from (PA9). There is
+a fixed \(c>0\) with \(g_R\ge c\) on \(E_R\) for all
+sufficiently large \(|s|\), independently of \(R\). To see
+this, write \((t,V)\) for the conditional Gaussian at
+\((s,0)\). The event \(G_s=\{st>0,\ |V|<\sqrt3|t|\}\)
+has probability tending to one as \(|s|\to\infty\). On
+this event, the partition is either in the spectator phase
+or uses the pair split with signed contrast
+\(\operatorname{sign}(V)\) for \(s>0\), after orienting
+the transverse coordinate. For \(s<0\) the sign is
+reversed. Indeed for positive \(t\) the two alternatives
+inside \(G_s\) are the antipodal spectator sector and the
+reference split. For negative \(t\) they are the reference
+spectator sector and the antipodal split.
+
+Since \(U_k(s,0)<1/3\) on \(E_R\), the nonspectator part
+of \(G_s\) has probability at least \(1/2\) when \(|s|\)
+is large. Its integral of \(|V|\) has a positive uniform
+lower bound, by discarding \(|V|\le\sigma/4\), an event
+of probability less than \(1/4\). The integral of
+\(|V|\) on \(G_s^c\) tends to zero by Cauchy–Schwarz.
+After subtracting this error and applying (PA9), the
+uniform bound on \(g_R\) follows.
+
+On a fixed observation window \([-M,M]\), the scores
+and their derivatives converge uniformly to the reference
+scores as \(R\to\infty\), since modifications are outside
+the growing source disk. The zero at \(s=0\) remains exact
+by the three pair equalities. The reference has a simple
+zero there and strict signs on both open half-rays, so for
+large \(R\) the set \(E_R\cap[-M,M]\) is \((0,M]\).
+The slopes converge uniformly there.
+
+The reference strict single-ray bound above applies to
+speeds supported in \((0,M]\). For a speed \(h_0\)
+supported on \(E_R\), decompose it into its restrictions
+to \([-M,M]\) and its complement. The Mehler pairings
+involving the complement have total absolute value at most
+\(2\|T_r^{(1)}1_{\{|s|>M\}}\|\|h_0\|_2^2\), where the
+indicator denotes multiplication on the operator's right.
+This operator norm tends to zero as \(M\to\infty\) by
+compactness of \(T_r^{(1)}\) on \(L^2(\gamma_1)\), whose
+Hermite eigenvalues are \(r^j\). Choose \(M\) first so
+this error is smaller than half the smaller of \(c\)
+and the strict reference gap divided by two. Then take
+\(R\) large enough to retain half the reference gap in the
+window. The positive tail slope and the retained reference
+gap prove the strict (PA6) on all of \(E_R\), for every
+line.
+
+These tests are still on score interfaces. For example,
+choose \(1<\lambda<\min\{2,1/r\}\). Near the point
+\(\lambda R\tau_k\), the assigned label is the antipodal
+spectator \(k\), while the conditional Gaussian is
+concentrated near the forward reference ray at radius
+\(r\lambda R<R\). Its spectator score tends to zero
+there. Hence this assignment violates its own winner
+equation on an open set despite the strict score
+excursions and the single-ray bounds. The excursions in
+this family escape every fixed observation window as
+\(R\to\infty\).
+
 ## The offset bound for a dormant straight wall
 
 If the whole straight line is a dormant wall, its third-label

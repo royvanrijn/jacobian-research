@@ -734,6 +734,27 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Fixed exterior and moving central windows can be prescribed independently | Internal result | proved | [Source](../plurality-stability/THREE_CELL_EXTERIOR_INDEX_AND_DILATION_CHAIN.md) |
 | A nonconstant radial twist in a semicircle is infinitesimally unstable | Internal result | proved | [Source](../plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md) |
 | Radial alignment excludes two bounded cells in the equal adjacent arc class | Internal result | proved | [Source](../plurality-stability/THREE_CELL_RADIAL_UNTWISTING.md) |
+| Joint translation cut matrices are Hermitian positive semidefinite | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COUPLED_TRANSLATION_TEST.md) |
+| A compact theta cut bounds an oriented derivative of bounded-cell cross-agreement | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COUPLED_TRANSLATION_TEST.md) |
+| Positive Mehler energy of the pair measures bounds the correlation derivative | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COUPLED_TRANSLATION_TEST.md) |
+| The mass-matched normal residual is uniformly positive off the simplex | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COUPLED_TRANSLATION_TEST.md) |
+| Near-equal angular widths have a skew preferred-rotation term | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ANGULAR_ROTATION_CYCLES.md) |
+| Circular slices pay a quartic loss for incompatible pair rotations | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ANGULAR_ROTATION_CYCLES.md) |
+| Almost every outward orbit has one finite-support equilibrium limit | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_OUTWARD_THRESHOLD_LIMIT.md) |
+| Pure outward limit phases are given by open discrete distance limits | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_OUTWARD_THRESHOLD_LIMIT.md) |
+| Fractional outward phases require super-volume perimeter growth | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_OUTWARD_THRESHOLD_LIMIT.md) |
+| Each exact reference mirror of a nonsimplex maximizer has all three mismatch types | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REFERENCE_MIRROR_MISMATCHES.md) |
+| A counted complementary eigenvalue enclosure at six-cell correlation 3/4 | Internal result | proved | [Source](../plurality-stability/SIX_CELL_COMPLEMENTARY_GAP.md) |
+| The true six-cell radial action has a uniform row-derivative estimate | Internal result | proved | [Source](../plurality-stability/SIX_CELL_COMPLEMENTARY_GAP.md) |
+| One radial trial certifies the six-cell stationary comparison on 7/10 through 77/100 | Internal result | proved | [Source](../plurality-stability/SIX_CELL_COMPLEMENTARY_GAP.md) |
+| Full six-cell Gaussian simplex interface gap through correlation 77/100 | Internal result | proved | [Source](../plurality-stability/SIX_CELL_COMPLEMENTARY_GAP.md) |
+| Nonsimplex right-contact candidates require uniformly disordered spectator sources | Internal result | proved | [Source](../plurality-stability/THREE_CELL_SPECTATOR_SOURCE_ORDER.md) |
+| The transverse spectator source bounds score zeros with multiplicities | Internal result | proved | [Source](../plurality-stability/THREE_CELL_TRANSVERSE_SOURCE_OSCILLATION.md) |
+| Compact exact-slice examples have arbitrarily many source sign changes | Internal result | proved | [Source](../plurality-stability/THREE_CELL_TRANSVERSE_SOURCE_OSCILLATION.md) |
+| One-pair stability retains the variance and transverse ordering of the spectator source | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md) |
+| Many source oscillations can coexist with a strict one-ray spectral gap | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PAIR_ARC_CENTRAL_EXCLUSION.md) |
+| Compact right contact forces a uniformly positive cumulative spectator violation | Internal result | proved | [Source](../plurality-stability/THREE_CELL_SPECTATOR_CUMULATIVE_ORDER.md) |
+| Reference score winners and exact line constraints do not force cumulative order | Internal result | proved | [Source](../plurality-stability/THREE_CELL_SPECTATOR_CUMULATIVE_ORDER.md) |
 
 **Computed obligations:** 45 unresolved; 32 resolved within their exact scope.
 

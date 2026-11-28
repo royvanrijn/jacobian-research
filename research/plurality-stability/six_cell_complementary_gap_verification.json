@@ -1,0 +1,158 @@
+{
+  "status": "pass",
+  "calculations": [
+    {
+      "status": "pass",
+      "python": "3.12.3",
+      "python_flint": "0.9.0",
+      "precision_bits": 512,
+      "mode": "complementary",
+      "certificate": {
+        "left": "3/4",
+        "right": "3/4",
+        "degree": 13,
+        "feature_count": 193,
+        "row_inverse_lower": "2241/5000",
+        "analytic_tail_upper": "158659252067/1000000000000",
+        "shift": "9/10",
+        "count_exponent": 4,
+        "count_trace": "[1.265904342300297 +/- 5.15e-17]",
+        "count_threshold": "6561/5000",
+        "trial_seed": "radial",
+        "krylov_steps": 8,
+        "rayleigh": "[0.995139794486192 +/- 4.40e-16]",
+        "squared_residual": "[2.8069223e-7 +/- 5.68e-15]",
+        "complementary_upper": "1243928431/1250000000",
+        "normalized_interaction_upper": "1244891741596413183123/1250000000000000000000",
+        "standard_gap_factor_lower": "5108258403586816877/1250000000000000000000"
+      },
+      "source_sha256": {
+        "check_six_cell_complementary_gap.py": "3ad37919a540f650b4fed57b77f9e465364464de9c62f954cfbd07b9db68364b",
+        "check_six_cell_weighted_gap.py": "8e11f042c7fe2b97c12f3547b01e54d3af1ca71a7dcab79a1dbf3bdbf6b05678",
+        "check_tetrahedral_standard_gap.py": "37d7bc58dfe8e125bc70ffe8c8cc3b68882a918966846d61c1530470e3a68738",
+        "check_tetrahedral_weighted_gap.py": "c32516f201e12a838f6148006f46c686bc7f822602ad7e5719781524d8c33020"
+      },
+      "replay_command": "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_six_cell_complementary_gap.py"
+    },
+    {
+      "status": "pass",
+      "python": "3.12.3",
+      "python_flint": "0.9.0",
+      "precision_bits": 512,
+      "mode": "radial",
+      "certificate": {
+        "left": "7/10",
+        "right": "18/25",
+        "independent_true_complement": {
+          "degree": 10,
+          "feature_count": 93,
+          "trial": "radial moment complement",
+          "analytic_tail_upper": "250031048951/1000000000000",
+          "trace_exponent": 16,
+          "compressed_trace": "[1.214488888636569e-5 +/- 1.51e-21]",
+          "true_second_eigenvalue_upper": "371474478473/500000000000",
+          "centered_radial_envelope_moment_upper": "1515925596539/250000000000"
+        },
+        "radial_derivative": {
+          "latent_bin_count": 768,
+          "latent_bin_width": "1/64",
+          "latent_tail_contribution": "[1.718519200106086e-8 +/- 9.24e-25]",
+          "radial_row_derivative_upper": "385140950787/500000000000"
+        },
+        "row_envelope_mass_upper": "854100272123/1000000000000",
+        "squared_radial_residual_upper": "71362236914591070949558440436128970729187429993199/11200000000000000000000000000000000000000000000000000",
+        "schur_margin": "[1.316764609451398e-5 +/- 1.80e-21]",
+        "normalized_interaction_upper": "899/1000",
+        "standard_gap_factor_lower": "101/1000",
+        "stationary_ratio_lower": "3707/3510"
+      },
+      "source_sha256": {
+        "check_six_cell_complementary_gap.py": "3ad37919a540f650b4fed57b77f9e465364464de9c62f954cfbd07b9db68364b",
+        "check_six_cell_weighted_gap.py": "8e11f042c7fe2b97c12f3547b01e54d3af1ca71a7dcab79a1dbf3bdbf6b05678",
+        "check_tetrahedral_standard_gap.py": "37d7bc58dfe8e125bc70ffe8c8cc3b68882a918966846d61c1530470e3a68738",
+        "check_tetrahedral_weighted_gap.py": "c32516f201e12a838f6148006f46c686bc7f822602ad7e5719781524d8c33020"
+      },
+      "replay_command": "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_six_cell_complementary_gap.py --radial --start 7/10 --stop 18/25"
+    },
+    {
+      "status": "pass",
+      "python": "3.12.3",
+      "python_flint": "0.9.0",
+      "precision_bits": 512,
+      "mode": "radial",
+      "certificate": {
+        "left": "18/25",
+        "right": "3/4",
+        "independent_true_complement": {
+          "degree": 12,
+          "feature_count": 154,
+          "trial": "radial moment complement",
+          "analytic_tail_upper": "211545669423/1000000000000",
+          "trace_exponent": 16,
+          "compressed_trace": "[9.395622281801772e-5 +/- 1.45e-21]",
+          "true_second_eigenvalue_upper": "19292504803/25000000000",
+          "centered_radial_envelope_moment_upper": "5939375325441/1000000000000"
+        },
+        "radial_derivative": {
+          "latent_bin_count": 768,
+          "latent_bin_width": "1/64",
+          "latent_tail_contribution": "[1.718519200106086e-8 +/- 9.24e-25]",
+          "radial_row_derivative_upper": "385140950787/500000000000"
+        },
+        "row_envelope_mass_upper": "832951135253/1000000000000",
+        "squared_radial_residual_upper": "2462458490033167785994627603516875111170782468814431/480000000000000000000000000000000000000000000000000000",
+        "schur_margin": "[0.0007086261808085468 +/- 1.99e-20]",
+        "normalized_interaction_upper": "183/200",
+        "standard_gap_factor_lower": "17/200",
+        "stationary_ratio_lower": "853/819"
+      },
+      "source_sha256": {
+        "check_six_cell_complementary_gap.py": "3ad37919a540f650b4fed57b77f9e465364464de9c62f954cfbd07b9db68364b",
+        "check_six_cell_weighted_gap.py": "8e11f042c7fe2b97c12f3547b01e54d3af1ca71a7dcab79a1dbf3bdbf6b05678",
+        "check_tetrahedral_standard_gap.py": "37d7bc58dfe8e125bc70ffe8c8cc3b68882a918966846d61c1530470e3a68738",
+        "check_tetrahedral_weighted_gap.py": "c32516f201e12a838f6148006f46c686bc7f822602ad7e5719781524d8c33020"
+      },
+      "replay_command": "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_six_cell_complementary_gap.py --radial --start 18/25 --stop 3/4 --degree 12"
+    },
+    {
+      "status": "pass",
+      "python": "3.12.3",
+      "python_flint": "0.9.0",
+      "precision_bits": 512,
+      "mode": "radial",
+      "certificate": {
+        "left": "3/4",
+        "right": "77/100",
+        "independent_true_complement": {
+          "degree": 13,
+          "feature_count": 193,
+          "trial": "radial moment complement",
+          "analytic_tail_upper": "27922764841/125000000000",
+          "trace_exponent": 16,
+          "compressed_trace": "[0.0001704544720365819 +/- 2.39e-20]",
+          "true_second_eigenvalue_upper": "804782784819/1000000000000",
+          "centered_radial_envelope_moment_upper": "5755390862181/1000000000000"
+        },
+        "radial_derivative": {
+          "latent_bin_count": 768,
+          "latent_bin_width": "1/64",
+          "latent_tail_contribution": "[1.718519200106086e-8 +/- 9.24e-25]",
+          "radial_row_derivative_upper": "385140950787/500000000000"
+        },
+        "row_envelope_mass_upper": "400512417043/500000000000",
+        "squared_radial_residual_upper": "1861588875109046568518069695538553596317911220047/512000000000000000000000000000000000000000000000000",
+        "schur_margin": "[0.0005402727137606357 +/- 4.24e-20]",
+        "normalized_interaction_upper": "461/500",
+        "standard_gap_factor_lower": "39/500",
+        "stationary_ratio_lower": "617/585"
+      },
+      "source_sha256": {
+        "check_six_cell_complementary_gap.py": "3ad37919a540f650b4fed57b77f9e465364464de9c62f954cfbd07b9db68364b",
+        "check_six_cell_weighted_gap.py": "8e11f042c7fe2b97c12f3547b01e54d3af1ca71a7dcab79a1dbf3bdbf6b05678",
+        "check_tetrahedral_standard_gap.py": "37d7bc58dfe8e125bc70ffe8c8cc3b68882a918966846d61c1530470e3a68738",
+        "check_tetrahedral_weighted_gap.py": "c32516f201e12a838f6148006f46c686bc7f822602ad7e5719781524d8c33020"
+      },
+      "replay_command": "OPENBLAS_NUM_THREADS=1 .venv/bin/python research/plurality-stability/check_six_cell_complementary_gap.py --radial --start 3/4 --stop 77/100 --degree 13"
+    }
+  ]
+}
