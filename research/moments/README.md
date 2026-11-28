@@ -849,6 +849,17 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Euclidean Gaussian-cut minimizers have at most three phases in a plane and four in three dimensions | Internal result | proved | [Source](../plurality-stability/EUCLIDEAN_GAUSSIAN_CUT_PHASE_DIMENSION.md) |
 | Every large-scale perimeter limit of a four-phase Euclidean Gaussian-cut minimizer in three dimensions is a regular tetrahedral cone | Internal result | proved | [Source](../plurality-stability/EUCLIDEAN_GAUSSIAN_CUT_PHASE_DIMENSION.md) |
 | Full near-one ties have uniformly many independent local score directions | Internal result | proved | [Source](../plurality-stability/EUCLIDEAN_GAUSSIAN_CUT_PHASE_DIMENSION.md) |
+| A maximizing cell admits no finite directional product equation | Internal result | proved | [Source](../plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md) |
+| Every active plane repeats in an indicator identity of three-cell maximizers | Internal result | proved | [Source](../plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md) |
+| Two maximizers in distinct active planes have rigid complementary patches | Internal result | proved | [Source](../plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md) |
+| Distinct-plane complementary patches have a uniform loss away from degeneracy | Internal result | proved | [Source](../plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md) |
+| A Fourier argument gives simplex complementary patch rigidity for distinct planes | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COMPLEMENTARY_PATCH_RIGIDITY.md) |
+| A generic same-plane recombination must retain all simplex rays in one output | Internal result | proved | [Source](../plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md) |
+| A generic same-plane complementary patch strictly loses at a right contact | Internal result | proved | [Source](../plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md) |
+| Two supporting rays of a convex cell have aperture at least 120 degrees | Internal result | proved | [Source](../plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md) |
+| Two finite central straight segments of a convex maximizing cell force the simplex | Internal result | proved | [Source](../plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md) |
+| Every compact simplex defect has strict radial exchanges in every label | Internal result | proved | [Source](../plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md) |
+| Only a simplex or its antipode can have a finite directional-product difference from the reference | Internal result | proved | [Source](../plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md) |
 
 **Computed obligations:** 45 unresolved; 32 resolved within their exact scope.
 

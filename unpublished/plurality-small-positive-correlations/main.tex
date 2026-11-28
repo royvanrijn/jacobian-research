@@ -26,13 +26,14 @@
 \date{}
 \begin{document}
 \begin{abstract}
-For each fixed number of cells $k\ge2$, we prove that the central
-regular-simplex partition maximizes Gaussian noise stability among
-equal-measure measurable $k$-cell partitions at sufficiently small
-positive correlations $\rho$ in dimensions $d\ge k-1$. The noise stability deficit is bounded below
-by a positive constant times $\rho$ times the square of the summed Gaussian
-symmetric differences from the closest simplex partition. Both the constant and
-the correlation threshold are independent of the ambient dimension.
+For each fixed number of cells $k\ge2$, we prove that the partition
+defined by a centered regular simplex maximizes Gaussian noise stability
+among equal-measure measurable $k$-cell partitions at sufficiently small
+positive correlations $\rho$ in dimensions $d\ge k-1$. The noise stability
+deficit is bounded below by a positive constant times $\rho$ times the
+square of the summed Gaussian symmetric differences from the closest
+simplex partition. The constant and the correlation threshold are
+independent of the ambient dimension.
 Zhang's first-moment theorem localizes near maximizers. To prove the
 positive-correlation bound, we normalize arbitrary label changes by their
 exact loss against the simplex's Ornstein--Uhlenbeck scores. A Gaussian
@@ -85,22 +86,27 @@ balanced measurable $k$-cell partition $A$,
 Equality of noise stabilities holds exactly on the simplex orbit.
 \end{theorem}
 
-The threshold is qualitative and may depend on $k$. If $d<k-1$,
-cylindrical extension to dimension $k-1$ gives the strict upper bound
+The constants $c_k$ and $\rho_k$ may depend on $k$ and are left
+unevaluated. The quantitative conclusion is the quadratic control of
+label distance. If $d<k-1$, cylindrical extension to dimension $k-1$
+gives the strict upper bound
 $S_\rho(A)<S_\rho(T)$ for $0<\rho\le\rho_k$, with $T$ in dimension
 $k-1$. The extended partition's cell moments cannot span that space.
 
-The two-cell comparison is Borell's inequality
-\cite[Introduction]{HT}. For three cells, Heilman's fixed-dimensional
-small-correlation theorem \cite{Heilman14} and the dimension reduction
-of Heilman--Tarter \cite[Theorems~1.9--1.10]{HT} give a
-dimension-independent interval. Heilman subsequently gave the explicit
-three-cell range $0<\rho\le0.1082$ and a planar deficit bound in terms
-of radial mass imbalance \cite[Theorem~1.5]{Heilman23}.
-Theorem~\ref{thm:main} gives an interval for every fixed cell count and
-controls the full label distance in the ambient space.
-The Gaussian theorem concerns the continuous problem underlying
-low-influence Plurality Is Stablest \cite{IM}.
+Borell proved two-cell simplex optimality \cite{Borell}. For three cells,
+Heilman and Tarter extended Heilman's fixed-dimensional result to all
+dimensions \cite{Heilman14,HT}. Heilman later reached $\rho=0.1082$,
+with a planar radial-mass deficit \cite[Theorem~1.5]{Heilman23}.
+His 2026 preprint proves the balanced three-cell comparison for
+$0<\rho\le2/5$ in every $d\ge2$ \cite[Theorems~1.2 and~A.1]{Heilman26}
+and leaves stronger estimates of distance to the optimizer for
+future work \cite[Section~1.4]{Heilman26}.
+
+Theorem~\ref{thm:main} applies to every fixed cell count, including
+$k\ge4$. Its deficit controls the full Gaussian label distance to the
+simplex orbit, with both constants uniform in the ambient dimension.
+This is the Gaussian problem underlying low-influence Plurality Is
+Stablest \cite{IM}.
 
 \subsection*{How the comparison works}
 The coefficient of $\rho$ in $S_\rho(A)$ is the sum of squared Gaussian
@@ -125,7 +131,9 @@ rotations. The conditional Gaussian covariance on each convex facet
 then bounds the limiting ratio of interaction to score loss by
 $2-2/k$ (Proposition~\ref{prop:local}). All higher Hermite degrees
 contribute a uniformly smaller error, including in directions
-orthogonal to the simplex.
+orthogonal to the simplex. Proposition~\ref{prop:obstruction} exchanges
+two remote balls to explain why the first-moment deficit cannot replace
+the exact score loss in this local argument.
 
 \section{First moments and uniform localization}\label{sec:alignment}
 
@@ -140,14 +148,18 @@ The sum of the rows is zero. Write
 where the $Z_i$ are independent standard normals.
 
 \begin{proposition}\label{prop:zhang}
-One has $W_1(A)\le F$ for every balanced partition. For $d\ge n$,
-equality holds exactly on the simplex orbit, and the label distance
-to the simplex with moment matrix closest to $B$ tends to zero as
-$W_1(A)\to F$, uniformly in $d$. For $d<n$ the inequality is strict.
+For every balanced partition, $W_1(A)\le F$. Equality holds exactly on
+the simplex orbit when $d\ge n$, and the inequality is strict for $d<n$
+\cite[Theorem~1]{Zhang}. Moreover, for $d\ge n$, the label distance to
+the simplex with moment matrix closest to $B$ tends to zero as
+$W_1(A)\to F$, uniformly in $d$.
 \end{proposition}
 
 \begin{proof}
-We use Zhang's balanced assignment value \cite[Sections~2--5]{Zhang}.
+We present Zhang's covariance comparison \cite[Sections~2--5]{Zhang}
+with an additive parametrization. We then derive the uniform
+localization using compactness of the normalized covariances and
+a linear score estimate.
 For $Q\succeq0$ with $Q\one=0$ let
 \[
  C(Q)=\inf_{\lambda\in\R^k}
@@ -223,7 +235,7 @@ everywhere. The prices are equal by symmetry and the winning labels
 are unique off the pair planes. The regular Gram matrix has rank $n$,
 which excludes equality for $d<n$.
 
-For localization, the centered trace-one covariance set is compact.
+For the uniform localization, the centered trace-one covariance set is compact.
 If $W_1(A)\to F$, the last bounds and strict optimality of $Q_*$ force
 $BB^T\to FQ_*$, independently of $d$. Every matrix with Gram matrix
 $FQ_*$ is the moment matrix of a simplex. If $B_*$ is closest to $B$
@@ -261,8 +273,12 @@ For facet densities $f=(f_{ij})_{i<j}$ in
 $\HH=\bigoplus_{i<j}L^2(F_{ij},\nu_{ij})$, set $f_{ji}=-f_{ij}$.
 Call them balanced if $\sum_{j\ne i}\int f_{ij}\,d\nu_{ij}=0$ for
 every $i$. Define the moment matrix $\DD f$ by
-$(\DD f)_i=\sum_{j\ne i}\int x f_{ij}\,d\nu_{ij}$. Its rows belong to
-$E$ and sum to zero.
+$(\DD f)_i=\sum_{j\ne i}\int x f_{ij}\,d\nu_{ij}$. Its rows lie in
+$E$ and sum to zero, so we view $\DD f$ as an operator $E\to E$.
+In the local comparison, choosing the closest simplex moment matrix
+makes the active moment difference orthogonal to infinitesimal rotations.
+This leaves a symmetric operator on $E$, as shown in
+Section~\ref{sec:comparison}.
 
 \begin{lemma}\label{lem:interface}
 For balanced $f$ with $\DD f$ symmetric,
@@ -299,19 +315,25 @@ The unprojected sum is $k\norm H_F^2$, since
 $\sum_{i<j}p_{ij}p_{ij}^T=kP$. The removed sum is
 $\tfrac12\sum_{i<j}(p_{ij}^THp_{ij})^2$. If $J$ is the matrix with
 entries $J_{ij}=p_{ij}^THp_{ij}$ and zero diagonal, then
-$H=-PJP/2$ by centering. Hence the removed sum is at least
-$\norm H_F^2$. Squaring the inequality and using $v=\ell/k$ proves
-the claim, with the case $H=0$ immediate.
+$H=-PJP/2$ by centering. The removed sum is at least $\norm H_F^2$
+because
+\[
+ \norm H_F^2=\tfrac14\norm{PJP}_F^2\le\tfrac14\norm J_F^2
+             =\tfrac12\sum_{i<j}J_{ij}^2 .
+\]
+The projected sum is therefore at most $(k-1)\norm H_F^2$. Squaring
+the Cauchy--Schwarz estimate and using $v=\ell/k$ proves the claim,
+with the case $H=0$ immediate.
 \end{proof}
 
 \section{Exact score loss and weighted transfer bounds}\label{sec:tails}
 
 Put $\sigma=\sqrt{1-\rho^2}$ and
 $U_{\rho,ij}=T_\rho(1_{T_i}-1_{T_j})$. In coordinates
-$x=z+tn_{ij}$, $z\in H_{ij}$, let $\phi_0=\phi_1(0)$; then
+$x=z+tn_{ij}$, $z\in H_{ij}$, let $\kappa=\phi_1(0)$; then
 \[
  d\ga_n=\phi_1(t)dt\,d\ga_{n-1}(z),\qquad
- d\nu_{ij}=\phi_0d\ga_{n-1}(z).
+ d\nu_{ij}=\kappa\,d\ga_{n-1}(z).
 \]
 For $n=1$, $\ga_0$ is unit mass on the pair plane.
 
@@ -334,8 +356,9 @@ Cone scaling, with $m=\rho x/\sigma$, gives
 \]
 Here the subscript $N$ denotes the $n_{ij}$ component.
 For $m\in T_i$ the integrand is nonnegative. Fix a ball $D$ in the
-interior of $T_i$ with $z_N\ge a>0$ on $D$ and $\ga_n(D)=p>0$.
-Since $m+D\subset T_i$, restriction to this ball gives
+interior of $T_i$ on which every $u\in D$ has $u\cdot n_{ij}\ge a>0$,
+and set $p=\ga_n(D)>0$. Since $m+D\subset T_i$, restriction to the
+translated ball gives
 $p(1-e^{-2am_N})\ge p(1-e^{-2a})\min\{m_N,1\}$.
 Choose constants common to the finitely many pairs. Reflection also
 gives exact vanishing on the entire pair plane.
@@ -383,15 +406,15 @@ For $t\ge1$, Cauchy--Schwarz gives the square bound
 $\int_{|x|>R}w^2d\ga_n$ times the mass, which is its cost.
 For $0\le t<1$ write $x=z+tu$ and
 $m(z)=\int_0^1h(z+tu)\phi_1(t)dt$.
-Every density $v\le\phi_0$ on the positive halfline with mass $m$
+Every density $v\le\kappa$ on the positive halfline with mass $m$
 satisfies
 \[
  \int tv(t)dt=\int_0^\infty\int_s^\infty v(t)dt\,ds
- \ge\int_0^{m/\phi_0}(m-\phi_0s)ds=\frac{m^2}{2\phi_0}.
+ \ge\int_0^{m/\kappa}(m-\kappa s)ds=\frac{m^2}{2\kappa}.
 \]
 Thus
 \begin{equation}\label{eq:bathtub}
- m(z)^2\le2\phi_0\int_0^1t h(z+tu)\phi_1(t)dt.
+ m(z)^2\le2\kappa\int_0^1t h(z+tu)\phi_1(t)dt.
 \end{equation}
 In the tail, $|z|>\sqrt{R^2-1}$ and
 $w(z+tu)\le2e^{1/16}(1+|z|^2)e^{|z|^2/16}$.
@@ -462,6 +485,12 @@ facet densities $f\in\HH$ such that
 \end{proposition}
 
 \begin{proof}
+First we control the tails so that the normalized transfers retain
+their masses and first moments. We then show that they concentrate
+on the facets with no junction mass. Finally, we pass the sharp
+one-sided normal cost to the limiting densities.
+
+\smallskip\noindent\emph{Control of the tails.}
 Normalize the signed measures by $\mu_{m,i}=e_i^{(m)}\ga_n/s_m$.
 Corollary~\ref{cor:exterior} bounds their weighted total variations and
 gives the uniform tail bound
@@ -473,7 +502,7 @@ gives the uniform tail bound
 \smallskip\noindent\emph{The limiting measures lie on facets.}
 On each whole pair plane define
 \begin{equation}\label{eq:theta}
- \theta_{m,ij}(z)=\frac1{s_m\phi_0}
+ \theta_{m,ij}(z)=\frac1{s_m\kappa}
                   \int_0^\infty h_{ij}^{(m)}(z+tn_{ij})\phi_1(t)dt.
 \end{equation}
 These nonnegative densities are bounded in $L^2(\nu_{ij})$.
@@ -508,24 +537,25 @@ The zero means give balance and the limiting moments are the rows of $\DD f$.
 
 \smallskip\noindent\emph{The sharp normal cost.}
 Fix a compact tangential cutoff $0\le\chi\le1$ and $0<b<1$.
-Exact vanishing on the pair plane and local gradient convergence give
+On the compact normal cylinder over $\operatorname{supp}\chi$,
+exact vanishing on the pair plane and local gradient convergence give
 \[
  U_{\rho_m,ij}(z+tn_{ij})\ge\rho_m(\ell-o(1))t
  \qquad(0\le t\le b)
 \]
-on its compact normal cylinder. This is a multiplicative estimate, even
-for transfers much thinner than $\rho_m$. Write
+The error is relative to $t$, even for transfers much thinner than
+$\rho_m$. Write
 $m_{m,ij}^b(z)=\int_0^b h_{ij}^{(m)}(z+tn_{ij})\phi_1(t)dt$.
 The density bound is
 \[
  \int_0^b t h_{ij}^{(m)}(z+tn_{ij})\phi_1(t)dt
-       \ge\frac{(m_{m,ij}^b(z))^2}{2\phi_0}.
+       \ge\frac{(m_{m,ij}^b(z))^2}{2\kappa}.
 \]
 Discard nonnegative loss outside the cylinders and divide by
 $\rho_ms_m^2=L_{\rho_m}(h^{(m)})$ to obtain explicitly
 \[
  1\ge\frac{\ell-o(1)}2\sum_{i\ne j}
-       \int\chi(z)\left(\frac{m_{m,ij}^b(z)}{s_m\phi_0}\right)^2d\nu_{ij}(z).
+       \int\chi(z)\left(\frac{m_{m,ij}^b(z)}{s_m\kappa}\right)^2d\nu_{ij}(z).
 \]
 The truncated densities have the same weak $L^2$ limits as
 \eqref{eq:theta}: their omitted normalized mass tends to zero by
@@ -538,15 +568,16 @@ Weak lower semicontinuity and exhaustion by the cutoffs give
 \end{equation}
 The last step uses $(\theta_{ji}-\theta_{ij})^2\le
 \theta_{ij}^2+\theta_{ji}^2$. The factor is exactly $\ell/2$ because
-$d\nu_{ij}=\phi_0d\ga_{n-1}$.
+$d\nu_{ij}=\kappa\,d\ga_{n-1}$.
 \end{proof}
 
 \section{The comparison in every dimension}\label{sec:comparison}
 
 For a given $A$, choose the reference simplex $T$ with moment matrix
 closest to $B$. Rotate its active space to $E$ and write the ambient
-space as $E\oplus\R^{d-n}$, with points $(x,z)$. The active block of
-$B-B_*$ is symmetric and its transverse block is zero. To see this,
+space as $E\oplus\R^{d-n}$, with points $(x,z)$. As a map
+$E\oplus\R^{d-n}\to E$, the moment difference $B-B_*$ has a symmetric
+active block $E\to E$ and a zero transverse block. To see this,
 differentiate squared distance at the closest matrix along orthogonal
 rotations. Active rotations give all skew matrices on $E$ as tangent
 vectors. Rotations mixing $E$ and $E^\perp$ give every centered
@@ -588,7 +619,18 @@ densities $f$, with $\ell\norm f_\HH^2\le2$. The active first moments
 of $e/s$ converge to $\DD f$, which is symmetric by the moment
 alignment.
 
-It remains to control the full interaction in \eqref{eq:comparison}.
+Write $u_{i,p,q}$ for the component of $e_i/s$ of Hermite degree
+$p$ in $x$ and $q$ in $z$. Since $T_\rho$ multiplies this component by
+$\rho^{p+q}$, the interaction in \eqref{eq:comparison} is
+\[
+ \frac{\widetilde Q_\rho(e)}{\rho s^2}
+   =\sum_{i,\,p+q\ge1}\rho^{p+q-1}\norm{u_{i,p,q}}_2^2 .
+\]
+The projection onto constants removes degree zero. The transverse
+first-degree component $u_{i,0,1}$ vanishes by the alignment of $B_*$.
+We bound the terms of total degree at least two by an estimate in the
+fixed active space.
+
 Set $J_i(z)=s^{-1}\int w(x)|e_i(x,z)|\,d\ga_n(x)$.
 Apply Corollary~\ref{cor:exterior} in each slice and integrate in $z$.
 Since $w\ge1$, Cauchy--Schwarz in $z$ also bounds the changed mass:
@@ -599,9 +641,7 @@ Since $w\ge1$, Cauchy--Schwarz in $z$ also bounds the changed mass:
 The $L^2$ norms of $J_i$ are taken in the transverse Gaussian space.
 
 For $r=1/16$ the active Mehler kernel satisfies
-$M_r(x,y)\le C_k w(x)w(y)$, by \eqref{eq:mehler}. If $u_{i,p,q}$
-is the component of $e_i/s$ of Hermite degree $p$ in $x$ and $q$ in
-$z$, then
+$M_r(x,y)\le C_k w(x)w(y)$ by \eqref{eq:mehler}. Consequently,
 \[
  \sum_{i,p,q} r^p\norm{u_{i,p,q}}_2^2
  =\sum_i\int\big\langle e_i(\cdot,z)/s,
@@ -612,9 +652,8 @@ $z$, then
 In $\widetilde Q_\rho(e)/(\rho s^2)$ the weight of a term of total
 degree $p+q\ge2$ is
 $\rho^{p+q-1}\le \rho r^{p+q-2}\le(\rho/r^2)r^p$ for $\rho\le r$.
-Thus all such terms together are $O_k(\rho)$. The constant term is removed and
-the transverse first moments vanish by the choice of $B_*$. The
-active first moments are consequently the only surviving interaction.
+Thus these terms together are $O_k(\rho)$, uniformly in $d$.
+Only the active first moments survive in the limit.
 Along the extracted subsequence, Lemma~\ref{lem:interface} gives
 \[
  \frac{\widetilde Q_\rho(e)}{\LL_\rho(A;T)}
@@ -689,6 +728,12 @@ exposition, proof review and verification code.
 
 \begin{thebibliography}{9}
 \raggedright
+\bibitem{Borell}
+C.~Borell, \emph{Geometric bounds on the Ornstein--Uhlenbeck velocity
+process}, Z. Wahrscheinlichkeitstheorie verw. Gebiete \textbf{70}
+(1985), 1--13.
+\href{https://doi.org/10.1007/BF00532234}{doi:10.1007/BF00532234}.
+
 \bibitem{Heilman14}
 S.~Heilman, \emph{Euclidean partitions optimizing noise stability},
 Electron. J. Probab. \textbf{19} (2014), 1--37.
@@ -698,6 +743,11 @@ Electron. J. Probab. \textbf{19} (2014), 1--37.
 S.~Heilman, \emph{Three candidate plurality is stablest for correlations
 at most $1/10$}, preprint, 2023,
 \href{https://arxiv.org/abs/2306.03312v3}{arXiv:2306.03312v3}.
+
+\bibitem{Heilman26}
+S.~Heilman, \emph{Sharp hardness for MAX-3-CUT and quantum MAX-CUT},
+preprint, 2026,
+\href{https://arxiv.org/abs/2608.00333v1}{arXiv:2608.00333v1}.
 
 \bibitem{HT}
 S.~Heilman and A.~Tarter,
@@ -722,9 +772,8 @@ Acta Sci. Math. (Szeged) \textbf{34} (1973), 335--343.
 \href{https://acta.bibl.u-szeged.hu/14411/}{Journal archive}.
 
 \bibitem{Zhang}
-Y.~Zhang, \emph{Equal Gaussian cells: the sharp simplex first-moment
-theorem}, preprint, 8 October 2026,
-\href{https://github.com/mxym/math/releases/tag/gaussian-balanced-simplex-all-k-v1}
-{\texttt{github.com/mxym/math}}, release \texttt{gaussian-balanced-simplex-all-k-v1}.
+Yongxian Zhang, \emph{Equal Gaussian cells: the sharp simplex first-moment
+theorem}, preprint, version~2.0, 2026.
+\href{https://doi.org/10.5281/zenodo.23250730}{doi:10.5281/zenodo.23250730}.
 \end{thebibliography}
 \end{document}

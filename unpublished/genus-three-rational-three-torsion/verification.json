@@ -2,10 +2,17 @@
   "date": "2026-11-27",
   "proof_status": "HG1/HG5 written proofs extended by HG6 full rational arithmetic; new computations are internal exact certificates, with all independence and review limits retained.",
   "edition": {
-    "main.tex": "e6a10e2e0a64648c9ea7512d5719fa601d99dc4fe676d7a9ad9ccbc6834ab47c",
+    "main.tex": "36176318b10ac2ab88bba0ff7f62fd52ea1f90604c7ac1b05c4ecd8a21a112a0",
     "verify_construction.py": "dd3d7081ef67dd6a096c21ba6e5b8bc98b9909a72f2ee57ce1b0863ad538f9e6",
     "verify_arithmetic.py": "915477535f6920aee9c19d16badbd75311a492936e5361722f14934a43ceaef3",
-    "genus-three-rational-three-torsion.pdf": "18acb9308d65eea4be1121ecc187237a0ddf989952ed14313cccd4f6d7f91198"
+    "genus-three-rational-three-torsion.pdf": "5d8683e909b518fed9d0ff0e4632af39765e3ace2a9c90ce0893d91d6daeffe4"
+  },
+  "editorial_revision": {
+    "date": "2026-11-28",
+    "scope": "Corrected the pullback-pushforward order and the notation for rational classes and their reductions, and removed references to accompanying code from the article.",
+    "document_checks": "A clean LaTeX build reproduced the six-page PDF byte for byte. The rendered pages were inspected, with no clipping or missing glyphs. The final LaTeX log has no build warnings or undefined references.",
+    "previous_pdf_sha256": "18acb9308d65eea4be1121ecc187237a0ddf989952ed14313cccd4f6d7f91198",
+    "previous_checks_scope": "The earlier seven-page build, visual inspection and bundle replay below apply to the preceding PDF edition."
   },
   "research_and_primary_sources": {
     "research/arithmetic/GENUS_THREE_THREE_MARKED_ELLIPTIC_QUOTIENTS.md": "79dccdd05ff9c3dece4ef70ad5b6a188fd791999bf43e68f445517bd5486a851",

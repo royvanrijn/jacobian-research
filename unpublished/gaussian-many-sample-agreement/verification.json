@@ -1,0 +1,85 @@
+{
+  "edition_date": "2026-11-28",
+  "review_basis": "Source-aware internal audit of the retained analytic argument and the manuscript, primary reference verification, clean source archive reproduction, and all-page rendering.",
+  "source_files": {
+    "main.tex": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+    "README.md": "0fe0bfba7fa367aec9096cfa2f06a38ff21d88e2dff9bea5b568631beab46a63",
+    "metadata.json": "c8fb05e2d7560920ec2615cfa488bacf29d0f93d19442603e17c53c3a5aff8d6"
+  },
+  "pdf": {
+    "path": "gaussian-many-sample-agreement.pdf",
+    "sha256": "fbdc7b682e89859232763bb9d75504c383c771d3473a6b0c95885b3e74c308bd",
+    "pages": 4
+  },
+  "build": {
+    "command": "SOURCE_DATE_EPOCH=1795824000 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=gaussian-many-sample-agreement main.tex",
+    "result": "passed",
+    "unresolved_references": false,
+    "warnings": false,
+    "overfull_boxes": false,
+    "underfull_boxes": false,
+    "environment": "Ubuntu 24.04 WSL, TeX Live 2023/Debian, pdfTeX 1.40.25, latexmk 4.83"
+  },
+  "source_archive_reproduction": {
+    "archive": "source.zip",
+    "sha256": "29ea8e78d52a5c35e8fc30e13e0a19b0c3dd0a1b4c913b7fb5ede820ba39e308",
+    "contents": [
+      "main.tex"
+    ],
+    "result": "passed",
+    "scope": "Clean extraction and compilation reproduced the four-page review PDF byte for byte."
+  },
+  "visual_review": {
+    "performed": true,
+    "result": "passed",
+    "pdf_sha256": "fbdc7b682e89859232763bb9d75504c383c771d3473a6b0c95885b3e74c308bd",
+    "scope": "All four pages rendered with Poppler at 120 dpi and visually inspected."
+  },
+  "mathematical_review": {
+    "kind": "Internal source-aware audit",
+    "scope": "Checked the posterior-tail exponents in both directions, the Gaussian testing and three-function Prékopa–Leindler bound, the residual exponent, and the balance-repair effects on influence and agreement.",
+    "outcome": "No definite mathematical error identified in this pass.",
+    "computation": "No computational evidence or formal verification is used."
+  },
+  "mathematical_dependencies": [
+    {
+      "input": "Isaksson–Mossel, Maximally stable Gaussian partitions with discrete applications",
+      "source": "https://arxiv.org/pdf/0903.3362v3",
+      "locator": "Conjecture 1.4 and Section 8 distinguish the two-observation and many-observation questions. Theorem 1.2 and its Section 4 proof give the halfspace comparison at fixed per-cell mass for positively equicorrelated standard Gaussian observations."
+    },
+    {
+      "input": "Prékopa, On logarithmic concave measures and functions",
+      "source": "https://acta.bibl.u-szeged.hu/14411/1/math_034_335-343.pdf#page=3",
+      "locator": "Theorem 3, pp. 337–338, gives the integral inequality with three nonnegative Borel inputs and weights 1/3."
+    },
+    {
+      "input": "Borell, Geometric bounds on the Ornstein–Uhlenbeck velocity process",
+      "source": "https://doi.org/10.1007/BF00532234",
+      "locator": "Theorem 3.1 gives the identical-cell specialization by Gaussian rearrangement. The proof invokes Isaksson–Mossel's general statement directly."
+    }
+  ],
+  "independent_mathematical_replay": false,
+  "formal_verification": false,
+  "external_human_review": {
+    "performed": false
+  },
+  "submission": {
+    "submitted": false
+  },
+  "isolated_pdf_only_reading": {
+    "performed": true,
+    "reviewer": "OpenAI Codex reader in a fresh context",
+    "pdf_sha256": "fbdc7b682e89859232763bb9d75504c383c771d3473a6b0c95885b3e74c308bd",
+    "pages": 4,
+    "supplied_context": "Only the compiled PDF and the five reader questions. The reader used Poppler and SHA-256 and did not receive the TeX, repository context, or bibliography sources.",
+    "answers": {
+      "contribution": "Dimension-uniform sharp asymptotic agreement value (2+o(1))H_m for fixed k>=3 and rho in (0,1), a strictly worse exponent for the simplex, and exactly balanced low-influence voting counterexamples.",
+      "mechanism": "Condition on the common Gaussian. Two high-posterior labels can contribute at the halfspace scale, and the two extreme quantile cells attain that contribution.",
+      "hardest_step": "Lemma 4, p. 3, where a two-normal testing bound gives separation and Prékopa–Leindler converts it into a bound on the product of the three Gaussian measures.",
+      "limitations": "The comparison takes m to infinity at fixed k and rho. It leaves finite-m optimizers and classification of asymptotically optimal families open. The voting limit fixes sufficiently large m before n tends to infinity.",
+      "verification_obstacles": "The reader must consult the cited Prékopa–Leindler and Exchangeable Gaussians theorems for the external inputs. No code is used as a proof premise."
+    },
+    "outcome": "No definite mathematical or layout issue identified in the four-page PDF. All pages rendered and visually inspected.",
+    "external_review": false
+  }
+}

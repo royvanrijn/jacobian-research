@@ -12,13 +12,13 @@
   "source_archive": "source.zip",
   "source_bundle": "source.zip",
   "build": "SOURCE_DATE_EPOCH=1795824000 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=plurality-small-positive-correlations main.tex",
-  "verification": "Standalone analytic proof using the attributed first-moment covariance argument, Milman–Neeman Gaussian multi-bubbles and Prékopa marginal log concavity. The clean source archive reproduces the nine-page PDF byte for byte. Source-aware audit and isolated PDF-only reading are recorded in verification.json.",
+  "verification": "Standalone analytic proof. Revised after contributor-reported mathematical and PDF review of commit dd646006. The clean source archive reproduces the revised nine-page PDF byte for byte. Edition-specific checks are recorded in verification.json.",
   "verification_record": "verification.json",
   "next_steps": [
     "Obtain specialist mathematical review of the covariance localization, aligned facet inequality, measurable transfer limit and transverse Hermite estimate."
   ],
   "catalogued_on": "2026-11-28",
-  "abstract": "For each fixed number of cells $k\\ge2$, we prove that the central\nregular-simplex partition maximizes Gaussian noise stability among\nequal-measure measurable $k$-cell partitions at sufficiently small\npositive correlations $\\rho$ in dimensions $d\\ge k-1$. The noise stability deficit is bounded below\nby a positive constant times $\\rho$ times the square of the summed Gaussian\nsymmetric differences from the closest simplex partition. Both the constant and\nthe correlation threshold are independent of the ambient dimension.\nZhang's first-moment theorem localizes near maximizers. To prove the\npositive-correlation bound, we normalize arbitrary label changes by their\nexact loss against the simplex's Ornstein--Uhlenbeck scores. A Gaussian\ncovariance estimate on the facets bounds the limiting first-moment\ninteraction, and a Hermite expansion controls all remaining directions\nuniformly in the dimension.",
+  "abstract": "For each fixed number of cells $k\\ge2$, we prove that the partition\ndefined by a centered regular simplex maximizes Gaussian noise stability\namong equal-measure measurable $k$-cell partitions at sufficiently small\npositive correlations $\\rho$ in dimensions $d\\ge k-1$. The noise stability\ndeficit is bounded below by a positive constant times $\\rho$ times the\nsquare of the summed Gaussian symmetric differences from the closest\nsimplex partition. The constant and the correlation threshold are\nindependent of the ambient dimension.\nZhang's first-moment theorem localizes near maximizers. To prove the\npositive-correlation bound, we normalize arbitrary label changes by their\nexact loss against the simplex's Ornstein--Uhlenbeck scores. A Gaussian\ncovariance estimate on the facets bounds the limiting first-moment\ninteraction, and a Hermite expansion controls all remaining directions\nuniformly in the dimension.",
   "abstract_format": "latex",
   "abstract_source": "main.tex",
   "resource_type": {

@@ -91,7 +91,7 @@ an application of that proposition with implicit gluing data.
 The reason three independent classes survive is simple. Each elliptic
 curve in \eqref{eq:elliptic} has a rational point of order three.
 Pulling it back along a degree-eight map cannot kill it, because
-pushforward followed by pullback is multiplication by eight on the
+pullback followed by pushforward is multiplication by eight on the
 elliptic curve. Independence is a different issue: three maps alone
 would not suffice. Here the two sign involutions place the three
 pullbacks in different characters of a group of order four. Since four
@@ -377,9 +377,8 @@ isomorphic. The argument uses no finiteness assumption.
 \section{Rational points and full rational torsion}
 
 \begin{proof}[Proof of Theorem~\ref{thm:arithmetic}]
-Exact elliptic two-descent gives proved rank bounds \((0,0)\) for each
-of the three curves \eqref{eq:elliptic}; these computations, with the
-rank database disabled, are included in the accompanying SageMath code.
+Exact elliptic two-descent gives rank bounds \((0,0)\) for each
+of the three curves \eqref{eq:elliptic}.
 The respective Cremona labels are \(90a1,90b1,30a2\), with conductors
 \(90,90,30\). Thus the isogeny gives rank zero and conductor
 \(90\cdot90\cdot30=243000\) for \(J\).
@@ -418,26 +417,30 @@ The gcd is \(432=16\cdot27\). Thus Theorem~\ref{thm:main}
 already determines the full three-primary subgroup, and it remains
 to determine the two-primary subgroup \(H\).
 
-We use the following small finite divisor-class computation at seven.
-Over \(\F_7\), put
+\begin{samepage}
+Define the rational divisor classes
 \[
- I=[\infty_- -\infty_+],\quad P=[(0,4)-\infty_+],\quad
- Q=[D-2\infty_+],\quad D:\ (t^2+1,R-t+2)=0.
+ I=[\infty_- -\infty_+]\in J(\Q),\qquad
+ P=[(0,4)-\infty_+]\in J(\Q).
 \]
-Here \(D\) is a closed point of degree two. The three classes
-\(27I,27P,27Q\) are killed by four and generate groups of orders
-4, 8, 16 successively; precisely four of the resulting sixteen classes
-are killed by two. This is an exact finite certificate, verified by
-divisor arithmetic in the supplied code. Since the two-part of
-\(\#J(\F_7)\) is 16, it proves
+Write \(\bar I,\bar P\) for their reductions at seven and
+\(\bar\infty_+\) for the reduction of \(\infty_+\).
+Let \(Q=[D-2\bar\infty_+]\in J(\F_7)\), where \(D\) is the closed point
+of degree two defined by \(t^2+1=R-t+2=0\).
+
+\end{samepage}
+Divisor-class arithmetic over \(\F_7\) shows that \(27\bar I,27\bar P,27Q\)
+are killed by four and generate subgroups of orders 4, 8, 16 successively.
+Precisely four of the resulting sixteen classes are killed by two.
+Since the two-part of \(\#J(\F_7)\) is 16, we obtain
 \[
  J(\F_7)[2^\infty]\simeq(\Z/4\Z)^2,
  \qquad H\ \lhook\joinrel\longrightarrow\ (\Z/4\Z)^2.
 \]
-The same certificate shows that the reduction of \(3I\) has order four.
+The same computation shows that \(3\bar I\) has order four.
 
 We next exhibit a rational point of order two that is not a double.
-Let \(T=3[(0,4)-\infty_+]\), and set
+Let \(T=3P\), and set
 \[
  g=t^6-3t^5-3t^4-12t^3+6t^2-12t-8.
 \]
@@ -458,8 +461,10 @@ Poonen--Schaefer \cite[Section~5, Proposition~5.1 and (8)]{PS}.
 The rational point identifies degree-zero rational divisor classes with
 the Jacobian points, as required here. We use only that doubles have
 trivial image, not injectivity of the fake descent map.
-The image of \(T\) is \(-\theta\). The polynomial \(t^2+5\) is an
-irreducible factor of \(F\bmod17\); in the corresponding factor
+The image of the reduction of \(T\) is represented by
+\((-\theta)^3\), which has the same class as \(-\theta\).
+The polynomial \(t^2+5\) is an irreducible factor of \(F\bmod17\).
+In the corresponding factor
 \(\F_{17^2}\), the norm of \(-\theta\) is 5. This is a nonsquare in
 \(\F_{17}\), and multiplying by a scalar \(c\ne0\) changes the norm
 to \(5c^2\). Hence the image is nontrivial, even modulo scalars.
@@ -475,13 +480,13 @@ Put
 \]
 Let \(B\) be the polynomial part of \(A\sqrt F\) at infinity, with
 \(\sqrt F=t^4-3t^3-5t^2+\cdots\). Exact multiplication gives
-\(B^2-FA^2=19440000\); the code includes both expanded polynomials.
+\(B^2-FA^2=19440000\).
 The leading terms give
 \[
  \divisor(B+AR)=12\infty_- -12\infty_+.
 \]
-Thus \(3I\) is killed by four, and its reduction at seven shows its
-order is exactly four. Its nonzero double cannot equal \(T\), since
+Thus \(3I\) is killed by four. Since \(3\bar I\) has order four,
+so does \(3I\). Its nonzero double cannot equal \(T\), since
 \(T\) is not divisible by two. Consequently
 \(\Z/4\Z\oplus\Z/2\Z\subseteq H\).
 A larger subgroup of \((\Z/4\Z)^2\) would be that whole group,
@@ -489,22 +494,6 @@ in which every element of order two is a double, contradicting the
 property of \(T\). Therefore \(H\simeq\Z/4\Z\oplus\Z/2\Z\).
 Combining the two primary parts proves the asserted invariant factors.
 \end{proof}
-
-\paragraph{Verification.}
-All defining identities and maps are given above over \(\Q\).
-An accompanying SageMath checker verifies squarefreeness modulo seven,
-the conic and quotient identities, the degrees of the three maps,
-the orders of the marked elliptic points, and the sign characters.
-These exact algebraic checks support the displayed construction.
-The independence, Weil-pairing bound, duality and compatibility with
-all local Kummer conditions are the written arguments above;
-the checker does not compute Selmer or Tate--Shafarevich groups.
-The arithmetic checker also computes proved elliptic rank bounds,
-the target torsion points, all rational fibres, the two principal-divisor
-certificates, the complete sixteen-element Sylow subgroup at seven and
-the square-class obstruction at 17. These calculations use exact
-rational and finite-field arithmetic in SageMath 10.9, with no height
-search or random input.
 
 \paragraph{AI assistance and review.}
 ChatGPT (OpenAI) assisted with mathematical arguments, literature checks,

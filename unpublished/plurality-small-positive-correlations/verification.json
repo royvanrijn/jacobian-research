@@ -1,15 +1,15 @@
 {
   "edition_date": "2026-11-28",
-  "review_basis": "Quantitative all-cell revision. Source-aware internal AI proof audit, isolated internal AI PDF-only reading, all-page rendering, and clean source archive reproduction.",
+  "review_basis": "Targeted revision in response to the contributor's review of commit dd646006. The contribution scope and proof estimates are preserved.",
   "source_files": {
-    "main.tex": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
-    "README.md": "6f46df46bb5685cb4afc3505e56c2bce297516817c62985886708ae2f9f4f1a2",
-    "metadata.json": "a11627b429fd3cd99ff4cc343f043becf225ab87398c9b10db9b086c57aef7a0",
-    "hexagon-metadata.json": "0cc8b7dcea409c5b1adb0f7a683c8b14f27504d0658309cc4cff28e9fc358cfc"
+    "main.tex": "96dc9aa58e3048fe5003c6adf3cdfec01cc2f11c51baf6cd0cff835aef6c56f5",
+    "README.md": "2f4506413a39a293df6f126871f51df8186b627ed3f5333469e6bb8f4cb25e26",
+    "metadata.json": "142a40d0648d92a43f3f57c6b273c9da4e7c4da32bb188426ec976ad3fc773c3",
+    "hexagon-metadata.json": "942c1038d7b4417efb712bc4a6269ce3fae05e143ff88eac4f5aad9b83c4565e"
   },
   "pdf": {
     "path": "plurality-small-positive-correlations.pdf",
-    "sha256": "f6e20f7a62eadf0318011d2d2547042041fe939790fe1e11e0eb2afd397469f4",
+    "sha256": "b244e0a54fd652101e5a3d4302845db11547d30be1307b23c9fb6407ffa4c482",
     "pages": 9
   },
   "build": {
@@ -23,7 +23,7 @@
   },
   "source_archive_reproduction": {
     "archive": "source.zip",
-    "sha256": "00b973a0859c583b4819658efe3c5ef460b0181fcd2a46b832d541c7bb895336",
+    "sha256": "af0e04d1ca77130580961528ee01ef359aa9db42b60576a512eefce057af9570",
     "contents": [
       "main.tex"
     ],
@@ -33,13 +33,13 @@
   "visual_review": {
     "performed": true,
     "result": "passed",
-    "pdf_sha256": "f6e20f7a62eadf0318011d2d2547042041fe939790fe1e11e0eb2afd397469f4",
-    "scope": "Rendered all nine pages at 115 dpi. Inspected the contact sheet and the title/theorem, flux estimate and Hermite argument at full render size. No clipping, overlap or obstructive page breaks."
+    "pdf_sha256": "b244e0a54fd652101e5a3d4302845db11547d30be1307b23c9fb6407ffa4c482",
+    "scope": "Rendered all nine pages of the revised PDF at 110 dpi and inspected each in a contact sheet. Inspected the literature, facet inequality, normal cost and tensor Hermite proof at full page scale."
   },
   "mathematical_scope": {
     "main_result": "For each fixed k>=2 the global deficit bounds rho times squared Gaussian label distance, uniformly over every d>=k-1 on a qualitative small positive interval. Equality of stability holds on the simplex orbit. In smaller dimensions the qualitative comparison is strict.",
     "local_result": "For balanced partitions near the simplex orbit, the deficit bounds any fixed fraction c<2/k of the exact loss against the closest moment reference, and controls the squared orbit distance times rho.",
-    "proof_review": "Source-aware internal audit checked the additive covariance comparison and its singular endpoint, balance and rank, the symmetric facet estimate and rotational gauge, normalization of measurable transfers, and the tensor Hermite bound. The local proposition now expressly states balance and d>=k-1. Near maximizers in the proof overview are defined on the o(rho) scale.",
+    "proof_review": "The contributor-reported audit of dd646006 found no definite mathematical error. The revised source was checked against that proof for the rotational gauge, centering and covariance calculation, weighted transfer passage and Hermite weights.",
     "computation": "None is used in the mathematical proof."
   },
   "mathematical_dependencies": [
@@ -49,7 +49,8 @@
       "url": "https://github.com/mxym/math/blob/ebfd90558439afca21babeb7b77c8d8837ea745f/research/gaussian-balanced-simplex-all-k/paper.md",
       "retained_source": "../../research/plurality-stability/sources/zhang-equal-gaussian-cells-ebfd905.md",
       "sha256": "8416f741398ceb4207edcc3ff31964883ae14044698043bf17a75d66c1dec832",
-      "scope": "The paper includes the covariance argument along an additive ray and the deductions for localization."
+      "scope": "The paper includes the covariance argument along an additive ray and the deductions for localization.",
+      "signed_version": "https://doi.org/10.5281/zenodo.23250730"
     },
     {
       "input": "Milman–Neeman Gaussian multi-bubble theorem",
@@ -66,10 +67,42 @@
   ],
   "bibliographic_audit": {
     "Gaussian_model": "Isaksson–Mossel Conjecture 1.4(i) gives the balanced positive Gaussian formulation. Theorem 1.10 supplies the discrete connection, which is context in the paper.",
-    "three_cells": "Heilman–Tarter Theorems 1.9–1.10 give prior structure and three-cell context. Heilman arXiv:2306.03312v3, Theorem 1.5, states the explicit balanced Gaussian interval 0<rho<=0.1082 and a planar radial-mass deficit. Neither is an input to the proof.",
-    "priority": "The cited theorem statements were compared with the article. No priority claim is made."
+    "three_cells": "Heilman arXiv:2608.00333v1, Theorems 1.2 and A.1, states the balanced Gaussian comparison through rho=2/5 in all d>=2. Section 1.4 discusses stronger proximity estimates. The 0.1082 theorem is earlier context.",
+    "priority": "The cited theorem statements were compared with the article. No priority claim is made.",
+    "Borell": "Original 1985 article, DOI 10.1007/BF00532234, Theorem 3.1. The rearrangement and semigroup property give the two-cell comparison.",
+    "first_moment_attribution": {
+      "signed_preprint": "https://doi.org/10.5281/zenodo.23250730",
+      "signed_source": "https://raw.githubusercontent.com/mxym/math/0c117440b88ec82122476df013a3e315118990aa/preprints/gaussian-equal-cells-2026-10/paper.tex",
+      "frozen_release_author_record": "https://api.datacite.org/dois/10.5281/zenodo.23248377",
+      "scope": "Both versions are attributed to Yongxian Zhang. The earlier release remains the retained mathematical source."
+    }
   },
-  "isolated_pdf_only_reading": {
+  "independent_mathematical_replay": false,
+  "formal_verification": false,
+  "external_human_review": {
+    "performed": false
+  },
+  "submission": {
+    "submitted": false
+  },
+  "remaining_obligations": [
+    "Obtain external specialist review of the complete written proof."
+  ],
+  "contributor_reported_review": {
+    "commit": "dd646006",
+    "pdf_sha256": "f6e20f7a62eadf0318011d2d2547042041fe939790fe1e11e0eb2afd397469f4",
+    "reported_scope": "All nine PDF pages, a separate mathematical audit, and a reader who received only the PDF.",
+    "reported_outcome": "No definite mathematical error or layout defect found. The measurable-transfer and dimension-independent estimates were present.",
+    "scope_note": "The contributor did not identify the audit and PDF-only readers in the review note. The report is scoped to the reviewed commit.",
+    "revisions": [
+      "Recorded Heilman's 2026 Gaussian three-cell comparison through 2/5 and separated its scope from the full-label, all-fixed-k result.",
+      "Added Borell's original citation and verified Yongxian Zhang's attribution against signed TeX and the frozen release's DataCite record.",
+      "Distinguished the inherited first-moment comparison from the uniform localization deduction.",
+      "Introduced the active operator and rotational alignment before Lemma 3.1, displayed the Frobenius gap calculation, and expanded the transfer and Hermite arguments.",
+      "Clarified both unevaluated constants, normalized density notation and the role of the remote-ball example."
+    ]
+  },
+  "previous_isolated_pdf_only_reading": {
     "performed": true,
     "reviewer": "OpenAI Codex reader agent",
     "type": "isolated internal AI PDF-only review",
@@ -92,7 +125,7 @@
     "final_followup": "Rechecked the revised designated PDF and its page layout, including every change requested by the first reading. No remaining material proof or presentation objection.",
     "external_review": false
   },
-  "repository_checks": {
+  "previous_repository_checks": {
     "scope": "The graph and navigation checks concern claim mapping and source consistency. Build and archive checks concern artifact reproduction.",
     "baseline": "The initial worktree-wide check reported unmapped concurrent Gaussian posterior lift notes.",
     "render_navigation": "passed",
@@ -110,15 +143,8 @@
     "diff_check": "passed",
     "final_followup": "The manuscript-scoped catalogue, bibliography, evidence, and nine TeX proof links passed. A later workspace-wide check reported five concurrent plurality-stability notes awaiting catalogue mapping."
   },
-  "independent_mathematical_replay": false,
-  "formal_verification": false,
-  "external_human_review": {
-    "performed": false
-  },
-  "submission": {
-    "submitted": false
-  },
-  "remaining_obligations": [
-    "Obtain external specialist review of the complete written proof."
-  ]
+  "isolated_pdf_only_reading": {
+    "performed": false,
+    "scope": "The contributor-reported PDF-only pass and earlier isolated AI review apply to the predecessor PDF."
+  }
 }

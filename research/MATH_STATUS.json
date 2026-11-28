@@ -17149,6 +17149,193 @@
           "external_review": false,
           "review_status": "internal_only",
           "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-MAXIMIZER-DIRECTIONAL-PRODUCT-NONANNIHILATION",
+          "title": "A maximizing cell admits no finite directional product equation",
+          "scope": "For every actual three-cell Gaussian maximizer with positive prescribed masses at positive correlation, no individual cell in its active plane is annihilated distributionally by a product of any finite number of nonzero directional derivatives. The leading surface delta fixes each wall direction and finite-endpoint delta identities propagate complete parallel lines, which would make the cell cylindrical.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-MAXIMIZER-ACTIVE-PLANES-REPEAT-IN-IDENTITIES",
+          "title": "Every active plane repeats in an indicator identity of three-cell maximizers",
+          "scope": "In a finite linear identity with a constant right side and nonzero coefficients between actual three-cell Gaussian maximizing label vectors, each active plane must occur at least twice. Transverse derivatives isolate any source plane appearing once.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-DISTINCT-PLANE-COMPLEMENTARY-PATCH-RIGIDITY",
+          "title": "Two maximizers in distinct active planes have rigid complementary patches",
+          "scope": "For any common positive prescribed three-cell masses and any positive correlation, two maximizers in distinct active planes can be recombined into two other actual maximizers only by returning the original labeled partitions in either order. Every nontrivial balanced complementary cut has strictly positive total deficit. The shared-coordinate difference is eliminated by subtracting stationary contrasts on a common regular arc.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-DISTINCT-PLANE-UNIFORM-COMPLEMENTARY-LOSS",
+          "title": "Distinct-plane complementary patches have a uniform loss away from degeneracy",
+          "scope": "The summed loss for complementary balanced cuts of two three-cell maximizers is bounded away from zero over compact ranges of positive masses and correlation when the active-plane projector distance and both changed masses have fixed positive lower bounds. The lower bound is independent of ambient dimension.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-SIMPLEX-COMPLEMENTARY-PATCH-FOURIER-RIGIDITY",
+          "title": "A Fourier argument gives simplex complementary patch rigidity for distinct planes",
+          "scope": "When one of two balanced co-maximizers is the simplex in a distinct active plane, Fourier nonvanishing of a pointed wedge and the mixed derivative criterion for binary indicators give an alternative proof of complementary patch rigidity. A compactness argument supplies uniform loss away from coincident planes and trivial cuts.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_COMPLEMENTARY_PATCH_RIGIDITY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-SAME-PLANE-COMPLEMENTARY-PATCH-RAY-PROPAGATION",
+          "title": "A generic same-plane recombination must retain all simplex rays in one output",
+          "scope": "At a correlation of balanced three-cell simplex optimality, for any planar co-maximizer and almost every relative rotation in one appropriate cyclic labeling of the simplex, an exact complementary recombination into two co-maximizers has an output with all three outward reference rays as their original interfaces, modulo arclength-null sets. Tangent fan decompositions pin the germ and crossings, and analytic continuation precludes reassignment of a reference ray.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-RIGHT-CONTACT-GENERIC-COMPLEMENTARY-PATCH-STRICTNESS",
+          "title": "A generic same-plane complementary patch strictly loses at a right contact",
+          "scope": "If larger simplex-optimal correlations accumulate at a balanced three-cell simplex optimum, for every actual planar co-maximizer there is a cyclic simplex labeling such that almost every relative rotation admits no nontrivial balanced complementary patch with zero total deficit. Ray propagation and the surface lower bound on the correlation derivative force the simplex output. For a fixed pair the loss is uniform when both changed masses are bounded below.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-CONVEX-SUPPORTING-RAYS-APERTURE",
+          "title": "Two supporting rays of a convex cell have aperture at least 120 degrees",
+          "scope": "One closed convex cell of a balanced stationary three-cell winner partition with two nonparallel boundary half-rays has both inward support offsets nonnegative and angle at least 120 degrees. Equality gives the simplex. Actual nonsimplex maximizers have a uniform positive aperture gap on any compact positive-correlation band.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-CONVEX-CELL-CENTRAL-SEGMENT-RIGIDITY",
+          "title": "Two finite central straight segments of a convex maximizing cell force the simplex",
+          "scope": "At every positive correlation, a balanced actual planar three-cell maximizer with a convex cell having two nonparallel positive-length straight boundary segments issuing from zero is the simplex. Their nonrepeated stationary opponents force equal prices; equality of ordinary and contracted-variance cell masses forces the cell to be a central cone.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-COMPACT-DEFECT-RADIAL-OCCUPANCY",
+          "title": "Every compact simplex defect has strict radial exchanges in every label",
+          "scope": "A nonsimplex actual balanced maximizer that agrees with the centered simplex outside a bounded set cannot have a convex or dilation-nested cell. For each label the two masses exchanged under dilation by (1-rho squared) to the negative one-half power are equal and positive. At least two circular mass profiles change sign at least twice about one third.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-DIRECTIONAL-PRODUCT-RIGIDITY-RELATIVE-TO-SIMPLEX",
+          "title": "Only a simplex or its antipode can have a finite directional-product difference from the reference",
+          "scope": "For an actual balanced three-cell maximizer and any centered reference simplex in its active plane, if the indicator-vector difference is annihilated by a finite product of nonzero directional derivatives, the maximizer equals the reference or its spatial antipode, with the same labels. The reference need not be known optimal. Compare ray-endpoint distributions to force all interfaces to be centered rays, then identify the boundary lines of every label.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
         }
       ],
       "open_questions": [
@@ -91481,7 +91668,7 @@
           "sources": [
             {
               "path": "../unpublished/genus-three-rational-three-torsion/main.tex",
-              "sha256": "e6a10e2e0a64648c9ea7512d5719fa601d99dc4fe676d7a9ad9ccbc6834ab47c",
+              "sha256": "36176318b10ac2ab88bba0ff7f62fd52ea1f90604c7ac1b05c4ecd8a21a112a0",
               "locator": "thm:main; lem:quartic (existence and explicit maps; generic twist ranks are not extracted)"
             }
           ]
@@ -92038,7 +92225,7 @@
           "sources": [
             {
               "path": "../unpublished/genus-three-rational-three-torsion/main.tex",
-              "sha256": "e6a10e2e0a64648c9ea7512d5719fa601d99dc4fe676d7a9ad9ccbc6834ab47c",
+              "sha256": "36176318b10ac2ab88bba0ff7f62fd52ea1f90604c7ac1b05c4ecd8a21a112a0",
               "locator": "thm:descent (HG1 curve only; the MO1 branch remains in the canonical research proof)"
             }
           ]
@@ -93683,7 +93870,7 @@
             },
             {
               "path": "../unpublished/genus-three-rational-three-torsion/main.tex",
-              "sha256": "e6a10e2e0a64648c9ea7512d5719fa601d99dc4fe676d7a9ad9ccbc6834ab47c",
+              "sha256": "36176318b10ac2ab88bba0ff7f62fd52ea1f90604c7ac1b05c4ecd8a21a112a0",
               "locator": "thm:arithmetic and Section 5"
             }
           ]
@@ -321464,7 +321651,7 @@
         "id": "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
         "kind": "gap",
         "title": "Exclude a nonsimplex global maximizer tied with the simplex",
-        "scope": "For every fixed k>=3 and 0<rho<1 at which the balanced regular simplex is globally optimal, exclude an ordinary balanced nonsimplex partition with the same Gaussian noise stability. In particular rule out this alternative at the endpoint of the initial global optimality interval. A strictly positive simplex interface Hessian only supplies a local exclusion and does not prove this global rigidity. The full-rank affine fan alternative is excluded at every positive correlation by stationary score rigidity. General non-affine and rank-deficient candidates remain in scope. Reflected three-cell tangential ties approached by simplex-optimal correlations must have strictly positive fixed-partition deficit curvature. The moving tangential competitors and the balanced pair patches satisfy FC1–FC3. A connected semialgebraic maximizer with only one unbounded cell must have a compact curved theta graph with projection backtracking. The discrete affine, isolated-end and compact exterior-potential tests exclude additional classes of actual maximizing contacts. They leave unclassified networks and nonlinear oscillatory ends open. Connected strict winners with a semialgebraic jump network have been classified. Connectivity and semialgebraicity are not known for arbitrary maximizing contacts. Central score transversality narrows possible degenerations of the network to collinear triple equalities or a two-label arc identically tied with its absent label. Every bounded isolated graph end is straight by shifted-contour Gaussian rate improvement. An affine-separated pair already forces connected strict winners above 2/3. A centered affine-separated finite-height graph is symmetric when one half-profile is monotone or the proper junction level has odd endpoint orders. An asymmetric graph must cross its reflection at least three times. Exclusive-fiber graphs with a convex height have been classified. Exclusive-fiber graphs with finite switch sets already have one separating line. A reflected maximizer with an eventually convex tail is simplicial. The smooth reflected tail phase controls the correlation derivative but need not yet be linear. Pointwise-distinct triples of maximizing assignments including a simplex cannot contain a nonsimplex competitor. A candidate in the transition range cannot have two convex cells, or have both an affine-separated pair and a convex cell. In the exclusive-fiber finite-height class, one algebraic outer arc or another exclusive label pair forces the simplex. A reflected nonsimplex eventually concave end requires slope above (1+sqrt(1+rho²))/rho. The local simplex value has an exact measurable quadratic expansion in the masses. A nonsimplex tie with unequal prices, or with zero prices and excessive mass curvature, forces coexistence at nearby unequal quotas if the simplex is unique immediately to the left. Joint covariance and quota perturbations can detect a tie with unequal pressures or covariance derivatives. A strict contracted fourth-moment discrepancy is necessary at a nonsimplex first contact. The local simplex branch has an exact second-order covariance–quota envelope with nonzero mixed coefficient. These supply measurable joint perturbation tests for first-order-matched candidates. Compact buffered regular subarcs cannot supply the full measurable response of a positive-curvature tangential tie. A nonsimplex affine-separated graph without reflection requires infinitely many crossings. Three straight isolated ends give an exterior simplex and enforce strict tilted degree-one loss for any compact discrepancy. Under connected strict winners, the jump graph has only the three classified finite topologies, with no assumption about the geometry at infinity. Connectedness and an asymptotic classification of curved ends remain open. Three bounded isolated ends reduce the candidate to a compact simplex discrepancy, which requires bounded receiving components of every label. Two strictly obtuse bounded isolated ends already force zero prices and exclude higher-order contact. The existence of these ends and compact-core exclusion remain open in general. Two strictly obtuse bounded isolated ends with a connected common winner force the simplex when the third backward interface is a single continuous graph. In exact three-end bounded wedge networks, positively spanning directions force a centered simplex exterior or reflection, excluding higher-order ties there. A compact discrepancy has no spectator bisector, and a uniquely exposed outermost discrepancy must be an interior four-arm cusp. General non-graph ends and compact discrepancies remain unresolved. The two obtuse full-half-plane ends suffice with a connected common winner. A common wedge at infinity or an exactly conical exterior yields simplex exterior without a third graph. Higher-order contact is excluded throughout exact-three bounded wedge geometry. General curved or disconnected tails, compact discrepancies and ordinary first contacts remain unresolved. Three sufficiently long central pair arms force a strict derivative advantage at a nonsimplex maximizer and cannot occur at a right-accumulating tie or a maximum of the strict advantage. Compact projection constraints alone permit ordinary balanced asymmetric annular discrepancies. Nonsimplex compact maximizing shapes have only finitely many stationary scaling-correlation pairs in their affine orbit. The simplex-weighted perimeter gives a strict right-contact test, whose required lower bound is false for arbitrary balanced partitions. General last-endpoint maximizers remain unclassified. Balanced off-center Y shapes can satisfy arbitrarily high finite-order stationary score jets at the vertex. A nonsimplex right contact has at most two sufficiently long central pair arms, with or without a common junction. An annulus of sufficient width crossed by all three winners then needs a genuine junction. Accumulating failure components force an ordinary nonsimplex tangential tie, but the scalar Hermite and covariance constraints alone allow such accumulation in a compact abstract family. For the exterior interface, the index bound gives almost stability, and compactness is equivalent to vanishing critical reciprocal-gradient mass in unit balls. Any failure thereof produces a critical maximal tie in a dilation-linked local limit. Nondegenerate extrema do not carry limiting critical mass. The limit equations alone allow infinitely many walls. Finite ends and the unrestricted theta instability remain open. Realizing every fixed exterior chart in one balanced partition still leaves the moving central chart independent under the limiting winner equations alone. A tangential nonsimplex tie has strictly smaller positive pair-interface Mehler energy than the simplex. Zero-price candidates with the three exact reference score lines require all three mismatch types on every reference mirror. The full outward orbit has an almost-everywhere finite equilibrium limit. Fractional phases would force superquadratic planar interface growth. In the compact-discrepancy branch a nonsimplex right contact needs a uniformly positive cumulative spectator violation in a bounded window. Even a strict single-ray spectral gap and the three exact line identities permit source oscillations without the defect's own winner equation. A compact discrepancy cannot have consecutive circular slices almost everywhere. A nonsimplex right contact with exact lines must keep a positive angular L1 distance from the consecutive-arc class on a positive measure of radii in a fixed annulus. A finite simplex cylinder implies full stationary rigidity. Spherically convex compact discrepancies are excluded in every active dimension. Planar nonsimplex actual maximizers with exact adjusted reference lines require uniformly nonconsecutive slices without a derivative or exterior hypothesis. Every nonsimplex exact-line planar maximizer has all three cells disconnected, with uniform component mass and both transfer orientations. With small pressures, any unbounded exact-line defect has thick recurrence on one ray. A clean thick annulus forces exact exterior agreement. Compact stationary defects with consecutive circular slices are excluded even without stability. An arbitrary nonsimplex actual maximizer has a nonzero holomorphic balanced shape witness. The same fixed shape has uniformly finitely many stationary correlations on compact bands and any nearby stationary shape must move by at least a power of the correlation displacement. A sufficiently accurate regular simplex core already forces global equality for an ordinary balanced stationary winner. Uniformly accurate obtuse exterior tripod scores already force an exact regular simplex exterior, with no exact initial lines. Two accurate binary tails suffice for global rigidity if the common cell is connected. Noncompact defects from an obtuse tripod need positive-volume unit balls arbitrarily far away. An isolated full-half-plane end with measurable one-crossing and essentially sublinear height straightens without an oscillation or slope hypothesis. Exact exterior discrete scale invariance forces finitely many rays, and a three-label exterior then has three or six centered sectors. An actual balanced maximizer with three exterior labels and one connected cell is simplicial in this branch. The six-sector exterior requires at least four strict-winner components per label and sixteen genuine junctions. It needs extra circular arcs and positive intermediate compensation for a strictly negative central-to-exterior rotation interaction. A tangential tie in that branch has positive fixed-shape curvature.",
+        "scope": "For every fixed k>=3 and 0<rho<1 at which the balanced regular simplex is globally optimal, exclude an ordinary balanced nonsimplex partition with the same Gaussian noise stability. In particular rule out this alternative at the endpoint of the initial global optimality interval. A strictly positive simplex interface Hessian only supplies a local exclusion and does not prove this global rigidity. The full-rank affine fan alternative is excluded at every positive correlation by stationary score rigidity. General non-affine and rank-deficient candidates remain in scope. Reflected three-cell tangential ties approached by simplex-optimal correlations must have strictly positive fixed-partition deficit curvature. The moving tangential competitors and the balanced pair patches satisfy FC1–FC3. A connected semialgebraic maximizer with only one unbounded cell must have a compact curved theta graph with projection backtracking. The discrete affine, isolated-end and compact exterior-potential tests exclude additional classes of actual maximizing contacts. They leave unclassified networks and nonlinear oscillatory ends open. Connected strict winners with a semialgebraic jump network have been classified. Connectivity and semialgebraicity are not known for arbitrary maximizing contacts. Central score transversality narrows possible degenerations of the network to collinear triple equalities or a two-label arc identically tied with its absent label. Every bounded isolated graph end is straight by shifted-contour Gaussian rate improvement. An affine-separated pair already forces connected strict winners above 2/3. A centered affine-separated finite-height graph is symmetric when one half-profile is monotone or the proper junction level has odd endpoint orders. An asymmetric graph must cross its reflection at least three times. Exclusive-fiber graphs with a convex height have been classified. Exclusive-fiber graphs with finite switch sets already have one separating line. A reflected maximizer with an eventually convex tail is simplicial. The smooth reflected tail phase controls the correlation derivative but need not yet be linear. Pointwise-distinct triples of maximizing assignments including a simplex cannot contain a nonsimplex competitor. A candidate in the transition range cannot have two convex cells, or have both an affine-separated pair and a convex cell. In the exclusive-fiber finite-height class, one algebraic outer arc or another exclusive label pair forces the simplex. A reflected nonsimplex eventually concave end requires slope above (1+sqrt(1+rho²))/rho. The local simplex value has an exact measurable quadratic expansion in the masses. A nonsimplex tie with unequal prices, or with zero prices and excessive mass curvature, forces coexistence at nearby unequal quotas if the simplex is unique immediately to the left. Joint covariance and quota perturbations can detect a tie with unequal pressures or covariance derivatives. A strict contracted fourth-moment discrepancy is necessary at a nonsimplex first contact. The local simplex branch has an exact second-order covariance–quota envelope with nonzero mixed coefficient. These supply measurable joint perturbation tests for first-order-matched candidates. Compact buffered regular subarcs cannot supply the full measurable response of a positive-curvature tangential tie. A nonsimplex affine-separated graph without reflection requires infinitely many crossings. Three straight isolated ends give an exterior simplex and enforce strict tilted degree-one loss for any compact discrepancy. Under connected strict winners, the jump graph has only the three classified finite topologies, with no assumption about the geometry at infinity. Connectedness and an asymptotic classification of curved ends remain open. Three bounded isolated ends reduce the candidate to a compact simplex discrepancy, which requires bounded receiving components of every label. Two strictly obtuse bounded isolated ends already force zero prices and exclude higher-order contact. The existence of these ends and compact-core exclusion remain open in general. Two strictly obtuse bounded isolated ends with a connected common winner force the simplex when the third backward interface is a single continuous graph. In exact three-end bounded wedge networks, positively spanning directions force a centered simplex exterior or reflection, excluding higher-order ties there. A compact discrepancy has no spectator bisector, and a uniquely exposed outermost discrepancy must be an interior four-arm cusp. General non-graph ends and compact discrepancies remain unresolved. The two obtuse full-half-plane ends suffice with a connected common winner. A common wedge at infinity or an exactly conical exterior yields simplex exterior without a third graph. Higher-order contact is excluded throughout exact-three bounded wedge geometry. General curved or disconnected tails, compact discrepancies and ordinary first contacts remain unresolved. Three sufficiently long central pair arms force a strict derivative advantage at a nonsimplex maximizer and cannot occur at a right-accumulating tie or a maximum of the strict advantage. Compact projection constraints alone permit ordinary balanced asymmetric annular discrepancies. Nonsimplex compact maximizing shapes have only finitely many stationary scaling-correlation pairs in their affine orbit. The simplex-weighted perimeter gives a strict right-contact test, whose required lower bound is false for arbitrary balanced partitions. General last-endpoint maximizers remain unclassified. Balanced off-center Y shapes can satisfy arbitrarily high finite-order stationary score jets at the vertex. A nonsimplex right contact has at most two sufficiently long central pair arms, with or without a common junction. An annulus of sufficient width crossed by all three winners then needs a genuine junction. Accumulating failure components force an ordinary nonsimplex tangential tie, but the scalar Hermite and covariance constraints alone allow such accumulation in a compact abstract family. For the exterior interface, the index bound gives almost stability, and compactness is equivalent to vanishing critical reciprocal-gradient mass in unit balls. Any failure thereof produces a critical maximal tie in a dilation-linked local limit. Nondegenerate extrema do not carry limiting critical mass. The limit equations alone allow infinitely many walls. Finite ends and the unrestricted theta instability remain open. Realizing every fixed exterior chart in one balanced partition still leaves the moving central chart independent under the limiting winner equations alone. A tangential nonsimplex tie has strictly smaller positive pair-interface Mehler energy than the simplex. Zero-price candidates with the three exact reference score lines require all three mismatch types on every reference mirror. The full outward orbit has an almost-everywhere finite equilibrium limit. Fractional phases would force superquadratic planar interface growth. In the compact-discrepancy branch a nonsimplex right contact needs a uniformly positive cumulative spectator violation in a bounded window. Even a strict single-ray spectral gap and the three exact line identities permit source oscillations without the defect's own winner equation. A compact discrepancy cannot have consecutive circular slices almost everywhere. A nonsimplex right contact with exact lines must keep a positive angular L1 distance from the consecutive-arc class on a positive measure of radii in a fixed annulus. A finite simplex cylinder implies full stationary rigidity. Spherically convex compact discrepancies are excluded in every active dimension. Planar nonsimplex actual maximizers with exact adjusted reference lines require uniformly nonconsecutive slices without a derivative or exterior hypothesis. Every nonsimplex exact-line planar maximizer has all three cells disconnected, with uniform component mass and both transfer orientations. With small pressures, any unbounded exact-line defect has thick recurrence on one ray. A clean thick annulus forces exact exterior agreement. Compact stationary defects with consecutive circular slices are excluded even without stability. An arbitrary nonsimplex actual maximizer has a nonzero holomorphic balanced shape witness. The same fixed shape has uniformly finitely many stationary correlations on compact bands and any nearby stationary shape must move by at least a power of the correlation displacement. A sufficiently accurate regular simplex core already forces global equality for an ordinary balanced stationary winner. Uniformly accurate obtuse exterior tripod scores already force an exact regular simplex exterior, with no exact initial lines. Two accurate binary tails suffice for global rigidity if the common cell is connected. Noncompact defects from an obtuse tripod need positive-volume unit balls arbitrarily far away. An isolated full-half-plane end with measurable one-crossing and essentially sublinear height straightens without an oscillation or slope hypothesis. Exact exterior discrete scale invariance forces finitely many rays, and a three-label exterior then has three or six centered sectors. An actual balanced maximizer with three exterior labels and one connected cell is simplicial in this branch. The six-sector exterior requires at least four strict-winner components per label and sixteen genuine junctions. It needs extra circular arcs and positive intermediate compensation for a strictly negative central-to-exterior rotation interaction. A tangential tie in that branch has positive fixed-shape curvature. In the three-cell case, co-maximizers cannot have a nontrivial zero-cost complementary cut in distinct active planes. At right contacts, a generic same-plane orientation of the simplex likewise makes every nontrivial balanced complementary cut strictly lose. Two finite straight segments starting at zero on a convex cell also force the simplex. In the plane, a nonsimplex maximizer's difference from a centered simplex cannot satisfy any finite directional product equation.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -323136,6 +323323,41 @@
             "path": "plurality-stability/GAUSSIAN_WEIGHTED_CENTROID_INEQUALITY.md",
             "sha256": "b680c6f4c1de898312674c92ba48b816692b085a85f4be27e999f9cc6e2a9aa6",
             "locator": "Iteration improves first moments, WC11"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+            "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
+            "locator": "A difference supported on one common coordinate is zero and Complementary patches of two distinct planes, DD1–DD4"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
+            "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+            "locator": "Tangent partitions and angular interval endpoints through Propagation along the rays, RP2"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
+            "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+            "locator": "Strict comparison at right contact, RP1–RP2"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
+            "sha256": "c3b23a6e1fe265682138ffeb30a583f151340e1604f753b3790ac553e8bbf99b",
+            "locator": "The two score limits on a supporting line and Angles and centered supports, (1)–(4)"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
+            "sha256": "c3b23a6e1fe265682138ffeb30a583f151340e1604f753b3790ac553e8bbf99b",
+            "locator": "A convex cell at a central triple tie"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
+            "sha256": "c3b23a6e1fe265682138ffeb30a583f151340e1604f753b3790ac553e8bbf99b",
+            "locator": "Radial occupancy under exact exterior agreement, (5)"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+            "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
+            "locator": "The difference from a simplex cannot satisfy such an equation, DD6"
           }
         ],
         "next_action": "Exclude a nonsimplex tie in the unresolved intermediate range. The tied shape must have a uniformly positive dilation residual and annular mass error. At tangential endpoint contact, balanced dilation provides a curvature or radial-moment obstruction. Exact simultaneous circular saturation now forces the simplex. The remaining candidate has positive integrated angular envelope slack, uniformly on compact correlation intervals. Prove that this or another structural deficit exceeds any positive relaxed gain for a nonsimplex tied competitor. For a compact discrepancy, try to establish the cumulative tilted spectator order by a mass-preserving transfer coupled across actual winning regions. Source identities and individual score-ray tests do not imply the needed ordering. In the compact branch either force circular connectivity of actual winners or use the uniform disconnected-slice witness in a comparison that changes shapes and retains the mass constraints. Determine whether actual maximality rules out the thick radial recurrence in the exact-line branch, or produces a clean annulus and then excludes the remaining disconnected compact competitors. Control a moving nonsimplex branch or derive finite approximate tripod geometry from unrestricted global maximality. The fixed-shape witness does not bound the number of moving contacts."
@@ -324811,7 +325033,7 @@
         "id": "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
         "kind": "goal",
         "title": "Balanced three-cell Standard Simplex Conjecture at every positive correlation",
-        "scope": "Prove global Gaussian simplex optimality and equality rigidity for balanced measurable three-cell partitions in every d>=2 at every 0<rho<1, then obtain the balanced low-influence three-candidate plurality corollary. The explicit lower interval reaches 339/500, and the exact near-one result gives a qualitative interval adjacent to one. Closing the remaining intermediate range requires excluding a nonsimplex maximizer tied at a transition correlation. The unrestricted optimal value equals the supremum over balanced conical partitions across finite dimensions. Every adjacent conical plateau has the simplex value. Plateaus in arbitrarily large dimensions would force the unrestricted simplex value. This remains open at general correlations. Axial conical optimizers are excluded and the radial spectator class has an exact asymptotic value loss. Neither result gives a plateau for unrestricted conical values. Near-maximizers are compact modulo embeddings in arbitrary ambient dimensions. Unrestricted conical optima have the same first-order loss as radial spectator optima. Any sequence approaching a nonsimplex planar maximizer pays its strictly positive radial dilation coefficient at order 1/n, without assumptions on angular slice masses. This yields the asymptotic rate for a suboptimal simplex. The dimension-independent global comparison remains open. Measurable local growth is uniform over all ambient dimensions on compact interior bands. Combined with first-order conical comparison it gives the exact scaled delay of a possible conical transition behind a planar one. A planar nonsimplex tie is still possible under these restrictions. The ordinary centroid condition together with every sharp two-time posterior perimeter inequality still permits an incompatible adaptive rule beating simplex agreement. A valid argument must retain the common endpoint restriction or use actual score geometry. The triangle-only agreement relaxation is false as a global proof route. The fractional obstruction is outside the class of ordinary partitions. Even imposing PSD and every four-point three-label convex-hull test leaves a strict relaxed objective gap above the simplex near one. The three-ribbon witness is fractional and fails finite label consistency at level five before rotation averaging. Bare unanchored label-pair positivity strictly overestimates the simplex at every positive correlation. This is a relaxation obstruction even in the plane, not a new ordinary correlation interval. The posterior lift can tie an actual maximizer at one nontrivial scale only when the input is a simplex. Establishing such a step at general correlations requires new global control on actual maximizers.",
+        "scope": "Prove global Gaussian simplex optimality and equality rigidity for balanced measurable three-cell partitions in every d>=2 at every 0<rho<1, then obtain the balanced low-influence three-candidate plurality corollary. The explicit lower interval reaches 339/500, and the exact near-one result gives a qualitative interval adjacent to one. Closing the remaining intermediate range requires excluding a nonsimplex maximizer tied at a transition correlation. The unrestricted optimal value equals the supremum over balanced conical partitions across finite dimensions. Every adjacent conical plateau has the simplex value. Plateaus in arbitrarily large dimensions would force the unrestricted simplex value. This remains open at general correlations. Axial conical optimizers are excluded and the radial spectator class has an exact asymptotic value loss. Neither result gives a plateau for unrestricted conical values. Near-maximizers are compact modulo embeddings in arbitrary ambient dimensions. Unrestricted conical optima have the same first-order loss as radial spectator optima. Any sequence approaching a nonsimplex planar maximizer pays its strictly positive radial dilation coefficient at order 1/n, without assumptions on angular slice masses. This yields the asymptotic rate for a suboptimal simplex. The dimension-independent global comparison remains open. Measurable local growth is uniform over all ambient dimensions on compact interior bands. Combined with first-order conical comparison it gives the exact scaled delay of a possible conical transition behind a planar one. A planar nonsimplex tie is still possible under these restrictions. The ordinary centroid condition together with every sharp two-time posterior perimeter inequality still permits an incompatible adaptive rule beating simplex agreement. A valid argument must retain the common endpoint restriction or use actual score geometry. The triangle-only agreement relaxation is false as a global proof route. The fractional obstruction is outside the class of ordinary partitions. Even imposing PSD and every four-point three-label convex-hull test leaves a strict relaxed objective gap above the simplex near one. The three-ribbon witness is fractional and fails finite label consistency at level five before rotation averaging. Bare unanchored label-pair positivity strictly overestimates the simplex at every positive correlation. This is a relaxation obstruction even in the plane, not a new ordinary correlation interval. The posterior lift can tie an actual maximizer at one nontrivial scale only when the input is a simplex. Establishing such a step at general correlations requires new global control on actual maximizers. Nontrivial balanced complementary patches of actual co-maximizers in distinct planes are strictly suboptimal. At a right contact, generic appropriately labeled simplex orientations give the same strictness for cuts in the common plane. These restrictions concern recombination and leave the existence of nonsimplex ties open.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -326458,6 +326680,41 @@
             "path": "plurality-stability/GAUSSIAN_POSTERIOR_LIFT_STABILITY.md",
             "sha256": "9dfad1684f42bb3cacf60e05d5b94ae684af7f08e9fbc24351b290641f7e1bfe",
             "locator": "Equality at one lift scale, PL1"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+            "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
+            "locator": "An individual maximizing cell has no directional product equation, DD2"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+            "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
+            "locator": "A difference supported on one common coordinate is zero and Complementary patches of two distinct planes, DD1–DD4"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+            "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
+            "locator": "Uniform loss with separated planes and positive patch masses, DD5"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
+            "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+            "locator": "Tangent partitions and angular interval endpoints through Propagation along the rays, RP2"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
+            "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+            "locator": "Strict comparison at right contact, RP1–RP2"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
+            "sha256": "c3b23a6e1fe265682138ffeb30a583f151340e1604f753b3790ac553e8bbf99b",
+            "locator": "A convex cell at a central triple tie"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
+            "sha256": "c3b23a6e1fe265682138ffeb30a583f151340e1604f753b3790ac553e8bbf99b",
+            "locator": "Radial occupancy under exact exterior agreement, (5)"
           }
         ],
         "next_action": "Bridge the intermediate correlations between the implicit lower extension and the exact near-one interval. The separated scalar form has growing positive index near one, so a uniformly bounded collection of radial moments cannot repair it. Use the joint angular constraints at intermediate correlations or exclude the required first tie by its interface geometry."
@@ -536394,6 +536651,172 @@
           "sha256": "09aa860a0fa973cf599255a03d663194f4c970c995b2369bb2d64c7bdbc4c0a4",
           "locator": "A uniform lower bound on independent score directions, ED7"
         }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-MAXIMIZER-DIRECTIONAL-PRODUCT-NONANNIHILATION",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+          "PIS-THREE-CELL-MAXIMIZER-NO-INDIVIDUAL-CYLINDRICAL-CELL"
+        ],
+        "conclusion": "PIS-THREE-CELL-MAXIMIZER-DIRECTIONAL-PRODUCT-NONANNIHILATION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+          "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
+          "locator": "An individual maximizing cell has no directional product equation, DD2"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-MAXIMIZER-ACTIVE-PLANES-REPEAT-IN-IDENTITIES",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-DIRECTIONAL-PRODUCT-NONANNIHILATION",
+          "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION"
+        ],
+        "conclusion": "PIS-THREE-CELL-MAXIMIZER-ACTIVE-PLANES-REPEAT-IN-IDENTITIES",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+          "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
+          "locator": "Every active plane in an identity must repeat"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-DISTINCT-PLANE-COMPLEMENTARY-PATCH-RIGIDITY",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-ACTIVE-PLANES-REPEAT-IN-IDENTITIES",
+          "PIS-THREE-CELL-MAXIMIZER-FULL-ACTIVE-RANK"
+        ],
+        "conclusion": "PIS-THREE-CELL-DISTINCT-PLANE-COMPLEMENTARY-PATCH-RIGIDITY",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+          "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
+          "locator": "A difference supported on one common coordinate is zero and Complementary patches of two distinct planes, DD1–DD4"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-DISTINCT-PLANE-UNIFORM-COMPLEMENTARY-LOSS",
+        "premises": [
+          "PIS-THREE-CELL-DISTINCT-PLANE-COMPLEMENTARY-PATCH-RIGIDITY",
+          "PIS-GAUSSIAN-DIMENSION-FREE-NEAR-MAXIMIZER-COMPACTNESS"
+        ],
+        "conclusion": "PIS-THREE-CELL-DISTINCT-PLANE-UNIFORM-COMPLEMENTARY-LOSS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+          "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
+          "locator": "Uniform loss with separated planes and positive patch masses, DD5"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-SIMPLEX-COMPLEMENTARY-PATCH-FOURIER-RIGIDITY",
+        "premises": [
+          "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION",
+          "PIS-THREE-CELL-MAXIMIZER-NO-INDIVIDUAL-CYLINDRICAL-CELL",
+          "PIS-GAUSSIAN-DIMENSION-FREE-NEAR-MAXIMIZER-COMPACTNESS"
+        ],
+        "conclusion": "PIS-THREE-CELL-SIMPLEX-COMPLEMENTARY-PATCH-FOURIER-RIGIDITY",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_COMPLEMENTARY_PATCH_RIGIDITY.md",
+          "sha256": "20b99a004dae8ba8d6d9dff9bb47029b6cdbb42f148964964ba52b86e5e0c7c7",
+          "locator": "Rigidity of the two-term identity and Strict cost of a nontrivial cut, CP1–CP3"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-SAME-PLANE-COMPLEMENTARY-PATCH-RAY-PROPAGATION",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+        ],
+        "conclusion": "PIS-THREE-CELL-SAME-PLANE-COMPLEMENTARY-PATCH-RAY-PROPAGATION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
+          "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+          "locator": "Tangent partitions and angular interval endpoints through Propagation along the rays, RP2"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-RIGHT-CONTACT-GENERIC-COMPLEMENTARY-PATCH-STRICTNESS",
+        "premises": [
+          "PIS-THREE-CELL-SAME-PLANE-COMPLEMENTARY-PATCH-RAY-PROPAGATION",
+          "PIS-THREE-CELL-ORIGIN-ARM-DERIVATIVE-LOWER-BOUND",
+          "PIS-GAUSSIAN-DIMENSION-FREE-NEAR-MAXIMIZER-COMPACTNESS"
+        ],
+        "conclusion": "PIS-THREE-CELL-RIGHT-CONTACT-GENERIC-COMPLEMENTARY-PATCH-STRICTNESS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
+          "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+          "locator": "Strict comparison at right contact, RP1–RP2"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-CONVEX-SUPPORTING-RAYS-APERTURE",
+        "premises": [
+          "PIS-THREE-CELL-SINGLE-SIMPLEX-CELL-RIGIDITY",
+          "PIS-GAUSSIAN-DIMENSION-FREE-NEAR-MAXIMIZER-COMPACTNESS"
+        ],
+        "conclusion": "PIS-THREE-CELL-CONVEX-SUPPORTING-RAYS-APERTURE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
+          "sha256": "c3b23a6e1fe265682138ffeb30a583f151340e1604f753b3790ac553e8bbf99b",
+          "locator": "The two score limits on a supporting line and Angles and centered supports, (1)–(4)"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-CONVEX-CELL-CENTRAL-SEGMENT-RIGIDITY",
+        "premises": [
+          "PIS-THREE-CELL-SINGLE-SIMPLEX-CELL-RIGIDITY",
+          "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE"
+        ],
+        "conclusion": "PIS-THREE-CELL-CONVEX-CELL-CENTRAL-SEGMENT-RIGIDITY",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
+          "sha256": "c3b23a6e1fe265682138ffeb30a583f151340e1604f753b3790ac553e8bbf99b",
+          "locator": "A convex cell at a central triple tie"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-COMPACT-DEFECT-RADIAL-OCCUPANCY",
+        "premises": [
+          "PIS-THREE-CELL-COMPACT-DISCREPANCY-EXACT-CENTRAL-TRIPOD",
+          "PIS-THREE-CELL-SINGLE-SIMPLEX-CELL-RIGIDITY"
+        ],
+        "conclusion": "PIS-THREE-CELL-COMPACT-DEFECT-RADIAL-OCCUPANCY",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
+          "sha256": "c3b23a6e1fe265682138ffeb30a583f151340e1604f753b3790ac553e8bbf99b",
+          "locator": "Radial occupancy under exact exterior agreement, (5)"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-DIRECTIONAL-PRODUCT-RIGIDITY-RELATIVE-TO-SIMPLEX",
+        "premises": [
+          "PIS-THREE-CELL-MAXIMIZER-DIRECTIONAL-PRODUCT-NONANNIHILATION",
+          "PIS-THREE-CELL-MAXIMIZER-FULL-ACTIVE-RANK"
+        ],
+        "conclusion": "PIS-THREE-CELL-DIRECTIONAL-PRODUCT-RIGIDITY-RELATIVE-TO-SIMPLEX",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+          "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
+          "locator": "The difference from a simplex cannot satisfy such an equation, DD6"
+        }
       }
     ],
     "audit_note": "Every current principal result has an explicit dependency-bearing proof route. Retained sources and named declarations are inventoried with completeness checks; imported theorem proofs and some supporting developments remain scoped leaves or partially expanded arguments. Unverified external inputs remain visible and do not become proved from a bibliography entry. Graph support is separate from independent mathematical review, formal verification and publication.",
@@ -621358,6 +621781,24 @@
                 "PIS-ALL-CELL-ORTHOGONAL-SLAB-AND-PRODUCT-EXCLUSION"
               ],
               "role": "mathematical_input"
+            },
+            {
+              "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+              "locator": "Individual active planes and directional product obstruction, Theorem 1.9",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION",
+                "PIS-THREE-CELL-MAXIMIZER-DIRECTIONAL-PRODUCT-NONANNIHILATION"
+              ]
+            },
+            {
+              "path": "plurality-stability/THREE_CELL_COMPLEMENTARY_PATCH_RIGIDITY.md",
+              "locator": "Rigidity of the two-term identity, Theorem 1.9",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION",
+                "PIS-THREE-CELL-SIMPLEX-COMPLEMENTARY-PATCH-FOURIER-RIGIDITY"
+              ]
             }
           ]
         },
@@ -845233,7 +845674,7 @@
         },
         {
           "path": "../unpublished/genus-three-rational-three-torsion/SHA256SUMS.txt",
-          "sha256": "e504ed3417ef28b571b298234e372a5054941d8d49d4cdfb5504b25424632068",
+          "sha256": "b4b990ba00ef8b4bb215b64ecd9e833141fc8f89b05985b6197c58ea874d3548",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -845243,7 +845684,7 @@
         },
         {
           "path": "../unpublished/genus-three-rational-three-torsion/genus-three-rational-three-torsion-source.zip",
-          "sha256": "eaebffc6712431004b6002b19da6a071d565e1286492c3190d59091bab1cf1fe",
+          "sha256": "c30ed6d5bb43b2004a29a9705985b1d5ce2bd5c1596f44167b79286cd1f79231",
           "claims": [
             "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",
             "ARITH-GENUS-THREE-EXACT-THREE-PRIMARY-SELMER-TRANSFER",
@@ -845257,7 +845698,7 @@
         },
         {
           "path": "../unpublished/genus-three-rational-three-torsion/genus-three-rational-three-torsion.pdf",
-          "sha256": "18acb9308d65eea4be1121ecc187237a0ddf989952ed14313cccd4f6d7f91198",
+          "sha256": "5d8683e909b518fed9d0ff0e4632af39765e3ace2a9c90ce0893d91d6daeffe4",
           "claims": [
             "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",
             "ARITH-GENUS-THREE-EXACT-THREE-PRIMARY-SELMER-TRANSFER",
@@ -845271,7 +845712,7 @@
         },
         {
           "path": "../unpublished/genus-three-rational-three-torsion/main.tex",
-          "sha256": "e6a10e2e0a64648c9ea7512d5719fa601d99dc4fe676d7a9ad9ccbc6834ab47c",
+          "sha256": "36176318b10ac2ab88bba0ff7f62fd52ea1f90604c7ac1b05c4ecd8a21a112a0",
           "claims": [
             "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",
             "ARITH-GENUS-THREE-EXACT-THREE-PRIMARY-SELMER-TRANSFER",
@@ -845315,7 +845756,7 @@
             {
               "locator": "thm:arithmetic",
               "kind": "theorem",
-              "line": 103,
+              "line": 132,
               "title": "thm:arithmetic",
               "nodes": [
                 "ARITH-GENUS-THREE-FULL-RATIONAL-ARITHMETIC"
@@ -845338,7 +845779,7 @@
         },
         {
           "path": "../unpublished/genus-three-rational-three-torsion/verification.json",
-          "sha256": "e68c7de0f32dc25ae6e6a57a0d8171b929b3362e1283b03423f6a73736a7fe71",
+          "sha256": "54661374ebeeb360dedba8255ad993dc8931a438b88406dbdec530430a9fb624",
           "claims": [],
           "dependencies": [],
           "gaps": [],
@@ -862234,6 +862675,163 @@
             }
           ],
           "explanation": "Compact free-volume Euclidean Gaussian-cut minimizers, local perimeter limits and bounds on their phase dimensions."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
+          "sha256": "c3b23a6e1fe265682138ffeb30a583f151340e1604f753b3790ac553e8bbf99b",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-CONVEX-SUPPORTING-RAYS-APERTURE",
+            "PIS-THREE-CELL-CONVEX-CELL-CENTRAL-SEGMENT-RIGIDITY",
+            "PIS-THREE-CELL-COMPACT-DEFECT-RADIAL-OCCUPANCY"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-SINGLE-SIMPLEX-CELL-RIGIDITY",
+            "PIS-GAUSSIAN-DIMENSION-FREE-NEAR-MAXIMIZER-COMPACTNESS",
+            "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+            "PIS-THREE-CELL-COMPACT-DISCREPANCY-EXACT-CENTRAL-TRIPOD"
+          ],
+          "gaps": [
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER",
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL"
+          ],
+          "statements": [
+            {
+              "locator": "The two score limits on a supporting line and Angles and centered supports, (1)–(4)",
+              "nodes": [
+                "PIS-THREE-CELL-CONVEX-SUPPORTING-RAYS-APERTURE"
+              ]
+            },
+            {
+              "locator": "A convex cell at a central triple tie",
+              "nodes": [
+                "PIS-THREE-CELL-CONVEX-CELL-CENTRAL-SEGMENT-RIGIDITY"
+              ]
+            },
+            {
+              "locator": "Radial occupancy under exact exterior agreement, (5)",
+              "nodes": [
+                "PIS-THREE-CELL-COMPACT-DEFECT-RADIAL-OCCUPANCY"
+              ]
+            }
+          ],
+          "explanation": "Analytic proof of a stated rigidity or strict comparison for Gaussian noise stability."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+          "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-MAXIMIZER-DIRECTIONAL-PRODUCT-NONANNIHILATION",
+            "PIS-THREE-CELL-MAXIMIZER-ACTIVE-PLANES-REPEAT-IN-IDENTITIES",
+            "PIS-THREE-CELL-DISTINCT-PLANE-COMPLEMENTARY-PATCH-RIGIDITY",
+            "PIS-THREE-CELL-DISTINCT-PLANE-UNIFORM-COMPLEMENTARY-LOSS",
+            "PIS-THREE-CELL-DIRECTIONAL-PRODUCT-RIGIDITY-RELATIVE-TO-SIMPLEX"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+            "PIS-THREE-CELL-MAXIMIZER-NO-INDIVIDUAL-CYLINDRICAL-CELL",
+            "PIS-THREE-CELL-MAXIMIZER-DIRECTIONAL-PRODUCT-NONANNIHILATION",
+            "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION",
+            "PIS-THREE-CELL-MAXIMIZER-ACTIVE-PLANES-REPEAT-IN-IDENTITIES",
+            "PIS-THREE-CELL-MAXIMIZER-FULL-ACTIVE-RANK",
+            "PIS-THREE-CELL-DISTINCT-PLANE-COMPLEMENTARY-PATCH-RIGIDITY",
+            "PIS-GAUSSIAN-DIMENSION-FREE-NEAR-MAXIMIZER-COMPACTNESS"
+          ],
+          "gaps": [
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER"
+          ],
+          "statements": [
+            {
+              "locator": "An individual maximizing cell has no directional product equation, DD2",
+              "nodes": [
+                "PIS-THREE-CELL-MAXIMIZER-DIRECTIONAL-PRODUCT-NONANNIHILATION"
+              ]
+            },
+            {
+              "locator": "Every active plane in an identity must repeat",
+              "nodes": [
+                "PIS-THREE-CELL-MAXIMIZER-ACTIVE-PLANES-REPEAT-IN-IDENTITIES"
+              ]
+            },
+            {
+              "locator": "A difference supported on one common coordinate is zero and Complementary patches of two distinct planes, DD1–DD4",
+              "nodes": [
+                "PIS-THREE-CELL-DISTINCT-PLANE-COMPLEMENTARY-PATCH-RIGIDITY"
+              ]
+            },
+            {
+              "locator": "Uniform loss with separated planes and positive patch masses, DD5",
+              "nodes": [
+                "PIS-THREE-CELL-DISTINCT-PLANE-UNIFORM-COMPLEMENTARY-LOSS"
+              ]
+            },
+            {
+              "locator": "The difference from a simplex cannot satisfy such an equation, DD6",
+              "nodes": [
+                "PIS-THREE-CELL-DIRECTIONAL-PRODUCT-RIGIDITY-RELATIVE-TO-SIMPLEX"
+              ]
+            }
+          ],
+          "explanation": "Analytic proof of a stated rigidity or strict comparison for Gaussian noise stability."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
+          "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-SAME-PLANE-COMPLEMENTARY-PATCH-RAY-PROPAGATION",
+            "PIS-THREE-CELL-RIGHT-CONTACT-GENERIC-COMPLEMENTARY-PATCH-STRICTNESS"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-MAXIMIZER-REGULAR-TRIPLE-STRUCTURE",
+            "PIS-THREE-CELL-SAME-PLANE-COMPLEMENTARY-PATCH-RAY-PROPAGATION",
+            "PIS-THREE-CELL-ORIGIN-ARM-DERIVATIVE-LOWER-BOUND",
+            "PIS-GAUSSIAN-DIMENSION-FREE-NEAR-MAXIMIZER-COMPACTNESS"
+          ],
+          "gaps": [
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER"
+          ],
+          "statements": [
+            {
+              "locator": "Tangent partitions and angular interval endpoints through Propagation along the rays, RP2",
+              "nodes": [
+                "PIS-THREE-CELL-SAME-PLANE-COMPLEMENTARY-PATCH-RAY-PROPAGATION"
+              ]
+            },
+            {
+              "locator": "Strict comparison at right contact, RP1–RP2",
+              "nodes": [
+                "PIS-THREE-CELL-RIGHT-CONTACT-GENERIC-COMPLEMENTARY-PATCH-STRICTNESS"
+              ]
+            }
+          ],
+          "explanation": "Analytic proof of a stated rigidity or strict comparison for Gaussian noise stability."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_COMPLEMENTARY_PATCH_RIGIDITY.md",
+          "sha256": "20b99a004dae8ba8d6d9dff9bb47029b6cdbb42f148964964ba52b86e5e0c7c7",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-SIMPLEX-COMPLEMENTARY-PATCH-FOURIER-RIGIDITY"
+          ],
+          "dependencies": [
+            "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION",
+            "PIS-THREE-CELL-MAXIMIZER-NO-INDIVIDUAL-CYLINDRICAL-CELL",
+            "PIS-GAUSSIAN-DIMENSION-FREE-NEAR-MAXIMIZER-COMPACTNESS"
+          ],
+          "gaps": [],
+          "statements": [
+            {
+              "locator": "Rigidity of the two-term identity and Strict cost of a nontrivial cut, CP1–CP3",
+              "nodes": [
+                "PIS-THREE-CELL-SIMPLEX-COMPLEMENTARY-PATCH-FOURIER-RIGIDITY"
+              ]
+            }
+          ],
+          "explanation": "Analytic proof of a stated rigidity or strict comparison for Gaussian noise stability."
         }
       ]
     },
@@ -873547,7 +874145,7 @@
         {
           "entrypoint": "../unpublished/genus-three-rational-three-torsion/main.tex",
           "source_path": "../unpublished/genus-three-rational-three-torsion/main.tex",
-          "locator": "proof of thm:arithmetic; reference thm:main at line 417",
+          "locator": "proof of thm:arithmetic; reference thm:main at line 416",
           "conclusion": "ARITH-GENUS-THREE-FULL-RATIONAL-ARITHMETIC",
           "conclusion_path": "../unpublished/genus-three-rational-three-torsion/main.tex",
           "dependency": "ARITH-GENUS-THREE-HYPERELLIPTIC-JACOBIAN-RATIONAL-THREE-RANK-THREE",

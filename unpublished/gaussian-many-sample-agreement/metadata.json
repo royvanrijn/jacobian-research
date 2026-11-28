@@ -1,0 +1,38 @@
+{
+  "title": "Asymptotically Optimal Partitions for Agreement of Many Gaussian Samples",
+  "author": {
+    "name": "Roy van Rijn",
+    "orcid": "0009-0000-2808-0645"
+  },
+  "summary": "For fixed k>=3 and positive equicorrelation, proves the Gaussian many-observation agreement supremum is twice the mass-1/k halfspace probability asymptotically, uniformly in dimension. Gives the simplex exponent gap and exactly balanced discrete witnesses.",
+  "published": false,
+  "status": "ready-for-review",
+  "source": "main.tex",
+  "pdf": "gaussian-many-sample-agreement.pdf",
+  "source_archive": "source.zip",
+  "source_bundle": "source.zip",
+  "build": "SOURCE_DATE_EPOCH=1795824000 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=gaussian-many-sample-agreement main.tex",
+  "verification": "Analytic manuscript based on the retained proof note. Four-page PDF reproduced byte for byte from the TeX-only archive and inspected. The current source-aware and PDF-only review records are in verification.json.",
+  "verification_record": "verification.json",
+  "next_steps": [
+    "Obtain external specialist review of the three-set Prékopa–Leindler estimate and the exactly balanced voting construction."
+  ],
+  "catalogued_on": "2026-11-28",
+  "abstract": "We study the probability that $m$ equicorrelated Gaussian observations\nall fall in the same cell of a partition into $k$ equal-measure sets.\nFor fixed $k\\ge3$ and correlation $0<\\rho<1$, the largest agreement\nprobability is asymptotic to $2H_m$ as $m\\to\\infty$, uniformly in the\nambient dimension. Here $H_m$ is the probability that all observations\nfall in a single halfspace of mass $1/k$, and\n$H_m=m^{-(1-\\rho)/\\rho+o(1)}$. Dividing one coordinate into $k$ equal-mass\nintervals attains this bound asymptotically. The regular simplex has\nagreement exponent $2(k-1)/k$ times the halfspace exponent. This gives\na counterexample to the many-observation simplex proposal of\nIsaksson and Mossel and yields exactly balanced low-influence voting\nrules with greater unanimous agreement than plurality for sufficiently\nmany correlated tallies.",
+  "abstract_format": "latex",
+  "abstract_source": "main.tex",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "mathematical_status_nodes": [
+    "PIS-ALL-CELL-SHARP-MANY-SAMPLE-AGREEMENT",
+    "PIS-ALL-CELL-SIMPLEX-MULTI-SAMPLE-COUNTEREXAMPLE",
+    "PIS-ALL-CELL-MANY-COPY-LOW-INFLUENCE-COUNTEREXAMPLE"
+  ],
+  "independent_replay": false,
+  "formal_verification": false,
+  "external_review": false,
+  "submitted": false
+}
