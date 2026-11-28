@@ -860,6 +860,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | Two finite central straight segments of a convex maximizing cell force the simplex | Internal result | proved | [Source](../plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md) |
 | Every compact simplex defect has strict radial exchanges in every label | Internal result | proved | [Source](../plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md) |
 | Only a simplex or its antipode can have a finite directional-product difference from the reference | Internal result | proved | [Source](../plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md) |
+| At a right contact bounded complementary cuts have a uniform power-loss bound | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md) |
 
 **Computed obligations:** 45 unresolved; 32 resolved within their exact scope.
 

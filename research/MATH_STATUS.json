@@ -4340,7 +4340,7 @@
           "sources": [
             {
               "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-              "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+              "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
               "locator": "Specialization k=4 of thm:main"
             }
           ]
@@ -4417,7 +4417,7 @@
           "sources": [
             {
               "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-              "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+              "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
               "locator": "Dimension-independent local score-loss comparison"
             }
           ]
@@ -4444,7 +4444,7 @@
           "sources": [
             {
               "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-              "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+              "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
               "locator": "Main theorem and global quadratic comparison"
             }
           ]
@@ -4468,7 +4468,7 @@
           "sources": [
             {
               "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-              "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+              "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
               "locator": "Equality in thm:main"
             }
           ]
@@ -16196,7 +16196,14 @@
           "formal_verification": false,
           "external_review": false,
           "review_status": "internal_only",
-          "verification_note": "Written proof and internal mathematical audit."
+          "verification_note": "Written proof and internal mathematical audit.",
+          "sources": [
+            {
+              "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+              "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+              "locator": "Companion proof in thm:agreement"
+            }
+          ]
         },
         {
           "id": "PIS-ALL-CELL-MANY-COPY-LOW-INFLUENCE-COUNTEREXAMPLE",
@@ -16213,7 +16220,14 @@
           "formal_verification": false,
           "external_review": false,
           "review_status": "internal_only",
-          "verification_note": "Written proof and internal mathematical audit."
+          "verification_note": "Written proof and internal mathematical audit.",
+          "sources": [
+            {
+              "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+              "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+              "locator": "Companion proof in thm:voting"
+            }
+          ]
         },
         {
           "id": "PIS-THREE-CELL-APPROXIMATE-OBTUSE-EXTERIOR-RIGIDITY",
@@ -17326,6 +17340,23 @@
           "scope": "For an actual balanced three-cell maximizer and any centered reference simplex in its active plane, if the indicator-vector difference is annihilated by a finite product of nonzero directional derivatives, the maximizer equals the reference or its spatial antipode, with the same labels. The reference need not be known optimal. Compare ray-endpoint distributions to force all interfaces to be centered rays, then identify the boundary lines of every label.",
           "state": "proved",
           "canonical_source": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
+          "checker": null,
+          "artifact_hash": null,
+          "evidence": [],
+          "proof_type": "Written analytic proof",
+          "dependency_coverage": "partial",
+          "independent_replay": false,
+          "formal_verification": false,
+          "external_review": false,
+          "review_status": "internal_only",
+          "verification_note": "Written proof and internal mathematical review."
+        },
+        {
+          "id": "PIS-THREE-CELL-RIGHT-CONTACT-BOUNDED-CUT-POWER-LOSS",
+          "title": "At a right contact bounded complementary cuts have a uniform power-loss bound",
+          "scope": "Fix actual co-maximizers at a right contact with the generic simplex orientation. If one changed part is contained in a fixed ball and the complementary changed mass has a fixed positive lower bound, the two-output deficit is bounded below by a positive constant times the same power of the bounded changed mass as in CM1, for all balanced cuts of this kind.",
+          "state": "proved",
+          "canonical_source": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
           "checker": null,
           "artifact_hash": null,
           "evidence": [],
@@ -319211,7 +319242,7 @@
         "sources": [
           {
             "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-            "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+            "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "Specialization k=4 of prop:obstruction"
           }
         ],
@@ -320030,7 +320061,7 @@
         "id": "PIS-PAPER-SIMPLEX-MAIN",
         "kind": "claim",
         "title": "Quantitative Gaussian Simplex Stability at Small Positive Correlations",
-        "scope": "For every fixed k>=2 there exist rho_k,C_k>0 independent of d>=k-1 such that every balanced measurable Gaussian k-cell partition satisfies S_rho(T)-S_rho(A)>=C_k rho d_k(A)^2 for 0<rho<=rho_k. Here d_k is summed Gaussian symmetric-difference distance to the cylindrical central regular-simplex orbit. Equality in noise stability holds precisely on that orbit modulo null sets. The threshold is qualitative.",
+        "scope": "For every fixed k>=2 there exist rho_k,C_k>0 independent of d>=k-1 such that every balanced measurable Gaussian k-cell partition satisfies S_rho(T)-S_rho(A)>=C_k rho d_k(A)^2 for 0<rho<=rho_k. Here d_k is summed Gaussian symmetric-difference distance to the cylindrical central regular-simplex orbit. Equality in noise stability holds precisely on that orbit modulo null sets. The deficit coefficient and correlation threshold are qualitative.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -320038,7 +320069,7 @@
         "sources": [
           {
             "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-            "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+            "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "thm:main"
           }
         ],
@@ -320051,7 +320082,7 @@
         "id": "PIS-PAPER-SIMPLEX-FIRST-MOMENT",
         "kind": "claim",
         "title": "Zhang's first-moment theorem and uniform localization",
-        "scope": "For every fixed k>=2, balanced measurable Gaussian partitions satisfy W_1(A)<=F_k, with equality only on the regular-simplex orbit, and near equality forces convergence to that orbit in Gaussian label distance uniformly over d>=k-1. The argument reproduces Zhang's balanced affine score comparison in an additive covariance parametrization, using the Milman-Neeman perimeter bound.",
+        "scope": "For every fixed k>=2, balanced measurable Gaussian partitions satisfy W_1(A)<=F_k, with equality precisely on the regular-simplex orbit. Zhang's balanced affine-score comparison yields the first-moment inequality and equality characterization via the Milman–Neeman perimeter bound. The article uses an additive covariance ray for this comparison and then proves dimension-uniform near-equality localization by compactness of the normalized covariance, moment alignment and a linear score regret estimate.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -320059,7 +320090,7 @@
         "sources": [
           {
             "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-            "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+            "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "prop:zhang"
           }
         ],
@@ -320072,7 +320103,7 @@
         "id": "PIS-PAPER-SIMPLEX-INTERFACE",
         "kind": "claim",
         "title": "Aligned first-moment inequality on simplex facets",
-        "scope": "For k>=2, on balanced Gaussian L2 facet flux at the regular simplex in the active space E=1^perp, if its first-moment matrix Df is symmetric, then ||Df||_F^2<=(1-1/k) ell ||f||^2. The proof uses conditional covariance of a Gaussian on each convex facet and the exact centered label-pair identity.",
+        "scope": "For k>=2, on balanced Gaussian L2 facet flux at the regular simplex in the active space E=1^perp, if its first-moment operator Df on E is symmetric, then ||Df||_F^2<=(1-1/k) ell ||f||^2. The proof uses conditional covariance of a Gaussian on each convex facet and the exact centered label-pair identity.",
         "status": "open",
         "topic": "moments",
         "origin": "internal",
@@ -320080,7 +320111,7 @@
         "sources": [
           {
             "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-            "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+            "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "lem:interface"
           }
         ],
@@ -320101,7 +320132,7 @@
         "sources": [
           {
             "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-            "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+            "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "lem:margin"
           }
         ],
@@ -320122,7 +320153,7 @@
         "sources": [
           {
             "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-            "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+            "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "lem:weighted"
           }
         ],
@@ -320143,7 +320174,7 @@
         "sources": [
           {
             "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-            "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+            "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "lem:kernel"
           }
         ],
@@ -320164,7 +320195,7 @@
         "sources": [
           {
             "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-            "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+            "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "cor:exterior"
           }
         ],
@@ -320185,7 +320216,7 @@
         "sources": [
           {
             "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-            "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+            "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "prop:compactness"
           }
         ],
@@ -320206,7 +320237,7 @@
         "sources": [
           {
             "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-            "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+            "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "prop:local"
           }
         ],
@@ -320227,7 +320258,7 @@
         "sources": [
           {
             "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-            "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+            "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "prop:obstruction"
           }
         ],
@@ -323331,12 +323362,12 @@
           },
           {
             "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
-            "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+            "sha256": "a26aa3fc51208175cf10703e92fa871d446d81e5329eb00e614d9304abf2d8db",
             "locator": "Tangent partitions and angular interval endpoints through Propagation along the rays, RP2"
           },
           {
             "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
-            "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+            "sha256": "a26aa3fc51208175cf10703e92fa871d446d81e5329eb00e614d9304abf2d8db",
             "locator": "Strict comparison at right contact, RP1–RP2"
           },
           {
@@ -323358,6 +323389,16 @@
             "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
             "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
             "locator": "The difference from a simplex cannot satisfy such an equation, DD6"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
+            "sha256": "61f3035c04b3e71c9039729dddf6e034fa8173ba40ad8a9373971b89e894e599",
+            "locator": "Regret at both inputs and A sublevel estimate for the combined regret, CM1–CM3"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
+            "sha256": "61f3035c04b3e71c9039729dddf6e034fa8173ba40ad8a9373971b89e894e599",
+            "locator": "Right-contact consequence following CM3"
           }
         ],
         "next_action": "Exclude a nonsimplex tie in the unresolved intermediate range. The tied shape must have a uniformly positive dilation residual and annular mass error. At tangential endpoint contact, balanced dilation provides a curvature or radial-moment obstruction. Exact simultaneous circular saturation now forces the simplex. The remaining candidate has positive integrated angular envelope slack, uniformly on compact correlation intervals. Prove that this or another structural deficit exceeds any positive relaxed gain for a nonsimplex tied competitor. For a compact discrepancy, try to establish the cumulative tilted spectator order by a mass-preserving transfer coupled across actual winning regions. Source identities and individual score-ray tests do not imply the needed ordering. In the compact branch either force circular connectivity of actual winners or use the uniform disconnected-slice witness in a comparison that changes shapes and retains the mass constraints. Determine whether actual maximality rules out the thick radial recurrence in the exact-line branch, or produces a clean annulus and then excludes the remaining disconnected compact competitors. Control a moving nonsimplex branch or derive finite approximate tripod geometry from unrestricted global maximality. The fixed-shape witness does not bound the number of moving contacts."
@@ -326698,12 +326739,12 @@
           },
           {
             "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
-            "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+            "sha256": "a26aa3fc51208175cf10703e92fa871d446d81e5329eb00e614d9304abf2d8db",
             "locator": "Tangent partitions and angular interval endpoints through Propagation along the rays, RP2"
           },
           {
             "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
-            "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+            "sha256": "a26aa3fc51208175cf10703e92fa871d446d81e5329eb00e614d9304abf2d8db",
             "locator": "Strict comparison at right contact, RP1–RP2"
           },
           {
@@ -326715,6 +326756,16 @@
             "path": "plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md",
             "sha256": "c3b23a6e1fe265682138ffeb30a583f151340e1604f753b3790ac553e8bbf99b",
             "locator": "Radial occupancy under exact exterior agreement, (5)"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
+            "sha256": "61f3035c04b3e71c9039729dddf6e034fa8173ba40ad8a9373971b89e894e599",
+            "locator": "Regret at both inputs and A sublevel estimate for the combined regret, CM1–CM3"
+          },
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
+            "sha256": "61f3035c04b3e71c9039729dddf6e034fa8173ba40ad8a9373971b89e894e599",
+            "locator": "Right-contact consequence following CM3"
           }
         ],
         "next_action": "Bridge the intermediate correlations between the implicit lower extension and the exact near-one interval. The separated scalar form has growing positive index near one, so a uniformly bounded collection of radial moments cannot repair it. Use the joint angular constraints at intermediate correlations or exclude the required first tie by its interface geometry."
@@ -329473,7 +329524,7 @@
           },
           {
             "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-            "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+            "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
             "locator": "Normal flux and quantitative comparison, prop:local and thm:main"
           }
         ],
@@ -334754,6 +334805,157 @@
             "path": "plurality-stability/EUCLIDEAN_GAUSSIAN_CUT_PHASE_DIMENSION.md",
             "sha256": "09aa860a0fa973cf599255a03d663194f4c970c995b2369bb2d64c7bdbc4c0a4",
             "locator": "A cylindrical minimizer gives a minimizing base through All phases meet the origin of a perimeter limit, ED1–ED5"
+          }
+        ]
+      },
+      {
+        "id": "EXT-PIS-ISAKSSON-MOSSEL-EXCHANGEABLE-GAUSSIANS",
+        "kind": "source",
+        "title": "Isaksson–Mossel's Exchangeable Gaussians Theorem",
+        "scope": "For m standard jointly Gaussian observations with a common nonnegative cross covariance rho times the identity, the probability of simultaneous membership in m prescribed sets is maximized by parallel halfspaces of the respective Gaussian measures. The retained application uses 0<rho<1 and the same set for all observations.",
+        "topic": "moments",
+        "origin": "external",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "evidence_type": "external_theorem",
+        "sources": [
+          {
+            "path": "plurality-stability/MULTI_SAMPLE_SIMPLEX_COUNTEREXAMPLE.md",
+            "sha256": "53c8c21ea6083bd93e3dacabdb75ac76097636498a1f92cb496c2356d3c69d17",
+            "locator": "A sharp dimension-independent upper bound; cited Isaksson–Mossel Theorem 1.2"
+          }
+        ]
+      },
+      {
+        "id": "EXT-PIS-PREKOPA-THREE-FUNCTION-INEQUALITY",
+        "kind": "source",
+        "title": "The three-function Prékopa–Leindler inequality",
+        "scope": "For three nonnegative integrable functions on Euclidean space, an integrable pointwise majorant for their weighted geometric mean at the corresponding weighted barycenter has integral at least the weighted geometric mean of their integrals. The application uses equal weights and Gaussian densities restricted to three open sets.",
+        "topic": "moments",
+        "origin": "external",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "evidence_type": "external_theorem",
+        "sources": [
+          {
+            "path": "plurality-stability/sources/prekopa-logarithmic-concave-1973.pdf",
+            "sha256": "2bb16932ce23fa31a0f9a44fc60bee6439883ad837f500277ef95dda250b3fc3",
+            "locator": "Theorem 3, p. 337; integral inequality with arbitrary positive weights"
+          }
+        ]
+      },
+      {
+        "id": "PIS-PAPER-MANY-SAMPLE-AGREEMENT",
+        "kind": "claim",
+        "title": "Asymptotically optimal partitions for agreement of many Gaussian samples",
+        "scope": "For fixed k>=3 and 0<rho<1, the supremum of balanced m-observation equicorrelated Gaussian agreement in every dimension is (2+o(1)) times the same-cell term of a halfspace of mass 1/k, uniformly in dimension. A Gaussian testing separation, three-function Prékopa–Leindler, and Isaksson–Mossel's Exchangeable Gaussians Theorem bound the other cells' contributions. The two end cells of the quantile slab partition attain the constant. The reference halfspace term satisfies H_m=m^(-(1-rho)/rho+o(1)).",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+            "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+            "locator": "thm:agreement"
+          }
+        ],
+        "independent_replay": false,
+        "formal_verification": false,
+        "external_review": false
+      },
+      {
+        "id": "PIS-PAPER-MANY-SAMPLE-SIMPLEX-EXPONENT",
+        "kind": "claim",
+        "title": "The simplex exponent for many Gaussian samples",
+        "scope": "For fixed k>=3, 0<rho<1 and d>=k-1, agreement of m equicorrelated Gaussian observations under the centered regular simplex is m^(-beta alpha+o(1)), where beta=2(k-1)/k and alpha=(1-rho)/rho. The balanced quantile-slab to simplex agreement ratio is m^((beta-1) alpha+o(1)).",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+            "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+            "locator": "prop:simplex"
+          }
+        ],
+        "independent_replay": false,
+        "formal_verification": false,
+        "external_review": false
+      },
+      {
+        "id": "PIS-PAPER-MANY-SAMPLE-POSTERIOR-POWERS",
+        "kind": "claim",
+        "title": "Power-law upper tails give matching high moments",
+        "scope": "For P in [0,1] with Pr(P>1-epsilon)=epsilon^(eta+o(1)) and eta>0, E[P^m]=m^(-eta+o(1)).",
+        "status": "proved",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+            "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+            "locator": "lem:posterior-powers"
+          }
+        ],
+        "independent_replay": false,
+        "formal_verification": false,
+        "external_review": false
+      },
+      {
+        "id": "PIS-PAPER-MANY-SAMPLE-SEPARATION",
+        "kind": "claim",
+        "title": "Separation and Gaussian mass bounds for three high-posterior labels",
+        "scope": "Let a=sqrt((1-rho)/rho), t=Phi^(-1)(1-epsilon), 0<epsilon<1/2, and let D_i be the latent points where label i has conditional probability greater than 1-epsilon. Distinct D_i are separated by distance at least 2at. The geometric mean of any three distinct D_i Gaussian masses is at most exp(-2a^2 t^2/3).",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+            "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+            "locator": "lem:separation"
+          }
+        ],
+        "independent_replay": false,
+        "formal_verification": false,
+        "external_review": false
+      },
+      {
+        "id": "PIS-PAPER-MANY-SAMPLE-VOTING",
+        "kind": "claim",
+        "title": "Exactly balanced low-influence rules beat plurality for many correlated tallies",
+        "scope": "For every k>=3 and fixed positive pairwise correlation, when the number of equicorrelated ballot copies is sufficiently large and fixed, exactly balanced deterministic vote rules with vanishing maximum influence achieve a limiting all-agree probability strictly above plurality. Quantile slabs applied to normalized counts and a vanishing balance repair yield the counterexample.",
+        "status": "open",
+        "topic": "moments",
+        "origin": "internal",
+        "dependency_coverage": "partial",
+        "sources": [
+          {
+            "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+            "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+            "locator": "thm:voting"
+          }
+        ],
+        "independent_replay": false,
+        "formal_verification": false,
+        "external_review": false
+      },
+      {
+        "id": "PIS-THREE-CELL-BOUNDED-SMALL-COMPLEMENTARY-CUT-MARGIN",
+        "kind": "claim",
+        "status": "proved",
+        "dependency_coverage": "complete",
+        "title": "Two input regrets dominate the interaction of a small bounded complementary cut",
+        "scope": "For any planar stationary winner at a fixed positive correlation and a generically oriented centered simplex, every sufficiently small balanced cut with changed mass m in a fixed ball has two-output total deficit bounded below by a positive constant times m to the power 2 minus 1/(L+1). L is a finite order of a restricted score zero. The proof uses analytic pair score sublevels along the simplex supporting lines and does not require two global maximizers.",
+        "sources": [
+          {
+            "path": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
+            "sha256": "61f3035c04b3e71c9039729dddf6e034fa8173ba40ad8a9373971b89e894e599",
+            "locator": "Regret at both inputs and A sublevel estimate for the combined regret, CM1–CM3"
           }
         ]
       }
@@ -520386,7 +520588,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "Specialization k=4 of thm:main"
         },
         "dependency_coverage": "partial",
@@ -520401,7 +520603,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "Specialization k=4 of prop:obstruction"
         },
         "dependency_coverage": "partial",
@@ -521225,7 +521427,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "thm:main"
         },
         "dependency_coverage": "partial",
@@ -521240,7 +521442,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "thm:main"
         },
         "dependency_coverage": "partial"
@@ -521254,7 +521456,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "prop:local"
         },
         "dependency_coverage": "partial"
@@ -521272,7 +521474,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "prop:local"
         },
         "dependency_coverage": "partial"
@@ -521286,7 +521488,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "prop:zhang"
         },
         "dependency_coverage": "partial",
@@ -521301,7 +521503,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "lem:interface"
         },
         "dependency_coverage": "partial",
@@ -521317,7 +521519,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "cor:exterior"
         },
         "dependency_coverage": "partial",
@@ -521334,7 +521536,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "prop:compactness"
         },
         "dependency_coverage": "partial",
@@ -521349,7 +521551,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "thm:main, equality"
         },
         "dependency_coverage": "partial"
@@ -521363,7 +521565,7 @@
         "status": "proved",
         "proof": {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "locator": "thm:main in d=k-1"
         },
         "dependency_coverage": "partial"
@@ -536738,7 +536940,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
-          "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+          "sha256": "a26aa3fc51208175cf10703e92fa871d446d81e5329eb00e614d9304abf2d8db",
           "locator": "Tangent partitions and angular interval endpoints through Propagation along the rays, RP2"
         }
       },
@@ -536754,7 +536956,7 @@
         "dependency_coverage": "partial",
         "proof": {
           "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
-          "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+          "sha256": "a26aa3fc51208175cf10703e92fa871d446d81e5329eb00e614d9304abf2d8db",
           "locator": "Strict comparison at right contact, RP1–RP2"
         }
       },
@@ -536816,6 +537018,109 @@
           "path": "plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md",
           "sha256": "2755ba43967f3d901d6c497306f29aab33f6029d3cb8064b39b660741a6a6ca6",
           "locator": "The difference from a simplex cannot satisfy such an equation, DD6"
+        }
+      },
+      {
+        "id": "PIS-ARTICLE-MANY-SAMPLE-AGREEMENT",
+        "premises": [
+          "PIS-PAPER-MANY-SAMPLE-POSTERIOR-POWERS",
+          "PIS-PAPER-MANY-SAMPLE-SEPARATION",
+          "EXT-PIS-ISAKSSON-MOSSEL-EXCHANGEABLE-GAUSSIANS"
+        ],
+        "conclusion": "PIS-PAPER-MANY-SAMPLE-AGREEMENT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+          "locator": "thm:agreement"
+        }
+      },
+      {
+        "id": "PIS-ARTICLE-MANY-SAMPLE-SIMPLEX-EXPONENT",
+        "premises": [
+          "PIS-PAPER-MANY-SAMPLE-POSTERIOR-POWERS",
+          "PIS-PAPER-MANY-SAMPLE-AGREEMENT"
+        ],
+        "conclusion": "PIS-PAPER-MANY-SAMPLE-SIMPLEX-EXPONENT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+          "locator": "prop:simplex"
+        }
+      },
+      {
+        "id": "PIS-ARTICLE-MANY-SAMPLE-SEPARATION",
+        "premises": [
+          "EXT-PIS-PREKOPA-THREE-FUNCTION-INEQUALITY"
+        ],
+        "conclusion": "PIS-PAPER-MANY-SAMPLE-SEPARATION",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+          "locator": "lem:separation"
+        }
+      },
+      {
+        "id": "PIS-ARTICLE-MANY-SAMPLE-VOTING",
+        "premises": [
+          "PIS-PAPER-MANY-SAMPLE-AGREEMENT",
+          "PIS-PAPER-MANY-SAMPLE-SIMPLEX-EXPONENT"
+        ],
+        "conclusion": "PIS-PAPER-MANY-SAMPLE-VOTING",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+          "locator": "thm:voting"
+        }
+      },
+      {
+        "id": "PIS-ARTICLE-MANY-SAMPLE-SUPPORTS-AGREEMENT",
+        "premises": [
+          "PIS-PAPER-MANY-SAMPLE-AGREEMENT"
+        ],
+        "conclusion": "PIS-ALL-CELL-SHARP-MANY-SAMPLE-AGREEMENT",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+          "locator": "thm:agreement"
+        }
+      },
+      {
+        "id": "PIS-ARTICLE-MANY-SAMPLE-SUPPORTS-VOTING",
+        "premises": [
+          "PIS-PAPER-MANY-SAMPLE-VOTING"
+        ],
+        "conclusion": "PIS-ALL-CELL-MANY-COPY-LOW-INFLUENCE-COUNTEREXAMPLE",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+          "locator": "thm:voting"
+        }
+      },
+      {
+        "id": "PROOF-PIS-THREE-CELL-RIGHT-CONTACT-BOUNDED-CUT-POWER-LOSS",
+        "premises": [
+          "PIS-THREE-CELL-BOUNDED-SMALL-COMPLEMENTARY-CUT-MARGIN",
+          "PIS-THREE-CELL-RIGHT-CONTACT-GENERIC-COMPLEMENTARY-PATCH-STRICTNESS"
+        ],
+        "conclusion": "PIS-THREE-CELL-RIGHT-CONTACT-BOUNDED-CUT-POWER-LOSS",
+        "status": "proved",
+        "dependency_coverage": "partial",
+        "proof": {
+          "path": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
+          "sha256": "61f3035c04b3e71c9039729dddf6e034fa8173ba40ad8a9373971b89e894e599",
+          "locator": "Right-contact consequence following CM3"
         }
       }
     ],
@@ -599562,7 +599867,8 @@
             "https://arxiv.org/pdf/0903.3362",
             "https://arxiv.org/pdf/0903.3362#page=2",
             "https://arxiv.org/pdf/0903.3362#page=26",
-            "https://doi.org/10.1007/s11856-011-0181-7"
+            "https://doi.org/10.1007/s11856-011-0181-7",
+            "https://arxiv.org/abs/0903.3362v3"
           ],
           "local_sources": [],
           "identifiers": {},
@@ -599702,6 +600008,16 @@
                 "PIS-PAPER-SIMPLEX-MAIN"
               ],
               "application_locator": "Conjecture 1.4(i), the balanced Gaussian question, and the connection to discrete plurality."
+            },
+            {
+              "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+              "locator": "bibitem IM",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-PIS-ISAKSSON-MOSSEL-EXCHANGEABLE-GAUSSIANS",
+                "PIS-PAPER-MANY-SAMPLE-AGREEMENT"
+              ],
+              "application_locator": "Theorem 1.2 is the halfspace bound. Section 8 supplies the many-observation conjectural context and Conjecture 1.4 describes the two-observation problem."
             }
           ],
           "verification": "source_read",
@@ -599779,7 +600095,7 @@
               "nodes": [
                 "PIS-PAPER-SIMPLEX-MAIN"
               ],
-              "application_locator": "arXiv v3, Theorem 1.5, explicit balanced three-cell comparison for positive correlations through 0.1082."
+              "application_locator": "Version 3, Theorem 1.5, earlier balanced Gaussian three-cell comparison through 0.1082."
             }
           ],
           "verification": "source_read",
@@ -621414,9 +621730,10 @@
         {
           "id": "EXT-PAPER-ZHANG-EQUAL-GAUSSIAN-CELLS-EBFD905",
           "title": "Equal Gaussian cells: the sharp simplex first-moment theorem",
-          "citation": "Yongxian Zhang / mxym/math research project, frozen external preprint, 8 October2026, release gaussian-balanced-simplex-all-k-v1, commit ebfd90558439afca21babeb7b77c8d8837ea745f. Frozen author metadata says mxym/math research project; signed companion identifies Yongxian Zhang.",
+          "citation": "Yongxian Zhang, signed preprint version 2.0 (2026), DOI 10.5281/zenodo.23250730. The retained original is the mxym/math research project release gaussian-balanced-simplex-all-k-v1, commit ebfd90558439afca21babeb7b77c8d8837ea745f.",
           "urls": [
-            "https://github.com/mxym/math/releases/tag/gaussian-balanced-simplex-all-k-v1"
+            "https://github.com/mxym/math/releases/tag/gaussian-balanced-simplex-all-k-v1",
+            "https://doi.org/10.5281/zenodo.23250730"
           ],
           "local_sources": [
             {
@@ -621425,11 +621742,13 @@
               "locator": "Sections1--5, Theorem1, Lemma2, Theorem3, equations13--14"
             }
           ],
-          "identifiers": {},
+          "identifiers": {
+            "doi": "10.5281/zenodo.23250730"
+          },
           "resource_type": "paper",
           "verification": "source_read",
           "title_status": "source_title",
-          "verification_basis": "Read the complete frozen manuscript and checked the balancing-price derivative, flux/perimeter factors, radial integration, singular boundary, equality and measurable-label duality. Internal source/application audit only; upstream partial Lean and internal reviews do not establish external review or full formalization.",
+          "verification_basis": "Read the complete frozen manuscript and checked balancing-price derivative, flux and perimeter factors, covariance integration, singular boundary, equality and measurable-label duality. Verified the signed version's contributor and matching first-moment statement. The retained original is the proof-source pin.",
           "uses": [
             {
               "path": "plurality-stability/QUANTITATIVE_SIMPLEX_FIRST_MOMENT_STABILITY.md",
@@ -621485,7 +621804,7 @@
               "nodes": [
                 "PIS-PAPER-SIMPLEX-FIRST-MOMENT"
               ],
-              "application_locator": "Sections 2-5, credit for the balanced first-moment theorem and covariance comparison, reproduced in additive form."
+              "application_locator": "Signed version 2.0 credits the first-moment maximum, equality characterization and covariance comparison; compactness localization is supplied in Proposition 2.1."
             }
           ]
         },
@@ -621557,15 +621876,6 @@
               ]
             },
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-              "locator": "bibitem MN",
-              "role": "mathematical_input",
-              "nodes": [
-                "PIS-PAPER-SIMPLEX-FIRST-MOMENT"
-              ],
-              "application_locator": "Theorem 1.1 applied to full-rank affine winning cells of equal positive measure in dimension k-1."
-            },
-            {
               "path": "plurality-stability/GAUSSIAN_ALL_CELL_SMALL_NOISE_PRESSURES.md",
               "locator": "Perimeter convergence at moving masses, Theorems 1.1–1.2",
               "nodes": [
@@ -621573,6 +621883,15 @@
                 "PIS-ALL-CELL-SMALL-NOISE-SCORE-PRESSURE-PROFILE"
               ],
               "role": "mathematical_input"
+            },
+            {
+              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "locator": "bibitem MN",
+              "role": "mathematical_input",
+              "nodes": [
+                "PIS-PAPER-SIMPLEX-FIRST-MOMENT"
+              ],
+              "application_locator": "Theorem 1.1 applied to full-rank affine winning cells of equal positive measure in dimension k-1."
             }
           ]
         },
@@ -621745,15 +622064,6 @@
               ]
             },
             {
-              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-              "locator": "bibitem HT",
-              "role": "context",
-              "nodes": [
-                "PIS-PAPER-SIMPLEX-MAIN"
-              ],
-              "application_locator": "Introduction and Theorems 1.9-1.10, Borell comparison and earlier ambient-dimension reduction for maximizers."
-            },
-            {
               "path": "plurality-stability/GAUSSIAN_ALL_CELL_SMALL_NOISE_PRESSURES.md",
               "locator": "Perimeter convergence at moving masses, Theorem 1.9",
               "nodes": [
@@ -621799,6 +622109,15 @@
                 "EXT-PIS-HEILMAN-TARTER-MAXIMIZER-DIMENSION-REDUCTION",
                 "PIS-THREE-CELL-SIMPLEX-COMPLEMENTARY-PATCH-FOURIER-RIGIDITY"
               ]
+            },
+            {
+              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "locator": "bibitem HT",
+              "role": "context",
+              "nodes": [
+                "PIS-PAPER-SIMPLEX-MAIN"
+              ],
+              "application_locator": "Theorems 1.9–1.10, earlier dimension reduction for Gaussian maximizers and its discrete consequence."
             }
           ]
         },
@@ -622065,7 +622384,7 @@
               "nodes": [
                 "PIS-PAPER-SIMPLEX-MAIN"
               ],
-              "application_locator": "Theorem 7.1, fixed-dimensional three-cell small-positive-correlation comparison."
+              "application_locator": "Fixed-dimensional three-cell small-positive-correlation comparison."
             }
           ]
         },
@@ -623028,7 +623347,8 @@
           "urls": [
             "https://arxiv.org/pdf/2608.00333v1",
             "https://github.com/sheilman77/cut_bounds",
-            "https://arxiv.org/html/2608.00333v1"
+            "https://arxiv.org/html/2608.00333v1",
+            "https://arxiv.org/abs/2608.00333v1"
           ],
           "local_sources": [],
           "identifiers": {},
@@ -623134,6 +623454,15 @@
                 "PIS-THREE-CELL-DOMINANT-LABEL-CUMULATIVE-SLACK",
                 "PIS-THREE-CELL-DIRECT-GLOBAL-THROUGH-61-100"
               ]
+            },
+            {
+              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "locator": "bibitem Heilman26",
+              "role": "context",
+              "nodes": [
+                "PIS-PAPER-SIMPLEX-MAIN"
+              ],
+              "application_locator": "Version 1, Theorem 1.2, balanced Gaussian three-cell comparison through 2/5 and the discussion of stability estimates."
             }
           ],
           "verification": "source_read",
@@ -625948,7 +626277,8 @@
           "title": "On logarithmic concave measures and functions",
           "citation": "András Prékopa, Acta Scientiarum Mathematicarum (Szeged) 34 (1973), 335–343, Theorem 3.",
           "urls": [
-            "https://acta.bibl.u-szeged.hu/14411/1/math_034_335-343.pdf#page=3"
+            "https://acta.bibl.u-szeged.hu/14411/1/math_034_335-343.pdf#page=3",
+            "https://acta.bibl.u-szeged.hu/14411/"
           ],
           "local_sources": [],
           "identifiers": {},
@@ -625964,6 +626294,16 @@
               "nodes": [
                 "PIS-ALL-CELL-SHARP-MANY-SAMPLE-AGREEMENT"
               ]
+            },
+            {
+              "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+              "locator": "bibitem Prekopa",
+              "role": "mathematical_input",
+              "nodes": [
+                "EXT-PIS-PREKOPA-THREE-FUNCTION-INEQUALITY",
+                "PIS-PAPER-MANY-SAMPLE-SEPARATION"
+              ],
+              "application_locator": "Theorem 3 applied with equal weights to the three restricted Gaussian densities."
             }
           ]
         },
@@ -626148,6 +626488,42 @@
                 "PIS-EUCLIDEAN-FOUR-CELL-PERIMETER-LIMIT-TETRAHEDRAL"
               ],
               "role": "mathematical_input"
+            }
+          ]
+        },
+        {
+          "id": "REF-PIS-BORELL-GEOMETRIC-BOUNDS-1985",
+          "title": "Geometric bounds on the Ornstein–Uhlenbeck velocity process",
+          "citation": "Christer Borell, Z. Wahrscheinlichkeitstheorie verw. Gebiete 70 (1985), 1–13.",
+          "urls": [
+            "https://doi.org/10.1007/BF00532234"
+          ],
+          "local_sources": [],
+          "identifiers": {
+            "doi": "10.1007/BF00532234"
+          },
+          "resource_type": "paper",
+          "verification": "source_read",
+          "title_status": "source_title",
+          "verification_basis": "Checked Theorem 3.1 in the original paper for a fixed Gaussian-measure set hit at prescribed times of a stationary Ornstein–Uhlenbeck process. The identical-cell cases for two or many samples also follow by the Gaussian rearrangement comparison stated and proved in Isaksson–Mossel.",
+          "uses": [
+            {
+              "path": "../unpublished/plurality-small-positive-correlations/main.tex",
+              "locator": "bibitem Borell",
+              "role": "context",
+              "nodes": [
+                "PIS-PAPER-SIMPLEX-MAIN"
+              ],
+              "application_locator": "Theorem 3.1 and the two-time application to a balanced binary partition."
+            },
+            {
+              "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+              "locator": "bibitem Borell",
+              "role": "context",
+              "nodes": [
+                "PIS-PAPER-MANY-SAMPLE-AGREEMENT"
+              ],
+              "application_locator": "Theorem 3.1 is historical context for the identical-cell halfspace inequality."
             }
           ]
         }
@@ -626722,8 +627098,13 @@
         },
         {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
-          "bibitems": 7
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
+          "bibitems": 9
+        },
+        {
+          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+          "bibitems": 3
         }
       ],
       "metadata_sources": [
@@ -640866,7 +641247,7 @@
           "statements": [],
           "role": "documentation",
           "explanation": "Submission edition source, exact finite verification, or review material for the primitive balanced-degree spectrum and its ordinary-reduction theorem.",
-          "sha256": "bcb1ccbe3de07171fa1416b52fce1aa1d22c31f3645dd1d94347962ca898f3ee",
+          "sha256": "54a084818705ff3fc9f9131df036958cb4c1a112fc394737b08953eff9638a47",
           "unmapped_statements": []
         },
         {
@@ -846895,7 +847276,7 @@
         },
         {
           "path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "sha256": "606b711245aaaf3a3c7609a38e299b6ba2f3d9e0d6ab9801bf2e1a02921025be",
+          "sha256": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
           "role": "manuscript",
           "claims": [
             "PIS-PAPER-SIMPLEX-MAIN",
@@ -846920,7 +847301,7 @@
             {
               "locator": "thm:main",
               "kind": "theorem",
-              "line": 77,
+              "line": 78,
               "title": "thm:main",
               "nodes": [
                 "PIS-PAPER-SIMPLEX-MAIN"
@@ -846930,7 +847311,7 @@
             {
               "locator": "prop:zhang",
               "kind": "proposition",
-              "line": 142,
+              "line": 150,
               "title": "prop:zhang",
               "nodes": [
                 "PIS-PAPER-SIMPLEX-FIRST-MOMENT"
@@ -846940,7 +847321,7 @@
             {
               "locator": "lem:interface",
               "kind": "lemma",
-              "line": 267,
+              "line": 283,
               "title": "lem:interface",
               "nodes": [
                 "PIS-PAPER-SIMPLEX-INTERFACE"
@@ -846950,7 +847331,7 @@
             {
               "locator": "lem:margin",
               "kind": "lemma",
-              "line": 318,
+              "line": 340,
               "title": "lem:margin",
               "nodes": [
                 "PIS-PAPER-SIMPLEX-MARGIN"
@@ -846960,7 +847341,7 @@
             {
               "locator": "lem:weighted",
               "kind": "lemma",
-              "line": 370,
+              "line": 393,
               "title": "lem:weighted",
               "nodes": [
                 "PIS-PAPER-SIMPLEX-WEIGHTED"
@@ -846970,7 +847351,7 @@
             {
               "locator": "lem:kernel",
               "kind": "lemma",
-              "line": 405,
+              "line": 428,
               "title": "lem:kernel",
               "nodes": [
                 "PIS-PAPER-SIMPLEX-KERNEL"
@@ -846980,7 +847361,7 @@
             {
               "locator": "cor:exterior",
               "kind": "corollary",
-              "line": 431,
+              "line": 454,
               "title": "cor:exterior",
               "nodes": [
                 "PIS-PAPER-SIMPLEX-TRANSFER"
@@ -846990,7 +847371,7 @@
             {
               "locator": "prop:compactness",
               "kind": "proposition",
-              "line": 452,
+              "line": 475,
               "title": "prop:compactness",
               "nodes": [
                 "PIS-PAPER-SIMPLEX-FLUX"
@@ -847000,7 +847381,7 @@
             {
               "locator": "prop:local",
               "kind": "proposition",
-              "line": 556,
+              "line": 587,
               "title": "prop:local",
               "nodes": [
                 "PIS-PAPER-SIMPLEX-LOCAL"
@@ -847010,7 +847391,7 @@
             {
               "locator": "prop:obstruction",
               "kind": "proposition",
-              "line": 654,
+              "line": 693,
               "title": "prop:obstruction",
               "nodes": [
                 "PIS-PAPER-SIMPLEX-OBSTRUCTION"
@@ -847022,7 +847403,7 @@
         },
         {
           "path": "../unpublished/plurality-small-positive-correlations/plurality-small-positive-correlations.pdf",
-          "sha256": "f6e20f7a62eadf0318011d2d2547042041fe939790fe1e11e0eb2afd397469f4",
+          "sha256": "ec158bc3b1da98555d10ed0539ac5629559aac26f9a04d9357b564310eb2fed8",
           "role": "evidence",
           "claims": [
             "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP"
@@ -847034,7 +847415,7 @@
         },
         {
           "path": "../unpublished/plurality-small-positive-correlations/source.zip",
-          "sha256": "00b973a0859c583b4819658efe3c5ef460b0181fcd2a46b832d541c7bb895336",
+          "sha256": "cbbc3257d85d737b8f9131112863807a3d38e2f2a5ea28154be7410a8a7aac17",
           "role": "evidence",
           "claims": [
             "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP"
@@ -847046,7 +847427,7 @@
         },
         {
           "path": "../unpublished/plurality-small-positive-correlations/README.md",
-          "sha256": "6f46df46bb5685cb4afc3505e56c2bce297516817c62985886708ae2f9f4f1a2",
+          "sha256": "2f4506413a39a293df6f126871f51df8186b627ed3f5333469e6bb8f4cb25e26",
           "role": "documentation",
           "claims": [
             "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP"
@@ -847058,7 +847439,7 @@
         },
         {
           "path": "../unpublished/plurality-small-positive-correlations/metadata.json",
-          "sha256": "a11627b429fd3cd99ff4cc343f043becf225ab87398c9b10db9b086c57aef7a0",
+          "sha256": "142a40d0648d92a43f3f57c6b273c9da4e7c4da32bb188426ec976ad3fc773c3",
           "role": "evidence",
           "claims": [
             "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP"
@@ -847070,7 +847451,7 @@
         },
         {
           "path": "../unpublished/plurality-small-positive-correlations/verification.json",
-          "sha256": "5b911cb191e21e5bc7b41b6c5340bba1323f6ed51bd20497842b425649eacb17",
+          "sha256": "d180b67e0a76fc423854d30722af3847761b6e9c5eb87bab152fae840772dc6e",
           "role": "evidence",
           "claims": [
             "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP"
@@ -847084,7 +847465,7 @@
         },
         {
           "path": "../unpublished/plurality-small-positive-correlations/hexagon-metadata.json",
-          "sha256": "0cc8b7dcea409c5b1adb0f7a683c8b14f27504d0658309cc4cff28e9fc358cfc",
+          "sha256": "af94c4164a859609be2c67fd843bed64763aec95179699fbb0856a3a027f56bc",
           "role": "evidence",
           "claims": [
             "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP"
@@ -847096,7 +847477,7 @@
         },
         {
           "path": "../unpublished/plurality-small-positive-correlations/SHA256SUMS.txt",
-          "sha256": "2869f512a179d03ac988a5db5b5a02200f854f2f7ddad7125837d5f027b978b8",
+          "sha256": "12dd40ae7aa8df06897a964018403b7548834b044d96db8a64557e6c8ede6c1d",
           "role": "evidence",
           "claims": [
             "PIS-ALL-CELL-SMALL-CORRELATION-QUADRATIC-GAP"
@@ -862778,7 +863159,7 @@
         },
         {
           "path": "plurality-stability/THREE_CELL_RIGHT_CONTACT_PATCH_PROPAGATION.md",
-          "sha256": "be8efbb60d9e2cb219ff0863af03b326e4d694db2398f0e82d9357f707244115",
+          "sha256": "a26aa3fc51208175cf10703e92fa871d446d81e5329eb00e614d9304abf2d8db",
           "role": "proof",
           "claims": [
             "PIS-THREE-CELL-SAME-PLANE-COMPLEMENTARY-PATCH-RAY-PROPAGATION",
@@ -862832,6 +863213,191 @@
             }
           ],
           "explanation": "Analytic proof of a stated rigidity or strict comparison for Gaussian noise stability."
+        },
+        {
+          "path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "role": "manuscript",
+          "dependencies": [
+            "EXT-PIS-ISAKSSON-MOSSEL-EXCHANGEABLE-GAUSSIANS",
+            "EXT-PIS-PREKOPA-THREE-FUNCTION-INEQUALITY"
+          ],
+          "gaps": [],
+          "explanation": "Standalone proof of the sharp dimension-independent many-sample agreement asymptotic, the simplex exponent, and the exactly balanced discrete comparison.",
+          "sha256": "6efcfbc4ec6c8b322de7d53383ebba09aed59acea1925a3fb9397fd8514a9c3f",
+          "claims": [
+            "PIS-PAPER-MANY-SAMPLE-AGREEMENT",
+            "PIS-PAPER-MANY-SAMPLE-SIMPLEX-EXPONENT",
+            "PIS-PAPER-MANY-SAMPLE-POSTERIOR-POWERS",
+            "PIS-PAPER-MANY-SAMPLE-SEPARATION",
+            "PIS-PAPER-MANY-SAMPLE-VOTING"
+          ],
+          "statements": [
+            {
+              "locator": "thm:agreement",
+              "kind": "theorem",
+              "line": 63,
+              "title": "thm:agreement",
+              "nodes": [
+                "PIS-PAPER-MANY-SAMPLE-AGREEMENT"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "prop:simplex",
+              "kind": "proposition",
+              "line": 81,
+              "title": "prop:simplex",
+              "nodes": [
+                "PIS-PAPER-MANY-SAMPLE-SIMPLEX-EXPONENT"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "lem:posterior-powers",
+              "kind": "lemma",
+              "line": 132,
+              "title": "lem:posterior-powers",
+              "nodes": [
+                "PIS-PAPER-MANY-SAMPLE-POSTERIOR-POWERS"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "lem:separation",
+              "kind": "lemma",
+              "line": 195,
+              "title": "lem:separation",
+              "nodes": [
+                "PIS-PAPER-MANY-SAMPLE-SEPARATION"
+              ],
+              "mapping_kind": "exact-statement"
+            },
+            {
+              "locator": "thm:voting",
+              "kind": "theorem",
+              "line": 275,
+              "title": "thm:voting",
+              "nodes": [
+                "PIS-PAPER-MANY-SAMPLE-VOTING"
+              ],
+              "mapping_kind": "exact-statement"
+            }
+          ]
+        },
+        {
+          "path": "../unpublished/gaussian-many-sample-agreement/README.md",
+          "sha256": "0fe0bfba7fa367aec9096cfa2f06a38ff21d88e2dff9bea5b568631beab46a63",
+          "role": "documentation",
+          "claims": [
+            "PIS-ALL-CELL-SHARP-MANY-SAMPLE-AGREEMENT",
+            "PIS-ALL-CELL-SIMPLEX-MULTI-SAMPLE-COUNTEREXAMPLE",
+            "PIS-ALL-CELL-MANY-COPY-LOW-INFLUENCE-COUNTEREXAMPLE"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Current many-sample manuscript bundle and edition-specific evidence."
+        },
+        {
+          "path": "../unpublished/gaussian-many-sample-agreement/SHA256SUMS.txt",
+          "sha256": "4bfb44d70bf5f44db45f388aa76b1d4b9ebd224e6015a4ce7e317a95feb18e96",
+          "role": "evidence",
+          "claims": [
+            "PIS-ALL-CELL-SHARP-MANY-SAMPLE-AGREEMENT",
+            "PIS-ALL-CELL-SIMPLEX-MULTI-SAMPLE-COUNTEREXAMPLE",
+            "PIS-ALL-CELL-MANY-COPY-LOW-INFLUENCE-COUNTEREXAMPLE"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Current many-sample manuscript bundle and edition-specific evidence."
+        },
+        {
+          "path": "../unpublished/gaussian-many-sample-agreement/gaussian-many-sample-agreement.pdf",
+          "sha256": "fbdc7b682e89859232763bb9d75504c383c771d3473a6b0c95885b3e74c308bd",
+          "role": "evidence",
+          "claims": [
+            "PIS-ALL-CELL-SHARP-MANY-SAMPLE-AGREEMENT",
+            "PIS-ALL-CELL-SIMPLEX-MULTI-SAMPLE-COUNTEREXAMPLE",
+            "PIS-ALL-CELL-MANY-COPY-LOW-INFLUENCE-COUNTEREXAMPLE"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Current many-sample manuscript bundle and edition-specific evidence."
+        },
+        {
+          "path": "../unpublished/gaussian-many-sample-agreement/metadata.json",
+          "sha256": "c8fb05e2d7560920ec2615cfa488bacf29d0f93d19442603e17c53c3a5aff8d6",
+          "role": "evidence",
+          "claims": [
+            "PIS-ALL-CELL-SHARP-MANY-SAMPLE-AGREEMENT",
+            "PIS-ALL-CELL-SIMPLEX-MULTI-SAMPLE-COUNTEREXAMPLE",
+            "PIS-ALL-CELL-MANY-COPY-LOW-INFLUENCE-COUNTEREXAMPLE"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Current many-sample manuscript bundle and edition-specific evidence."
+        },
+        {
+          "path": "../unpublished/gaussian-many-sample-agreement/source.zip",
+          "sha256": "29ea8e78d52a5c35e8fc30e13e0a19b0c3dd0a1b4c913b7fb5ede820ba39e308",
+          "role": "evidence",
+          "claims": [
+            "PIS-ALL-CELL-SHARP-MANY-SAMPLE-AGREEMENT",
+            "PIS-ALL-CELL-SIMPLEX-MULTI-SAMPLE-COUNTEREXAMPLE",
+            "PIS-ALL-CELL-MANY-COPY-LOW-INFLUENCE-COUNTEREXAMPLE"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Current many-sample manuscript bundle and edition-specific evidence."
+        },
+        {
+          "path": "../unpublished/gaussian-many-sample-agreement/verification.json",
+          "sha256": "c80a45a7e42b62130d50a79370eb38e5f37eaa819841ee1790206b17a87601a7",
+          "role": "evidence",
+          "claims": [
+            "PIS-ALL-CELL-SHARP-MANY-SAMPLE-AGREEMENT",
+            "PIS-ALL-CELL-SIMPLEX-MULTI-SAMPLE-COUNTEREXAMPLE",
+            "PIS-ALL-CELL-MANY-COPY-LOW-INFLUENCE-COUNTEREXAMPLE"
+          ],
+          "dependencies": [],
+          "gaps": [],
+          "statements": [],
+          "explanation": "Current many-sample manuscript bundle and edition-specific evidence."
+        },
+        {
+          "path": "plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md",
+          "sha256": "61f3035c04b3e71c9039729dddf6e034fa8173ba40ad8a9373971b89e894e599",
+          "role": "proof",
+          "claims": [
+            "PIS-THREE-CELL-BOUNDED-SMALL-COMPLEMENTARY-CUT-MARGIN",
+            "PIS-THREE-CELL-RIGHT-CONTACT-BOUNDED-CUT-POWER-LOSS"
+          ],
+          "dependencies": [
+            "PIS-THREE-CELL-RIGHT-CONTACT-GENERIC-COMPLEMENTARY-PATCH-STRICTNESS"
+          ],
+          "gaps": [
+            "GAP-PIS-THREE-CELL-ALL-POSITIVE-CORRELATION-GLOBAL",
+            "GAP-PIS-NONSIMPLEX-TIED-MAXIMIZER"
+          ],
+          "explanation": "Combined stationary score regret and a quantitative local complementary-patch comparison.",
+          "statements": [
+            {
+              "locator": "Regret at both inputs and A sublevel estimate for the combined regret, CM1–CM3",
+              "nodes": [
+                "PIS-THREE-CELL-BOUNDED-SMALL-COMPLEMENTARY-CUT-MARGIN"
+              ]
+            },
+            {
+              "locator": "Right-contact consequence following CM3",
+              "nodes": [
+                "PIS-THREE-CELL-RIGHT-CONTACT-BOUNDED-CUT-POWER-LOSS"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -874019,13 +874585,13 @@
         {
           "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
           "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "locator": "proof of prop:compactness; reference cor:exterior at line 466",
+          "locator": "proof of prop:compactness; reference cor:exterior at line 495",
           "conclusion": "PIS-PAPER-SIMPLEX-FLUX",
           "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-TRANSFER",
           "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "reference": "cor:exterior",
-          "proof_locator": "proof of prop:compactness beginning at ../unpublished/plurality-small-positive-correlations/main.tex:464",
+          "proof_locator": "proof of prop:compactness beginning at ../unpublished/plurality-small-positive-correlations/main.tex:487",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-FLUX"
           ]
@@ -874033,13 +874599,13 @@
         {
           "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
           "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "locator": "proof of prop:local; reference prop:compactness at line 586",
+          "locator": "proof of prop:local; reference prop:compactness at line 617",
           "conclusion": "PIS-PAPER-SIMPLEX-LOCAL",
           "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-FLUX",
           "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "reference": "prop:compactness",
-          "proof_locator": "proof of prop:local beginning at ../unpublished/plurality-small-positive-correlations/main.tex:566",
+          "proof_locator": "proof of prop:local beginning at ../unpublished/plurality-small-positive-correlations/main.tex:597",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-LOCAL"
           ]
@@ -874047,13 +874613,13 @@
         {
           "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
           "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "locator": "proof of prop:local; reference lem:interface at line 618",
+          "locator": "proof of prop:local; reference lem:interface at line 657",
           "conclusion": "PIS-PAPER-SIMPLEX-LOCAL",
           "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-INTERFACE",
           "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "reference": "lem:interface",
-          "proof_locator": "proof of prop:local beginning at ../unpublished/plurality-small-positive-correlations/main.tex:566",
+          "proof_locator": "proof of prop:local beginning at ../unpublished/plurality-small-positive-correlations/main.tex:597",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-LOCAL"
           ]
@@ -874061,13 +874627,13 @@
         {
           "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
           "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "locator": "proof of prop:local; reference lem:kernel at line 581",
+          "locator": "proof of prop:local; reference lem:kernel at line 612",
           "conclusion": "PIS-PAPER-SIMPLEX-LOCAL",
           "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-KERNEL",
           "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "reference": "lem:kernel",
-          "proof_locator": "proof of prop:local beginning at ../unpublished/plurality-small-positive-correlations/main.tex:566",
+          "proof_locator": "proof of prop:local beginning at ../unpublished/plurality-small-positive-correlations/main.tex:597",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-LOCAL"
           ]
@@ -874075,13 +874641,13 @@
         {
           "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
           "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "locator": "proof of prop:local; reference cor:exterior at line 593",
+          "locator": "proof of prop:local; reference cor:exterior at line 635",
           "conclusion": "PIS-PAPER-SIMPLEX-LOCAL",
           "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-TRANSFER",
           "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "reference": "cor:exterior",
-          "proof_locator": "proof of prop:local beginning at ../unpublished/plurality-small-positive-correlations/main.tex:566",
+          "proof_locator": "proof of prop:local beginning at ../unpublished/plurality-small-positive-correlations/main.tex:597",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-LOCAL"
           ]
@@ -874089,13 +874655,13 @@
         {
           "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
           "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "locator": "proof of thm:main; reference prop:zhang at line 637",
+          "locator": "proof of thm:main; reference prop:zhang at line 676",
           "conclusion": "PIS-PAPER-SIMPLEX-MAIN",
           "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-FIRST-MOMENT",
           "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "reference": "prop:zhang",
-          "proof_locator": "proof of thm:main beginning at ../unpublished/plurality-small-positive-correlations/main.tex:630",
+          "proof_locator": "proof of thm:main beginning at ../unpublished/plurality-small-positive-correlations/main.tex:669",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-MAIN"
           ]
@@ -874103,13 +874669,13 @@
         {
           "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
           "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "locator": "proof of thm:main; reference prop:local at line 636",
+          "locator": "proof of thm:main; reference prop:local at line 675",
           "conclusion": "PIS-PAPER-SIMPLEX-MAIN",
           "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-LOCAL",
           "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "reference": "prop:local",
-          "proof_locator": "proof of thm:main beginning at ../unpublished/plurality-small-positive-correlations/main.tex:630",
+          "proof_locator": "proof of thm:main beginning at ../unpublished/plurality-small-positive-correlations/main.tex:669",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-MAIN"
           ]
@@ -874117,13 +874683,13 @@
         {
           "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
           "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "locator": "proof of thm:main; reference prop:local at line 641",
+          "locator": "proof of thm:main; reference prop:local at line 680",
           "conclusion": "PIS-PAPER-SIMPLEX-MAIN",
           "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-LOCAL",
           "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "reference": "prop:local",
-          "proof_locator": "proof of thm:main beginning at ../unpublished/plurality-small-positive-correlations/main.tex:630",
+          "proof_locator": "proof of thm:main beginning at ../unpublished/plurality-small-positive-correlations/main.tex:669",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-MAIN"
           ]
@@ -874131,13 +874697,13 @@
         {
           "entrypoint": "../unpublished/plurality-small-positive-correlations/main.tex",
           "source_path": "../unpublished/plurality-small-positive-correlations/main.tex",
-          "locator": "proof of cor:exterior; reference lem:weighted at line 443",
+          "locator": "proof of cor:exterior; reference lem:weighted at line 466",
           "conclusion": "PIS-PAPER-SIMPLEX-TRANSFER",
           "conclusion_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "dependency": "PIS-PAPER-SIMPLEX-WEIGHTED",
           "dependency_path": "../unpublished/plurality-small-positive-correlations/main.tex",
           "reference": "lem:weighted",
-          "proof_locator": "proof of cor:exterior beginning at ../unpublished/plurality-small-positive-correlations/main.tex:442",
+          "proof_locator": "proof of cor:exterior beginning at ../unpublished/plurality-small-positive-correlations/main.tex:465",
           "routes": [
             "PIS-ARTICLE-SIMPLEX-TRANSFER"
           ]
@@ -874154,6 +874720,76 @@
           "proof_locator": "proof of thm:arithmetic beginning at ../unpublished/genus-three-rational-three-torsion/main.tex:379",
           "routes": [
             "ARITH-GENUS-THREE-FULL-RATIONAL-ARITHMETIC-PROOF"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "source_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "locator": "proof of thm:agreement; reference lem:posterior-powers at line 258",
+          "conclusion": "PIS-PAPER-MANY-SAMPLE-AGREEMENT",
+          "conclusion_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "dependency": "PIS-PAPER-MANY-SAMPLE-POSTERIOR-POWERS",
+          "dependency_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "reference": "lem:posterior-powers",
+          "proof_locator": "proof of thm:agreement beginning at ../unpublished/gaussian-many-sample-agreement/main.tex:235",
+          "routes": [
+            "PIS-ARTICLE-MANY-SAMPLE-AGREEMENT"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "source_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "locator": "proof of thm:agreement; reference lem:separation at line 236",
+          "conclusion": "PIS-PAPER-MANY-SAMPLE-AGREEMENT",
+          "conclusion_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "dependency": "PIS-PAPER-MANY-SAMPLE-SEPARATION",
+          "dependency_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "reference": "lem:separation",
+          "proof_locator": "proof of thm:agreement beginning at ../unpublished/gaussian-many-sample-agreement/main.tex:235",
+          "routes": [
+            "PIS-ARTICLE-MANY-SAMPLE-AGREEMENT"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "source_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "locator": "proof of prop:simplex; reference lem:posterior-powers at line 181",
+          "conclusion": "PIS-PAPER-MANY-SAMPLE-SIMPLEX-EXPONENT",
+          "conclusion_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "dependency": "PIS-PAPER-MANY-SAMPLE-POSTERIOR-POWERS",
+          "dependency_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "reference": "lem:posterior-powers",
+          "proof_locator": "proof of prop:simplex beginning at ../unpublished/gaussian-many-sample-agreement/main.tex:149",
+          "routes": [
+            "PIS-ARTICLE-MANY-SAMPLE-SIMPLEX-EXPONENT"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "source_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "locator": "proof of thm:voting; reference thm:agreement at line 327",
+          "conclusion": "PIS-PAPER-MANY-SAMPLE-VOTING",
+          "conclusion_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "dependency": "PIS-PAPER-MANY-SAMPLE-AGREEMENT",
+          "dependency_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "reference": "thm:agreement",
+          "proof_locator": "proof of thm:voting beginning at ../unpublished/gaussian-many-sample-agreement/main.tex:283",
+          "routes": [
+            "PIS-ARTICLE-MANY-SAMPLE-VOTING"
+          ]
+        },
+        {
+          "entrypoint": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "source_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "locator": "proof of thm:voting; reference prop:simplex at line 327",
+          "conclusion": "PIS-PAPER-MANY-SAMPLE-VOTING",
+          "conclusion_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "dependency": "PIS-PAPER-MANY-SAMPLE-SIMPLEX-EXPONENT",
+          "dependency_path": "../unpublished/gaussian-many-sample-agreement/main.tex",
+          "reference": "prop:simplex",
+          "proof_locator": "proof of thm:voting beginning at ../unpublished/gaussian-many-sample-agreement/main.tex:283",
+          "routes": [
+            "PIS-ARTICLE-MANY-SAMPLE-VOTING"
           ]
         }
       ],

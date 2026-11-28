@@ -10,7 +10,7 @@ Graph state follows the declared dependencies. Dependency coverage separately re
 
 [Exact scopes and recorded assurances](SCOPES.md) · [Result catalogue](STATUS.md) · [Research topics](README.md)
 
-The graph contains 15901 claim/source nodes, 12883 implication rules and 134 documented equivalence components. conditional: 33; falsified: 41; open: 629; proved: 15187; stale: 11.
+The graph contains 15910 claim/source nodes, 12890 implication rules and 134 documented equivalence components. conditional: 33; falsified: 41; open: 629; proved: 15207.
 
 The complete endpoint inventory contains 694 records. Curated topic obligation lists omit 93 unresolved endpoints. Inspect the full graph from the repository root.
 
@@ -1226,6 +1226,7 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | [PIS-THREE-CELL-CONVEX-CELL-CENTRAL-SEGMENT-RIGIDITY](plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-COMPACT-DEFECT-RADIAL-OCCUPANCY](plurality-stability/THREE_CELL_CONVEX_SUPPORTING_RAYS.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-DIRECTIONAL-PRODUCT-RIGIDITY-RELATIVE-TO-SIMPLEX](plurality-stability/THREE_CELL_MAXIMIZER_DIRECTIONAL_DERIVATIVE_RIGIDITY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-RIGHT-CONTACT-BOUNDED-CUT-POWER-LOSS](plurality-stability/THREE_CELL_COMPACT_COMPLEMENTARY_MARGIN.md) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -1755,7 +1756,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 83 routes (3982 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 83 routes (3990 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 
@@ -10977,34 +10978,3 @@ flowchart LR
 Overview: 80 statements and 82 routes (825 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
-
-## Changed or missing evidence
-
-These declarations require inspection and revalidation. Updating a digest alone does not repair the supporting argument.
-
-| Owner | Source | Freshness |
-|---|---|---|
-| PIS-PAPER-SIMPLEX-KERNEL | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-PAPER-SIMPLEX-MARGIN | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-PAPER-SIMPLEX-OBSTRUCTION | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-PAPER-SIMPLEX-WEIGHTED | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| VERIFY-PIS-DIMENSION-INDEPENDENT-LOCAL-COMPARISON | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-PAPER-SIMPLEX-FIRST-MOMENT | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-ARTICLE-SIMPLEX-FIRST-MOMENT | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-PAPER-SIMPLEX-INTERFACE | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-ARTICLE-SIMPLEX-INTERFACE | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-NO-FIRST-MOMENT-RELATIVE-NOISE-VALUE-GAP | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-PAPER-ROUTE-PROP-OBSTRUCTION | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-PAPER-SIMPLEX-TRANSFER | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-ARTICLE-SIMPLEX-TRANSFER | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-PAPER-SIMPLEX-FLUX | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-ARTICLE-SIMPLEX-FLUX | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-PAPER-SIMPLEX-LOCAL | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-ARTICLE-SIMPLEX-LOCAL | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-ARTICLE-SIMPLEX-SUPPORTS-LOCAL | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-PAPER-SIMPLEX-MAIN | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-ARTICLE-SIMPLEX-MAIN | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-ARTICLE-SIMPLEX-SUPPORTS-QUADRATIC-GAP | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-ARTICLE-SIMPLEX-SUPPORTS-RIGIDITY | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-ARTICLE-SIMPLEX-SUPPORTS-MAIN | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |
-| PIS-PAPER-ROUTE-THM-MAIN | [../unpublished/plurality-small-positive-correlations/main.tex](../unpublished/plurality-small-positive-correlations/main.tex) | changed |

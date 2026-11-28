@@ -54,7 +54,7 @@
   "archive": {
     "file": "source.zip",
     "entryPoint": "main.tex",
-    "sha256": "af0e04d1ca77130580961528ee01ef359aa9db42b60576a512eefce057af9570",
+    "sha256": "cbbc3257d85d737b8f9131112863807a3d38e2f2a5ea28154be7410a8a7aac17",
     "texFileCount": 1,
     "buildCommand": "SOURCE_DATE_EPOCH=1795824000 FORCE_SOURCE_DATE=1 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=plurality-small-positive-correlations main.tex",
     "localBuild": "A clean extraction builds without LaTeX warnings in the recorded Ubuntu 24.04 WSL toolchain and reproduces the nine-page review PDF byte for byte.",

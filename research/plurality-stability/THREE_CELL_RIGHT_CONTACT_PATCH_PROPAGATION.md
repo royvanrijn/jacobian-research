@@ -4,9 +4,10 @@ Let \(r\in(0,1)\) be a correlation at which the balanced regular
 three-cell simplex is globally optimal. Suppose distinct correlations
 of simplex optimality tend to \(r\) from above. If \(A\) is any balanced
 planar maximizer at \(r\), one can orient and label a simplex \(T\)
-so that every nontrivial balanced complementary patch of \(A,T\)
-has strictly smaller stability. In fact for almost every rotation
-of one appropriate cyclic labeling of \(T\) the conclusion holds.
+so that every nontrivial balanced complementary cut makes the two
+patched stabilities sum to strictly less than \(S_r(A)+S_r(T)\).
+The conclusion holds for almost every rotation of one appropriate
+cyclic labeling of \(T\).
 
 In indicator notation, put \(d=1_A-1_T\), \(d_E=1_Ed\).
 For any measurable \(E\) with \(\int d_E\,d\gamma_2=0\) and

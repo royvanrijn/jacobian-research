@@ -2,14 +2,14 @@
   "edition_date": "2026-11-28",
   "review_basis": "Targeted revision in response to the contributor's review of commit dd646006. The contribution scope and proof estimates are preserved.",
   "source_files": {
-    "main.tex": "96dc9aa58e3048fe5003c6adf3cdfec01cc2f11c51baf6cd0cff835aef6c56f5",
+    "main.tex": "ad54c0f043b3fdfd361b736c8c3608562a1f3ba7e10e02c4faaa38b09776ce9e",
     "README.md": "2f4506413a39a293df6f126871f51df8186b627ed3f5333469e6bb8f4cb25e26",
     "metadata.json": "142a40d0648d92a43f3f57c6b273c9da4e7c4da32bb188426ec976ad3fc773c3",
-    "hexagon-metadata.json": "942c1038d7b4417efb712bc4a6269ce3fae05e143ff88eac4f5aad9b83c4565e"
+    "hexagon-metadata.json": "af94c4164a859609be2c67fd843bed64763aec95179699fbb0856a3a027f56bc"
   },
   "pdf": {
     "path": "plurality-small-positive-correlations.pdf",
-    "sha256": "b244e0a54fd652101e5a3d4302845db11547d30be1307b23c9fb6407ffa4c482",
+    "sha256": "ec158bc3b1da98555d10ed0539ac5629559aac26f9a04d9357b564310eb2fed8",
     "pages": 9
   },
   "build": {
@@ -23,7 +23,7 @@
   },
   "source_archive_reproduction": {
     "archive": "source.zip",
-    "sha256": "af0e04d1ca77130580961528ee01ef359aa9db42b60576a512eefce057af9570",
+    "sha256": "cbbc3257d85d737b8f9131112863807a3d38e2f2a5ea28154be7410a8a7aac17",
     "contents": [
       "main.tex"
     ],
@@ -33,8 +33,8 @@
   "visual_review": {
     "performed": true,
     "result": "passed",
-    "pdf_sha256": "b244e0a54fd652101e5a3d4302845db11547d30be1307b23c9fb6407ffa4c482",
-    "scope": "Rendered all nine pages of the revised PDF at 110 dpi and inspected each in a contact sheet. Inspected the literature, facet inequality, normal cost and tensor Hermite proof at full page scale."
+    "pdf_sha256": "ec158bc3b1da98555d10ed0539ac5629559aac26f9a04d9357b564310eb2fed8",
+    "scope": "Rendered all nine pages of the revised PDF at 110 dpi and inspected each in a contact sheet. Inspected the literature, facet inequality, normal cost and tensor Hermite proof at full page scale. For the final attribution wording on page 2, all other page renders compared byte for byte and page 2 was visually reinspected."
   },
   "mathematical_scope": {
     "main_result": "For each fixed k>=2 the global deficit bounds rho times squared Gaussian label distance, uniformly over every d>=k-1 on a qualitative small positive interval. Equality of stability holds on the simplex orbit. In smaller dimensions the qualitative comparison is strict.",
@@ -144,7 +144,24 @@
     "final_followup": "The manuscript-scoped catalogue, bibliography, evidence, and nine TeX proof links passed. A later workspace-wide check reported five concurrent plurality-stability notes awaiting catalogue mapping."
   },
   "isolated_pdf_only_reading": {
-    "performed": false,
-    "scope": "The contributor-reported PDF-only pass and earlier isolated AI review apply to the predecessor PDF."
+    "performed": true,
+    "reviewer": "OpenAI Codex reader agent",
+    "type": "Isolated internal AI reading",
+    "supplied_context": "Only the PDF and the five reader questions. The reader used Poppler and SHA-256, without TeX, research notes, literature sources, or the contributor's review.",
+    "first_pass_pdf_sha256": "b244e0a54fd652101e5a3d4302845db11547d30be1307b23c9fb6407ffa4c482",
+    "pdf_sha256": "ec158bc3b1da98555d10ed0539ac5629559aac26f9a04d9357b564310eb2fed8",
+    "pages": 9,
+    "answers": {
+      "contribution": "An all-fixed-k interval and a dimension-uniform deficit controlling squared Gaussian label distance, with equality exactly on the simplex orbit.",
+      "mechanism": "First-moment localization controls distant partitions. Near the orbit, the exact score loss, aligned facet contraction and higher-degree bound give the quadratic deficit.",
+      "hardest_step": "Proposition 5.1 on pp. 6–7, especially (11)–(14), controls tails, facet concentration with no junction mass, and the sharp normal cost for arbitrary measurable transfers.",
+      "limitations": "Balanced Gaussian partitions, small positive correlation, unevaluated constants depending on k. The distance deficit is for d>=k-1; below that dimension the comparison is strict by extension.",
+      "verification_obstacles": "The paper invokes Milman–Neeman and Prékopa. The PDF-only pass does not establish the literature claims, independent mathematical replay or external review."
+    },
+    "changes_from_reading": [
+      "Specified that Borell's citation supplies the two-cell optimality comparison."
+    ],
+    "final_followup": "The isolated reader checked the revised wording, reread the proof chain and inspected all pages. No definite mathematical or layout objection identified.",
+    "external_review": false
   }
 }
