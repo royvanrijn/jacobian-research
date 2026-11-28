@@ -10,7 +10,7 @@ Graph state follows the declared dependencies. Dependency coverage separately re
 
 [Exact scopes and recorded assurances](SCOPES.md) · [Result catalogue](STATUS.md) · [Research topics](README.md)
 
-The graph contains 15921 claim/source nodes, 12899 implication rules and 134 documented equivalence components. conditional: 33; falsified: 41; open: 629; proved: 15218.
+The graph contains 16032 claim/source nodes, 13004 implication rules and 134 documented equivalence components. conditional: 33; falsified: 41; open: 629; proved: 15329.
 
 The complete endpoint inventory contains 694 records. Curated topic obligation lists omit 93 unresolved endpoints. Inspect the full graph from the repository root.
 
@@ -1236,6 +1236,111 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | [PIS-THREE-CELL-COMMON-CIRCLE-CIRCULAR-WALL-TEST](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-NO-COMMON-CIRCLE-RADIAL-MOAT](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md) | proved | partial | none in declared routes |
 | [PIS-THREE-CELL-NO-COMMON-CIRCLE-CUSP-JETS](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md) | proved | partial | none in declared routes |
+| [PIS-GAUSSIAN-TRANSVERSE-POLYNOMIAL-SCORE-RIGIDITY](plurality-stability/GAUSSIAN_PARABOLIC_SCORE_RIGIDITY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-AFFINE-PARTITION-SYMMETRY-RIGIDITY](plurality-stability/THREE_CELL_CONTRACTING_AFFINE_SYMMETRY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-TRANSLATED-WEDGE-RIGIDITY](plurality-stability/THREE_CELL_TRANSLATED_WEDGE_RIGIDITY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-CENTRAL-BEVELED-WEDGE-RIGIDITY](plurality-stability/THREE_CELL_TRANSLATED_WEDGE_RIGIDITY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-UNIFORM-POSITIVE-WINNER-SCORE](plurality-stability/THREE_CELL_PRESSURE_CONTRACTION_PROPAGATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-CONTRACTED-SOURCE-PHASE-RECURRENCE](plurality-stability/THREE_CELL_PRESSURE_CONTRACTION_PROPAGATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ISOLATED-END-AT-MOST-LINEAR](plurality-stability/THREE_CELL_PRESSURE_CONTRACTION_PROPAGATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-OUTER-LABEL-DISTANT-CIRCULAR-JUNCTION](plurality-stability/THREE_CELL_PRESSURE_CONTRACTION_PROPAGATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ONE-CELL-AFFINE-SYMMETRY-RIGIDITY](plurality-stability/THREE_CELL_ONE_CELL_AFFINE_INVARIANCE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-CENTRAL-DORMANT-WALL-EXCLUSION](plurality-stability/THREE_CELL_CENTRAL_DORMANT_WALL_EXCLUSION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-UNIFORM-CENTRAL-TIE-AND-COMPONENT-COUNTS](plurality-stability/THREE_CELL_CENTRAL_DORMANT_WALL_EXCLUSION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-REFLECTED-COMMON-PRESSURE-TAIL-CROSSINGS](plurality-stability/THREE_CELL_REFLECTED_COMMON_PRESSURE_CROSSINGS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-TWO-SCALE-COEXISTENCE-THRESHOLD](plurality-stability/THREE_CELL_TWO_SCALE_TILT.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-TWO-SCALE-TILT-STRICT-SELECTION](plurality-stability/THREE_CELL_TWO_SCALE_TILT.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-MIXED-DILATION-MASS-RESOLVENT](plurality-stability/THREE_CELL_MIXED_DILATION_RESOLVENT.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-MIXED-DILATION-RESIDUAL-CURVATURE](plurality-stability/THREE_CELL_MIXED_DILATION_RESOLVENT.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ABSTRACT-MIXED-DILATION-OBSTRUCTION](plurality-stability/THREE_CELL_MIXED_DILATION_RESOLVENT.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-RADIAL-RANK-ONE-DISTANT-TIE](plurality-stability/THREE_CELL_RADIAL_RANK_ONE_COEXISTENCE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-POSITIVE-REVERSIBLE-KERNEL-DISTANT-TIE](plurality-stability/THREE_CELL_RADIAL_RANK_ONE_COEXISTENCE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-COMMON-JUNCTION-QUADRATIC-ARM-COMPARISON](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-OFF-CENTER-ARM-MOMENT-RIGHT-TIE-EXCLUSION](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-OPTIMIZED-PAIR-SURFACE-ENERGY](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-OPTIMIZED-PAIR-SURFACE-STRICT-GAP](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-BALANCE-ARM-MOMENT-COUNTEREXAMPLES](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-NO-COMMON-CIRCLE-QUANTITATIVE-FRAGMENTATION](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_QUANTITATIVE_TOPOLOGY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-NO-COMMON-CIRCLE-UNIFORM-ANNULAR-SEPARATOR](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_QUANTITATIVE_TOPOLOGY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-NO-COMMON-CIRCLE-LOGARITHMIC-POCKET-COUNT](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_QUANTITATIVE_TOPOLOGY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-CONDITIONAL-SURFACE-CALIBRATION-GAP](plurality-stability/GAUSSIAN_CONDITIONAL_SURFACE_CALIBRATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-THETA-THICK-FOLD-VISIBILITY](plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-THETA-SEPARATED-FOLDS-EXCLUSION](plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-CONSTANT-PAIR-SURFACE-WETTING-OBSTRUCTION](plurality-stability/THREE_CELL_PAIR_SURFACE_WETTING_OBSTRUCTION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-SURFACE-LOWER-SEMICONTINUITY](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_VARIATIONAL_PROBLEM.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-SURFACE-MINIMIZER-PROFILE](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_VARIATIONAL_PROBLEM.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-SURFACE-SIMPLEX-TAGGED-COMPACTNESS](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_VARIATIONAL_PROBLEM.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-PURE-EXTERIOR-CONFINEMENT](plurality-stability/THREE_CELL_PURE_EXTERIOR_COMPACTNESS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-BINARY-CIRCLE-RIGHT-TIE-EXCLUSION-THROUGH-73-100](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_MOMENT_SLOPE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-RIGHT-TIE-QUANTITATIVE-COMMON-CIRCLE-MASS](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_MOMENT_SLOPE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-NORMAL-SATURATION](plurality-stability/THREE_CELL_ADAPTIVE_NORMAL_SATURATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-SATURATION-COMPLETE-ADJACENCY](plurality-stability/THREE_CELL_ADAPTIVE_NORMAL_SATURATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-FIXED-TEST-OBSTRUCTION](plurality-stability/THREE_CELL_ADAPTIVE_NORMAL_SATURATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-SMOOTH-SURFACE-COERCIVITY](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_SMOOTH_SECOND_VARIATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-REGULAR-COMPACT-STATIONARY-CHART](plurality-stability/THREE_CELL_REGULAR_COMPACT_BRANCH.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-REGULAR-COMPACT-POWER-LAW-BRANCH](plurality-stability/THREE_CELL_REGULAR_COMPACT_BRANCH.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ALL-TIES-REGULAR-COMPACT-VALUE-GERM](plurality-stability/THREE_CELL_REGULAR_COMPACT_BRANCH.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-PURE-EXTERIOR-RIGHT-TIE-RADIUS](plurality-stability/THREE_CELL_PURE_EXTERIOR_COMPACTNESS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-MINIMIZER-PRESSURE-STATIONARITY](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_STATIONARITY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-ATTAINING-TEST-POSITIVE-DENSITY](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_STATIONARITY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-JUNCTION-POSITIVE-TENSION-BALANCE](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_STATIONARITY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-TWO-PHASE-ANALYTIC-REGULARITY](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TWO_PHASE_REGULARITY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-FIXED-POINT-LINEAR-PERIMETER-UPPER](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENTS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-HOMOGENEOUS-TANGENTS](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENTS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-SUPPORT-DENSITY-LOWER](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENTS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-TANGENT-PATCH-COMPARISON](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-LINE-OR-TRIPOD-TANGENTS](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-TRIPOD-TAGGED-CONVERGENCE](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-LINE-HIDDEN-LAYER-RIGIDITY](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-TANGENT-TYPE-AND-TRIPOD-ISOLATION](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-SINGLE-CELL-REFLECTION-NO-SMOOTH-MIRROR](plurality-stability/THREE_CELL_SINGLE_CELL_REFLECTION_BOUNDARY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-SINGLE-CELL-REFLECTION-CONVEX-CORNERS](plurality-stability/THREE_CELL_SINGLE_CELL_REFLECTION_BOUNDARY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-MAXIMIZER-UNIFORM-DISK-EXCLUSION](plurality-stability/THREE_CELL_SINGLE_CELL_REFLECTION_BOUNDARY.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-BOUNDED-WINNER-COMPONENT-POSTERIOR-DEGREE-ZERO](plurality-stability/THREE_CELL_POSTERIOR_DEGREE_AND_TRIPLE_BISECTOR.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-TRIPLE-POINTS-CONTRACTED-BISECTOR-STRADDLING](plurality-stability/THREE_CELL_POSTERIOR_DEGREE_AND_TRIPLE_BISECTOR.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-EQUAL-RADIUS-TRIPLES-REFLECTION-TRIANGLE](plurality-stability/THREE_CELL_POSTERIOR_DEGREE_AND_TRIPLE_BISECTOR.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-UNRESTRICTED-DIRECTION-ADAPTIVE-ATTAINMENT](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-UNRESTRICTED-DIRECTION-UNIQUE-SCALAR-DUAL](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-UNRESTRICTED-DIRECTION-WEIGHT-RIGIDITY](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-UNRESTRICTED-COMPACT-OPTIMAL-DIRECTION-RANK](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-UNRESTRICTED-ADAPTIVE-FROZEN-METRIC-COMPARISON](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-UNRESTRICTED-ADAPTIVE-COLLINEAR-TEST-EXAMPLE](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-SHARP-TANGENT-PRESSURE-SELECTION](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_PRESSURE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-TOUCHING-LAYER-CURVATURE-TEST](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_PRESSURE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-GAUSSIAN-STATIONARY-REGULAR-PATCH-LOCAL-GROWTH](plurality-stability/THREE_CELL_STATIONARY_PATCH_CONFINEMENT.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-SYMMETRIC-CELL-MIRROR-COMPLETION](plurality-stability/THREE_CELL_REFLECTION_MIRROR_COMPLETION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-BOUNDED-SYMMETRIC-CELL-PARALLEL-ORBIT-TAILS](plurality-stability/THREE_CELL_REFLECTION_MIRROR_COMPLETION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-BISECTED-CELL-ONE-SIDED-BINARY-EXTERIOR](plurality-stability/THREE_CELL_REFLECTION_MIRROR_COMPLETION.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-REFLECTION-SCHUR-MISMATCH-OBSTRUCTION](plurality-stability/THREE_CELL_REFLECTION_SCHUR_MISMATCH.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-EQUAL-POSTERIOR-DIRECTIONAL-SLICE-OVERLAP](plurality-stability/THREE_CELL_REFLECTION_SCHUR_MISMATCH.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-UNIQUE-NORMAL-FRAME-AT-MAXIMIZER](plurality-stability/THREE_CELL_ADAPTIVE_AT_NOISE_MAXIMIZERS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-QUADRATIC-DEPARTURE-AT-NOISE-MAXIMIZER](plurality-stability/THREE_CELL_ADAPTIVE_AT_NOISE_MAXIMIZERS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-AND-NOISE-DOUBLE-STATIONARITY](plurality-stability/THREE_CELL_ADAPTIVE_AT_NOISE_MAXIMIZERS.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-BOUNDED-SPECTATOR-TWO-STRAIGHT-PAIR-ARMS](plurality-stability/THREE_CELL_BOUNDED_SPECTATOR_STRAIGHT_PAIR.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-BOUNDED-SPECTATOR-STRAIGHT-PAIR-EXTERIOR-STRIP](plurality-stability/THREE_CELL_BOUNDED_SPECTATOR_STRAIGHT_PAIR.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-BOUNDED-SPECTATOR-ASYMPTOTIC-BINARY-STRAIGHTENING](plurality-stability/THREE_CELL_BOUNDED_SPECTATOR_STRAIGHT_PAIR.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-AFFINE-BISECTION-PRESSURE-CRITERION](plurality-stability/THREE_CELL_BOUNDED_SPECTATOR_STRAIGHT_PAIR.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-REFLECTION-DIRECTED-FIVE-TYPE-WITNESS](plurality-stability/THREE_CELL_REFLECTION_DIRECTED_TYPES.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-POSTERIOR-NULL-DIRECTION-FIVE-ORDER-WITNESS](plurality-stability/THREE_CELL_REFLECTION_DIRECTED_TYPES.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-COMPACT-DISCREPANCY-PROPER-POSTERIOR-DEGREE](plurality-stability/THREE_CELL_REFLECTION_DIRECTED_TYPES.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-NEAR-ONE-MEHLER-SCALE-COMPACTNESS](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-SHARP-NEAR-ONE-PERIMETER-LIMINF](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-NEAR-ONE-SHARP-MINIMUM-PROFILE](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-SMALL-R-TAGGED-MOMENT-COMPACTNESS](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_LOW_CORRELATION_SLOPE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-SMALL-R-SHARP-FIRST-ORDER-PROFILE](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_LOW_CORRELATION_SLOPE.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-ADAPTIVE-HIGH-R-PERIMETER-NONCOMPACTNESS](plurality-stability/THREE_CELL_ADAPTIVE_HIGH_R_LAYER_COUNTEREXAMPLE.md) | proved | partial | none in declared routes |
+| [PIS-ALL-CELL-ADAPTIVE-SHARP-HIGH-CORRELATION-GAMMA-LIMIT](plurality-stability/GAUSSIAN_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) | proved | partial | none in declared routes |
+| [PIS-ALL-CELL-ADAPTIVE-NORMAL-SATURATION-AT-MAXIMIZERS](plurality-stability/GAUSSIAN_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) | proved | partial | none in declared routes |
+| [PIS-ALL-CELL-ADAPTIVE-SINGLE-TAG-RESIDUAL-SATURATION](plurality-stability/GAUSSIAN_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) | proved | partial | none in declared routes |
+| [PIS-ALL-CELL-ADAPTIVE-CONDITIONAL-TWO-PHASE-LIMIT](plurality-stability/GAUSSIAN_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) | proved | partial | none in declared routes |
+| [PIS-ALL-CELL-SHARP-MOVING-PERIMETER-ANISOTROPIC-TRANSFER](plurality-stability/GAUSSIAN_SMALL_NOISE_HERMITE_SPECTRUM.md) | proved | partial | none in declared routes |
+| [PIS-ALL-CELL-SMALL-NOISE-HERMITE-SPECTRUM](plurality-stability/GAUSSIAN_SMALL_NOISE_HERMITE_SPECTRUM.md) | proved | partial | none in declared routes |
+| [PIS-ALL-CELL-MAXIMIZER-BIPARTITE-DELETION-NORMAL-RANK](plurality-stability/GAUSSIAN_MAXIMIZER_ADJACENCY_NORMAL_RANK.md) | proved | partial | none in declared routes |
+| [PIS-FOUR-FIVE-CELL-SPARSE-ADJACENCY-NORMAL-RANK](plurality-stability/GAUSSIAN_MAXIMIZER_ADJACENCY_NORMAL_RANK.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-TWO-TYPE-MIRROR-FINITE-SWAP-BOUND](plurality-stability/THREE_CELL_CENTROID_MIRROR_MISMATCH.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-CENTROID-MIRROR-POSITIVE-MISMATCH](plurality-stability/THREE_CELL_CENTROID_MIRROR_MISMATCH.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-COMPACT-TIE-FIXED-MEASURE-MOMENTS](plurality-stability/THREE_CELL_COMPACT_XRAY_BRANCH.md) | proved | partial | none in declared routes |
+| [PIS-THREE-CELL-COMPACT-BRANCH-XRAY-OBSTRUCTION](plurality-stability/THREE_CELL_COMPACT_XRAY_BRANCH.md) | proved | partial | none in declared routes |
 
 | Goal or obligation | Kind | Graph state | Coverage | Exact scope | Current blockers |
 |---|---|---|---|---|---|
@@ -1765,7 +1870,7 @@ flowchart LR
   classDef unmapped fill:#f1f3f4,stroke:#607d8b
 ```
 
-Overview: 80 statements and 83 routes (3999 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
+Overview: 80 statements and 83 routes (4105 statements mapped to this topic). Detailed lemma trees and some routes may be omitted; the full graph and focused exports retain them. All premises, including hidden sources and omitted proof premises, are required. Use `explain` for their complete source pins, locators and blockers.
 
 Current unconditional proof-source leaves are omitted from this diagram; each diamond states how many source premises are hidden.
 

@@ -1,20 +1,17 @@
-# Linear expansion invariance of one maximizing Gaussian cell
+# Affine expansion invariance of one maximizing Gaussian cell
 
 Let \(A=(A_1,A_2,A_3)\) be a balanced planar Gaussian
-noise-stability maximizer at \(0<\rho<1\). Suppose a single
-cell \(A_i\) is invariant, up to null sets, under an invertible
-linear map \(M\) about the Gaussian origin. If all eigenvalues
-of \(M\) have modulus greater than one, or all have modulus
-less than one, then \(A\) is a regular simplex. The other two
-cells need not be preserved by the map. The proof includes
-centered similarities, nonscalar Jordan blocks and expanding
-maps whose eigenvalues admit a power-law resonance.
+noise-stability maximizer at \(0<\rho<1\). Suppose one
+cell \(A_i\) is invariant up to null sets under an invertible
+affine map \(F(x)=p+M(x-p)\). If all eigenvalues of \(M\)
+have modulus greater than one, or all have modulus less
+than one, then \(A\) is the centered regular simplex and
+\(p=0\).
 
-The step that excludes a resonant monomial wall is a general
-price constraint for actual three-cell maximizers. That
-constraint also gives uniform recurrence of an occupied phase
-under contractive recentering, and excludes superlinear isolated
-graph ends.
+The proof includes similarities, nonscalar Jordan blocks
+and expanding maps whose eigenvalues admit a power-law
+resonance. The same affine map need not preserve the two
+other cells.
 [Exact affine symmetries of the entire partition](THREE_CELL_CONTRACTING_AFFINE_SYMMETRY.md)
 
 ## The score bound used on curved arcs
@@ -32,15 +29,16 @@ the consequences for general isolated ends.
 
 ## The analytic boundary of a single invariant cell
 
-Invert \(M\) if needed so all eigenvalues have modulus
-greater than one. Write \(\Gamma_i\) for the support of the
+Use coordinates centered at \(p\), and replace the map
+by its inverse if needed so all eigenvalues of \(M\)
+have modulus greater than one. Write \(\Gamma_i\) for the support of the
 distributional gradient of \(1_{A_i}\). It is preserved by
 \(M\). Locally it is the closure of the analytic jump arcs
 of cell \(i\). The actual-maximizer reciprocal-gradient
 bound (G20) guarantees that every pair score on a regular
 arc has nonzero gradient at an endpoint of that arc,
-including the origin. Thus each analytic half-arc reaching
-the origin continues as an analytic graph past its endpoint.
+including the fixed point. Thus each analytic half-arc reaching
+the fixed point continues as an analytic graph past its endpoint.
 There are finitely many such half-arc germs by the local
 analytic stratification. The support description follows
 from local finite perimeter and the same stratification:
@@ -48,10 +46,10 @@ an open region with no actual jump arcs has zero
 distributional derivative of its indicator.
 [Regular arcs, local stratification and endpoint gradients, G20](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#regular-interface-arcs-and-isolated-triple-junctions)
 
-The origin is in \(\Gamma_i\). Indeed invariance under the
+The fixed point is in \(\Gamma_i\). Indeed invariance under the
 contracting inverse sends positive-volume parts of both
 the cell and its complement into every sufficiently small
-neighborhood. Pass to a positive power of \(M\) fixing all
+neighborhood of the fixed point. Pass to a positive power of \(M\) fixing all
 the finitely many half-arc germs. The power still expands and
 fixes the oriented tangent ray of every germ. In real
 eigenvalue cases we may take it even, so all eigenvalues of
@@ -113,12 +111,10 @@ Suppose there is a nonzero monomial boundary half-curve.
 On its chosen sign half-plane of \(u\), write thresholds
 as \(v=c|u|^m\). Pick a nonzero coefficient \(c\) of largest
 absolute value for that sign. Along its curve the conditional
-Gaussian source, in the same oblique coordinates, has mean
-\[
-                         (\rho u,\rho c|u|^m).
-\]
-Its coefficient relative to the mean horizontal coordinate
-is \(\rho^{1-m}c\). This lies strictly outside the finite
+Gaussian source has mean equal in those coordinates to
+\((\rho u,\rho c|u|^m)\) plus the fixed drift coming from
+\((\rho-1)p\). Its coefficient relative to the mean horizontal
+coordinate tends to \(\rho^{1-m}c\). This lies strictly outside the finite
 set of coefficients on that half-plane. In fact the
 conditional mean is at distance at least \(c_0|u|\) from
 the entire boundary support for all sufficiently large
@@ -162,7 +158,7 @@ using \(\sum_j U_j=1\) and \(\sum_j\beta_j=0\), gives
 In particular the total price gap to the other labels is
 at least one, so some other label is priced at least
 \(1/2\) higher than \(i\).
-This contradicts (LA0), so there is no nonzero monomial
+This contradicts the score bound (PP1), so there is no nonzero monomial
 boundary. No pressure assumption beyond actual three-cell
 maximality is needed.
 
@@ -171,52 +167,46 @@ maximality is needed.
 If all the boundary arcs of \(A_i\) are straight rays,
 its indicator is constant on each open sector cut out by
 them, since its distributional derivative vanishes there.
-Hence it is homogeneous about the origin. To identify its
-angle, consider the first-order tangent labels at the
-origin. If only two strict winner sets approach that
-point, their score difference has nonzero gradient by
-(G20), so their positive-angle tangent regions are
-half-planes. If all three approach, their score gradients
-are distinct by (G20), and the positive-angle tangent
-regions are the normal cones of the extreme points of
-the convex hull of the three gradients. Each of these
-is a connected sector of aperture at most \(\pi\).
-A collinear middle label can have a cusp of zero angle.
-To see the tangent convergence, for any direction where
-a single gradient wins strictly the Taylor expansion
-gives that label on sufficiently small radii, and the
-exceptional directions form a finite set. In the excluded
-case that only one label approaches, the tangent is
-constant. Since \(A_i\) is homogeneous and balanced, its
-tangent cannot be empty, full or a half-plane. Its exact
-cell is a centered \(120^\circ\) sector, and the one-cell
-simplex rigidity (G16) forces the entire partition to be
-the regular simplex.
-[One simplex cell determines all labels, G16](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#one-simplex-cell-determines-the-whole-partition)
+Hence it is homogeneous about \(p\). Consider its
+first-order tangent label there. If only two strict
+winner sets approach \(p\), their score difference has
+nonzero gradient by (G20), so their positive-angle
+tangent regions are half-planes. If all three approach,
+their score gradients are distinct by (G20), and the
+positive-angle tangent regions are the normal cones of
+the extreme points of the convex hull of the three
+gradients. Each of these is a connected sector of
+aperture at most \(\pi\). A collinear middle label can
+have a cusp of zero angle. To see the tangent convergence,
+in each direction with a unique strict linear winner the
+Taylor expansion gives that label at all sufficiently
+small positive radii. The exceptional directions form
+a finite set. When only one label approaches, the
+tangent is constant.
 
-There is a uniform form on compact positive-correlation
-bands and compact sets of invertible matrices whose
-eigenvalues are all uniformly outside, or all uniformly
-inside, the unit circle. The Gaussian symmetric difference
-between \(A_i\) and \(M A_i\) has a positive lower bound over
-nonsimplex balanced maximizers and all those matrices.
-Otherwise pass to a subsequence with converging correlations
-and matrices, fixed label, and strong Gaussian convergence
-to a maximizing partition, using planar compactness.
+Homogeneity and positive masses rule out a full or empty cell.
+A half-plane is excluded since each maximizing cell uses
+both of its active directions. Thus \(A_i\) is an exact
+translated pointed wedge with vertex \(p\). The
+translated-wedge rigidity theorem puts \(p=0\) and
+identifies the entire partition as the centered regular
+simplex.
+[Each maximizing cell uses both active directions](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#each-cell-uses-both-active-directions)
+[Translated wedge rigidity](THREE_CELL_TRANSLATED_WEDGE_RIGIDITY.md)
+
+There is a uniform form on compact positive-correlation bands,
+bounded centers \(p\), and compact sets of invertible matrices
+whose eigenvalues are all uniformly outside or all uniformly
+inside the unit circle. The Gaussian symmetric difference
+between \(A_i\) and \(F A_i\) has a positive lower bound over
+nonsimplex balanced maximizers and all those affine maps.
+Otherwise pass to a subsequence with converging correlations,
+centers and matrices, fixed label, and strong Gaussian
+convergence to a maximizing partition, using planar compactness.
 The limit remains nonsimplex by uniform simplex isolation.
-Continuity of Gaussian pullback by these converging invertible
-matrices follows by bounded continuous approximation and
-uniform bounds on the transformed densities on compact sets,
-with uniformly small tails. The limiting cell would be
-invariant under the limiting matrix, contradicting the
-theorem.
+Continuity of Gaussian pullback by these converging affine
+maps follows by bounded continuous approximation and uniform
+bounds on the transformed densities on compact sets, with
+uniformly small tails. The limiting cell would be invariant
+under the limiting map, contradicting the theorem.
 [Simplex isolation and strong compactness](POSITIVE_CORRELATION_CONTINUATION.md)
-
-If an invariant linear map were centered at a point
-\(p\ne0\) instead, the analytic and extreme-monomial arguments
-above would still give a wedge or half-plane about \(p\).
-The conditional mean then has a fixed drift \((\rho-1)p\)
-in the coordinates about \(p\), which does not affect the
-extreme-coefficient test. The aperture and full-partition
-conclusion use that the symmetry fixes the Gaussian origin.
-An arbitrary translated wedge is not identified here.

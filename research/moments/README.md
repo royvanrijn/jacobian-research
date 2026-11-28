@@ -870,6 +870,111 @@ Generalized vanishing, Gaussian moments and Image/Mathieu spaces. Two pairs have
 | In the absence of a common circle a pair wall at a spectator radius is circular | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md) |
 | A noncollinear junction without a common circle forces a circular wall and radial separation | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md) |
 | Without a common circle a collinear cusp brackets the centered circle | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_JUNCTIONS.md) |
+| Parabolic score rigidity persists with an additional transverse polynomial | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_PARABOLIC_SCORE_RIGIDITY.md) |
+| An expanding or contracting affine symmetry forces the three-cell simplex | Internal result | proved | [Source](../plurality-stability/THREE_CELL_CONTRACTING_AFFINE_SYMMETRY.md) |
+| One translated wedge in a balanced three-cell maximizer forces the centered simplex | Internal result | proved | [Source](../plurality-stability/THREE_CELL_TRANSLATED_WEDGE_RIGIDITY.md) |
+| Two supporting rays with distinct opponents can force a convex cell to be a wedge | Internal result | proved | [Source](../plurality-stability/THREE_CELL_TRANSLATED_WEDGE_RIGIDITY.md) |
+| Every winning label has a uniformly positive own-label posterior threshold | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PRESSURE_CONTRACTION_PROPAGATION.md) |
+| Contracting an observation point preserves nearby positive area of each incident phase | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PRESSURE_CONTRACTION_PROPAGATION.md) |
+| An isolated continuous interface graph of a three-cell maximizer grows at most linearly | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PRESSURE_CONTRACTION_PROPAGATION.md) |
+| The outer label at a sufficiently distant circular junction is disconnected | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PRESSURE_CONTRACTION_PROPAGATION.md) |
+| Affine expansion or contraction invariance of a single maximizing cell forces the simplex | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ONE_CELL_AFFINE_INVARIANCE.md) |
+| A balanced three-cell maximizer has no dormant third-score wall in the central disk | Internal result | proved | [Source](../plurality-stability/THREE_CELL_CENTRAL_DORMANT_WALL_EXCLUSION.md) |
+| Balanced three-cell maximizers have uniform central tie and component counts | Internal result | proved | [Source](../plurality-stability/THREE_CELL_CENTRAL_DORMANT_WALL_EXCLUSION.md) |
+| Ordered reflected stationary graphs at common pressure separate at least linearly | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REFLECTED_COMMON_PRESSURE_CROSSINGS.md) |
+| A hypothetical simplex tie lies on a planar two-scale coexistence threshold | Internal result | proved | [Source](../plurality-stability/THREE_CELL_TWO_SCALE_TILT.md) |
+| A low-correlation penalty forces first-order shape motion at a tied maximum | Internal result | proved | [Source](../plurality-stability/THREE_CELL_TWO_SCALE_TILT.md) |
+| Vanishing balanced mixed variation determines the dilation through a two-dimensional resolvent | Internal result | proved | [Source](../plurality-stability/THREE_CELL_MIXED_DILATION_RESOLVENT.md) |
+| Translation-orthogonal dilation and mass coupling bound the curvature at a tangential tie | Internal result | proved | [Source](../plurality-stability/THREE_CELL_MIXED_DILATION_RESOLVENT.md) |
+| An abstract stable mixed-dilation model permits vanishing balanced response | Internal result | proved | [Source](../plurality-stability/THREE_CELL_MIXED_DILATION_RESOLVENT.md) |
+| A radial rank-one Gaussian objective has a distant global tie despite strict simplex local growth | Internal result | proved | [Source](../plurality-stability/THREE_CELL_RADIAL_RANK_ONE_COEXISTENCE.md) |
+| Pointwise positivity and reversibility do not exclude a distant tie for a modified Gaussian kernel | Internal result | proved | [Source](../plurality-stability/THREE_CELL_RADIAL_RANK_ONE_COEXISTENCE.md) |
+| The unoriented surface comparison loses only quadratically at a common displaced junction | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) |
+| A reference-weighted arm moment criterion excludes displaced three-arm right ties | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) |
+| Optimizing the three pair directions gives an exact surface-energy lower bound | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) |
+| Nonsimplex maximizers have a uniform strict gap above the optimized pair surface energy | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) |
+| Gaussian balance does not force the three-arm moment comparison | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md) |
+| No common winner circle forces a uniform amount of mass outside a largest component | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_QUANTITATIVE_TOPOLOGY.md) |
+| No common winner circle forces a uniformly wide annular separator for one label | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_QUANTITATIVE_TOPOLOGY.md) |
+| Three unbounded labels without a common winner circle force logarithmically many bounded components | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_QUANTITATIVE_TOPOLOGY.md) |
+| Independent conditional mass minimization gives a strictly subsharp surface bound at the simplex | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_CONDITIONAL_SURFACE_CALIBRATION.md) |
+| Both exterior graphs of a stable theta must see thick middle crossings | Internal result | proved | [Source](../plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md) |
+| A width-free separated-crossing test excludes folded theta maximizers | Internal result | proved | [Source](../plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md) |
+| A thin third-label layer lowers both constant-direction surface bounds below the simplex | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PAIR_SURFACE_WETTING_OBSTRUCTION.md) |
+| The adaptive surface certificate is lower semicontinuous and coercive in Gaussian label distance | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_VARIATIONAL_PROBLEM.md) |
+| The balanced adaptive surface problem has ordinary minimizers and a continuous strictly increasing value | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_VARIATIONAL_PROBLEM.md) |
+| Adaptive energy convergence at the simplex forces convergence of the individual pair surfaces | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_VARIATIONAL_PROBLEM.md) |
+| A sufficiently small exterior mass forces exact bounded support of a maximizing label | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PURE_EXTERIOR_COMPACTNESS.md) |
+| Binary circular slices are impossible at a right tie through correlation 73/100 | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_MOMENT_SLOPE.md) |
+| A right tie through correlation 73/100 requires a uniform amount of three-label angular overlap | Internal result | proved | [Source](../plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_MOMENT_SLOPE.md) |
+| Normal saturation of the adaptive energy is equivalent to a scalar extra-coordinate stability inequality | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_NORMAL_SATURATION.md) |
+| Normal saturation forces complete adjacency without assuming global optimality | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_NORMAL_SATURATION.md) |
+| Any fixed finite family of adaptive dual tests has a uniformly bounded balanced minimum | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_NORMAL_SATURATION.md) |
+| The equilateral surface Hessian is coercive at the simplex along balanced smooth three-arm deformations | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_SMOOTH_SECOND_VARIATION.md) |
+| The regular compact stationary equations reduce to a finite-dimensional analytic system | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REGULAR_COMPACT_BRANCH.md) |
+| Strict failure accumulating at a regular compact tie has a one-sided power-law lower bound | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REGULAR_COMPACT_BRANCH.md) |
+| The optimal value has convergent one-sided Puiseux germs if every nonsimplex tie is regular compact | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REGULAR_COMPACT_BRANCH.md) |
+| A right tie with a pure exterior has an explicit minimum confinement radius | Internal result | proved | [Source](../plurality-stability/THREE_CELL_PURE_EXTERIOR_COMPACTNESS.md) |
+| Every balanced adaptive surface minimizer satisfies a shared weighted first variation with two mass pressures | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_STATIONARITY.md) |
+| Attaining adaptive tests have a reciprocal weight bound and cannot vanish at positive interface density | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_STATIONARITY.md) |
+| Regular junctions of adaptive minimizers obey weighted force balance with positive tensions | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_STATIONARITY.md) |
+| Two-phase adaptive minimizing interfaces are analytic at positive-density points | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TWO_PHASE_REGULARITY.md) |
+| Adaptive minimizers have a fixed-center linear perimeter upper bound | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENTS.md) |
+| Adaptive minimizers have homogeneous ordinary tangent partitions | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENTS.md) |
+| Adaptive minimizers have a linear lower perimeter bound on their entire support | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENTS.md) |
+| Tangent patches compare all attaining frozen metrics and retain tagged perimeter excess | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md) |
+| Every interface tangent of an adaptive minimizer is a straight line or a three-label tripod | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md) |
+| Tripod tangents have strict tensions and exact tagged-interface convergence | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md) |
+| The only tagged excess at a line tangent is a collapsed third-phase layer | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md) |
+| Tripod points are isolated and each adaptive support point has a fixed tangent type | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md) |
+| An origin reflection of one maximizing cell excludes a smooth one-sided boundary on the mirror | Internal result | proved | [Source](../plurality-stability/THREE_CELL_SINGLE_CELL_REFLECTION_BOUNDARY.md) |
+| Bounded convex reflection-invariant maximizing cells have two noncollinear mirror corners | Internal result | proved | [Source](../plurality-stability/THREE_CELL_SINGLE_CELL_REFLECTION_BOUNDARY.md) |
+| Actual three-cell maximizers stay uniformly away from individual disk cells | Internal result | proved | [Source](../plurality-stability/THREE_CELL_SINGLE_CELL_REFLECTION_BOUNDARY.md) |
+| Each bounded strict-winner component has zero posterior degree in its winner wedge | Internal result | proved | [Source](../plurality-stability/THREE_CELL_POSTERIOR_DEGREE_AND_TRIPLE_BISECTOR.md) |
+| Two maximal triple points force every label to straddle the contracted Gaussian bisector | Internal result | proved | [Source](../plurality-stability/THREE_CELL_POSTERIOR_DEGREE_AND_TRIPLE_BISECTOR.md) |
+| The reflection prescribed by equal-radius triple points realizes all three label mismatch types | Internal result | proved | [Source](../plurality-stability/THREE_CELL_POSTERIOR_DEGREE_AND_TRIPLE_BISECTOR.md) |
+| Unrestricted Hilbert directions attain the adaptive supremum and the balanced shape minimum | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md) |
+| The unrestricted adaptive functional has a unique scalar diagonal certificate | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md) |
+| The scalar diagonal quantitatively controls the weights of near-attaining tests | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md) |
+| Compact interfaces have finite optimizing direction rank in the unrestricted problem | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md) |
+| At full tagged density the unrestricted minimizer almost minimizes one frozen metric | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md) |
+| Balanced three-tag competitors can have only collinear unrestricted optimizing tests | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md) |
+| The adaptive pressure law can be selected from tests sharp at chosen tangents | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_PRESSURE.md) |
+| A smooth collapsed layer must satisfy a curvature bound on its triangle-deficit Hessian | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_PRESSURE.md) |
+| Small Gaussian relabeling patches at regular top ties are strictly suboptimal | Internal result | proved | [Source](../plurality-stability/THREE_CELL_STATIONARY_PATCH_CONFINEMENT.md) |
+| Zero unadjusted mirror contrast forces full transposition in a symmetric balancing problem | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REFLECTION_MIRROR_COMPLETION.md) |
+| A bounded reflection-invariant maximizing cell forces nontransposed orbits at both parallel infinities | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REFLECTION_MIRROR_COMPLETION.md) |
+| A bisected cell at a maximizer cannot be bounded with an eventual one-sided binary exterior | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REFLECTION_MIRROR_COMPLETION.md) |
+| An odd Mehler Schur residual bounds mismatch concentration at equal posterior observations | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REFLECTION_SCHUR_MISMATCH.md) |
+| Duplicated planar posterior vectors force overlap of every label pair along their displacement direction | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REFLECTION_SCHUR_MISMATCH.md) |
+| Actual three-cell noise maximizers have a unique adaptive normal Gram frame with a quadratic gap | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_AT_NOISE_MAXIMIZERS.md) |
+| Adaptive energy and noise correlation derivative agree to first shape order at an actual maximizer | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_AT_NOISE_MAXIMIZERS.md) |
+| Simultaneous adaptive stationarity at a noise maximizer forces the mixed dilation constraint | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_AT_NOISE_MAXIMIZERS.md) |
+| A straight pair segment with a bounded spectator forces two exterior rays and disconnectedness | Internal result | proved | [Source](../plurality-stability/THREE_CELL_BOUNDED_SPECTATOR_STRAIGHT_PAIR.md) |
+| A binary forward exterior confines wrong-side labels and fixes all straight pair walls | Internal result | proved | [Source](../plurality-stability/THREE_CELL_BOUNDED_SPECTATOR_STRAIGHT_PAIR.md) |
+| Uniform local asymptotic binary agreement forces an exact centered exterior | Internal result | proved | [Source](../plurality-stability/THREE_CELL_BOUNDED_SPECTATOR_STRAIGHT_PAIR.md) |
+| The exact affine bisection penalty is a scalar posterior slice energy | Internal result | proved | [Source](../plurality-stability/THREE_CELL_BOUNDED_SPECTATOR_STRAIGHT_PAIR.md) |
+| Equal-posterior observations force at least five directed reflection types | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REFLECTION_DIRECTED_TYPES.md) |
+| Every posterior null direction forces five ordered slice relations | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REFLECTION_DIRECTED_TYPES.md) |
+| Compact simplex discrepancies have degree one and an unbounded preimage of a regular bounded-component score | Internal result | proved | [Source](../plurality-stability/THREE_CELL_REFLECTION_DIRECTED_TYPES.md) |
+| Bounded scaled adaptive energy gives Gaussian label compactness near correlation one | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) |
+| The adaptive high-correlation lower limit has the sharp Gaussian perimeter coefficient | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) |
+| The adaptive minimum has a sharp high-correlation value and simplex label convergence | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) |
+| Small-correlation near-minimal adaptive energy controls tagged Gaussian first moments | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_LOW_CORRELATION_SLOPE.md) |
+| The balanced adaptive minimum has the simplex's exact first-order small-correlation slope | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_LOW_CORRELATION_SLOPE.md) |
+| Sharp near-one adaptive energy does not imply strict perimeter convergence | Internal result | proved | [Source](../plurality-stability/THREE_CELL_ADAPTIVE_HIGH_R_LAYER_COUNTEREXAMPLE.md) |
+| The adaptive surface energy has a sharp Gaussian perimeter limit for every fixed cell count | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) |
+| The adaptive interface energy equals the correlation derivative at every actual maximizer | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) |
+| Sharp adaptive sequences have vanishing smoothed interface defects at single-tag limits | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) |
+| Transition-weighted conditional profiles of moving maximizers are two-phase at regular limiting facets | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md) |
+| Sharp moving Gaussian interface measures persist under proportional anisotropic noise | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_SMALL_NOISE_HERMITE_SPECTRUM.md) |
+| Limiting facet normals determine the moving high-degree Hermite law | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_SMALL_NOISE_HERMITE_SPECTRUM.md) |
+| Deleting interfaces to make a bipartite adjacency graph forces a normal-rank bound | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_MAXIMIZER_ADJACENCY_NORMAL_RANK.md) |
+| Sparse four- and five-cell adjacency forces multiple normal directions on designated interfaces | Internal result | proved | [Source](../plurality-stability/GAUSSIAN_MAXIMIZER_ADJACENCY_NORMAL_RANK.md) |
+| A rare reflection type quantitatively limits competing swap orientations | Internal result | proved | [Source](../plurality-stability/THREE_CELL_CENTROID_MIRROR_MISMATCH.md) |
+| A centroid mirror requires the other labels to share a reflected fiber | Internal result | proved | [Source](../plurality-stability/THREE_CELL_CENTROID_MIRROR_MISMATCH.md) |
+| Compact simplex ties admit a fixed narrower-Gaussian moment comparison | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COMPACT_XRAY_BRANCH.md) |
+| A moving compact stationary branch must satisfy simultaneous weighted projection and Jacobi equations | Internal result | proved | [Source](../plurality-stability/THREE_CELL_COMPACT_XRAY_BRANCH.md) |
 
 **Computed obligations:** 45 unresolved; 32 resolved within their exact scope.
 

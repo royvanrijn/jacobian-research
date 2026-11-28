@@ -54,10 +54,14 @@ For every winning point \(x\) of label \(i\), the Gaussian
 source distribution with mean \(\rho x\) assigns \(A_i\)
 probability at least \(\theta_i\). Choose a fixed \(R\) with
 \(\mathbb P(|\sqrt{1-\rho^2}Z|>R)<\min_i\theta_i/2\).
-The source density is bounded above, so there is
-uniformly positive Lebesgue area of \(A_i\) in
-\(B_R(\rho x)\). This is (PP2). The same holds for each incident label at
-any actual interface or higher junction point. The constants
+The source density is bounded above by
+\((2\pi(1-\rho^2))^{-1}\), so the Lebesgue area satisfies
+\[
+       |A_i\cap B_R(\rho x)|\ge\pi(1-\rho^2)\theta_i .
+                                                               \tag{PP2}
+\]
+The same holds for each incident label at any actual
+interface or higher junction point. The constants
 are uniform on the compact parameter bands of (PP1).
 Since Gaussian and Lebesgue null sets agree, these sets
 of positive area contain strict winner points.

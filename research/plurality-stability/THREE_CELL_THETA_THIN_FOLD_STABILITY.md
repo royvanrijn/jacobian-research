@@ -209,3 +209,205 @@ enough for a cut obstruction. The sign of the unrestricted
 rotational cross matrix on genuinely folded compact theta networks
 remains open.
 [Reciprocal-gradient control of regular arcs (G20)](THREE_CELL_GLOBAL_OBSTRUCTIONS.md#regular-interface-arcs-and-isolated-triple-junctions)
+
+## Thick folds must be visible to both exterior arms
+
+Keep the graph hypothesis on the two exterior arms. For an
+observation \(p=(x,y)\) on an exterior arm and a base abscissa
+\(t\) of the middle arc, call \((p,t)\) visible if the middle
+crossing interval at \(t\) has width greater than
+\(2\sqrt{2\log2}\,\sigma\) and \(ry\) belongs to its interior.
+At an actual maximizer the visible set has positive measure for
+each exterior arm, in the product of \(s\,d\nu\) on the arm and
+\(d\gamma_1(t)\) on the base. If the network lies in a fixed disk
+and \(r\) in a compact positive band, this measure has a uniform
+positive lower bound.
+
+Indeed the alternating middle pairing is nonnegative unless the
+observation is visible, by the monotone case and (TF1). Everywhere
+it is bounded below by \(-p_\sigma(0)\). On a fixed disk the
+conditional horizontal density is at most a uniform multiple of
+the marginal Gaussian density. Thus the scalar interaction of
+one exterior arm with the middle is bounded below by \(-C\) times
+the measure of its visible set. The scalar interaction with the
+other exterior arm has the uniform positive lower bound in the
+thick-fold argument above. Each exterior speed cut must have
+nonnegative \(Q^{(1)}\). As in (TF2), its incidence sign is
+negative for both cross interactions. Their scalar sum must
+therefore be nonpositive, proving the asserted bound on visibility.
+In particular either exterior arm gives a negative balanced test
+if its contracted vertical range misses every thick crossing
+interval up to a null set of fibers. No upper width restriction
+is needed in that case.
+
+## A width-free sign test for separated folds
+
+Now allow folds on all three arms. Suppose the arms stay in the
+strip between the two junction abscissae, and orient them from
+the left junction to the right junction. For a.e. abscissa in
+the open strip, each arm has a finite alternating crossing
+measure with signs \(+,-,\ldots,+\), in increasing vertical
+order. In fact the signed measure is the disintegration of
+\(s\,d\mathcal H^1\), where \(s=dx/d\ell\) and \(\ell\) is
+arclength. Close the arm by a simple return path in the two
+exterior half-planes and below the whole network. The crossings
+of the resulting Jordan curve alternate, and the bottom return
+crossing has negative sign. The arclength area formula gives
+finite transverse crossings almost everywhere. The three
+incidences are cyclic in the common orientation. These facts
+do not require either exterior arc to be a graph.
+[Signed crossings on all three arms](THREE_CELL_THETA_ALL_THIN_FOLDS.md#signed-crossings-of-each-arm)
+
+Consider two such signed fibers, the first supported at heights
+\(y\ge\sigma\) and the second at heights \(z\le0\). Put
+\(u=y/\sigma\ge1\), \(v=-z/\sigma\ge0\). Up to its positive
+normalization their joint vertical Gaussian density is
+\[
+ G(u,v)=\exp[-(u^2+v^2+2ruv)/2],\qquad
+ G_{uv}=\big[(u+rv)(v+ru)-r\big]G\ge0.                      \tag{TF6}
+\]
+The inequality follows from
+\((u+rv)(v+ru)\ge ru^2\ge r\). Both first derivatives of \(G\)
+are nonpositive. Use coordinates directed inward from the
+corner with both \(u\) and \(v\) largest in the two crossing
+intervals. In these coordinates the first derivatives and
+the mixed derivative are nonnegative. Reversing either
+alternating measure keeps its signs in alternating order
+with both endpoint signs positive. Its pairing functional
+can be written
+\[
+ L(F)=F(0)+\int H(w)F'(w)\,dw,\qquad 0\le H\le1 ,
+\]
+by integration by parts, since the total signed mass is one
+and its cumulative masses are zero or one. Apply this formula
+in both coordinates. The constant, two first-derivative, and
+mixed-derivative terms are nonnegative, and the constant term
+is the strictly positive Gaussian density at the corner.
+Consequently the signed product pairing is positive for
+arbitrarily wide crossing intervals of these respective
+locations.
+
+There is a stable version with exceptional fibers. Suppose
+the whole network lies in a disk of radius \(R\) and \(r\)
+belongs to a compact positive band \(I\). Fix one arm \(e\).
+Assume its crossings all lie at height at least \(\sigma\)
+except on a set of abscissae of Gaussian measure \(\epsilon_e\).
+For each other arm \(j\), assume all its crossings lie at
+height at most zero except on a set of measure \(\epsilon_j\).
+For \(\max_i\epsilon_i\) sufficiently small in terms of \(R,I\),
+there is a negative balanced planar speed.
+
+Indeed, on good pairs the preceding corner contribution and
+the horizontal joint Gaussian density give a uniform positive
+lower bound relative to the product Gaussian measure of the
+base abscissae. On arbitrary pairs the absolute vertical
+pairing is uniformly bounded, independently of the number
+of folds. To see this, write the same alternating functional
+formula in each interval, starting at either endpoint.
+The constant, first derivatives, and mixed derivative of
+the Gaussian are uniformly bounded on the disk coordinate
+product, and the integration lengths are bounded by \(2R\).
+The horizontal density has a uniform finite bound relative
+to product Gaussian measure there. Since the two bounded
+cells are in the strip and have total mass \(2/3\), the Gaussian
+mass \(m\) of the base interval is at least \(2/3\). The
+scalar arm pairing therefore satisfies
+\[
+ C_{ej}\ge c(m-\epsilon_e)(m-\epsilon_j)
+                   -C(\epsilon_e+\epsilon_j)              \tag{TF7}
+\]
+for \(c,C>0\) depending only on \(R,I\). For small exceptions
+this gives \(C_{ej}>0\) for both \(j\ne e\). With the cyclic
+incidences and the translation Jacobi equation, the cut
+\(s1_{\Gamma_e}\) then has strictly negative \(Q^{(1)}\),
+as in (TF2). The translation flux repair converts it to a
+strictly negative balanced planar speed. This argument does
+not impose a crossing-width bound on any good fiber.
+
+## Negative scalar pairing on a balanced embedded theta
+
+Disjointness of the arcs and exact balance alone do not imply
+positive scalar translation pairing. Fix \(0<r<1\) and write
+\(G_r^{(1)}(u,v)\) for the one-dimensional joint Gaussian density
+with correlation \(r\). Take small positive heights \(a,\epsilon\)
+so that the mixed derivative of \(G_r^{(1)}(u,-v)\) is strictly
+negative on \([a,a+\epsilon]^2\). Such a choice follows from
+the expression in (TF6), now evaluated with scaled arguments
+near zero where the bracket equals \(-r\). The pairing of the
+two reflected signed measures
+\(\delta_a-\delta_{a+\epsilon}\) and
+\(\delta_{-a}-\delta_{-a-\epsilon}\) is the integral of this
+mixed derivative over the small rectangle, and is strictly
+negative. Add \(\delta_H\) and \(\delta_{-H}\), respectively,
+for a sufficiently large finite \(H\). Every added term tends
+to zero as \(H\) tends to infinity by the positive definite
+Gaussian exponent, so the pairing remains negative. Choose
+\(\epsilon\) small enough and \(H\) large enough also to have
+\[
+                m_+=\Phi(a)-\tfrac12+
+                         \Phi(H)-\Phi(a+\epsilon)>\tfrac13.
+\]
+
+Here is an embedded network realizing these signed fibers up
+to a small error. Put \(P=(-1,0)\), \(Q=(1,0)\), choose
+\(0<a_0<a\), and take the upper polygonal arm, in order, through
+\[
+ P,\ (-1,a),\ (1,a),\ (1,a+\epsilon),\ (-1,a+\epsilon),\
+ (-1,H),\ (1+\delta,H),\ (1+\delta,a_0),\ (1,a_0),\ Q .
+\]
+Here \(\delta>0\) is small. Use its reflection below the axis
+as the lower arm and the chord as the third. The polygonal arm
+is simple, stays strictly above the chord except at \(P,Q\),
+and the detour at \(1+\delta\) avoids the earlier right-hand
+vertical segment. For each base abscissa in \((-1,1)\) the
+upper translation crossings have signs \(+,-,+\) at
+\(a,a+\epsilon,H\), as given by the directed horizontal
+segments. On these fibers the bounded upper face occupies
+\((0,a)\cup(a+\epsilon,H)\), by Jordan separation applied to
+the upper arm and the chord. The lower face is its reflection.
+
+Dilate horizontally by a factor \(L\). Fix
+\(0<L_-<L_+<\infty\) so that
+\(m_+\gamma_1((-L,L))\) is strictly below \(1/3\) at \(L_-\)
+and strictly above \(1/3\) at \(L_+\).
+For \(L\) in this interval the scalar pairing of the exterior
+arms has a uniformly negative main term. Indeed the joint
+density factors into horizontal and vertical coordinates,
+and the product of the two main signed fibers gives the
+negative vertical pairing above, multiplied by the positive
+horizontal joint probability of \((-L,L)^2\).
+The other terms tend uniformly to zero with \(\delta\).
+The vertical connectors contribute zero to the signed measures
+\(s\,d\mathcal H^1=dx\), and the total variation of the
+signed surface measures outside \((-L,L)\times\mathbb R\) is
+at most \(2L\delta\) per arm. The total variations of the whole
+measures are uniformly bounded. Boundedness of the joint
+Gaussian density then bounds the neglected terms by \(O(\delta)\).
+The bounded-face masses differ from
+\(m_+\gamma_1((-L,L))\) by at most the Gaussian mass of the
+extra horizontal interval \((L,L+L\delta)\).
+
+Fix a sufficiently small \(\delta>0\) and smooth the corners
+symmetrically in disjoint small neighborhoods. The upper arm
+can be made to leave \(P\) up and to the left and to leave
+\(Q\) up and to the right, with the lower germ reflected.
+Thus each opening angle at both vertices is less than \(\pi\).
+The middle remains the chord. Roundings inside neighborhoods
+of radius \(h\) can retain simplicity and replace lengths
+\(O(h)\) by lengths \(O(h)\). The altered faces differ only
+in these neighborhoods. Hence the changes in their Gaussian
+masses and in the total variation of the signed surface
+measures tend to zero, uniformly for \(L\in[L_-,L_+]\).
+The bounded joint density again preserves the strict negative
+pairing for sufficiently small \(h\). The upper and lower
+face masses remain equal by reflection and depend continuously
+on \(L\), by change of variables in the Gaussian density.
+At the two factors \(L_-,L_+\) they still bracket \(1/3\).
+Choosing an intermediate \(L\) gives exact balance, since the
+exterior then also has mass \(1/3\).
+
+This example only concerns the scalar pairing. Its geometry
+does not satisfy an asserted stationary score equation. It
+shows why a cross-sign proof for general backtracking needs
+information on an actual maximizer beyond the embedded theta
+topology and the two mass constraints.

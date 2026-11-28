@@ -12284,6 +12284,1476 @@ Assurance flags retain their recorded scope. A formal certificate for a componen
 
 **Verification limits:** Written proof and internal mathematical review.
 
+### PIS-GAUSSIAN-TRANSVERSE-POLYNOMIAL-SCORE-RIGIDITY
+
+[Parabolic score rigidity persists with an additional transverse polynomial](plurality-stability/GAUSSIAN_PARABOLIC_SCORE_RIGIDITY.md)
+
+**Exact scope:** For bounded measurable g and real polynomial P on independent transverse coordinates, the same constancy and stationary partition exclusion hold with x-kappa y^2-P(z) in place of the parabolic coordinate. The distinguished quadratic direction has no linear term.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-AFFINE-PARTITION-SYMMETRY-RIGIDITY
+
+[An expanding or contracting affine symmetry forces the three-cell simplex](plurality-stability/THREE_CELL_CONTRACTING_AFFINE_SYMMETRY.md)
+
+**Exact scope:** An actual balanced planar maximizer preserved modulo labels by an invertible affine map fixing p is the centered simplex if the linear part or its inverse contracts. At a genuine triple fixed point it suffices that at least one eigenvalue has modulus different from one. In these cases p=0 and the linear part is a positive scalar times an orthogonal simplex symmetry. Compact contraction families have uniform positive symmetry defect for nonsimplex maximizers.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-TRANSLATED-WEDGE-RIGIDITY
+
+[One translated wedge in a balanced three-cell maximizer forces the centered simplex](plurality-stability/THREE_CELL_TRANSLATED_WEDGE_RIGIDITY.md)
+
+**Exact scope:** For 0<rho<1 an actual balanced planar maximizer with one cell equal almost everywhere to a pointed convex affine wedge is the centered regular simplex. The conditional score at the vertex forces it to be the Gaussian origin. On compact positive-correlation bands every nonsimplex maximizer has uniform positive Gaussian distance from all such wedges in each label.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-CENTRAL-BEVELED-WEDGE-RIGIDITY
+
+[Two supporting rays with distinct opponents can force a convex cell to be a wedge](plurality-stability/THREE_CELL_TRANSLATED_WEDGE_RIGIDITY.md)
+
+**Exact scope:** For an actual balanced planar three-cell maximizer, a convex cell with two nonparallel supporting rays and distinct opposing labels is a translated wedge if the intersection of the two supporting lines belongs to the central maximal-tie gradient separation regime. The partition is then the centered simplex.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-UNIFORM-POSITIVE-WINNER-SCORE
+
+[Every winning label has a uniformly positive own-label posterior threshold](plurality-stability/THREE_CELL_PRESSURE_CONTRACTION_PROPAGATION.md)
+
+**Exact scope:** For an actual planar three-cell maximizer with positive prescribed masses, normalize the three prices to sum to zero. Each price exceeds -1/3, and at every point where label i wins its unadjusted score is at least 1/3 plus its price. The lower thresholds are uniform on compact interior parameter bands.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-CONTRACTED-SOURCE-PHASE-RECURRENCE
+
+[Contracting an observation point preserves nearby positive area of each incident phase](plurality-stability/THREE_CELL_PRESSURE_CONTRACTION_PROPAGATION.md)
+
+**Exact scope:** For an actual planar three-cell maximizer with positive masses, the label of a winning point x occupies a uniformly positive Lebesgue area in a fixed-radius ball centered at rho*x. This holds for every incident label at a junction, and iterates with a uniformly bounded displacement from the exact contracted observation orbit.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ISOLATED-END-AT-MOST-LINEAR
+
+[An isolated continuous interface graph of a three-cell maximizer grows at most linearly](plurality-stability/THREE_CELL_PRESSURE_CONTRACTION_PROPAGATION.md)
+
+**Exact scope:** For an actual planar three-cell maximizer with positive masses, an isolated binary interface that is a continuous graph on a full half-plane has height O(1+x) in that half-plane. The bound follows by iteration of the contracted source recurrence on its two labels.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-OUTER-LABEL-DISTANT-CIRCULAR-JUNCTION
+
+[The outer label at a sufficiently distant circular junction is disconnected](plurality-stability/THREE_CELL_PRESSURE_CONTRACTION_PROPAGATION.md)
+
+**Exact scope:** Under the noncollinear circular-wall geometry of RJ2, when the junction radius times 1-rho exceeds the one-step source radius, the outer label of the circular wall has a bounded positive-area part separated from its outer strict winner region by a missing inner annulus.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ONE-CELL-AFFINE-SYMMETRY-RIGIDITY
+
+[Affine expansion or contraction invariance of a single maximizing cell forces the simplex](plurality-stability/THREE_CELL_ONE_CELL_AFFINE_INVARIANCE.md)
+
+**Exact scope:** For an actual balanced planar three-cell maximizer, invariance of one cell under an invertible affine map with all eigenvalue moduli below one or all above one forces the centered simplex and the affine fixed point is the Gaussian origin. The result is uniform in bounded centers, compact matrix families uniformly inside or outside the unit circle, and compact positive-correlation bands.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-CENTRAL-DORMANT-WALL-EXCLUSION
+
+[A balanced three-cell maximizer has no dormant third-score wall in the central disk](plurality-stability/THREE_CELL_CENTRAL_DORMANT_WALL_EXCLUSION.md)
+
+**Exact scope:** For 339/500<=rho<1 no true two-label interface along which the third adjusted score ties on an open arc can meet the closed radius-three disk. The proof uses distinct long-component and short-closed-component insertion bounds.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-UNIFORM-CENTRAL-TIE-AND-COMPONENT-COUNTS
+
+[Balanced three-cell maximizers have uniform central tie and component counts](plurality-stability/THREE_CELL_CENTRAL_DORMANT_WALL_EXCLUSION.md)
+
+**Exact scope:** On compact correlation bands in [339/500,1), all triple-score ties in the closed radius-three disk have a uniform count bound. For each fixed smaller disk there is also a uniform bound on the number of strict winner components meeting it and on the faces cut out at a chosen intermediate transverse radius. No global connectedness assumption is imposed.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-REFLECTED-COMMON-PRESSURE-TAIL-CROSSINGS
+
+[Ordered reflected stationary graphs at common pressure separate at least linearly](plurality-stability/THREE_CELL_REFLECTED_COMMON_PRESSURE_CROSSINGS.md)
+
+**Exact scope:** For two distinct stationary reflected analytic increasing graphs at the same correlation and right-interface pressure, with bounded derivatives, divergent heights and bounded h(rho*x)-rho*h(x), an eventually one-signed height difference has at least linear magnitude. Distinct reflected maximizers with common pressure whose limiting multiplicative phases agree at one positive radius cross arbitrarily far out.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-TWO-SCALE-COEXISTENCE-THRESHOLD
+
+[A hypothetical simplex tie lies on a planar two-scale coexistence threshold](plurality-stability/THREE_CELL_TWO_SCALE_TILT.md)
+
+**Exact scope:** Near a scalar three-cell simplex tie, for a fixed lower correlation s in the proved interval, the exact simplex threshold for the planar objective S_t minus eta S_s is inf D_t/D_s over nonsimplex partitions. The threshold is locally Lipschitz and semiconcave, admits ordinary distant maximizing partners, and has one-sided slopes given by the minimum and maximum of D'_r/D_s over the original nonsimplex tied maximizers.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-TWO-SCALE-TILT-STRICT-SELECTION
+
+[A low-correlation penalty forces first-order shape motion at a tied maximum](plurality-stability/THREE_CELL_TWO_SCALE_TILT.md)
+
+**Exact scope:** At a hypothetical balanced planar three-cell simplex tie and a sufficiently small fixed lower correlation s, every maximizer of S_r minus eta S_s for small positive eta is at least order eta in Gaussian label distance from the original maximizing family. The tilt gains order eta squared over the best frozen tie and its unperturbed value loss is at least order eta squared and is o(eta). Limits minimize S_s among the original maximizers.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-MIXED-DILATION-MASS-RESOLVENT
+
+[Vanishing balanced mixed variation determines the dilation through a two-dimensional resolvent](plurality-stability/THREE_CELL_MIXED_DILATION_RESOLVENT.md)
+
+**Exact scope:** For a balanced planar three-cell maximizer, vanishing mixed scalar-correlation response on all balanced speeds holds exactly when the dilation uniquely minimizes the positive I-r^2 K_a quadratic form at its prescribed mass flux. The resulting mixed score constants are obtained by inverting a two-dimensional positive mass-plane resolvent. A nonsimplex instance has nonzero radial mass flux.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-MIXED-DILATION-RESIDUAL-CURVATURE
+
+[Translation-orthogonal dilation and mass coupling bound the curvature at a tangential tie](plurality-stability/THREE_CELL_MIXED_DILATION_RESOLVENT.md)
+
+**Exact scope:** The balanced mixed variation is determined by the residual Sz-R*w, where z is the translation-orthogonal part of dilation and w is the translation with its radial mass flux. Tangential endpoint ties obey MR4. Vanishing balanced response for a nonsimplex forces the norm of R*w to be at least (1+r) times the nonzero norm of z.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ABSTRACT-MIXED-DILATION-OBSTRUCTION
+
+[An abstract stable mixed-dilation model permits vanishing balanced response](plurality-stability/THREE_CELL_MIXED_DILATION_RESOLVENT.md)
+
+**Exact scope:** An explicit finite-dimensional model with the translation eigenspace, two volume constraints, and a sole balanced rotational zero direction satisfies the operator and flux identities used in MR1-MR4 while the balanced mixed response vanishes at nonzero translation-orthogonal dilation. The model is algebraic and does not construct a Gaussian partition.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-RADIAL-RANK-ONE-DISTANT-TIE
+
+[A radial rank-one Gaussian objective has a distant global tie despite strict simplex local growth](plurality-stability/THREE_CELL_RADIAL_RANK_ONE_COEXISTENCE.md)
+
+**Exact scope:** The compact strictly positive definite planar objective RK1 has an interior parameter where a distant ordinary nonsimplex maximizer ties the simplex. The simplex remains uniformly strictly locally optimal in Gaussian label distance through the parameter interval. At the final parameter an explicit balanced radial partition improves it.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-POSITIVE-REVERSIBLE-KERNEL-DISTANT-TIE
+
+[Pointwise positivity and reversibility do not exclude a distant tie for a modified Gaussian kernel](plurality-stability/THREE_CELL_RADIAL_RANK_ONE_COEXISTENCE.md)
+
+**Exact scope:** For sufficiently small fixed positive r, the radial rank-one perturbation RK4 of r^{-1}S_r can be normalized to a compact strictly positive definite reversible Markov operator with an everywhere-positive kernel. Its simplex keeps uniform measurable local growth through the parameter interval but ties a distant ordinary global maximizer at an interior parameter. The kernel can be chosen real analytic by a bounded radial smoothing.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-COMMON-JUNCTION-QUADRATIC-ARM-COMPARISON
+
+[The unoriented surface comparison loses only quadratically at a common displaced junction](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md)
+
+**Exact scope:** On compact positive-correlation bands, three distinct pair arms starting at one point p have unoriented surface response at least the centered tripod response minus C times |p|^2, with an additional Gaussian truncation error for sufficiently long finite arms. Combined with the strict extrinsic gap this excludes suitable long common-junction right contacts.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-OFF-CENTER-ARM-MOMENT-RIGHT-TIE-EXCLUSION
+
+[A reference-weighted arm moment criterion excludes displaced three-arm right ties](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md)
+
+**Exact scope:** For three distinct infinite pair arms from a common junction, their Gaussian-origin second radial moment weighted by the reference surface-kernel marginal may be compared with the centered tripod. If the weighted moment is no larger than the reference, or the stronger weighted mean sign condition holds, then a nonsimplex balanced maximizer with those arms cannot tie at a correlation approached by simplex-optimal correlations from the right. The geometric criterion does not require a small junction displacement.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-OPTIMIZED-PAIR-SURFACE-ENERGY
+
+[Optimizing the three pair directions gives an exact surface-energy lower bound](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md)
+
+**Exact scope:** With the three pair Mehler surface energies m_ij, the optimum over unit directions constant on each pair is 2 sum m_ii plus sum c_i squared minus the squared minimum resultant length, with c_i=sqrt(m_ij m_ik/m_jk). It is a lower bound for the correlation derivative of actual maximizers and is stronger than the equilateral test whenever the off-diagonal pair energies differ.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-OPTIMIZED-PAIR-SURFACE-STRICT-GAP
+
+[Nonsimplex maximizers have a uniform strict gap above the optimized pair surface energy](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md)
+
+**Exact scope:** On a compact interior correlation band the correlation derivative of a nonsimplex actual balanced planar three-cell maximizer exceeds the optimized constant-pair surface energy by a uniform positive amount. The positive pair mass bound gives compact limiting calibration directions. Noncollinear equality limits are convex maximizers, and collinear limits force monotone parallel layers, both incompatible with a nonsimplex limit.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-BALANCE-ARM-MOMENT-COUNTEREXAMPLES
+
+[Gaussian balance does not force the three-arm moment comparison](plurality-stability/THREE_CELL_ORIGIN_ARM_SURFACE_COMPARISON.md)
+
+**Exact scope:** For each positive fixed correlation balanced connected three-arm affine fans with sufficiently distant vertices fail the arm moment criterion in OA11. A balanced ordinary partition with extra interior interfaces can preserve three regular translated infinite rays that fail the same criterion at arbitrarily small nonzero displacement.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-NO-COMMON-CIRCLE-QUANTITATIVE-FRAGMENTATION
+
+[No common winner circle forces a uniform amount of mass outside a largest component](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_QUANTITATIVE_TOPOLOGY.md)
+
+**Exact scope:** For an actual planar three-cell maximizer with positive masses and no centered circle meeting all strict winners, some pair has the sum of its masses outside its largest components at least its Gaussian radial overlap. In particular some label has a uniform positive mass outside every individual component on compact interior parameter sets.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-NO-COMMON-CIRCLE-UNIFORM-ANNULAR-SEPARATOR
+
+[No common winner circle forces a uniformly wide annular separator for one label](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_QUANTITATIVE_TOPOLOGY.md)
+
+**Exact scope:** For an actual planar three-cell maximizer with positive masses and no common winner circle, some label misses a centered annulus and has positive mass of the same label on both sides. The annular width and two mass lower bounds are uniform on compact positive-correlation bands and compact sets of interior masses.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-NO-COMMON-CIRCLE-LOGARITHMIC-POCKET-COUNT
+
+[Three unbounded labels without a common winner circle force logarithmically many bounded components](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_QUANTITATIVE_TOPOLOGY.md)
+
+**Exact scope:** For an actual planar three-cell maximizer with no common winner circle and all three strict labels unbounded, at most one label has an unbounded connected component. The number of bounded components in B_R is at least the logarithmic lower bound QC4, also with a count restricted to either of any two fixed labels.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-CONDITIONAL-SURFACE-CALIBRATION-GAP
+
+[Independent conditional mass minimization gives a strictly subsharp surface bound at the simplex](plurality-stability/GAUSSIAN_CONDITIONAL_SURFACE_CALIBRATION.md)
+
+**Exact scope:** The unoriented Mehler surface energy factors as the average of conditional quadratic perimeters. A translated noncentered regular tripod has a strictly improving exactly mass-preserving vertex variation for the quadratic perimeter. This produces positive slack for conditional lower bounds depending only on the quotas, including after optimizing common constant pair directions, and the slack is uniformly at least order r at small positive correlations.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-THETA-THICK-FOLD-VISIBILITY
+
+[Both exterior graphs of a stable theta must see thick middle crossings](plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md)
+
+**Exact scope:** For a compact balanced theta maximizing candidate with exterior graph arms, each exterior arm has a positive set of observations whose contracted normal coordinate lies inside a middle crossing interval wider than 2 sqrt(2 log 2) times the noise scale. The visibility measure has a uniform positive lower bound on bounded networks and compact positive-correlation bands.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-THETA-SEPARATED-FOLDS-EXCLUSION
+
+[A width-free separated-crossing test excludes folded theta maximizers](plurality-stability/THREE_CELL_THETA_THIN_FOLD_STABILITY.md)
+
+**Exact scope:** For a compact balanced theta within its junction projection strip, alternating Gaussian crossing pairings have strict positive sign between fibers lying entirely at height at least the noise scale and fibers lying entirely at nonpositive height. Provided one arm is separated this way from both others apart from sufficiently small exceptional base measure on a fixed disk and compact correlation band, a balanced translation cut has negative second variation. No width bound is required on good fibers.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-CONSTANT-PAIR-SURFACE-WETTING-OBSTRUCTION
+
+[A thin third-label layer lowers both constant-direction surface bounds below the simplex](plurality-stability/THREE_CELL_PAIR_SURFACE_WETTING_OBSTRUCTION.md)
+
+**Exact scope:** For every positive correlation a balanced ordinary planar partition can have equilateral and optimized constant-pair Mehler surface energies strictly below the centered simplex. A thin third phase on a short distant simplex segment realizes the explicit surface measure limit PW1. Both functionals fail lower semicontinuity in Gaussian label distance; directions varying along the surfaces recover the simplex tensor and can give strictly greater energy in this example.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-SURFACE-LOWER-SEMICONTINUITY
+
+[The adaptive surface certificate is lower semicontinuous and coercive in Gaussian label distance](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_VARIATIONAL_PROBLEM.md)
+
+**Exact scope:** For finite Gaussian perimeter ordinary planar partitions the square root of the adaptive Mehler direction-field energy equals a supremum of metric weighted perimeter tests, each with the Gaussian bulk calibration formula AS2. The extended functional is lower semicontinuous, bounds Gaussian perimeter strictly for finite positive perimeter, and attains its direction-field supremum when its energy is finite.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-SURFACE-MINIMIZER-PROFILE
+
+[The balanced adaptive surface problem has ordinary minimizers and a continuous strictly increasing value](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_VARIATIONAL_PROBLEM.md)
+
+**Exact scope:** For every positive correlation the planar balanced adaptive surface functional attains its minimum on ordinary partitions. Compactly supported interfaces suffice to approximate its value, the minimum profile is continuous and strictly increasing, and minimizers converge to the simplex orbit as the correlation tends to zero. Rigidity for intermediate correlations would exclude nonsimplex right ties.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-SURFACE-SIMPLEX-TAGGED-COMPACTNESS
+
+[Adaptive energy convergence at the simplex forces convergence of the individual pair surfaces](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_VARIATIONAL_PROBLEM.md)
+
+**Exact scope:** At fixed positive correlation, convergence to the simplex in label distance together with adaptive energy convergence forces locally weak tagged interface convergence, convergence of all Gaussian pair perimeters, tightness of the smoothed tails, and subsequential strong convergence of attaining tensors to a simplex normal tensor up to an orthogonal map on its directions.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-PURE-EXTERIOR-CONFINEMENT
+
+[A sufficiently small exterior mass forces exact bounded support of a maximizing label](plurality-stability/THREE_CELL_PURE_EXTERIOR_COMPACTNESS.md)
+
+**Exact scope:** On compact positive interior parameter sets, each fixed radius has a positive tail-mass threshold with the property that any actual planar three-cell maximizing label below that threshold is absent beyond a common larger radius, including adjusted-score ties. In particular nearby actual maximizers inherit a uniformly confined pure exterior from any reference partition with that property.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-BINARY-CIRCLE-RIGHT-TIE-EXCLUSION-THROUGH-73-100
+
+[Binary circular slices are impossible at a right tie through correlation 73/100](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_MOMENT_SLOPE.md)
+
+**Exact scope:** For r in (0,73/100], any ordinary balanced planar partition with at most two labels on almost every centered circle and stability equal to the simplex has strictly larger correlation derivative. Exact rational bounds on the known simplex formula close the slope inequalities. This excludes that class of right contacts and does not extend the unconditional simplex-optimal interval.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-RIGHT-TIE-QUANTITATIVE-COMMON-CIRCLE-MASS
+
+[A right tie through correlation 73/100 requires a uniform amount of three-label angular overlap](plurality-stability/THREE_CELL_NO_COMMON_CIRCLE_MOMENT_SLOPE.md)
+
+**Exact scope:** On any compact interior correlation band in (0,73/100], an ordinary balanced planar partition tying the simplex with no larger slope has a uniform positive lower bound on the radial average of its smallest label fraction, and on the radial measure of circles with uniformly positive mass in all three labels. The proof repairs nearly binary slices at exact balance and uses strict coupled moment margins.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-NORMAL-SATURATION
+
+[Normal saturation of the adaptive energy is equivalent to a scalar extra-coordinate stability inequality](plurality-stability/THREE_CELL_ADAPTIVE_NORMAL_SATURATION.md)
+
+**Exact scope:** For ordinary finite-energy planar three-cell partitions with three direction coordinates, the normal tensor attains the adaptive surface supremum precisely when the smoothed score gradients are nonnegative normal multiples and the scalar first extra-coordinate form is nonnegative for all bounded tagged speeds. The gradient multipliers are positive almost everywhere on the active pair interfaces. The result allows different score constants on separate smooth pair components.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-SATURATION-COMPLETE-ADJACENCY
+
+[Normal saturation forces complete adjacency without assuming global optimality](plurality-stability/THREE_CELL_ADAPTIVE_NORMAL_SATURATION.md)
+
+**Exact scope:** If the three masses are positive and the planar partition satisfies the normal saturation criterion, then all three pair interfaces have positive Gaussian surface measure. Restricting the scalar form to signed translations and taking absolute values rules out a two-edge adjacency graph.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-FIXED-TEST-OBSTRUCTION
+
+[Any fixed finite family of adaptive dual tests has a uniformly bounded balanced minimum](plurality-stability/THREE_CELL_ADAPTIVE_NORMAL_SATURATION.md)
+
+**Exact scope:** For m unit-ball Gaussian L2 tests chosen at a fixed positive correlation, there are ordinary balanced three-cell radial shell partitions for which the infimum of the largest of their tested surface weights is at most 2*sqrt(m). The bound is uniform in the correlation and number of direction coordinates. No finite family of uniformly bounded cardinality can certify the diverging adaptive simplex scale near one.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-SMOOTH-SURFACE-COERCIVITY
+
+[The equilateral surface Hessian is coercive at the simplex along balanced smooth three-arm deformations](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_SMOOTH_SECOND_VARIATION.md)
+
+**Exact scope:** For every interior positive correlation, the Gaussian simplex equilateral pair surface Hessian controls the squared half-Gaussian H1 norm of the balanced arm speeds modulo common rotation, with constants uniform on compact bands. The proof includes motion of the junction and implies positive quadratic growth along a fixed smoothly transported path with nonrotational normal speed for the adaptive squared energy. The statement concerns those smooth jets and does not compare arbitrary perturbed interfaces.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-REGULAR-COMPACT-STATIONARY-CHART
+
+[The regular compact stationary equations reduce to a finite-dimensional analytic system](plurality-stability/THREE_CELL_REGULAR_COMPACT_BRANCH.md)
+
+**Exact scope:** Near an actual planar balanced maximizer with a pure exterior and a finite regular transverse maximal-tie network, the ordinary balanced score-winner equations are represented by a finite-dimensional analytic zero set with analytic stability. The Fredholm reduction allows a degenerate constrained Hessian. Nontransverse and dormant maximal ties are outside this chart.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-REGULAR-COMPACT-POWER-LAW-BRANCH
+
+[Strict failure accumulating at a regular compact tie has a one-sided power-law lower bound](plurality-stability/THREE_CELL_REGULAR_COMPACT_BRANCH.md)
+
+**Exact scope:** If strictly improving balanced planar maximizers converge from one side to a regular compact tied maximizer, there is a whole short interval on that side where the balanced optimal value exceeds simplex stability by at least a positive rational power of the distance to the tie times a constant. For an accumulating sequence of exact ties, the same construction gives a stationary simplex-value branch on that side.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ALL-TIES-REGULAR-COMPACT-VALUE-GERM
+
+[The optimal value has convergent one-sided Puiseux germs if every nonsimplex tie is regular compact](plurality-stability/THREE_CELL_REGULAR_COMPACT_BRANCH.md)
+
+**Exact scope:** At an interior simplex-optimal correlation where every nonsimplex balanced maximizer has a pure exterior and a finite regular transverse maximal-tie network, the global planar gap admits exact convergent Puiseux expansions on both sides. This uses uniform measurable simplex isolation and maximizer compactness to capture the remaining maxima in finitely many stationary charts. On a strict side the chart also gives an analytic branch of actual maximizers after reparametrization, and the derivative of the gap gives their fixed-partition slope difference. It leaves existence and regularity of a nonsimplex tie open.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-PURE-EXTERIOR-RIGHT-TIE-RADIUS
+
+[A right tie with a pure exterior has an explicit minimum confinement radius](plurality-stability/THREE_CELL_PURE_EXTERIOR_COMPACTNESS.md)
+
+**Exact scope:** If only one label of a balanced planar partition appears outside a centered disk, the first Hermite energy is strictly below the simplex first moment times the square of the truncated planar Gaussian radial first-moment ratio. At a right tie the Hermite slope comparison gives an explicit lower radius threshold wherever w(r)>0. A related strict bound holds when a single label is confined to the disk. No connectedness assumption is used.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-MINIMIZER-PRESSURE-STATIONARITY
+
+[Every balanced adaptive surface minimizer satisfies a shared weighted first variation with two mass pressures](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_STATIONARITY.md)
+
+**Exact scope:** For any finite-energy ordinary planar balanced minimizer, compact smooth ambient flows have an envelope derivative computed from the attaining Hilbert tests. A single probability mixture of these tests gives a stationary metric perimeter with two independent mass pressures against all compact smooth vector fields. No assumed interface regularity is needed.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-ATTAINING-TEST-POSITIVE-DENSITY
+
+[Attaining adaptive tests have a reciprocal weight bound and cannot vanish at positive interface density](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_STATIONARITY.md)
+
+**Exact scope:** For every finite-energy planar partition and every attaining rank-two dual test, the inverse of any tagged weight is locally surface-integrable with a bound uniform over the attaining tests. Rotating the optimal unit directions within a pair yields a scalar inequality on narrow orientation sectors. At any point of positive lower one-dimensional density of a pair interface, all attaining weights of that pair are bounded away from zero.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-JUNCTION-POSITIVE-TENSION-BALANCE
+
+[Regular junctions of adaptive minimizers obey weighted force balance with positive tensions](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_STATIONARITY.md)
+
+**Exact scope:** At a planar adaptive minimizer whose interface at a finite junction already consists of three C2 arcs up to the common vertex, the positive averaged tensions and outward tangents balance exactly; on existing smooth pair arcs the same mixture satisfies an oriented curvature-pressure equation.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-TWO-PHASE-ANALYTIC-REGULARITY
+
+[Two-phase adaptive minimizing interfaces are analytic at positive-density points](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TWO_PHASE_REGULARITY.md)
+
+**Exact scope:** At a positive lower one-dimensional density point of a tagged interface with a two-phase open neighborhood, an arbitrary balanced planar adaptive minimizer is an ordinary perimeter almost-minimizer there with local error O(t^2). Exterior small mass repairs and the reciprocal bound make the attaining weights of nearby competitors uniformly positive there. Euclidean almost-minimizer regularity followed by the analytic mixture pressure equation gives an analytic graph. This excludes no arbitrary three-phase junction topology.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-FIXED-POINT-LINEAR-PERIMETER-UPPER
+
+[Adaptive minimizers have a fixed-center linear perimeter upper bound](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENTS.md)
+
+**Exact scope:** At each finite point of any balanced ordinary planar adaptive minimizer, the total interface length in a small ball is at most a fixed-point constant times the radius. Any tag whose weight vanishes at that point for some attaining test contributes o(t), by reciprocal integrability. Arbitrary local competitors satisfy a comparison with an additive o(t) term.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-HOMOGENEOUS-TANGENTS
+
+[Adaptive minimizers have homogeneous ordinary tangent partitions](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENTS.md)
+
+**Exact scope:** Averaging attaining tests gives a weighted varifold whose first variation has a local L2 density and a radial monotonicity inequality. The local perimeter upper bound gives BV compactness. Every cell blow-up limit is conical, and a pure tangent occurs exactly when the weighted density is zero.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-SUPPORT-DENSITY-LOWER
+
+[Adaptive minimizers have a linear lower perimeter bound on their entire support](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENTS.md)
+
+**Exact scope:** The lower bound for ordinary perimeter in a ball centered on the total interface support is uniform on compact sets. A low-density ball would yield a smaller circle with zero rectifiable slicing count and comparable interior perimeter, so radial first variation would force a fixed amount of the locally integrable reciprocal weight on an arbitrarily small ball. The weighted density is positive and every tangent is nonconstant at every support point.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-TANGENT-PATCH-COMPARISON
+
+[Tangent patches compare all attaining frozen metrics and retain tagged perimeter excess](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md)
+
+**Exact scope:** The exact first-order adaptive increment for a local competitor pasted into a tangent cone equals the maximum over all reference attaining tests of the frozen metric difference between the pasted perimeter and the prelimit tag measures, multiplied by the planar Gaussian density at the base point. Sharp tests for the cone replacement are positive on every tag used by a nonconstant tangent.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-LINE-OR-TRIPOD-TANGENTS
+
+[Every interface tangent of an adaptive minimizer is a straight line or a three-label tripod](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md)
+
+**Exact scope:** At any support point of a balanced planar adaptive minimizer, a cone with two bent rays or at least four rays admits a trace-preserving shortening of one or more tags without any increase on the others. The exact patch comparison excludes all such cones. The only ordinary tangents are a straight line between two labels and a tripod with all three labels.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-TRIPOD-TAGGED-CONVERGENCE
+
+[Tripod tangents have strict tensions and exact tagged-interface convergence](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md)
+
+**Exact scope:** Displacing the tripod vertex in a tangent patch yields a convex combination of sharp calibrations with positive weights in force balance. Its triangle inequalities are strict, forcing the prelimit tagged measures to converge to the ordinary tripod measures. The fixed pressure mixture also balances the three tangent rays with strictly positive triangle tensions.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-LINE-HIDDEN-LAYER-RIGIDITY
+
+[The only tagged excess at a line tangent is a collapsed third-phase layer](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md)
+
+**Exact scope:** At an i-j line tangent each prelimit pair measure is supported on the line. If the tagged limit differs from the ordinary line, it has the exact form eta_ij=ell-xi, eta_ik=eta_jk=xi with 0<=xi<=ell, where k is the absent label and ell is the line length measure. Every sharp attaining test places its k score vector strictly between the other two at the base point.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-TANGENT-TYPE-AND-TRIPOD-ISOLATION
+
+[Tripod points are isolated and each adaptive support point has a fixed tangent type](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_CLASSIFICATION.md)
+
+**Exact scope:** At any support point all ordinary cell tangents have the same line tag or the same tripod label order and opening angles up to rotation. Tripod points are isolated from other tripod points. The rescaled interface supports converge locally as closed sets to the line or tripod along the corresponding subsequences, even if a line carries a collapsed layer.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-SINGLE-CELL-REFLECTION-NO-SMOOTH-MIRROR
+
+[An origin reflection of one maximizing cell excludes a smooth one-sided boundary on the mirror](plurality-stability/THREE_CELL_SINGLE_CELL_REFLECTION_BOUNDARY.md)
+
+**Exact scope:** For any actual planar Gaussian three-cell maximizer with positive prescribed masses, invariance of a single cell under a reflection through the Gaussian origin allows mass-preserving orbit sorting of the other two labels. Their strict score derivative across the mirror contradicts a one-sided C1 boundary of the invariant cell at a mirror point. No symmetry of the full partition is assumed.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-SINGLE-CELL-REFLECTION-CONVEX-CORNERS
+
+[Bounded convex reflection-invariant maximizing cells have two noncollinear mirror corners](plurality-stability/THREE_CELL_SINGLE_CELL_REFLECTION_BOUNDARY.md)
+
+**Exact scope:** If a single actual maximizing cell has a bounded convex representative invariant under an origin reflection, both endpoints of its intersection with the mirror are genuine transverse triple junctions and the cell aperture is smaller than pi. The aperture loss is uniform for bounded junctions on compact interior parameter sets.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-MAXIMIZER-UNIFORM-DISK-EXCLUSION
+
+[Actual three-cell maximizers stay uniformly away from individual disk cells](plurality-stability/THREE_CELL_SINGLE_CELL_REFLECTION_BOUNDARY.md)
+
+**Exact scope:** No cell of an actual planar positive-correlation three-cell maximizer is a disk of any center. On compact interior correlation and mass parameter sets this exclusion gives a uniform positive Gaussian symmetric-difference distance to all disks for every cell. A disk sequence escaping to infinity could only yield a halfplane at nontrivial masses, and this is excluded by individual noncylindricity.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-BOUNDED-WINNER-COMPONENT-POSTERIOR-DEGREE-ZERO
+
+[Each bounded strict-winner component has zero posterior degree in its winner wedge](plurality-stability/THREE_CELL_POSTERIOR_DEGREE_AND_TRIPLE_BISECTOR.md)
+
+**Exact scope:** For a bounded connected component of one adjusted-score winner, every regular score value in its open winner wedge has signed Jacobian count zero inside the component. If every triple point in its closure is transverse, it has equal numbers of incident triple points of the two orientations. This applies directly to actual balanced maximizers without an assumption that all cells are bounded.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-TRIPLE-POINTS-CONTRACTED-BISECTOR-STRADDLING
+
+[Two maximal triple points force every label to straddle the contracted Gaussian bisector](plurality-stability/THREE_CELL_POSTERIOR_DEGREE_AND_TRIPLE_BISECTOR.md)
+
+**Exact scope:** Subtracting the conditional source densities from distinct equal-score triple observations gives an exact signed hyperbolic-sine balance of each label about the contracted midpoint line. On compact positive bands and bounded observation sets each label has uniformly positive conditional mass away from that line on both sides, even for arbitrarily close distinct triples.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-EQUAL-RADIUS-TRIPLES-REFLECTION-TRIANGLE
+
+[The reflection prescribed by equal-radius triple points realizes all three label mismatch types](plurality-stability/THREE_CELL_POSTERIOR_DEGREE_AND_TRIPLE_BISECTOR.md)
+
+**Exact scope:** At actual balanced maximizers, reflecting one of two distinct equal-radius maximal triple points to the other forces all three unordered mismatch types on positive Gaussian measure for that specific centered reflection. Two-type sign sorting and score equality would otherwise force every label to be reflection invariant, contradicting full moment rank.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-UNRESTRICTED-DIRECTION-ADAPTIVE-ATTAINMENT
+
+[Unrestricted Hilbert directions attain the adaptive supremum and the balanced shape minimum](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md)
+
+**Exact scope:** On every finite-energy planar partition, the unrestricted adaptive direction problem admits a positive trace-class Gram formulation, with attainment using absolute Mehler kernel integrability. The supremum of finite-rank functionals is lower semicontinuous and coercive in Gaussian perimeter and gives an attained ordinary balanced minimum.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-UNRESTRICTED-DIRECTION-UNIQUE-SCALAR-DUAL
+
+[The unrestricted adaptive functional has a unique scalar diagonal certificate](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md)
+
+**Exact scope:** Unrestricted direction rank permits an orthogonal perturbation yielding a scalar diagonal majorant of the tagged Mehler operator, with minimum integral equal to the squared adaptive energy and a unique integrable minimizer. For an actual planar noise-stability maximizer or the simplex this value equals the correlation derivative.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-UNRESTRICTED-DIRECTION-WEIGHT-RIGIDITY
+
+[The scalar diagonal quantitatively controls the weights of near-attaining tests](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md)
+
+**Exact scope:** For any dual unit-ball test, the squared difference of its tag weights from the unique weights, with reciprocal diagonal weighting, is bounded by twice its normalized dual deficit. In particular all attaining test weights coincide on the tagged supports.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-UNRESTRICTED-COMPACT-OPTIMAL-DIRECTION-RANK
+
+[Compact interfaces have finite optimizing direction rank in the unrestricted problem](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md)
+
+**Exact scope:** The unrestricted scalar diagonal has locally integrable reciprocal on each interface. For compactly supported interfaces the conjugated Mehler operator is Hilbert-Schmidt. Every attaining vector field takes values in a finite-dimensional direction subspace whose dimension is bounded by the eigenvalue-one multiplicity.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-UNRESTRICTED-ADAPTIVE-FROZEN-METRIC-COMPARISON
+
+[At full tagged density the unrestricted minimizer almost minimizes one frozen metric](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md)
+
+**Exact scope:** At a point where each tag has positive lower one-dimensional density, its frozen weights are positive. An unrestricted adaptive minimizer obeys a fixed-metric perimeter comparison with error O(t^(3/2)) for local patches at radius t, including comparable nearby centers. The proof optimizes the quantitative test deficit after exact exterior mass repair.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-UNRESTRICTED-ADAPTIVE-COLLINEAR-TEST-EXAMPLE
+
+[Balanced three-tag competitors can have only collinear unrestricted optimizing tests](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_UNRESTRICTED_DIRECTIONS.md)
+
+**Exact scope:** There exist ordinary balanced compact-interface partitions with all three tags active for which every unrestricted maximizing field has rank one at all sufficiently small positive correlations. A dominant tag absorbs the negative block in the signed scalar quadratic form. Strict triangle tensions cannot be inferred from rank freedom at arbitrary partitions.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-SHARP-TANGENT-PRESSURE-SELECTION
+
+[The adaptive pressure law can be selected from tests sharp at chosen tangents](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_PRESSURE.md)
+
+**Exact scope:** For a fixed adaptive tangent subsequence, combine its small patch with a compact volume-tangent ambient flow to obtain a pressure law supported on the attaining equality tests of the tangent replacement. The selection works for finite and countable collections along a common diagonal scale subsequence. At a collapsed line the chosen law has zero triangle deficit and gradient, with Hessian equal to an averaged squared transverse score separation.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-TOUCHING-LAYER-CURVATURE-TEST
+
+[A smooth collapsed layer must satisfy a curvature bound on its triangle-deficit Hessian](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_TANGENT_PRESSURE.md)
+
+**Exact scope:** For two C2 sheets touching a line with common tangent and collapsing a third phase on both sides, a volume-corrected merged patch yields an explicit bound on tangential triangle-deficit curvature in terms of the squared curvature difference and the two frozen weights of some sharp attaining test. Equal curvature forces vanishing first transverse score separation for such a test.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-GAUSSIAN-STATIONARY-REGULAR-PATCH-LOCAL-GROWTH
+
+[Small Gaussian relabeling patches at regular top ties are strictly suboptimal](plurality-stability/THREE_CELL_STATIONARY_PATCH_CONFINEMENT.md)
+
+**Exact scope:** For a Gaussian winner-stationary planar partition whose top-tie pair gradients are nonzero on the compact patch centers, the small-ball score sublevels are bounded by C times the radius times the score width. This gives a finite weighted Mehler matrix criterion excluding any balanced ordinary or fractional change confined to the patches. In particular local relabeling near finitely many genuine junctions cannot improve stability solely from their posterior orientation signs.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-SYMMETRIC-CELL-MIRROR-COMPLETION
+
+[Zero unadjusted mirror contrast forces full transposition in a symmetric balancing problem](plurality-stability/THREE_CELL_REFLECTION_MIRROR_COMPLETION.md)
+
+**Exact scope:** At an actual three-cell Gaussian maximizer with one reflection-invariant cell and the other two equal masses, exact equality of the two unadjusted scores along the centered mirror forces full label transposition. A constant adjusted mirror tie with nonzero pressure difference satisfies the quantitative necessary bias inequality MC6 for same-label orbits.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-BOUNDED-SYMMETRIC-CELL-PARALLEL-ORBIT-TAILS
+
+[A bounded reflection-invariant maximizing cell forces nontransposed orbits at both parallel infinities](plurality-stability/THREE_CELL_REFLECTION_MIRROR_COMPLETION.md)
+
+**Exact scope:** At actual balanced planar maximizers, if the invariant cell under an origin reflection is bounded, the same-label complement orbits have positive Gaussian measure arbitrarily far in both directions parallel to the mirror. A one-sided absence gives a binary exterior ray, zero mirror contrast by analytic convolution injectivity, and full transposition, contradicting the monotone graph reduction.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-BISECTED-CELL-ONE-SIDED-BINARY-EXTERIOR
+
+[A bisected cell at a maximizer cannot be bounded with an eventual one-sided binary exterior](plurality-stability/THREE_CELL_REFLECTION_MIRROR_COMPLETION.md)
+
+**Exact scope:** If a centered line Gaussian-bisects one label and one half-plane in the parallel coordinate is eventually split into the other two labels above and below that line, the stationary scores give exact mirror contrast equality. Mass-preserving orientation forces the two labels to be globally separated by the line, so every strict-winner component is unbounded.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-REFLECTION-SCHUR-MISMATCH-OBSTRUCTION
+
+[An odd Mehler Schur residual bounds mismatch concentration at equal posterior observations](plurality-stability/THREE_CELL_REFLECTION_SCHUR_MISMATCH.md)
+
+**Exact scope:** A fixed centered reflection of a balanced ordinary partition has a feasible mass-preserving orientation change whose noise-stability gain is bounded below by the explicit Schur residual formula. At an actual maximizer with equal posteriors at a mirrored pair, the necessary normalized odd-kernel mismatch spread excludes all mismatches confined to h_p>3/sqrt(13). This applies to distinct equal-radius triple points.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-EQUAL-POSTERIOR-DIRECTIONAL-SLICE-OVERLAP
+
+[Duplicated planar posterior vectors force overlap of every label pair along their displacement direction](plurality-stability/THREE_CELL_REFLECTION_SCHUR_MISMATCH.md)
+
+**Exact scope:** For any actual balanced planar three-cell maximizer and distinct observations with identical posterior vectors, each label pair occurs together on positive-length sections of a positive transverse-measure set of lines parallel to their displacement. Lift the maximizer to a cylinder, choose a tilted origin reflection exchanging the lifted observations, and use the two-type comparison and full planar rank.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-UNIQUE-NORMAL-FRAME-AT-MAXIMIZER
+
+[Actual three-cell noise maximizers have a unique adaptive normal Gram frame with a quadratic gap](plurality-stability/THREE_CELL_ADAPTIVE_AT_NOISE_MAXIMIZERS.md)
+
+**Exact scope:** For any actual planar positive-correlation three-cell noise-stability maximizer with positive masses, every unrestricted or rank-two adaptive optimizer is the physical normal field followed by a single linear isometric embedding. The normal support has at least three unoriented lines, and the first extrinsic block yields a quantitative square-root distance bound to the isometric frames.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-QUADRATIC-DEPARTURE-AT-NOISE-MAXIMIZER
+
+[Adaptive energy and noise correlation derivative agree to first shape order at an actual maximizer](plurality-stability/THREE_CELL_ADAPTIVE_AT_NOISE_MAXIMIZERS.md)
+
+**Exact scope:** For an actual Gaussian three-cell maximizer and any compact smooth ambient shape path through it, the difference between squared adaptive energy and the correlation derivative at the moved partition is nonnegative and O(t^2), for both two directions and unrestricted rank. The frame gap and global reciprocal normal multiplier give a uniform quadratic upper envelope.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-AND-NOISE-DOUBLE-STATIONARITY
+
+[Simultaneous adaptive stationarity at a noise maximizer forces the mixed dilation constraint](plurality-stability/THREE_CELL_ADAPTIVE_AT_NOISE_MAXIMIZERS.md)
+
+**Exact scope:** At an actual balanced planar three-cell noise-stability maximizer, balanced shape stationarity of either two-rank or unrestricted adaptive energy is equivalent to vanishing mixed shape-correlation pairing. Equal cell radial second moments then force a simplex. With unequal moments the two-dimensional mixed dilation resolvent remains a necessary condition.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-BOUNDED-SPECTATOR-TWO-STRAIGHT-PAIR-ARMS
+
+[A straight pair segment with a bounded spectator forces two exterior rays and disconnectedness](plurality-stability/THREE_CELL_BOUNDED_SPECTATOR_STRAIGHT_PAIR.md)
+
+**Exact scope:** At an actual balanced planar maximizer with one bounded spectator, any straight segment of the remaining pair continues to a whole affine adjusted-score tie line with genuine exterior rays in both directions. Every strict-winner component of those labels lies to one side of that line, and at least one of their winner sets is disconnected.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-BOUNDED-SPECTATOR-STRAIGHT-PAIR-EXTERIOR-STRIP
+
+[A binary forward exterior confines wrong-side labels and fixes all straight pair walls](plurality-stability/THREE_CELL_BOUNDED_SPECTATOR_STRAIGHT_PAIR.md)
+
+**Exact scope:** When one label is bounded and a nonparallel half-plane carries a pure binary split of the other labels by an affine line, their exact conditional slice contrast is constant. If one of the two labels is already on its correct side, all wrong-side mass of the other lies within the spectator's bounded parallel projection and both parallel tails are binary. Any straight interface segment of the same pair lies on the original line.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-BOUNDED-SPECTATOR-ASYMPTOTIC-BINARY-STRAIGHTENING
+
+[Uniform local asymptotic binary agreement forces an exact centered exterior](plurality-stability/THREE_CELL_BOUNDED_SPECTATOR_STRAIGHT_PAIR.md)
+
+**Exact scope:** For a bounded spectator at an actual maximizer, vanishing local Euclidean disagreement from a centered binary split uniformly in unit balls of a forward half-plane gives uniform convergence of the pair score. This forces zero pair pressure, a single bounded interface graph, and then an exact centered binary exterior. A centered bisection of the bounded cell is ruled out there.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-AFFINE-BISECTION-PRESSURE-CRITERION
+
+[The exact affine bisection penalty is a scalar posterior slice energy](plurality-stability/THREE_CELL_BOUNDED_SPECTATOR_STRAIGHT_PAIR.md)
+
+**Exact scope:** At a whole affine pair tie line bisecting the complement of a spectator in Gaussian measure, orienting the labels by the line strictly improves the nonconstant transverse kernel part unless already separated. The constant-term change is the explicit BS8 pressure penalty. If it is nonnegative the labels are separated globally, excluding a bounded spectator.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-REFLECTION-DIRECTED-FIVE-TYPE-WITNESS
+
+[Equal-posterior observations force at least five directed reflection types](plurality-stability/THREE_CELL_REFLECTION_DIRECTED_TYPES.md)
+
+**Exact scope:** At an actual maximizer the active directed roots of any centered reflection form a connected induced hexagon subgraph, since a disconnected component flip has positive gain. At equal-posterior observations exchanged by the reflection the positive anchored weights sum to the zero root vector, forcing at least five directions. A tilted cylinder lift gives at least five positive-measure ordered slice relations for any duplicated planar posterior displacement.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-POSTERIOR-NULL-DIRECTION-FIVE-ORDER-WITNESS
+
+[Every posterior null direction forces five ordered slice relations](plurality-stability/THREE_CELL_REFLECTION_DIRECTED_TYPES.md)
+
+**Exact scope:** For any actual balanced planar three-cell maximizer, directed slice relations are connected in each direction and the posterior directional derivative has a strictly positive coefficient on every active root. At most four orders is equivalent to one common upper or lower half-line label on almost every fiber. A bounded strict-winner component forces an interior posterior critical direction, which therefore has at least five active orders.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-COMPACT-DISCREPANCY-PROPER-POSTERIOR-DEGREE
+
+[Compact simplex discrepancies have degree one and an unbounded preimage of a regular bounded-component score](plurality-stability/THREE_CELL_REFLECTION_DIRECTED_TYPES.md)
+
+**Exact scope:** When an ordinary actual maximizer agrees with a labeled simplex outside a compact set, its posterior map into the open probability triangle is proper and has degree plus one by homotopy to the smoothed simplex support function. A globally regular posterior value attained in a bounded winner component has an opposite-sign preimage there and another preimage in an unbounded component of the same label.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-NEAR-ONE-MEHLER-SCALE-COMPACTNESS
+
+[Bounded scaled adaptive energy gives Gaussian label compactness near correlation one](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md)
+
+**Exact scope:** For ranks at least one, including variable and unrestricted rank, any sequence with bounded sqrt(1-r^2) times the squared adaptive energy is precompact in Gaussian label measure. The proof uses local majority grids at the Mehler scale, the positive scalar boundary energy, and planar BV compactness.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-SHARP-NEAR-ONE-PERIMETER-LIMINF
+
+[The adaptive high-correlation lower limit has the sharp Gaussian perimeter coefficient](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md)
+
+**Exact scope:** For Gaussian label convergent ordinary partitions as r tends to one, the lower limit of sqrt(1-r^2) times squared adaptive energy is at least sqrt(2/pi) times the Gaussian perimeter of the limit, already for scalar directions. The proof extracts near-diameter paths by the planar Jordan decomposition and localizes the label tensor using independent patch signs.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-NEAR-ONE-SHARP-MINIMUM-PROFILE
+
+[The adaptive minimum has a sharp high-correlation value and simplex label convergence](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md)
+
+**Exact scope:** At every direction rank at least one the balanced adaptive squared minimum times sqrt(1-r^2) tends to 3/(2*pi), including variable ranks. All balanced almost-minimizers of the scaled energy approach the simplex orbit in Gaussian label measure. This also applies to planar right-contact maximizers approaching one.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-SMALL-R-TAGGED-MOMENT-COMPACTNESS
+
+[Small-correlation near-minimal adaptive energy controls tagged Gaussian first moments](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_LOW_CORRELATION_SLOPE.md)
+
+**Exact scope:** For ranks at least two and squared adaptive energy at most the simplex value plus o(r), balanced partitions converge along aligned subsequences to simplex in Gaussian label measure and their tagged Gaussian surface first moments converge. Tail cutting with exact mass repair and one cosh Mehler test yields uniform integrability.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-SMALL-R-SHARP-FIRST-ORDER-PROFILE
+
+[The balanced adaptive minimum has the simplex's exact first-order small-correlation slope](plurality-stability/THREE_CELL_ADAPTIVE_SURFACE_LOW_CORRELATION_SLOPE.md)
+
+**Exact scope:** Uniformly for ranks at least two, the balanced squared adaptive minimum is the simplex perimeter squared plus 9/(8*pi^2) times r plus o(r). Nearly sharp competitors have perimeter excess o(r) and squared tagged mass imbalance o(r), by the constant and degree-one Hermite energies of the equilateral direction field.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-ADAPTIVE-HIGH-R-PERIMETER-NONCOMPACTNESS
+
+[Sharp near-one adaptive energy does not imply strict perimeter convergence](plurality-stability/THREE_CELL_ADAPTIVE_HIGH_R_LAYER_COUNTEREXAMPLE.md)
+
+**Exact scope:** A family of ordinary balanced partitions converging to the simplex has the asymptotically minimal unrestricted adaptive energy near one, but a strict excess in limiting Gaussian perimeter. A thin rapidly alternated third-label film on a finite simplex ray keeps the optimized local directional tensor norm of the unmodified wall when its occupancy is below one third.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-ALL-CELL-ADAPTIVE-SHARP-HIGH-CORRELATION-GAMMA-LIMIT
+
+[The adaptive surface energy has a sharp Gaussian perimeter limit for every fixed cell count](plurality-stability/GAUSSIAN_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md)
+
+**Exact scope:** In fixed finite dimension and for any finite number of cells, scaled squared adaptive surface energies have compact bounded-energy sequences and Gamma-converge in label distance to sqrt(2/pi) times Gaussian cluster perimeter, allowing any sequence of direction ranks at least one. Recovery can enforce the exact prescribed masses. In admissible dimensions the sharp minima and limiting simplicial orbits follow.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-ALL-CELL-ADAPTIVE-NORMAL-SATURATION-AT-MAXIMIZERS
+
+[The adaptive interface energy equals the correlation derivative at every actual maximizer](plurality-stability/GAUSSIAN_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md)
+
+**Exact scope:** For any fixed cell count, positive prescribed masses, admissible dimension and positive correlation, the normal frame attains the unrestricted adaptive direction supremum. Its squared energy equals the scalar correlation derivative. On moving actual maximizers the scaled derivative attains the sharp near-one perimeter coefficient.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-ALL-CELL-ADAPTIVE-SINGLE-TAG-RESIDUAL-SATURATION
+
+[Sharp adaptive sequences have vanishing smoothed interface defects at single-tag limits](plurality-stability/GAUSSIAN_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md)
+
+**Exact scope:** Near a limiting region with interface tag i,j only, sequences saturating the adaptive perimeter liminf have vanishing scaled posterior isoperimetric, normal-cancellation and unmatched incident-tag energies. Smoothed tags between two exterior labels have vanishing scaled energy. This holds even for scalar direction rank.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-ALL-CELL-ADAPTIVE-CONDITIONAL-TWO-PHASE-LIMIT
+
+[Transition-weighted conditional profiles of moving maximizers are two-phase at regular limiting facets](plurality-stability/GAUSSIAN_ADAPTIVE_SURFACE_HIGH_CORRELATION_LIMIT.md)
+
+**Exact scope:** For actual maximizers at fixed positive masses near one, the conditional partition at transition centers of a single-tag limiting facet tends, in the scaled smoothed-perimeter weighting, to complementary halfspaces with the incident labels. This weighting captures positive facet contributions in the limit.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-ALL-CELL-SHARP-MOVING-PERIMETER-ANISOTROPIC-TRANSFER
+
+[Sharp moving Gaussian interface measures persist under proportional anisotropic noise](plurality-stability/GAUSSIAN_SMALL_NOISE_HERMITE_SPECTRUM.md)
+
+**Exact scope:** In fixed dimension, a moving ordinary partition sequence attaining the sharp perimeter bound at one noise scale also has sharp tagged disagreement at every proportional positive definite matrix noise length. The interface contribution is its Gaussian measure weighted by the square root of the normal variance.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-ALL-CELL-SMALL-NOISE-HERMITE-SPECTRUM
+
+[Limiting facet normals determine the moving high-degree Hermite law](plurality-stability/GAUSSIAN_SMALL_NOISE_HERMITE_SPECTRUM.md)
+
+**Exact scope:** At sharp-perimeter moving sequences near one, the rescaled label-coefficient measures on Hermite multi-indices converge to an explicit power-law radial density on the rays of squared coordinates of the interface normals. This gives an exact total-degree tail coefficient and convergence of every fixed rescaled derivative at positive proportional scales.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-ALL-CELL-MAXIMIZER-BIPARTITE-DELETION-NORMAL-RANK
+
+[Deleting interfaces to make a bipartite adjacency graph forces a normal-rank bound](plurality-stability/GAUSSIAN_MAXIMIZER_ADJACENCY_NORMAL_RANK.md)
+
+**Exact scope:** At an actual positive-correlation noise maximizer, if deleting interface tags leaves a bipartite graph, the deleted normals span all but at most one active direction, even when the retained graph is disconnected. If the deletion isolates a label the deleted normals span the full active space. Compression gives a one-dimensional kernel per retained component, and the equations on deleted edges couple these kernels across components.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-FOUR-FIVE-CELL-SPARSE-ADJACENCY-NORMAL-RANK
+
+[Sparse four- and five-cell adjacency forces multiple normal directions on designated interfaces](plurality-stability/GAUSSIAN_MAXIMIZER_ADJACENCY_NORMAL_RANK.md)
+
+**Exact scope:** An active-dimension-three four-cell maximizer with exactly one missing pair must have nonparallel normals between the other two labels. Flat per-pair normals require complete adjacency. A triangle-free five-cell maximizer of active dimension four needs normals spanning at least three directions on each cycle edge. More generally, a label whose deletion leaves a bipartite induced graph uses every active direction.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-TWO-TYPE-MIRROR-FINITE-SWAP-BOUND
+
+[A rare reflection type quantitatively limits competing swap orientations](plurality-stability/THREE_CELL_CENTROID_MIRROR_MISMATCH.md)
+
+**Exact scope:** For any centered mirror of an actual planar three-cell maximizer, the retained mismatch types oriented out of their common label obey a two-sided finite-swap bound. Failure yields an explicit improving swap preserving all masses.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-CENTROID-MIRROR-POSITIVE-MISMATCH
+
+[A centroid mirror requires the other labels to share a reflected fiber](plurality-stability/THREE_CELL_CENTROID_MIRROR_MISMATCH.md)
+
+**Exact scope:** The two other labels of an actual three-cell maximizer occur as reflected mismatches on positive mass at a centered mirror containing the designated centroid. Unless that cell is reflection-invariant, all three mismatch types occur. The quantitative bounds exclude separation of the other labels by projections along the mirror.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-COMPACT-TIE-FIXED-MEASURE-MOMENTS
+
+[Compact simplex ties admit a fixed narrower-Gaussian moment comparison](plurality-stability/THREE_CELL_COMPACT_XRAY_BRANCH.md)
+
+**Exact scope:** For a compact simplex discrepancy that ties at a maximizer, the correlation slope is a derivative comparison in a fixed conditional-variance tensor-moment series. Equivalently it compares the agreement-conditioned dot products. The coefficient of degree one is strictly positive in the simplex deficit for a genuine discrepancy.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
+### PIS-THREE-CELL-COMPACT-BRANCH-XRAY-OBSTRUCTION
+
+[A moving compact stationary branch must satisfy simultaneous weighted projection and Jacobi equations](plurality-stability/THREE_CELL_COMPACT_XRAY_BRANCH.md)
+
+**Exact scope:** The speed after fixed-variance rescaling of a differentiable compact-exterior stationary branch satisfies all three homogeneous weighted projection equations and Q_0 v=-b/r. If all nonreference arcs satisfy the stated successive isolation property, the branch cannot be nonsimplex. Isolated ties remain possible under this test.
+
+**Authored state:** proved. **Graph state:** proved. **Dependency coverage:** partial.
+
+**Recorded assurances:** Independent replay: not recorded; Formal verification: not recorded; External review: not recorded.
+
+**Current blockers:** none in declared routes.
+
+**Verification limits:** Written proof and internal mathematical review.
+
 ### Supporting statements and targets
 
 | Identifier | Kind | Graph state / coverage | Exact scope | Pinned source |
